@@ -189,7 +189,7 @@ export default (props)=>{
             `}</style>
         </Section>
         <div class="maincontent">
-            <div id="nav2" className="flex row">
+            <div id="nav2" className="flex row" style={{flexWrap:'wrap'}}>
                 {[
                     {label:"Overview",id:"s-overview"},
                     {label:"Rules",id:"s-rules"},
@@ -198,7 +198,7 @@ export default (props)=>{
                     {label:"FAQ",id:"s-faq"},
                     {label:"About",id:"s-about"},
                 ].map((item)=>{
-                    return <a onClick={()=>{scrollToSection(item.id)}} className="item wideOnly">
+                    return <a onClick={()=>{scrollToSection(item.id)}} className="item">
                         <Text>{item.label}</Text>
                     </a>
                 })}
@@ -223,9 +223,63 @@ export default (props)=>{
                 ]}/>
                 
             </div>
-            {/* <Section className="center">
-                <Text>Congratulations!</Text>
-            </Section> */}
+            <Section className="center">
+                <div className="flex spaceChildren">
+                    <Text size="XL" className="color blue">Congratulation to the winners!</Text>
+                    {[
+                        {
+                            place:"1st Place",
+                            team:"Ratatouille",
+                            members:[
+                                {name:"Stephanie Chang",school:"UCLA - @stephcha7"},
+                                {name:"Michelle Kou",school:"UCLA - @michiskou"},
+                            ],
+                            project:"Ratatouille",
+                            description:"Ratatouille is an app that aims to inspire individuals to pursue a more sustainable diet in order to decrease carbon emissions. The app features alternative recipes to familiar meals so that individuals can overcome their fear of trying a new diet without any pressure or guilt.  Most importantly, users can see the carbon emissions of each dish to increase awareness of the carbon footprint of certain foods. Being able to visualize the changes they’re making allows them to believe they can make a difference with small steps. In the words of Remy, the famous rat chef from the Disney movie 'Ratatouille', anyone can cook (sustainably)."
+                        },
+                        {
+                            place:"2nd Place",
+                            team:"Best Team Ever",
+                            members:[
+                                {name:"Ashley Chang",school:"UC Davis - @ashhhcha"},
+                                {name:"An Nguyen",school:"UC Riverside - @annguyen.ig"},
+                                {name:"Ryan Yang",school:"UC Irvine - @veryfewsbux"},
+                                {name:"Angel Yim",school:"UC Berkeley - @angelysy_"},
+                            ],
+                            project:"Carbonology",
+                            description:"Carbonology is an app that provides convenient access to important sustainability information of common household products and aims to help consumers lead a more sustainable life. By simply scanning products, users can conveniently find sustainability statistics to guide their purchase decisions. Being eco-friendly isn't that simple for everyone and we know that. Carbonology provides a tiered reward system by collaborating with various recycling sites to provide financial incentives for those looking to be more sustainable, while still being affordable."
+                        },
+                        {
+                            place:"3rd Place",
+                            team:"Figma Sigma Chi",
+                            members:[
+                                {name:"Amanda Griffith",school:"University of North Texas - @nekobekoart"},
+                                {name:"Brett Johnson",school:"University of North Texas - @brett_c_johnson"},
+                                {name:"Khrystal Mendonca",school:"University of North Texas - @khrysleanna"},
+                                {name:"Michael Romero",school:"University of North Texas - @mjmrla"},
+                            ],
+                            project:"Readeasy",
+                            description:"An app that gives high school and middle school students the ability to access their schools’ banned books and the tools necessary to fight for their education."
+                        }
+                    ].map((item,i)=>{
+                        return <div className="flex left spaceChildren textAlignLeft" style={{borderTop:"2px dotted var(--pink)",marginBottom:"64px"}}>
+                            <Text size="L" className="bold italic color pink" style={{marginTop:'16px'}}>{item.place}</Text>
+                            <div className="split12" style={{width:"100%"}}>
+                                <div className="flex top left">
+                                    <Text>Team {item.team}</Text>
+                                </div>
+                                <div className="flex top left spaceChildrenSmall">
+                                    {item.members.map((item,i)=>{
+                                        return <Text>{item.name}<Text className="color gray"> - {item.school}</Text></Text>
+                                    })}
+                                </div>
+                            </div>
+                            <Text size="XL" className="bold">{item.project}</Text>
+                            <Text className="color gray">{item.description}</Text>
+                        </div>
+                    })}
+                </div>
+            </Section>
             <Section id="s-overview" className="flatBot" style={{background:"linear-gradient(0deg,var(--white),var(--d-pink),var(--d-violet),var(--black))"}}>
                 <div className="flex center spaceChildrenLarge">
                     <Text size="XL" className="color white">Impact 2022 is a 3 day long design-a-thon event where student designers create a product with the potential to impact the world.</Text>
@@ -347,7 +401,7 @@ export default (props)=>{
                         {line:1,time:"6:00 PM",title:"Opening Ceremony",
                             desc: (<div className="flex left spaceChildren">
                                 <TimerText className="color gray" start="1/28/2022 6:00:00 PM (PST)" end="1/28/2022 8:00:00 PM (PST)" />
-                                <a className="button S fill dusk" href="https://drive.google.com/file/d/1HkuSYDK7LlNUATib8b1ZXBBRP-pY_en5/view?usp=sharing" target="noreferer"><Text>Recording</Text><Icon w="24" h="24" src="pagelink-white.svg" style={{marginLeft:"8px"}}/></a>
+                                <a className="button S fill dusk" href="https://www.youtube.com/watch?v=IKoF9pB88XA" target="noreferer"><Text>Recording</Text><Icon w="24" h="24" src="pagelink-white.svg" style={{marginLeft:"8px"}}/></a>
                             </div>) },
                         {line:1,time:"8:00 PM",title:"Mentor Office Hours on Discord"},
                         {time:"9:00 PM",title:""},
@@ -372,7 +426,7 @@ export default (props)=>{
                         {line:1,time:"10:00 AM",title:"Workshop: Designing Under Constraints with Katrina Liu",
                             desc: (<div className="flex left spaceChildren">
                                 <TimerText className="color gray" start="1/29/2022 10:00:00 AM (PST)" end="1/29/2022 10:30:00 AM (PST)" />
-                                <a className="button S fill dusk" href="https://drive.google.com/file/d/1n6KsfvJSEylvpa4tvK0pSmL3GPK3tGG6/view?usp=sharing" target="noreferer"><Text>Recording</Text><Icon w="24" h="24" src="pagelink-white.svg" style={{marginLeft:"8px"}}/></a>
+                                <a className="button S fill dusk" href="https://www.youtube.com/watch?v=gPScKK8MQCQ" target="noreferer"><Text>Recording</Text><Icon w="24" h="24" src="pagelink-white.svg" style={{marginLeft:"8px"}}/></a>
                             </div>) },
                         {time:"10:30 AM",title:""},
                         {line:1,time:"11:00 AM",title:"Mentor Office Hours on Discord"},
@@ -468,12 +522,12 @@ export default (props)=>{
                     <Text className="color gray">We will be recording the workshops happening during Impact 2022 and uploading them here. If you miss an event, check back here later!</Text>
                     <Space h="16"/>
                     <div className="split3 maxWidth">
-                        <a href="https://drive.google.com/file/d/1HkuSYDK7LlNUATib8b1ZXBBRP-pY_en5/view?usp=sharing" target="noreferer" className="flex top left card spaceChildrenSmall" style={{background:"var(--silver)"}}>
+                        <a href="https://www.youtube.com/watch?v=IKoF9pB88XA" target="noreferer" className="flex top left card spaceChildrenSmall" style={{background:"var(--silver)"}}>
                             <Icon src="icon-movie.svg" w="48" h="48"/>
                             <Text className="color gray">25:37</Text>
                             <Text className="bold">Opening Ceremony</Text>
                         </a>
-                        <a href="https://drive.google.com/file/d/1n6KsfvJSEylvpa4tvK0pSmL3GPK3tGG6/view?usp=sharing" target="noreferer" className="flex top left card spaceChildrenSmall" style={{background:"var(--silver)"}}>
+                        <a href="https://www.youtube.com/watch?v=gPScKK8MQCQ" target="noreferer" className="flex top left card spaceChildrenSmall" style={{background:"var(--silver)"}}>
                             <Icon src="icon-movie.svg" w="48" h="48"/>
                             <Text className="color gray">39:18</Text>
                             <Text className="bold">Workshop: Designing Under Constraints with Katrina Liu</Text>
@@ -925,6 +979,10 @@ function StatusBlock(props) {
             />
         </div>
     </div>
+}
+
+function TimerText(props) {
+    return <></>;
 }
 
 function Toggle(props) {

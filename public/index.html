@@ -453,6 +453,11 @@ break { display: block; }
   grid-template-columns: 1fr 1fr;
   gap: 64px;
 }
+.split12 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 64px;
+}
 .split3, .split32 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -719,7 +724,7 @@ break { display: block; }
   .split32 {
     grid-template-columns: 1fr 1fr;
   }
-  .split2 {
+  .split2, .split12 {
     grid-template-columns: 1fr;
     gap: 32px;
   }
