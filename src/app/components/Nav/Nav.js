@@ -1,0 +1,131 @@
+import { useState, memo } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Space, Text, Icon } from '../../Symbols';
+import socials from '../../../assets/data/socials.json';
+import cn from './Nav.module.scss';
+
+function Nav(props) {
+	const { pathname } = useLocation();
+	const [mobileExpand, setMobileExpand] = useState(false);
+	const toggleMobileExpand = () => {
+		setMobileExpand(!mobileExpand);
+	};
+
+	return (
+		<nav className={cn.container}>
+			<div id='navSpacer' />
+			<div id='nav' mobile-expand={mobileExpand ? 'true' : 'false'}>
+				<div className='wrapper center wide'>
+					<div className='center row group left'>
+						{pathname === '/' ? (
+							<>
+								<Space w='8' />
+								{socials.map(({ name, icons, link }) => (
+									<a
+										key={name}
+										target='_blank'
+										rel='noreferrer noopener'
+										href={link}
+										className='item social center'
+									>
+										<Icon
+											w='24'
+											h='24'
+											hoverable
+											src={icons.nav}
+										/>
+									</a>
+								))}
+							</>
+						) : (
+							<Link to='/' className='item center brand'>
+								<Icon w='24' h='24' src='logo.svg' />
+								<Space w='16' />
+								<Text>Design at UCI</Text>
+							</Link>
+						)}
+					</div>
+					<div className='center row group'>
+						<Link to='/join/' className='item center'>
+							<Text>Join</Text>
+						</Link>
+						<Link to='/events/' className='item center'>
+							<Text>Events</Text>
+						</Link>
+						<Link to='/resources/' className='item center'>
+							<Text>Resources</Text>
+						</Link>
+					</div>
+					<div className='center row group right'>
+						<Link to='/about/' className='item center'>
+							<Text>About</Text>
+						</Link>
+						<Link to='/contact/' className='item center'>
+							<Text>Contact</Text>
+						</Link>
+					</div>
+				</div>
+				<div className='wrapper center mobile'>
+					<div className='center row group left'>
+						{pathname === '/' ? (
+							<>
+								<Space w='8' />
+								{socials.map(({ name, icons, link }) => (
+									<a
+										key={name}
+										href={link}
+										className='item social center'
+									>
+										<Icon
+											w='24'
+											h='24'
+											hoverable
+											src={icons.nav}
+										/>
+									</a>
+								))}
+							</>
+						) : (
+							<Link to='/' className='item center brand'>
+								<Icon w='24' h='24' src='logo.svg' />
+								<Space w='24' />
+								<Text>Design at UCI</Text>
+							</Link>
+						)}
+					</div>
+					<div className='center row group right'>
+						<a
+							className='item center'
+							id='navToggle'
+							onClick={toggleMobileExpand}
+						>
+							<Icon w='24' h='24' src='nav-menu.svg' />
+						</a>
+					</div>
+					<div className='links spaceChildren'>
+						{[
+							{ label: 'Events', url: '/events/' },
+							{ label: 'Resources', url: '/resources/' },
+							{ label: 'About', url: '/about/' },
+							{ label: 'Contact', url: '/contact/' },
+						].map((link, i) => {
+							return (
+								<Link to={link.url} className='item center'>
+									<Text size='L'>{link.label}</Text>
+								</Link>
+							);
+						})}
+						<Link
+							to='/join/'
+							className='item center button fill sky'
+						>
+							<Text size='L'>Join</Text>
+						</Link>
+					</div>
+				</div>
+			</div>
+		</nav>
+	);
+}
+
+export default memo(Nav);
