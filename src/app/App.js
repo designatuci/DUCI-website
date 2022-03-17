@@ -5,13 +5,11 @@ import Join from './pages/Join';
 import Hey from './pages/Hey';
 import Events from './pages/Events';
 import EventsAll from './pages/EventsAll';
-import Resources from './pages/Resources';
 import ResourcesFeatured from './pages/ResourcesFeatured';
-import Merch from './pages/Merch/Merch';
 import PT from './pages/PT';
 import Designathons from './pages/Designathons';
 import Designathon22 from './pages/Designathon22';
-import { About, Contact } from './pages';
+import { About, Contact, Merch, Resources } from './pages';
 import Brand from './pages/Brand';
 import { useScroll } from './controllers';
 import { Footer, Nav } from './components';
@@ -24,23 +22,24 @@ function App() {
 			<Nav />
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/join/' element={<Join />} />
-				<Route path='/hey/' element={<Hey />} />
-				<Route path='/events/' element={<Events />} />
-				<Route path='/events/all' element={<EventsAll />} />
-				<Route path='/resources/' element={<Resources />} />
-				<Route
-					path='/resources/featured/'
-					element={<ResourcesFeatured />}
-				/>
-				<Route path='/merch/' element={<Merch />} />
-				<Route path='/contact/' element={<Contact />} />
-				<Route path='/about/' element={<About />} />
-				<Route path='/pt/' element={<PT />} />
-				<Route path='/designathons/' element={<Designathons />} />
-				<Route path='/designathon22/' element={<Designathon22 />} />
-				<Route path='/brand/' element={<Brand />} />
-				<Route element={<NotFound />} />
+				<Route path='join' element={<Join />} />
+				<Route path='hey' element={<Hey />} />
+				<Route path='events' >
+					<Route index element={<Events />}/>
+					<Route path='all' element={<EventsAll />}/>
+				</Route>
+				<Route path='resources'>
+					<Route index element={<Resources />} />
+					<Route path='featured' element={<ResourcesFeatured />} />
+				</Route>
+				<Route path='merch' element={<Merch />} />
+				<Route path='contact' element={<Contact />} />
+				<Route path='about' element={<About />} />
+				<Route path='pt' element={<PT />} />
+				<Route path='designathons' element={<Designathons />} />
+				<Route path='designathon22' element={<Designathon22 />} />
+				<Route path='brand' element={<Brand />} />
+				<Route path='*' element={<NotFound />} />
 			</Routes>
 			<Footer />
 		</>

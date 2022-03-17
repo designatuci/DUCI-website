@@ -1,4 +1,4 @@
-import { Section, Text, Space, Icon, PageIcon } from './Symbols.js';
+import { Text } from './Symbols.js';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 
 // const url = "//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn";
@@ -6,7 +6,7 @@ const url =
 	'https://weebly.us16.list-manage.com/subscribe/post?u=96e1277e37e6f4c2940cd1dc9&id=3cdf6c3ea8';
 
 export function EmailForm(props) {
-	let ref_email, ref_fname, ref_lname, ref_sub, ref_form;
+	let ref_email, ref_fname, ref_lname, ref_sub;
 	let springLoad = true;
 	function validate(submit) {
 		let formData = {
@@ -23,7 +23,7 @@ export function EmailForm(props) {
 		}
 	}
 	return (
-		<div className='form spaceChildren' ref={node => (ref_form = node)}>
+		<div className='form spaceChildren'>
 			<MailchimpSubscribe
 				url={url}
 				render={({ subscribe, status, message }) => (
@@ -31,9 +31,9 @@ export function EmailForm(props) {
 						{(ref_sub = subscribe)}
 
 						{(status == null ||
-							status == 'sending' ||
+							status === 'sending' ||
 							(status === 'error' &&
-								message.indexOf('already subscribed') ==
+								message.indexOf('already subscribed') ===
 									-1)) && (
 							<div className='inputs'>
 								<input
@@ -54,10 +54,10 @@ export function EmailForm(props) {
 							</div>
 						)}
 
-						{status == 'success' && spring()}
-						{status == 'error' && spring()}
+						{status === 'success' && spring()}
+						{status === 'error' && spring()}
 
-						{status == 'success' && (
+						{status === 'success' && (
 							<Text
 								size='XL'
 								className='wait show dx bold color blue'
@@ -69,12 +69,12 @@ export function EmailForm(props) {
 								Subscribed!
 							</Text>
 						)}
-						{status == 'success' && (
+						{status === 'success' && (
 							<Text className='wait show dx bold color gray'>
 								Thank you.
 							</Text>
 						)}
-						{status == 'error' &&
+						{status === 'error' &&
 							message.indexOf('already subscribed') >= 0 && (
 								<Text
 									className='wait show dx bold color blue'
@@ -87,7 +87,7 @@ export function EmailForm(props) {
 									You are already subscribed.
 								</Text>
 							)}
-						{status == 'error' &&
+						{status === 'error' &&
 							message.indexOf('already subscribed') >= 0 && (
 								<Text className='wait show dx color gray'>
 									Thank you.
@@ -96,8 +96,8 @@ export function EmailForm(props) {
 
 						<div className='flex spaceChildrenSmall'>
 							{(status == null ||
-								status == 'sending' ||
-								(status == 'error' &&
+								status === 'sending' ||
+								(status === 'error' &&
 									message.indexOf('already subscribed') ==
 										-1)) && (
 								<a
@@ -105,23 +105,23 @@ export function EmailForm(props) {
 									onClick={validate}
 								>
 									<Text>
-										{status == 'sending'
+										{status === 'sending'
 											? '• • •'
 											: 'Sign-up'}
 									</Text>
 								</a>
 							)}
 							{status === 'error' &&
-								message.indexOf('already subscribed') == -1 && (
+								message.indexOf('already subscribed') === -1 && (
 									<Text style={{ color: 'red' }}>
 										Error, please check your inputs and try
 										again
 									</Text>
 								)}
 							{(status == null ||
-								status == 'sending' ||
+								status === 'sending' ||
 								(status === 'error' &&
-									message.indexOf('already subscribed') ==
+									message.indexOf('already subscribed') ===
 										-1)) && (
 								<Text className='S color gray nano'>
 									Mail services provided by{' '}
@@ -147,17 +147,6 @@ export function EmailForm(props) {
 					</div>
 				)}
 			/>
-			{/* <div className="inputs">
-            <input type="email" placeholder="Your email" />
-            <input type="firstname" placeholder="First Name" />
-            <input type="lastname" placeholder="Last Name" />
-        </div>
-        <div className="flex spaceChildrenSmall">
-            <a className="button fill blue">
-                <Text>Sign-up</Text>
-            </a>
-            <Text className="S color gray nano">Mail services provided by <a target="noreferer" href="https://mailchimp.com" className="link">MailChimp</a>. By signing up, you agree to their <a target="noreferer" href="https://mailchimp.com/legal/privacy/" className="link">privacy policy</a>.</Text>
-        </div> */}
 		</div>
 	);
 }

@@ -154,7 +154,7 @@ export function PageIcon(props) {
 }
 
 export function CheckIcon(props) {
-	if (props.check == true) {
+	if (props.check === true) {
 		return (
 			<svg
 				viewBox='0 0 24 24'

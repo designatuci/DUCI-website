@@ -34,4 +34,8 @@
 
 .header {
     background: linear-gradient(10deg, var(--silver) -50%, var(--green));
+
+    &>.text {
+        text-shadow: 0 8px 16px var(--green);
+    }
 }

@@ -65,3 +65,10 @@
     opacity: 0.12;
     mix-blend-mode: screen;
 }
+
+.year-divider {
+    width: 100%;
+    padding-top: 32px;
+    box-shadow: 0 -12px 24px -24px var(--gray);
+    margin-bottom: 64px;
+}

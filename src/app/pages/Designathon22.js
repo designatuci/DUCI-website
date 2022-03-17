@@ -1,10 +1,10 @@
 import {Helmet} from "react-helmet";
 import React, { useState, useEffect, Component } from 'react';
 import { Link } from 'react-router-dom';
-import {Section,Text,Space,Icon,LoadingD, Photo } from '../Symbols.js'
+import {Section,Text,Space,Icon, Photo } from '../Symbols.js'
 
 
-export default (props)=>{
+const Designathon22 = (props) => {
     useEffect(() => {
         T = 0
         initialize()
@@ -675,6 +675,8 @@ export default (props)=>{
     </>
 }
 
+export default Designathon22;
+
 class TimeRouter extends Component {
     constructor(props) {
         super(props)
@@ -718,6 +720,7 @@ class TimeRouter extends Component {
         return selection.item
     }
 }
+
 
 function Rubric(params) {
     const [expand,setExpand] = useState(false)

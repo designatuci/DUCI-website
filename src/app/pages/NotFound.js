@@ -5,25 +5,26 @@ import { Section, Text, Space, LoadingD } from '../Symbols.js';
 
 const NotFound = () => {
 	const [linksData, setLinksData] = useState(null);
+	
 	useEffect(() => {
 		fetch(
 			`https://raw.githubusercontent.com/designatuci/data/main/hyperlinks.json?%uniquetime=${Math.round(
 				new Date().getTime() / 120000
 			)}`
-		)
-			.then(res => res.json())
-			.then(data => {
-				let path = window.location.pathname.substr(1);
-				console.log(path);
-				for (let link of data.links) {
-					if (link.code == path || link.code + '/' == path) {
-						data.redirect = true;
-						window.location.replace(link.link);
-					}
+		).then(res => res.json()
+		).then(data => {
+			let path = window.location.pathname.substr(1);
+			console.log(path);
+			for (let link of data.links) {
+				if (link.code === path || link.code + '/' === path) {
+					data.redirect = true;
+					window.location.replace(link.link);
 				}
-				setLinksData(data);
-			});
+			}
+			setLinksData(data);
+		});
 	}, []);
+
 	return (
 		<>
 			<Helmet>
@@ -34,7 +35,7 @@ const NotFound = () => {
 					<div className='flex' style={{ padding: '64px 0' }}>
 						<LoadingD width='128' />
 					</div>
-				) : linksData.redirect == true ? (
+				) : linksData.redirect === true ? (
 					<div>
 						<Text className='color blue' size='L'>
 							One moment...

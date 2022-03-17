@@ -12,8 +12,7 @@ const Merch = () => (
 		<Section className={clsx(cn.header, 'center short')}>
 			<Text
 				size='XXL'
-				className='wait dx bold color white'
-				style={{ textShadow: '0 8px 16px var(--green)' }}
+				className={clsx(cn.text, 'wait dx bold color white')}
 			>
 				Merchandise
 			</Text>
@@ -27,7 +26,7 @@ const Merch = () => (
 				<div className='flex left spaceChildren'>
 					<Text size='XL'>{name}</Text>
 					<div className='flex left spaceChildrenSmall'>
-						{inStock && (
+						{!inStock && (
 							<Text className='color orange'>Sold out</Text>
 						)}
 						<Text className='color gray'>{description}</Text>
@@ -36,7 +35,10 @@ const Merch = () => (
 				<Space h='0' />
 				<div className={clsx(cn.split4, 'split4')}>
 					{items.map(item => (
-						<div className='flex top left spaceChildrenSmall'>
+						<div
+							className='flex top left spaceChildrenSmall'
+							key={item.name}
+						>
 							<Photo className='relative' src={item.photo}>
 								<div style={{ paddingBottom: '100%' }} />
 								{item?.type === 'holo' && (

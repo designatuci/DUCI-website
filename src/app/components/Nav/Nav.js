@@ -4,12 +4,14 @@ import { Space, Text, Icon } from '../../Symbols';
 import socials from '../../../assets/data/socials.json';
 import cn from './Nav.module.scss';
 
-function Nav(props) {
+const Nav = () => {
 	const { pathname } = useLocation();
 	const [mobileExpand, setMobileExpand] = useState(false);
 	const toggleMobileExpand = () => {
 		setMobileExpand(!mobileExpand);
 	};
+	if (pathname === '/designathon22/' || pathname === '/designathon22')
+		return <></>;
 
 	return (
 		<nav className={cn.container}>
@@ -126,6 +128,6 @@ function Nav(props) {
 			</div>
 		</nav>
 	);
-}
+};
 
 export default memo(Nav);

@@ -23,22 +23,17 @@ const About = () => (
 					>
 						{"We're the premier club for UI, UX, and graphic design at the University of California Irvine."
 							.split(' ')
-							.map((word, i) => {
-								return (
-									<Text
-										size='XXXL'
-										className='wait dx l2 bold'
-									>
-										{word}
-										<pre> </pre>
-									</Text>
-								);
-							})}
+							.map(word => (
+								<Text size='XXXL' className='wait dx l2 bold'>
+									{word}
+									<pre> </pre>
+								</Text>
+							))}
 					</Text>
 				</div>
 			</Section>
 		</div>
-		<img src='/static/photo/img1.png' alt='banner'/>
+		<img src='/static/photo/img1.png' alt='banner' />
 		<Section className=''>
 			<Text size='XL' className='wait slim'>
 				We provide a friendly space with helpful resources for students
@@ -145,19 +140,13 @@ const About = () => (
 			<div className='center row'>
 				{ALUMNI_BOARD.map(({ year, members }) => (
 					<>
-						<div
-							style={{
-								width: '100%',
-								paddingTop: '32px',
-								boxShadow: '0 -12px 24px -24px var(--gray)',
-								marginBottom: '64px',
-							}}
-						>
+						<div className='year-divider'>
 							<Text className='color blue'>Departed {year}</Text>
 						</div>
-						{members.map(({ links, name, position }) => (
-							<div className='item center column'>
+						{members.map(({ links, name, position }, i) => (
+							<div className='item center column' key={i}>
 								<Text size='L'>{name}</Text>
+								<br />
 								<Text
 									className='color gray'
 									style={{ marginTop: '8px' }}

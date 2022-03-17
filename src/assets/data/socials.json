@@ -23,6 +23,14 @@
         }
     },
     {
+        "name": "facebook",
+        "link": "https://www.facebook.com/designatuci/",
+        "icons": {
+            "default": "facebook.svg",
+            "nav": "nav-facebook.svg"
+        }
+    },
+    {
         "name": "linkedin",
         "link": "https://www.linkedin.com/company/design-at-uci",
         "icons": {
