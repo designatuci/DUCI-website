@@ -54,8 +54,11 @@
     background-image: url('https://designatuci.com/static/photo/img1.png');
     background-size: cover;
     background-position: center;
+    @media screen and (max-width: 768px) {
+        font-size: 1em;        
+    }
 }
-.carousel .text {
+.carousel {
     text-shadow: 4px 4px 16px #0018;
 }
 .carousel .noise {

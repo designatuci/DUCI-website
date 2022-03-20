@@ -5,8 +5,6 @@ import { Section, Space, Icon, LoadingD, PageIcon } from '../../Symbols.js';
 import { Text } from '../../components';
 import EventCard from './components/EventCard/EventCard.js';
 
-// import testData from "./temp.json"
-
 const Events = () => {
 	const [eventData, setEventData] = useState(null);
 	useEffect(() => {
@@ -160,7 +158,7 @@ const Events = () => {
 					{eventData != null &&
 						eventData.past
 							.slice(0, 12)
-							.map((event, i) => <EventCard key={event.time + event.title} {...event} />)}
+							.map(event => <EventCard key={event.time + event.title} {...event} />)}
 				</div>
 			</Section>
 			<Section

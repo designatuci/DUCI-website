@@ -15,47 +15,35 @@ const EventCard = ({ ...event }) => (
 		<Text size='L'>{event.title}</Text>
 		{event?.links
 			?.filter(
-				({ label }) => label !== 'Zoom Link' || label !== 'Discord Link'
+				({ label }) => label !== 'Zoom Link' && label !== 'Discord Link'
 			)
-			.map((item, i) =>
-				item.label === 'Recording' ? (
-					<a
-						key={item.link}
-						target='noreferer'
-						className='button S fill blue'
-						href={item.link}
-					>
-						<Text>
-							{item.label}
-							<PageIcon
-								color='var(--sky)'
-								style={{
-									width: '24px',
-									marginLeft: '4px',
-								}}
-							/>
-						</Text>
-					</a>
-				) : (
-					<a
-						key={item.link}
-						target='noreferer'
-						className='button S fill gray'
-						href={item.link}
-					>
-						<Text>
-							{item.label}
-							<PageIcon
-								color='var(--gray)'
-								style={{
-									width: '24px',
-									marginLeft: '4px',
-								}}
-							/>
-						</Text>
-					</a>
-				)
-			)}
+			.map(({label, link}) => (
+				<a
+					key={link}
+					target='noreferer'
+					className={
+						'button S fill ' + (label === 'Recording'
+							? 'blue'
+							: 'gray')
+					}
+					href={link}
+				>
+					<Text>
+						{label}
+						<PageIcon
+							color={
+								label === 'Recording'
+									? 'var(--sky)'
+									: 'var(--gray)'
+							}
+							style={{
+								width: '24px',
+								marginLeft: '4px',
+							}}
+						/>
+					</Text>
+				</a>
+			))}
 		<Text className='color gray' style={{ marginTop: 'auto' }}>
 			{formatRelativeDate(event.time)}
 		</Text>

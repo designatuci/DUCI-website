@@ -94,6 +94,29 @@
     &.XXXL {
         font-size: 64px;
     }
+    @media screen and (max-width: 768px) {
+        font-size: 16px;
+
+        &.S {
+            font-size: 14px;
+        }
+    
+        &.L {
+            font-size: 20px;
+        }
+    
+        &.XL {
+            font-size: 32px;
+        }
+    
+        &.XXL {
+            font-size: 48px;
+        }
+    
+        &.XXXL {
+            font-size: 56px;
+        }
+    }
 }
 
 .container .link {

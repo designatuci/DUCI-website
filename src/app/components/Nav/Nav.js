@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { Space, Icon } from '../../Symbols';
 import Text from '../Text';
 import socials from '../../../assets/data/socials.json';
-import cn from './Nav.module.scss';
+import './Nav.scss';
 
 const Nav = () => {
 	const { pathname } = useLocation();
@@ -15,7 +15,7 @@ const Nav = () => {
 		return <></>;
 
 	return (
-		<nav className={cn.container}>
+		<nav>
 			<div id='navSpacer' />
 			<div id='nav' mobile-expand={mobileExpand ? 'true' : 'false'}>
 				<div className='wrapper center wide'>

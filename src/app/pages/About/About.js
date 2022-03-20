@@ -20,7 +20,7 @@ const About = () => (
 					<Text className='wait subtle d05'>Nice to meet you</Text>
 					<Space block h='16' />
 					<Text
-						size='XXXL'
+						size='S'
 						className='block-paragraph wait show scale l3 bold color white'
 					>
 						{"We're the premier club for UI, UX, and graphic design at the University of California Irvine."

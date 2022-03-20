@@ -123,7 +123,7 @@ const Home = () => (
 						ask your questions and recieve a professional's advice.
 					</Text>
 					<Space block h='32' />
-					<Link to='/events/'>
+					<Link to='/events'>
 						<Text icon='right' color='blue'>
 							Found in our events
 						</Text>
@@ -167,7 +167,7 @@ const Home = () => (
 						your portfolio with fresh new work.
 					</Text>
 					<Space block h='32' />
-					<Link to='/Resources/'>
+					<Link to='/resources/'>
 						<Text icon='right' color='blue'>
 							See our resources
 						</Text>
