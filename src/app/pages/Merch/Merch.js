@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
-import { Section, Text, Space, Photo } from '../../Symbols.js';
+import { Section, Space, Photo } from '../../Symbols.js';
 import clsx from 'clsx';
+import { Text } from '../../components';
 import MERCH_LIST from '../../../assets/data/merchList.json';
 import cn from './Merch.module.scss';
 

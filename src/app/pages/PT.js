@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Text, Space, Icon } from '../Symbols.js';
+import { Section, Space, Icon } from '../Symbols.js';
+import { Text } from '../components';
 
 const PT = () => (
 	<>
@@ -13,7 +14,7 @@ const PT = () => (
 				Project Teams
 			</Text>
 			<Space h='16' />
-			<div className='flex left textAlignLeft slim spaceChildrenSmall'>
+			<div className='flex left slim spaceChildrenSmall' style={{textAlign: 'left'}}>
 				<Text className='color gray'>
 					A multi-week program where you work on a team to design or
 					re-design a prototype product. Open for all experience

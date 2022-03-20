@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Text, Space, Icon, Photo } from '../Symbols.js';
+import { Section, Space, Icon, Photo } from '../Symbols.js';
+import { Text } from '../components';
 
 const Designathons = () => (
 	<>
@@ -60,7 +61,7 @@ const Designathons = () => (
 				<Text className='bold'>January 28-30</Text>
 				<Space h='32' />
 				<a className='button'>
-					<Text className='color blue pagelink'>Event Page</Text>
+					<Text color='blue' icon='right'>Event Page</Text>
 				</a>
 			</Link>
 		</Section>
@@ -105,7 +106,7 @@ const Designathons = () => (
 						href='/static/designathon2020/index.html'
 						target='_blank'
 					>
-						<Text className='pagelink color blue'>Event Page</Text>
+						<Text icon='right' color='blue'>Event Page</Text>
 					</a>
 					<Photo
 						className='background'
@@ -138,7 +139,7 @@ const Designathons = () => (
 						href='https://www.figma.com/file/h5bJ9LHNDm1K3PYy0Ck1wk/UCI-Designathon-–-Team-396D84-Copy?node-id=85%3A0'
 						target='noreferer'
 					>
-						<Text className='pagelink color blue'>
+						<Text icon='right' color='blue'>
 							View prototype
 						</Text>
 					</a>
@@ -163,7 +164,7 @@ const Designathons = () => (
 						href='https://www.figma.com/file/uYMb1cJIA0JCn2twIbbIUE/Orin-Copy'
 						target='noreferer'
 					>
-						<Text className='pagelink color blue'>
+						<Text icon='right' color='blue'>
 							View prototype
 						</Text>
 					</a>

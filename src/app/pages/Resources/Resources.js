@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Text, Icon, Space } from '../../Symbols.js';
+import { Section, Icon, Space } from '../../Symbols.js';
+import { Text } from '../../components';
 import RESOURCES from '../../../assets/data/resources.json';
 import cn from './Resources.module.scss';
 

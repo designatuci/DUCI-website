@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Section, Text, Icon, PageIcon } from '../Symbols.js';
-import { EmailForm } from '../EmailForm.js';
+import { Section, Icon, PageIcon } from '../Symbols.js';
+import { EmailForm, Text } from '../components';
 
 const Join = () => (
 	<>
@@ -14,10 +14,10 @@ const Join = () => (
 					Get Involved
 				</Text>
 			</Text>
-			<Text className='color orange wait dx show subtle'>
+			<Text color='orange' className='wait dx show subtle'>
 				Design at UCI is free for everyone
 			</Text>
-			<Text className='color gray slim wait dx  show subtle'>
+			<Text color='gray' className='slim wait dx show subtle'>
 				Join our newsletter and follow our social media to get
 				notifications about what's happening.
 				<br />
@@ -29,14 +29,15 @@ const Join = () => (
 				className='wait show card L fill sky slim flex spaceChildren'
 				style={{ boxShadow: '0 12px 24px -12px var(--sky)' }}
 			>
-				<Text className='bold color blue' size='L'>
+				<Text color='blue' className='bold' size='L'>
 					Newsletter Sign-up
 				</Text>
 				<EmailForm />
 			</div>
 			<div className='split4 slim maxWidth' style={{ gap: '32px' }}>
 				<a
-					target='noreferer'
+					target='_blank'
+					rel='noopener noreferrer'
 					href='https://www.tiktok.com/@design_at_uci'
 					className='wait dx card L slim flex relative spaceChildrenSmall'
 					style={{
@@ -61,7 +62,8 @@ const Join = () => (
 					</Text>
 				</a>
 				<a
-					target='noreferer'
+					target='_blank'
+					rel='noopener noreferrer'
 					href='https://www.instagram.com/designatuci'
 					className='wait dx card L slim flex relative spaceChildrenSmall'
 					style={{
@@ -142,13 +144,13 @@ const Join = () => (
 			<Text className='wait scale dx' size='XL'>
 				We can't wait to see you at our next event!
 			</Text>
-			<Link className='wait dx' to='/events/'>
-				<Text className='color blue pagelink'>
+			<Link className='wait dx' to='/events'>
+				<Text icon='right' color='blue'>
 					Check out our events tab
 				</Text>
 			</Link>
-			<Link className='wait dx' to='/resources/'>
-				<Text className='color blue pagelink'>
+			<Link className='wait dx' to='/resources'>
+				<Text icon='right' color='blue'>
 					Explore our other resources
 				</Text>
 			</Link>

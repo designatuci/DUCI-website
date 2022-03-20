@@ -1,11 +1,11 @@
-import { Text } from './Symbols.js';
+import Text from '../Text';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
+import cn from './EmailForm.module.scss';
 
-// const url = "//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn";
 const url =
 	'https://weebly.us16.list-manage.com/subscribe/post?u=96e1277e37e6f4c2940cd1dc9&id=3cdf6c3ea8';
 
-export function EmailForm(props) {
+const EmailForm = () => {
 	let ref_email, ref_fname, ref_lname, ref_sub;
 	let springLoad = true;
 	function validate(submit) {
@@ -112,7 +112,8 @@ export function EmailForm(props) {
 								</a>
 							)}
 							{status === 'error' &&
-								message.indexOf('already subscribed') === -1 && (
+								message.indexOf('already subscribed') ===
+									-1 && (
 									<Text style={{ color: 'red' }}>
 										Error, please check your inputs and try
 										again
@@ -149,4 +150,6 @@ export function EmailForm(props) {
 			/>
 		</div>
 	);
-}
+};
+
+export default EmailForm;

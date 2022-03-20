@@ -1,6 +1,7 @@
 import { useState, memo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Space, Text, Icon } from '../../Symbols';
+import { Space, Icon } from '../../Symbols';
+import Text from '../Text';
 import socials from '../../../assets/data/socials.json';
 import cn from './Nav.module.scss';
 
@@ -48,21 +49,21 @@ const Nav = () => {
 						)}
 					</div>
 					<div className='center row group'>
-						<Link to='/join/' className='item center'>
+						<Link to='/join' className='item center'>
 							<Text>Join</Text>
 						</Link>
-						<Link to='/events/' className='item center'>
+						<Link to='/events' className='item center'>
 							<Text>Events</Text>
 						</Link>
-						<Link to='/resources/' className='item center'>
+						<Link to='/resources' className='item center'>
 							<Text>Resources</Text>
 						</Link>
 					</div>
 					<div className='center row group right'>
-						<Link to='/about/' className='item center'>
+						<Link to='/about' className='item center'>
 							<Text>About</Text>
 						</Link>
-						<Link to='/contact/' className='item center'>
+						<Link to='/contact' className='item center'>
 							<Text>Contact</Text>
 						</Link>
 					</div>
@@ -110,13 +111,11 @@ const Nav = () => {
 							{ label: 'Resources', url: '/resources/' },
 							{ label: 'About', url: '/about/' },
 							{ label: 'Contact', url: '/contact/' },
-						].map((link, i) => {
-							return (
-								<Link to={link.url} className='item center'>
-									<Text size='L'>{link.label}</Text>
-								</Link>
-							);
-						})}
+						].map(({ label, url }) => (
+							<Link key={url} to={url} className='item center'>
+								<Text size='L'>{label}</Text>
+							</Link>
+						))}
 						<Link
 							to='/join/'
 							className='item center button fill sky'

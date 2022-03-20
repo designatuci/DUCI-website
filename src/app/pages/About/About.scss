@@ -4,6 +4,11 @@
     display: block;
     width: 100%;
 }
+
+.board {
+    padding-bottom: 50px;
+}
+
 .board .wrapper > .center {
     width: 100%;
     justify-content: center;
@@ -68,7 +73,12 @@
 
 .year-divider {
     width: 100%;
+    margin-top: 40px;
     padding-top: 32px;
     box-shadow: 0 -12px 24px -24px var(--gray);
-    margin-bottom: 64px;
+    margin-bottom: 40px;
+}
+
+.alumni-header {
+    margin: 40px 0px 80px !important;
 }

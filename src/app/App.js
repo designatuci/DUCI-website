@@ -3,13 +3,11 @@ import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Join from './pages/Join';
 import Hey from './pages/Hey';
-import Events from './pages/Events';
-import EventsAll from './pages/EventsAll';
 import ResourcesFeatured from './pages/ResourcesFeatured';
 import PT from './pages/PT';
 import Designathons from './pages/Designathons';
 import Designathon22 from './pages/Designathon22';
-import { About, Contact, Merch, Resources } from './pages';
+import { About, Contact, Events, EventsAll, Merch, Resources } from './pages';
 import Brand from './pages/Brand';
 import { useScroll } from './controllers';
 import { Footer, Nav } from './components';
@@ -24,9 +22,9 @@ function App() {
 				<Route path='/' element={<Home />} />
 				<Route path='join' element={<Join />} />
 				<Route path='hey' element={<Hey />} />
-				<Route path='events' >
-					<Route index element={<Events />}/>
-					<Route path='all' element={<EventsAll />}/>
+				<Route path='events'>
+					<Route index element={<Events />} />
+					<Route path='all' element={<EventsAll />} />
 				</Route>
 				<Route path='resources'>
 					<Route index element={<Resources />} />

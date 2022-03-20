@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
-import { Section, Icon, Space, Text } from '../../Symbols.js';
+import Text from '../Text';
+import { Section, Icon, Space } from '../../Symbols.js';
 import socials from '../../../assets/data/socials.json';
 import cn from './Footer.module.scss';
 
@@ -35,34 +36,34 @@ const Footer = () => (
 			</div>
 			<div className='spaceChildrenSmall'>
 				<div>
-					<Link block to='/resources/' className='mark'>
+					<Link to='/resources/' className='mark'>
 						<Text>Resources</Text>
 					</Link>
 				</div>
 				<Space h='16' />
 				<div>
-					<Link block to='/resources/featured/'>
+					<Link to='/resources/featured/'>
 						<Text>Featured Resources</Text>
 					</Link>
 				</div>
 				<div>
-					<Link block to='/pt/'>
+					<Link to='/pt/'>
 						<Text>Project Teams</Text>
 					</Link>
 				</div>
 				<div>
-					<Link block to='/merch/'>
+					<Link to='/merch/'>
 						<Text>Merch</Text>
 					</Link>
 				</div>
 				<div>
-					<Link block to='/designathons/'>
+					<Link to='/designathons/'>
 						<Text>Design-a-thon</Text>
 					</Link>
 				</div>
 				<div>
 					<a
-						block
+					
 						target='noreferer'
 						href='https://medium.com/@designatuci'
 					>
@@ -71,7 +72,7 @@ const Footer = () => (
 				</div>
 				<div>
 					<a
-						block
+						
 						target='noreferer'
 						href='https://us16.campaign-archive.com/home/?u=96e1277e37e6f4c2940cd1dc9&id=3cdf6c3ea8'
 					>

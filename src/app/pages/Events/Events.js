@@ -1,7 +1,9 @@
 import { Helmet } from 'react-helmet';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Section, Text, Space, Icon, LoadingD, PageIcon } from '../Symbols.js';
+import { Section, Space, Icon, LoadingD, PageIcon } from '../../Symbols.js';
+import { Text } from '../../components';
+import EventCard from './components/EventCard/EventCard.js';
 
 // import testData from "./temp.json"
 
@@ -151,72 +153,14 @@ const Events = () => {
 				<Text size='L'>Past Events</Text>
 			</div>
 			<Section className='center bare fill gray'>
-				<div className='splitEventCard maxWidth textAlignLeft'>
+				<div
+					className='splitEventCard maxWidth'
+					style={{ textAlign: 'left' }}
+				>
 					{eventData != null &&
-						eventData.past.slice(0, 12).map((event, i) => {
-							return (
-								<div className='fill white card flex left spaceChildrenSmall'>
-									<Text className='color gray'>
-										{event.type}
-									</Text>
-									<Text size='L'>{event.title}</Text>
-									{event.links != null &&
-										event.links.map((item, i) => {
-											if (item.label === 'Recording')
-												return (
-													<a
-														target='noreferer'
-														className='button S fill blue'
-														href={item.link}
-													>
-														<Text>
-															{item.label}
-															<PageIcon
-																color='var(--sky)'
-																style={{
-																	width: '24px',
-																	marginLeft:
-																		'4px',
-																}}
-															/>
-														</Text>
-													</a>
-												);
-											else if (
-												item.label === 'Zoom Link' ||
-												item.label === 'Discord Link'
-											)
-												return <></>;
-											else
-												return (
-													<a
-														target='noreferer'
-														className='button S fill gray'
-														href={item.link}
-													>
-														<Text>
-															{item.label}
-															<PageIcon
-																color='var(--gray)'
-																style={{
-																	width: '24px',
-																	marginLeft:
-																		'4px',
-																}}
-															/>
-														</Text>
-													</a>
-												);
-										})}
-									<Text
-										className='color gray'
-										style={{ marginTop: 'auto' }}
-									>
-										{formatRelativeDate(event.time)}
-									</Text>
-								</div>
-							);
-						})}
+						eventData.past
+							.slice(0, 12)
+							.map((event, i) => <EventCard key={event.time + event.title} {...event} />)}
 				</div>
 			</Section>
 			<Section
@@ -224,22 +168,25 @@ const Events = () => {
 				style={{ height: '128px', display: 'flex' }}
 			>
 				<Link to='/events/all/' className='button color blue'>
-					<Text className='pagelink'>View all events</Text>
+					<Text icon='right'>View all events</Text>
 				</Link>
 			</Section>
 			<Section className='center'>
-				<div className='flex left narrow textAlignLeft spaceChildren'>
+				<div
+					className='flex left narrow spaceChildren'
+					style={{ textAlign: 'left' }}
+				>
 					<Icon src='workshop-icon-black.svg' w='64' h='64' />
 					<Text size='XL'>
 						We host events with a wide range of topics about each
 						week during the academic quarter.
 					</Text>
-					<Text className='color gray'>
+					<Text color='gray'>
 						Including UX design concepts, graphic design techniques,
 						interactive advice from industry speakers, social
 						events, and more.
 					</Text>
-					<Text className='color gray'>
+					<Text color='gray'>
 						Have a suggestion of something you would like to see?
 						<br />
 						Submit your feedback to{' '}
@@ -447,8 +394,29 @@ function getPeriod(h) {
 	}
 }
 
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+const days = [
+	'Sunday',
+	'Monday',
+	'Tuesday',
+	'Wednesday',
+	'Thursday',
+	'Friday',
+	'Saturday',
+];
+const months = [
+	'Jan',
+	'Feb',
+	'Mar',
+	'Apr',
+	'May',
+	'Jun',
+	'Jul',
+	'Aug',
+	'Sep',
+	'Oct',
+	'Nov',
+	'Dec',
+];
 
 const mapDay = n => days[n];
-const mapMonth = n => months[n]; 
+const mapMonth = n => months[n];

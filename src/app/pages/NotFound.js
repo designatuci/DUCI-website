@@ -1,28 +1,30 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Text, Space, LoadingD } from '../Symbols.js';
+import { Section, Space, LoadingD } from '../Symbols.js';
+import { Text } from '../components';
 
 const NotFound = () => {
 	const [linksData, setLinksData] = useState(null);
-	
+
 	useEffect(() => {
 		fetch(
 			`https://raw.githubusercontent.com/designatuci/data/main/hyperlinks.json?%uniquetime=${Math.round(
 				new Date().getTime() / 120000
 			)}`
-		).then(res => res.json()
-		).then(data => {
-			let path = window.location.pathname.substr(1);
-			console.log(path);
-			for (let link of data.links) {
-				if (link.code === path || link.code + '/' === path) {
-					data.redirect = true;
-					window.location.replace(link.link);
+		)
+			.then(res => res.json())
+			.then(data => {
+				let path = window.location.pathname.substr(1);
+				console.log(path);
+				for (let link of data.links) {
+					if (link.code === path || link.code + '/' === path) {
+						data.redirect = true;
+						window.location.replace(link.link);
+					}
 				}
-			}
-			setLinksData(data);
-		});
+				setLinksData(data);
+			});
 	}, []);
 
 	return (

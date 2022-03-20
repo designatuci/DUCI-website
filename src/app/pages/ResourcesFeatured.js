@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import {
 	Section,
-	Text,
 	Icon,
 	Space,
 	Photo,
@@ -10,6 +9,7 @@ import {
 	PageIcon,
 	CheckIcon,
 } from '../Symbols.js';
+import { Text } from '../components';
 
 function mapTypeColor(type) {
 	switch (type) {
@@ -148,7 +148,8 @@ const ResourcesFeatured = props => {
 										className='shadow'
 										style={{
 											backgroundImage: `url(${
-												card?.ogImg ?? `/static/photo/featured-resource.svg`
+												card?.ogImg ??
+												`/static/photo/featured-resource.svg`
 											})`,
 											height: '128px',
 											width: '100%',

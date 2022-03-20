@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet';
-import { Section, Text, Space, PageIcon } from '../Symbols.js';
+import { Section, Space, PageIcon } from '../Symbols.js';
+import {Text} from '../components';
 
 function setClipboard(text) {
 	var type = 'text/plain';

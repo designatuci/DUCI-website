@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Icon, Text, Space, Photo } from '../Symbols.js';
+import { Section, Icon, Space, Photo } from '../Symbols.js';
+import { Text } from '../components';
 
 const Home = () => (
 	<>
@@ -30,13 +31,13 @@ const Home = () => (
 						</Text>
 					))}
 			</Text>
-			<Text className='color gray wait show d10 subtle'>
+			<Text color='gray' className='wait show d10 subtle'>
 				The club for UI, UX, and graphic design at the University of
 				California Irvine.
 			</Text>
 			<div className='wait show drop d10 l2'>
 				<Link to='/join/' className='button L fill blue'>
-					<Text size='L' className='pagelink L white'>
+					<Text size='L' color='white' icon='right'>
 						Get involved
 					</Text>
 				</Link>
@@ -65,13 +66,13 @@ const Home = () => (
 				<div className='wait flex left'>
 					<Text size='XL' className='bold'>
 						Learn more about{' '}
-						<Text size='XL' className='bold color blue'>
+						<Text size='XL' color='blue' className='bold'>
 							Graphic Design,
 						</Text>{' '}
-						<Text size='XL' className='bold color orange'>
+						<Text size='XL' color='orange' className='bold'>
 							UX Design,
 						</Text>{' '}
-						<Text size='XL' className='bold color yellow'>
+						<Text size='XL' color='yellow' className='bold'>
 							Creative Software,
 						</Text>{' '}
 						<Text size='XL' className='bold'>
@@ -79,14 +80,14 @@ const Home = () => (
 						</Text>
 					</Text>
 					<Space block h='32' />
-					<Text className='color gray '>
+					<Text color='gray'>
 						Hosted nearly every week during the academic quarter,
 						you'll get the chance to level up your design game and
 						make new friends with fellow designers.
 					</Text>
 					<Space block h='32' />
 					<Link to='/events/'>
-						<Text className='color blue pagelink'>
+						<Text icon='right' color='blue'>
 							Found in our events
 						</Text>
 					</Link>
@@ -123,7 +124,7 @@ const Home = () => (
 					</Text>
 					<Space block h='32' />
 					<Link to='/events/'>
-						<Text className='color blue pagelink'>
+						<Text icon='right' color='blue'>
 							Found in our events
 						</Text>
 					</Link>
@@ -167,7 +168,7 @@ const Home = () => (
 					</Text>
 					<Space block h='32' />
 					<Link to='/Resources/'>
-						<Text className='color blue pagelink'>
+						<Text icon='right' color='blue'>
 							See our resources
 						</Text>
 					</Link>
@@ -198,7 +199,7 @@ const Home = () => (
 				</Text>
 				<Space h='16' />
 				<Link to='join' className='wait dx drop button L'>
-					<Text size='L' className='pagelink L color blue'>
+					<Text size='L' icon='right' color='blue'>
 						Join Design at UCI
 					</Text>
 				</Link>
@@ -229,7 +230,7 @@ const Home = () => (
 							helps striving designers.
 						</Text>
 						<Link to='/about/'>
-							<Text className='pagelink white color'>
+							<Text icon='right' color='white'>
 								Learn more about us
 							</Text>
 						</Link>

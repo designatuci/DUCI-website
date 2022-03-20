@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# Design @ UCI main site
+![homepage](./assets//home.png)
+## Running the app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This app is built on CRA without any custom webpack configs and utilizes the default react scripts. To run the app, first download the source code from the github and install all the dependencies. If you're using a unix based terminal, you can run the following commands (assuming you already have node/npm installed):
+```bash
+$ pwd
+/path/to/place/you/want/to/put/the/code
 
-## Available Scripts
+$ git clone https://github.com/designatuci/DUCI-website.git
+Cloning into 'DUCI-website'...
+...other install messages
 
-In the project directory, you can run:
+$ ls 
+DUCI-website
+...other files in this directory
 
-### `npm start`
+$ cd CUCI-website
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+$ npm install
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+To run a development server, you can use the default npm start command:
 
-### `npm test`
+```bash
+$ npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+and you can open up your app on [http://localhost:3000](http://localhost:3000) (or another port if you know what you're doing).
 
-### `npm run build`
+## Understanding the file structure
+```bash
+DUCI-website
+├── assets (images for this README)
+│   └── ...
+├── public 
+│   ├── static
+│   │   └── ...various assets
+│   └── index.html
+├── src
+│   ├── app (<- all app code here. see #architecture)
+│   └── assets
+│       └── data
+│           ├── alumniBoard.json
+│           ├── currentBoard.json
+│           ├── merchList.json
+│           ├── resources.json
+│           └── socials.json
+├── .gitignore
+├── package.json 
+└── README.md
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Basic list of important files and what they do
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Files | Description | Used in |
+| --- | --- | --- |
+| alumniBoard.json | information of all alumni board members | `src/app/pages/About` | 
+| currentBoard.json | information of all current board members | `src/app/pages/About` |
+| merchList.json | list of all historical merch data (currently only has stickers) | `src/app/pages/Merch` |
+| resources.json | all design resources for club members | `src/app/pages/Resources`, `src/app/pages/ResourcesFeatured` |
+| socials.json | social media links for DUCI | `src/app/pages/Contact`, `src/app/components/Nav`, `src/app/components/Footer` |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### Architecture
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Similar to Gatsby and Next.js, all page components are stored in the `app/pages` folder. The original name for this folder was `routes` but with react-router-dom v6 changing the name of `<Switch />` to `<Routes/>`, this change was made.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+All individual components that are not pages belong in the `app/components` folder and pure JS logic / React hooks are in the `app/controllers` folder. The exception for this are components that are used exclusively within a certain page. In these cases, the page itself will have its own set of `controllers` and `components` folders.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+React is designed with a top-down unidirectional data flow. When deciding where to place state, for example, the general rule of thumb is to place it as low level as possible. We follow this type practice with the file structure as well where we place the React components as low level as possible. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Example of a nested structure using this practice:
+```bash
+└── pages
+    ├── ..other pages
+    └── LiveMap
+        ├── components
+        │   └── Map
+        │       ├── components
+        │       │   ├── CenterMapButton
+        │       │   └── ZoomControls
+        │       ├── Map.js
+        │       └── index.js
+        ├── LiveMap.js
+        └── index.js
+```
 
-## Learn More
+In this example, the LiveMap page contains a Map component. The Map components itself, however, is a complicated component and has its own set of components like ZoomControls and CenterMapButton that are only useful to the Map and so the component files are nested.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### File structure for component/page itself
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Usually every component, if large enough to warrant a folder, will contain the component source code (with the same name as the directory its in) and an `index.js` that exports it by default.
 
-### Code Splitting
+It can have a `/components`, `/controllers`, or `/assets` folder. It will usually also have a styles file using sass modules.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+An example of a fleshed out component can look like this:
 
-### Analyzing the Bundle Size
+```bash
+└── ZoomControls
+    ├── assets
+    ├── components
+    ├── controllers
+    ├── ZoomControls.js
+    ├── ZoomControls.module.scss
+    └── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+`/assets` should contain images and other (potentially data) assets that are used by the component like icons that supplement the component. However, if it is a config file that is subject to change, it should be placed in the master assets folder at the top level or make a request to the server resource with the location stored in a .env file.
 
-### Making a Progressive Web App
+An example is the list of board members that gets displayed in the `About` page. This list is expected to change from time to time and potentially be updated by people who are not React developers. That's why these assets should not be nested deep in the project directory and be bundled together with the rest of config data.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Suspense
 
-### Advanced Configuration
+Currently, the final build size is about 50kb which isn't nearly big enough to warrant implementing Suspense for every page but probably will have plans to do so since the infrastucture is there.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Immediate improvements to be made
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* i18n?
+* a11y - mouse hover interaction (fields - text, buttons - pointer), semantic html (text component for example should be switched to various h tags)
+* pagination for events list

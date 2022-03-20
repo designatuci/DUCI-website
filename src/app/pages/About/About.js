@@ -1,7 +1,9 @@
+import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import clsx from 'clsx';
 import { Link } from 'react-router-dom';
-import { Section, Photo, Text, Space, Icon } from '../../Symbols.js';
+import { Section, Space, Icon } from '../../Symbols.js';
+import { Text } from '../../components';
+import { Profile } from './components';
 import ALUMNI_BOARD from '../../../assets/data/alumniBoard.json';
 import CURRENT_BOARD from '../../../assets/data/currentBoard.json';
 import './About.scss';
@@ -23,8 +25,12 @@ const About = () => (
 					>
 						{"We're the premier club for UI, UX, and graphic design at the University of California Irvine."
 							.split(' ')
-							.map(word => (
-								<Text size='XXXL' className='wait dx l2 bold'>
+							.map((word, i) => (
+								<Text
+									size='XXXL'
+									key={i}
+									className='wait dx l2 bold'
+								>
 									{word}
 									<pre> </pre>
 								</Text>
@@ -33,7 +39,6 @@ const About = () => (
 				</div>
 			</Section>
 		</div>
-		<img src='/static/photo/img1.png' alt='banner' />
 		<Section className=''>
 			<Text size='XL' className='wait slim'>
 				We provide a friendly space with helpful resources for students
@@ -51,7 +56,7 @@ const About = () => (
 					</Text>
 					<Space block h='32' />
 					<Link to='/resources/' className='color blue'>
-						<Text className='pagelink'>View resources</Text>
+						<Text icon='right'>View resources</Text>
 					</Link>
 				</div>
 				<div className='narrow wait dx'>
@@ -64,7 +69,7 @@ const About = () => (
 					</Text>
 					<Space block h='32' />
 					<Link to='/events/' className='color blue'>
-						<Text className='pagelink'>View events</Text>
+						<Text icon='right'>View events</Text>
 					</Link>
 				</div>
 				<div className='narrow wait'>
@@ -76,7 +81,7 @@ const About = () => (
 					</Text>
 					<Space block h='32' />
 					<Link to='/join/' className='color blue'>
-						<Text className='pagelink'>Join for notifications</Text>
+						<Text icon='right'>Join for notifications</Text>
 					</Link>
 				</div>
 			</div>
@@ -98,85 +103,25 @@ const About = () => (
 			</div>
 		</Section>
 		<Section className='board center'>
-			<div style={{ marginBottom: '64px' }}>
-				<Text size='XL'>Board Members</Text>
-			</div>
+			<Text size='XL'>Board Members</Text>
 			<div className='center row'>
-				{CURRENT_BOARD.map(({ photo, name, position, links }) => (
-					<div className={clsx('item center column')}>
-						<Photo src={`portrait/${photo}`}>
-							<div />
-						</Photo>
-						<Text size='L'>{name}</Text>
-						<Text
-							className='color gray'
-							style={{ marginTop: '8px' }}
-						>
-							{position}
-						</Text>
-						<div className='flex row' style={{ marginTop: '4px' }}>
-							{links?.map(({ type, href }) => (
-								<a
-									target='noreferer'
-									href={href}
-									style={{ padding: '4px' }}
-								>
-									<Icon
-										hoverable
-										src={`nav-${type}.svg`}
-										w='20'
-										h='20'
-									/>
-								</a>
-							))}
-						</div>
-					</div>
+				{CURRENT_BOARD.map((member, i) => (
+					<Profile key={i} data={member} />
 				))}
 			</div>
-			<Space block h='8' />
-			<div style={{ marginBottom: '64px' }}>
-				<Text size='XL'>Board Alumni</Text>
-			</div>
+			<Text size='XL' className='alumni-header'>
+				Board Alumni
+			</Text>
 			<div className='center row'>
 				{ALUMNI_BOARD.map(({ year, members }) => (
-					<>
-						<div className='year-divider'>
-							<Text className='color blue'>Departed {year}</Text>
-						</div>
-						{members.map(({ links, name, position }, i) => (
-							<div className='item center column' key={i}>
-								<Text size='L'>{name}</Text>
-								<br />
-								<Text
-									className='color gray'
-									style={{ marginTop: '8px' }}
-								>
-									{position}
-								</Text>
-								<div
-									className='flex row'
-									style={{ marginTop: '4px' }}
-								>
-									{links?.map(({ type, href }) => (
-										<a
-											target='noreferer'
-											href={href}
-											style={{
-												padding: '4px',
-											}}
-										>
-											<Icon
-												hoverable
-												src={`nav-${type}.svg`}
-												w='20'
-												h='20'
-											/>
-										</a>
-									))}
-								</div>
-							</div>
+					<Fragment key={year}>
+						<Text className='color blue year-divider'>
+							Departed {year}
+						</Text>
+						{members.map((member, i) => (
+							<Profile key={i} textOnly data={member} />
 						))}
-					</>
+					</Fragment>
 				))}
 			</div>
 		</Section>

@@ -10,7 +10,7 @@ const Icon = (props) => {
 	};
 	return (
 		<div
-			id={props.id}
+			id={props.id} 
 			className={clsx('icon', props.hoverable && 'hoverable', props.className)}
 			style={style}
 		>
@@ -45,23 +45,15 @@ const Section = ({ children, className, wrapperClass, ...props }) => (
 	</div>
 );
 
-const Text = ({ children, className, size, ...props }) => (
-	<div className={clsx('text ', size, className)} {...props}>
-		{children}
-	</div>
-);
+export { Icon, Photo, Section};
 
-export { Icon, Photo, Section, Text, };
-
-
-
-export function Space(props) {
+export function Space({block, ...props}) {
 	let style = {
 		width: props.w + 'px',
 		height: props.h + 'px',
 		...props.style,
 	};
-	if (props.block) {
+	if (block) {
 		style.display = 'block';
 	}
 	return (
