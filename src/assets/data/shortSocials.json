@@ -1,0 +1,47 @@
+[
+    {
+        "link": "https://www.tiktok.com/@design_at_uci",
+        "color": "var(--gray)",
+        "bg": {
+            "shadow": "0 12px 24px -12px #e8eaff",
+            "color": "white",
+            "background": "black"
+        },
+        "name": "TikTok",
+        "icon": "tiktok-color.svg"
+    },
+    {
+        "link": "https://www.instagram.com/designatuci",
+        "color": "#C73457",
+        "bg": {
+            "boxShadow": "0 12px 24px -12px #FEDDC7",
+            "color": "#C73457",
+            "background":
+                "linear-gradient(-120deg,#FFEFC6,#FFC3BA,#FFC9E5)"
+        },
+        "name": "Instagram",
+        "icon": "Logo-Instagram-Color.svg"
+    },
+    {
+        "link":"https://discord.com/invite/MBVrKe9",
+        "color": "#C73457",
+        "bg": {
+            "boxShadow": "0 12px 24px -12px #e8eaff",
+            "color": "#5865F2",
+            "background": "#e8eaff"
+        },
+        "name": "Discord",
+        "icon": "Discord-Logo-Color.svg"
+    },
+    {
+        "link": "https://www.linkedin.com/company/design-at-uci/",
+        "color": "#0077B7",
+        "bg": {
+            "boxShadow": "0 12px 24px -12px #B3D6EA",
+            "color": "#0077B7",
+            "background": "#B3D6EA"
+        },
+        "name": "LinkedIn",
+        "icon": "LinkedIn-Color.svg"
+    }
+]

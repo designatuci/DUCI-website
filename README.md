@@ -60,6 +60,7 @@ DUCI-website
 | merchList.json | list of all historical merch data (currently only has stickers) | `src/app/pages/Merch` |
 | resources.json | all design resources for club members | `src/app/pages/Resources`, `src/app/pages/ResourcesFeatured` |
 | socials.json | social media links for DUCI | `src/app/pages/Contact`, `src/app/components/Nav`, `src/app/components/Footer` |
+| short_socials.json | full social media icon-links for DUCI | `src/app/pages/Join`, `src/app/pages/Hey` |
 
 
 #### Architecture

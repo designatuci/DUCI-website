@@ -1,31 +1,38 @@
 import { Helmet } from 'react-helmet';
+import clsx from 'clsx';
 import { Link } from 'react-router-dom';
-import { Section, Icon, Space, Photo } from '../Symbols.js';
-import { Text } from '../components';
+import { Section, Icon, Space, Photo } from '../../Symbols.js';
+import { Text } from '../../components';
+import cn from './Home.module.scss';
 
 const Home = () => (
-	<>
+	<div className={cn.container}>
 		<Helmet>
 			<title>Welcome – Design at UCI</title>
 		</Helmet>
 		<Section className='center short page' wrapperClass='flex'>
-			<div className='wait show scale'>
+			<div className='wait show scale' style={{ marginBottom: '64px' }}>
 				<Icon className='wait subtle dx' w='32' h='32' src='logo.svg' />
 				<Space w='16' />
 				<Text size='L' className='bold'>
 					Design at UCI
 				</Text>
 			</div>
-			<Space h='0' />
 			<Text
 				size='XXXL'
-				className='block-paragraph wait show scale l3 bold color blue'
+				color='blue'
+				className='block-paragraph wait show scale l3 bold'
 				style={{ maxWidth: '900px' }}
 			>
 				{'A community for all digital designers to connect, learn, and innovate'
 					.split(' ')
 					.map((word, i) => (
-						<Text size='XXXL' className='wait dx l2 bold' key={i}>
+						<Text
+							style={{ display: 'inline-block' }}
+							size='XXXL'
+							className='wait dx l2 bold'
+							key={i}
+						>
 							{word}
 							<pre> </pre>
 						</Text>
@@ -42,16 +49,7 @@ const Home = () => (
 					</Text>
 				</Link>
 			</div>
-			<div id='heroart' className='wait drop d05 l3'></div>
-			<style>{`
-                #heroart {
-                    margin-bottom: 0;
-                    z-index: 0;
-                    position: absolute;
-                    left: 0; right: 0; bottom: 0; top: 0;
-                    background: url(/static/photo/hero.png) bottom / calc(768px + 38vw) no-repeat;
-                }
-            `}</style>
+			<div className={clsx(cn.hero, 'wait drop d05 l3')}></div>
 		</Section>
 		<Section className='fill black'>
 			<div className='split2'>
@@ -141,8 +139,6 @@ const Home = () => (
 					/>
 				</div>
 				<div className='wait flex left'>
-					{/* <Text className="color gray">Special Programs</Text>
-                    <Space block h="32"/> */}
 					<Text size='XL' className='bold'>
 						Get invovled in our special programs, like{' '}
 						<Text size='XL' className='bold color blue'>
@@ -155,10 +151,7 @@ const Home = () => (
 							Project Teams,
 						</Text>{' '}
 						<Text size='XL' className='bold'>
-							for a fun and
-						</Text>{' '}
-						<Text size='XL' className='bold'>
-							valuable experience.
+							for a fun and valuable experience.
 						</Text>
 					</Text>
 					<Space block h='32' />
@@ -191,7 +184,12 @@ const Home = () => (
 					{"Do you love design? Let's keep in touch."
 						.split(' ')
 						.map((word, i) => (
-							<Text size='XXL' className='wait l2 dx' key={i}>
+							<Text
+								style={{ display: 'inline-block' }}
+								size='XXL'
+								className='wait l2 dx'
+								key={i}
+							>
 								{word}
 								<pre> </pre>
 							</Text>
@@ -238,7 +236,7 @@ const Home = () => (
 				</Section>
 			</div>
 		</div>
-	</>
+	</div>
 );
 
 export default Home;

@@ -1,5 +1,4 @@
 import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
 import NotFound from './pages/NotFound';
 import Join from './pages/Join';
 import Hey from './pages/Hey';
@@ -7,7 +6,15 @@ import ResourcesFeatured from './pages/ResourcesFeatured';
 import PT from './pages/PT';
 import Designathons from './pages/Designathons';
 import Designathon22 from './pages/Designathon22';
-import { About, Contact, Events, EventsAll, Merch, Resources } from './pages';
+import {
+	About,
+	Contact,
+	Events,
+	EventsAll,
+	Home,
+	Merch,
+	Resources,
+} from './pages';
 import Brand from './pages/Brand';
 import { useScroll } from './controllers';
 import { Footer, Nav } from './components';

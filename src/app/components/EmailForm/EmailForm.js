@@ -1,6 +1,5 @@
 import Text from '../Text';
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import cn from './EmailForm.module.scss';
 
 const url =
 	'https://weebly.us16.list-manage.com/subscribe/post?u=96e1277e37e6f4c2940cd1dc9&id=3cdf6c3ea8';

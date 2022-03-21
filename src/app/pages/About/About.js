@@ -27,6 +27,7 @@ const About = () => (
 							.split(' ')
 							.map((word, i) => (
 								<Text
+									style={{display: 'inline-block'}}
 									size='XXXL'
 									key={i}
 									className='wait dx l2 bold'

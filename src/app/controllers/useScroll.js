@@ -1,45 +1,28 @@
-import { useEffect } from 'react';
+import { useEffect, useCallback, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
-var standbyElements;
-var animationi = 0;
-
 function useScroll() {
+	const [scrollableElements, setScrollableElements] = useState([]);
 	let { pathname } = useLocation();
 
-    function pageScroll() {
-        if (animationi >= standbyElements.length) {
-            window.removeEventListener('scroll', pageScroll);
-            return;
-        }
-        while (true) {
-            if (animationi >= standbyElements.length) {
-                break;
-            }
-            let element = standbyElements[animationi];
-            if (
-                element.getBoundingClientRect().top <
-                window.innerHeight - window.innerHeight * 0.16
-            ) {
-                element.classList.add('show');
-                animationi += 1;
-            } else {
-                break;
-            }
-        }
-    }
+	const pageScroll = useCallback(() => {
+		for (let element of scrollableElements) {
+			if (element.getBoundingClientRect().top < window.innerHeight * 0.84)
+				element.classList.add('show');
+		}
+	}, [scrollableElements]);
 
 	useEffect(() => {
-		animationi = 0;
-		window.scrollTo(0, 0);
-		standbyElements = document.getElementsByClassName('wait');
+		window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+		setScrollableElements(document.getElementsByClassName('wait'));
 		window.addEventListener('scroll', pageScroll);
 		pageScroll();
-        
-        return () => window.removeEventListener('scroll', pageScroll);
-
-	}, [pathname]);
+		return () => window.removeEventListener('scroll', pageScroll);
+	}, [pathname, pageScroll]);
 }
-
 
 export default useScroll;
