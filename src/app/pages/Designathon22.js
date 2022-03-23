@@ -1,10 +1,13 @@
+ /* eslint-disable */
+// TODO: pending refactor
+
 import { Helmet } from 'react-helmet';
-import React, { useState, useEffect, Component } from 'react';
+import { useState, useEffect, Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Section, Space, Icon, Photo } from '../Symbols.js';
 import { Text } from '../components';
 
-const Designathon22 = props => {
+const Designathon22 = () => {
 	useEffect(() => {
 		T = 0;
 		initialize();
@@ -3107,7 +3110,7 @@ class Program {
 
 		// Check errors
 		gl.useProgram(this.program);
-		if (gl.getError() != 0) {
+		if (gl.getError() !== 0) {
 			// alert("Error creating progrAM (PST)")
 		}
 

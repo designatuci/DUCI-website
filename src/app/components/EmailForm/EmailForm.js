@@ -97,18 +97,19 @@ const EmailForm = () => {
 							{(status == null ||
 								status === 'sending' ||
 								(status === 'error' &&
-									message.indexOf('already subscribed') ==
+									message.indexOf('already subscribed') ===
 										-1)) && (
-								<a
+								<button
 									className='button fill blue'
 									onClick={validate}
+									style={{border: 'none', cursor: 'pointer'}}
 								>
 									<Text>
 										{status === 'sending'
 											? '• • •'
 											: 'Sign-up'}
 									</Text>
-								</a>
+								</button>
 							)}
 							{status === 'error' &&
 								message.indexOf('already subscribed') ===

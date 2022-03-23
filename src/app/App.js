@@ -1,21 +1,21 @@
 import { Route, Routes } from 'react-router-dom';
-import NotFound from './pages/NotFound';
-import Join from './pages/Join';
 import Hey from './pages/Hey';
-import ResourcesFeatured from './pages/ResourcesFeatured';
-import PT from './pages/PT';
 import Designathons from './pages/Designathons';
 import Designathon22 from './pages/Designathon22';
 import {
 	About,
+	Brand,
 	Contact,
 	Events,
 	EventsAll,
 	Home,
+	Join,
 	Merch,
+	NotFound,
+	PT,
 	Resources,
+	ResourcesFeatured,
 } from './pages';
-import Brand from './pages/Brand';
 import { useScroll } from './controllers';
 import { Footer, Nav } from './components';
 

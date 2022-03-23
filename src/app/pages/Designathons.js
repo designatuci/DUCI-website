@@ -60,9 +60,7 @@ const Designathons = () => (
 				</Text>
 				<Text className='bold'>January 28-30</Text>
 				<Space h='32' />
-				<a className='button'>
-					<Text color='blue' icon='right'>Event Page</Text>
-				</a>
+					<Text className='button' color='blue' icon='right'>Event Page</Text>
 			</Link>
 		</Section>
 		<Section

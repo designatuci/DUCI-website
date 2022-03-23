@@ -21,6 +21,7 @@ function useScroll() {
 		setScrollableElements(document.getElementsByClassName('wait'));
 		window.addEventListener('scroll', pageScroll);
 		pageScroll();
+		
 		return () => window.removeEventListener('scroll', pageScroll);
 	}, [pathname, pageScroll]);
 }

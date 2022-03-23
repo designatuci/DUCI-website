@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
 
-const Icon = (props) => {
+const Icon = props => {
 	let style = {
 		width: props.w + 'px',
 		height: props.h + 'px',
@@ -10,16 +10,20 @@ const Icon = (props) => {
 	};
 	return (
 		<div
-			id={props.id} 
-			className={clsx('icon', props.hoverable && 'hoverable', props.className)}
+			id={props.id}
+			className={clsx(
+				'icon',
+				props.hoverable && 'hoverable',
+				props.className
+			)}
 			style={style}
 		>
 			{props.children}
 		</div>
 	);
-}
+};
 
-const Photo = (props) =>{
+const Photo = props => {
 	const [photoData, setphotoData] = useState(null);
 	let style = {
 		backgroundImage: photoData,
@@ -27,17 +31,20 @@ const Photo = (props) =>{
 	};
 
 	useEffect(() => {
-        setTimeout(() => {
-            setphotoData(`url(/static/photo/${props.src})`);
-        }, (props?.lazy ? 500 : 0));
-	}, [props.lazy]);
+		setTimeout(
+			() => {
+				setphotoData(`url(/static/photo/${props.src})`);
+			},
+			props?.lazy ? 500 : 0
+		);
+	}, [props.lazy, props.src]);
 
 	return (
 		<div className={`photo ${props.className}`} style={style} id={props.id}>
 			{props.children}
 		</div>
 	);
-}
+};
 
 const Section = ({ children, className, wrapperClass, ...props }) => (
 	<div className={clsx('section ', className)} {...props}>
@@ -45,9 +52,9 @@ const Section = ({ children, className, wrapperClass, ...props }) => (
 	</div>
 );
 
-export { Icon, Photo, Section};
+export { Icon, Photo, Section };
 
-export function Space({block, ...props}) {
+export function Space({ block, ...props }) {
 	let style = {
 		width: props.w + 'px',
 		height: props.h + 'px',
@@ -145,40 +152,23 @@ export function PageIcon(props) {
 	);
 }
 
-export function CheckIcon(props) {
-	if (props.check === true) {
-		return (
-			<svg
-				viewBox='0 0 24 24'
-				xmlns='http://www.w3.org/2000/svg'
-				fillRule='evenodd'
-				clipRule='evenodd'
-				strokeLinejoin='round'
-				strokeMiterlimit={2}
-				fill={props.color}
-				width={props.r}
-				height={props.r}
-				{...props}
-			>
-				<path d='M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12S0 18.623 0 12 5.377 0 12 0zM6.99 13.768l2.828 2.828a1.5 1.5 0 002.121 0l7.071-7.071a1.5 1.5 0 10-2.121-2.121l-6.01 6.01-1.768-1.768a1.501 1.501 0 00-2.121 2.122z' />
-			</svg>
-		);
-	} else {
-		return (
-			<svg
-				viewBox='0 0 24 24'
-				xmlns='http://www.w3.org/2000/svg'
-				fillRule='evenodd'
-				clipRule='evenodd'
-				strokeLinejoin='round'
-				strokeMiterlimit={2}
-				fill={props.color}
-				width={props.r}
-				height={props.r}
-				{...props}
-			>
-				<path d='M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12S0 18.623 0 12 5.377 0 12 0zm0 3c4.967 0 9 4.033 9 9s-4.033 9-9 9-9-4.033-9-9 4.033-9 9-9z' />
-			</svg>
-		);
-	}
-}
+export const CheckIcon = ({ check, ...props }) => (
+	<svg
+		viewBox='0 0 24 24'
+		xmlns='http://www.w3.org/2000/svg'
+		fillRule='evenodd'
+		clipRule='evenodd'
+		strokeLinejoin='round'
+		strokeMiterlimit={2}
+		fill={props.color}
+		width={props.r}
+		height={props.r}
+		{...props}
+	>
+		{check ? (
+			<path d='M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12S0 18.623 0 12 5.377 0 12 0zM6.99 13.768l2.828 2.828a1.5 1.5 0 002.121 0l7.071-7.071a1.5 1.5 0 10-2.121-2.121l-6.01 6.01-1.768-1.768a1.501 1.501 0 00-2.121 2.122z' />
+		) : (
+			<path d='M12 0c6.623 0 12 5.377 12 12s-5.377 12-12 12S0 18.623 0 12 5.377 0 12 0zm0 3c4.967 0 9 4.033 9 9s-4.033 9-9 9-9-4.033-9-9 4.033-9 9-9z' />
+		)}
+	</svg>
+);

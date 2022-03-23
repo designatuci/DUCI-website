@@ -8,8 +8,9 @@ import {
 	LoadingD,
 	PageIcon,
 	CheckIcon,
-} from '../Symbols.js';
-import { Text } from '../components';
+} from '../../Symbols.js';
+import { Text } from '../../components';
+import cn from './ResourcesFeatured.module.scss';
 
 function mapTypeColor(type) {
 	switch (type) {
@@ -88,7 +89,7 @@ const ResourcesFeatured = props => {
 						},
 						{ title: 'Other', color: 'gray', fill: 'var(--gray)' },
 					].map(item => (
-						<a onClick={() => toggleFilter(item.color)}>
+						<button key={item.title} className={cn.toggle} onClick={() => toggleFilter(item.color)}>
 							<div
 								className='flex row pointer'
 								style={{ padding: '0 24px' }}
@@ -103,7 +104,7 @@ const ResourcesFeatured = props => {
 									{item.title}
 								</Text>
 							</div>
-						</a>
+						</button>
 					))}
 				</div>
 			</Section>
@@ -118,6 +119,7 @@ const ResourcesFeatured = props => {
 							.filter(e => filterMode[mapTypeColor(e.type)])
 							.map(card => (
 								<a
+									key={card.link}
 									href={card.link}
 									target='_blank'
 									rel='noopener noreferrer'

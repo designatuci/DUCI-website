@@ -97,27 +97,32 @@ const Nav = () => {
 						)}
 					</div>
 					<div className='center row group right'>
-						<a
+						<button
 							className='item center'
 							id='navToggle'
 							onClick={toggleMobileExpand}
+							style={{
+								border: 'none',
+								display: 'inline-block',
+								padding: '16px',
+							}}
 						>
 							<Icon w='24' h='24' src='nav-menu.svg' />
-						</a>
+						</button>
 					</div>
 					<div className='links spaceChildren'>
 						{[
-							{ label: 'Events', url: '/events/' },
-							{ label: 'Resources', url: '/resources/' },
-							{ label: 'About', url: '/about/' },
-							{ label: 'Contact', url: '/contact/' },
+							{ label: 'Events', url: '/events' },
+							{ label: 'Resources', url: '/resources' },
+							{ label: 'About', url: '/about' },
+							{ label: 'Contact', url: '/contact' },
 						].map(({ label, url }) => (
 							<Link key={url} to={url} className='item center'>
 								<Text size='L'>{label}</Text>
 							</Link>
 						))}
 						<Link
-							to='/join/'
+							to='/join'
 							className='item center button fill sky'
 						>
 							<Text size='L'>Join</Text>

@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Section, Icon, PageIcon } from '../Symbols.js';
-import { EmailForm, Text } from '../components';
-import SHORT_SOCIALS from '../../assets/data/shortSocials.json';
+import { Section, Icon, PageIcon } from '../../Symbols.js';
+import { EmailForm, Text } from '../../components';
+import SHORT_SOCIALS from '../../../assets/data/shortSocials.json';
+import cn from './Join.module.scss';
 
 const Join = () => (
 	<>
@@ -47,13 +48,7 @@ const Join = () => (
 					>
 						<PageIcon
 							color={social.color}
-							style={{
-								width: '32px',
-								height: '32px',
-								position: 'absolute',
-								top: '32px',
-								right: '32px',
-							}}
+							className={cn.icon}
 						/>
 						<Icon w='48' h='48' src={social.icon} />
 						<Text className='bold' size='L'>

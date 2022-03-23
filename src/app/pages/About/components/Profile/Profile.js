@@ -1,6 +1,5 @@
-import clsx from 'clsx';
-import cn from './Profile.module.scss';
 import { Icon } from '../../../../Symbols';
+import cn from './Profile.module.scss';
 
 const Profile = ({ textOnly = false, data }) => (
 	<div className={cn.container}>

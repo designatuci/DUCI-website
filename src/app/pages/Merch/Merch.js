@@ -23,7 +23,7 @@ const Merch = () => (
 			</Text>
 		</Section>
 		{MERCH_LIST.map(({ name, description, inStock, items }) => (
-			<Section className='short'>
+			<Section className='short' key={name}>
 				<div className='flex left spaceChildren'>
 					<Text size='XL'>{name}</Text>
 					<div className='flex left spaceChildrenSmall'>

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import Text from '../Text';
 import { Section, Icon, Space } from '../../Symbols.js';
 import socials from '../../../assets/data/socials.json';
-import cn from './Footer.module.scss';
 
 const Footer = () => (
 	<Section id='bot' className='short'>
@@ -36,13 +35,13 @@ const Footer = () => (
 			</div>
 			<div className='spaceChildrenSmall'>
 				<div>
-					<Link to='/resources/' className='mark'>
+					<Link to='/resources' className='mark'>
 						<Text>Resources</Text>
 					</Link>
 				</div>
 				<Space h='16' />
 				<div>
-					<Link to='/resources/featured/'>
+					<Link to='/resources/featured'>
 						<Text>Featured Resources</Text>
 					</Link>
 				</div>
@@ -63,7 +62,6 @@ const Footer = () => (
 				</div>
 				<div>
 					<a
-					
 						target='noreferer'
 						href='https://medium.com/@designatuci'
 					>
@@ -72,7 +70,6 @@ const Footer = () => (
 				</div>
 				<div>
 					<a
-						
 						target='noreferer'
 						href='https://us16.campaign-archive.com/home/?u=96e1277e37e6f4c2940cd1dc9&id=3cdf6c3ea8'
 					>
@@ -83,23 +80,23 @@ const Footer = () => (
 			</div>
 			<div className='spaceChildrenSmall'>
 				<div>
-					<Link to='/join/' className='mark'>
+					<Link to='/join' className='mark'>
 						<Text>Join</Text>
 					</Link>
 				</div>
 				<Space h='16' />
 				<div>
-					<Link to='/contact/'>
+					<Link to='/contact'>
 						<Text>Contact</Text>
 					</Link>
 				</div>
 				<div>
-					<Link to='/events/'>
+					<Link to='/events'>
 						<Text>Events</Text>
 					</Link>
 				</div>
 				<div>
-					<Link to='/about/'>
+					<Link to='/about'>
 						<Text>About</Text>
 					</Link>
 				</div>
@@ -116,7 +113,12 @@ const Footer = () => (
 			<div>
 				<Text>
 					Developed by{' '}
-					<a className='mark' href='https://www.kailerg.com/'>
+					<a
+						className='mark'
+						target='_blank'
+						rel='noopener noreferrer'
+						href='https://www.kailerg.com/'
+					>
 						Kailer Garcia
 					</a>
 				</Text>

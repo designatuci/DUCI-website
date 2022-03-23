@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Space, LoadingD } from '../Symbols.js';
-import { Text } from '../components';
+import { Section, Space, LoadingD } from '../../Symbols.js';
+import { Text } from '../../components';
 
 const NotFound = () => {
 	const [linksData, setLinksData] = useState(null);
@@ -58,16 +58,16 @@ const NotFound = () => {
 						</div>
 						<Space h='8' />
 						<Text className='color gray'>
-							The URL{' '}
-							<Text className='bold' style={{ margin: '0 4px' }}>
+							The URL
+							<Text className='bold' style={{ margin: '0 6px' }}>
 								{window.location.hostname +
 									window.location.pathname}
-							</Text>{' '}
+							</Text>
 							does not exist.
 						</Text>
 						<Text className='color gray'>
 							If you believe this is a mistake, please{' '}
-							<Link to='/contact/' className='link'>
+							<Link to='/contact' className='link'>
 								contact us
 							</Link>
 							.

@@ -120,3 +120,12 @@ Currently, the final build size is about 50kb which isn't nearly big enough to w
 * i18n?
 * a11y - mouse hover interaction (fields - text, buttons - pointer), semantic html (text component for example should be switched to various h tags)
 * pagination for events list
+* A lot of styling still needs to be refactored
+
+
+### Later planned updates:
+
+Would like to rewrite the way designathons are currently structured. Since the designathon is over and the next one isn't for a while, there are no immediate plans to make these changes (especially since it's a fat >3k sloc file) but ideally we have a history of previous designathon websites.
+
+Up to us on whether we want to keep the same format for every year and only change the data or have a new design format like most hackathon websites.
+
