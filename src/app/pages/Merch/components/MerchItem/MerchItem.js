@@ -2,7 +2,7 @@ import { Text } from '../../../../components';
 import cn from './MerchItem.module.scss';
 
 const MerchItem = ({ path, ...item }) => (
-	<div className={cn.container} key={item.name}>
+	<div key={item.name} className={cn.container}>
 		<div className={cn.aspect}>
 			<img
 				className={cn.photo}
