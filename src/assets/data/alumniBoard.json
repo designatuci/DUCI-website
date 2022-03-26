@@ -1,19 +1,66 @@
 [{
     "year": 2022,
     "members": [{
-        "name": "Kailer Garcia",
-        "position": "Creative Director",
-        "color": "blue",
-        "links": [{
+            "name": "Kailer Garcia",
+            "position": "Creative Director",
+            "color": "blue",
+            "links": [{
+                    "type": "linkedin",
+                    "href": "https://www.linkedin.com/in/kailer/"
+                },
+                {
+                    "type": "website",
+                    "href": "https://www.kailerg.com/"
+                }
+            ]
+        },
+        {
+            "name": "Vivian Nguyen",
+            "position": "Media Content Creator",
+            "color": "blue",
+            "links": [{
                 "type": "linkedin",
-                "href": "https://www.linkedin.com/in/kailer/"
-            },
-            {
-                "type": "website",
-                "href": "https://www.kailerg.com/"
-            }
-        ]
-    }]
+                "href": "https://www.linkedin.com/in/vivvnguyenn/"
+            }]
+        },
+        {
+            "name": "Amy Steinmetz",
+            "position": "Financial Chair",
+            "color": "blue",
+            "links": [{
+                    "type": "linkedin",
+                    "href": "https://www.linkedin.com/in/amysteinmetz/"
+                },
+                {
+                    "type": "website",
+                    "href": "https://uxfol.io/steinmea"
+                }, {
+                    "type": "instagram",
+                    "href": "https://www.instagram.com/amytallgirl/"
+                }
+            ]
+        },
+        {
+            "name": "Vivian Lin",
+            "position": "Industry Outreach Coordinator",
+            "color": "blue",
+            "links": [{
+                    "type": "linkedin",
+                    "href": "https://www.linkedin.com/in/vivianplin/"
+                },
+                {
+                    "type": "instagram",
+                    "href": "https://www.instagram.com/strawbbyv/"
+                }
+            ]
+        },
+        {
+            "name": "Kevin Tsai",
+            "position": "Industry Outreach Coordinator",
+            "color": "blue",
+            "links": []
+        }
+    ]
 }, {
     "year": 2021,
     "members": [{
