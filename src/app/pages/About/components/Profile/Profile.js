@@ -4,10 +4,15 @@ import cn from './Profile.module.scss';
 const Profile = ({ textOnly = false, data }) => (
 	<div className={cn.container}>
 		{!textOnly && (
-			<img
-				src={'/static/photo/portrait/' + data.photo}
-				alt={data.name + ' headshot'}
-			/>
+			<div className={cn.aspect}>
+				<img
+					src={
+						require(`../../../../../assets/images/board/current/${data.photo}`)
+							.default
+					}
+					alt={data.name + ' headshot'}
+				/>
+			</div>
 		)}
 		<p>
 			{data.name}
@@ -20,7 +25,7 @@ const Profile = ({ textOnly = false, data }) => (
 				<a
 					key={href}
 					target='_blank'
-                    rel='noopener noreferrer'
+					rel='noopener noreferrer'
 					href={href}
 				>
 					<Icon hoverable src={`nav-${type}.svg`} w='20' h='20' />

@@ -24,7 +24,7 @@ const Merch = () => (
 			</Text>
 		</Section>
 		{MERCH_LIST.map(release => (
-			<MerchDropListing {...release} />
+			<MerchDropListing key={release.path} {...release} />
 		))}
 	</>
 );

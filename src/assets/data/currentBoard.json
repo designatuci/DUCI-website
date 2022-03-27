@@ -20,60 +20,6 @@
         "photo": "Evangeline_Gao.png"
     },
     {
-        "name": "Kailer Garcia",
-        "position": "Creative Director",
-        "color": "blue",
-        "photo": "Kailer_Garcia.png",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/kailer/"
-            },
-            {
-                "type": "website",
-                "href": "https://www.kailerg.com/"
-            }
-        ]
-    },
-    {
-        "name": "Isabel Pham",
-        "position": "Visual Designer",
-        "color": "blue",
-        "photo": "Isabel_Pham.png",
-        "links": [{
-            "type": "linkedin",
-            "href": "https://www.linkedin.com/in/isabe1pham/"
-        }]
-    },
-    {
-        "name": "Vivian Nguyen",
-        "position": "Content Creator",
-        "color": "blue",
-        "photo": "Vivian_Nguyen.png",
-        "links": [{
-            "type": "linkedin",
-            "href": "https://www.linkedin.com/in/vivvnguyenn/"
-        }]
-    },
-    {
-        "name": "Amy Steinmetz",
-        "position": "Financial Chair",
-        "color": "blue",
-        "photo": "Amy_Steinmetz.png",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/amysteinmetz/"
-            },
-            {
-                "type": "website",
-                "href": "https://uxfol.io/steinmea"
-            },
-            {
-                "type": "instagram",
-                "href": "https://www.instagram.com/amytallgirl/"
-            }
-        ]
-    },
-    {
         "name": "Carly Chan",
         "position": "Marketing Director",
         "color": "green",
@@ -93,14 +39,44 @@
         ]
     },
     {
+        "name": "Sonali Chellappa",
+        "position": "Project Teams Coordinator",
+        "color": "pink",
+        "photo": "Sonali_Chellappa.png"
+    },
+    {
+        "name": "Gabby Tom",
+        "position": "Project Teams Coordinator",
+        "color": "pink",
+        "photo": "Gabby_Tom.jpg"
+    },
+    {
+        "name": "Juhi Patel",
+        "position": "Project Teams Committee",
+        "color": "pink",
+        "photo": "Juhi_Patel.jpg"
+    },
+    {
+        "name": "Sunny Stetsyuk",
+        "position": "Social Coordinator",
+        "color": "pink",
+        "photo": "Sunny_Stetsyuk.jpg"
+    },
+    {
+        "name": "Jorina Chen",
+        "position": "Social Coordinator",
+        "color": "pink",
+        "photo": "Jorina_Chen.jpg"
+    },
+    {
         "name": "Iantha Khan",
-        "position": "Marketing",
+        "position": "Marketing Coordinator",
         "color": "green",
-        "photo": "missing.svg"
+        "photo": "Iantha_Khan.png"
     },
     {
         "name": "Jolin Huang",
-        "position": "Marketing",
+        "position": "Marketing Coordinator",
         "color": "green",
         "photo": "Jolin_Huang.png",
         "links": [{
@@ -118,35 +94,30 @@
         ]
     },
     {
-        "name": "Kevin Tsai",
-        "position": "Industry Outreach",
-        "color": "red",
-        "photo": "missing.svg"
+        "name": "Isabel Pham",
+        "position": "Creative Director",
+        "color": "blue",
+        "photo": "Isabel_Pham.png",
+        "links": [{
+            "type": "linkedin",
+            "href": "https://www.linkedin.com/in/isabe1pham/"
+        }]
     },
     {
-        "name": "Vivian Lin",
-        "position": "Industry Outreach",
+        "name": "Karla Avalos",
+        "position": "Graphic Designer",
         "color": "red",
-        "photo": "Vivian_Lin.png",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/vivianplin/"
-            },
-            {
-                "type": "instagram",
-                "href": "https://www.instagram.com/strawbbyv/"
-            }
-        ]
+        "photo": "Karla_Avalos.jpg"
     },
     {
         "name": "Meghna Kaligotla",
-        "position": "Workshop Committee",
+        "position": "Workshop Coordinator",
         "color": "red",
-        "photo": "missing.svg"
+        "photo": "Meghna_Kaligotla.png"
     },
     {
         "name": "Vivian Chu",
-        "position": "Workshop Committee",
+        "position": "Workshop Coordinator",
         "color": "red",
         "photo": "Vivian_Chu.png",
         "links": [{
@@ -155,21 +126,30 @@
         }]
     },
     {
-        "name": "Sonali Chellappa",
-        "position": "Project Teams Committee",
-        "color": "pink",
-        "photo": "Sonali_Chellappa.png"
+        "name": "Michael Chang",
+        "position": "Financial Chair",
+        "color": "red",
+        "photo": "Michael_Chang.jpg"
     },
     {
-        "name": "Gabby Tom",
-        "position": "Project Teams Committee",
-        "color": "pink",
-        "photo": "missing.svg"
+        "name": "Ryan Yang",
+        "position": "Webmaster",
+        "color": "red",
+        "photo": "Ryan_Yang.jpg",
+        "links": [{
+            "type": "website",
+            "href": "https://ryqn.dev"
+        },
+        {
+            "type": "instagram",
+            "href": "https://instagram.com/veryfewsbux"
+        }
+    ]
     },
     {
-        "name": "Juhi Patel",
-        "position": "Project Teams Committee",
-        "color": "pink",
-        "photo": "missing.svg"
+        "name": "Taesung Hwang",
+        "position": "Webmaster",
+        "color": "red",
+        "photo": "Taesung_Hwang.jpg"
     }
 ]

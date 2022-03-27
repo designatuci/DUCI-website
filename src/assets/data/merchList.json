@@ -13,12 +13,12 @@
             {
                 "name": "\"uc irvine\"",
                 "price": 3.5,
-                "photo": "uci.png" 
+                "photo": "ucirvine.svg" 
             },
             {
                 "name": "Rainbow Heart Pen Tool",
                 "price": 3.5,
-                "photo": "pen.png"
+                "photo": "heart.svg"
             }
         ]
     },

@@ -4,51 +4,30 @@ import { Link } from 'react-router-dom';
 import { Section, Space, Icon, LoadingD, PageIcon } from '../../Symbols.js';
 import { Text } from '../../components';
 import EventCard from './components/EventCard/EventCard.js';
+import EVENT_DATA from '../../../assets/data/events/all.json';
 
 const Events = () => {
 	const [eventData, setEventData] = useState(null);
 	useEffect(() => {
-		let recursiveUpdate;
-		let nextCheck;
-		recursiveUpdate = () => {
-			fetch(
-				`https://raw.githubusercontent.com/designatuci/data/main/events.json?%uniquetime=${Math.round(
-					new Date().getTime()
-				)}`
-			)
-				.then(res => res.json())
-				.then(data => {
-					let eventData = {
-						upcoming: [],
-						past: [],
-						next: null,
-					};
-					let now = new Date();
-					for (let event of data.events) {
-						// for (let event of data.events) {
-						let time = new Date(
-							new Date(event.time).getTime() +
-								event.duration * 60000
-						);
-						if (now < time) {
-							eventData.next = event;
-							eventData.upcoming.unshift(event);
-						} else {
-							eventData.past.push(event);
-						}
-					}
-					eventData.upcoming.shift();
-					setEventData(eventData);
-					// update in 60 seconds
-					if (eventData.next != null) {
-						clearTimeout(nextCheck);
-						nextCheck = setTimeout(() => {
-							recursiveUpdate();
-						}, 60000);
-					}
-				});
+		let eventData = {
+			upcoming: [],
+			past: [],
+			next: null,
 		};
-		recursiveUpdate();
+		let now = new Date();
+		for (let event of EVENT_DATA) {
+			let time = new Date(
+				new Date(event.time).getTime() + event.duration * 60000
+			);
+			if (now < time) {
+				eventData.next = event;
+				eventData.upcoming.unshift(event);
+			} else {
+				eventData.past.push(event);
+			}
+		}
+		eventData.upcoming.shift();
+		setEventData(eventData);
 	}, []);
 	return (
 		<>
@@ -158,7 +137,12 @@ const Events = () => {
 					{eventData != null &&
 						eventData.past
 							.slice(0, 12)
-							.map(event => <EventCard key={event.time + event.title} {...event} />)}
+							.map(event => (
+								<EventCard
+									key={event.time + event.title}
+									{...event}
+								/>
+							))}
 				</div>
 			</Section>
 			<Section
@@ -385,7 +369,7 @@ function getMinutes(m) {
 	}
 }
 function getPeriod(h) {
-	if (h > 12) {
+	if (h >= 12) {
 		return 'PM';
 	} else {
 		return 'AM';
