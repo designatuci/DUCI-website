@@ -1,20 +1,10 @@
 import { Helmet } from 'react-helmet';
-import { useState, useEffect } from 'react';
 import { Section, LoadingD } from '../../Symbols.js';
 import { Text } from '../../components';
 import { EventCard } from './components';
+import EVENT_DATA from '../../../assets/data/events/all.json';
 
 const EventsAll = () => {
-	const [eventData, setEventData] = useState(null);
-	useEffect(() => {
-		fetch(
-			'https://raw.githubusercontent.com/designatuci/data/main/events.json'
-		)
-			.then(res => res.json())
-			.then(data => {
-				setEventData(data.events);
-			});
-	}, []);
 	return (
 		<>
 			<Helmet>
@@ -24,7 +14,7 @@ const EventsAll = () => {
 				<Text size='XL'>All Events</Text>
 			</Section>
 			<Section className='center short fill gray'>
-				{eventData == null ? (
+				{EVENT_DATA == null ? (
 					// Loading animation
 					<LoadingD width='128' style={{ marginBottom: '256px' }} />
 				) : (
@@ -33,7 +23,7 @@ const EventsAll = () => {
 						className='splitEventCard maxWidth'
 						style={{ textAlign: 'left' }}
 					>
-						{eventData.map(event => (
+						{EVENT_DATA.map(event => (
 							<EventCard
 								key={event.time + event.title}
 								{...event}
