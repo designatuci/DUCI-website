@@ -1,0 +1,40 @@
+.container {
+    display: grid;
+    margin: 25px 0px;
+    width: 100%;
+    max-width: 210px;
+    place-content: top;
+    align-self: flex-start;
+
+    @media screen and (max-width: 768px) {
+        width: 50%;        
+        font-size: 0.85em;
+    }
+
+    &>img {
+        width: 88%;
+        position: relative;
+        border-radius: 12px;
+        background-color: var(--silver);
+        margin: 16px auto;
+    }
+
+    &>p {
+        font-size: 1.5em;
+        color: black;
+
+        &>span {
+            margin: 10px;
+            font-size: 0.75em;
+            color: grey;
+        }
+    }
+
+    &>.socials {
+        margin: 0 auto;
+        width: min-content;
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 8px;
+    }
+}

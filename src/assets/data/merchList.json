@@ -1,0 +1,48 @@
+[{
+        "name": "Fall-Winter 2021 items",
+        "description": "High quality, weather-proof vinyl items with exclusive, original designs. Approximately 3x3 inches.",
+        "inStock": false,
+        "items": [{
+                "type": "holo",
+                "name": "Chill Out",
+                "photo": "Sf21-frozen.png"
+            },
+            {
+                "name": "Bobaeater",
+                "price": 3,
+                "photo": "Sf21-bobaeater.png"
+            },
+            {
+                "name": "Design is My Passion",
+                "price": 3,
+                "photo": "Sf21-passion.png"
+            },
+            {
+                "name": "D@UCI Boba",
+                "price": 3,
+                "photo": "Sf21-boba.png"
+            }
+        ]
+    },
+    {
+        "name": "2020 items",
+        "description": "",
+        "inStock": false,
+        "items": [{
+                "name": "I Heart Design",
+                "price": 3,
+                "photo": "sticker-heart.svg"
+            },
+            {
+                "name": "Pen Tool",
+                "price": 3,
+                "photo": "sticker-pentool.svg"
+            },
+            {
+                "name": "Boba",
+                "price": 3,
+                "photo": "sticker-boba.svg"
+            }
+        ]
+    }
+]

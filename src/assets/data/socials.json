@@ -1,0 +1,49 @@
+[{
+        "name": "tik tok",
+        "link": "https://www.tiktok.com/@design_at_uci",
+        "icons": {
+            "default": "tiktok.svg",
+            "nav": "nav-tiktok.svg"
+        }
+    },
+    {
+        "name": "youtube",
+        "link": "https://www.youtube.com/channel/UC3LqXqBN-R7C91ttlyXHhIQ",
+        "icons": {
+            "default": "youtube.svg",
+            "nav": "nav-youtube.svg"
+        }
+    },
+    {
+        "name": "discord",
+        "link": "https://discord.com/invite/MBVrKe9",
+        "icons": {
+            "default": "discord.svg",
+            "nav": "nav-discord.svg"
+        }
+    },
+    {
+        "name": "facebook",
+        "link": "https://www.facebook.com/designatuci/",
+        "icons": {
+            "default": "facebook.svg",
+            "nav": "nav-facebook.svg"
+        }
+    },
+    {
+        "name": "linkedin",
+        "link": "https://www.linkedin.com/company/design-at-uci",
+        "icons": {
+            "default": "linkedin.svg",
+            "nav": "nav-linkedin.svg"
+        }
+    },
+    {
+        "name": "instagram",
+        "link": "https://www.instagram.com/designatuci/",
+        "icons": {
+            "default": "instagram.svg",
+            "nav": "nav-instagram.svg"
+        }
+    }
+]

@@ -1,0 +1,113 @@
+[{
+    "year": 2022,
+    "members": [{
+        "name": "Kailer Garcia",
+        "position": "Creative Director",
+        "color": "blue",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/kailer/"
+            },
+            {
+                "type": "website",
+                "href": "https://www.kailerg.com/"
+            }
+        ]
+    }]
+}, {
+    "year": 2021,
+    "members": [{
+            "name": "Jody Jamin",
+            "position": "President",
+            "color": "blue"
+        },
+        {
+            "name": "Ivy Thong",
+            "position": "Vice President",
+            "color": "blue"
+        },
+        {
+            "name": "Andrew Benson",
+            "position": "Financial Chair",
+            "color": "blue"
+        },
+        {
+            "name": "Laney Dang",
+            "position": "Marketing Director",
+            "color": "green"
+        },
+        {
+            "name": "John Ly",
+            "position": "Marketing",
+            "color": "green"
+        },
+        {
+            "name": "Ashlyn Riambon",
+            "position": "Marketing",
+            "color": "green"
+        },
+        {
+            "name": "Stella Adriana",
+            "position": "Industry Outreach",
+            "color": "red"
+        },
+        {
+            "name": "Sophia Huang",
+            "position": "Workshop Committee",
+            "color": "red"
+        },
+        {
+            "name": "Sruthi Ramabadran",
+            "position": "Social Coordinator",
+            "color": "red"
+        },
+        {
+            "name": "Jonathan Fung",
+            "position": "Project Teams Committee",
+            "color": "pink"
+        },
+        {
+            "name": "Angela Martin",
+            "position": "Project Teams Committee",
+            "color": "pink"
+        }
+    ]
+}, {
+    "year": 2020,
+    "members": [{
+            "name": "Tiffany Nguyen",
+            "position": "President",
+            "color": "blue"
+        },
+        {
+            "name": "Nguyen Dang",
+            "position": "Visual Designer",
+            "color": "blue"
+        },
+        {
+            "name": "Kacey Diep",
+            "position": "Finnacial Chair",
+            "color": "blue"
+        },
+        {
+            "name": "Akshita Nathani",
+            "position": "Industry Outreach",
+            "color": "red"
+        },
+        {
+            "name": "Danny Pham",
+            "position": "Social Coordinator",
+            "color": "red"
+        },
+        {
+            "name": "Sabrina Lee",
+            "position": "Social Coordinator",
+            "color": "red"
+        },
+        {
+            "name": "Dachelle Alo",
+            "position": "Project Teams Committee",
+            "color": "pink"
+        }
+    ]
+}]

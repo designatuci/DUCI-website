@@ -1,0 +1,175 @@
+[{
+        "name": "Hannah Limary",
+        "position": "President",
+        "color": "blue",
+        "photo": "Hannah_Limary.png",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/hannah-limary"
+            },
+            {
+                "type": "website",
+                "href": "https://hannahlimary.squarespace.com/"
+            }
+        ]
+    },
+    {
+        "name": "Evangeline Gao",
+        "position": "Vice President",
+        "color": "blue",
+        "photo": "Evangeline_Gao.png"
+    },
+    {
+        "name": "Kailer Garcia",
+        "position": "Creative Director",
+        "color": "blue",
+        "photo": "Kailer_Garcia.png",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/kailer/"
+            },
+            {
+                "type": "website",
+                "href": "https://www.kailerg.com/"
+            }
+        ]
+    },
+    {
+        "name": "Isabel Pham",
+        "position": "Visual Designer",
+        "color": "blue",
+        "photo": "Isabel_Pham.png",
+        "links": [{
+            "type": "linkedin",
+            "href": "https://www.linkedin.com/in/isabe1pham/"
+        }]
+    },
+    {
+        "name": "Vivian Nguyen",
+        "position": "Content Creator",
+        "color": "blue",
+        "photo": "Vivian_Nguyen.png",
+        "links": [{
+            "type": "linkedin",
+            "href": "https://www.linkedin.com/in/vivvnguyenn/"
+        }]
+    },
+    {
+        "name": "Amy Steinmetz",
+        "position": "Financial Chair",
+        "color": "blue",
+        "photo": "Amy_Steinmetz.png",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/amysteinmetz/"
+            },
+            {
+                "type": "website",
+                "href": "https://uxfol.io/steinmea"
+            },
+            {
+                "type": "instagram",
+                "href": "https://www.instagram.com/amytallgirl/"
+            }
+        ]
+    },
+    {
+        "name": "Carly Chan",
+        "position": "Marketing Director",
+        "color": "green",
+        "photo": "Carly_Chan.png",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/carlychan/"
+            },
+            {
+                "type": "website",
+                "href": "https://carlychan.com/"
+            },
+            {
+                "type": "instagram",
+                "href": "https://www.instagram.com/_carlychan_/"
+            }
+        ]
+    },
+    {
+        "name": "Iantha Khan",
+        "position": "Marketing",
+        "color": "green",
+        "photo": "missing.svg"
+    },
+    {
+        "name": "Jolin Huang",
+        "position": "Marketing",
+        "color": "green",
+        "photo": "Jolin_Huang.png",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/jolin-huang-30a4451b0/"
+            },
+            {
+                "type": "website",
+                "href": "https://jolinhuang9090.wixsite.com/uxuiportfolio"
+            },
+            {
+                "type": "instagram",
+                "href": "https://www.instagram.com/j.huanggg/"
+            }
+        ]
+    },
+    {
+        "name": "Kevin Tsai",
+        "position": "Industry Outreach",
+        "color": "red",
+        "photo": "missing.svg"
+    },
+    {
+        "name": "Vivian Lin",
+        "position": "Industry Outreach",
+        "color": "red",
+        "photo": "Vivian_Lin.png",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/vivianplin/"
+            },
+            {
+                "type": "instagram",
+                "href": "https://www.instagram.com/strawbbyv/"
+            }
+        ]
+    },
+    {
+        "name": "Meghna Kaligotla",
+        "position": "Workshop Committee",
+        "color": "red",
+        "photo": "missing.svg"
+    },
+    {
+        "name": "Vivian Chu",
+        "position": "Workshop Committee",
+        "color": "red",
+        "photo": "Vivian_Chu.png",
+        "links": [{
+            "type": "linkedin",
+            "href": "https://www.linkedin.com/in/vivianchu204/"
+        }]
+    },
+    {
+        "name": "Sonali Chellappa",
+        "position": "Project Teams Committee",
+        "color": "pink",
+        "photo": "Sonali_Chellappa.png"
+    },
+    {
+        "name": "Gabby Tom",
+        "position": "Project Teams Committee",
+        "color": "pink",
+        "photo": "missing.svg"
+    },
+    {
+        "name": "Juhi Patel",
+        "position": "Project Teams Committee",
+        "color": "pink",
+        "photo": "missing.svg"
+    }
+]

@@ -1,0 +1,41 @@
+.holo-effect1,
+.holo-effect2 {
+    opacity: 0;
+    height: 100%;
+    mix-blend-mode: darken;
+    filter: saturate(3);
+    animation: effect-pulse 2s cubic-bezier(.62, .01, .51, 1) infinite;
+}
+
+.holo-effect2 {
+    animation: effect-pulse 2s 0.2s cubic-bezier(.62, .01, .51, 1) infinite;
+}
+
+@keyframes effect-pulse {
+    0% {
+        opacity: 0;
+        filter: saturate(3) hue-rotate(0deg);
+    }
+
+    40% {
+        opacity: 0.38;
+        filter: saturate(3) hue-rotate(-360deg);
+    }
+
+    80% {
+        opacity: 0;
+        filter: saturate(3) hue-rotate(0);
+    }
+}
+
+.split4>div>div {
+    height: unset;
+}
+
+.header {
+    background: linear-gradient(10deg, var(--silver) -50%, var(--green));
+
+    &>.text {
+        text-shadow: 0 8px 16px var(--green);
+    }
+}
