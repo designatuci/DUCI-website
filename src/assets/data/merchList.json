@@ -1,47 +1,73 @@
 [{
-        "name": "Fall-Winter 2021 items",
-        "description": "High quality, weather-proof vinyl items with exclusive, original designs. Approximately 3x3 inches.",
-        "inStock": false,
+        "name": "Spring 2022 Merch",
+        "path": "spring-2022",
+        "description": "Embroidered unisex shirts and high quality, weather-proof vinyl items with exclusive, original designs.",
+        "inStock": true,
+        "buyLink": "https://forms.gle/RVoUbLPQnHYzeWMA6",
         "items": [{
-                "type": "holo",
-                "name": "Chill Out",
-                "photo": "Sf21-frozen.png"
+                "name": "D@UCI Logo T-Shirt",
+                "price": 30,
+                "note": "Unisex S/M/L",
+                "photo": "shirt.png"
             },
             {
-                "name": "Bobaeater",
-                "price": 3,
-                "photo": "Sf21-bobaeater.png"
+                "name": "\"uc irvine\"",
+                "price": 3.5,
+                "photo": "uci.png" 
             },
             {
-                "name": "Design is My Passion",
-                "price": 3,
-                "photo": "Sf21-passion.png"
-            },
-            {
-                "name": "D@UCI Boba",
-                "price": 3,
-                "photo": "Sf21-boba.png"
+                "name": "Rainbow Heart Pen Tool",
+                "price": 3.5,
+                "photo": "pen.png"
             }
         ]
     },
     {
-        "name": "2020 items",
+        "name": "Fall-Winter 2021 Stickers",
+        "path": "fall-winter-2021",
+        "description": "High quality, weather-proof vinyl items with exclusive, original designs. Approximately 3x3 inches.",
+        "inStock": false,
+        "items": [{
+                "note": "Holographic",
+                "name": "Chill Out",
+                "photo": "frozen-eater.png"
+            },
+            {
+                "name": "Bobaeater",
+                "price": 3,
+                "photo": "bobaeater.png"
+            },
+            {
+                "name": "Design is My Passion",
+                "price": 3,
+                "photo": "passion.png"
+            },
+            {
+                "name": "D@UCI Boba",
+                "price": 3,
+                "photo": "boba.png"
+            }
+        ]
+    },
+    {
+        "name": "2020 Stickers",
+        "path": "fall-2020",
         "description": "",
         "inStock": false,
         "items": [{
                 "name": "I Heart Design",
                 "price": 3,
-                "photo": "sticker-heart.svg"
+                "photo": "heart.svg"
             },
             {
                 "name": "Pen Tool",
                 "price": 3,
-                "photo": "sticker-pentool.svg"
+                "photo": "pentool.svg"
             },
             {
                 "name": "Boba",
                 "price": 3,
-                "photo": "sticker-boba.svg"
+                "photo": "boba.svg"
             }
         ]
     }
