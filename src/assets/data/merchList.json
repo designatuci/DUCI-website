@@ -5,13 +5,13 @@
         "inStock": true,
         "buyLink": "https://forms.gle/RVoUbLPQnHYzeWMA6",
         "items": [{
-                "name": "D@UCI Logo T-Shirt",
+                "name": "UC Irvine Embroidered T-Shirt",
                 "price": 30,
                 "note": "Unisex S/M/L",
                 "photo": "shirt.png"
             },
             {
-                "name": "\"uc irvine\"",
+                "name": "\"uc irvine sticker\"",
                 "price": 3.5,
                 "photo": "ucirvine.svg" 
             },

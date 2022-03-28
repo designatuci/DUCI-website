@@ -1622,7 +1622,7 @@ const Designathon22 = () => {
 						<a
 							className='flex spaceChildren'
 							target='noreferer'
-							href='http://rosenfeldmedia.com/'
+							href='https://rosenfeldmedia.com/'
 						>
 							<Icon
 								src='logo-rosenfeldmedia.svg'

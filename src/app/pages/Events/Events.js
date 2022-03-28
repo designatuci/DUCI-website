@@ -114,9 +114,7 @@ const Events = () => {
 						<div className='spaceChildrenLarge'>
 							{eventData.upcoming.map((event, i) => {
 								return (
-									<>
-										<LargeEvent event={event} />
-									</>
+										<LargeEvent key={event.title} event={event} />
 								);
 							})}
 						</div>
@@ -185,7 +183,7 @@ const Events = () => {
 
 function LargeEvent(props) {
 	return (
-		<div className='slim flex left textAlignLeft spaceChildren largeEvent'>
+		<div className='slim flex left textAlignLeft spaceChildren largeEvent' style={{textAlign: 'left'}}>
 			<Text size='XL' className='bold'>
 				{props.event.title}
 			</Text>
@@ -217,6 +215,7 @@ function LargeEvent(props) {
 							if (props.live)
 								return (
 									<a
+										key={item.link}
 										className='button S fill red'
 										target='noreferer'
 										href={item.link}
@@ -236,6 +235,7 @@ function LargeEvent(props) {
 							else
 								return (
 									<a
+										key={item.link} 
 										className='button S fill blue'
 										target='noreferer'
 										href={item.link}
@@ -255,6 +255,7 @@ function LargeEvent(props) {
 						else
 							return (
 								<a
+									key={item.link}
 									className='button S fill gray'
 									target='noreferer'
 									href={item.link}
