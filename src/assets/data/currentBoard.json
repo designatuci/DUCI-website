@@ -113,7 +113,11 @@
         "name": "Meghna Kaligotla",
         "position": "Workshop Coordinator",
         "color": "red",
-        "photo": "Meghna_Kaligotla.png"
+        "photo": "Meghna_Kaligotla.jpeg",
+        "links": [{
+            "type": "linkedin",
+            "href": "https://www.linkedin.com/in/meghna-kaligotla-605/"
+        }]
     },
     {
         "name": "Vivian Chu",
