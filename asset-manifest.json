@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.30ca20d8.chunk.css",
-    "main.js": "/static/js/main.dd699097.chunk.js",
-    "main.js.map": "/static/js/main.dd699097.chunk.js.map",
+    "main.js": "/static/js/main.18134cca.chunk.js",
+    "main.js.map": "/static/js/main.18134cca.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.91f08806.js",
     "runtime-main.js.map": "/static/js/runtime-main.91f08806.js.map",
     "static/js/2.9fe3bbf6.chunk.js": "/static/js/2.9fe3bbf6.chunk.js",
@@ -21,7 +21,7 @@
     "static/media/Jorina_Chen.jpg": "/static/media/Jorina_Chen.821d680c.jpg",
     "static/media/Juhi_Patel.jpg": "/static/media/Juhi_Patel.8bc126bf.jpg",
     "static/media/Karla_Avalos.jpg": "/static/media/Karla_Avalos.052864cf.jpg",
-    "static/media/Meghna_Kaligotla.png": "/static/media/Meghna_Kaligotla.7fbd3df4.png",
+    "static/media/Meghna_Kaligotla.jpeg": "/static/media/Meghna_Kaligotla.945daab8.jpeg",
     "static/media/Michael_Chang.jpg": "/static/media/Michael_Chang.68d914c9.jpg",
     "static/media/Ryan_Yang.jpg": "/static/media/Ryan_Yang.8fa518f4.jpg",
     "static/media/Sonali_Chellappa.png": "/static/media/Sonali_Chellappa.7ecbe6db.png",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.91f08806.js",
     "static/js/2.9fe3bbf6.chunk.js",
     "static/css/main.30ca20d8.chunk.css",
-    "static/js/main.dd699097.chunk.js"
+    "static/js/main.18134cca.chunk.js"
   ]
 }
