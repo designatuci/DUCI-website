@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.30ca20d8.chunk.css",
-    "main.js": "/static/js/main.18134cca.chunk.js",
-    "main.js.map": "/static/js/main.18134cca.chunk.js.map",
+    "main.js": "/static/js/main.d3e3c002.chunk.js",
+    "main.js.map": "/static/js/main.d3e3c002.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.91f08806.js",
     "runtime-main.js.map": "/static/js/runtime-main.91f08806.js.map",
     "static/js/2.9fe3bbf6.chunk.js": "/static/js/2.9fe3bbf6.chunk.js",
@@ -35,16 +35,16 @@
     "static/media/frozen-effect-1.png": "/static/media/frozen-effect-1.c615d5e6.png",
     "static/media/frozen-effect-2.png": "/static/media/frozen-effect-2.5bd4b203.png",
     "static/media/frozen.png": "/static/media/frozen.3372a72c.png",
-    "static/media/heart.svg": "/static/media/heart.2efb1394.svg",
+    "static/media/heart.svg": "/static/media/heart.4cdb5ae0.svg",
     "static/media/passion.png": "/static/media/passion.e68e86fe.png",
     "static/media/pentool.svg": "/static/media/pentool.7b1b1316.svg",
-    "static/media/shirt.png": "/static/media/shirt.b8b378cc.png",
-    "static/media/ucirvine.svg": "/static/media/ucirvine.906f39a6.svg"
+    "static/media/shirt.png": "/static/media/shirt.6ae38462.png",
+    "static/media/ucirvine.svg": "/static/media/ucirvine.b6368f3f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.91f08806.js",
     "static/js/2.9fe3bbf6.chunk.js",
     "static/css/main.30ca20d8.chunk.css",
-    "static/js/main.18134cca.chunk.js"
+    "static/js/main.d3e3c002.chunk.js"
   ]
 }
