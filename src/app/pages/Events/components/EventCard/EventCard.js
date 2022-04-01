@@ -13,18 +13,19 @@ const EventCard = ({ ...event }) => (
 	>
 		<Text color='gray'>{event.type}</Text>
 		<Text size='L'>{event.title}</Text>
+		<Text color='gray'>{event?.desc}</Text>
+
 		{event?.links
 			?.filter(
 				({ label }) => label !== 'Zoom Link' && label !== 'Discord Link'
 			)
-			.map(({label, link}) => (
+			.map(({ label, link }) => (
 				<a
 					key={link}
 					target='noreferer'
 					className={
-						'button S fill ' + (label === 'Recording'
-							? 'blue'
-							: 'gray')
+						'button S fill ' +
+						(label === 'Recording' ? 'blue' : 'gray')
 					}
 					href={link}
 				>
