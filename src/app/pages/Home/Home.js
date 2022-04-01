@@ -140,7 +140,7 @@ const Home = () => (
 				</div>
 				<div className='wait flex left'>
 					<Text size='XL' className='bold'>
-						Get invovled in our special programs, like{' '}
+						Get involved in our special programs, like{' '}
 						<Text size='XL' className='bold color blue'>
 							Design-a-thon
 						</Text>{' '}

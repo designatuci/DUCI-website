@@ -27,6 +27,7 @@ const EventCard = ({ ...event }) => (
 						'button S fill ' +
 						(label === 'Recording' ? 'blue' : 'gray')
 					}
+					style={{color: label === 'Recording' ? 'white' : 'black', paddingTop:'8px'}}
 					href={link}
 				>
 					<Text>
@@ -35,7 +36,7 @@ const EventCard = ({ ...event }) => (
 							color={
 								label === 'Recording'
 									? 'var(--sky)'
-									: 'var(--gray)'
+									: 'var(--black)'
 							}
 							style={{
 								width: '24px',

@@ -1,5 +1,17 @@
 [
     {
+        "title": "Ask Me Anything: Student Intern Panel",
+        "time": "4/20/2022 8:00 PM",
+        "duration": "90",
+        "type": "Workshop",
+        "desc": " Curious about designing at the industry level? Not sure how to land internships? Swing by our Ask Me Anything: Student Intern Panel to ask student peers about their design internship experiences! From graphic to UI/UX to product, we’ll have panelists from all types of design backgrounds. Be sure to prep any burning questions you may have, and we hope to see you there!",
+        "place": "Online",
+        "links": [{
+            "label": "Zoom Link",
+            "link": "https://uci.zoom.us/j/99935306945"
+        }]
+    },
+    {
         "title": "Game Night Extravaganza",
         "time": "4/13/2022 8:00 PM",
         "duration": "90",
