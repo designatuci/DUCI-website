@@ -1,31 +1,9 @@
-import { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Space, LoadingD } from '../../Symbols.js';
+import { Section, Space } from '../../Symbols.js';
 import { Text } from '../../components';
 
 const NotFound = () => {
-	const [linksData, setLinksData] = useState(null);
-
-	useEffect(() => {
-		fetch(
-			`https://raw.githubusercontent.com/designatuci/data/main/hyperlinks.json?%uniquetime=${Math.round(
-				new Date().getTime() / 120000
-			)}`
-		)
-			.then(res => res.json())
-			.then(data => {
-				let path = window.location.pathname.substr(1);
-				console.log(path);
-				for (let link of data.links) {
-					if (link.code === path || link.code + '/' === path) {
-						data.redirect = true;
-						window.location.replace(link.link);
-					}
-				}
-				setLinksData(data);
-			});
-	}, []);
 
 	return (
 		<>
@@ -33,47 +11,35 @@ const NotFound = () => {
 				<title>404 – Design at UCI</title>
 			</Helmet>
 			<Section className='center page hint' wrapperClass='narrow'>
-				{linksData == null ? (
-					<div className='flex' style={{ padding: '64px 0' }}>
-						<LoadingD width='128' />
-					</div>
-				) : linksData.redirect === true ? (
-					<div>
+				<div className='wait show flex spaceChildren'>
+					<div className='flex'>
+						<Text
+							className='color blue wait show scale'
+							style={{ fontSize: '88px' }}
+						>
+							404
+						</Text>
 						<Text className='color blue' size='L'>
-							One moment...
+							Page Not Found
 						</Text>
 					</div>
-				) : (
-					<div className='wait show flex spaceChildren'>
-						<div className='flex'>
-							<Text
-								className='color blue wait show scale'
-								style={{ fontSize: '88px' }}
-							>
-								404
-							</Text>
-							<Text className='color blue' size='L'>
-								Page Not Found
-							</Text>
-						</div>
-						<Space h='8' />
-						<Text className='color gray'>
-							The URL
-							<Text className='bold' style={{ margin: '0 6px' }}>
-								{window.location.hostname +
-									window.location.pathname}
-							</Text>
-							does not exist.
+					<Space h='8' />
+					<Text className='color gray'>
+						The URL
+						<Text className='bold' style={{ margin: '0 6px' }}>
+							{window.location.hostname +
+								window.location.pathname}
 						</Text>
-						<Text className='color gray'>
-							If you believe this is a mistake, please{' '}
-							<Link to='/contact' className='link'>
-								contact us
-							</Link>
-							.
-						</Text>
-					</div>
-				)}
+						does not exist.
+					</Text>
+					<Text className='color gray'>
+						If you believe this is a mistake, please{' '}
+						<Link to='/contact' className='link'>
+							contact us
+						</Link>
+						.
+					</Text>
+				</div>
 			</Section>
 			<Section
 				className='center flex bare fill black'

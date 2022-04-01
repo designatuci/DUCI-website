@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import Hey from './pages/Hey';
 import Designathons from './pages/Designathons';
 import Designathon22 from './pages/Designathon22';
@@ -43,7 +43,27 @@ function App() {
 				<Route path='pt' element={<PT />} />
 				<Route path='designathons' element={<Designathons />} />
 				<Route path='designathon22' element={<Designathon22 />} />
+				<Route path='impact22' element={<Designathon22 />} />
 				<Route path='brand' element={<Brand />} />
+
+				{/* Redirects */}
+				<Route
+					path='discord'
+					element={<Navigate to='//discord.com/invite/MBVrKe9' />}
+				/>
+				<Route
+					path='ptsignup'
+					element={<Navigate to='//bit.ly/3DpZBz9' />}
+				/>
+				<Route
+					path='ptsignups'
+					element={<Navigate to='//bit.ly/3DpZBz9' />}
+				/>
+				<Route
+					path='buy'
+					element={<Navigate to='//forms.gle/RVoUbLPQnHYzeWMA6' />}
+				/>
+
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 			<Footer />

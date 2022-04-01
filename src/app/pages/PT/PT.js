@@ -14,7 +14,33 @@ const PT = () => (
 				Project Teams
 			</Text>
 			<Space h='16' />
-			<div className='flex left slim spaceChildrenSmall' style={{textAlign: 'left'}}>
+			<div
+				className='flex left slim spaceChildrenSmall'
+				style={{ textAlign: 'left' }}
+			>
+				<Text className='color green'>
+					Project Team apps for Spring 2022 are open now!
+				</Text>
+				<Text className='color gray'>
+					Applications are due {' '}
+					<Text className='color red'>
+						Monday April 4th at 11:59 PM PST.
+					</Text>
+				</Text>
+
+				<Text className='color gray'>
+					Sign ups can be found {''}
+					<a
+						href='https://bit.ly/3DpZBz9'
+						target='_blank'
+						rel='noopener noreferrer'
+						className='color blue'
+					>
+						here.
+					</a>
+				</Text>
+				<br />
+				<Text size='L'>What are Project Teams?</Text>
 				<Text className='color gray'>
 					A multi-week program where you work on a team to design or
 					re-design a prototype product. Open for all experience
