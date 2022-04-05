@@ -77,7 +77,7 @@ const About = () => (
 					<Text className='paragraph middle'>
 						There are no requirements to join, everyone is welcome
 						to attend our meetings and use the resources we provide.
-						Although some events may be exlcusive to UCI students,
+						Although some events may be exclusive to UCI students,
 						we also host events with participants around the globe.
 					</Text>
 					<Space block h='32' />

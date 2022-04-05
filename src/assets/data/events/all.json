@@ -1,5 +1,14 @@
 [
     {
+        "title": "Mock Whiteboard Challenge",
+        "time": "5/4/2022 8:00 PM",
+        "duration": "90",
+        "type": "Workshop",
+        "desc": " Interested in practicing your design thinking skills? Unsure about how to tackle a whiteboard challenge during a design interview? We will be hosting a Mock Whiteboard Challenge event, in which participants will be paired with a design expert to complete a virtual whiteboard challenge on Figma! Note that due to high demand, spots are limited so keep an eye out for signups when they open!",
+        "place": "Online",
+        "links": []
+    },
+    {
         "title": "Ask Me Anything: Student Intern Panel",
         "time": "4/20/2022 8:00 PM",
         "duration": "90",
@@ -13,7 +22,7 @@
     },
     {
         "title": "Game Night Extravaganza",
-        "time": "4/13/2022 8:00 PM",
+        "time": "4/13/2022 7:30 PM",
         "duration": "90",
         "type": "Social Event",
         "desc": "Join Design at UCI for an ultimate game night extravaganza! We’ll be hosting a smash tournament as well as other board and card games to compete and play in! There will be a $3 admission fee & prizes!",
