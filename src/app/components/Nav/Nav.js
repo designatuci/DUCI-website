@@ -58,6 +58,9 @@ const Nav = () => {
 						<Link to='/resources' className='item center'>
 							<Text>Resources</Text>
 						</Link>
+						<Link to='/merch' className='item center'>
+							<Text>Merch</Text>
+						</Link>
 					</div>
 					<div className='center row group right'>
 						<Link to='/about' className='item center'>
@@ -116,6 +119,7 @@ const Nav = () => {
 							{ label: 'Resources', url: '/resources' },
 							{ label: 'About', url: '/about' },
 							{ label: 'Contact', url: '/contact' },
+							{ label: 'Merch', url: '/merch' },
 						].map(({ label, url }) => (
 							<Link key={url} to={url} className='item center'>
 								<Text size='L'>{label}</Text>

@@ -66,7 +66,17 @@
         "name": "Jorina Chen",
         "position": "Social Coordinator",
         "color": "pink",
-        "photo": "Jorina_Chen.jpg"
+        "photo": "Jorina_Chen.jpg",
+        "links": [
+            {
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/jorinachen/"
+            },
+            {
+                "type": "website",
+                "href": "https://www.jorinachen.com/"
+            }
+        ]
     },
     {
         "name": "Iantha Khan",

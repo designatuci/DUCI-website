@@ -15,6 +15,7 @@ import {
 	PT,
 	Resources,
 	ResourcesFeatured,
+	Shirt22,
 } from './pages';
 import { useScroll } from './controllers';
 import { Footer, Nav } from './components';
@@ -37,7 +38,11 @@ function App() {
 					<Route index element={<Resources />} />
 					<Route path='featured' element={<ResourcesFeatured />} />
 				</Route>
-				<Route path='merch' element={<Merch />} />
+				<Route path='merch'>
+					<Route index element={<Merch />} />
+					<Route path='shirt22' element={<Shirt22 />} />
+
+				</Route>
 				<Route path='contact' element={<Contact />} />
 				<Route path='about' element={<About />} />
 				<Route path='pt' element={<PT />} />

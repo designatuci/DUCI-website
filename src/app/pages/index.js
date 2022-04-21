@@ -9,6 +9,7 @@ import NotFound from './NotFound';
 import PT from './PT';
 import Resources from './Resources';
 import ResourcesFeatured from './ResourcesFeatured';
+import { Shirt22 } from './Merch/pages';
 
 export {
 	About,
@@ -19,8 +20,9 @@ export {
 	Home,
 	Join,
 	Merch,
-    NotFound,
+	NotFound,
 	PT,
 	Resources,
-    ResourcesFeatured,
+	ResourcesFeatured,
+	Shirt22,
 };
