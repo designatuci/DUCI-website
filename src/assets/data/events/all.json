@@ -1,5 +1,14 @@
 [
     {
+        "title": "Picnic in Aldrich",
+        "time": "5/13/2022 1:00 PM",
+        "duration": "90",
+        "type": "Social Event",
+        "desc": "Join us for a picnic in the middle of Aldrich where we'll host games, icebreakers, and food!",
+        "place": "Aldrich Park",
+        "links": []
+    },
+    {
         "title": "Mock Whiteboard Challenge",
         "time": "5/4/2022 8:00 PM",
         "duration": "90",

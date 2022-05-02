@@ -68,10 +68,10 @@ function App() {
 					path='buy'
 					element={<Navigate to='//forms.gle/RVoUbLPQnHYzeWMA6' />}
 				/>
-				{/* <Route
+				<Route
 					path='apply'
 					element={<Navigate to='//forms.gle/YAy83sW8pni4b61U9' />}
-				/> */}
+				/>
 
 				<Route path='*' element={<NotFound />} />
 			</Routes>
