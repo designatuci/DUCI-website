@@ -1,11 +1,34 @@
 [
     {
+        "title": "Cross-Functional Design",
+        "time": "5/18/2022 8:00 PM",
+        "duration": "90",
+        "type": "Workshop",
+        "desc": " Interested in learning about working cross-functionally as a designer? Join us for a workshop in collaboration with UCSD Design Co (@ucsddesignco), where we’ll be discussing what collaboration in industry looks like within design teams, as well as cross-functionally with engineers, PMs, and research teams.",
+        "place": "Online",
+        "links": [
+            {
+                "label": "Zoom Link",
+                "link": "http://ucsddesign.co/gbm"
+            }
+        ]
+    },
+    {
         "title": "Picnic in Aldrich",
         "time": "5/13/2022 1:00 PM",
         "duration": "90",
         "type": "Social Event",
         "desc": "Join us for a picnic in the middle of Aldrich where we'll host games, icebreakers, and food!",
         "place": "Aldrich Park",
+        "links": []
+    },
+    {
+        "title": "2022 Spring Night Market",
+        "time": "5/11/2022 5:00 PM",
+        "duration": "240",
+        "type": "Social Event",
+        "desc": "Come support Design at UCI at the 2022 Spring Night Market on May 11th! We’ll be selling egg tarts at 1 for $3, 2 for $4, and our rainbow heart pen tool sticker for $3. We’ll be at booth #59, next to Langston Library from 5 to 9 PM — join us for club festivities, fundraising fun, and good vibes",
+        "place": "Ring Road",
         "links": []
     },
     {

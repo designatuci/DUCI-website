@@ -79,13 +79,13 @@ const Shirt22 = () => {
 						>
 							$20 •{' '}
 							<span
-								className={'color green'}
+								className={'color red'}
 								style={{
 									display: 'inline-block',
 									marginBottom: '5px',
 								}}
 							>
-								In Stock{' '}
+								Out of Stock{' '}
 							</span>
 						</span>
 						<p className={cn.description}>
@@ -95,14 +95,14 @@ const Shirt22 = () => {
 							Small, Medium, and Large.
 						</p>
 
-						<a
+						{/* <a
 							className={clsx(cn.buy, 'color blue')}
 							target='_blank'
 							rel='noopener noreferrer'
 							href='https://forms.gle/RVoUbLPQnHYzeWMA6'
 						>
 							Buy Here
-						</a>
+						</a> */}
 					</div>
 					<div className={cn.image}>
 						{/* <img className={cn.behind} src={IMG2} alt='shirt with embroidered uci logo' /> */}
