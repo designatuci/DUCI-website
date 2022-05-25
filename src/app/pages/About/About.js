@@ -6,6 +6,9 @@ import { Text } from '../../components';
 import { Profile } from './components';
 import ALUMNI_BOARD from '../../../assets/data/alumniBoard.json';
 import CURRENT_BOARD from '../../../assets/data/currentBoard.json';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import TESTIMONIALS from '../../../assets/data/boardTestimonials.json';
 import './About.scss';
 
 const About = () => (
@@ -13,7 +16,7 @@ const About = () => (
 		<Helmet>
 			<title>About – Design at UCI</title>
 		</Helmet>
-		<div className='carousel page hint'>
+		<div className='custom-carousel page hint'>
 			<Section className='short'>
 				<div className='narrow' style={{ color: 'white' }}>
 					<div></div>
@@ -87,21 +90,16 @@ const About = () => (
 				</div>
 			</div>
 		</Section>
-		<Section className='short center fill color gray'>
-			<Text>Partners</Text>
-			<div className='split3' style={{ columnGap: '128px' }}>
-				<a target='noreferer' href='https://www.ics.uci.edu/'>
-					<Icon w='256' h='128' src='logo-uci.svg' />
-				</a>
-				<a target='noreferer' href='https://www.sketch.com/'>
-					<Icon w='256' h='128' src='logo-sketch.svg' />
-				</a>
-				<div className='center'>
-					<Link to='/contact/'>
-						<Text>Want to work with us?</Text>
-					</Link>
-				</div>
-			</div>
+		<Section className='short fill color gray'>
+			<h2 style={{textAlign: 'center', marginTop: '50px'}}>From our board</h2>
+			<Carousel showStatus={false} showThumbs={false}>
+				{TESTIMONIALS.map(({quote, name}) => (
+					<div key={quote} className="quote">
+						<p>{quote}</p>
+						<span>- {name}</span>
+					</div>
+				))}
+            </Carousel>
 		</Section>
 		<Section className='board center'>
 			<Text size='XL'>Board Members</Text>
@@ -124,6 +122,22 @@ const About = () => (
 						))}
 					</Fragment>
 				))}
+			</div>
+		</Section>
+		<Section className='short center fill color gray'>
+			<Text>Partners</Text>
+			<div className='split3' style={{ columnGap: '128px' }}>
+				<a target='noreferer' href='https://www.ics.uci.edu/'>
+					<Icon w='256' h='128' src='logo-uci.svg' />
+				</a>
+				<a target='noreferer' href='https://www.sketch.com/'>
+					<Icon w='256' h='128' src='logo-sketch.svg' />
+				</a>
+				<div className='center'>
+					<Link to='/contact/'>
+						<Text>Want to work with us?</Text>
+					</Link>
+				</div>
 			</div>
 		</Section>
 	</>

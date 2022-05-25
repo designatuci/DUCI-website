@@ -46,6 +46,16 @@
         "icon": "res-archive.svg"
     },
     {
+        "title": "Workshop Slides",
+        "link": "https://drive.google.com/drive/folders/14yhiCBnk0E6GECv8LPwSxduM1Nb6GOAQ?usp=sharing",
+        "desc": "View past workshop slides.",
+        "newTab": true,
+        "main": "orange",
+        "accent": "gray",
+        "background": "#ffe4d4",
+        "icon": "res-slides.svg"
+    },
+    {
         "title": "Board Blogs",
         "link": "https://medium.com/@designatuci",
         "desc": "Learn more about the people behind Design at UCI.",

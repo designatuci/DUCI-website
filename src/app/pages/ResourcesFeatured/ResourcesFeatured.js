@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
 import {
 	Section,
@@ -10,6 +10,7 @@ import {
 	CheckIcon,
 } from '../../Symbols.js';
 import { Text } from '../../components';
+import RESOURCE_LIST from '../../../assets/data/resourceList.json';
 import cn from './ResourcesFeatured.module.scss';
 
 function mapTypeColor(type) {
@@ -32,21 +33,11 @@ const ResourcesFeatured = props => {
 		green: true,
 		gray: true,
 	});
-	const [resData, setResData] = useState(null);
 	const toggleFilter = filter => {
 		let newFilter = filterMode;
 		newFilter[filter] = !newFilter[filter];
 		setFilterMode({ ...newFilter });
 	};
-	useEffect(() => {
-		fetch(
-			`https://raw.githubusercontent.com/designatuci/data/main/resources.json`
-		)
-			.then(res => res.json())
-			.then(data => {
-				setResData(data);
-			});
-	}, []);
 	return (
 		<>
 			<Helmet>
@@ -109,13 +100,13 @@ const ResourcesFeatured = props => {
 				</div>
 			</Section>
 			<Section className='short fill gray'>
-				{resData == null ? (
+				{RESOURCE_LIST == null ? (
 					<div className='flex' style={{ padding: '64px 0' }}>
 						<LoadingD width='128' />
 					</div>
 				) : (
 					<div className='split4' style={{ gap: '16px' }}>
-						{resData.resources
+						{RESOURCE_LIST.resources
 							.filter(e => filterMode[mapTypeColor(e.type)])
 							.map(card => (
 								<a

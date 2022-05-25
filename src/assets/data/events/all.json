@@ -1,5 +1,14 @@
 [
     {
+        "title": "Project Teams Demo Day",
+        "time": "5/25/2022 8:00 PM",
+        "duration": "120",
+        "type": "Workshop",
+        "desc": " Interested in learning about working cross-functionally as a designer? Join us for a workshop in collaboration with UCSD Design Co (@ucsddesignco), where we’ll be discussing what collaboration in industry looks like within design teams, as well as cross-functionally with engineers, PMs, and research teams.",
+        "place": "DBH 1500",
+        "links": []
+    },
+    {
         "title": "Cross-Functional Design",
         "time": "5/18/2022 8:00 PM",
         "duration": "90",

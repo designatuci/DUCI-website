@@ -45,7 +45,7 @@
 .board .item .photo > div {
     padding-bottom:100%;
 }
-.carousel {
+.custom-carousel {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -58,10 +58,10 @@
         font-size: 1em;        
     }
 }
-.carousel {
+.custom-carousel {
     text-shadow: 4px 4px 16px #0018;
 }
-.carousel .noise {
+.custom-carousel .noise {
     pointer-events: none;
     background-image: url('https://designatuci.com/static/photo/static.gif');
     background-size: 32px;
@@ -84,4 +84,17 @@
 
 .alumni-header {
     margin: 40px 0px 80px !important;
+}
+.quote {
+    // height: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.quote>p {
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+    // text-shadow: 4px 4px 16px #0018;
+    margin: 0 0 15px;
 }
