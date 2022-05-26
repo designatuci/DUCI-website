@@ -9,6 +9,7 @@ import CURRENT_BOARD from '../../../assets/data/currentBoard.json';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import TESTIMONIALS from '../../../assets/data/boardTestimonials.json';
+import {ReactComponent as LinkArrow} from './link-arrow.svg';
 import './About.scss';
 
 const About = () => (
@@ -91,12 +92,15 @@ const About = () => (
 			</div>
 		</Section>
 		<Section className='short fill color gray'>
-			<h2 style={{textAlign: 'center', marginTop: '50px'}}>From our board</h2>
-			<Carousel showStatus={false} showThumbs={false}>
+			<h2 style={{textAlign: 'center', marginTop: '50px', fontSize: '18px'}}>From our board</h2>
+			<Carousel showStatus={false} showThumbs={false} 
+				renderArrowNext={(click, show) => <LinkArrow onClick={click}/>}
+				renderArrowPrev={(click, show) => <LinkArrow style={{transform: 'rotateY(180deg)'}} onClick={click}/>}
+			>
 				{TESTIMONIALS.map(({quote, name}) => (
 					<div key={quote} className="quote">
-						<p>{quote}</p>
-						<span>- {name}</span>
+						<p>"{quote}"</p>
+						<span>{name}</span>
 					</div>
 				))}
             </Carousel>

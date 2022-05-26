@@ -58,6 +58,16 @@
         font-size: 1em;        
     }
 }
+.carousel {
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    column-gap: 15px;
+
+    & svg {
+        place-self: center;
+        cursor: pointer;
+    }
+}
 .custom-carousel {
     text-shadow: 4px 4px 16px #0018;
 }
@@ -92,9 +102,13 @@
 }
 
 .quote>p {
-    font-size: 1.5em;
+    font-size: 18px;
     color: black;
     font-weight: bold;
     // text-shadow: 4px 4px 16px #0018;
     margin: 0 0 15px;
+}
+
+.quote>span {
+    font-size: 18px;
 }
