@@ -111,6 +111,7 @@ const Brand = () => (
 					{ name: 'pt-logo.svg' },
 					{ name: 'pt-logo-outline.svg' },
 					{ name: 'workshop-icon.svg' },
+					{ name: 'social-icon.svg' },
 				].map((item, i) => {
 					return (
 						<a

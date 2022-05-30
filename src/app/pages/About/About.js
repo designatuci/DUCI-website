@@ -6,10 +6,10 @@ import { Text } from '../../components';
 import { Profile } from './components';
 import ALUMNI_BOARD from '../../../assets/data/alumniBoard.json';
 import CURRENT_BOARD from '../../../assets/data/currentBoard.json';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import TESTIMONIALS from '../../../assets/data/boardTestimonials.json';
-import {ReactComponent as LinkArrow} from './link-arrow.svg';
+import { ReactComponent as LinkArrow } from './link-arrow.svg';
 import './About.scss';
 
 const About = () => (
@@ -31,7 +31,7 @@ const About = () => (
 							.split(' ')
 							.map((word, i) => (
 								<Text
-									style={{display: 'inline-block'}}
+									style={{ display: 'inline-block' }}
 									size='XXXL'
 									key={i}
 									className='wait dx l2 bold'
@@ -92,18 +92,35 @@ const About = () => (
 			</div>
 		</Section>
 		<Section className='short fill color gray'>
-			<h2 style={{textAlign: 'center', marginTop: '50px', fontSize: '18px'}}>From our board</h2>
-			<Carousel showStatus={false} showThumbs={false} 
-				renderArrowNext={(click, show) => <LinkArrow onClick={click}/>}
-				renderArrowPrev={(click, show) => <LinkArrow style={{transform: 'rotateY(180deg)'}} onClick={click}/>}
+			<h2
+				style={{
+					textAlign: 'center',
+					marginTop: '50px',
+					fontSize: '18px',
+				}}
 			>
-				{TESTIMONIALS.map(({quote, name}) => (
-					<div key={quote} className="quote">
+				From our board
+			</h2>
+			<Carousel
+				showStatus={false}
+				showThumbs={false}
+				showIndicators={false}
+				// showStatus={false}
+				renderArrowNext={(click, show) => <LinkArrow onClick={click} />}
+				renderArrowPrev={(click, show) => (
+					<LinkArrow
+						style={{ transform: 'rotateY(180deg)' }}
+						onClick={click}
+					/>
+				)}
+			>
+				{TESTIMONIALS.map(({ quote, name }) => (
+					<div key={quote} className='quote'>
 						<p>"{quote}"</p>
 						<span>{name}</span>
 					</div>
 				))}
-            </Carousel>
+			</Carousel>
 		</Section>
 		<Section className='board center'>
 			<Text size='XL'>Board Members</Text>
