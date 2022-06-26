@@ -137,7 +137,12 @@
         "name": "Krey Daniels",
         "position": "Graphic Designer",
         "color": "red",
-        "photo": "Krey_Daniels.jpg"
+        "photo": "Krey_Daniels.jpg",
+        "links": [
+            {"type": "instagram", "href": "https://www.instagram.com/in.krey.dible/"},
+            {"type": "linkedin", "href": "https://www.linkedin.com/in/krey-daniel/"},
+            {"type": "website", "href": "https://kreydaniel.wixsite.com/inkreydible"},
+        ]
     },
     
     {
