@@ -70,7 +70,7 @@ function App() {
 				/>
 				<Route
 					path='apply'
-					element={<Navigate to='//forms.gle/YAy83sW8pni4b61U9' />}
+					element={<Navigate to='//forms.gle/UXpfUfANHZ9m6fR47' />}
 				/>
 
 				<Route path='*' element={<NotFound />} />

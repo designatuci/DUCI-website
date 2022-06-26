@@ -1,6 +1,35 @@
 [{
     "year": 2022,
     "members": [{
+            "name": "Evangeline Gao",
+            "position": "Vice President",
+            "color": "blue",
+            "photo": "Evangeline_Gao.png"
+        }, {
+            "name": "Gabby Tom",
+            "position": "Project Teams Coordinator",
+            "color": "pink",
+            "photo": "Gabby_Tom.jpg"
+        }, {
+            "name": "Iantha Khan",
+            "position": "Marketing Coordinator",
+            "color": "green",
+            "photo": "Iantha_Khan.png"
+        }, {
+            "name": "Vivian Chu",
+            "position": "Workshop Coordinator",
+            "color": "red",
+            "photo": "Vivian_Chu.png",
+            "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/vivianchu204/"
+            }]
+        }, {
+            "name": "Michael Chang",
+            "position": "Financial Chair",
+            "color": "red",
+            "photo": "Michael_Chang.jpg"
+        }, {
             "name": "Kailer Garcia",
             "position": "Creative Director",
             "color": "blue",

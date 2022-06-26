@@ -18,27 +18,14 @@ const PT = () => (
 				className='flex left slim spaceChildrenSmall'
 				style={{ textAlign: 'left' }}
 			>
-				<Text className='color green'>
-					Project Team apps for Spring 2022 are open now!
+				<Text className='color red'>
+					Project Team apps for Spring 2022 are closed.
+					
 				</Text>
-				<Text className='color gray'>
-					Applications are due {' '}
-					<Text className='color red'>
-						Monday April 4th at 11:59 PM PST.
-					</Text>
+				<Text className='color green'>
+					Keep an eye out for Fall 2022 apps!					
 				</Text>
 
-				<Text className='color gray'>
-					Sign ups can be found {''}
-					<a
-						href='https://bit.ly/3DpZBz9'
-						target='_blank'
-						rel='noopener noreferrer'
-						className='color blue'
-					>
-						here.
-					</a>
-				</Text>
 				<br />
 				<Text size='L'>What are Project Teams?</Text>
 				<Text className='color gray'>

@@ -1,27 +1,17 @@
-[{
-        "name": "Hannah Limary",
-        "position": "President",
-        "color": "blue",
-        "photo": "Hannah_Limary.png",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/hannah-limary"
-            },
-            {
-                "type": "website",
-                "href": "https://hannahlimary.squarespace.com/"
-            }
-        ]
-    },
+[
     {
-        "name": "Evangeline Gao",
-        "position": "Vice President",
-        "color": "blue",
-        "photo": "Evangeline_Gao.png"
+        "name": "Meghna Kaligotla",
+        "position": "President",
+        "color": "red",
+        "photo": "Meghna_Kaligotla.jpeg",
+        "links": [{
+            "type": "linkedin",
+            "href": "https://www.linkedin.com/in/meghna-kaligotla-605/"
+        }]
     },
     {
         "name": "Carly Chan",
-        "position": "Marketing Director",
+        "position": "Internal Vice President",
         "color": "green",
         "photo": "Carly_Chan.png",
         "links": [{
@@ -39,54 +29,8 @@
         ]
     },
     {
-        "name": "Sonali Chellappa",
-        "position": "Project Teams Coordinator",
-        "color": "pink",
-        "photo": "Sonali_Chellappa.png"
-    },
-    {
-        "name": "Gabby Tom",
-        "position": "Project Teams Coordinator",
-        "color": "pink",
-        "photo": "Gabby_Tom.jpg"
-    },
-    {
-        "name": "Juhi Patel",
-        "position": "Project Teams Committee",
-        "color": "pink",
-        "photo": "Juhi_Patel.jpg"
-    },
-    {
-        "name": "Sunny Stetsyuk",
-        "position": "Social Coordinator",
-        "color": "pink",
-        "photo": "Sunny_Stetsyuk.jpg"
-    },
-    {
-        "name": "Jorina Chen",
-        "position": "Social Coordinator",
-        "color": "pink",
-        "photo": "Jorina_Chen.jpg",
-        "links": [
-            {
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/jorinachen/"
-            },
-            {
-                "type": "website",
-                "href": "https://www.jorinachen.com/"
-            }
-        ]
-    },
-    {
-        "name": "Iantha Khan",
-        "position": "Marketing Coordinator",
-        "color": "green",
-        "photo": "Iantha_Khan.png"
-    },
-    {
         "name": "Jolin Huang",
-        "position": "Marketing Coordinator",
+        "position": "Marketing Director",
         "color": "green",
         "photo": "Jolin_Huang.png",
         "links": [{
@@ -102,6 +46,76 @@
                 "href": "https://www.instagram.com/j.huanggg/"
             }
         ]
+    },
+    {
+        "name": "Kristy Chung",
+        "position": "Marketing Coordinator",
+        "color": "green",
+        "photo": "Kristy_Chung.png",
+        "links": []
+    },
+    {
+        "name": "Khanh Tran",
+        "position": "Workshop Coordinator",
+        "color": "green",
+        "photo": "Khanh_Tran.jpg",
+        "links": []
+    },
+    {
+        "name": "Hannah Limary",
+        "position": "Designathon Director",
+        "color": "blue",
+        "photo": "Hannah_Limary.jpg",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/hannah-limary"
+            },
+            {
+                "type": "website",
+                "href": "https://hannahlimary.squarespace.com/"
+            }
+        ]
+    },
+        
+    {
+        "name": "Sonali Chellappa",
+        "position": "Project Teams Coordinator",
+        "color": "pink",
+        "photo": "Sonali_Chellappa.png"
+    },
+    {
+        "name": "Juhi Patel",
+        "position": "Project Teams Coordinator",
+        "color": "pink",
+        "photo": "Juhi_Patel.jpg"
+    },
+    {
+        "name": "Sunny Stetsyuk",
+        "position": "Project Teams Coordinator",
+        "color": "pink",
+        "photo": "Sunny_Stetsyuk.jpg"
+    },
+    {
+        "name": "Jorina Chen",
+        "position": "Project Teams Coordinator",
+        "color": "pink",
+        "photo": "Jorina_Chen.jpg",
+        "links": [
+            {
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/jorinachen/"
+            },
+            {
+                "type": "website",
+                "href": "https://www.jorinachen.com/"
+            }
+        ]
+    },
+    {
+        "name": "Zoya Soy",
+        "position": "Project Teams Coordinator",
+        "color": "pink",
+        "photo": "Zoya_Soy.jpg"
     },
     {
         "name": "Isabel Pham",
@@ -120,31 +134,12 @@
         "photo": "Karla_Avalos.jpg"
     },
     {
-        "name": "Meghna Kaligotla",
-        "position": "Workshop Coordinator",
+        "name": "Krey Daniels",
+        "position": "Graphic Designer",
         "color": "red",
-        "photo": "Meghna_Kaligotla.jpeg",
-        "links": [{
-            "type": "linkedin",
-            "href": "https://www.linkedin.com/in/meghna-kaligotla-605/"
-        }]
+        "photo": "Krey_Daniels.jpg"
     },
-    {
-        "name": "Vivian Chu",
-        "position": "Workshop Coordinator",
-        "color": "red",
-        "photo": "Vivian_Chu.png",
-        "links": [{
-            "type": "linkedin",
-            "href": "https://www.linkedin.com/in/vivianchu204/"
-        }]
-    },
-    {
-        "name": "Michael Chang",
-        "position": "Financial Chair",
-        "color": "red",
-        "photo": "Michael_Chang.jpg"
-    },
+    
     {
         "name": "Ryan Yang",
         "position": "Webmaster",
