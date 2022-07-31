@@ -4,8 +4,10 @@ import Text from '../Text';
 import { Section, Icon, Space } from '../../Symbols.js';
 import socials from '../../../assets/data/socials.json';
 
+import cn from './Footer.module.scss';
+
 const Footer = () => (
-	<Section id='bot' className='short'>
+	<Section className={`short ${cn.footer}`}>
 		<div className='split3'>
 			<div style={{ color: 'white' }}>
 				<Link to='/'>
@@ -35,7 +37,7 @@ const Footer = () => (
 			</div>
 			<div className='spaceChildrenSmall'>
 				<div>
-					<Link to='/resources' className='mark'>
+					<Link to='/resources' className={cn.mark}>
 						<Text>Resources</Text>
 					</Link>
 				</div>
@@ -80,7 +82,7 @@ const Footer = () => (
 			</div>
 			<div className='spaceChildrenSmall'>
 				<div>
-					<Link to='/join' className='mark'>
+					<Link to='/join' className={cn.mark}>
 						<Text>Join</Text>
 					</Link>
 				</div>
@@ -114,7 +116,7 @@ const Footer = () => (
 				<Text>
 					Developed by{' '}
 					<a
-						className='mark'
+						className={cn.mark}
 						target='_blank'
 						rel='noopener noreferrer'
 						href='https://www.kailerg.com/'
@@ -129,7 +131,7 @@ const Footer = () => (
 				found{' '}
 				<a
 					target='noreferer'
-					className='mark'
+					className={cn.mark}
 					href='https://www.google.com/policies/privacy/'
 				>
 					here
