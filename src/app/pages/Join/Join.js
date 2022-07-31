@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { Section, Icon, PageIcon } from '../../Symbols.js';
-import { EmailForm, Text } from '../../components';
-import SHORT_SOCIALS from '../../../assets/data/shortSocials.json';
+import { Link } from 'react-router-dom';
+
+import { EmailForm, Text } from 'app/components';
+import { Section, Icon, PageIcon } from 'app/Symbols.js';
+import SHORT_SOCIALS from 'assets/data/shortSocials.json';
+
 import cn from './Join.module.scss';
 
 const Join = () => (

@@ -1,4 +1,5 @@
-import { Icon } from '../../../../Symbols';
+import { Icon } from 'app/Symbols';
+
 import cn from './Profile.module.scss';
 
 const Profile = ({ textOnly = false, data }) => (

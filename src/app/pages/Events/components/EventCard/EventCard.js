@@ -1,7 +1,10 @@
 import clsx from 'clsx';
-import { Text } from '../../../../components';
-import { PageIcon } from '../../../../Symbols';
+
+import { Text } from 'app/components';
+import { PageIcon } from 'app/Symbols';
+
 import formatRelativeDate from '../../controllers/formateDate';
+
 import cn from './EventCard.module.scss';
 
 const EventCard = ({ ...event }) => (

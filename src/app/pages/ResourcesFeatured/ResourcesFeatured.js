@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Helmet } from 'react-helmet';
+
+import { Text } from 'app/components';
 import {
 	Section,
 	Icon,
@@ -8,9 +10,9 @@ import {
 	LoadingD,
 	PageIcon,
 	CheckIcon,
-} from '../../Symbols.js';
-import { Text } from '../../components';
-import RESOURCE_LIST from '../../../assets/data/resourceList.json';
+} from 'app/Symbols.js';
+import RESOURCE_LIST from 'assets/data/resourceList.json';
+
 import cn from './ResourcesFeatured.module.scss';
 
 function mapTypeColor(type) {

@@ -1,8 +1,10 @@
-import { Helmet } from 'react-helmet';
 import clsx from 'clsx';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Icon, Space, Photo } from '../../Symbols.js';
-import { Text } from '../../components';
+
+import { Text } from 'app/components';
+import { Section, Icon, Space, Photo } from 'app/Symbols.js';
+
 import cn from './Home.module.scss';
 
 const Home = () => (

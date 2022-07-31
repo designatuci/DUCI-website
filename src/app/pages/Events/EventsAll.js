@@ -1,8 +1,10 @@
 import { Helmet } from 'react-helmet';
-import { Section, LoadingD } from '../../Symbols.js';
-import { Text } from '../../components';
+
+import { Text } from 'app/components';
+import { Section, LoadingD } from 'app/Symbols.js';
+import EVENT_DATA from 'assets/data/events/all.json';
+
 import { EventCard } from './components';
-import EVENT_DATA from '../../../assets/data/events/all.json';
 
 const EventsAll = () => {
 	return (

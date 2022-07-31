@@ -1,8 +1,10 @@
 import { useState, memo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Space, Icon } from '../../Symbols';
-import Text from '../Text';
-import socials from '../../../assets/data/socials.json';
+
+import { Text } from 'app/components';
+import { Space, Icon } from 'app/Symbols';
+import socials from 'assets/data/socials.json';
+
 import './Nav.scss';
 
 const Nav = () => {

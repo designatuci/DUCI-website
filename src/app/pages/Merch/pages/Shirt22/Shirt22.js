@@ -1,6 +1,10 @@
+import clsx from 'clsx';
 import { Helmet } from 'react-helmet';
+import PhotoAlbum from 'react-photo-album';
 import { Link } from 'react-router-dom';
-import { Section } from '../../../../Symbols.js';
+
+import { Section } from 'app/Symbols.js';
+
 import IMG1 from './assets/1.jpg';
 import IMG2 from './assets/2.jpg';
 import IMG3 from './assets/3.jpg';
@@ -12,9 +16,8 @@ import IMG9 from './assets/9.png';
 import IMG10 from './assets/10.png';
 import IMG11 from './assets/11.png';
 import IMG8 from './assets/8.jpeg';
-import clsx from 'clsx';
+
 import cn from './Shirt22.module.scss';
-import PhotoAlbum from 'react-photo-album';
 
 const Shirt22 = () => {
 	const photos = [

@@ -1,8 +1,10 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Icon, Space } from '../../Symbols.js';
-import { Text } from '../../components';
-import RESOURCES from '../../../assets/data/resources.json';
+
+import { Text } from 'app/components';
+import { Section, Icon, Space } from 'app/Symbols.js';
+import RESOURCES from 'assets/data/resources.json';
+
 import cn from './Resources.module.scss';
 
 const TabComponent = ({ newTab, link, children, ...props }) =>

@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+
 import cn from './Text.module.scss';
 
 const Text = ({ children, className, size, color, icon, ...props }) => (

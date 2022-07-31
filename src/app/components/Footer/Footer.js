@@ -1,8 +1,9 @@
 import { memo } from 'react';
 import { Link } from 'react-router-dom';
-import Text from '../Text';
-import { Section, Icon, Space } from '../../Symbols.js';
-import socials from '../../../assets/data/socials.json';
+
+import { Text } from 'app/components';
+import { Section, Icon, Space } from 'app/Symbols';
+import socials from 'assets/data/socials.json';
 
 import cn from './Footer.module.scss';
 
