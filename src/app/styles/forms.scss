@@ -1,3 +1,5 @@
+@import 'app/styles/variables';
+
 .form {
 	width: 88%;
 	max-width: 768px;
@@ -21,11 +23,11 @@
 	font-size: 20px;
 	padding: 12px 24px;
 	border-radius: 8px;
-	/* box-shadow: 0 0 0 1.5px var(--silver), 0 2px 4px -1px var(--silver); */
+	/* box-shadow: 0 0 0 1.5px $silver, 0 2px 4px -1px $silver; */
 }
 
 .form input:focus {
-	box-shadow: 0 0 0 3px var(--blue), 0 4px 4px -1px var(--blue);
+	box-shadow: 0 0 0 3px $blue, 0 4px 4px -1px $blue;
 }
 
 @media only screen and (max-width: 768px) {

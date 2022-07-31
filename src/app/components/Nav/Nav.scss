@@ -1,3 +1,5 @@
+@import 'app/styles/variables';
+
 #navSpacer {
     height: 88px;
     display: block;
@@ -81,19 +83,19 @@
 #nav .group a {
     display: inline-block;
     padding: 16px;
-    color: var(--gray);
+    color: $gray;
 }
 
 #nav.clear .group a {
-    color: var(--white);
+    color: $white;
 }
 
 #nav .group a:hover {
-    color: var(--black);
+    color: $black;
 }
 
 #nav.clear .group a:hover {
-    color: var(--white);
+    color: $white;
 }
 
 
@@ -105,7 +107,7 @@
 
 #nav.shrink {
     background: #fff;
-    box-shadow: 0 0 1px 1px var(--silver);
+    box-shadow: 0 0 1px 1px $silver;
 }
 
 @keyframes itemBounce {
@@ -136,13 +138,13 @@
 
 #nav #navToggle {
     transition: background 0.2s cubic-bezier(.6, .01, .83, .67);
-    background: var(--white);
+    background: $white;
     border-radius: 32px;
 }
 
 #nav #navToggle:active {
     transition: background 0.0s;
-    background: var(--silver);
+    background: $silver;
 }
 
 #nav #navToggle .icon {

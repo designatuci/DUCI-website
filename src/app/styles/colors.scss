@@ -1,89 +1,91 @@
+@import 'app/styles/variables';
+
 .fill.white {
-	background-color: var(--white);
-	color: var(--black);
+	background-color: $white;
+	color: $black;
 }
 
 .fill.black {
-	background-color: var(--black);
-	color: var(--white);
+	background-color: $black;
+	color: $white;
 }
 
 .fill.blue {
-	background-color: var(--blue);
-	color: var(--white);
+	background-color: $blue;
+	color: $white;
 }
 
 .fill.pink {
-	background-color: var(--pink);
-	color: var(--black);
+	background-color: $pink;
+	color: $black;
 }
 
 .fill.green {
-	background-color: var(--forest);
-	color: var(--white);
+	background-color: $forest;
+	color: $white;
 }
 
 .fill.red {
-	background-color: var(--red);
-	color: var(--white);
+	background-color: $red;
+	color: $white;
 }
 
 .fill.sky {
-	background-color: var(--sky);
+	background-color: $sky;
 }
 
 .fill.gray {
-	background-color: var(--silver);
+	background-color: $silver;
 }
 
 .fill.dusk {
-	background-color: var(--gray);
+	background-color: $gray;
 }
 
 .color.white {
-	color: var(--white);
+	color: $white;
 }
 
 .color.black {
-	color: var(--black);
+	color: $black;
 }
 
 .color.gray {
-	color: var(--gray);
+	color: $gray;
 }
 
 .color.silver {
-	color: var(--silver);
+	color: $silver;
 }
 
 .color.blue {
-	color: var(--blue);
+	color: $blue;
 }
 
 .color.sky {
-	color: var(--sky);
+	color: $sky;
 }
 
 .color.orange {
-	color: var(--orange);
+	color: $orange;
 }
 
 .color.yellow {
-	color: var(--yellow);
+	color: $yellow;
 }
 
 .color.pink {
-	color: var(--pink);
+	color: $pink;
 }
 
 .color.red {
-	color: var(--red);
+	color: $red;
 }
 
 .color.violet {
-	color: var(--ultraviolet);
+	color: $ultraviolet;
 }
 
 .color.green {
-	color: var(--green);
+	color: $green;
 }

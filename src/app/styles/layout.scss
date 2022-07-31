@@ -1,3 +1,5 @@
+@import 'app/styles/variables';
+
 .spaceChildren > * {
 	margin-bottom: 32px;
 }
@@ -345,7 +347,7 @@ break {
 }
 
 .section.path {
-	background: linear-gradient(90deg, var(--silver) -20%, var(--white) 50%);
+	background: linear-gradient(90deg, $silver -20%, $white 50%);
 }
 
 .section.path a {
@@ -354,7 +356,7 @@ break {
 }
 
 .section.path:hover {
-	background: linear-gradient(90deg, var(--sky), var(--white));
+	background: linear-gradient(90deg, $sky, $white);
 }
 
 .section.path .flex .div {
@@ -362,11 +364,11 @@ break {
 }
 
 .section.path .flex .text {
-	color: var(--gray);
+	color: $gray;
 }
 
 .section.path:hover .flex .text {
-	color: var(--blue);
+	color: $blue;
 	opacity: 1;
 }
 

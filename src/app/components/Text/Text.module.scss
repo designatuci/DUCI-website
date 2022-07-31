@@ -1,3 +1,5 @@
+@import 'app/styles/variables';
+
 .container {
     display: inline-block;
     line-height: 1.12;
@@ -23,55 +25,55 @@
 // colors
 .container {
     &.white {
-        color: var(--white);
+        color: $white;
     }
 
     &.black {
-        color: var(--black);
+        color: $black;
     }
 
     &.gray {
-        color: var(--gray);
+        color: $gray;
     }
 
     &.grey {
-        color: var(--gray);
+        color: $gray;
     }
 
     &.silver {
-        color: var(--silver);
+        color: $silver;
     }
 
     &.blue {
-        color: var(--blue);
+        color: $blue;
     }
 
     &.sky {
-        color: var(--sky);
+        color: $sky;
     }
 
     &.orange {
-        color: var(--orange);
+        color: $orange;
     }
 
     &.yellow {
-        color: var(--yellow);
+        color: $yellow;
     }
 
     &.pink {
-        color: var(--pink);
+        color: $pink;
     }
 
     &.red {
-        color: var(--red);
+        color: $red;
     }
 
     &.violet {
-        color: var(--ultraviolet);
+        color: $ultraviolet;
     }
 
     &.green {
-        color: var(--green);
+        color: $green;
     }
 
     // size

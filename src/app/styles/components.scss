@@ -1,3 +1,5 @@
+@import 'app/styles/variables';
+
 .photo {
 	width: 100%;
 	height: 100%;
@@ -38,17 +40,17 @@
 }
 
 .button.fill.blue {
-	box-shadow: 0 6px 12px -8px var(--blue);
+	box-shadow: 0 6px 12px -8px $blue;
 }
 
 .button.black {
-	background: var(--black);
-	color: var(--white);
+	background: $black;
+	color: $white;
 }
 
 .button.gray {
-	background: var(--gray);
-	color: var(--white);
+	background: $gray;
+	color: $white;
 }
 
 .card {
@@ -68,13 +70,13 @@
 }
 
 .splitEventCard .card {
-	box-shadow: 0 12px 24px -32px var(--gray);
+	box-shadow: 0 12px 24px -32px $gray;
 }
 
 .largeEvent {
 	border-radius: 16px;
-	/* border: solid 2px var(--silver); */
-	box-shadow: 0 1px 2px 1px var(--silver), 0 16px 32px var(--silver);
+	/* border: solid 2px $silver; */
+	box-shadow: 0 1px 2px 1px $silver, 0 16px 32px $silver;
 	padding: 64px;
 	opacity: 0;
 	animation: largeEvent-show 1.8s cubic-bezier(0.18, 0.62, 0, 1) forwards;

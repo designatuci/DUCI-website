@@ -1,25 +1,27 @@
+@import 'app/styles/variables';
+
 :root {
-	--white: #fff;
-	--black: #000024;
-	--blue: #089aff;
-	--orange: #fc593d;
-	--peach: #ffdfd9;
-	--red: #fc123d;
-	--yellow: #ffcc45;
-	--green: #2adb6a;
-	--forest: #05864a;
-	--mint: #d1ffe1;
-	--pink: #ff9ff4;
-	--blush: #ffe1fb;
-	--peach: #fceddc;
-	--violet: #e7e3fd;
-	--ultraviolet: #011efb;
-	--deepBlue: #00007d;
+	--white: #{$white};
+	--black: #{$black};
+	--blue: #{$blue};
+	--orange: #{$orange};
+	--peach: #{$peach};
+	--red: #{$red};
+	--yellow: #{$yellow};
+	--green: #{$green};
+	--forest: #{$forest};
+	--mint: #{$mint};
+	--pink: #{$pink};
+	--blush: #{$blush};
+	--peach: #{$peach};
+	--violet: #{$violet};
+	--ultraviolet: #{$ultraviolet};
+	--deepBlue: #{$deepBlue};
 
-	--gray: #7a7a8d;
-	--silver: #e4e4e6;
+	--gray: #{$gray};
+	--silver: #{$silver};
 
-	--sky: #cef2ff;
+	--sky: #{$sky};
 
 	--pageHeight: 100vh;
 }
@@ -53,7 +55,7 @@ script {
 
 body {
 	min-height: 100vh;
-	color: var(--black);
+	color: $black;
 }
 
 body * {
@@ -106,5 +108,5 @@ a > * {
 
 .paragraph {
 	line-height: 1.38;
-	color: var(--gray);
+	color: $gray;
 }
