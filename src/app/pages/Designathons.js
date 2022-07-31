@@ -26,7 +26,7 @@ const Designathons = () => (
 					</Text>
 					<Text className='color gray'>
 						To get involved,{' '}
-						<Link to='/join/' className='link'>
+						<Link to='/join/'>
 							join us
 						</Link>{' '}
 						to get notifications about when the next applications

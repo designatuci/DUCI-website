@@ -34,7 +34,7 @@ const NotFound = () => {
 					</Text>
 					<Text className='color gray'>
 						If you believe this is a mistake, please{' '}
-						<Link to='/contact' className='link'>
+						<Link to='/contact'>
 							contact us
 						</Link>
 						.
