@@ -20,6 +20,13 @@ import {
 import { useScroll } from './controllers';
 import { Footer, Nav } from './components';
 
+import "./styles/global.scss"
+import "./styles/colors.scss"
+import "./styles/layout.scss"
+import "./styles/components.scss"
+import "./styles/animations.scss"
+import "./styles/forms.scss"
+
 function App() {
 	useScroll();
 

@@ -1,3 +1,5 @@
+@import 'app/styles/variables';
+
 .holo-effect1,
 .holo-effect2 {
     opacity: 0;
@@ -33,9 +35,9 @@
 }
 
 .header {
-    background: linear-gradient(10deg, var(--silver) -50%, var(--green));
+    background: linear-gradient(10deg, $silver -50%, $green);
 
     &>.text {
-        text-shadow: 0 8px 16px var(--green);
+        text-shadow: 0 8px 16px $green;
     }
 }

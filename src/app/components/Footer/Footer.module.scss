@@ -1,4 +1,25 @@
-.container {
+@import 'app/styles/variables';
 
+.footer {
+	padding-top: 88px;
+	color: $white;
+	background: $black;
+
+	a .text {
+		border-bottom: solid 1px #0000;
+	}
+
+	a:hover .text,
+	.mark:hover {
+		color: $blue;
+		border-bottom: solid 1px $blue;
+	}
+
+	.mark {
+		border-bottom: solid 1px $gray;
+	}
+
+	@media only screen and (max-width: 768px) {
+		padding: 64px 48px;
+	}
 }
-

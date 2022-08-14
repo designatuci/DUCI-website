@@ -61,7 +61,7 @@ const Events = () => {
 						<Space h='32' />
 						<Text className='wait show subtle color gray'>
 							Be sure to{' '}
-							<Link to='/join/' className='link'>
+							<Link to='/join/'>
 								join us
 							</Link>{' '}
 							for notifications.
@@ -170,7 +170,7 @@ const Events = () => {
 						Have a suggestion of something you would like to see?
 						<br />
 						Submit your feedback to{' '}
-						<a className='link' href='mailto:hello@designatuci.com'>
+						<a href='mailto:hello@designatuci.com'>
 							hello@designatuci.com
 						</a>
 						.

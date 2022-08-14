@@ -1,0 +1,135 @@
+@import 'app/styles/variables';
+
+.photo {
+	width: 100%;
+	height: 100%;
+	border-radius: 12px;
+	background-position: center;
+	background-size: cover;
+}
+
+.icon {
+	max-width: 100%;
+	display: inline-block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.icon.hoverable {
+	background-size: cover;
+	background-position: bottom;
+}
+
+.icon.hoverable:hover {
+	background-position: top;
+}
+
+.button {
+	padding: 12px 24px;
+	background: white;
+	border-radius: 64px;
+}
+
+.button.L {
+	padding: 16px 32px;
+}
+
+.button.S {
+	padding: 6px 18px;
+}
+
+.button.fill.blue {
+	box-shadow: 0 6px 12px -8px $blue;
+}
+
+.button.black {
+	background: $black;
+	color: $white;
+}
+
+.button.gray {
+	background: $gray;
+	color: $white;
+}
+
+.card {
+	overflow: hidden;
+	position: relative;
+	border-radius: 8px;
+	padding: 32px;
+}
+
+.card.L {
+	padding: 48px;
+	border-radius: 16px;
+}
+
+.card.S {
+	padding: 16px;
+}
+
+.splitEventCard .card {
+	box-shadow: 0 12px 24px -32px $gray;
+}
+
+.largeEvent {
+	border-radius: 16px;
+	/* border: solid 2px $silver; */
+	box-shadow: 0 1px 2px 1px $silver, 0 16px 32px $silver;
+	padding: 64px;
+	opacity: 0;
+	animation: largeEvent-show 1.8s cubic-bezier(0.18, 0.62, 0, 1) forwards;
+}
+
+.largeEvent .info {
+	flex-wrap: wrap;
+}
+
+.largeEvent .split2 {
+	width: 100%;
+	gap: 8px;
+}
+
+@keyframes largeEvent-show {
+	0% {
+		transform: perspective(512px) scale(0.88) translateY(32px) rotateX(20deg);
+	}
+
+	100% {
+		transform: none;
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.text.XXL {
+		font-size: 48px;
+	}
+
+	.splitEventCard {
+		grid-template-columns: 1fr 1fr;
+		gap: 16px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.splitEventCard {
+		grid-template-columns: 1fr;
+		gap: 16px;
+	}
+
+	.largeEvent {
+		padding: 64px 32px;
+	}
+
+	.card {
+		border-radius: 8px;
+		padding: 16px;
+	}
+
+	.card.L {
+		padding: 48px 32px;
+		border-radius: 16px;
+	}
+}

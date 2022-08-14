@@ -1,0 +1,112 @@
+@import 'app/styles/variables';
+
+:root {
+	--white: #{$white};
+	--black: #{$black};
+	--blue: #{$blue};
+	--orange: #{$orange};
+	--peach: #{$peach};
+	--red: #{$red};
+	--yellow: #{$yellow};
+	--green: #{$green};
+	--forest: #{$forest};
+	--mint: #{$mint};
+	--pink: #{$pink};
+	--blush: #{$blush};
+	--peach: #{$peach};
+	--violet: #{$violet};
+	--ultraviolet: #{$ultraviolet};
+	--deepBlue: #{$deepBlue};
+
+	--gray: #{$gray};
+	--silver: #{$silver};
+
+	--sky: #{$sky};
+
+	--pageHeight: 100vh;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+style,
+script {
+	display: none !important;
+}
+
+* {
+	z-index: 1;
+	-webkit-tap-highlight-color: transparent;
+	cursor: default;
+	outline: none;
+	scrollbar-width: none;
+	box-sizing: border-box;
+	vertical-align: middle;
+	font-family: 'ducimain', helvetica, sans-serif;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	color: $black;
+}
+
+body * {
+	display: block;
+}
+
+pre {
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+a,
+pre {
+	cursor: pointer;
+	display: inline-block;
+	color: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+a:hover .icon.hoverable {
+	background-position: top;
+}
+
+.shadow {
+	box-shadow: 0 0 1px 1px #2232, 0 6px 12px -4px #2231;
+}
+
+a > * {
+	cursor: pointer;
+}
+
+.pointer,
+.pointer * {
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.paragraph {
+	line-height: 1.38;
+	color: $gray;
+}

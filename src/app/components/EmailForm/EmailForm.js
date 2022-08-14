@@ -129,7 +129,6 @@ const EmailForm = () => {
 									<a
 										target='noreferer'
 										href='https://mailchimp.com'
-										className='link'
 									>
 										MailChimp
 									</a>
@@ -137,7 +136,6 @@ const EmailForm = () => {
 									<a
 										target='noreferer'
 										href='https://mailchimp.com/legal/privacy/'
-										className='link'
 									>
 										privacy policy
 									</a>
