@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Text } from '../../../../components';
+
+import { Text } from 'app/components';
+
 import cn from './MerchItem.module.scss';
 
 const MerchItem = ({ path, ...item }) => (

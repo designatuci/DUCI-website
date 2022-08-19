@@ -1,10 +1,12 @@
-import { Helmet } from 'react-helmet';
 import { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Space, Icon, LoadingD, PageIcon } from '../../Symbols.js';
-import { Text } from '../../components';
+
+import { Text } from 'app/components';
+import { Section, Space, Icon, LoadingD, PageIcon } from 'app/Symbols.js';
+import EVENT_DATA from 'assets/data/events/all.json';
+
 import EventCard from './components/EventCard/EventCard.js';
-import EVENT_DATA from '../../../assets/data/events/all.json';
 
 const Events = () => {
 	const [eventData, setEventData] = useState(null);

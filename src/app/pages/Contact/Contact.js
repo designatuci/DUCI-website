@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet';
-import socials from '../../../assets/data/socials.json';
-import { Section, Space, Icon } from '../../Symbols.js';
-import { Text } from '../../components';
+
+import { Text } from 'app/components';
+import { Section, Space, Icon } from 'app/Symbols.js';
+import socials from 'assets/data/socials.json';
 
 const Contact = () => (
 	<>

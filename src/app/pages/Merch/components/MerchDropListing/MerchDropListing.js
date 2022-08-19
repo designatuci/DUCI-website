@@ -1,7 +1,10 @@
 import clsx from 'clsx';
-import { Text } from '../../../../components';
-import { Section, Space } from '../../../../Symbols';
+
+import { Text } from 'app/components';
+import { Section, Space } from 'app/Symbols';
+
 import MerchItem from '../MerchItem';
+
 import cn from './MerchDropListing.module.scss';
 
 const MerchDropListing = ({

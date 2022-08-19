@@ -1,7 +1,10 @@
 import { Route, Routes, Navigate } from 'react-router-dom';
-import Hey from './pages/Hey';
+
+import { Footer, Nav } from './components';
+import { useScroll } from './controllers';
 import Designathons from './pages/Designathons';
 import Designathon22 from './pages/Designathon22';
+import Hey from './pages/Hey';
 import {
 	About,
 	Brand,
@@ -17,15 +20,13 @@ import {
 	ResourcesFeatured,
 	Shirt22,
 } from './pages';
-import { useScroll } from './controllers';
-import { Footer, Nav } from './components';
 
-import "./styles/global.scss"
-import "./styles/colors.scss"
-import "./styles/layout.scss"
-import "./styles/components.scss"
-import "./styles/animations.scss"
-import "./styles/forms.scss"
+import './styles/global.scss';
+import './styles/colors.scss';
+import './styles/layout.scss';
+import './styles/components.scss';
+import './styles/animations.scss';
+import './styles/forms.scss';
 
 function App() {
 	useScroll();
@@ -48,7 +49,6 @@ function App() {
 				<Route path='merch'>
 					<Route index element={<Merch />} />
 					<Route path='shirt22' element={<Shirt22 />} />
-
 				</Route>
 				<Route path='contact' element={<Contact />} />
 				<Route path='about' element={<About />} />

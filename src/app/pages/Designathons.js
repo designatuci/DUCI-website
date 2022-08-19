@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
-import { Section, Space, Icon, Photo } from '../Symbols.js';
-import { Text } from '../components';
+
+import { Text } from 'app/components';
+import { Section, Space, Icon, Photo } from 'app/Symbols.js';
 
 const Designathons = () => (
 	<>

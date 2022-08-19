@@ -1,10 +1,13 @@
-import { Helmet } from 'react-helmet';
-import { Section } from '../../Symbols.js';
 import clsx from 'clsx';
-import { Text } from '../../components';
-import MERCH_LIST from '../../../assets/data/merchList.json';
-import cn from './Merch.module.scss';
+import { Helmet } from 'react-helmet';
+
+import { Text } from 'app/components';
+import { Section } from 'app/Symbols.js';
+import MERCH_LIST from 'assets/data/merchList.json';
+
 import { MerchDropListing } from './components';
+
+import cn from './Merch.module.scss';
 
 const Merch = () => (
 	<>

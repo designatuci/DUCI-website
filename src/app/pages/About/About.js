@@ -1,15 +1,18 @@
 import { Fragment } from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
-import { Section, Space, Icon } from '../../Symbols.js';
-import { Text } from '../../components';
-import { Profile } from './components';
-import ALUMNI_BOARD from '../../../assets/data/alumniBoard.json';
-import CURRENT_BOARD from '../../../assets/data/currentBoard.json';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import TESTIMONIALS from '../../../assets/data/boardTestimonials.json';
+import { Link } from 'react-router-dom';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
+
+import { Text } from 'app/components';
+import { Section, Space, Icon } from 'app/Symbols.js';
+import ALUMNI_BOARD from 'assets/data/alumniBoard.json';
+import TESTIMONIALS from 'assets/data/boardTestimonials.json';
+import CURRENT_BOARD from 'assets/data/currentBoard.json';
+
+import { Profile } from './components';
 import { ReactComponent as LinkArrow } from './link-arrow.svg';
+
 import './About.scss';
 
 const About = () => (
