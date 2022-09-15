@@ -1,5 +1,14 @@
 [
     {
+        "title": "Introductory Workshop",
+        "time": "9/27/2022 8:00 PM",
+        "duration": "120",
+        "type": "Workshop",
+        "desc": "Welcome back, anteaters 🍁 Join us in DBH 1500 for our first event of the year to meet the board, learn more about the events and programs for fall quarter, and get a brief introduction to design!",
+        "place": "DBH 1500",
+        "links": []
+    },
+    {
         "title": "Project Teams Demo Day",
         "time": "5/25/2022 8:00 PM",
         "duration": "120",
