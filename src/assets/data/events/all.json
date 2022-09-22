@@ -3,8 +3,17 @@
         "title": "AMA (Ask Me Anything) Summer Internship Panel",
         "time": "10/11/2022 8:00 PM",
         "duration": "120",
-        "type": "Workshop",
+        "type": "Industry Speaker",
         "desc": "Hey designers! Design at UCI is holding a summer internship Ask Me Anything panel with our very own board in DBH 1600! Come and connect with our very own board members who will be detailing what their summer internship experience was like. Learn more about how you can land your next SWE, product, and/or UX/UI design internships",
+        "place": "DBH 1600",
+        "links": []
+    },
+    {
+        "title": "Game Night",
+        "time": "10/4/2022 8:00 PM",
+        "duration": "120",
+        "type": "Social Event",
+        "desc": "More details to come!",
         "place": "DBH 1600",
         "links": []
     },
