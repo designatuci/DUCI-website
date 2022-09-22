@@ -33,7 +33,7 @@ const PT = () => (
 					A multi-week program where you work on a team to design or
 					re-design a prototype product. Open for all experience
 					levels! Teams present at the end and get the chance to
-					recieve prizes. This is an opportunity that will give you
+					receive prizes. This is an opportunity that will give you
 					more work to display in your portoflio and learn more about
 					the UX/UI design process with help.
 				</Text>
