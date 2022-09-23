@@ -1,17 +1,10 @@
-[{
-        "name": "tik tok",
-        "link": "https://www.tiktok.com/@design_at_uci",
-        "icons": {
-            "default": "tiktok.svg",
-            "nav": "nav-tiktok.svg"
-        }
-    },
+[
     {
-        "name": "youtube",
-        "link": "https://www.youtube.com/channel/UC3LqXqBN-R7C91ttlyXHhIQ",
+        "name": "instagram",
+        "link": "https://www.instagram.com/designatuci/",
         "icons": {
-            "default": "youtube.svg",
-            "nav": "nav-youtube.svg"
+            "default": "instagram.svg",
+            "nav": "nav-instagram.svg"
         }
     },
     {
@@ -22,6 +15,7 @@
             "nav": "nav-discord.svg"
         }
     },
+
     {
         "name": "facebook",
         "link": "https://www.facebook.com/designatuci/",
@@ -39,11 +33,19 @@
         }
     },
     {
-        "name": "instagram",
-        "link": "https://www.instagram.com/designatuci/",
+        "name": "youtube",
+        "link": "https://www.youtube.com/channel/UC3LqXqBN-R7C91ttlyXHhIQ",
         "icons": {
-            "default": "instagram.svg",
-            "nav": "nav-instagram.svg"
+            "default": "youtube.svg",
+            "nav": "nav-youtube.svg"
+        }
+    },
+    {
+        "name": "tik tok",
+        "link": "https://www.tiktok.com/@design_at_uci",
+        "icons": {
+            "default": "tiktok.svg",
+            "nav": "nav-tiktok.svg"
         }
     }
 ]

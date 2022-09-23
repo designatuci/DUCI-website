@@ -1,16 +1,5 @@
 [
     {
-        "link": "https://www.tiktok.com/@design_at_uci",
-        "color": "var(--gray)",
-        "bg": {
-            "shadow": "0 12px 24px -12px #e8eaff",
-            "color": "white",
-            "background": "black"
-        },
-        "name": "TikTok",
-        "icon": "tiktok-color.svg"
-    },
-    {
         "link": "https://www.instagram.com/designatuci",
         "color": "#C73457",
         "bg": {
@@ -43,5 +32,16 @@
         },
         "name": "LinkedIn",
         "icon": "LinkedIn-Color.svg"
+    },
+    {
+        "link": "https://www.tiktok.com/@design_at_uci",
+        "color": "var(--gray)",
+        "bg": {
+            "shadow": "0 12px 24px -12px #e8eaff",
+            "color": "white",
+            "background": "black"
+        },
+        "name": "TikTok",
+        "icon": "tiktok-color.svg"
     }
 ]

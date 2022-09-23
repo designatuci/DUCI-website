@@ -123,7 +123,15 @@ const Footer = () => (
 						href='https://www.kailerg.com/'
 					>
 						Kailer Garcia
-					</a>
+					</a>{', '}
+					<a
+						className={cn.mark}
+						target='_blank'
+						rel='noopener noreferrer'
+						href='https://ryqn.dev/'
+					>
+						Ryan Yang
+					</a>, and Taesung Hwang	
 				</Text>
 			</div>
 			<Space block h='64' />
