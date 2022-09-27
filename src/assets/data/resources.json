@@ -1,5 +1,14 @@
 [
     {
+        "title": "Mentorship Program",
+        "link": "/mentorship",
+        "desc": "Learn about our mentorship program ",
+        "main": "green",
+        "accent": "gray",
+        "background": "var(--mint)",
+        "icon": "res-merch.svg"
+    },
+    {
         "title": "Design-a-thon",
         "link": "/designathons/",
         "desc": "Our biggest event held every year. Teams design and compete for prizes",
@@ -10,7 +19,7 @@
     },
     {
         "title": "Project Teams",
-        "link": "/pt/",
+        "link": "/pt",
         "desc": "Work on a team to design a beautiful large-scale product.",
         "main": "red",
         "accent": "gray",
@@ -25,15 +34,6 @@
         "accent": "gray",
         "background": "var(--peach)",
         "icon": "res-featured.svg"
-    },
-    {
-        "title": "Merchandise",
-        "link": "/merch/",
-        "desc": "Support and represent Design at UCI.",
-        "main": "green",
-        "accent": "gray",
-        "background": "var(--mint)",
-        "icon": "res-merch.svg"
     },
     {
         "title": "Newsletter Archive",

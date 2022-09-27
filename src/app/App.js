@@ -13,6 +13,7 @@ import {
 	EventsAll,
 	Home,
 	Join,
+	Mentorship,
 	Merch,
 	NotFound,
 	PT,
@@ -45,6 +46,9 @@ function App() {
 				<Route path='resources'>
 					<Route index element={<Resources />} />
 					<Route path='featured' element={<ResourcesFeatured />} />
+				</Route>
+				<Route path='mentorship'>
+					<Route index element={<Mentorship />} />
 				</Route>
 				<Route path='merch'>
 					<Route index element={<Merch />} />

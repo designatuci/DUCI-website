@@ -4,6 +4,7 @@ import Contact from './Contact';
 import { Events, EventsAll } from './Events';
 import Home from './Home';
 import Join from './Join';
+import Mentorship from './Mentorship';
 import Merch from './Merch';
 import NotFound from './NotFound';
 import PT from './PT';
@@ -19,6 +20,7 @@ export {
 	EventsAll,
 	Home,
 	Join,
+	Mentorship,
 	Merch,
 	NotFound,
 	PT,
