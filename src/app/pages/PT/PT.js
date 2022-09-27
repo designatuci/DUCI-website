@@ -19,12 +19,20 @@ const PT = () => (
 				className='flex left slim spaceChildrenSmall'
 				style={{ textAlign: 'left' }}
 			>
-				<Text className='color red'>
-					Project Team apps for Spring 2022 are closed.
-					
-				</Text>
 				<Text className='color green'>
-					Keep an eye out for Fall 2022 apps!					
+					Project Team apps for Fall 2022 are open.
+				</Text>
+				<Text className='color gray'>
+					Signups can be found{' '}
+					<Text className='color blue'>
+						<a
+							href='https://forms.gle/hHqKT4tX6W1n8VHJ9'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							here
+						</a>
+					</Text>
 				</Text>
 
 				<br />
@@ -42,12 +50,8 @@ const PT = () => (
 					academic quarter.
 				</Text>
 				<Text className='color gray'>
-					To get involved,{' '}
-					<Link to='/join/'>
-						join us
-					</Link>{' '}
-					to get notifications about when the next applications come
-					out!
+					To get involved, <Link to='/join/'>join us</Link> to get
+					notifications about when the next applications come out!
 				</Text>
 			</div>
 		</Section>
