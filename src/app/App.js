@@ -69,20 +69,20 @@ function App() {
 				/>
 				<Route
 					path='ptsignup'
-					element={<Navigate to='//bit.ly/3DpZBz9' />}
+					element={<Navigate to='//forms.gle/hHqKT4tX6W1n8VHJ9' />}
 				/>
 				<Route
 					path='ptsignups'
-					element={<Navigate to='//bit.ly/3DpZBz9' />}
+					element={<Navigate to='//forms.gle/hHqKT4tX6W1n8VHJ9' />}
 				/>
-				<Route
+				{/* <Route
 					path='buy'
 					element={<Navigate to='//forms.gle/RVoUbLPQnHYzeWMA6' />}
-				/>
-				<Route
+				/> */}
+				{/* <Route
 					path='apply'
 					element={<Navigate to='//forms.gle/UXpfUfANHZ9m6fR47' />}
-				/>
+				/> */}
 
 				<Route path='*' element={<NotFound />} />
 			</Routes>
