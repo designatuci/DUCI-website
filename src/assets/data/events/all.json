@@ -1,5 +1,14 @@
 [
     {
+        "title": "DaUCI x WiCS: Intro to UI/UX",
+        "time": "10/17/2022 6:30 PM",
+        "duration": "120",
+        "type": "Workshop",
+        "desc": "Are you interested in learning more about UI/UX? Join our beginner-friendly workshop in collaboration with WiCS on Monday, 10/17 in DBH 6011 at 6:30pm! We'll be discussing both UI and UX design in great detail, including visual design fundamentals, evaluating for good UI, the UX design process, and applying design principles to your code. We'll also be taking a closer look at Figma, a design tool used in industry. Remember to RSVP (link in bio) if you plan on attending!",
+        "place": "DBH 6011",
+        "links": []
+    },
+    {
         "title": "AMA (Ask Me Anything) Summer Internship Panel",
         "time": "10/11/2022 8:00 PM",
         "duration": "120",
@@ -13,7 +22,7 @@
         "time": "10/4/2022 8:00 PM",
         "duration": "120",
         "type": "Social Event",
-        "desc": "More details to come!",
+        "desc": "Hey fellow anteaters, come out to Design at UCI official Game Night where we will be hosting tournaments of your favorite games like Smash, UNO, and Codenames! Come to compete in the various games and collect tickets along the way to win some cool prizes. Game Night is a great place to meet new people, play board games and relax before classes start to ramp up. Admission is $3, see you there",
         "place": "DBH 1600",
         "links": []
     },
