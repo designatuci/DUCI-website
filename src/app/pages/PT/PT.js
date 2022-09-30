@@ -53,6 +53,26 @@ const PT = () => (
 					To get involved, <Link to='/join/'>join us</Link> to get
 					notifications about when the next applications come out!
 				</Text>
+
+				<Space h='32' />
+				<Text size='L'>Fall 2022 PT schedule</Text>
+				<Text className='color gray'>
+					Week 2 / Oct 6 @ 8 pm - Meet your Team + Plan your Project
+					<br />
+					Week 3 / Oct 13 @ 8 pm
+					<br />
+					Week 4 / Oct 20 @ 8 pm
+					<br />
+					Week 5 / Oct 27 @ 8 pm
+					<br />
+					Week 6 / Nov 3 @ 8 pm
+					<br />
+					Week 7 / Nov 10 @ 8 pm
+					<br />
+					Week 8 / Nov 17 @ 8 pm
+					<br />
+					Week 9 / Gen Meeting - Demo Day
+				</Text>
 			</div>
 		</Section>
 	</>
