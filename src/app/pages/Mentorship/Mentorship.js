@@ -11,7 +11,7 @@ const Merch = () => (
 			<title>Mentorship – Design at UCI</title>
 		</Helmet>
 		<Section className='center page short'>
-			<Icon className='wait dx scale' w='96' h='96' src='merch.svg' />
+			<Icon className='wait dx scale' w='96' h='96' src='mentor-main.svg'/>
 			<Text size='XXL' className='wait dx scale'>
 				Mentorship
 			</Text>
