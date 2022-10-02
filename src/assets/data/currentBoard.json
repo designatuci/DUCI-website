@@ -52,7 +52,16 @@
         "position": "Marketing Coordinator",
         "color": "green",
         "photo": "Kristy_Chung.png",
-        "links": []
+        "links": [
+            {
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/kristychung1/"
+            },
+            {
+                "type": "instagram",
+                "href": "https://www.instagram.com/kriisty.c/"
+            }
+        ]
     },
     {
         "name": "Khanh Tran",
