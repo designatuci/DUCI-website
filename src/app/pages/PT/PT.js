@@ -19,20 +19,8 @@ const PT = () => (
 				className='flex left slim spaceChildrenSmall'
 				style={{ textAlign: 'left' }}
 			>
-				<Text className='color green'>
-					Project Team apps for Fall 2022 are open.
-				</Text>
-				<Text className='color gray'>
-					Signups can be found{' '}
-					<Text className='color blue'>
-						<a
-							href='https://forms.gle/hHqKT4tX6W1n8VHJ9'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							here
-						</a>
-					</Text>
+				<Text className='color red'>
+					Project Team applications for Fall 2022 have closed.
 				</Text>
 
 				<br />
