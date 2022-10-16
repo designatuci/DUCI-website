@@ -1,4 +1,15 @@
-[
+[{
+        "title": "Design…at UCI and Beyond!",
+        "time": "10/19/2022 6:00 PM",
+        "duration": "120",
+        "type": "Workshop",
+        "desc": "Hello designers!! Join us for a special event about design at UCI and beyond held over Zoom hosted by our very own exec team. Learn about the resources and opportunities here at UCI to further your design skills, including organizations, classes, and jobs. Explore what post-grad paths look like for designers who graduate out of UCI including industry, research, and grad school. We also might be inviting a special guest, so stay tuned!!",
+        "place": "Online",
+        "links": [{
+            "label": "Zoom Link",
+            "link": "https://uci.zoom.us/j/94150433960"
+        }]
+    },
     {
         "title": "DaUCI x WiCS: Intro to UI/UX",
         "time": "10/17/2022 6:30 PM",
@@ -51,12 +62,10 @@
         "type": "Workshop",
         "desc": " Interested in learning about working cross-functionally as a designer? Join us for a workshop in collaboration with UCSD Design Co (@ucsddesignco), where we’ll be discussing what collaboration in industry looks like within design teams, as well as cross-functionally with engineers, PMs, and research teams.",
         "place": "Online",
-        "links": [
-            {
-                "label": "Zoom Link",
-                "link": "http://ucsddesign.co/gbm"
-            }
-        ]
+        "links": [{
+            "label": "Zoom Link",
+            "link": "http://ucsddesign.co/gbm"
+        }]
     },
     {
         "title": "Picnic in Aldrich",
@@ -114,7 +123,7 @@
         "desc": "Join us for boba and pizza at UTC! We’ll eat pizza, have boba, play games, and get a chance to get to know other members of the club!",
         "place": "UTC, outside Cha & Yogurtland",
         "links": []
-    },{
+    }, {
         "title": "ICS Clubs Fair",
         "time": "3/31/2022 12:00 PM",
         "duration": "120",
