@@ -1,4 +1,16 @@
 [{
+        "title": "Pumpkin Patch @ Tanaka Farms",
+        "time": "10/29/2022 3:00 PM",
+        "duration": "120",
+        "type": "Social",
+        "desc": "Hey fellow DE-SIGN-ERS, come relax before or destress after your midterms with Design @ UCI at Tanaka Farms Pumpkin Patch! Please fill out the interest form since their will be a limited number of spots available. Come with us to solve corn mazes, frolic across the pumpkins patches and look at cute farm animals!",
+        "place": "Meet at UCI Flag Poles",
+        "links": [{
+            "label": "Interest Form",
+            "link": "https://forms.gle/D5Gqg8MJseTHDeQK9"
+        }]
+    },
+    {
         "title": "Design…at UCI and Beyond!",
         "time": "10/19/2022 6:00 PM",
         "duration": "120",
