@@ -1,4 +1,22 @@
-[{
+[
+    {
+        "title": "Advanced topics in Figma with Product@UCI",
+        "time": "11/8/2022 8:00 PM",
+        "duration": "120",
+        "type": "Workshop",
+        "desc": "Interested in UI/UX design and want to learn how to creat cool projects and product design in Figma? Come join our workshop in collaboration with Product Association on Tuesday 11/8 in DBH 1600 at 8pm. We will cover some features and resources in Figma. There will also be fun follow-along design activity!Interested in UI/UX design and want to learn how to creat cool projects and product design in Figma? Come join our workshop in collaboration with Product Association on Tuesday 11/8 in DBH 1600 at 8pm. We will cover some features and resources in Figma. There will also be fun follow-along design activity!",
+        "place": "DBH 1600",
+        "links": []
+    },{
+        "title": "Developing your Personal Brand w/ Rachel Kim",
+        "time": "11/1/2022 8:00 PM",
+        "duration": "120",
+        "type": "Workshop",
+        "desc": "Ever wondered what a personal brand means? Stuck on how to improve your portfolio or just need some inspiration? DAUCI is hosting a speaker event presenting Rachel Kim, who has worked with Lucid Software, TOMS Shoes, and Mattel. Come hear our featured art director speak about branding and a design that is personal to YOU!",
+        "place": "DBH 1600",
+        "links": []
+    },
+    {
         "title": "Pumpkin Patch @ Tanaka Farms",
         "time": "10/29/2022 3:00 PM",
         "duration": "120",
