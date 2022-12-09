@@ -2,8 +2,6 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 
 import { Footer, Nav } from './components';
 import { useScroll } from './controllers';
-import Designathons from './pages/Designathons';
-import Designathon22 from './pages/Designathon22';
 import Hey from './pages/Hey';
 import {
 	About,
@@ -28,6 +26,7 @@ import './styles/layout.scss';
 import './styles/components.scss';
 import './styles/animations.scss';
 import './styles/forms.scss';
+import Designathon from './pages/Designathons';
 
 function App() {
 	useScroll();
@@ -57,9 +56,10 @@ function App() {
 				<Route path='contact' element={<Contact />} />
 				<Route path='about' element={<About />} />
 				<Route path='pt' element={<PT />} />
-				<Route path='designathons' element={<Designathons />} />
-				<Route path='designathon22' element={<Designathon22 />} />
-				<Route path='impact22' element={<Designathon22 />} />
+
+				<Route path='designathon/*' element={<Designathon />} />
+				<Route path='designathons/*' element={<Designathon />} />
+
 				<Route path='brand' element={<Brand />} />
 
 				{/* Redirects */}

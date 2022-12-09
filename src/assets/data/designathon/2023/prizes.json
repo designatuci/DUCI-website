@@ -1,0 +1,16 @@
+[{
+    "symbol": "1st",
+    "label": "First place",
+    "prizes": [
+        "A personal thank you from Ryan Yang",
+        "[optional] A personal hug from Ryan for all the great work you did",
+        "[optional] Words of affection from Ryan in case that's your love language"
+    ]
+}, {
+    "symbol": "2nd",
+    "label": "Second place",
+    "prizes": [
+        "A personal thank you from Ryan Yang",
+        "A thumbs up from Ryan Yang"
+    ]
+}]

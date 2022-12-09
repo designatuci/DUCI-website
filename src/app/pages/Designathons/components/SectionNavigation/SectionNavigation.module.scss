@@ -1,0 +1,28 @@
+.container {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 88px;
+    padding: 0 32px;
+    box-shadow: 0 0 8px #0002;
+    background-color: white;
+
+    display: grid;
+    place-content: center start;
+    grid-auto-flow: column;
+
+    &>.item {
+        padding: 12px 24px;
+        cursor: pointer;
+        border-radius: 999px;
+        background-color: white;
+        transition: background-color 250ms;
+
+        &:hover {
+            background-color: var(--sky);
+        }
+    }
+}

@@ -1,0 +1,42 @@
+[{
+        "symbol": "1st",
+        "label": "First place",
+        "prizes": [
+            "$40 gift card for each person on the winning team",
+            "Design at UCI and designathon stickers",
+            "A feature on the Design at UCI website",
+            "Free Sketch licenses",
+            "1-on-1 mentorship session with a judge of your choice"
+        ]
+    },
+    {
+        "symbol": "2nd",
+        "label": "Second place",
+        "prizes": [
+            "$15 gift card for each person on the winning team",
+            "Design at UCI and designathon stickers",
+            "A feature on the Design at UCI website",
+            "1-on-1 mentorship session with a judge of your choice"
+        ]
+    },
+    {
+        "symbol": "3rd",
+        "label": "Third place",
+        "prizes": [
+            "Design at UCI and designathon stickers",
+            "A feature on the Design at UCI website"
+        ]
+    },
+    {
+        "symbol": "Raffle",
+        "label": "Randomly selected participants",
+        "prizes": [
+            "All participants who submit a prototype are eligible to win",
+            "Design at UCI sticker set",
+            "Exclusive Designathon sticker",
+            "1 year-subscription license for Axure RP Team Edition",
+            "1 year-long Sketch license",
+            "Sketch Swag"
+        ]
+    }
+]
