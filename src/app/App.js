@@ -67,6 +67,8 @@ function App() {
 					path='discord'
 					element={<Navigate to='//discord.com/invite/MBVrKe9' />}
 				/>
+
+				{/* Leaving this redirect here since that link is posted on our insta */}
 				<Route
 					path='impact22'
 					element={<Navigate to='/designathon/22' />}

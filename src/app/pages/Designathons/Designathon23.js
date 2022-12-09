@@ -1,7 +1,14 @@
 import { useState, useEffect, Component } from 'react';
 import { Section, Space, Icon, Photo } from 'app/Symbols';
 import { Text } from '../../components';
-import { SectionNavigation, WinnerShowcase, Judges, Prizes, WorkshopHosts, Rules } from './components';
+import {
+	SectionNavigation,
+	WinnerShowcase,
+	Judges,
+	Prizes,
+	WorkshopHosts,
+	Rules,
+} from './components';
 import WINNERS_2023 from 'assets/data/designathon/2023/winners.json';
 import JUDGES_2023 from 'assets/data/designathon/2023/judges.json';
 import PRIZES_2023 from 'assets/data/designathon/2023/prizes.json';
@@ -9,6 +16,13 @@ import WORKSHOP_HOSTS_2023 from 'assets/data/designathon/2023/workshop-hosts.jso
 import RULES_2023 from 'assets/data/designathon/2023/rules.json';
 
 const Designathon22 = () => {
+	return (
+		<Section>
+			<Text size='XXXL' className='bold'>
+				Check Back Soon!
+			</Text>
+		</Section>
+	);
 	useEffect(() => {
 		T = 0;
 		initialize();
@@ -204,7 +218,7 @@ const Designathon22 = () => {
 				</Section>
 
 				<Judges profiles={JUDGES_2023} />
-				<Prizes list={PRIZES_2023}/>
+				<Prizes list={PRIZES_2023} />
 				<WorkshopHosts profiles={WORKSHOP_HOSTS_2023} />
 				<Rules rules={RULES_2023} />
 
@@ -908,21 +922,21 @@ const Designathon22 = () => {
 								return (
 									// <Toggle
 									// 	closed={
-											<div className='faqitem gray card S flex left spaceChildrenSmall'>
-												<div className='flex row top'>
-													<Icon
-														src='d22-arrow.svg'
-														w='18'
-														h='18'
-														style={{
-															marginRight: '16px',
-														}}
-													/>
-													<Text className='bold'>
-														{item.q}
-													</Text>
-												</div>
-											</div>
+									<div className='faqitem gray card S flex left spaceChildrenSmall'>
+										<div className='flex row top'>
+											<Icon
+												src='d22-arrow.svg'
+												w='18'
+												h='18'
+												style={{
+													marginRight: '16px',
+												}}
+											/>
+											<Text className='bold'>
+												{item.q}
+											</Text>
+										</div>
+									</div>
 									// 	}
 									// 	opened={
 									// 		<div className='faqitem open card S flex left spaceChildrenSmall'>
@@ -1104,7 +1118,7 @@ const Designathon22 = () => {
 
 export default Designathon22;
 
-const TimerText = ({children}) => <>{children}</>;
+const TimerText = ({ children }) => <>{children}</>;
 
 class TimeRouter extends Component {
 	constructor(props) {
