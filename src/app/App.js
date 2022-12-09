@@ -68,6 +68,10 @@ function App() {
 					element={<Navigate to='//discord.com/invite/MBVrKe9' />}
 				/>
 				<Route
+					path='impact22'
+					element={<Navigate to='/designathon/22' />}
+				/>
+				<Route
 					path='ptsignup'
 					element={<Navigate to='//forms.gle/hHqKT4tX6W1n8VHJ9' />}
 				/>
