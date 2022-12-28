@@ -1,9 +1,33 @@
-[{
+[
+    {
+        "name": "Winter 2023 Merch",
+        "path": "winter-2023",
+        "description": "Unisex, ultra-cotton black shirts by Gildan with a screen-printed 'design' and thick, durable 2 in. x 2 in. vinyl stickers.",
+        "inStock": true,
+        "buyLink": "https://forms.gle/TJNv9zixcZehMBXq5",
+        "items": [
+            {
+                "name": "Long-Sleeved DAUCI Shirt",
+                "price": 22,
+                "photo": "shirt.png"
+            },
+            {
+                "name": "Bobaeater",
+                "price": 3,
+                "photo": "bobaeater.png" 
+            },
+            {
+                "name": "DAUCI is My Passion",
+                "price": 3,
+                "photo": "passion.png"
+            }
+        ]
+    },
+    {
         "name": "Spring 2022 Merch",
         "path": "spring-2022",
         "description": "Embroidered unisex shirts and high quality, weather-proof vinyl items with exclusive, original designs.",
-        "inStock": true,
-        "buyLink": "https://forms.gle/RVoUbLPQnHYzeWMA6",
+        "inStock": false,
         "items": [{
                 "name": "UC Irvine Embroidered T-Shirt",
                 "price": 30,
