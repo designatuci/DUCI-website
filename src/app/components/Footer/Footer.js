@@ -140,18 +140,6 @@ const Footer = () => (
 				</Text>
 			</div>
 			<Space block h='64' />
-			<Text>
-				This website uses Google Analytics, their privacy policy can be
-				found{' '}
-				<a
-					target='noreferer'
-					className={cn.mark}
-					href='https://www.google.com/policies/privacy/'
-				>
-					here
-				</a>
-				.
-			</Text>
 		</div>
 	</Section>
 );
