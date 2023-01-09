@@ -1,5 +1,16 @@
 [
     {
+        "title": "Product Design & Ideation",
+        "time": "1/9/2023 8:00 PM",
+        "duration": "120",
+        "type": "Workshop",
+        "desc": "Interested in learning more about product design? Join our beginner-friendly workshop as we discuss UI/UX design, ideation and evaluation, and the product development process. We'll also be taking a closer look at the design tool Figma and going through a quick idea generation/design thinking exercise!",
+        "place": "online",
+        "links": [{
+            "label": "Zoom Link",
+            "link": "https://uci.zoom.us/j/94150433960"
+        }]
+    },{
         "title": "Advanced topics in Figma with Product@UCI",
         "time": "11/8/2022 8:00 PM",
         "duration": "120",
