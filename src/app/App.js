@@ -75,11 +75,11 @@ function App() {
 				/>
 				<Route
 					path='ptsignup'
-					element={<Navigate to='//forms.gle/hHqKT4tX6W1n8VHJ9' />}
+					element={<Navigate to='//forms.gle/2uHLu1FdWZbGyYeW8' />}
 				/>
 				<Route
 					path='ptsignups'
-					element={<Navigate to='//forms.gle/hHqKT4tX6W1n8VHJ9' />}
+					element={<Navigate to='//forms.gle/2uHLu1FdWZbGyYeW8' />}
 				/>
 				{/* <Route
 					path='buy'
