@@ -24,16 +24,17 @@ const PT = () => (
 				</Text>
 
 				<Text className='color gray'>
-					Applications can be found{' '}
+					To participate in project teams,{' '}
 					<Text className='color blue'>
 						<a
 							href='https://forms.gle/2uHLu1FdWZbGyYeW8'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							here.
+							submit an application
 						</a>
-					</Text>
+					</Text>{' '}
+					by Monday, January 16th 2023 at 11:59 PM PST. 
 				</Text>
 
 				<br />
