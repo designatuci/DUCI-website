@@ -5,7 +5,7 @@
         "duration": "120",
         "type": "Workshop",
         "desc": "Interested in learning more about product design? Join our beginner-friendly workshop as we discuss UI/UX design, ideation and evaluation, and the product development process. We'll also be taking a closer look at the design tool Figma and going through a quick idea generation/design thinking exercise!",
-        "place": "online",
+        "place": "Online",
         "links": [{
             "label": "Zoom Link",
             "link": "https://uci.zoom.us/j/94150433960"
