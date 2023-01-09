@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Katherine Park",
+        "position": "Internal",
+        "photo": "Katherine_Park.jpg"
+    },
+    {
+        "name": "Samantha Purganan",
+        "position": "Internal",
+        "photo": "Samantha_Purganan.jpg"
+    },
+    {
+        "name": "Adora Chen",
+        "position": "Internal",
+        "photo": "Adora_Chen.jpeg"
+    },
+    {
+        "name": "Jin-Kim Niu",
+        "position": "External",
+        "photo": "Jin_Kim_Niu.jpg"
+    },
+    {
+        "name": "Moneer Ghani",
+        "position": "External",
+        "photo": "Moneer_Ghani.jpeg"
+    },
+    {
+        "name": "Jessica (Jay) Sotelo",
+        "position": "External",
+        "photo": "Jessica_Sotelo.jpg"
+    },
+    {
+        "name": "Candyce Pham",
+        "position": "Design",
+        "photo": "Candyce_Pham.jpg"
+    },
+    {
+        "name": "Krisha Konchadi",
+        "position": "Design",
+        "photo": "Krisha_Konchadi.jpg"
+    },
+    {
+        "name": "Kaitlyn Tran",
+        "position": "Design",
+        "photo": "Kaitlyn_Tran.jpg"
+    }
+]

@@ -1,6 +1,14 @@
 [{
     "year": 2022,
     "members": [{
+            "name": "Sonali Chellappa",
+            "position": "Project Teams Coordinator",
+            "photo": "Sonali_Chellappa.png"
+        }, {
+            "name": "Juhi Patel",
+            "position": "Project Teams Coordinator",
+            "photo": "Juhi_Patel.jpg"
+        }, {
             "name": "Evangeline Gao",
             "position": "Vice President",
             "color": "blue",
