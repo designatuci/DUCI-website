@@ -19,8 +19,22 @@ const PT = () => (
 				className='flex left slim spaceChildrenSmall'
 				style={{ textAlign: 'left' }}
 			>
-				<Text className='color red'>
-					Project Team applications for Fall 2022 have closed.
+				<Text className='color green'>
+					Project Team applications for Winter 2023 are open.
+				</Text>
+
+				<Text className='color gray'>
+					To participate in project teams,{' '}
+					<Text className='color blue'>
+						<a
+							href='https://forms.gle/2uHLu1FdWZbGyYeW8'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							submit an application
+						</a>
+					</Text>{' '}
+					by Monday, January 16th 2023 at 11:59 PM PST. 
 				</Text>
 
 				<br />
@@ -43,7 +57,7 @@ const PT = () => (
 				</Text>
 
 				<Space h='32' />
-				<Text size='L'>Fall 2022 PT schedule</Text>
+				{/* <Text size='L'>Fall 2022 PT schedule</Text>
 				<Text className='color gray'>
 					Week 2 / Oct 6 @ 8 pm - Meet your Team + Plan your Project
 					<br />
@@ -60,7 +74,7 @@ const PT = () => (
 					Week 8 / Nov 17 @ 8 pm
 					<br />
 					Week 9 / Gen Meeting - Demo Day
-				</Text>
+				</Text> */}
 			</div>
 		</Section>
 	</>
