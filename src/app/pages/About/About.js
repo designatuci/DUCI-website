@@ -9,6 +9,7 @@ import { Section, Space, Icon } from 'app/Symbols.js';
 import ALUMNI_BOARD from 'assets/data/alumniBoard.json';
 import TESTIMONIALS from 'assets/data/boardTestimonials.json';
 import CURRENT_BOARD from 'assets/data/currentBoard.json';
+import CURRENT_INTERNS from 'assets/data/currentBoardInterns.json';
 
 import { Profile } from './components';
 import { ReactComponent as LinkArrow } from './link-arrow.svg';
@@ -132,6 +133,14 @@ const About = () => (
 					<Profile key={i} data={member} />
 				))}
 			</div>
+
+			<Text size='XL'>Board Interns</Text>
+			<div className='center row'>
+				{CURRENT_INTERNS.map((member, i) => (
+					<Profile key={i} data={member} />
+				))}
+			</div>
+			
 			<Text size='XL' className='alumni-header'>
 				Board Alumni
 			</Text>

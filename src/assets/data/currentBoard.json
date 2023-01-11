@@ -1,8 +1,6 @@
-[
-    {
+[{
         "name": "Meghna Kaligotla",
         "position": "President",
-        "color": "red",
         "photo": "Meghna_Kaligotla.jpeg",
         "links": [{
             "type": "linkedin",
@@ -12,7 +10,6 @@
     {
         "name": "Carly Chan",
         "position": "Vice President",
-        "color": "green",
         "photo": "Carly_Chan.jpg",
         "links": [{
                 "type": "linkedin",
@@ -31,7 +28,6 @@
     {
         "name": "Jolin Huang",
         "position": "Marketing Director",
-        "color": "green",
         "photo": "Jolin_Huang.png",
         "links": [{
                 "type": "linkedin",
@@ -50,10 +46,8 @@
     {
         "name": "Kristy Chung",
         "position": "Marketing Coordinator",
-        "color": "green",
         "photo": "Kristy_Chung.png",
-        "links": [
-            {
+        "links": [{
                 "type": "linkedin",
                 "href": "https://www.linkedin.com/in/kristychung1/"
             },
@@ -64,16 +58,35 @@
         ]
     },
     {
+        "name": "Vyctoria Vu",
+        "position": "Marketing Coordinator",
+        "photo": "Vyctoria_Vu.jpg"
+    },
+    {
+        "name": "Emily Huynh",
+        "position": "Marketing Coordinator",
+        "photo": "Emily_Huynh.jpg"
+    },
+    {
         "name": "Khanh Tran",
         "position": "Workshop Coordinator",
-        "color": "green",
         "photo": "Khanh_Tran.jpg",
+        "links": []
+    },
+    {
+        "name": "Vanna Vuong",
+        "position": "Industry Outreach Coordinator",
+        "photo": "Vanna_Vuong.jpeg"
+    },
+    {
+        "name": "Cinta Adhiningrat",
+        "position": "Industry Outreach Coordinator",
+        "photo": "Cinta_Adhiningrat.jpg",
         "links": []
     },
     {
         "name": "Hannah Limary",
         "position": "Designathon Director",
-        "color": "blue",
         "photo": "Hannah_Limary.jpg",
         "links": [{
                 "type": "linkedin",
@@ -85,32 +98,16 @@
             }
         ]
     },
-        
-    {
-        "name": "Sonali Chellappa",
-        "position": "Project Teams Coordinator",
-        "color": "pink",
-        "photo": "Sonali_Chellappa.png"
-    },
-    {
-        "name": "Juhi Patel",
-        "position": "Project Teams Coordinator",
-        "color": "pink",
-        "photo": "Juhi_Patel.jpg"
-    },
     {
         "name": "Sunny Stetsyuk",
         "position": "Project Teams Coordinator",
-        "color": "pink",
         "photo": "Sunny_Stetsyuk.jpg"
     },
     {
         "name": "Jorina Chen",
         "position": "Project Teams Coordinator",
-        "color": "pink",
         "photo": "Jorina_Chen.jpg",
-        "links": [
-            {
+        "links": [{
                 "type": "linkedin",
                 "href": "https://www.linkedin.com/in/jorinachen/"
             },
@@ -123,13 +120,11 @@
     {
         "name": "Zoya Soy",
         "position": "Project Teams Coordinator",
-        "color": "pink",
         "photo": "Zoya_Soy.jpg"
     },
     {
         "name": "Isabel Pham",
         "position": "Creative Director",
-        "color": "blue",
         "photo": "Isabel_Pham.png",
         "links": [{
             "type": "linkedin",
@@ -139,40 +134,49 @@
     {
         "name": "Karla Avalos",
         "position": "Graphic Designer",
-        "color": "red",
         "photo": "Karla_Avalos.jpg"
     },
     {
         "name": "Krey Daniel",
         "position": "Graphic Designer",
-        "color": "red",
         "photo": "Krey_Daniel.jpg",
-        "links": [
-            {"type": "instagram", "href": "https://www.instagram.com/in.krey.dible/"},
-            {"type": "linkedin", "href": "https://www.linkedin.com/in/krey-daniel/"},
-            {"type": "website", "href": "https://kreydaniel.wixsite.com/inkreydible"}
+        "links": [{
+                "type": "instagram",
+                "href": "https://www.instagram.com/in.krey.dible/"
+            },
+            {
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/krey-daniel/"
+            },
+            {
+                "type": "website",
+                "href": "https://kreydaniel.wixsite.com/inkreydible"
+            }
         ]
     },
-    
+
     {
         "name": "Ryan Yang",
         "position": "Webmaster",
-        "color": "red",
         "photo": "Ryan_Yang.jpg",
         "links": [{
-            "type": "website",
-            "href": "https://ryqn.dev"
-        },
-        {
-            "type": "instagram",
-            "href": "https://instagram.com/veryfewsbux"
-        }
-    ]
+                "type": "website",
+                "href": "https://ryqn.dev"
+            },
+            {
+                "type": "instagram",
+                "href": "https://instagram.com/veryfewsbux"
+            }
+        ]
     },
     {
         "name": "Taesung Hwang",
         "position": "Webmaster",
-        "color": "red",
         "photo": "Taesung_Hwang.jpg"
+    },
+    {
+        "name": "Yui Guo",
+        "position": "Finance Chair",
+        "photo": "Yui_Guo.JPG"
     }
 ]
