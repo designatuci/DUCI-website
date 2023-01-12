@@ -7,7 +7,7 @@ const Judges = ({ profiles }) => {
 	return (
 		<Section className={clsx(cn.container, 'flatBot')}>
 			<Text size='XL'>Judges</Text>
-			<div className='split4 s-judges'>
+			<div className='split3 s-judges'>
 				{profiles.map(item => (
 					<div key={item.name} className='flex left top spaceChildrenSmall'>
 						<img

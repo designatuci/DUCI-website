@@ -61,7 +61,7 @@ const Designathons = () => (
 				<Text size='XXL' className='bold'>
 					Designathon 2023
 				</Text>
-				<Text className='bold'>Date TBD</Text>
+				<Text className='bold'>February 24-26 2023</Text>
 				<Space h='32' />
 					<Text className='button' color='blue' icon='right'>Event Page</Text>
 			</Link>
