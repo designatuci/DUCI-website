@@ -1,13 +1,20 @@
-[
-    {
+[{
         "name": "Katherine Park",
         "position": "Internal",
-        "photo": "Katherine_Park.jpg"
+        "photo": "Katherine_Park.jpg",
+        "links": [{
+            "type": "linkedin",
+            "href": "https://www.linkedin.com/in/katherine-p-a93a10219"
+        }]
     },
     {
         "name": "Samantha Purganan",
         "position": "Internal",
-        "photo": "Samantha_Purganan.jpg"
+        "photo": "Samantha_Purganan.jpg",
+        "links": [{
+            "type": "instagram",
+            "href": "https://www.instagram.com/samgmpurg/?hl=en"
+        }]
     },
     {
         "name": "Adora Chen",
@@ -17,22 +24,43 @@
     {
         "name": "Jin-Kim Niu",
         "position": "External",
-        "photo": "Jin_Kim_Niu.jpg"
+        "photo": "Jin_Kim_Niu.jpg",
+        "links": [{
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/jin-kim-niu/"
+            },
+            {
+                "type": "website",
+                "href": "https://jinkimniu.myportfolio.com/work"
+            }
+        ]
     },
     {
         "name": "Moneer Ghani",
         "position": "External",
-        "photo": "Moneer_Ghani.jpeg"
+        "photo": "Moneer_Ghani.jpeg",
+        "links": [{
+            "type": "instagram",
+            "href": "https://www.instagram.com/moneerg/?hl=en"
+        }]
     },
     {
         "name": "Jessica (Jay) Sotelo",
         "position": "External",
-        "photo": "Jessica_Sotelo.jpg"
+        "photo": "Jessica_Sotelo.jpg",
+        "links": [{
+            "type": "linkedin",
+            "href": "http://linkedin.com/in/jessica-sotelo"
+        }]
     },
     {
         "name": "Candyce Pham",
         "position": "Design",
-        "photo": "Candyce_Pham.jpg"
+        "photo": "Candyce_Pham.jpg",
+        "links": [{
+            "type": "linkedin",
+            "href": "http://www.linkedin.com/in/candyce-pham"
+        }]
     },
     {
         "name": "Krisha Konchadi",
@@ -42,6 +70,15 @@
     {
         "name": "Kaitlyn Tran",
         "position": "Design",
-        "photo": "Kaitlyn_Tran.jpg"
+        "photo": "Kaitlyn_Tran.jpg",
+        "links": [{
+                "type": "instagram",
+                "href": "https://instagram.com/kaitlyn_tranzzz?igshid=YmMyMTA2M2Y="
+            },
+            {
+                "type": "instagram",
+                "href": "https://instagram.com/noomzster?igshid=YmMyMTA2M2Y="
+            }
+        ]
     }
 ]
