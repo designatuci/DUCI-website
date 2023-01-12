@@ -160,12 +160,16 @@
         "position": "Webmaster",
         "photo": "Ryan_Yang.jpg",
         "links": [{
-                "type": "website",
-                "href": "https://ryqn.dev"
-            },
-            {
                 "type": "instagram",
                 "href": "https://instagram.com/veryfewsbux"
+            },
+            {
+                "type": "linkedin",
+                "href": "https://www.linkedin.com/in/ryanqyang/"
+            },
+            {
+                "type": "website",
+                "href": "https://ryqn.dev"
             }
         ]
     },
