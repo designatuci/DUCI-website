@@ -1,5 +1,21 @@
 [
     {
+        "title": "Intro to Logo Design with UCSB Creative Lab",
+        "time": "2/1/2023 6:00 PM",
+        "duration": "120",
+        "type": "Workshop",
+        "desc": "Are you interested in designing iconic and memorable logos like Apple, Nike, and many other brands? Check out our Intro to Logo Design workshop in collaboration with UCSB Creative Lab. You’ll learn about different types of logo, the design process, tips, and practice with hands-on exercises in our workshop!",
+        "place": "Online",
+        "links": []
+    },{
+        "title": "Pajama Movie Night",
+        "time": "1/17/2023 8:00 PM",
+        "duration": "120",
+        "type": "Social",
+        "desc": "Cozy up in your pajamas and join Design at UCI for a movie night, where we’ll be playing a movie (exact movie TBA)! Pizza and snacks will be provided.",
+        "place": "ALP (Room # TBA)",
+        "links": []
+    },{
         "title": "Product Design & Ideation",
         "time": "1/9/2023 8:00 PM",
         "duration": "120",
