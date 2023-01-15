@@ -80,5 +80,14 @@
                 "href": "https://instagram.com/noomzster?igshid=YmMyMTA2M2Y="
             }
         ]
+    },
+    {
+        "name": "Brandon Gumayagay",
+        "position": "Developer",
+        "photo": "Brandon_Gumayagay.jpg",
+        "links":[{
+            "type": "linkedin",
+            "href": "https://www.linkedin.com/in/brandon-gumayagay/"
+        }]
     }
 ]
