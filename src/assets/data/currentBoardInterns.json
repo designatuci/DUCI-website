@@ -89,5 +89,14 @@
             "type": "linkedin",
             "href": "https://www.linkedin.com/in/brandon-gumayagay/"
         }]
+    },
+    {
+        "name": "Rosalind Guo",
+        "position": "Developer",
+        "photo": "RosalindGuo.jpg",
+        "links":[{
+            "type": "instagram",
+            "href": "https://www.instagram.com/rozguo/"
+        }]
     }
 ]
