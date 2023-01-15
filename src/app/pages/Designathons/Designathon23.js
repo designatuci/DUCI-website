@@ -15,7 +15,7 @@ import PRIZES_2023 from 'assets/data/designathon/2023/prizes.json';
 import WORKSHOP_HOSTS_2023 from 'assets/data/designathon/2023/workshop-hosts.json';
 import RULES_2023 from 'assets/data/designathon/2023/rules.json';
 
-const Designathon22 = () => {
+const Designathon23 = () => {
 	return (
 		<Section>
 			<Text size='XXXL' className='bold'>
@@ -23,6 +23,9 @@ const Designathon22 = () => {
 			</Text>
 		</Section>
 	);
+};
+
+export function Designathon22() {
 	useEffect(() => {
 		T = 0;
 		initialize();
@@ -1116,7 +1119,7 @@ const Designathon22 = () => {
 	);
 };
 
-export default Designathon22;
+export default Designathon23;
 
 const TimerText = ({ children }) => <>{children}</>;
 
@@ -1130,11 +1133,11 @@ class TimeRouter extends Component {
 		};
 		this.setNextTimer = () => {
 			let now = new Date();
-			let selection = this.props.timeline[0];
+			// let selection = this.props.timeline[0];
 			let next = null;
 			for (let plan of this.props.timeline) {
 				if (new Date(plan.start) < now) {
-					selection = plan;
+					// selection = plan;
 				} else {
 					next = plan;
 					break;
@@ -1835,6 +1838,7 @@ class Program {
 						alert('Undefined uniform type');
 						break;
 				}
+				// eslint-disable-next-line no-loop-func
 				this.setUniform[i[2]] = value => {
 					gl.useProgram(this.program);
 					gl[setFuncName](location, value);
