@@ -7,7 +7,20 @@
         "desc": "Are you interested in designing iconic and memorable logos like Apple, Nike, and many other brands? Check out our Intro to Logo Design workshop in collaboration with UCSB Creative Lab. You’ll learn about different types of logo, the design process, tips, and practice with hands-on exercises in our workshop!",
         "place": "Online",
         "links": []
-    },{
+    },
+    {
+        "title": "Nailing Design Interviews: The Gaming Industry",
+        "time": "1/23/2023 8:00 PM",
+        "duration": "120",
+        "type": "Industry Speaker",
+        "desc": "It's recruitment season, everyone! Hear all the tips and tricks from Anya Li @ Riot Games to hear about her experience as a designer in the gaming industry. Learn what you need to do to get your next dream design job!",
+        "place": "DBH 1600",
+        "links":[{
+            "label": "Zoom Link",
+            "link": "https://uci.zoom.us/j/94150433960"
+        }]
+    },
+    {
         "title": "Pajama Movie Night",
         "time": "1/17/2023 8:00 PM",
         "duration": "120",
