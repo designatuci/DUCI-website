@@ -9,10 +9,7 @@ const MerchItem = ({ path, ...item }) => (
 		<div className={cn.aspect}>
 			<img
 				className={cn.photo}
-				src={
-					require(`../../../../../assets/images/merch/${path}/${item.photo}`)
-						.default
-				}
+				src={require(`assets/images/merch/${path}/${item.photo}`)}
 				alt={item.name}
 			/>
 		</div>
