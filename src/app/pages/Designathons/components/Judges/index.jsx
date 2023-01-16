@@ -8,10 +8,13 @@ const Judges = ({ profiles }) => {
 		<Section className={clsx(cn.container, 'flatBot')}>
 			<Text size='XL'>Judges</Text>
 			<div className='split4 s-judges'>
-				{profiles.map(item => (
-					<div className='flex left top spaceChildrenSmall'>
+				{profiles.map((item) => (
+					<div
+						key={item.name}
+						className='flex left top spaceChildrenSmall'
+					>
 						<img
-							src={require(`assets/${item.photo}`).default}
+							src={item.photo}
 							alt={'headshot'}
 							style={{
 								height: 'unset',
@@ -19,7 +22,7 @@ const Judges = ({ profiles }) => {
 								width: '100%',
 								position: 'relative',
 							}}
-						 />
+						/>
 						{/* <Text className="color gray">{item.pronouns}</Text> */}
 						<Text size='L'>{item.name}</Text>
 						<Text>{item.role}</Text>

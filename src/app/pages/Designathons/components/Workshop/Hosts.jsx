@@ -6,9 +6,9 @@ const Hosts = ({ profiles }) => (
 		<Text size='XL'>Workshop Hosts</Text>
 		<div className='split4'>
 			{profiles.map(item => (
-				<div className='flex left top spaceChildrenSmall'>
+				<div key={item.name} className='flex left top spaceChildrenSmall'>
 					<img
-						src={require(`assets/${item.photo}`).default}
+						src={item.photo}
 						alt="headshots"
 						style={{
 							height: 'unset',

@@ -7,9 +7,9 @@ import { Section, Space, Icon, Photo } from 'app/Symbols.js';
 import { Text } from 'app/components';
 import { Judges, Prizes, Rules, SectionNavigation, WinnerShowcase, WorkshopHosts } from './components';
 import WINNERS_2022 from 'assets/data/designathon/2022/winners.json'
-import JUDGES_2022 from 'assets/data/designathon/2022/judges.json'
+import JUDGES_2022 from 'assets/data/designathon/2022/judges.js'
 import PRIZES_2022 from 'assets/data/designathon/2022/prizes.json';
-import WORKSHOP_HOSTS_2022 from 'assets/data/designathon/2022/workshop-hosts.json';
+import WORKSHOP_HOSTS_2022 from 'assets/data/designathon/2022/workshop-hosts.js';
 import RULES_2023 from 'assets/data/designathon/2022/rules.json';
 
 const Designathon22 = () => {
