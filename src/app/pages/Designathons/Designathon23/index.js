@@ -207,6 +207,7 @@ const Designathon23 = () => {
 				<Space h='64' />
 
 				<Judges profiles={JUDGES_2023} />
+				<WorkshopHosts profiles={WORKSHOP_HOSTS_2023} />
 				<Prizes list={PRIZES_2023} />
 				<Rules rules={RULES_2023} />
 
