@@ -7,14 +7,7 @@ import cn from './MerchItem.module.scss';
 const MerchItem = ({ path, ...item }) => (
 	<div key={item.name} className={cn.container}>
 		<div className={cn.aspect}>
-			<img
-				className={cn.photo}
-				src={
-					require(`../../../../../assets/images/merch/${path}/${item.photo}`)
-						.default
-				}
-				alt={item.name}
-			/>
+			<img className={cn.photo} src={item.photo} alt={item.name} />
 		</div>
 		{/* Currently not adding the holo effect since it requires some planning to incorporate cleanly. @TODO */}
 		{/* {item?.type === 'holo' && (

@@ -6,13 +6,7 @@ const Profile = ({ textOnly = false, data }) => (
 	<div className={cn.container}>
 		{!textOnly && (
 			<div className={cn.aspect}>
-				<img
-					src={
-						require(`assets/images/board/current/${data.photo}`)
-							.default
-					}
-					alt={data.name + ' headshot'}
-				/>
+				<img src={data.photo} alt={'Headshot of ' + data.name} />
 			</div>
 		)}
 		<p>

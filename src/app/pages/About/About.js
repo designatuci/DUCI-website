@@ -8,8 +8,8 @@ import { Text } from 'app/components';
 import { Section, Space, Icon } from 'app/Symbols.js';
 import ALUMNI_BOARD from 'assets/data/alumniBoard.json';
 import TESTIMONIALS from 'assets/data/boardTestimonials.json';
-import CURRENT_BOARD from 'assets/data/currentBoard.json';
-import CURRENT_INTERNS from 'assets/data/currentBoardInterns.json';
+import CURRENT_BOARD from 'assets/data/currentBoard.js';
+import CURRENT_INTERNS from 'assets/data/currentBoardInterns.js';
 
 import { Profile } from './components';
 import { ReactComponent as LinkArrow } from './link-arrow.svg';

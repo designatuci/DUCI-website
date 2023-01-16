@@ -7,14 +7,7 @@ import MerchItem from '../MerchItem';
 
 import cn from './MerchDropListing.module.scss';
 
-const MerchDropListing = ({
-	name,
-	inStock,
-	buyLink,
-	description,
-	items,
-	path,
-}) => (
+const MerchDropListing = ({ name, inStock, buyLink, description, items }) => (
 	<Section className={clsx(cn.container, 'short')}>
 		<div className='flex left spaceChildren'>
 			<Text size='XL'>{name}</Text>
@@ -40,8 +33,8 @@ const MerchDropListing = ({
 		</div>
 		<Space h='0' />
 		<div className={clsx(cn.split4, 'split4')}>
-			{items.map(item => (
-				<MerchItem key={item.name} path={path} {...item} />
+			{items.map((item) => (
+				<MerchItem key={item.name} {...item} />
 			))}
 		</div>
 	</Section>
