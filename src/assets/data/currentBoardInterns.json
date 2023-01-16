@@ -98,5 +98,14 @@
             "type": "instagram",
             "href": "https://www.instagram.com/rozguo/"
         }]
+    },
+    {
+        "name": "Kaitlen Ngo",
+        "position": "Developer",
+        "photo": "kaitlen_ngo.PNG",
+        "links":[{
+            "type": "instagram",
+            "href": "https://www.instagram.com/no.11002012014/"
+        }]
     }
 ]
