@@ -14,8 +14,8 @@ import IMG6 from './assets/6.jpeg';
 import IMG7 from './assets/7.jpeg';
 import IMG9 from './assets/9.png';
 import IMG10 from './assets/10.png';
-import IMG11 from './assets/11.png';
-import IMG8 from './assets/8.jpeg';
+// import IMG11 from './assets/11.png';
+// import IMG8 from './assets/8.jpeg';
 
 import cn from './Shirt22.module.scss';
 
