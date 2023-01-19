@@ -1,0 +1,20 @@
+.container {    
+    display: grid;
+    text-align: center;
+    &>img {
+        margin: 0 auto;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+
+    & p {
+        font-size: 2em;
+        font-weight: bold;
+    }
+    &  span {
+        color: grey;
+        font-size: 1.5em;
+    }
+}

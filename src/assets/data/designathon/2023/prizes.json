@@ -28,12 +28,13 @@
         ]
     },
     {
-        "symbol": "Honorable",
-        "label": "Honorable Mention",
+        "symbol": "Raffle",
+        "label": "Randomly selected participants",
         "prizes": [
-            "Each member of the winning team will receive a limited edition Design at UCI sticker pack.",
-            "A feature on the Design at UCI website",
-            "Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
+            "Five lucky participants will receive free merch bundles from our sponsors, Figma and Notion, as well as Adobe. All participants who submit a working prototype according to the submission requirement and prompt AND complete at least 1 entry are eligible to win. See below for ways to enter.",
+            "Participate in our #just-for-fun Discord challenge = 1 entry",
+            "Attend a social = 1 entry",
+            "Attend a workshop = 1 entry"
         ]
     },
     {
@@ -54,19 +55,18 @@
             "Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
         ]
     }, {
+        "symbol": "Honorable",
+        "label": "Honorable Mention",
+        "prizes": [
+            "Each member of the winning team will receive a limited edition Design at UCI sticker pack.",
+            "A feature on the Design at UCI website",
+            "Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
+        ]
+    }, {
         "symbol": "Extras",
         "label": "All participants",
         "prizes": [
             "All participants will receive a 90-day extended trial promo code for Balsamiq Cloud"
-        ]
-    }, {
-        "symbol": "Raffle",
-        "label": "Randomly selected participants",
-        "prizes": [
-            "Five lucky participants will receive free merch bundles from our sponsors, Figma and Notion, as well as Adobe. All participants who submit a working prototype according to the submission requirement and prompt AND complete at least 1 entry are eligible to win. See below for ways to enter.",
-            "Participate in our #just-for-fun Discord challenge = 1 entry",
-            "Attend a social = 1 entry",
-            "Attend a workshop = 1 entry"
         ]
     }
 ]
