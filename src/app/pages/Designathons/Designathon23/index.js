@@ -1,23 +1,35 @@
-import { Section } from 'app/Symbols';
+import { Icon, Section } from 'app/Symbols';
 import { Text } from '../../../components';
-import { SectionNavigation, Judges, WorkshopHosts, Rules } from '../components';
+import { Rules } from '../components';
 import WINNERS_2023 from 'assets/data/designathon/2023/winners.json';
 import JUDGES_2023 from 'assets/data/designathon/2023/judges.json';
 import PRIZES_2023 from 'assets/data/designathon/2023/prizes.json';
 import WORKSHOP_HOSTS_2023 from 'assets/data/designathon/2023/workshop-hosts.json';
 import RULES_2023 from 'assets/data/designathon/2023/rules.json';
 import cn from './Designathon23.module.scss';
-import { Profile, Prizes } from './components';
+import HERO_BG from './assets/hero.png';
+import { Profile, Prizes, SectionNavigation } from './components';
 
 const Designathon23 = () => (
 	<main className={cn.container}>
-		<div className={cn.hero}></div>
+		<div className={cn.hero}>
+			<div className={cn.title}>
+				<Icon className={cn.icon} src='designathon-white.svg' w='96' h='96' />
+				<Text size='XXXL' className='bold'>
+					You Belong Here
+				</Text>
+			</div>
+			<img
+				src={HERO_BG}
+				alt='yellow and blue dots rotating in a circle'
+			/>
+		</div>
 
 		<SectionNavigation />
 
-		<div className={cn.about}>
+		<div className={cn.about} id="s-overview">
 			<Section>
-				<h1>About</h1>
+				<h1 >About</h1>
 				<p>
 					Design-a-thon is a 3 day long hybrid event where you or a
 					team design a product focused on the theme: community and
@@ -45,16 +57,16 @@ const Designathon23 = () => (
 
 		<div className={cn.people}>
 			<Section>
-				<div className={cn.section}>
-					<h1>Workshop Hosts</h1>
-					{WORKSHOP_HOSTS_2023.map(host => (
-						<Profile key={host.photo} {...host} />
-					))}
-				</div>
-				<div className={cn.section}>
+				<div className={cn.section} id="s-judges">
 					<h1>Judges</h1>
 					{JUDGES_2023.map(judge => (
 						<Profile key={judge.photo} {...judge} />
+					))}
+				</div>
+				<div className={cn.section} id="s-workshop-hosts">
+					<h1>Workshop Hosts</h1>
+					{WORKSHOP_HOSTS_2023.map(host => (
+						<Profile key={host.photo} {...host} />
 					))}
 				</div>
 			</Section>
@@ -62,7 +74,7 @@ const Designathon23 = () => (
 
 		<Rules rules={RULES_2023} />
 
-		<div className={cn.prizes}>
+		<div className={cn.prizes} id="s-prizes">
 			<Prizes list={PRIZES_2023} />
 		</div>
 

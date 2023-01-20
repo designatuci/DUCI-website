@@ -1,4 +1,3 @@
-import { Text } from 'app/components';
 import { Section } from 'app/Symbols';
 import cn from './Prizes.module.scss';
 

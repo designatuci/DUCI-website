@@ -5,19 +5,51 @@
     &>img {
         margin: 0 auto;
         border-radius: 50%;
-        height: 200px;
-        width: 200px;
+        height: 100px;
+        width: 100px;
         object-fit: cover;
     }
 
     &>p {
-        font-size: 1.8em;
+        font-size: 1em;
         font-weight: bold;
-        margin: 10px 0;
+        margin: 8px 0;
     }
     
     &>span {
         color: grey;
-        font-size: 1.3em;
+        font-size: 0.9em;
+    }
+    
+
+    @media screen and (min-width: 900px) {
+        &>img {
+            border-radius: 50%;
+            height: 150px;
+            width: 150px;
+        }
+    
+        &>p {
+            font-size: 1.4em;
+        }
+        
+        &>span {
+            font-size: 1.2em;
+        }
+    }
+    @media screen and (min-width: 1350px) {
+        &>img {
+            height: 200px;
+            width: 200px;
+        }
+    
+        &>p {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+        
+        &>span {
+            font-size: 1.3em;
+        }
     }
 }
