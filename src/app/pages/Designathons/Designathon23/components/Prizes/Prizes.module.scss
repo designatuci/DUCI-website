@@ -1,0 +1,33 @@
+.title {
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 80px;
+    padding-bottom: 80px;
+
+
+    &>.item {
+        &:nth-child(even) {
+            & h3 {
+                color: var(--yellow);
+            }
+        }
+
+        & p {
+            color: #ddd;
+            line-height: 1.4em;
+        }
+    }
+
+    & h3 {
+        font-weight: bold;
+        margin: 20px 0;
+        font-size: 1.5em;
+        color: var(--blue);
+    }
+}

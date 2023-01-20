@@ -1,19 +1,13 @@
 import { Section } from 'app/Symbols';
 import { Text } from '../../../components';
-import {
-	SectionNavigation,
-	Judges,
-	Prizes,
-	WorkshopHosts,
-	Rules,
-} from '../components';
+import { SectionNavigation, Judges, WorkshopHosts, Rules } from '../components';
 import WINNERS_2023 from 'assets/data/designathon/2023/winners.json';
 import JUDGES_2023 from 'assets/data/designathon/2023/judges.json';
 import PRIZES_2023 from 'assets/data/designathon/2023/prizes.json';
 import WORKSHOP_HOSTS_2023 from 'assets/data/designathon/2023/workshop-hosts.json';
 import RULES_2023 from 'assets/data/designathon/2023/rules.json';
 import cn from './Designathon23.module.scss';
-import { Profile } from './components';
+import { Profile, Prizes } from './components';
 
 const Designathon23 = () => (
 	<main className={cn.container}>
@@ -25,49 +19,52 @@ const Designathon23 = () => (
 			<Section>
 				<h1>About</h1>
 				<p>
-					You Belong Here is a 3-day long hybrid Design-a-thon where
-					student designers create a product focused on community &
-					inclusivity.
+					Design-a-thon is a 3 day long hybrid event where you or a
+					team design a product focused on the theme: community and
+					inclusivity. It takes place on February 24, starting at 5:30
+					pm and ends February 26, 8:00 pm PST.
 				</p>
 				<p>
-					Our goal is to challenge and hone the design-thinking
-					processes of students by facilitating conversations around
-					real-life social issues and how we can build meaningful
-					solutions.
+					Design at UCI is the premier student-run organization at UCI
+					for anything graphic design, UI/UX design, product design,
+					and more. Started in 2016, we foster a special community for
+					all digital designers to connect, learn, and innovate.
 				</p>
-				<p>Start: February 24th, 2023 - 5:30 pm PST</p>
-				<p>End: February 26th, 2023 - 8:00 pm PST</p>
 				<p>
-					Students from colleges all over the U.S. will be eligible to
-					attend at no cost. Winners will be awarded prizes such as
-					Visa gift cards, 1-on-team mentorship, and free merch from
-					companies such as Figma, Notion, and Adobe, and more!
+					Design at UCI’s designathon is the largest collegiate
+					designathon in Orange County. Each year, we bring together
+					hundreds of student designers nationwide to define, develop,
+					and pitch a product built from scratch. We hope that this
+					experience can help you acquire and grow both your soft and
+					hard skills in empathizing with your users, defining a set
+					of goals and needs, developing your product, and improving
+					your confidence and creativity as a human-centric designer.
 				</p>
 			</Section>
 		</div>
 
 		<div className={cn.people}>
 			<Section>
-				<div className={cn.sections}>
-					<div className={cn.section}>
-						<h1>Workshops</h1>
-						{WORKSHOP_HOSTS_2023.map(host => (
-							<Profile key={host.photo} {...host} />
-						))}
-					</div>
-					<div className={cn.section}>
-						<h1>Judges</h1>
-						{JUDGES_2023.map(judge => (
-							<Profile key={judge.photo} {...judge} />
-						))}
-					</div>
+				<div className={cn.section}>
+					<h1>Workshop Hosts</h1>
+					{WORKSHOP_HOSTS_2023.map(host => (
+						<Profile key={host.photo} {...host} />
+					))}
+				</div>
+				<div className={cn.section}>
+					<h1>Judges</h1>
+					{JUDGES_2023.map(judge => (
+						<Profile key={judge.photo} {...judge} />
+					))}
 				</div>
 			</Section>
 		</div>
 
-		<Prizes list={PRIZES_2023} />
-
 		<Rules rules={RULES_2023} />
+
+		<div className={cn.prizes}>
+			<Prizes list={PRIZES_2023} />
+		</div>
 
 		<Section id='s-about' className='fill gray'>
 			<Text size='XL'>About</Text>

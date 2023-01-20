@@ -15,7 +15,7 @@ const Rules = ({ rules }) => {
 						style={{
 							minWidth: '48px',
 							display: 'block',
-							color: 'var(--d-green)',
+							color: 'var(--green)',
 						}}
 					>
 						{i + 1}
