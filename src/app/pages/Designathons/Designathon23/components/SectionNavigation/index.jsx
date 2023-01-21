@@ -1,4 +1,3 @@
-import { Text } from 'app/components';
 import cn from './SectionNavigation.module.scss';
 
 const SectionNavigation = () => {

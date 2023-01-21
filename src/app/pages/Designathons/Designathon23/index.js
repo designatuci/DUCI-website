@@ -8,7 +8,8 @@ import WORKSHOP_HOSTS_2023 from 'assets/data/designathon/2023/workshop-hosts.jso
 import RULES_2023 from 'assets/data/designathon/2023/rules.json';
 import cn from './Designathon23.module.scss';
 import HERO_BG from './assets/hero.png';
-import { Profile, Prizes, SectionNavigation } from './components';
+import { Profile, Prizes, SectionNavigation, FAQ } from './components';
+import Schedule from './components/Schedule';
 
 const Designathon23 = () => (
 	<main className={cn.container}>
@@ -78,22 +79,10 @@ const Designathon23 = () => (
 			<Prizes list={PRIZES_2023} />
 		</div>
 
-		<Section id='s-about' className='fill gray'>
-			<Text size='XL'>About</Text>
-			<div></div>
-			<div className='split2 textAlignLeft'>
-				<div className='spaceChildrenSmall'>
-					<Text size='L'>Hosted by Design at UCI</Text>
-					<Text>
-						Design at UCI is the premiere student-run organization
-						at UCI for anything graphic design, UI/UX design,
-						product design, and more. Started in 2016, It has
-						amassed many relationships in the Design community of OC
-						and SoCal.
-					</Text>
-				</div>
-			</div>
-		</Section>
+		<Schedule />
+
+		<FAQ />
+
 	</main>
 );
 export default Designathon23;
