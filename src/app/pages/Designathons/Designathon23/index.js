@@ -58,13 +58,19 @@ const Designathon23 = () => (
 
 		<div className={cn.people}>
 			<Section>
-				<div className={cn.section} id="s-judges">
+				<div className={cn.section} id="s-people">
+					<h1>Keynote Speaker</h1>
+					{JUDGES_2023.map(judge => (
+						<Profile key={judge.photo} {...judge} />
+					))}
+				</div>
+				<div className={cn.section} >
 					<h1>Judges</h1>
 					{JUDGES_2023.map(judge => (
 						<Profile key={judge.photo} {...judge} />
 					))}
 				</div>
-				<div className={cn.section} id="s-workshop-hosts">
+				<div className={cn.section}>
 					<h1>Workshop Hosts</h1>
 					{WORKSHOP_HOSTS_2023.map(host => (
 						<Profile key={host.photo} {...host} />

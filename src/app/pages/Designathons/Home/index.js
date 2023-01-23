@@ -52,14 +52,15 @@ const Designathons = () => (
 			className='center fill black'
 			style={{
 				background:
-					'url(/static/photo/pulse.jpg) center/cover no-repeat',
+					'url(/static/photo/you-belong-here-splash.png) center/cover no-repeat',
+				backgroundColor: 'black'
 			}}
 		>
 			<Link to='/designathon/23' className='flex spaceChildren'>
 				<Space h='96' />
 				<Text className='bold'>Design-a-thon 2023</Text>
 				<Text size='XXL' className='bold'>
-					Designathon 2023
+					You Belong Here 2023
 				</Text>
 				<Text className='bold'>February 24-26 2023</Text>
 				<Space h='32' />
