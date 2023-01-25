@@ -5,7 +5,7 @@
 		"role": "Product Designer @ Workday",
 		"pronouns": "he/him",
 		"about": "Antonio is a bay area based UX designer with a love of complex domain areas and problem solving. He has worked for many places throughout his career such as Stanford, Adobe and Workday leading design centered solutions for thousands of customers across multiple industries. When it comes to the UX design field, Antonio believes in always guiding design decisions through the user and that effective communication is the key to team success. In his free time Antonio is an ultimate frisbee player, photographer and runner.",
-		"fun-fact": "Antonio has never traveled outside of North America in his life."
+		"funFact": "Antonio has never traveled outside of North America in his life."
 	},
 	{
 		"name": "Mosope Adebowale",
@@ -13,7 +13,7 @@
 		"role": "Product Designer @ Meta",
 		"pronouns": "he/him",
 		"about": "Mosope is a user experience designer fascinated by the relationship between human interaction and technology. Much of his work has been dedicated to designing better product user experiences. His long-term goal is to make technology easy to use and accessible to everyone. He has mentored more than 200 designers from 18 countries across the world. When Mosope is not designing, you can find him doing some DIY projects, watching anime and exploring the country.",
-		"fun-fact": "Mosope actually studied Geology at the university. He pivoted from Geology to graphic design and then to product design."
+		"funFact": "Mosope actually studied Geology at the university. He pivoted from Geology to graphic design and then to product design."
 	},
 	{
 		"name": "Minjun Chen",
@@ -21,7 +21,7 @@
 		"role": "Product Designer @ Spotify",
 		"pronouns": "she/her/hers",
 		"about": "Minjun is currently a product designer at Spotify, building business tools for advertisers. Before she joined Spotify, Minjun worked at a variety of tech companies in the United States and Canada, including Wayfair, Amazon and Microsoft. This saw her work on products for supply chain, subscription and productivity tools. ",
-		"fun-fact": "Minjun cannot live without 3 cups of coffee every day, and she can even drink espresso/latte before going to sleep at night."
+		"funFact": "Minjun cannot live without 3 cups of coffee every day, and she can even drink espresso/latte before going to sleep at night."
 	},
 	{
 		"name": "Yiming Wang",
@@ -29,7 +29,7 @@
 		"role": "Experience Designer @ VMLY&R",
 		"pronouns": "she/her",
 		"about": "Yiming is a UX designer with an engineering and science background. While working in these fields, she discovered her true passion for improving user experience and decided to pursue a new career in UX design, adapting her previous methodologies to this field. Her goal is to make people's lives easier by providing the best user experience possible, and she approaches the design process from a multidisciplinary and multi-cultural perspective in order to foster innovation and inclusivity. She has worked on website, mobile, and emerging technology initiatives for start-ups as well as industry leaders like Google, Deloitte, and T-Mobile. She is particularly dedicated to improving accessibility for individuals in need and designing games and apps that promote physical and mental wellness. In her spare time, she enjoys working on interactive installation projects.",
-		"fun-fact": "I've been cooking for 9 years and still make terrible dishes."
+		"funFact": "I've been cooking for 9 years and still make terrible dishes."
 	},
 	{
 		"name": "Jeremy Marusek",
@@ -37,6 +37,6 @@
 		"role": "Senior Manager, UX @ Amazon",
 		"pronouns": "he/him",
 		"about": "Jeremy Marusek is a design leader with Amazon Prime Video and resides in Pasadena, CA. He began his career in design working in the music industry designing album covers and websites for independent artists. After moving to Los Angeles he freelanced for film and television productions and then worked in tech at Disney for 14 years until joining Amazon in 2022.",
-		"fun-fact": "I was a touring musician through the 90’s and got into design by doing album covers."
+		"funFact": "I was a touring musician through the 90’s and got into design by doing album covers."
 	}
 ]

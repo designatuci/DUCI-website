@@ -6,8 +6,8 @@ function Schedule() {
   return (
     <div className={cn.container} id="s-schedule">
       <Section>
-        <h1 class="header">Schedule</h1>
-        <h2>Friday Night - Feb. 24, 2023</h2>
+        <h1 className={cn.title}>Schedule</h1>
+        <h2>Friday - Feb. 24, 2023</h2>
         <div class={cn.list}>
           <div class={cn.event}>
             <div class={cn.time}>
@@ -117,10 +117,13 @@ function Schedule() {
             </div>
             <div class={cn.title}>Workshop</div>
             <div class={cn.description}>
-              Led by Mosope Adebowale Topic: Designing for Diversity Location:{" "}
+              <p style={{marginBottom: 20}}>Led by Mosope Adebowale</p> 
+              <p style={{marginBottom: 20}}>Topic: Designing for Diversity</p>
+              <p style={{marginBottom: 20}}>Location:{" "}
               <a href="https://uci.zoom.us/j/92626479110" target="noreferrer">
                 Zoom
               </a>
+              </p>
             </div>
           </div>
           <div class={cn.event}>
@@ -175,7 +178,7 @@ function Schedule() {
           </div>
         </div>
 
-        <h2>Sunday Morning - Feb. 26, 2023</h2>
+        <h2>Sunday - Feb. 26, 2023</h2>
         <div class={cn.list}>
           <div class={cn.event}>
             <div class={cn.time}>8:00 am</div>

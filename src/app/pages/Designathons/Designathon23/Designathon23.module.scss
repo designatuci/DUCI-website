@@ -25,11 +25,11 @@
             left: 0;
             display: grid;
             place-content: center;
-            color: var(--blue);
+            color: var(--yellow);
             z-index: 100;
             text-align: center;
             padding-top: 140px;
-            animation: fade linear 10s infinite forwards;
+            animation: fade linear 20s infinite forwards;
 
 
             & .icon {
@@ -43,15 +43,20 @@
             color: var(--yellow);
         }
         15% {
+            color: var(--yellow);
             opacity: 0;
         }
+        30% {
+            color: var(--yellow);
+
+        }
         40% {
-            color: var(--blue);
+            color: #5B4DE1;
 
             opacity: 1;
         }
         80% {
-            color: var(--yellow);
+            color: var(--blue);
             opacity: 1;
         }
         100% {
@@ -81,7 +86,7 @@
         font-size: 1em;
 
         & h1 {
-            font-size: 3em;
+            font-size: 2em;
             font-weight: bold;
         }
 
@@ -93,11 +98,12 @@
             padding: 80px;
 
             & h1 {
-                font-size: 4em;
+                font-size: 3em;
             }
     
             & p {
-                font-size: 1.5em;
+                font-size: 1.3em;
+                line-height: 1.4em;
             }        
         }
     }
@@ -117,10 +123,10 @@
         }
 
         @media screen and (min-width: 900px) {
-            padding: 80px;
+            padding: 40px;
 
             & h1 {
-                font-size: 4em;
+                font-size: 3em;
             }
         }
 
@@ -128,30 +134,32 @@
         & .section {
             display: grid;
             column-gap: 20px;
-            row-gap: 30px;
+            row-gap: 20px;
             grid-template-columns: repeat(2, 1fr);
-            padding: 80px 0;
+            padding: 20px 0;
 
-            &>h1 {
+            &>h2 {
+                color: var(--yellow);
                 grid-column: 1 / -1;
-            }
+                font-size: 2em;
+                font-weight: bold;
 
-           
+                @media screen and (min-width: 1000px) {
+                    font-size: 3em;
+                }
+
+            }
 
             @media screen and (min-width: 1000px) {
                 grid-template-columns: repeat(3, 1fr);
-                gap: 60px;
+                gap: 20px;
 
             }
 
             @media screen and (min-width: 1200px) {
                 grid-template-columns: repeat(4, 1fr);
-                gap: 80px;
+                gap: 40px;
             }
-            
-
-        }
-
-       
+        }  
     }
 }

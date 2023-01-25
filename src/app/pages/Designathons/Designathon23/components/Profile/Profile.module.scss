@@ -1,6 +1,15 @@
 .container {    
     display: grid;
     text-align: center;
+    border: 2px solid transparent;
+    padding: 20px;
+    border-radius: 20px;
+    transition: border-color 250ms;
+    cursor: pointer;
+
+    &:hover {
+        border: 2px solid var(--gray);
+    }
 
     &>img {
         margin: 0 auto;
@@ -8,16 +17,19 @@
         height: 100px;
         width: 100px;
         object-fit: cover;
+        cursor: pointer;
     }
 
     &>p {
         font-size: 1em;
         font-weight: bold;
         margin: 8px 0;
+        cursor: pointer;
     }
     
     &>span {
         color: grey;
+        cursor: pointer;
         font-size: 0.9em;
     }
     
@@ -52,4 +64,6 @@
             font-size: 1.3em;
         }
     }
+
+
 }

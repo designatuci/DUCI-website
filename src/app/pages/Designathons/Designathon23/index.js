@@ -1,14 +1,14 @@
 import { Icon, Section } from 'app/Symbols';
 import { Text } from '../../../components';
-import { Rules } from '../components';
 import WINNERS_2023 from 'assets/data/designathon/2023/winners.json';
 import JUDGES_2023 from 'assets/data/designathon/2023/judges.json';
+import KEYNOTE_2023 from 'assets/data/designathon/2023/keynote.json';
 import PRIZES_2023 from 'assets/data/designathon/2023/prizes.json';
 import WORKSHOP_HOSTS_2023 from 'assets/data/designathon/2023/workshop-hosts.json';
 import RULES_2023 from 'assets/data/designathon/2023/rules.json';
 import cn from './Designathon23.module.scss';
 import HERO_BG from './assets/hero.png';
-import { Profile, Prizes, SectionNavigation, FAQ } from './components';
+import { Profile, Prizes, SectionNavigation, FAQ, Rules } from './components';
 import Schedule from './components/Schedule';
 
 const Designathon23 = () => (
@@ -20,10 +20,10 @@ const Designathon23 = () => (
 					You Belong Here
 				</Text>
 			</div>
-			<img
+			{/* <img
 				src={HERO_BG}
 				alt='yellow and blue dots rotating in a circle'
-			/>
+			/> */}
 		</div>
 
 		<SectionNavigation />
@@ -56,22 +56,22 @@ const Designathon23 = () => (
 			</Section>
 		</div>
 
-		<div className={cn.people}>
+		<div className={cn.people} id="s-people">
 			<Section>
-				<div className={cn.section} id="s-people">
-					<h1>Keynote Speaker</h1>
-					{JUDGES_2023.map(judge => (
-						<Profile key={judge.photo} {...judge} />
+				<div className={cn.section} >
+					<h2>Keynote Speaker</h2>
+					{KEYNOTE_2023.map(speaker => (
+						<Profile key={speaker.photo} {...speaker} />
 					))}
 				</div>
 				<div className={cn.section} >
-					<h1>Judges</h1>
+					<h2>Judges</h2>
 					{JUDGES_2023.map(judge => (
 						<Profile key={judge.photo} {...judge} />
 					))}
 				</div>
 				<div className={cn.section}>
-					<h1>Workshop Hosts</h1>
+					<h2>Workshop Hosts</h2>
 					{WORKSHOP_HOSTS_2023.map(host => (
 						<Profile key={host.photo} {...host} />
 					))}
