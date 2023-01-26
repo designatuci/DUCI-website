@@ -1,6 +1,7 @@
 import { Icon, Section } from 'app/Symbols';
 import { Text } from '../../../components';
 import WINNERS_2023 from 'assets/data/designathon/2023/winners.json';
+import TIMER_2023 from 'assets/data/designathon/2023/timer.json';
 import JUDGES_2023 from 'assets/data/designathon/2023/judges.json';
 import KEYNOTE_2023 from 'assets/data/designathon/2023/keynote.json';
 import PRIZES_2023 from 'assets/data/designathon/2023/prizes.json';
@@ -8,29 +9,40 @@ import WORKSHOP_HOSTS_2023 from 'assets/data/designathon/2023/workshop-hosts.jso
 import RULES_2023 from 'assets/data/designathon/2023/rules.json';
 import cn from './Designathon23.module.scss';
 import HERO_BG from './assets/hero.png';
-import { Profile, Prizes, SectionNavigation, FAQ, Rules } from './components';
+import {
+	Profile,
+	Prizes,
+	SectionNavigation,
+	FAQ,
+	Rules,
+	Timer,
+} from './components';
 import Schedule from './components/Schedule';
 
 const Designathon23 = () => (
 	<main className={cn.container}>
 		<div className={cn.hero}>
 			<div className={cn.title}>
-				<Icon className={cn.icon} src='designathon-white.svg' w='96' h='96' />
+				<Icon
+					className={cn.icon}
+					src='designathon-white.svg'
+					w='96'
+					h='96'
+				/>
 				<Text size='XXXL' className='bold'>
 					You Belong Here
 				</Text>
+				<div className={cn.timer}>
+					<Timer breakpoints={TIMER_2023} />
+				</div>
 			</div>
-			{/* <img
-				src={HERO_BG}
-				alt='yellow and blue dots rotating in a circle'
-			/> */}
 		</div>
 
 		<SectionNavigation />
 
-		<div className={cn.about} id="s-overview">
+		<div className={cn.about} id='s-overview'>
 			<Section>
-				<h1 >About</h1>
+				<h1>About</h1>
 				<p>
 					Design-a-thon is a 3 day long hybrid event where you or a
 					team design a product focused on the theme: community and
@@ -56,15 +68,15 @@ const Designathon23 = () => (
 			</Section>
 		</div>
 
-		<div className={cn.people} id="s-people">
+		<div className={cn.people} id='s-people'>
 			<Section>
-				<div className={cn.section} >
+				<div className={cn.section}>
 					<h2>Keynote Speaker</h2>
 					{KEYNOTE_2023.map(speaker => (
 						<Profile key={speaker.photo} {...speaker} />
 					))}
 				</div>
-				<div className={cn.section} >
+				<div className={cn.section}>
 					<h2>Judges</h2>
 					{JUDGES_2023.map(judge => (
 						<Profile key={judge.photo} {...judge} />
@@ -81,14 +93,13 @@ const Designathon23 = () => (
 
 		<Rules rules={RULES_2023} />
 
-		<div className={cn.prizes} id="s-prizes">
+		<div className={cn.prizes} id='s-prizes'>
 			<Prizes list={PRIZES_2023} />
 		</div>
 
 		<Schedule />
 
 		<FAQ />
-
 	</main>
 );
 export default Designathon23;

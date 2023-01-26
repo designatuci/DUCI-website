@@ -1,0 +1,32 @@
+.container {
+
+    & .text {
+        color: var(--white);
+        text-align: center;
+        font-size: 2em;
+        margin: 20px;
+        
+    }
+
+    & .row {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        margin: 0 auto;
+        column-gap: 20px;
+        place-content: center;
+        
+
+    }
+    & .block {
+        border-radius: 16px;
+        background-color: var(--blue);
+        place-content: center;
+        text-align: center;
+        padding: 15px;
+        color: white;
+
+        & h3 {
+            font-size: 2.5em;
+        }
+    }
+}

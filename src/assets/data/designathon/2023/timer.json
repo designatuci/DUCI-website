@@ -1,0 +1,22 @@
+[
+    {
+        "date": "Jan 26 2023 00:00:00 GMT-0800 (Pacific Standard Time)",
+        "text": "Registration opens in"
+    },
+    {
+        "date": "Feb 15 2023 00:00:00 GMT-0800 (Pacific Standard Time)",
+        "text": "Registration closes in"
+    },
+    {
+        "date": "Feb 24 2023 17:30:00 GMT-0800 (Pacific Standard Time)",
+        "text": "Event begins in"
+    },
+    {
+        "date": "Feb 26 2023 08:00:00 GMT-0800 (Pacific Standard Time)",
+        "text": "Submissions due in"
+    },
+    {
+        "date": "end",
+        "text": "Event has ended. Thank you for joining us!"
+    }
+]

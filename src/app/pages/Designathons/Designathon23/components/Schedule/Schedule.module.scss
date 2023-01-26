@@ -10,6 +10,11 @@
 
     a {
         text-decoration: underline;
+        transition: color 350ms;
+
+        &:hover {
+            color: white;
+        }
     }
     & h2 {
         color: var(--blue);

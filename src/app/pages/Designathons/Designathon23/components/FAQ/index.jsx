@@ -10,7 +10,7 @@ const FAQ = () => {
 			<Text size='XL'>FAQ</Text>
 			<div className={cn.container}>
 				<div className='spaceChildren'>
-					<Text>
+					<Text style={{lineHeight: '1.4em'}}>
 						Join the live conversation on the{' '}
 						<a
 							style={{ textDecoration: 'underline' }}

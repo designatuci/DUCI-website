@@ -12,31 +12,57 @@
 
     &>.container {
         background-color: black;
-        padding: 20px;
+        padding: 40px;
         border-radius: 20px;
         border: 2px solid var(--gray);
-        max-width: 700px;
+        width: 800px;
+        max-width: calc(100vw - 40px);
+        row-gap: 10px;
         display: grid;
+        grid-template-columns: auto 1fr;
 
         &>.profile {
             position: relative;
             display: grid;
-            text-align: center;
+            text-align: left;
             padding: 20px;
             border-radius: 20px;
             row-gap: 20px;
+
+            & h3 {
+                color: var(--yellow);
+
+            }
+
+            &>.pronouns {
+                color: var(--gray);
+                font-size: 1.5em;
+                margin: 0;
+            }
+            &>.role {
+                font-size: 1.8em;
+                font-weight: bold;
+            }
+        }
+
+        &>.content {
+            grid-column: 1 / -1;
+
+            &>h4 {
+                font-size: 1.5em;
+                margin: 20px 0 10px;
+                font-weight: bold;
+                color: var(--gray);
+            }
+
+            &>p {
+                line-height: 1.3em;
+            }
         }
 
         & h3 {
-            font-size: 2.3em;
-        }
-
-        & h4 {
-            font-size: 1.8em;
-            margin: 0;
-        }
-        & h5 {
-            font-size: 1em;
+            font-weight: bold;
+            font-size: 3em;
         }
 
         & p {
@@ -49,15 +75,35 @@
 
         &>img {
             margin: 0 auto;
-            border-radius: 50%;
+            border-radius: 8px;
             height: 200px;
             width: 200px;
             object-fit: cover;
             cursor: pointer;
+            @media screen and (max-width: 800px) {
+                border-radius: 12px;
+
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
         }
+
 
         &:hover {
             border: 2px solid var(--gray);
         }
+
+        @media screen and (max-width: 800px) {
+            grid-template-columns: 1fr;
+            overflow-y: scroll;
+            padding: 20px;
+            max-height: calc(100vh - 240px);
+
+            &>.profile {
+                padding: 0px;
+            }
+        }
     }
+    
 }

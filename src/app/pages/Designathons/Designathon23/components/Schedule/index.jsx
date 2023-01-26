@@ -14,7 +14,7 @@ function Schedule() {
               5:30 pm
               <span>↓</span>
             </div>
-            <div class={clsx(cn.title, cn.special)}>Opening</div>
+            <div class={clsx(cn.title, cn.highlight)}>Opening Ceremony</div>
             <div class={cn.description}>
               Join us on our{" "}
               <a href="https://uci.zoom.us/j/93490306811" target="noreferrer">
@@ -29,7 +29,7 @@ function Schedule() {
               5:35 pm
               <span>↓</span>
             </div>
-            <div class={cn.title}>Judges Introduction</div>
+            <div class={clsx(cn.title)}>Judges Introduction</div>
             <div class={cn.description}>
               Judges share their design background and journey. Introducing our
               judges: Minjun Chen, Jeremy Marusek, Antonio Flamenco, Mosope
@@ -41,7 +41,7 @@ function Schedule() {
               6:00 pm
               <span>↓</span>
             </div>
-            <div class={cn.title}>Keynote speech</div>
+            <div class={clsx(cn.title)}>Keynote speech</div>
             <div class={cn.description}>
               Led by Keynote Speaker: Harrison Wheeler
               <br />
@@ -52,7 +52,7 @@ function Schedule() {
               6:35 pm
               <span>↓</span>
             </div>
-            <div class={clsx(cn.title, cn.highlight)}>
+            <div class={clsx(cn.title, cn.special)}>
               Challenge Brief and Q&A
             </div>
             <div class={cn.description}>
@@ -64,7 +64,7 @@ function Schedule() {
               7:00 pm
               <span>↓</span>
             </div>
-            <div class={cn.title}>Mentor Office Hours</div>
+            <div class={clsx(cn.title)}>Mentor Office Hours</div>
             <div class={cn.description}>
               Need help or advice? Come speak with our mentors in the
               #mentor-office-hours channel on Discord! Ping the channel with
@@ -182,7 +182,7 @@ function Schedule() {
         <div class={cn.list}>
           <div class={cn.event}>
             <div class={cn.time}>8:00 am</div>
-            <div class={clsx(cn.title, cn.highlight)}>Submission Deadline</div>
+            <div class={clsx(cn.title, cn.special)}>Submission Deadline</div>
             <div class={cn.description}>
               Submit your working prototype through our{" "}
               <a
@@ -196,7 +196,7 @@ function Schedule() {
           </div>
           <div class={cn.event}>
             <div class={cn.time}>1:10 pm</div>
-            <div class={cn.title}>Announcing 10 finalists</div>
+            <div class={clsx(cn.title)}>Announcing 10 finalists</div>
             <div class={cn.description}>
               Our team will reach out to the email provided in the Submission
               Form to let the team know. Make sure to check your spam! These
@@ -231,7 +231,7 @@ function Schedule() {
               <span>↓</span>
               5:30 pm
             </div>
-            <div class={clsx(cn.title, cn.special)}>Presentations</div>
+            <div class={clsx(cn.title, cn.highlight)}>Presentations</div>
             <div class={cn.description}>
               Join us on our{" "}
               <a href="https://uci.zoom.us/j/93490306811" target="noreferrer">
@@ -247,7 +247,7 @@ function Schedule() {
               <span>↓</span>
               6:15 pm
             </div>
-            <div class={clsx(cn.title, cn.special)}>Judging Panel</div>
+            <div class={clsx(cn.title)}>Judging Panel</div>
             <div class={cn.description}>
               Judges decide the Top 3 teams, as well as the winners for these
               additional awards:
@@ -264,7 +264,7 @@ function Schedule() {
               <span>↓</span>
               7:40 pm
             </div>
-            <div class={clsx(cn.title, cn.special)}>Closing Ceremony</div>
+            <div class={clsx(cn.title, cn.highlight)}>Closing Ceremony</div>
             <div class={cn.description}>
               Join us on our{" "}
               <a href="https://uci.zoom.us/j/93490306811" target="noreferrer">
@@ -280,7 +280,7 @@ function Schedule() {
               <span>↓</span>
               7:50 pm
             </div>
-            <div class={clsx(cn.title, cn.special)}>
+            <div class={clsx(cn.title)}>
               Raffle Draw and Closing
             </div>
             <div class={cn.description}>
@@ -295,7 +295,7 @@ function Schedule() {
               <span>↓</span>
               8:00 pm
             </div>
-            <div class={clsx(cn.title, cn.special)}>Q&A</div>
+            <div class={clsx(cn.title)}>Q&A</div>
             <div class={cn.description}>
               During the final Q&A session, attendees can ask anything related
               to the event.
