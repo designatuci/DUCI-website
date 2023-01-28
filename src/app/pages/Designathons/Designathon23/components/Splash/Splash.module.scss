@@ -1,0 +1,13 @@
+@keyframes changer {
+    from {
+        fill: var(--blue);
+    }
+    to {
+        fill: #FFCC45;
+    };
+}
+
+.container {
+    // filter: blur(20px);
+}
+

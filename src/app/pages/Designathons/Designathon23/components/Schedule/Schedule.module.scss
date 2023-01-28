@@ -65,6 +65,10 @@
                 display: grid;
                 row-gap: 20px;
 
+                &>p {
+                    line-height: 1.2em;
+                }
+
                 @media screen and (min-width: 950px) {
                     padding-top: 0px;
                     grid-column: 3 / 4;

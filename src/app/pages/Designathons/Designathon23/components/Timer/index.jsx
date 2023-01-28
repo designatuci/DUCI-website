@@ -1,23 +1,22 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 import cn from './Timer.module.scss';
 
 const Timer = ({ breakpoints }) => {
-	const { date, text } = useMemo(
-		() =>
-			breakpoints.find(
+
+	const [timeLeft, setTimeLeft] = useState([]);
+	const [text, setText] = useState(null);
+
+	useEffect(() => {
+		const countdown = setInterval(() => {
+			const {date, text} = breakpoints.find(
 				breakpoint =>
 					breakpoint.date === 'end' ||
 					new Date().getTime() < new Date(breakpoint.date).getTime()
-			),
-		[breakpoints]
-	);
+			);
 
-	const [timeLeft, setTimeLeft] = useState([]);
+			setText(text);
+			if(date === 'end') return setTimeLeft([]);
 
-	useEffect(() => {
-		if (date === 'end') return;
-
-		const countdown = setInterval(() => {
 			const timeBuilder = [];
 			let timeDiff = new Date(date).getTime() - new Date().getTime();
 			timeDiff /= 1000;
@@ -39,10 +38,12 @@ const Timer = ({ breakpoints }) => {
 			timeBuilder.unshift({ time: parseInt(timeDiff), text: 'days' });
 
 			setTimeLeft(timeBuilder);
+
+
 		}, 500);
 
 		return () => clearImmediate(countdown);
-	}, [date]);
+	}, [breakpoints]);
 
 	return (
 		<div className={cn.container}>

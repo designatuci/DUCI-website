@@ -18,13 +18,15 @@ function Schedule() {
 							Opening Ceremony
 						</div>
 						<div class={cn.description}>
-							Join us on our{' '}
-							<a
-								href='https://uci.zoom.us/j/93490306811'
-								target='noreferrer'
-							>
-								Zoom.
-							</a>
+							<p>
+								Join us on our{' '}
+								<a
+									href='https://uci.zoom.us/j/93490306811'
+									target='noreferrer'
+								>
+									Zoom.
+								</a>
+							</p>
 							<br />
 							Led by Design at UCI’s Designathon Director, Hannah.
 						</div>
@@ -249,14 +251,16 @@ function Schedule() {
 							Submission Deadline
 						</div>
 						<div class={cn.description}>
-							Submit your working prototype through our{' '}
-							<a
-								target='noreferrer'
-								href='https://docs.google.com/forms/d/e/1FAIpQLSdxz0MG3HYpgR10XUw1IKHywhe2YuzboB3ZwzlqfsI9F_BNhQ/closedform'
-							>
-								Submission Form
-							</a>
-							.
+							<p>
+								Submit your working prototype through our{' '}
+								<a
+									target='noreferrer'
+									href='https://docs.google.com/forms/d/e/1FAIpQLSdxz0MG3HYpgR10XUw1IKHywhe2YuzboB3ZwzlqfsI9F_BNhQ/closedform'
+								>
+									Submission Form
+								</a>
+								.
+							</p>
 						</div>
 					</div>
 					<div class={cn.event}>
