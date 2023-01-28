@@ -1,9 +1,10 @@
 import { memo } from 'react';
+export * from './Splash2';
 
 const Splash = memo(() => {
 	return (
 		<svg
-			style={{ height: '100vh', width: '100vw', filter: 'blur(80px)' }}
+			style={{ height: '100vh', width: '100vw', filter: 'blur(0px)' }}
 			width={'100%'}
 			height={'100%'}
 			viewBox='0 0 100 100'
@@ -11,7 +12,7 @@ const Splash = memo(() => {
 			xmlns='http://www.w3.org/2000/svg'
 			xmlnsXlink='http://www.w3.org/1999/xlink'
 		>
-			<g style={{ filter: 'blur(1px)' }}>
+			<g style={{ filter: 'blur(0px)' }}>
 				<rect width={100} height={100} fill='#000024' />
 				<path
 					d='M84 6C99 8 91 -10 115 0C116 0 119 4 118 11C117 19 105 23 76 31C52 37 44 12 43 0C43 -4 45 -13 54 -13C64 -15 69 4 84 6Z'
@@ -55,7 +56,7 @@ const Splash = memo(() => {
 						repeatCount='indefinite'
 					/>
 				</path>
-                <circle cx={45} cy={20} r={27} fill='#011EFB44'>
+				<circle cx={45} cy={20} r={27} fill='#011EFB44'>
 					<animate
 						attributeName='r'
 						values='27;40;27'
@@ -63,7 +64,7 @@ const Splash = memo(() => {
 						repeatCount='indefinite'
 					/>
 				</circle>
-                <circle cx={-10} cy={50} r={17} fill='#089AFF77'>
+				<circle cx={-10} cy={50} r={17} fill='#089AFF77'>
 					<animate
 						attributeName='r'
 						values='17;35;17;35;17'
@@ -78,11 +79,20 @@ const Splash = memo(() => {
 					/>
 				</circle>
 			</g>
+
 			<defs>
 				<clipPath id='clip0'>
 					<rect width={100} height={100} fill='white' />
 				</clipPath>
 			</defs>
+			<filter id='n' x='0' y='0'>
+				<feTurbulence
+					type='fractalNoise'
+					baseFrequency='20'
+					stitchTiles='stitch'
+				/>
+			</filter>
+			<rect width={100} height={100} fill='#000024' filter='url(#n)' opacity={0.8}/>
 		</svg>
 	);
 });

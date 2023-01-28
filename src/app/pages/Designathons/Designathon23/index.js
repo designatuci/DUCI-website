@@ -18,12 +18,12 @@ import {
 	Timer,
 } from './components';
 import Schedule from './components/Schedule';
-import { Splash } from './components/Splash';
+import { Splash, Splash2 } from './components/Splash';
 
 const Designathon23 = () => (
 	<main className={cn.container}>
 		<div className={cn.hero}>
-			<div style={{height: '100%', width: '100%'}}><Splash /></div>
+			<div style={{height: '100%', width: '100%'}}><Splash2 /></div>
 			<div className={cn.title}>
 				<Icon
 					className={cn.icon}
