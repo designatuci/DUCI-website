@@ -2,6 +2,11 @@
     background-color: black;
     color: white;
 
+    & .note {
+        color: var(--gray);
+        font-size: 1.2em;
+    }
+
     & .title {
         font-size: 3em;
         font-weight: bold;

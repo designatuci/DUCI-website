@@ -32,9 +32,9 @@
         "label": "Raffle",
         "prizes": [
             "Five lucky participants will receive free merch bundles from our sponsors, Figma and Notion, as well as Adobe. All participants who submit a working prototype according to the submission requirement and prompt AND complete at least 1 entry are eligible to win. See below for ways to enter.",
-            "Participate in our #just-for-fun Discord challenge = 1 entry",
-            "Attend a social = 1 entry",
-            "Attend a workshop = 1 entry"
+            "• Participate in our #just-for-fun Discord challenge = 1 entry",
+            "• Attend a social = 1 entry",
+            "• Attend a workshop = 1 entry"
         ]
     },
     {
@@ -66,7 +66,7 @@
         "symbol": "Extras",
         "label": "All participants",
         "prizes": [
-            "All participants will receive a 90-day extended trial promo code for Balsamiq Cloud"
+            "All participants will receive a 90-day extended trial promo code for Balsamiq Cloud."
         ]
     }
 ]

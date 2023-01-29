@@ -7,6 +7,7 @@ function Schedule() {
 		<div className={cn.container} id='s-schedule'>
 			<Section>
 				<h1 className={cn.title}>Schedule</h1>
+				<span className={cn.note}>In-person events are marked with (IP) and are open to UCI students only.</span>
 				<h2>Friday - Feb. 24, 2023</h2>
 				<div class={cn.list}>
 					<div class={cn.event}>
@@ -93,10 +94,9 @@ function Schedule() {
 							<span>↓</span>
 							8:15 pm
 						</div>
-						<div class={cn.title}>Workshop</div>
+						<div class={cn.title}>Workshop: Design for Gender Inclusivity</div>
 						<div class={cn.description}>
 							Led by WICS (Duong Vu & Amanda Hausmann)
-							<p> Topic: Design for Gender Inclusivity</p>{' '}
 							<p>
 								Location:{' '}
 								<a
@@ -134,10 +134,9 @@ function Schedule() {
 							<span>↓</span>
 							9:30 pm
 						</div>
-						<div class={cn.title}>Workshop</div>
+						<div class={cn.title}>Workshop: Intro to Figma</div>
 						<div class={cn.description}>
 							<p>Led by Victoria Wu </p>
-							<p>Topic: Intro to Figma</p>
 							<p>
 								New to UX Design and curious about the tools UX
 								Designers use? Join the Intro to Figma workshop
@@ -193,10 +192,9 @@ function Schedule() {
 						<div class={cn.time}>
 							10:00 am<span>↓</span>10:45 am
 						</div>
-						<div class={cn.title}>Workshop</div>
+						<div class={cn.title}>Workshop: Designing for Diversity</div>
 						<div class={cn.description}>
 							<p>Led by Mosope Adebowale</p>
-							<p>Topic: Designing for Diversity</p>
 							<p>
 								Location:{' '}
 								<a
@@ -240,10 +238,9 @@ function Schedule() {
 						<div class={cn.time}>
 							12:00 pm<span>↓</span>12:45 pm
 						</div>
-						<div class={cn.title}>Workshop</div>
+						<div class={cn.title}>Workshop: Be F#$%ing Authentic</div>
 						<div class={cn.description}>
 							<p>Led by Joe Cahill </p>
-							<p>Topic: Be F#$%ing Authentic</p>
 							<p>
 								When you are in college we are told to fit in
 								this box of being a professional, we are told to
@@ -311,11 +308,10 @@ function Schedule() {
 						<div class={cn.time}>
 							3:00 pm<span>↓</span>3:45 pm
 						</div>
-						<div class={cn.title}>Workshop</div>
+						<div class={cn.title}>Workshop: Creating UX Case Studies</div>
 						<div class={cn.description}>
-							Led by CTC (Alexandria(Alex) Wang & Meghna
+							Led by CTC (Alexandria (Alex) Wang & Meghna
 							Kaligotla)
-							<p> Topic: Creating UX Case Studies</p>{' '}
 							<p>
 								Are you interested in learning how to create
 								case studies for your UX projects? Join Commit
@@ -360,10 +356,9 @@ function Schedule() {
 						<div class={cn.time}>
 							5:00 pm<span>↓</span>5:45 pm
 						</div>
-						<div class={cn.title}>Workshop</div>
+						<div class={cn.title}>Workshop: Leveraging Accessibility in Design</div>
 						<div class={cn.description}>
 							Led by Antonio Flamenco
-							<p>Topic: Leveraging Accessibility in Design</p>
 							<p>
 								Location:{' '}
 								<a

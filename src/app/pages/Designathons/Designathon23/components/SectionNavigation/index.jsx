@@ -17,6 +17,7 @@ const SectionNavigation = () => {
 				{ label: 'Prizes', id: 's-prizes' },
 				{ label: 'Schedule', id: 's-schedule' },
 				{ label: 'FAQ', id: 's-faq' },
+				{ label: 'Sponsors', id: 's-sponsors' },
 			].map(item => (
 				<a
 					className={cn.item}

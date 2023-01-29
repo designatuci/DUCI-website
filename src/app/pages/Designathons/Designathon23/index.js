@@ -107,18 +107,37 @@ const Designathon23 = () => (
 
 		<FAQ />
 
-		<div className={cn.sponsors}>
+		<div className={cn.sponsors} id="s-sponsors">
 			<Section>
 				<h1>Sponsors</h1>
 				<div className={cn.logos}>
 					<div>
-						<img src={FOF} alt='Friends of Figma' />
+						<a
+							href='https://friends.figma.com/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<img src={FOF} alt='Friends of Figma' />
+						</a>
 					</div>
 					<div>
-						<img src={notion} alt='Notion' />
+						<a
+							href='https://www.notion.so/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							{' '}
+							<img src={notion} alt='Notion' />
+						</a>
 					</div>
 					<div>
-						<img src={balsamiq} alt='balsamiq' />
+						<a
+							href='https://balsamiq.com/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							<img src={balsamiq} alt='balsamiq' />
+						</a>
 					</div>
 				</div>
 			</Section>
