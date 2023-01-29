@@ -581,13 +581,10 @@ function Schedule() {
 							<span>↓</span>
 							7:50 pm
 						</div>
-						<div class={clsx(cn.title)}>
-							Raffle Draw and Closing
-						</div>
+						<div class={clsx(cn.title)}>Raffle Draw</div>
 						<div class={cn.description}>
 							Led by Design-a-thon Director, Hannah. Raffle
-							winners will be chosen. Will give final thanks and
-							acknowledgments, then close out the event.
+							winners will be chosen.
 						</div>
 					</div>
 					<div class={cn.event}>
@@ -596,10 +593,12 @@ function Schedule() {
 							<span>↓</span>
 							8:00 pm
 						</div>
-						<div class={clsx(cn.title)}>Q&A</div>
+						<div class={clsx(cn.title)}>Q&A and Closing</div>
 						<div class={cn.description}>
 							During the final Q&A session, attendees can ask
-							anything related to the event.
+							anything related to the event. Design at UCI will
+							give final thanks and acknowledgments, then close
+							out the event.
 						</div>
 					</div>
 				</div>
