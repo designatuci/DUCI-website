@@ -130,28 +130,6 @@ function Schedule() {
 					</div>
 					<div class={cn.event}>
 						<div class={cn.time}>
-							7:30 pm
-							<span>↓</span>
-							8:15 pm
-						</div>
-						<div class={cn.title}>Workshop</div>
-						<div class={cn.description}>
-							Led by WICS (Duong Vu & Amanda Hausmann)
-							<p> Topic: Design for Gender Inclusivity</p>{' '}
-							<p>
-								Location:{' '}
-								<a
-									href='https://uci.zoom.us/j/92626479110'
-									target='_blank'
-									rel='noopener noreferrer'
-								>
-									Zoom
-								</a>
-							</p>
-						</div>
-					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
 							8:45 pm
 							<span>↓</span>
 							9:30 pm
