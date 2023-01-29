@@ -1,10 +1,11 @@
 import { Text } from 'app/components';
 import { Section } from 'app/Symbols';
+import cn from './Rules.module.scss';
 
 const Rules = ({ rules }) => {
 	return (
-		<Section id='s-rules' className='textAlignLeft'>
-			<Text size='XL'>Rules</Text>
+		<Section id='s-rules' className={cn.container}>
+			<h2>Rules</h2>
 			{rules.map((rule, i) => (
 				<div
 					key={rule}
@@ -15,7 +16,8 @@ const Rules = ({ rules }) => {
 						style={{
 							minWidth: '48px',
 							display: 'block',
-							color: 'var(--green)',
+							color: 'var(--deepBlue)',
+							fontWeight: 'bold'
 						}}
 					>
 						{i + 1}
@@ -27,4 +29,4 @@ const Rules = ({ rules }) => {
 	);
 };
 
-export { Rules} ;
+export { Rules };

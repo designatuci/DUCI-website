@@ -8,7 +8,8 @@
     height: 88px;
     padding: 0 32px;
     box-shadow: 0 0 8px #0002;
-    background-color: white;
+    background-color: black;
+    color: white;
 
     display: grid;
     place-content: center start;
@@ -18,11 +19,12 @@
         padding: 12px 24px;
         cursor: pointer;
         border-radius: 999px;
-        background-color: white;
+        background-color: transparent;
         transition: background-color 250ms;
 
         &:hover {
             background-color: var(--sky);
+            color: black;
         }
     }
 }
