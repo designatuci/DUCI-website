@@ -1,6 +1,6 @@
 import { Icon, Section } from 'app/Symbols';
 import { Text } from '../../../components';
-import WINNERS_2023 from 'assets/data/designathon/2023/winners.json';
+// import WINNERS_2023 from 'assets/data/designathon/2023/winners.json';
 import TIMER_2023 from 'assets/data/designathon/2023/timer.json';
 import JUDGES_2023 from 'assets/data/designathon/2023/judges.json';
 import KEYNOTE_2023 from 'assets/data/designathon/2023/keynote.json';

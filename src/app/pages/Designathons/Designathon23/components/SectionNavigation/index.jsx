@@ -8,10 +8,6 @@ const SectionNavigation = () => {
 		});
 	};
 
-	const days = (new Date('Tue Jan 26 2023 21:23:13 GMT-0800 (Pacific Standard Time)') - new Date()) / 1000 / 60 / 60  / 24;
-	const hours = (new Date('Tue Jan 26 2023 21:23:13 GMT-0800 (Pacific Standard Time)') - new Date()) / 1000 / 60 / 60 % 24 ;
-	const minutes = (new Date('Tue Jan 26 2023 21:23:13 GMT-0800 (Pacific Standard Time)') - new Date()) / 1000 / 60 % 60;
-
 	return (
 		<div className={cn.container}>
 			{[
