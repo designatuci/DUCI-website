@@ -8,7 +8,9 @@ import PRIZES_2023 from 'assets/data/designathon/2023/prizes.json';
 import WORKSHOP_HOSTS_2023 from 'assets/data/designathon/2023/workshop-hosts.json';
 import RULES_2023 from 'assets/data/designathon/2023/rules.json';
 import cn from './Designathon23.module.scss';
-import HERO_BG from './assets/hero.png';
+import FOF from './assets/FOF.png';
+import notion from './assets/notion.png';
+import balsamiq from './assets/balsamiq.png';
 import {
 	Profile,
 	Prizes,
@@ -23,7 +25,9 @@ import { Splash } from './components/Splash';
 const Designathon23 = () => (
 	<main className={cn.container}>
 		<div className={cn.hero}>
-			<div style={{height: '100%', width: '100%'}}><Splash /></div>
+			<div style={{ height: '100%', width: '100%' }}>
+				<Splash />
+			</div>
 			<div className={cn.title}>
 				<Icon
 					className={cn.icon}
@@ -102,6 +106,23 @@ const Designathon23 = () => (
 		<Schedule />
 
 		<FAQ />
+
+		<div className={cn.sponsors}>
+			<Section>
+				<h1>Sponsors</h1>
+				<div className={cn.logos}>
+					<div>
+						<img src={FOF} alt='Friends of Figma' />
+					</div>
+					<div>
+						<img src={notion} alt='Notion' />
+					</div>
+					<div>
+						<img src={balsamiq} alt='balsamiq' />
+					</div>
+				</div>
+			</Section>
+		</div>
 	</main>
 );
 export default Designathon23;

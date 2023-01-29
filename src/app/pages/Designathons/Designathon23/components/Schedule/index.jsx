@@ -22,7 +22,8 @@ function Schedule() {
 								Join us on our{' '}
 								<a
 									href='https://uci.zoom.us/j/93490306811'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom.
 								</a>
@@ -76,22 +77,13 @@ function Schedule() {
 						<div class={cn.time}>
 							7:00 pm
 							<span>↓</span>
+							7:05 pm
 						</div>
-						<div class={clsx(cn.title)}>Mentor Office Hours</div>
+						<div class={clsx(cn.title)}>Closing</div>
 						<div class={cn.description}>
-							Need help or advice? Come speak with our mentors in
-							the #mentor-office-hours channel on Discord! Ping
-							the channel with your questions or requests. Mentors
-							in the server will respond to your message and hop
-							on a voice chat with you.{' '}
 							<p>
-								Location:{' '}
-								<a
-									href='https://discord.com/invite/jumJqhBy4Y'
-									target='noreferrer'
-								>
-									Discord
-								</a>
+								Designathon Director, Hannah, ends the Opening
+								Ceremony.
 							</p>
 						</div>
 					</div>
@@ -109,7 +101,49 @@ function Schedule() {
 								Location:{' '}
 								<a
 									href='https://uci.zoom.us/j/92626479110'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Zoom
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class={cn.event}>
+						<div class={cn.time}>
+							8:00 pm
+							<span>↓</span>
+							10:00 pm
+						</div>
+						<div class={cn.title}>Work session (IP)</div>
+						<div class={cn.description}>
+							<p>*UCI Students ONLY* </p>
+							<p>
+								Teams can work together in-person at our
+								designated work rooms. Designathon mentors and
+								event coordinators will be available to answer
+								any questions! Food is provided (while supplies
+								last, vegetarian options available).
+							</p>
+							<p>Location: DBH 3011 & DBH 4011</p>
+						</div>
+					</div>
+					<div class={cn.event}>
+						<div class={cn.time}>
+							7:30 pm
+							<span>↓</span>
+							8:15 pm
+						</div>
+						<div class={cn.title}>Workshop</div>
+						<div class={cn.description}>
+							Led by WICS (Duong Vu & Amanda Hausmann)
+							<p> Topic: Design for Gender Inclusivity</p>{' '}
+							<p>
+								Location:{' '}
+								<a
+									href='https://uci.zoom.us/j/92626479110'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom
 								</a>
@@ -127,13 +161,48 @@ function Schedule() {
 							<p>Led by Victoria Wu </p>
 							<p>Topic: Intro to Figma</p>
 							<p>
-								{' '}
+								New to UX Design and curious about the tools UX
+								Designers use? Join the Intro to Figma workshop
+								to learn the basics of this powerful prototyping
+								and designing tool. This workshop is an
+								introductory course, perfect for those who have
+								little to no experience with Figma!
+							</p>
+							<p>
 								Location:{' '}
 								<a
 									href='https://uci.zoom.us/j/92626479110'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class={cn.event}>
+						<div class={cn.time}>
+							11:00 pm
+							<span>↓</span>
+							12:00 am
+						</div>
+						<div class={cn.title}>Mentor Office Hours</div>
+						<div class={cn.description}>
+							<p>
+								Need help or advice? Come speak with our mentors
+								in the #mentor-office-hours channel on Discord!
+								Ping the channel with your questions or
+								requests. Mentors in the server will respond to
+								your message and hop on a voice chat with you.
+							</p>
+							<p>
+								Location:{' '}
+								<a
+									href='https://discord.gg/jumJqhBy4Y'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Discord
 								</a>
 							</p>
 						</div>
@@ -154,9 +223,37 @@ function Schedule() {
 								Location:{' '}
 								<a
 									href='https://uci.zoom.us/j/92626479110'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class={cn.event}>
+						<div class={cn.time}>
+							11:00 am
+							<span>↓</span>
+							12:00 pm
+						</div>
+						<div class={cn.title}>Mentor Office Hours</div>
+						<div class={cn.description}>
+							<p>
+								Need help or advice? Come speak with our mentors
+								in the #mentor-office-hours channel on Discord!
+								Ping the channel with your questions or
+								requests. Mentors in the server will respond to
+								your message and hop on a voice chat with you.
+							</p>
+							<p>
+								Location:{' '}
+								<a
+									href='https://discord.gg/jumJqhBy4Y'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Discord
 								</a>
 							</p>
 						</div>
@@ -170,11 +267,21 @@ function Schedule() {
 							<p>Led by Joe Cahill </p>
 							<p>Topic: Be F#$%ing Authentic</p>
 							<p>
-								{' '}
+								When you are in college we are told to fit in
+								this box of being a professional, we are told to
+								hold back or you won’t get the job. Well they
+								are so damn wrong! Learn to let go and be
+								yourself is one of the keys to success in any
+								career but no more than in design we have to
+								sell our work, sell ourselves and allow
+								ourselves to shine through.
+							</p>
+							<p>
 								Location:{' '}
 								<a
 									href='https://uci.zoom.us/j/92626479110'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom
 								</a>
@@ -183,20 +290,42 @@ function Schedule() {
 					</div>
 					<div class={cn.event}>
 						<div class={cn.time}>
-							1:15 pm<span>↓</span>2:00 pm
+							1:00 pm
+							<span>↓</span>
+							3:00 pm
 						</div>
-						<div class={cn.title}>Workshop</div>
+						<div class={cn.title}>Work session (IP)</div>
 						<div class={cn.description}>
-							<p>Led by Ximena Osorio</p>
-							<p>Topic: UX Research 101</p>{' '}
+							<p>*UCI Students ONLY* </p>
 							<p>
-								Location:{' '}
-								<a
-									href='https://uci.zoom.us/j/92626479110'
-									target='noreferrer'
-								>
-									Zoom
-								</a>
+								Teams can work together in-person at our
+								designated work rooms. Designathon mentors and
+								event coordinators will be available to answer
+								any questions! Food is provided (while supplies
+								last, vegetarian options available).
+							</p>
+							<p>Location: DBH 3011 & DBH 4011</p>
+						</div>
+					</div>
+					<div class={cn.event}>
+						<div class={cn.time}>
+							2:00 pm
+							<span>↓</span>
+							3:00 pm
+						</div>
+						<div class={cn.title}>Social</div>
+						<div class={cn.description}>
+							<p>Led by Design at UCI</p>
+							<p>Game Extravaganza</p>
+
+							<p>
+								Join our virtual social, where we’ll be playing
+								a series of online games including Gartic Phone,
+								Spyfall, Codenames, and many others!
+							</p>
+							<p>
+								Location: #game-extravaganza-social channel in
+								our Discord
 							</p>
 						</div>
 					</div>
@@ -210,14 +339,43 @@ function Schedule() {
 							Kaligotla)
 							<p> Topic: Creating UX Case Studies</p>{' '}
 							<p>
+								Are you interested in learning how to create
+								case studies for your UX projects? Join Commit
+								the Change as we discuss how to tackle
+								structuring a case study, portfolio
+								storytelling, and presenting design projects!
+							</p>
+							<p>
 								Location:{' '}
 								<a
 									href='https://uci.zoom.us/j/92626479110'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom
 								</a>
 							</p>
+						</div>
+					</div>
+					<div class={cn.event}>
+						<div class={cn.time}>
+							4:00 pm
+							<span>↓</span>
+							5:00 pm
+						</div>
+						<div class={cn.title}>Social (IP)</div>
+						<div class={cn.description}>
+							<p>*UCI Students ONLY* </p>
+							<p>Led by Design at UCI</p>
+							<p>Event: DIY Designathon Zines</p>
+
+							<p>
+								Join us for an in-person social and get the
+								chance to create custom “zines” about yourself
+								or related to the Designathon theme. Showcase
+								your zines at the end of the event!
+							</p>
+							<p>Location: DBH 3011</p>
 						</div>
 					</div>
 					<div class={cn.event}>
@@ -227,16 +385,61 @@ function Schedule() {
 						<div class={cn.title}>Workshop</div>
 						<div class={cn.description}>
 							Led by Antonio Flamenco
-							<p>
-								Topic: Leveraging Accessibility in Design
-							</p>{' '}
+							<p>Topic: Leveraging Accessibility in Design</p>
 							<p>
 								Location:{' '}
 								<a
 									href='https://uci.zoom.us/j/92626479110'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class={cn.event}>
+						<div class={cn.time}>
+							5:00 pm
+							<span>↓</span>
+							7:00 pm
+						</div>
+						<div class={cn.title}>Work session (IP)</div>
+						<div class={cn.description}>
+							<p>*UCI Students ONLY* </p>
+							<p>
+								Teams can work together in-person at our
+								designated work rooms. Designathon mentors and
+								event coordinators will be available to answer
+								any questions! Food is provided (while supplies
+								last, vegetarian options available).
+							</p>
+							<p>Location: DBH 3011 & DBH 4011</p>
+						</div>
+					</div>
+					<div class={cn.event}>
+						<div class={cn.time}>
+							8:00 pm
+							<span>↓</span>
+							9:00 pm
+						</div>
+						<div class={cn.title}>Mentor Office Hours</div>
+						<div class={cn.description}>
+							<p>
+								Need help or advice? Come speak with our mentors
+								in the #mentor-office-hours channel on Discord!
+								Ping the channel with your questions or
+								requests. Mentors in the server will respond to
+								your message and hop on a voice chat with you.
+							</p>
+							<p>
+								Location:{' '}
+								<a
+									href='https://discord.gg/jumJqhBy4Y'
+									target='_blank'
+									rel='noopener noreferrer'
+								>
+									Discord
 								</a>
 							</p>
 						</div>
@@ -254,7 +457,8 @@ function Schedule() {
 							<p>
 								Submit your working prototype through our{' '}
 								<a
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 									href='https://docs.google.com/forms/d/e/1FAIpQLSdxz0MG3HYpgR10XUw1IKHywhe2YuzboB3ZwzlqfsI9F_BNhQ/closedform'
 								>
 									Submission Form
@@ -291,8 +495,9 @@ function Schedule() {
 								decision making process. Please refer to the
 								rubric or ask questions on our{' '}
 								<a
-									href='/https://discord.com/invite/jumJqhBy4Y/'
-									target='noreferrer'
+									href='https://discord.com/invite/jumJqhBy4Y/'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Discord
 								</a>{' '}
@@ -314,7 +519,8 @@ function Schedule() {
 								Join us on our{' '}
 								<a
 									href='https://uci.zoom.us/j/93490306811'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom
 								</a>
@@ -358,7 +564,8 @@ function Schedule() {
 								Join us on our{' '}
 								<a
 									href='https://uci.zoom.us/j/93490306811'
-									target='noreferrer'
+									target='_blank'
+									rel='noopener noreferrer'
 								>
 									Zoom
 								</a>

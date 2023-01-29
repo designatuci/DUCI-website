@@ -10,7 +10,7 @@ const FAQ = () => {
 			<Text size='XL'>FAQ</Text>
 			<div className={cn.container}>
 				<div className='spaceChildren'>
-					<Text style={{lineHeight: '1.4em'}}>
+					<Text style={{ lineHeight: '1.4em' }}>
 						Join the live conversation on the{' '}
 						<a
 							style={{ textDecoration: 'underline' }}
@@ -34,7 +34,25 @@ const FAQ = () => {
 						},
 						{
 							q: 'Who can attend?',
-							a: 'Any undergraduate student within the United States (with an associated institutional email) is able to sign up and attend. If you do not qualify, you will not be allowed to participate in the event.',
+							a: (
+								<Text className='color gray'>
+									Any undergraduate student within the United
+									States (with an associated institutional
+									email) is able to{' '}
+									<a
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://forms.gle/MQ1zaWpUJi3mWSQy5'
+										style={{
+											textDecoration: 'underline',
+										}}
+									>
+										sign up
+									</a>{' '}
+									and attend. If you do not qualify, you will
+									not be allowed to participate in the event.
+								</Text>
+							),
 						},
 						{
 							q: 'How do I sign up?',
@@ -64,15 +82,82 @@ const FAQ = () => {
 						},
 						{
 							q: 'When is the registration deadline?',
-							a: 'Our participant sign-up form will close on February 15th at 11:59pm (PST)',
+							a: (
+								<Text className='color gray'>
+									Our{' '}
+									<a
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://forms.gle/MQ1zaWpUJi3mWSQy5'
+										style={{
+											textDecoration: 'underline',
+										}}
+									>
+										participant sign-up form
+									</a>{' '}
+									will close on February 15th at 11:59pm (PST)
+								</Text>
+							),
 						},
 						{
 							q: 'How do I prepare?',
-							a: 'During the event, we will be hosting workshops for anyone new to design thinking or the design process. We highly encourage getting the hang of Figma, Sketch, Adobe XD, or the prototyping tool of your choice. You are also free to look through our Design at UCI Resources page for extra information. Want to go the extra mile? Show your excitement by turning on your camera and adding our You Belong Here Zoom backgrounds.',
+							a: (
+								<Text className='color gray'>
+									During the event, we will be hosting
+									workshops for anyone new to design thinking
+									or the design process. We highly encourage
+									getting the hang of Figma, Sketch, Adobe XD,
+									or the prototyping tool of your choice. You
+									are also free to look through our Design at
+									UCI{' '}
+									<a
+										href='https://designatuci.com/resources'
+										target='_blank'
+										rel='noopener noreferrer'
+										style={{
+											textDecoration: 'underline',
+										}}
+									>
+										Resources
+									</a>{' '}
+									page for extra information. Want to go the
+									extra mile? Show your excitement by turning
+									on your camera and adding our{' '}
+									<a
+										href='https://drive.google.com/drive/folders/1fe5vj6NJAvQFFcxWp9OFQCkc6qI7Avcn?usp=sharing'
+										target='_blank'
+										rel='noopener noreferrer'
+										style={{
+											textDecoration: 'underline',
+										}}
+									>
+										You Belong Here Zoom backgrounds.
+									</a>
+								</Text>
+							),
 						},
 						{
 							q: 'How do teams work?',
-							a: 'You have the option to (1) go solo, or (2) form a team of up to 4 people total. You may list your team members in the sign-up form, but it’s okay if plans change! Take advantage of our #find-a-team Discord channel to meet potential team members. We will consider your final team members to be the ones indicated when submitting your project.',
+							a: (
+								<Text className='color gray'>
+									You have the option to (1) go solo, or (2)
+									form a team of up to 4 people total. You may
+									list your team members in the sign-up form,
+									but it’s okay if plans change! Take
+									advantage of our #find-a-team{' '}
+									<a
+										style={{ textDecoration: 'underline' }}
+										href='https://discord.gg/jumJqhBy4Y'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										Discord channel
+									</a>{' '}
+									to meet potential team members. We will
+									consider your final team members to be the
+									ones indicated when submitting your project.
+								</Text>
+							),
 						},
 						{
 							q: 'What if I don’t have a team?',
@@ -81,8 +166,16 @@ const FAQ = () => {
 									Our #find-a-team Discord channel is the
 									perfect place for anyone looking for a team
 									at our Designathon. If you haven’t already,
-									join our You Belong Here Discord. Solo
-									participants are also allowed.
+									join our You Belong Here{' '}
+									<a
+										style={{ textDecoration: 'underline' }}
+										href='https://discord.gg/jumJqhBy4Y'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
+										Discord channel
+									</a>{' '}
+									. Solo participants are also allowed.
 								</Text>
 							),
 						},
@@ -91,10 +184,20 @@ const FAQ = () => {
 							a: (
 								<Text className='color gray'>
 									You will submit your final, working
-									prototype to the Submission Form (opens
-									during event). Only one person on your team
-									should submit a form, which will be on
-									behalf of all contributors.
+									prototype to the{' '}
+									<a
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://forms.gle/Tf1FySVor1RC5rHq8'
+										style={{
+											textDecoration: 'underline',
+										}}
+									>
+										Submission Form
+									</a>{' '}
+									(opens during event). Only one person on
+									your team should submit a form, which will
+									be on behalf of all contributors.
 								</Text>
 							),
 						},

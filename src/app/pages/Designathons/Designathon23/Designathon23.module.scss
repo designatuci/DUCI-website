@@ -17,6 +17,7 @@
             will-change: transform;
 
         }
+
         &>.title {
             position: absolute;
             height: 100%;
@@ -55,11 +56,11 @@
             & h1 {
                 font-size: 3em;
             }
-    
+
             & p {
                 font-size: 1.3em;
                 line-height: 1.4em;
-            }        
+            }
         }
     }
 
@@ -84,6 +85,7 @@
                 font-size: 3em;
             }
         }
+
         @media screen and (min-width: 900px) {
             padding: 40px;
 
@@ -122,6 +124,35 @@
                 grid-template-columns: repeat(4, 1fr);
                 gap: 40px;
             }
-        }  
+        }
+    }
+
+    & .sponsors {
+        background-color: var(--silver);
+
+        & .logos {
+            padding-top: 60px;
+            display: grid;
+            column-gap: 80px;
+            row-gap: 80px;
+            width: 100%;
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+
+            @media screen and (min-width: 800px) {
+                max-height: none;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &>div {
+                display: grid;
+                place-content: center;
+            }
+            & img {
+                max-height: 200px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
     }
 }

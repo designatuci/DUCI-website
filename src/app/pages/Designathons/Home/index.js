@@ -51,6 +51,7 @@ const Designathons = () => (
 		<Section
 			className='center fill black'
 			style={{
+				height: '90vh',
 				background:
 					'url(/static/photo/designathon-2023.png) center/cover no-repeat',
 				backgroundColor: 'black'
