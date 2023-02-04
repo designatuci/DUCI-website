@@ -1,5 +1,23 @@
 [
   {
+    "title": "Intro to Adobe Illustrator",
+    "time": "2/21/2023 8:00 PM",
+    "duration": "120",
+    "type": "Workshop",
+    "desc": "Have you always wanted to learn how to make your own graphics? If so, come join our Adobe Illustrator Workshop in ALP 1700 on 2/21 at 8pm! Participants will also have the chance to join on Zoom. This event will specifically be for beginners, and we’ll be going over some of the application’s basic tools. Please make sure to have Adobe Illustrator downloaded on your computer before the event! The Adobe Creative Suite is free to all UCI students. The link to instructions on how to download the application will be in our bio!",
+    "place": "ALP 1700",
+    "links": [
+      {
+        "label" : "Adobe Software",
+        "link" : "https://www.oit.uci.edu/services/end-point-computing/adobe-software/"
+      }, 
+      {
+        "label": "Zoom Link",
+        "link": "https://uci.zoom.us/j/98507141472"
+      }
+    ]
+  },
+  {
     "title": "Intro to Logo Design with UCSB Creative Lab",
     "time": "2/1/2023 6:00 PM",
     "duration": "120",
