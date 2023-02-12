@@ -7,7 +7,10 @@ function Schedule() {
 		<div className={cn.container} id='s-schedule'>
 			<Section>
 				<h1 className={cn.title}>Schedule</h1>
-				<span className={cn.note}>In-person events are marked with (IP) and are open to UCI students only.</span>
+				<span className={cn.note}>
+					In-person events are marked with (IP) and are open to UCI
+					students only.
+				</span>
 				<h2>Friday - Feb. 24, 2023</h2>
 				<div class={cn.list}>
 					<div class={cn.event}>
@@ -94,9 +97,20 @@ function Schedule() {
 							<span>↓</span>
 							8:15 pm
 						</div>
-						<div class={cn.title}>Workshop: Design for Gender Inclusivity</div>
+						<div class={cn.title}>
+							Workshop: Design for Gender Inclusivity
+						</div>
 						<div class={cn.description}>
-							Led by WICS (Duong Vu & Amanda Hausmann)
+							<p>Led by WICS (Duong Vu & Amanda Hausmann)</p>
+							<p>
+								In celebration of Inclusivity, we invite you to
+								the talk about gender inclusivity in designs
+								hosted by WiCS (Women in Computer Sciences).
+								Gender inclusivity includes practicing awareness
+								and using good design practice that avoids bias
+								towards a particular sex or gender. We hope to
+								see you there!
+							</p>
 							<p>
 								Location:{' '}
 								<a
@@ -192,9 +206,17 @@ function Schedule() {
 						<div class={cn.time}>
 							10:00 am<span>↓</span>10:45 am
 						</div>
-						<div class={cn.title}>Workshop: Designing for Diversity</div>
+						<div class={cn.title}>
+							Workshop: Designing for Diversity
+						</div>
 						<div class={cn.description}>
 							<p>Led by Mosope Adebowale</p>
+							<p>
+								Do you envision yourself designing for products
+								that will be used by billions of people across
+								the globe? Join Mosope to learn about designing
+								with an inclusive mind.
+							</p>
 							<p>
 								Location:{' '}
 								<a
@@ -238,7 +260,9 @@ function Schedule() {
 						<div class={cn.time}>
 							12:00 pm<span>↓</span>12:45 pm
 						</div>
-						<div class={cn.title}>Workshop: Be F#$%ing Authentic</div>
+						<div class={cn.title}>
+							Workshop: Be F#$%ing Authentic
+						</div>
 						<div class={cn.description}>
 							<p>Led by Joe Cahill </p>
 							<p>
@@ -308,7 +332,9 @@ function Schedule() {
 						<div class={cn.time}>
 							3:00 pm<span>↓</span>3:45 pm
 						</div>
-						<div class={cn.title}>Workshop: Creating UX Case Studies</div>
+						<div class={cn.title}>
+							Workshop: Creating UX Case Studies
+						</div>
 						<div class={cn.description}>
 							Led by CTC (Alexandria (Alex) Wang & Meghna
 							Kaligotla)
@@ -356,9 +382,22 @@ function Schedule() {
 						<div class={cn.time}>
 							5:00 pm<span>↓</span>5:45 pm
 						</div>
-						<div class={cn.title}>Workshop: Leveraging Accessibility in Design</div>
+						<div class={cn.title}>
+							Workshop: Leveraging Accessibility in Design
+						</div>
 						<div class={cn.description}>
-							Led by Antonio Flamenco
+							<p>Led by Antonio Flamenco</p>
+							<p>
+								Leveraging Accessibility in Design Accessible
+								design should be universal design and yet most
+								digital products out there lack basic
+								accessibility standards. Most designers focus
+								too heavily on how something looks rather than
+								how everyone has to interact with it. Join
+								Antonio in learning what accessibility means for
+								design and how to make all your designs
+								accessible moving forward!
+							</p>
 							<p>
 								Location:{' '}
 								<a
