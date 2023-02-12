@@ -388,9 +388,8 @@ function Schedule() {
 						<div class={cn.description}>
 							<p>Led by Antonio Flamenco</p>
 							<p>
-								Leveraging Accessibility in Design Accessible
-								design should be universal design and yet most
-								digital products out there lack basic
+								Accessible design should be universal design and
+								yet most digital products out there lack basic
 								accessibility standards. Most designers focus
 								too heavily on how something looks rather than
 								how everyone has to interact with it. Join
