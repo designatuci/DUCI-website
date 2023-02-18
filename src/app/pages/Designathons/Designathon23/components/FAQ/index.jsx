@@ -95,7 +95,7 @@ const FAQ = () => {
 									>
 										participant sign-up form
 									</a>{' '}
-									will close on February 15th at 11:59pm (PST)
+									has been extended until February 19th at 11:59pm (PST)
 								</Text>
 							),
 						},
