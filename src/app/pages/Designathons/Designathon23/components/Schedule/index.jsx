@@ -470,7 +470,7 @@ function Schedule() {
 								<a
 									target='_blank'
 									rel='noopener noreferrer'
-									href='https://docs.google.com/forms/d/e/1FAIpQLSdxz0MG3HYpgR10XUw1IKHywhe2YuzboB3ZwzlqfsI9F_BNhQ/closedform'
+									href='https://forms.gle/hJmEGwbSc6mhqw9QA'
 								>
 									Submission Form
 								</a>
