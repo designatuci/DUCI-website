@@ -1,116 +1,112 @@
 [
   {
-    "name": "Winter 2023 Merch",
-    "path": "winter-2023",
-    "description": "Unisex, ultra-cotton black shirts by Gildan with a screen-printed 'design' and thick, durable 2 in. x 2 in. vinyl stickers.",
-    "inStock": true,
-    "buyLink": "https://forms.gle/JMiH9sDC1kiTppKE9",
-    "items": [
-      {
-        "name": "I Survived DAUCI Sticker",
-        "price": 3,
-        "photo": "isurvived.png"
-      },
-      {
-        "name": "You Belong Here Sticker",
-        "price": 3,
-        "photo": "youbelong.png"
-      },
-
-      {
-        "name": "Long-Sleeved DAUCI Shirt",
-        "price": 22,
-        "photo": "shirt.png"
-      },
-      {
-        "name": "Bobaeater",
-        "price": 3,
-        "photo": "bobaeater.png"
-      },
-      {
-        "name": "DAUCI is My Passion",
-        "price": 3,
-        "photo": "passion.png"
-      }
-    ]
+      "name": "Winter 2023 Merch",
+      "path": "winter-2023",
+      "description": "Unisex, ultra-cotton black shirts by Gildan with a screen-printed 'design' and thick, durable 2 in. x 2 in. vinyl stickers.",
+      "inStock": true,
+      "buyLink": "https://forms.gle/JMiH9sDC1kiTppKE9",
+      "items": [
+          {
+              "name": "I Survived DAUCI Sticker",
+              "price": 3,
+              "photo": "isurvived.png"
+          },
+          {
+              "name": "You Belong Here Sticker",
+              "price": 3,
+              "photo": "youbelong.png"
+          },
+          {
+              "name": "Long-Sleeved DAUCI Shirt",
+              "price": 22,
+              "photo": "shirt.png"
+          },
+          {
+              "name": "Bobaeater",
+              "price": 3,
+              "photo": "bobaeater.png" 
+          },
+          {
+              "name": "DAUCI is My Passion",
+              "price": 3,
+              "photo": "passion.png"
+          }
+      ]
   },
   {
-    "name": "Spring 2022 Merch",
-    "path": "spring-2022",
-    "description": "Embroidered unisex shirts and high quality, weather-proof vinyl items with exclusive, original designs.",
-    "inStock": false,
-    "items": [
-      {
-        "name": "UC Irvine Embroidered T-Shirt",
-        "price": 30,
-        "note": {
-          "type": "link",
-          "href": "/shirt22",
-          "content": "View Shirt"
-        },
-        "photo": "shirt.png"
-      },
-      {
-        "name": "\"uc irvine sticker\"",
-        "price": 3.5,
-        "photo": "ucirvine.svg"
-      },
-      {
-        "name": "Rainbow Heart Pen Tool",
-        "price": 3.5,
-        "photo": "heart.svg"
-      }
-    ]
+      "name": "Spring 2022 Merch",
+      "path": "spring-2022",
+      "description": "Embroidered unisex shirts and high quality, weather-proof vinyl items with exclusive, original designs.",
+      "inStock": false,
+      "items": [{
+              "name": "UC Irvine Embroidered T-Shirt",
+              "price": 30,
+              "note": {
+                  "type": "link",
+                  "href": "/shirt22",
+                  "content": "View Shirt"
+              },
+              "photo": "shirt.png"
+          },
+          {
+              "name": "\"uc irvine sticker\"",
+              "price": 3.5,
+              "photo": "ucirvine.svg" 
+          },
+          {
+              "name": "Rainbow Heart Pen Tool",
+              "price": 3.5,
+              "photo": "heart.svg"
+          }
+      ]
   },
   {
-    "name": "Fall-Winter 2021 Stickers",
-    "path": "fall-winter-2021",
-    "description": "High quality, weather-proof vinyl items with exclusive, original designs. Approximately 3x3 inches.",
-    "inStock": false,
-    "items": [
-      {
-        "note": "Holographic",
-        "name": "Chill Out",
-        "photo": "frozen-eater.png"
-      },
-      {
-        "name": "Bobaeater",
-        "price": 3,
-        "photo": "bobaeater.png"
-      },
-      {
-        "name": "Design is My Passion",
-        "price": 3,
-        "photo": "passion.png"
-      },
-      {
-        "name": "D@UCI Boba",
-        "price": 3,
-        "photo": "boba.png"
-      }
-    ]
+      "name": "Fall-Winter 2021 Stickers",
+      "path": "fall-winter-2021",
+      "description": "High quality, weather-proof vinyl items with exclusive, original designs. Approximately 3x3 inches.",
+      "inStock": false,
+      "items": [{
+              "note": "Holographic",
+              "name": "Chill Out",
+              "photo": "frozen-eater.png"
+          },
+          {
+              "name": "Bobaeater",
+              "price": 3,
+              "photo": "bobaeater.png"
+          },
+          {
+              "name": "Design is My Passion",
+              "price": 3,
+              "photo": "passion.png"
+          },
+          {
+              "name": "D@UCI Boba",
+              "price": 3,
+              "photo": "boba.png"
+          }
+      ]
   },
   {
-    "name": "2020 Stickers",
-    "path": "fall-2020",
-    "description": "",
-    "inStock": false,
-    "items": [
-      {
-        "name": "I Heart Design",
-        "price": 3,
-        "photo": "heart.svg"
-      },
-      {
-        "name": "Pen Tool",
-        "price": 3,
-        "photo": "pentool.svg"
-      },
-      {
-        "name": "Boba",
-        "price": 3,
-        "photo": "boba.svg"
-      }
-    ]
+      "name": "2020 Stickers",
+      "path": "fall-2020",
+      "description": "",
+      "inStock": false,
+      "items": [{
+              "name": "I Heart Design",
+              "price": 3,
+              "photo": "heart.svg"
+          },
+          {
+              "name": "Pen Tool",
+              "price": 3,
+              "photo": "pentool.svg"
+          },
+          {
+              "name": "Boba",
+              "price": 3,
+              "photo": "boba.svg"
+          }
+      ]
   }
 ]
