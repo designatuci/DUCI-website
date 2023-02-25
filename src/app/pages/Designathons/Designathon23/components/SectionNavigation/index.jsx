@@ -46,9 +46,10 @@ const SectionNavigation = () => {
 				).getTime() && (
 				<a
 					className={cn.item}
+					style={{ backgroundColor: 'var(--blue)', color: 'white' }}
 					href=' https://drive.google.com/file/d/1oZyJ3sv1O-JwIuaLdXqAUbpQ-pTtlL1o/view?usp=drivesdk'
 				>
-					<p>Rubric</p>
+					<p>Challenge Brief</p>
 				</a>
 			)}
 			<a
