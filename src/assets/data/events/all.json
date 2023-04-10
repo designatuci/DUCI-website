@@ -1,5 +1,42 @@
 [
   {
+    "title": "Design Tinder",
+    "time": "4/24/2023 8:00 PM",
+    "duration": "120",
+    "type": "Workshop",
+    "desc": "Want to get to know your fellow designers and maybe love too? Join Design at UCI to participate in our first design themed dating roulette to enter and win prizes! We will have an interest form down below for members to sign up if you want to participate. Admission is $3. We hope to see you there!",
+    "place": "SSL 228",
+    "links": [
+      {
+        "label" : "Interest Form",
+        "link" : "https://docs.google.com/forms/d/e/1FAIpQLSeo12rS-V99KWMOoIY8cnruK23Clc-Ny2JIYDfjc4gc_M2xkQ/viewform?usp=sf_link"
+      }
+    ]
+  },
+  {
+    "title": "Beyond Design: Navigating Cross-Functional Collaboration",
+    "time": "4/18/2023 7:00 PM",
+    "duration": "120",
+    "type": "Workshop",
+    "desc": "Ever wonder what it's like to work with UX researchers, developers, and project managers? As designers, we must collaborate cross-functionally to translate our designs from ideation to creation with various goals and constraints in mind. Come join us on Zoom to hear product designer Minjun Chen from Spotify share her experience and advice on working in cross-functional teams! ",
+    "place": "Online",
+    "links": [
+      {
+        "label" : "Zoom Link",
+        "link" : " https://uci.zoom.us/j/98507141472"
+      }
+    ]
+  },
+  {
+    "title": "Design <> Developer Handoff",
+    "time": "4/10/2023 8:00 PM",
+    "duration": "90",
+    "type": "Workshop",
+    "desc": "Welcome back, designers! Get pumped for our first general meeting of spring quarter, where we’ll be talking about cross-functional collaboration between designers and developers with Commit the Change :purple_heart: Learn about best practices during design handoff, including creating design systems, design documentation, and utilizing helpful handoff tools!",
+    "place": "SSL 228",
+    "links": []
+  },
+  {
     "title": "Project Teams Demo Day",
     "time": "3/9/2023 6:30 PM",
     "duration": "90",
