@@ -10,6 +10,7 @@ import EventCard from './components/EventCard/EventCard.js';
 
 const Events = () => {
 	const [eventData, setEventData] = useState(null);
+	console.log(eventData);
 	useEffect(() => {
 		let eventData = {
 			upcoming: [],
@@ -21,6 +22,7 @@ const Events = () => {
 			let time = new Date(
 				new Date(event.time).getTime() + event.duration * 60000
 			);
+			console.log(time);
 			if (now < time) {
 				eventData.next = event;
 				eventData.upcoming.unshift(event);

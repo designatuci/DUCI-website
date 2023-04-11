@@ -1,5 +1,19 @@
 [
   {
+    "title": "Beyond Design: Navigating Cross-Functional Collaboration",
+    "time": "4/18/2023 7:00 PM",
+    "duration": "60",
+    "type": "Workshop",
+    "desc": "Ever wonder what it's like to work with UX researchers, developers, and project managers? As designers, we must collaborate cross-functionally to translate our designs from ideation to creation with various goals and constraints in mind. Come join us on Zoom to hear product designer Minjun Chen from Spotify share her experience and advice on working in cross-functional teams!",
+    "place": "Online",
+    "links":[
+      {
+        "label": "Zoom Link",
+        "link": "https://uci.zoom.us/j/98507141472"
+      }
+    ]
+  },
+  {
     "title": "Project Teams Demo Day",
     "time": "3/9/2023 6:30 PM",
     "duration": "90",
