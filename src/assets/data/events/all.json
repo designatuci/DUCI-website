@@ -1,4 +1,20 @@
-[
+[{
+    "title": "Tote Bag Paint Night",
+    "time": "5/9/2023 8:00 PM",
+    "duration": "120",
+    "type": "Social",
+    "desc": "Ever wanted to make your own custom tote bag? Come hang out with Design at UCI and unleash your creative side for a social night of tote bag painting! - Limited supply",
+    "place": "TBD",
+    "links": []
+  }, {
+    "title": "History of Graphic Design",
+    "time": "5/8/2023 8:00 PM",
+    "duration": "120",
+    "type": "Workshop",
+    "desc": "Did you know that the iconic Nike Swoosh was made by a student for only $35? How did this happen, and how did that impact the world of design? Join us in SSL228 on Monday 5/8 at 8pm to learn about the history of graphic design with famous designers and their work in our workshop!",
+    "place": "SSL 228",
+    "links": []
+  },
   {
     "title": "Design Tinder",
     "time": "4/24/2023 8:00 PM",
@@ -6,12 +22,10 @@
     "type": "Workshop",
     "desc": "Want to get to know your fellow designers and maybe love too? Join Design at UCI to participate in our first design themed dating roulette to enter and win prizes! We will have an interest form down below for members to sign up if you want to participate. Admission is $3. We hope to see you there!",
     "place": "SSL 228",
-    "links": [
-      {
-        "label" : "Interest Form",
-        "link" : "https://docs.google.com/forms/d/e/1FAIpQLSeo12rS-V99KWMOoIY8cnruK23Clc-Ny2JIYDfjc4gc_M2xkQ/viewform?usp=sf_link"
-      }
-    ]
+    "links": [{
+      "label": "Interest Form",
+      "link": "https://docs.google.com/forms/d/e/1FAIpQLSeo12rS-V99KWMOoIY8cnruK23Clc-Ny2JIYDfjc4gc_M2xkQ/viewform?usp=sf_link"
+    }]
   },
   {
     "title": "Beyond Design: Navigating Cross-Functional Collaboration",
@@ -20,12 +34,10 @@
     "type": "Workshop",
     "desc": "Ever wonder what it's like to work with UX researchers, developers, and project managers? As designers, we must collaborate cross-functionally to translate our designs from ideation to creation with various goals and constraints in mind. Come join us on Zoom to hear product designer Minjun Chen from Spotify share her experience and advice on working in cross-functional teams! ",
     "place": "Online",
-    "links": [
-      {
-        "label" : "Zoom Link",
-        "link" : " https://uci.zoom.us/j/98507141472"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": " https://uci.zoom.us/j/98507141472"
+    }]
   },
   {
     "title": "Design <> Developer Handoff",
@@ -52,11 +64,10 @@
     "type": "Workshop",
     "desc": "Have you always wanted to learn how to make your own graphics? If so, come join our Adobe Illustrator Workshop in ALP 1700 on 2/21 at 8pm! Participants will also have the chance to join on Zoom. This event will specifically be for beginners, and we’ll be going over some of the application’s basic tools. Please make sure to have Adobe Illustrator downloaded on your computer before the event! The Adobe Creative Suite is free to all UCI students. The link to instructions on how to download the application will be in our bio!",
     "place": "ALP 1700",
-    "links": [
-      {
-        "label" : "Download Adobe Illustrator",
-        "link" : "https://www.oit.uci.edu/services/end-point-computing/adobe-software/"
-      }, 
+    "links": [{
+        "label": "Download Adobe Illustrator",
+        "link": "https://www.oit.uci.edu/services/end-point-computing/adobe-software/"
+      },
       {
         "label": "Zoom Link",
         "link": "https://uci.zoom.us/j/98507141472"
@@ -70,12 +81,10 @@
     "type": "Workshop",
     "desc": "Are you interested in designing iconic and memorable logos like Apple, Nike, and many other brands? Check out our Intro to Logo Design workshop in collaboration with UCSB Creative Lab. You’ll learn about different types of logo, the design process, tips, and practice with hands-on exercises in our workshop!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/98507141472"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/98507141472"
+    }]
   },
   {
     "title": "Nailing Design Interviews: The Gaming Industry",
@@ -84,12 +93,10 @@
     "type": "Industry Speaker",
     "desc": "It's recruitment season, everyone! Hear all the tips and tricks from Anya Li @ Riot Games to hear about her experience as a designer in the gaming industry. Learn what you need to do to get your next dream design job!👀🙌💯",
     "place": "HG 1800",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/98507141472"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/98507141472"
+    }]
   },
   {
     "title": "Pajama Movie Night",
@@ -107,12 +114,10 @@
     "type": "Workshop",
     "desc": "Interested in learning more about product design? Join our beginner-friendly workshop as we discuss UI/UX design, ideation and evaluation, and the product development process. We'll also be taking a closer look at the design tool Figma and going through a quick idea generation/design thinking exercise!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/94150433960"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/94150433960"
+    }]
   },
   {
     "title": "Advanced topics in Figma with Product@UCI",
@@ -139,12 +144,10 @@
     "type": "Social",
     "desc": "Hey fellow DE-SIGN-ERS, come relax before or destress after your midterms with Design @ UCI at Tanaka Farms Pumpkin Patch! Please fill out the interest form since their will be a limited number of spots available. Come with us to solve corn mazes, frolic across the pumpkins patches and look at cute farm animals!",
     "place": "Meet at UCI Flag Poles",
-    "links": [
-      {
-        "label": "Interest Form",
-        "link": "https://forms.gle/D5Gqg8MJseTHDeQK9"
-      }
-    ]
+    "links": [{
+      "label": "Interest Form",
+      "link": "https://forms.gle/D5Gqg8MJseTHDeQK9"
+    }]
   },
   {
     "title": "Design…at UCI and Beyond!",
@@ -153,12 +156,10 @@
     "type": "Workshop",
     "desc": "Hello designers!! Join us for a special event about design at UCI and beyond held over Zoom hosted by our very own exec team. Learn about the resources and opportunities here at UCI to further your design skills, including organizations, classes, and jobs. Explore what post-grad paths look like for designers who graduate out of UCI including industry, research, and grad school. We also might be inviting a special guest, so stay tuned!!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/94150433960"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/94150433960"
+    }]
   },
   {
     "title": "DaUCI x WiCS: Intro to UI/UX",
@@ -212,12 +213,10 @@
     "type": "Workshop",
     "desc": " Interested in learning about working cross-functionally as a designer? Join us for a workshop in collaboration with UCSD Design Co (@ucsddesignco), where we’ll be discussing what collaboration in industry looks like within design teams, as well as cross-functionally with engineers, PMs, and research teams.",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "http://ucsddesign.co/gbm"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "http://ucsddesign.co/gbm"
+    }]
   },
   {
     "title": "Picnic in Aldrich",
@@ -253,12 +252,10 @@
     "type": "Workshop",
     "desc": " Curious about designing at the industry level? Not sure how to land internships? Swing by our Ask Me Anything: Student Intern Panel to ask student peers about their design internship experiences! From graphic to UI/UX to product, we’ll have panelists from all types of design backgrounds. Be sure to prep any burning questions you may have, and we hope to see you there!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/99935306945"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/99935306945"
+    }]
   },
   {
     "title": "Game Night Extravaganza",
@@ -303,12 +300,10 @@
     "type": "Social Event",
     "desc": "Hey designers! Nervous about the upcoming designathon? Come meet other designers (potential team members!) from both UCI and UCSB at our social. We'll be creating cute little trading cards on Figma so we can all get to know each other better. It'll be a fun and chill event so make sure to come through!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/4973611565"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/4973611565"
+    }]
   },
   {
     "title": "Components and Prototyping",
@@ -317,12 +312,10 @@
     "type": "Workshop",
     "desc": "Welcome back, designers! Hope everyone had a festive holiday season. We’re starting off winter quarter by exploring how components and prototyping are used within Figma and the overall design process. Join us for a hands-on workshop that focuses on how components can increase workflow efficiency and how Figma facilitates the building of complex prototypes!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/97658372715"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/97658372715"
+    }]
   },
   {
     "title": "Project Teams Demo Day",
@@ -331,12 +324,10 @@
     "type": "Project Teams",
     "desc": "See what Project Teams has been up to this quarter! Each group will get the chance to present and share their hard work.",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/92421119230?pwd=Ty9aeEZoU0o0U3RwT3U5bzlnMHA4Zz09"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/92421119230?pwd=Ty9aeEZoU0o0U3RwT3U5bzlnMHA4Zz09"
+    }]
   },
   {
     "title": "Autumn Night Market",
@@ -361,8 +352,7 @@
     "type": "Industry Speaker",
     "desc": "Portfolios are a super important way to showcase your design skills and differentiate yourself whether you're in UI/UX or graphic design. If you’re looking for tips on how to present your portfolio and potentially even get them reviewed by professionals in the industry, come sign up for our event!! People will be randomly selected to get their portfolios reviewed from the sign-ups (which are due November 2 11:59 p.m.) and contacted with instructions on what to prepare.",
     "place": "Online",
-    "links": [
-      {
+    "links": [{
         "label": "Recording",
         "link": "https://www.youtube.com/watch?v=vVIX1o1-rns"
       },
@@ -379,8 +369,7 @@
     "type": "Industry Speaker",
     "desc": "Looking to learn more about UX in academia? Come to our second industry event of the year where Dr. Arpita, one of our very own Informatics professors here at UC Irvine, will discuss her career in academia along with her studies of designing for health and human behavior change. If you’re interested, come join our fireside chat with Dr. Arpita!",
     "place": "Online",
-    "links": [
-      {
+    "links": [{
         "label": "Recording",
         "link": "https://www.youtube.com/watch?v=BiVff_o3tlo"
       },
@@ -397,8 +386,7 @@
     "type": "Workshop",
     "desc": "Nearly all of today’s products, designs, and applications revolve around the one same thing: users. Learn about typical research methods at our workshop to find out how you can better understand users!",
     "place": "Online",
-    "links": [
-      {
+    "links": [{
         "label": "Zoom Link",
         "link": "https://uci.zoom.us/j/95325827537"
       },
@@ -415,8 +403,7 @@
     "type": "Workshop",
     "desc": "Why do so many organizations focus on social media marketing? How can good design techniques increase the effectiveness of marketing via social media? If these topics interest you, join us at our Social Media Marketing workshop, an event in collaboration with Marketing Association!",
     "place": "Online",
-    "links": [
-      {
+    "links": [{
         "label": "Zoom Link",
         "link": "https://uci.zoom.us/j/92396436828"
       },
@@ -433,8 +420,7 @@
     "type": "Workshop",
     "desc": "What makes a design aesthetically pleasing? Why do certain color combinations look good together? Find the answers to these questions and more at our Visual Design workshop!",
     "place": "Online",
-    "links": [
-      {
+    "links": [{
         "label": "Zoom Link",
         "link": "https://us02web.zoom.us/j/2609673280?pwd=b1pZeGp2MngwcFFodERBNWM0L0NaUT09"
       },
@@ -451,8 +437,7 @@
     "type": "Industry Speaker",
     "desc": "Looking to learn more about design? Come to our first industry event of the year and learn from a panel of designers currently working in the field! Each speaker will give valuable insight into their career and experience in the industry. If you’re interested in the fields of product design, UX design, visual design, or graphic design, join us this Friday!",
     "place": "Online",
-    "links": [
-      {
+    "links": [{
         "label": "Zoom Link",
         "link": "https://uci.zoom.us/j/4973611565"
       },
@@ -473,12 +458,10 @@
     "type": "Workshop",
     "desc": "Get a chance to meet the Design at UCI board. See what workshops we'll be hosting this quarter and learn about the best ways you can take advatage of the resoureces we have to offer. Also get a brief introduction to design.",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/91381828728"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/91381828728"
+    }]
   },
   {
     "title": "Project Teams Presentations",
@@ -487,12 +470,10 @@
     "type": "Project Teams",
     "desc": "It's almost the end of Spring Quarter! You know what that means... Project Teams Presentations! The theme was open-ended so participants were allowed to go creative with their projects. Attend the meeting this Friday to see what our teams have made!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "Game Night Social",
@@ -501,12 +482,10 @@
     "type": "Social Event",
     "desc": "This week we will be having a game night social. Come hang out with peers and board as we play some virtual games together. This event will take place on Discord at 6PM so join our server by this Friday! Let's have some fun!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Discord Link",
-        "link": "https://discord.com/invite/MBVrKe9"
-      }
-    ]
+    "links": [{
+      "label": "Discord Link",
+      "link": "https://discord.com/invite/MBVrKe9"
+    }]
   },
   {
     "title": "Social Media Marketing",
@@ -515,12 +494,10 @@
     "type": "Workshop",
     "desc": "Are you a board member of a campus organization that’s struggling with marketing? Join Design at UCI’s crash course on marketing specifically for student organizations! We’ll be going over some basic aspects of branding such as logo, flyer, and web design that you can utilize to attract more attention on campus. As a design based organization, we’ll also be sharing some of our own marketing tips and tricks that have been effective for our club!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "Happy Hour Social",
@@ -529,12 +506,10 @@
     "type": "Social Event",
     "desc": "This week, we will have a happy hour to chill after classes, bond with one another, and relax with your favorite drink (non-alcoholic drinks for anyone underage ofc ;). We will also have a live tutorial on how to make a Mojito 🥴. The event will be hosted over Discord at 6pm, so let's meet, make drinks, and chat with videos on! We can always switch to playing games or wherever the night leads.",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "Something in Common",
@@ -543,12 +518,10 @@
     "type": "Social Event",
     "desc": "Get to know your fellow designers better! We’ll put participants into groups and they'll work together to find something in common in several different rounds. More limitations will be added each round to increase difficulty.",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "How to Conduct User Interviews",
@@ -557,12 +530,10 @@
     "type": "Workshop",
     "desc": "UX designers utilize user interviews early in the design process to understand the audience they are designing for. How do you organize a user interview? We'll be going over the basics in this workshop so you'll be ready to conduct user interviews for your own projects! We will also be hosting an after-event social, 'Something in Common', so stick around to the end and get to know each other!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "Ask Me Anything: Student Intern Panel",
@@ -571,12 +542,10 @@
     "type": "AMA",
     "desc": "Join us for an \"ask-me-anything\" panel from fellow UCI students on how they've landed design internships and roles! We'll be discussing personal tips from our own job application processes, so come prepared with questions or just come chat for a chill time!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "Persuasive Design with Marketing Association",
@@ -585,12 +554,10 @@
     "type": "Workshop",
     "desc": "Join us for this exciting collab workshop with Marketing Association as we explore persuasive design: design principles based on human behavior and psychology! How do these principles influence decision-making, and how can both designers and marketers use this knowledge to their advantage to create better user experiences and increased conversions? Don’t miss out on this special cross-subject deep dive into the effects of persuasive design in guiding users towards marketing goals!",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "The Basics of UX Recruiting",
@@ -599,12 +566,10 @@
     "type": "Workshop",
     "desc": "Portfolios? Resumes? What's a whiteboard challenge? Are you interested in applying for UI/UX roles, but don't know what to expect? We'll be going over the different kinds of UX jobs, tips on the job application process, and how to position yourself for a design role no matter your major.",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "Introduction to UX with Jane Chang",
@@ -613,12 +578,10 @@
     "type": "Industry Speaker",
     "desc": "Jane is a Product Design Lead at Google in Irvine/Seattle. Before Google, she worked for Walt Disney, Universal Pictures, Toyota/Lexus, Apple, Volkswagen AG and led product design in the cybersecurity space. She started her career in the agency world at Saatchi & Saatchi and RPA, and led design at TBWA/Chiat/Day. She studied Graphic Design at NYU and received her Master's in Visual Communication from Johns Hopkins University. Jane currently lives in Irvine with her husband and 6-year-old son.",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   },
   {
     "title": "How to Nail your UX Interview with Chris Ota",
@@ -627,11 +590,9 @@
     "type": "Industry Speaker",
     "desc": "Originally from Hawaii, Chris Ota started off designing and building websites after graduating community college 13 years ago. He packed his bags in 2015 and moved to San Francisco with no job lined up, looking for a new chapter in his life. Starting from the bottom as a product designer, Chris has been at Lyft for about 3.5 years now, focused on patient transportation to and from their appointments. Besides his day to day, he helps with interviewing full time and intern candidates, does design mentorship at work, and is an active mentor with ADPList.",
     "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
+    "links": [{
+      "label": "Zoom Link",
+      "link": "https://uci.zoom.us/j/5080955339"
+    }]
   }
 ]
