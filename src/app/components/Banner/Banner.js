@@ -7,7 +7,12 @@ function Banner() {
 		<div className={cn.banner}>
 			<p>
 				Interested in becoming part of Design at UCI&apos;s Board? Submit a{' '}
-				<a className='color ultraviolet' href={APPLICATION_FORM}>
+				<a
+					target='_blank'
+					rel='noreferrer'
+					className='color ultraviolet'
+					href={APPLICATION_FORM}
+				>
 					board application
 				</a>{' '}
 				by May 7th.
