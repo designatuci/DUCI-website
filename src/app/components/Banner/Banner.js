@@ -4,13 +4,13 @@ const APPLICATION_FORM = 'https://forms.gle/e8zAUSGniWopQDNP9';
 
 function Banner() {
 	return (
-		<div className={cn.banner}>
+		<div className={`fill black ${cn.banner}`}>
 			<p>
 				Interested in becoming part of Design at UCI&apos;s Board? Submit a{' '}
 				<a
 					target='_blank'
 					rel='noreferrer'
-					className='color ultraviolet'
+					className='color blue'
 					href={APPLICATION_FORM}
 				>
 					board application
