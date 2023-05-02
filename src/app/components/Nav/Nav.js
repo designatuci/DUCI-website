@@ -18,7 +18,6 @@ const Nav = () => {
 
 	return (
 		<nav>
-			<div id='navSpacer' />
 			<div id='nav' mobile-expand={mobileExpand ? 'true' : 'false'}>
 				<div className='wrapper center wide'>
 					<div className='center row group left'>
