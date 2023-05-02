@@ -1,4 +1,14 @@
-[{
+[
+  {
+    "title": "Typography and Color Theory",
+    "time": "5/22/2023 8:00 PM",
+    "duration": "120",
+    "type": "Workshop",
+    "desc": "Ever wondered how the iconic New York subway signs came to be? Or how to add your style to any font in the world? Join us in SSL 228 to learn about typography in graphic design via Adobe Illustrator! This workshop is for users with all skill levels. Please make sure to have Adobe Illustrator downloaded on your computer before the event! The Adobe Creative Suite is free to all UCI students.",
+    "place": "SSL 228",
+    "links": []
+  },
+  {
     "title": "Tote Bag Paint Night",
     "time": "5/9/2023 8:00 PM",
     "duration": "120",
@@ -6,7 +16,8 @@
     "desc": "Ever wanted to make your own custom tote bag? Come hang out with Design at UCI and unleash your creative side for a social night of tote bag painting! - Limited supply",
     "place": "TBD",
     "links": []
-  }, {
+  }, 
+  {
     "title": "History of Graphic Design",
     "time": "5/8/2023 8:00 PM",
     "duration": "120",
@@ -14,6 +25,14 @@
     "desc": "Did you know that the iconic Nike Swoosh was made by a student for only $35? How did this happen, and how did that impact the world of design? Join us in SSL228 on Monday 5/8 at 8pm to learn about the history of graphic design with famous designers and their work in our workshop!",
     "place": "SSL 228",
     "links": []
+  },
+  {
+    "title": "MidSummer Night Market",
+    "time": "5/3/2023 5:00 PM",
+    "duration": "180",
+    "type": "Fundraiser",
+    "desc": "Join us at the MidSummer Night Market hosted by ASUCI to support Design at UCI! On Wednesday, May 3rd, we'll be offering pasteries for sale at our booth on Ring Road. Stay updated on our booth location and the kinds of food we will be selling!",
+    "place": "Ring Road"
   },
   {
     "title": "Design Tinder",
