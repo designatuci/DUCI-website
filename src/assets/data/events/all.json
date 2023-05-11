@@ -1,4 +1,19 @@
-[{
+[
+  {
+    "title": "Zine-Making Potluck",
+    "time": "5/15/2023 8:00 PM",
+    "duration": "60",
+    "type": "Social",
+    "desc": "Are you looking for a fun art or design project to add to your portfolio? Come join us for a zine-making social! This social will also be a potluck, so please fill out the RSVP form if you can bring an item. Any contribution is greatly appreciated! We hope to see you there!",
+    "place": "SSL 228",
+    "links": [
+      {
+        "label": "RSVP Form",
+        "link": "https://forms.gle/ekQEdG38kkAxPiNp9"
+      }
+    ]
+  },
+  {
     "title": "Tote Bag Paint Night",
     "time": "5/9/2023 8:00 PM",
     "duration": "120",
