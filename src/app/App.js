@@ -12,6 +12,9 @@ import {
 	Home,
 	Join,
 	Mentorship,
+	Internship,
+	Interns,
+	InternProfile, //
 	Merch,
 	NotFound,
 	PT,
@@ -48,6 +51,15 @@ function App() {
 				</Route>
 				<Route path='mentorship'>
 					<Route index element={<Mentorship />} />
+				</Route>
+				<Route path='internship'>
+					<Route index element={<Internship />} />
+				</Route>
+				<Route path='interns'>
+					<Route index element={<Interns />} />
+				</Route>
+				<Route path='intern/:name'> 
+					<Route index element={<InternProfile />} />
 				</Route>
 				<Route path='merch'>
 					<Route index element={<Merch />} />

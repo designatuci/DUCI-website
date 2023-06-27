@@ -1,6 +1,11 @@
 [{
         "name": "Katherine Park",
         "position": "Internal",
+        "year": "1st",
+        "major": "Business Admin",
+        "industry": " ",
+        "fact": "I like organizing pinterest boards.",
+        "why": " ",
         "photo": "Katherine_Park.jpg",
         "links": [{
             "type": "linkedin",
@@ -10,6 +15,11 @@
     {
         "name": "Samantha Purganan",
         "position": "Internal",
+        "year": "1st",
+        "major": "Game Design and Interactive Media",
+        "industry": " ",
+        "fact": "I love Studio Ghibli.",
+        "why": " ",
         "photo": "Samantha_Purganan.jpg",
         "links": [{
             "type": "instagram",
@@ -19,11 +29,21 @@
     {
         "name": "Adora Chen",
         "position": "Internal",
+        "year": "2nd",
+        "major": "Business Administration",
+        "industry": " ",
+        "fact": "I enjoy drawing.",
+        "why": " ",
         "photo": "Adora_Chen.jpeg"
     },
     {
         "name": "Jin-Kim Niu",
         "position": "External",
+        "year": "2nd",
+        "major": "Undeclared/Informatics",
+        "industry": " ",
+        "fact": "I like looking for plants to buy :)",
+        "why": " ",
         "photo": "Jin_Kim_Niu.jpg",
         "links": [{
                 "type": "linkedin",
@@ -38,6 +58,11 @@
     {
         "name": "Moneer Ghani",
         "position": "External",
+        "year": "5th",
+        "major": "Psychology",
+        "industry": " ",
+        "fact": "I like playing video games.",
+        "why": " ",
         "photo": "Moneer_Ghani.jpeg",
         "links": [{
             "type": "instagram",
@@ -47,6 +72,11 @@
     {
         "name": "Jessica (Jay) Sotelo",
         "position": "External",
+        "year": "2nd",
+        "major": "Psychology",
+        "industry": " ",
+        "fact": "I enjoy  listening to kpop.",
+        "why": "I’m excited to explore the world of design and build new connections in Design at UCI!",
         "photo": "Jessica_Sotelo.jpg",
         "links": [{
             "type": "linkedin",
@@ -56,6 +86,11 @@
     {
         "name": "Candyce Pham",
         "position": "Design",
+        "year": "2nd",
+        "major": "Business Administration",
+        "industry": " ",
+        "fact": "I enjoy baking.",
+        "why": " ",
         "photo": "Candyce_Pham.jpg",
         "links": [{
             "type": "linkedin",
@@ -65,11 +100,21 @@
     {
         "name": "Krisha Konchadi",
         "position": "Design",
+        "year": "2nd",
+        "major": "Informatics",
+        "industry": " ",
+        "fact": "I like discovering new music.",
+        "why": "I’m excited to join the DAUCI team and expand my skills and make friends!",
         "photo": "Krisha_Konchadi.jpg"
     },
     {
         "name": "Kaitlyn Tran",
         "position": "Design",
+        "year": "3rd",
+        "major": "Informatics",
+        "industry": " ",
+        "fact": "I like to watch anime.",
+        "why": "I’m happy I got the opportunity to grow here—both as a person and a designer.",
         "photo": "Kaitlyn_Tran.jpg",
         "links": [{
                 "type": "instagram",
@@ -84,6 +129,11 @@
     {
         "name": "Brandon Gumayagay",
         "position": "Developer",
+        "year": "4th",
+        "major": "Software Engineering",
+        "industry": " ",
+        "fact": "Passionate about Pokemon.",
+        "why": " ",
         "photo": "Brandon_Gumayagay.jpg",
         "links":[{
             "type": "linkedin",
@@ -93,6 +143,11 @@
     {
         "name": "Rosalind Guo",
         "position": "Developer",
+        "year": "2nd",
+        "major": "Computer Science",
+        "industry": " ",
+        "fact": "I like to knit and crochet.",
+        "why": " ",
         "photo": "RosalindGuo.jpg",
         "links":[{
             "type": "instagram",
@@ -102,6 +157,11 @@
     {
         "name": "Kaitlen Ngo",
         "position": "Developer",
+        "year": "2nd",
+        "major": "Software Engineering",
+        "industry": "UI/UX Design",
+        "fact": " My favorite music genre is rock/metal.",
+        "why": "I’m really looking forward to being a part of DAUCI! In my free time, I like coding personal projects and I’m excited to be able to do that here with some mentorship and guidance!",
         "photo": "kaitlen_ngo.PNG",
         "links":[{
             "type": "instagram",

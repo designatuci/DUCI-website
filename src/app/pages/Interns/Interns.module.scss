@@ -1,0 +1,21 @@
+.container {
+    & .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.bannerimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(255,232,246,1) 0%, rgba(255,129,234,1) 100%);
+    background-size: cover;
+    background-size: contain;
+}
+
+.bannertext{
+    color: white;
+}
