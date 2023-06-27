@@ -67,6 +67,9 @@
         "links": [{
             "type": "instagram",
             "href": "https://www.instagram.com/moneerg/?hl=en"
+        }, {
+            "type": "linkedin",
+            "href": "http://www.linkedin.com/in/moneerg"
         }]
     },
     {
@@ -135,7 +138,7 @@
         "fact": "Passionate about Pokemon.",
         "why": " ",
         "photo": "Brandon_Gumayagay.jpg",
-        "links":[{
+        "links": [{
             "type": "linkedin",
             "href": "https://www.linkedin.com/in/brandon-gumayagay/"
         }]
@@ -149,7 +152,7 @@
         "fact": "I like to knit and crochet.",
         "why": " ",
         "photo": "RosalindGuo.jpg",
-        "links":[{
+        "links": [{
             "type": "instagram",
             "href": "https://www.instagram.com/rozguo/"
         }]
@@ -163,7 +166,7 @@
         "fact": " My favorite music genre is rock/metal.",
         "why": "I’m really looking forward to being a part of DAUCI! In my free time, I like coding personal projects and I’m excited to be able to do that here with some mentorship and guidance!",
         "photo": "kaitlen_ngo.PNG",
-        "links":[{
+        "links": [{
             "type": "instagram",
             "href": "https://www.instagram.com/no.11002012014/"
         }]

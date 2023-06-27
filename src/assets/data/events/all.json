@@ -1,4 +1,49 @@
-[{
+[
+  {
+    "title": "Project Team's Demo Day",
+    "time": "6/1/2023 6:30 PM",
+    "duration": "120",
+    "type": "Workshop",
+    "desc": "Come join us for Project Team's Demo Day! This is a time where your fellow designers will showcase the designs that they have been working on over the last eight weeks. Please come out and show support for the teams! Project Teams is a quarterly program that provides students with design experience in a collaborative setting. Each quarter, students form teams and work on a design project of their choice (i.e. UI/UX design, marketing design, graphic design) from start to finish. You’ll learn essential design skills along the way, get familiar with industry-standard tools, and you’ll have a completed project for your portfolio at the end of it!",
+    "place": "ALP",
+    "links": [{
+      "label": "Zoom Link",
+      "link": " https://uci.zoom.us/j/98507141472"
+    }]
+  },
+  {
+    "title": "Fireside Chat with Adobe UX Designers",
+    "time": "5/25/2023 7:00 PM",
+    "duration": "120",
+    "type": "Workshop",
+    "desc": "Join Vicky, Trixia, and Kayla in an engaging conversation as they share their experiences and insights, guiding us through their remarkable journey at Adobe. From their initial roles as interns and new grads to their current positions as accomplished full-time UX designers. They've got some sweet tips and tricks to share on how to rock your internship and crush it in the early stages of your career. Plus, they'll share their unique experiences and the teams they've worked with at Adobe. Don't miss out on this awesome opportunity to learn from these amazing ladies!",
+    "place": "Online",
+    "links": []
+  },
+  {
+    "title": "Typography and Color Theory",
+    "time": "5/22/2023 8:00 PM",
+    "duration": "120",
+    "type": "Workshop",
+    "desc": "Ever wondered how the iconic New York subway signs came to be? Or how to add your style to any font in the world? Join us in SSL 228 to learn about typography in graphic design via Adobe Illustrator! This workshop is for users with all skill levels. Please make sure to have Adobe Illustrator downloaded on your computer before the event! The Adobe Creative Suite is free to all UCI students.",
+    "place": "SSL 228",
+    "links": []
+  },
+  {
+    "title": "Zine-Making Potluck",
+    "time": "5/15/2023 8:00 PM",
+    "duration": "60",
+    "type": "Social",
+    "desc": "Are you looking for a fun art or design project to add to your portfolio? Come join us for a zine-making social! This social will also be a potluck, so please fill out the RSVP form if you can bring an item. Any contribution is greatly appreciated! We hope to see you there!",
+    "place": "SSL 228",
+    "links": [
+      {
+        "label": "RSVP Form",
+        "link": "https://forms.gle/ekQEdG38kkAxPiNp9"
+      }
+    ]
+  },
+  {
     "title": "Tote Bag Paint Night",
     "time": "5/9/2023 8:00 PM",
     "duration": "120",
@@ -6,7 +51,8 @@
     "desc": "Ever wanted to make your own custom tote bag? Come hang out with Design at UCI and unleash your creative side for a social night of tote bag painting! - Limited supply",
     "place": "TBD",
     "links": []
-  }, {
+  }, 
+  {
     "title": "History of Graphic Design",
     "time": "5/8/2023 8:00 PM",
     "duration": "120",
@@ -19,7 +65,7 @@
     "title": "Design Tinder",
     "time": "4/24/2023 8:00 PM",
     "duration": "120",
-    "type": "Workshop",
+    "type": "Social",
     "desc": "Want to get to know your fellow designers and maybe love too? Join Design at UCI to participate in our first design themed dating roulette to enter and win prizes! We will have an interest form down below for members to sign up if you want to participate. Admission is $3. We hope to see you there!",
     "place": "SSL 228",
     "links": [{

@@ -265,7 +265,7 @@ function LargeEvent(props) {
 									<Text>
 										{item.label}
 										<PageIcon
-											color='var(--gray)'
+											color='var(--white)'
 											style={{
 												width: '24px',
 												marginLeft: '4px',

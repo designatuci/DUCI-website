@@ -1,0 +1,8 @@
+.banner {
+	// temporary since home hero is absolute and covers page top
+	position: relative;
+	z-index: 5;
+
+	padding: 1rem;
+	text-align: center;
+}
