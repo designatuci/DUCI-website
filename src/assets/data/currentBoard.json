@@ -1,181 +1,189 @@
-[{
-        "name": "Meghna Kaligotla",
-        "position": "President",
-        "photo": "Meghna_Kaligotla.jpeg",
-        "links": [{
-            "type": "linkedin",
-            "href": "https://www.linkedin.com/in/meghna-kaligotla-605/"
-        }]
-    },
-    {
-        "name": "Carly Chan",
-        "position": "Vice President",
-        "photo": "Carly_Chan.jpg",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/carlychan/"
-            },
-            {
-                "type": "website",
-                "href": "https://carlychan.com/"
-            },
-            {
-                "type": "instagram",
-                "href": "https://www.instagram.com/_carlychan_/"
-            }
-        ]
-    },
-    {
-        "name": "Jolin Huang",
-        "position": "Marketing Director",
-        "photo": "Jolin_Huang.png",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/jolin-huang-30a4451b0/"
-            },
-            {
-                "type": "website",
-                "href": "https://jolinuxui.myportfolio.com"
-            },
-            {
-                "type": "instagram",
-                "href": "https://www.instagram.com/j.huanggg/"
-            }
-        ]
-    },
-    {
-        "name": "Kristy Chung",
-        "position": "Marketing Coordinator",
-        "photo": "Kristy_Chung.png",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/kristychung1/"
-            },
-            {
-                "type": "instagram",
-                "href": "https://www.instagram.com/kriisty.c/"
-            }
-        ]
-    },
-    {
-        "name": "Vyctoria Vu",
-        "position": "Marketing Coordinator",
-        "photo": "Vyctoria_Vu.jpg"
-    },
-    {
-        "name": "Emily Huynh",
-        "position": "Marketing Coordinator",
-        "photo": "Emily_Huynh.jpg"
-    },
-    {
-        "name": "Khanh Tran",
-        "position": "Workshop Coordinator",
-        "photo": "Khanh_Tran.jpg",
-        "links": []
-    },
-    {
-        "name": "Vanna Vuong",
-        "position": "Industry Outreach Coordinator",
-        "photo": "Vanna_Vuong.jpeg"
-    },
-    {
-        "name": "Cinta Adhiningrat",
-        "position": "Industry Outreach Coordinator",
-        "photo": "Cinta_Adhiningrat.jpg",
-        "links": []
-    },
-    {
-        "name": "Hannah Limary",
-        "position": "Designathon Director",
-        "photo": "Hannah_Limary.jpg",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/hannah-limary"
-            },
-            {
-                "type": "website",
-                "href": "https://hannahlimary.squarespace.com/"
-            }
-        ]
-    },
-    {
-        "name": "Sunny Stetsyuk",
-        "position": "Project Teams Coordinator",
-        "photo": "Sunny_Stetsyuk.jpg"
-    },
-    {
-        "name": "Jorina Chen",
-        "position": "Project Teams Coordinator",
-        "photo": "Jorina_Chen.jpg",
-        "links": [{
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/jorinachen/"
-            },
-            {
-                "type": "website",
-                "href": "https://www.jorinachen.com/"
-            }
-        ]
-    },
-    {
-        "name": "Zoya Soy",
-        "position": "Project Teams Coordinator",
-        "photo": "Zoya_Soy.jpg"
-    },
-    {
-        "name": "Isabel Pham",
-        "position": "Creative Director",
-        "photo": "Isabel_Pham.png",
-        "links": [{
-            "type": "linkedin",
-            "href": "https://www.linkedin.com/in/isabe1pham/"
-        }]
-    },
-    {
-        "name": "Karla Avalos",
-        "position": "Graphic Designer",
-        "photo": "Karla_Avalos.jpg"
-    },
-    {
-        "name": "Krey Daniel",
-        "position": "Graphic Designer",
-        "photo": "Krey_Daniel.jpg",
-        "links": [{
-                "type": "instagram",
-                "href": "https://www.instagram.com/in.krey.dible/"
-            },
-            {
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/krey-daniel/"
-            },
-            {
-                "type": "website",
-                "href": "https://kreydaniel.wixsite.com/inkreydible"
-            }
-        ]
-    },
+[
+  {
+    "name": "Jin-Kim Niu",
+    "position": "Co-President",
+    "photo": "Jin_Kim_Niu.jpg",
+    "links": [
+      {
+        "type": "linkedin",
+        "href": "https://www.linkedin.com/in/jin-kim-niu/"
+      },
+      {
+        "type": "website",
+        "href": "https://jinkimniu.myportfolio.com/work"
+      }
+    ]
+  },
+  {
+    "name": "Christine Nguyen",
+    "position": "Co-President",
+    "photo": "Christine_Nguyen.jpeg",
+    "links": []
+  },
+  {
+    "name": "Cinta Adhiningrat",
+    "position": "Designathon Director",
+    "photo": "Cinta_Adhiningrat.jpg",
+    "links": []
+  },
+  {
+    "name": "Michelle Yang",
+    "position": "Marketing Director",
+    "photo": "Michelle_Yang.JPG",
+    "links": []
+  },
+  {
+    "name": "Khanh Tran",
+    "position": "Marketing Coordinator",
+    "photo": "",
+    "links": []
+  },
+  {
+    "name": "Nuo Yang",
+    "position": "Marketing Coordinator",
+    "photo": "Nuo_Yang.jpeg",
+    "links": []
+  },
+  {
+    "name": "Jamie Kuang",
+    "position": "Marketing Coordinator",
+    "photo": "Jamie_Kuang.jpg",
+    "links": []
+  },
+  {
+    "name": "Jasmine Wu",
+    "position": "Workshop Coordinator",
+    "photo": "Jasmine_Wu.jpg",
+    "links": []
+  },
+  {
+    "name": "Elise Alinsug",
+    "position": "Workshop Coordinator",
+    "photo": "Elise_Alinsug.jpg",
+    "links": []
+  },
+  {
+    "name": "Vanna Vuong",
+    "position": "Industry Outreach Coordinator",
+    "photo": "Vanna_Vuong.jpeg"
+  },
+  {
+    "name": "Jessica (Jay) Sotelo",
+    "position": "Industry Outreach Coordinator",
+    "photo": "Jessica_Sotelo.jpg",
+    "links": [
+      {
+        "type": "linkedin",
+        "href": "http://linkedin.com/in/jessica-sotelo"
+      }
+    ]
+  },
 
-    {
-        "name": "Ryan Yang",
-        "position": "Webmaster",
-        "photo": "Ryan_Yang.jpg",
-        "links": [{
-                "type": "instagram",
-                "href": "https://instagram.com/veryfewsbux"
-            },
-            {
-                "type": "linkedin",
-                "href": "https://www.linkedin.com/in/ryanqyang/"
-            },
-            {
-                "type": "website",
-                "href": "https://ryqn.dev"
-            }
-        ]
-    },
-    {
-        "name": "Taesung Hwang",
-        "position": "Webmaster",
-        "photo": "Taesung_Hwang.jpg"
-    }
+  {
+    "name": "Elisa Fuji",
+    "position": "Social Chair",
+    "photo": "Elisa_Fuji.jpg"
+  },
+
+  {
+    "name": "Ava Lee",
+    "position": "Social Chair",
+    "photo": "Ava_Lee.jpg"
+  },
+  {
+    "name": "Janie Seong",
+    "position": "Project Teams Coordinators",
+    "photo": "Janie_Seong.jpeg"
+  },
+  {
+    "name": "Jessica Jahja",
+    "position": "Project Teams Coordinators",
+    "photo": "Jessica_Jahja.jpg"
+  },
+  {
+    "name": "Winston Lee",
+    "position": "Project Teams Coordinators",
+    "photo": "Winston_Lee.jpeg"
+  },
+
+  {
+    "name": "Krey Daniel",
+    "position": "Creative Director",
+    "photo": "Krey_Daniel.jpg",
+    "links": [
+      {
+        "type": "instagram",
+        "href": "https://www.instagram.com/in.krey.dible/"
+      },
+      {
+        "type": "linkedin",
+        "href": "https://www.linkedin.com/in/krey-daniel/"
+      },
+      {
+        "type": "website",
+        "href": "https://kreydaniel.wixsite.com/inkreydible"
+      }
+    ]
+  },
+  {
+    "name": "Kaitlyn Tran",
+    "position": "Graphic Designer",
+    "photo": "Kaitlyn_Tran.jpg",
+    "links": [
+      {
+        "type": "instagram",
+        "href": "https://instagram.com/kaitlyn_tranzzz?igshid=YmMyMTA2M2Y="
+      },
+      {
+        "type": "instagram",
+        "href": "https://instagram.com/noomzster?igshid=YmMyMTA2M2Y="
+      }
+    ]
+  },
+  {
+    "name": "Candyce Pham",
+    "position": "Graphic Designer",
+    "photo": "Candyce_Pham.jpg",
+    "links": [
+      {
+        "type": "linkedin",
+        "href": "http://www.linkedin.com/in/candyce-pham"
+      }
+    ]
+  },
+  {
+    "name": "Ryan Yang",
+    "position": "Webmaster",
+    "photo": "Ryan_Yang.jpg",
+    "links": [
+      {
+        "type": "instagram",
+        "href": "https://instagram.com/veryfewsbux"
+      },
+      {
+        "type": "linkedin",
+        "href": "https://www.linkedin.com/in/ryanqyang/"
+      },
+      {
+        "type": "website",
+        "href": "https://ryqn.dev"
+      }
+    ]
+  },
+  {
+    "name": "Taesung Hwang",
+    "position": "Webmaster",
+    "photo": "Taesung_Hwang.jpg"
+  },
+  {
+    "name": "Kaitlen Ngo",
+    "position": "Webmaster",
+    "photo": "kaitlen_ngo.PNG",
+    "links": [
+      {
+        "type": "instagram",
+        "href": "https://www.instagram.com/no.11002012014/"
+      }
+    ]
+  }
 ]
