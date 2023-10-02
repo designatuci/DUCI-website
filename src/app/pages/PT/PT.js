@@ -1,8 +1,10 @@
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import { Text } from 'app/components';
 import { Section, Space, Icon } from 'app/Symbols.js';
+
+export const PROJECT_TEAMS_GOOGLE_FORM = 'https://forms.gle/YoNb5Goj6gw6YGQg6';
 
 const PT = () => (
 	<>
@@ -20,41 +22,45 @@ const PT = () => (
 				style={{ textAlign: 'left' }}
 			>
 				<Text className='color green'>
-					Project Team applications for Winter 2023 are open.
+					Project Team applications for Fall 2023 are open.
 				</Text>
 
 				<Text className='color gray'>
-					To participate in project teams,{' '}
+					To participate, complete the{' '}
 					<Text className='color blue'>
 						<a
-							href='https://forms.gle/2uHLu1FdWZbGyYeW8'
+							href={PROJECT_TEAMS_GOOGLE_FORM}
 							target='_blank'
 							rel='noopener noreferrer'
 						>
-							submit an application
+							project teams registration form
 						</a>
 					</Text>{' '}
-					by Monday, January 16th 2023 at 11:59 PM PST. 
+					by Sunday, October 8th, 2023 at 11:59 PM PDT.
 				</Text>
 
 				<br />
 				<Text size='L'>What are Project Teams?</Text>
 				<Text className='color gray'>
-					A multi-week program where you work on a team to design or
-					re-design a prototype product. Open for all experience
-					levels! Teams present at the end and get the chance to
-					receive prizes. This is an opportunity that will give you
-					more work to display in your portoflio and learn more about
-					the UX/UI design process with help.
+					Project Teams is a quarterly program that provides students with design
+					experience in a collaborative setting. Each quarter, students form teams
+					and work on a design project of their choice (e.g. UI/UX design,
+					marketing design, graphic design) from start to finish. Participants
+					learn essential design skills along the way, become familiar with
+					industry-standard tools, and have a completed project for their portfolio
+					at the end of it! No prior experience is necessary, but Project Teams
+					will be on a first-come, first-served basis due to limited capacity.
 				</Text>
 				<Text className='color gray'>
-					Project Teams usually begins in the first weeks of the
-					academic quarter.
+					For Fall 2023, Project Teams will meet Thursdays at 4&ndash;6 PM from
+					weeks 2 through 9.
 				</Text>
+				{/*
 				<Text className='color gray'>
 					To get involved, <Link to='/join/'>join us</Link> to get
 					notifications about when the next applications come out!
 				</Text>
+				*/}
 
 				<Space h='32' />
 				{/* <Text size='L'>Fall 2022 PT schedule</Text>

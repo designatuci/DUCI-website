@@ -27,6 +27,7 @@ import './styles/components.scss';
 import './styles/animations.scss';
 import './styles/forms.scss';
 import Designathon from './pages/Designathons';
+import { PROJECT_TEAMS_GOOGLE_FORM } from './pages/PT/PT';
 
 function App() {
 	useScroll();
@@ -76,11 +77,11 @@ function App() {
 				/>
 				<Route
 					path='ptsignup'
-					element={<Navigate to='//forms.gle/2uHLu1FdWZbGyYeW8' />}
+					element={<Navigate to={PROJECT_TEAMS_GOOGLE_FORM} />}
 				/>
 				<Route
 					path='ptsignups'
-					element={<Navigate to='//forms.gle/2uHLu1FdWZbGyYeW8' />}
+					element={<Navigate to={PROJECT_TEAMS_GOOGLE_FORM} />}
 				/>
 				{/* <Route
 					path='buy'
