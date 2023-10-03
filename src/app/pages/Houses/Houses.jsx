@@ -3,7 +3,6 @@ import cn from "./Houses.module.scss";
 import Helmet from "react-helmet";
 import { Icon, Section } from "app/Symbols";
 import { Text } from "app/components";
-import { Link } from "react-router-dom";
 import clsx from "clsx";
 import Symbol1 from "./assets/1.png";
 import Symbol2 from "./assets/2.png";
