@@ -105,7 +105,7 @@ export const Houses = memo(() => {
             className={cn.decoration}
             style={{ top: top + "%", left: left + "%" }}
           >
-            <img src={image} className={"wait"} />
+            <img alt="decorative" src={image} className={"wait"} />
           </div>
         ))}
         <div className={clsx(cn.catch, "wait")}>
@@ -148,7 +148,7 @@ export const Houses = memo(() => {
           <div className={cn.list}>
             {HOUSES.map(({ name, icon, description, link }) => (
               <div key={name} className={clsx(cn.house, "wait")}>
-                <img src={icon} />
+                <img alt="decorative" src={icon} />
                 <Text size="L">{name}</Text>
                 <Text color="gray">
                   {description}
@@ -181,7 +181,7 @@ export const Houses = memo(() => {
           </Text>
           <div className={cn.list}>
             <div className={clsx(cn.item, "wait")}>
-              <img src={icon1} />
+              <img alt="decorative" src={icon1} />
               <Text size="L" color="white">
                 Networking Opportunities
               </Text>
@@ -191,7 +191,7 @@ export const Houses = memo(() => {
               </Text>
             </div>
             <div className={clsx(cn.item, "wait")}>
-              <img src={icon2} />
+              <img alt="decorative" src={icon2} />
               <Text color="white">
                 Hands-on Projects in Smaller Environments
               </Text>
@@ -200,7 +200,7 @@ export const Houses = memo(() => {
               </Text>
             </div>
             <div className={clsx(cn.item, "wait")}>
-              <img src={icon3} />
+              <img alt="decorative" src={icon3} />
               <Text color="white"> Win Prizes by attending events</Text>
               <Text color="gray">
                 Participate in more activities and boost up house points to win
@@ -208,7 +208,7 @@ export const Houses = memo(() => {
               </Text>
             </div>
             <div className={clsx(cn.item, "wait")}>
-              <img src={icon4} />
+              <img alt="decorative" src={icon4} />
               <Text color="white">
                 Personalized 1:1 Communication with Board
               </Text>
@@ -284,28 +284,28 @@ export const Houses = memo(() => {
   );
 });
 
-const Toggle = ({ opened, closed }) => {
-  const [open, setOpen] = useState(false);
+// const Toggle = ({ opened, closed }) => {
+//   const [open, setOpen] = useState(false);
 
-  const toggleExpand = useCallback(() => {
-    setOpen((p) => !p);
-  }, []);
+//   const toggleExpand = useCallback(() => {
+//     setOpen((p) => !p);
+//   }, []);
 
-  return (
-    <div
-      className={clsx(cn.question, open && cn.opened)}
-      onClick={toggleExpand}
-    >
-      <Icon
-        src="d22-arrow.svg"
-        w="18"
-        h="18"
-        style={{
-          marginRight: "16px",
-          transform: open ? "rotate(180deg)" : "rotate(0deg)",
-        }}
-      />
-      {open ? opened : closed}
-    </div>
-  );
-};
+//   return (
+//     <div
+//       className={clsx(cn.question, open && cn.opened)}
+//       onClick={toggleExpand}
+//     >
+//       <Icon
+//         src="d22-arrow.svg"
+//         w="18"
+//         h="18"
+//         style={{
+//           marginRight: "16px",
+//           transform: open ? "rotate(180deg)" : "rotate(0deg)",
+//         }}
+//       />
+//       {open ? opened : closed}
+//     </div>
+//   );
+// };
