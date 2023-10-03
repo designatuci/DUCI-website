@@ -1,8 +1,8 @@
 import clsx from 'clsx';
 import { Helmet } from 'react-helmet';
 
-import { Text } from 'app/components';
-import { Section } from 'app/Symbols.js';
+import { Text } from '../../components';
+import { Section } from '../../components/Symbols';
 import MERCH_LIST from 'assets/data/merchList.json';
 
 import { MerchDropListing } from './components';

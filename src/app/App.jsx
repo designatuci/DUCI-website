@@ -37,7 +37,7 @@ function App() {
 			<Nav />
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='join' element={<Join />} />
+				{/* <Route path='join' element={<Join />} />
 				<Route path='hey' element={<Hey />} />
 				<Route path='events'>
 					<Route index element={<Events />} />
@@ -61,7 +61,7 @@ function App() {
 				<Route path='designathon/*' element={<Designathon />} />
 				<Route path='designathons/*' element={<Designathon />} />
 
-				<Route path='brand' element={<Brand />} />
+				<Route path='brand' element={<Brand />} /> */}
 
 				{/* Redirects */}
 				<Route

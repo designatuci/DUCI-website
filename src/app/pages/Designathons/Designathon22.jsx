@@ -3,7 +3,7 @@
 
 import { Helmet } from 'react-helmet';
 import { useState, useEffect, Component } from 'react';
-import { Section, Space, Icon, Photo } from 'app/Symbols.js';
+import { Section, Space, Icon, Photo } from '../../components/Symbols';
 import { Text } from 'app/components';
 import { Judges, Prizes, Rules, SectionNavigation, WinnerShowcase, WorkshopHosts } from './components';
 import WINNERS_2022 from 'assets/data/designathon/2022/winners.json'
