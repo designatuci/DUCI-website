@@ -1,7 +1,7 @@
-import React, { memo, useCallback, useState } from "react";
+import React, { memo } from "react";
 import cn from "./Houses.module.scss";
 import Helmet from "react-helmet";
-import { Icon, Section } from "app/Symbols";
+import { Section } from "app/Symbols";
 import { Text } from "app/components";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
