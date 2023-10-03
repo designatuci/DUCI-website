@@ -1,7 +1,7 @@
-import React, { memo } from "react";
+import React, { memo, useCallback, useRef, useState } from "react";
 import cn from "./Houses.module.scss";
 import Helmet from "react-helmet";
-import { Section } from "app/Symbols";
+import { Icon, Section } from "app/Symbols";
 import { Text } from "app/components";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
@@ -21,6 +21,7 @@ import House1 from "./assets/Group1.png";
 import House2 from "./assets/Group2.png";
 import House3 from "./assets/Group3.png";
 import House4 from "./assets/Group4.png";
+import FAQ_QUESTIONS from "./assets/FAQ.json";
 
 export const Houses = memo(() => {
   const HOUSES = [
@@ -28,25 +29,25 @@ export const Houses = memo(() => {
       name: "Water Tribe",
       icon: House1,
       description: "peaceful and resilient, this group presents calm and flow",
-      link: "https://docs.google.com/spreadsheets/d/1bEw6QacTrd6lTbqqx3D1CfJ068MuCs8cQRncch7Z_00",
+      link: "https://docs.google.com/spreadsheets/d/1bEw6QacTrd6lTbqqx3D1CfJ068MuCs8cQRncch7Z_00/edit?usp=sharing",
     },
     {
       name: "Earth Kingdom",
       icon: House2,
       description: "A diverse and resourceful nation known for its resolve",
-      link: "https://docs.google.com/spreadsheets/d/1GYwUszVwXia8AHADNwLRsiOQJvziCoSoblxnd1hR5AU",
+      link: "https://docs.google.com/spreadsheets/d/1GYwUszVwXia8AHADNwLRsiOQJvziCoSoblxnd1hR5AU/edit?usp=sharing",
     },
     {
       name: "Fire Nation",
       icon: House3,
       description: "A powerful and ambitious empire ruled by determination",
-      link: "https://docs.google.com/spreadsheets/d/1ELynayIT6gn9DgyMRca5MmKwklLmVLqlM1-ofZdOx10",
+      link: "https://docs.google.com/spreadsheets/d/1ELynayIT6gn9DgyMRca5MmKwklLmVLqlM1-ofZdOx10/edit?usp=sharing",
     },
     {
       name: "Air Nomads",
       icon: House4,
       description: "A nomadic society driven by a drive for peace",
-      link: "https://docs.google.com/spreadsheets/d/1ZOgMm07NGX_-DrO8enfEvCBsmawohOqziiyjTZSEn40",
+      link: "https://docs.google.com/spreadsheets/d/1ZOgMm07NGX_-DrO8enfEvCBsmawohOqziiyjTZSEn40/edit?usp=sharing",
     },
   ];
 
@@ -93,6 +94,12 @@ export const Houses = memo(() => {
     },
   ];
 
+  const joinSectionRef = useRef(null);
+
+  const scrollToJoin = useCallback(() => {
+    joinSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
     <main className={cn.container}>
       <Helmet>
@@ -120,11 +127,14 @@ export const Houses = memo(() => {
           be a part of your own design family
         </Text>
         <div className="wait show drop d10 l2">
-          <Link to="/join/" className={clsx("button L fill blue", cn.join)}>
+          <button
+            className={clsx("button L fill blue", cn.join)}
+            onClick={scrollToJoin}
+          >
             <Text size="L" color="white" icon="right">
-              join now
+              Join now
             </Text>
-          </Link>
+          </button>
         </div>
       </header>
       <div className={cn.about} id="about">
@@ -166,11 +176,16 @@ export const Houses = memo(() => {
             ))}
           </div>
           <div className="wait show drop d10 l2">
-            <Link to="/join/" className={clsx("button L fill blue", cn.join)}>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1AV98P5Fs3INBtbwT69oJvfN0eAgj9daVw6o_6XIGEiI/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={clsx("button L fill blue", cn.join)}
+            >
               <Text size="L" color="white" icon="right">
                 view all points
               </Text>
-            </Link>
+            </a>
           </div>
         </Section>
       </div>
@@ -219,93 +234,123 @@ export const Houses = memo(() => {
           </div>
         </Section>
       </div>
-      {/* <div className={cn.faq} id="FAQ">
-        <Section>
-          {[
-            {
-              q: "Where do I submit my project?",
-              a: (
-                <Text className="color gray">
-                  You will submit your final, working prototype to the{" "}
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://forms.gle/Tf1FySVor1RC5rHq8"
-                    style={{
-                      textDecoration: "underline",
-                    }}
-                  >
-                    Submission Form
-                  </a>{" "}
-                  (opens during event). Only one person on your team should
-                  submit a form, which will be on behalf of all contributors.
-                </Text>
-              ),
-            },
-          ].map((item) => {
-            return (
-              <Toggle
-                closed={
-                  <div>
-                    <h3>{item.q}</h3>
-                  </div>
-                }
-                opened={
-                  <div>
-                    <h3>{item.q}</h3>
-                    <Text
-                      className="color gray"
-                      style={{
-                        padding: "20px 0 0 34px",
-                      }}
+      <div className={cn.faq} id="FAQ">
+        <Section id="s-faq">
+          <Text size="XL">FAQ</Text>
+          <div className="split2 tc13">
+            <div className="spaceChildren">
+              <Text>
+                ask any questions in our{" "}
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://discord.com/invite/MBVrKe9"
+                  style={{ textDecoration: "underline" }}
+                >
+                  discord server
+                </a>
+              </Text>
+            </div>
+            <div className="spaceChildrenSmall">
+              {FAQ_QUESTIONS.map((item, i) => (
+                <Toggle
+                  key={i}
+                  closed={
+                    <div
+                      className={clsx(
+                        "faqitem gray card S flex left spaceChildrenSmall"
+                      )}
                     >
-                      {item.a}
-                    </Text>
-                  </div>
-                }
-              />
-            );
-          })}
+                      <div className="flex row top">
+                        <Text className="bold">{item.q}</Text>
+                      </div>
+                    </div>
+                  }
+                  opened={
+                    <div className="faqitem open card S flex left spaceChildrenSmall">
+                      <div className={cn.answer}>
+                        <Text className="bold">{item.q}</Text>
+                        <Text className="color gray">{item.a}</Text>
+                      </div>
+                    </div>
+                  }
+                />
+              ))}
+            </div>
+          </div>
         </Section>
-      </div> */}
-      <section className={cn.bottom}>
-        <Text size="XXXL" className={cn.title}>
-          Join a tribe now
-        </Text>
-        <div className={clsx("wait show drop d10 l2", cn.button)}>
-          <Link to="/join/" className={clsx("button L fill blue", cn.join)}>
-            <Text size="L" color="white" icon="right">
-              join now
+      </div>
+      <section ref={joinSectionRef} className={cn.bottom} id="join">
+        {new Date() <
+        new Date("Fri Oct 06 2023 17:00:0 GMT-0700 (Pacific Daylight Time)") ? (
+          <>
+            <Text size="XXL" className={cn.title}>
+              Sign Up and Get Sorted!
             </Text>
-          </Link>
-        </div>
+            <Text color="gray" className={cn.description}>
+              form open until <Text color="red">Friday at 5pm</Text>
+            </Text>
+            <div className={clsx("wait show drop d10 l2", cn.button)}>
+              <a
+                href="https://forms.gle/FreSgK8Kuw8FP5KQ6"
+                className={clsx("button L fill blue", cn.join)}
+              >
+                <Text size="L" color="white" icon="right">
+                  Sign up
+                </Text>
+              </a>
+            </div>
+          </>
+        ) : (
+          <>
+            <Text size="XL" className={cn.title}>
+              Didn’t get to Join a House? Send Us an Email
+            </Text>
+            <Text color="gray" className={cn.description}>
+              To get sorted into a house, please email us or talk to a board
+              member at any meeting!
+            </Text>
+            <div className={clsx("wait show drop d10 l2", cn.button)}>
+              <a
+                href="mailto:designatuci@gmail.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                className={clsx("button L fill blue", cn.join)}
+              >
+                <Text size="L" color="white" icon="right">
+                  Contact us
+                </Text>
+              </a>
+            </div>
+          </>
+        )}
       </section>
     </main>
   );
 });
 
-// const Toggle = ({ opened, closed }) => {
-//   const [open, setOpen] = useState(false);
+const Toggle = ({ opened, closed }) => {
+  const [open, setOpen] = useState(false);
 
-//   const toggleExpand = useCallback(() => {
-//     setOpen((p) => !p);
-//   }, []);
+  const toggleExpand = useCallback(() => {
+    setOpen((p) => !p);
+  }, []);
 
-//   return (
-//     <div
-//       className={clsx(cn.question, open && cn.opened)}
-//       onClick={toggleExpand}
-//     >
-//       <Icon
-//         src="d22-arrow.svg"
-//         w="18"
-//         h="18"
-//         style={{
-//           marginRight: "16px",
-//           transform: open ? "rotate(180deg)" : "rotate(0deg)",
-//         }}
-//       />
-//       {open ? opened : closed}
-//     </div>
-//   );
-// };
+  return (
+    <div
+      className={clsx(cn.question, open && cn.opened)}
+      onClick={toggleExpand}
+    >
+      <Icon
+        src="d22-arrow.svg"
+        w="18"
+        h="18"
+        style={{
+          marginTop: 16,
+          transform: open ? "rotate(180deg)" : "rotate(0deg)",
+        }}
+      />
+      {open ? opened : closed}
+    </div>
+  );
+};

@@ -10,6 +10,10 @@
     padding: 0 48px;
     z-index: 1000;
     background: white;
+
+    & .logo {
+        min-width: 190px;
+    }
     
     & .wrapper {
         display: grid;
@@ -38,7 +42,7 @@
     }
 
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
         padding: 0 16px;
         box-shadow: 0 0px 128px 64px #6670;
 
@@ -96,7 +100,7 @@
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
     #nav.shrink>.wrapper {
         height: 66px;
     }
