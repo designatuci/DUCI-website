@@ -18,45 +18,5 @@
   {
     "q": "How do I gain points once I join a house?",
     "a": "Come out to our general meetings (workshop/industry events) and our social events! At the end of each event, there will be a QR code you can scan to mark your attendance. Board members will update the points accordingly and you can access the points sheet to see your updated points."
-  },
-  {
-    "q": "Who is in charge of the House System?",
-    "a": "Exec will generally be in charge of the House System. As of Fall 2023, points are awarded for attending general meetings (industry/workshop) and socials. In terms of who is updating what points, Exec will be in charge of updating general meeting points while Socials will be in charge of updating social event points."
-  },
-  {
-    "q": "How are points assigned?",
-    "a": "At the end of any general meetings or socials, attendees will have access to the QR code to an attendance form. This form consists of information on the name and house of the attendee and the date the attendee is filling out the form.\n\nThere will be a different attendance form made for every event to keep attendance organized and prevent members from filling out the form without attending the event.\n\nEach form will be made by Exec and will be titled as followed: “[INSERT EVENT] House Attendance Form”."
-  },
-  {
-    "q": "How are members sorted into Houses?",
-    "a": "At the very first general meeting, everyone there will fill out a form where they will be able to express their preferences for the house they’d like to be in. This form will only be used once at the beginning of the quarter. After the first general meeting, we will no longer be using the form to express preferences and any other members who need to be sorted can come see Exec at general meetings or send us an email at designatuci@gmail.com. The members who are sorted into houses after the first general meeting will be sorted randomly, will not have the ability to request a specific house, and will be sorted into whatever house has the least amount of people to keep the amount of people in houses as even as possible. Members will be able to find out their house assignment by looking at the points sheet (talked about below) that will be available on the website."
-  },
-  {
-    "q": "How do we keep track of points?",
-    "a": "Points will be kept track of through Google Sheets. After every event, the person in charge of updating points (either Exec or Socials) will go through the attendance form for the event and update points accordingly. \n\nEach event is worth 5 points and can be seen being updated below for the first general meeting as an example."
-  },
-  {
-    "q": "How will members stay updated on House competition standings?",
-    "a": "At the beginning of each general meeting, we will take about a minute to reveal the standings for the House competition (who is in 1st, 2nd, etc.) and how many points each House currently has. Exec will be in charge of presenting this information."
-  },
-  {
-    "q": "What are House Leads?",
-    "a": "A House lead is a board member from each house that is responsible for leading icebreakers during general meetings within their house and supporting individuals in their house during design activities. In the points sheet for each house, the house lead is always bolded.\n\nIn any case where a house lead is unable to attend any of the general meetings, house leads are responsible for appointing another board member in their house to be house lead for the meeting.\n\nThese are the house leads for Fall 2023:\n\nAir Nomads: Candyce\nWater Tribe: Jasmine\nFire Nation: Ryan\n Earth Kingdom: Michelle"
-  },
-  {
-    "q": "How are House themes decided and how often are they changed?",
-    "a": "House themes are decided before the start of the quarter and change every quarter. For Fall of 2023, Exec decided on the house theme. Moving forward we may open up the decision process of house themes to the rest of board."
-  },
-  {
-    "q": "Do the members in the Houses ever change?",
-    "a": "Along with the House theme, the members in each House also change every quarter to encourage making connections with different people in the club."
-  },
-  {
-    "q": "What does the future of the House System look like?",
-    "a": "While we are still establishing the House System throughout the Fall, there are some aspects of the House System that we will be considering after the Fall Quarter. This includes incorporating a member of the month and House socials. This will be discussed more at the end of Fall 2023 and after the House System is more established."
-  },
-  {
-    "q": "What are things that will be unique to each House?",
-    "a": "Each house (no matter the theme) should have their own symbol/image/character that represents their house. During Fall 2023, we are testing out how establishing “values” for each house will add onto the House System. Other than that, as of Fall 2023, there will be no specialization for each house (i.e. front-end, research, etc.). This was decided to allow everyone, regardless of house, to feel comfortable exploring different aspects of design!"
   }
 ]
