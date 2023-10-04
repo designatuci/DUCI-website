@@ -22,31 +22,29 @@ import House3 from "./assets/Group3.png";
 import House4 from "./assets/Group4.png";
 import FAQ_QUESTIONS from "./assets/FAQ.json";
 
+const PUBLIC_POINTS_SPREADSHEET = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6BbuyZ3vqmItkfe48YYgeqdiK8cN8OogbcKvQrc3W4Y5705HWqGNEEseWb-V5rZC3-Rmd21lCaVVJ/pubhtml";
+
 export const Houses = memo(() => {
   const HOUSES = [
     {
       name: "Water Tribe",
       icon: House1,
       description: "peaceful and resilient, this group presents calm and flow",
-      link: "https://docs.google.com/spreadsheets/d/1bEw6QacTrd6lTbqqx3D1CfJ068MuCs8cQRncch7Z_00/edit?usp=sharing",
     },
     {
       name: "Earth Kingdom",
       icon: House2,
       description: "A diverse and resourceful nation known for its resolve",
-      link: "https://docs.google.com/spreadsheets/d/1GYwUszVwXia8AHADNwLRsiOQJvziCoSoblxnd1hR5AU/edit?usp=sharing",
     },
     {
       name: "Fire Nation",
       icon: House3,
       description: "A powerful and ambitious empire ruled by determination",
-      link: "https://docs.google.com/spreadsheets/d/1ELynayIT6gn9DgyMRca5MmKwklLmVLqlM1-ofZdOx10/edit?usp=sharing",
     },
     {
       name: "Air Nomads",
       icon: House4,
       description: "A nomadic society driven by a drive for peace",
-      link: "https://docs.google.com/spreadsheets/d/1ZOgMm07NGX_-DrO8enfEvCBsmawohOqziiyjTZSEn40/edit?usp=sharing",
     },
   ];
 
@@ -155,34 +153,26 @@ export const Houses = memo(() => {
             The Houses
           </Text>
           <div className={cn.list}>
-            {HOUSES.map(({ name, icon, description, link }) => (
+            {HOUSES.map(({ name, icon, description  }) => (
               <div key={name} className={clsx(cn.house, "wait")}>
                 <img alt="decorative" src={icon} />
                 <Text size="L">{name}</Text>
                 <Text color="gray">
                   {description}
                   <br />
-                  <a
-                    style={{ marginTop: 8 }}
-                    href={link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    View Points
-                  </a>
                 </Text>
               </div>
             ))}
           </div>
           <div className="wait show drop d10 l2">
             <a
-              href="https://docs.google.com/spreadsheets/d/1AV98P5Fs3INBtbwT69oJvfN0eAgj9daVw6o_6XIGEiI/edit?usp=sharing"
+              href={PUBLIC_POINTS_SPREADSHEET}
               target="_blank"
               rel="noopener noreferrer"
               className={clsx("button L fill blue", cn.join)}
             >
               <Text size="L" color="white" icon="right">
-                view all points
+                View All Points
               </Text>
             </a>
           </div>
