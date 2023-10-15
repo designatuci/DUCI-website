@@ -1,5 +1,19 @@
 [
   {
+    "title": "Intro to Figma with WICS",
+    "time": "2023-10-16T18:30",
+    "duration": "90",
+    "type": "Workshop",
+    "desc": "Interested in bringing your creative designs and visions to life? UI/UX design can make that possible! Join us for an immersive workshop brought to you by WICS and Design at UCI. During this workshop, you will learn about visual design principles and get an in-depth look into the design process. By the end of the workshop you may end up recreating one of your favorite social-media applications such as Instagram, Twitter, and more! We will be making use of Figma’s design tools for hands-on learning, so be sure to download and sign up for an account before the event (it is free for UCI students).",
+    "place": "DBH 6011",
+    "links": [
+      {
+        "label": "RSVP Form",
+        "link": "https://bit.ly/WICSxDesignFigmaWorkshop"
+      }
+    ]
+  },
+  {
     "title": "House Design-Off",
     "time": "2023-10-13T20:00",
     "duration": "60",
