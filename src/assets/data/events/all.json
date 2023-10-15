@@ -1,5 +1,13 @@
 [
   {
+    "title": "Intro to the World of Design",
+    "time": "2023-10-17T19:00",
+    "duration": "60",
+    "type": "Workshop",
+    "desc": "Curious about the dynamic and creative world of UI/UX but unsure if you can find a career without a tech degree? Do you believe that design is not limited to any single discipline but can be found at the intersection of technology, art, psychology, and human behavior? If so, “Intro to the World of Design” is the workshop for you! This workshop is designed to break down the barriers often associated with a career in UI/UX design and welcomes students from all majors, not just computer science or graphic design enthusiasts, to explore the exciting journey into the realm of UI/UX.",
+    "place": "DBH 6011"
+  },
+  {
     "title": "Intro to Figma with WICS",
     "time": "2023-10-16T18:30",
     "duration": "90",
