@@ -1,5 +1,19 @@
 [
   {
+    "title": "Pumpkin Carving",
+    "time": "2023-10-27T19:00",
+    "duration": "60",
+    "type": "Social",
+    "desc": "Hey designers are you ready for the spooky season? Sharpen your carving skills and come out to Design at UCI to carve out some pumpkins and unwind before midterms. Please fill out the rsvp form if you would like to come and participate in the craft. Hope to see you guys there!\n\nAdmission fee $2",
+    "place": "HH 143",
+    "links": [
+      {
+        "label": "RSVP Form",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfHTPOaWvK_ew7aVk20S0ed_fZ0T-EI-vBiq1-Exy2ZOAt7Cg/viewform?usp=sf_link"
+      }
+    ]
+  },
+  {
     "title": "Intro to Web Development",
     "time": "2023-10-24T19:00",
     "duration": "60",
