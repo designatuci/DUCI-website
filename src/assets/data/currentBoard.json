@@ -174,16 +174,5 @@
     "name": "Taesung Hwang",
     "position": "Webmaster",
     "photo": "Taesung_Hwang.jpg"
-  },
-  {
-    "name": "Kaitlen Ngo",
-    "position": "Webmaster",
-    "photo": "kaitlen_ngo.PNG",
-    "links": [
-      {
-        "type": "instagram",
-        "href": "https://www.instagram.com/no.11002012014/"
-      }
-    ]
   }
 ]
