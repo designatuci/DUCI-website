@@ -1,5 +1,56 @@
 [
   {
+    "title": "Decoding Design Tools",
+    "time": "11/21/2023 7:00 PM",
+    "duration": "60",
+    "type": "Workshop",
+    "desc": "Overwhelmed by the number of design resources available to designers? Not sure how to find the appropriate assets or design systems for your project? Come join us as we break down the resources that Design@UCI have collected, and understand how and when to utilize them for a project! These resources range from accessibility tools, to public libraries for components and assets, to case studies offering advice on how to format a project.",
+    "place": "DBH 6011",
+    "links": [
+      {
+        "label": "Resources List",
+        "link": "https://docs.google.com/document/d/1-j13-os0r2SeL8RiH2kjxChGEml9D884sVwWkmpO4vw/edit"
+      }
+    ]
+  },
+  {
+    "title": "Meta Fireside Chat",
+    "time": "11/14/2023 4:00 PM",
+    "duration": "60",
+    "type": "Industry Speaker",
+    "desc": "Wondering how to transition into the design field? Want to learn how to stand out in the job market? Join Mosope, Akolade, and Samuel in a fireside chat as they share their experiences as product designers at Meta! They’ll discuss transitioning from an internship to full-time position and changing career paths. You’ll also have the chance to ask them specific questions near the end of the event. See you there!",
+    "place": "Online",
+    "links": [
+      {
+        "label": "Zoom Link",
+        "link": "https://uci.zoom.us/j/95410782921"
+      }
+    ]
+  },
+  {
+    "title": "Design Dash: UCI Scavenger Hunt",
+    "time": "11/10/2023 5:00 PM",
+    "duration": "60",
+    "type": "Social",
+    "desc": "How much do you know about UCI? Come out to DAUCI and compete against fellow designers at our night time scavenger hunt.",
+    "place": "Meet at Student Center",
+    "links": [
+      {
+        "label": "RSVP Form",
+        "link": "https://docs.google.com/forms/d/e/1FAIpQLSdzWoqA6lhH771Ia7W9cJ-Q-Ui6l0huRcV6NCZDJ0LwenZ2ew/viewform?usp=sf_link"
+      }
+    ]
+  },
+  {
+    "title": "Intro to Web Design",
+    "time": "11/7/2023 7:00 PM",
+    "duration": "60",
+    "type": "Workshop",
+    "desc": "Come out and learn the basics of Web design!",
+    "place": "DBH 6011",
+    "links": []
+  },
+  {
     "title": "Pumpkin Carving",
     "time": "2023-10-27T19:00",
     "duration": "60",
