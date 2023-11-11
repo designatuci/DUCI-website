@@ -1,67 +1,86 @@
 {
-    "resources": [{
-        "title": "Figma",
-        "type": "Tool",
-        "link": "https://www.figma.com/",
-        "desc": "A free, online vector UX editor with prototyping and collaboration features.",
-        "ogImg": "https://cdn.sanity.io/images/599r6htc/localized/0ee4e52ec34a1aef92e1b2bb7e29820685083b3e-2400x1260.png?w=1200&q=70&fit=max&auto=format"
-    },{
-        "title": "Past Slides",
-        "type": "Guide",
-        "link": "https://drive.google.com/drive/folders/14yhiCBnk0E6GECv8LPwSxduM1Nb6GOAQ",
-        "desc": "A compilation of all public Design at UCI workshop slides.",
-        "ogImg": "https://designatuci.com/static/icon/logo.svg"
-    }, {
-        "title": "Coolfolios",
-        "type": "Inspiration",
-        "link": "https://cofolios.com/",
-        "desc": "Browse the portfolio's of other designers who have landed jobs in the field."
-    }, {
-        "title": "Laws of UX",
-        "type": "Guide",
-        "link": "https://lawsofux.com/",
-        "desc": "Get a foundation in the core of UX",
-        "ogImg": "/home/social.png"
-    }, {
-        "title": "Google Fonts",
-        "type": "Tool",
-        "link": "https://fonts.google.com/",
-        "desc": "A great collection of free to use fonts.",
-        "ogImg": "https://www.gstatic.com/images/icons/material/apps/fonts/1x/catalog/v5/opengraph_color.png"
-    }, {
-        "title": "Design System Articles",
-        "type": "Guide",
-        "link": "https://www.designsystems.com/",
-        "desc": "Learn more about the concept of design systems and how they work.",
-        "ogImg": "https://images.ctfassets.net/7jw9uvgmirvi/5a15Ibf9FLqROCcRHaWL5X/022b34dcda4d52970ff01e784fa6914d/home_OG.png?w=1200"
-    }, {
-        "title": "Dribbble",
-        "type": "Inspiration",
-        "link": "https://dribbble.com/shots",
-        "desc": "See what other designers are creating on this portoflio social media platform"
-    }, {
-        "title": "Daily UI",
-        "type": "Inspiration",
-        "link": "https://www.dailyui.co/",
-        "desc": "Recieve a daily UI prompt to inspire practice.",
-        "ogImg": "http://www.dailyui.co/assets/images/share.jpg?v=a3769bd1"
-    }, {
-        "title": "Behance",
-        "type": "Inspiration",
-        "link": "https://www.behance.net/",
-        "desc": "View a diverse collection of other designer's portoflios and work",
-        "ogImg": "https://a5.behance.net/e0d06ed0f0000e46e7b2534f03cdb0410457a705/img/site/generic-share.png"
-    }, {
-        "title": "Medium Design Articles",
-        "type": "Guide",
-        "link": "https://medium.com/topic/design",
-        "desc": "Updated often, discover articles about diverse topics in design",
-        "ogImg": "https://miro.medium.com/1*0L5w2b6T1yEVI3_ZYUWONw.png"
-    }, {
-        "title": "Coolors",
-        "type": "Tool",
-        "link": "https://coolors.co/app",
-        "desc": "Quickly generate color palettes to use in your designs.",
-        "ogImg": "https://coolors.co/assets/img/og_image.png"
-    }]
+  "resources": [
+    {
+      "title": "Figma",
+      "type": "Tool",
+      "link": "https://www.figma.com/",
+      "desc": "A free, online vector UX editor with prototyping and collaboration features.",
+      "ogImg": "https://cdn.sanity.io/images/599r6htc/localized/0ee4e52ec34a1aef92e1b2bb7e29820685083b3e-2400x1260.png?w=1200&q=70&fit=max&auto=format"
+    },
+    {
+      "title": "Intro to Frontend Development",
+      "type": "Guide",
+      "link": "https://learn.ryqn.dev/tutorial/webapp-demos/design-at-uci-fall-23",
+      "desc": "Learn the basics of making a website by following along our example.",
+      "ogImg": "https://cdn.jsdelivr.net/gh/ryqndev/learn-ryqn-dev/src/content/tutorial/webapp-demos/design-at-uci-fall-23/assets/hero.png"
+    },
+    {
+      "title": "Past Slides",
+      "type": "Guide",
+      "link": "https://drive.google.com/drive/folders/14yhiCBnk0E6GECv8LPwSxduM1Nb6GOAQ",
+      "desc": "A compilation of all public Design at UCI workshop slides.",
+      "ogImg": "https://designatuci.com/static/icon/logo.svg"
+    },
+    {
+      "title": "Coolfolios",
+      "type": "Inspiration",
+      "link": "https://cofolios.com/",
+      "desc": "Browse the portfolio's of other designers who have landed jobs in the field."
+    },
+    {
+      "title": "Laws of UX",
+      "type": "Guide",
+      "link": "https://lawsofux.com/",
+      "desc": "Get a foundation in the core of UX",
+      "ogImg": "/home/social.png"
+    },
+    {
+      "title": "Google Fonts",
+      "type": "Tool",
+      "link": "https://fonts.google.com/",
+      "desc": "A great collection of free to use fonts.",
+      "ogImg": "https://www.gstatic.com/images/icons/material/apps/fonts/1x/catalog/v5/opengraph_color.png"
+    },
+    {
+      "title": "Design System Articles",
+      "type": "Guide",
+      "link": "https://www.designsystems.com/",
+      "desc": "Learn more about the concept of design systems and how they work.",
+      "ogImg": "https://images.ctfassets.net/7jw9uvgmirvi/5a15Ibf9FLqROCcRHaWL5X/022b34dcda4d52970ff01e784fa6914d/home_OG.png?w=1200"
+    },
+    {
+      "title": "Dribbble",
+      "type": "Inspiration",
+      "link": "https://dribbble.com/shots",
+      "desc": "See what other designers are creating on this portoflio social media platform"
+    },
+    {
+      "title": "Daily UI",
+      "type": "Inspiration",
+      "link": "https://www.dailyui.co/",
+      "desc": "Recieve a daily UI prompt to inspire practice.",
+      "ogImg": "http://www.dailyui.co/assets/images/share.jpg?v=a3769bd1"
+    },
+    {
+      "title": "Behance",
+      "type": "Inspiration",
+      "link": "https://www.behance.net/",
+      "desc": "View a diverse collection of other designer's portoflios and work",
+      "ogImg": "https://a5.behance.net/e0d06ed0f0000e46e7b2534f03cdb0410457a705/img/site/generic-share.png"
+    },
+    {
+      "title": "Medium Design Articles",
+      "type": "Guide",
+      "link": "https://medium.com/topic/design",
+      "desc": "Updated often, discover articles about diverse topics in design",
+      "ogImg": "https://miro.medium.com/1*0L5w2b6T1yEVI3_ZYUWONw.png"
+    },
+    {
+      "title": "Coolors",
+      "type": "Tool",
+      "link": "https://coolors.co/app",
+      "desc": "Quickly generate color palettes to use in your designs.",
+      "ogImg": "https://coolors.co/assets/img/og_image.png"
+    }
+  ]
 }
