@@ -1,5 +1,27 @@
 [
   {
+    "title": "Fall 2023 Project Teams Demo Day",
+    "time": "2023-12-01T17:00",
+    "duration": "210",
+    "type": "Project Teams",
+    "desc": "Hey designers! Come support your fellow designers and see what amazing products they have designed from this fall quarter’s Project Teams! Project Teams is a quarterly program which provides students with design experience in a collaborative setting. PT Demo Day is open to all UCI members and a great chance for teams to showcase their design, research, and takeaways from the program.",
+    "place": "HH 262"
+  },
+  {
+    "title": "Advocating for Design Inclusivity and Accessibility with Brandon Hyman",
+    "time": "2023-11-28T19:00",
+    "duration": "60",
+    "type": "Industry Speaker",
+    "desc": "We’ve all been taught that good designers aim to create user-friendly experiences for everyone. However, when business objectives must be prioritized, what happens to focusing on the users’ needs? Join us on Zoom to hear Brandon Hyman from ServiceNow discuss how he advocates for inclusive and accessible design in the corporate world!",
+    "place": "Online",
+    "links": [
+      {
+        "label": "Zoom Link",
+        "link": "https://uci.zoom.us/j/8678626478"
+      }
+    ]
+  },
+  {
     "title": "Decoding Design Tools",
     "time": "11/21/2023 7:00 PM",
     "duration": "60",
