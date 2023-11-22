@@ -1,6 +1,20 @@
 {
   "resources": [
     {
+      "title": "Web Design slides",
+      "type": "Guide",
+      "link": "https://docs.google.com/presentation/d/1Tp5mBXcrHnvg8_39mH8UcDpbNoR8iV0-Z1FoZm4q66w/edit#slide=id.g297f2a3b982_0_71",
+      "desc": "What's included: step by step process of approaching web design, hacks, psychology tricks, with a sprinkle of product development",
+      "ogImg": "https://lh7-us.googleusercontent.com/docs/AHkbwyLN87jwYxnGhMzlK6-6LgS27e-2-bVe7e3QHMfDhs8Vrw748WmBFPYdZcg1Js2iG8u-gVslB_zmTyy7hoG_PmQlFd9ansfVF9RmUuz9mEYQ_pk=w1200-h630-p"
+    },
+    {
+      "title": "End to End Figma demo file",
+      "type": "Inspiration",
+      "link": "https://www.figma.com/file/MzXQupHXpnSdIHPlzuKspa/DAUCI%3A-Figma-Tutorial?type=design&node-id=0%3A1&mode=design&t=dqDR26QxegfZKEPH-1",
+      "desc": "Complete end to end tutorial file that gives you all you need to get started.",
+      "ogImg": "https://www.figma.com/file/MzXQupHXpnSdIHPlzuKspa/thumbnail?ver=thumbnails/4a3a8f4d-9311-4751-a7d0-488097f44ff4"
+    },
+    {
       "title": "Figma",
       "type": "Tool",
       "link": "https://www.figma.com/",
