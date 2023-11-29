@@ -1,7 +1,4 @@
-import Events from './Events.js';
-import EventsAll from './EventsAll.js';
+import Events from "./Events.js";
+import EventsAll from "./EventsAll.js";
 
-export {
-    Events,
-    EventsAll,
-};
+export { Events, EventsAll };

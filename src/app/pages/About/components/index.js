@@ -1,5 +1,1 @@
-import Profile from './Profile';
-
-export {
-    Profile,
-}
+export { default as Profile } from "./Profile";

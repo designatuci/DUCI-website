@@ -1,32 +1,14 @@
-import About from "./About";
-import Brand from "./Brand";
-import Contact from "./Contact";
-import { Events, EventsAll } from "./Events";
-import Home from "./Home";
-import Join from "./Join";
-import Mentorship from "./Mentorship";
-import Merch from "./Merch";
-import NotFound from "./NotFound";
-import PT from "./PT";
-import Resources from "./Resources";
-import ResourcesFeatured from "./ResourcesFeatured";
-import { Shirt22 } from "./Merch/pages";
-import { Houses } from "./Houses/Houses";
-
-export {
-  About,
-  Brand,
-  Contact,
-  Events,
-  EventsAll,
-  Home,
-  Join,
-  Mentorship,
-  Merch,
-  NotFound,
-  PT,
-  Resources,
-  ResourcesFeatured,
-  Shirt22,
-  Houses,
-};
+export { default as About } from "./About";
+export { default as Brand } from "./Brand";
+export { default as Contact } from "./Contact";
+export { Events, EventsAll } from "./Events";
+export { default as Home } from "./Home";
+export { default as Join } from "./Join";
+export { default as Mentorship } from "./Mentorship";
+export { default as Merch } from "./Merch";
+export { default as NotFound } from "./NotFound";
+export { default as PT } from "./PT";
+export { default as Resources } from "./Resources";
+export { default as ResourcesFeatured } from "./ResourcesFeatured";
+export { Shirt22 } from "./Merch/pages";
+export { default as Houses } from "./Houses/Houses";

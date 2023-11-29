@@ -1,8 +1,6 @@
-import EmailForm from './EmailForm';
-import Footer from './Footer';
-import Nav from './Nav';
-import Text from './Text';
-import WordBreak from './WordBreak';
-export { default as Banner } from './Banner';
-
-export { EmailForm, Footer, Nav, Text, WordBreak };
+export { default as EmailForm } from "./EmailForm";
+export { default as Footer } from "./Footer";
+export { default as Nav } from "./Nav";
+export { default as Text } from "./Text";
+export { default as WordBreak } from "./WordBreak";
+export { default as Banner } from "./Banner";

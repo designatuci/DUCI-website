@@ -1,841 +1,841 @@
 [
-  {
-    "title": "Fall 2023 Project Teams Demo Day",
-    "time": "2023-12-01T17:00",
-    "duration": "210",
-    "type": "Project Teams",
-    "desc": "Hey designers! Come support your fellow designers and see what amazing products they have designed from this fall quarter’s Project Teams! Project Teams is a quarterly program which provides students with design experience in a collaborative setting. PT Demo Day is open to all UCI members and a great chance for teams to showcase their design, research, and takeaways from the program.",
-    "place": "HH 262"
-  },
-  {
-    "title": "Fireside Chat with Jeff Kao from Riot Games",
-    "time": "2023-11-28T19:00",
-    "duration": "60",
-    "type": "Industry Speaker",
-    "desc": "We’ve all heard of League of Legends, but how does a game come to life from a design perspective? 🎮 Join us on Zoom to hear Jeff Kao discuss his experience as a principal UX Designer at Riot Games! 🕹️ This is perfect for gaming enthusiasts and aspiring designers. See you there!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/8678626478"
-      }
-    ]
-  },
-  {
-    "title": "Decoding Design Tools",
-    "time": "11/21/2023 7:00 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Overwhelmed by the number of design resources available to designers? Not sure how to find the appropriate assets or design systems for your project? Come join us as we break down the resources that Design@UCI have collected, and understand how and when to utilize them for a project! These resources range from accessibility tools, to public libraries for components and assets, to case studies offering advice on how to format a project.",
-    "place": "DBH 6011",
-    "links": [
-      {
-        "label": "Resources List",
-        "link": "https://docs.google.com/document/d/1-j13-os0r2SeL8RiH2kjxChGEml9D884sVwWkmpO4vw/edit"
-      }
-    ]
-  },
-  {
-    "title": "Meta Fireside Chat",
-    "time": "11/14/2023 4:00 PM",
-    "duration": "60",
-    "type": "Industry Speaker",
-    "desc": "Wondering how to transition into the design field? Want to learn how to stand out in the job market? Join Mosope, Akolade, and Samuel in a fireside chat as they share their experiences as product designers at Meta! They’ll discuss transitioning from an internship to full-time position and changing career paths. You’ll also have the chance to ask them specific questions near the end of the event. See you there!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/95410782921"
-      }
-    ]
-  },
-  {
-    "title": "Design Dash: UCI Scavenger Hunt",
-    "time": "11/9/2023 5:30 PM",
-    "duration": "60",
-    "type": "Social",
-    "desc": "How much do you know about UCI? Come out to DAUCI and compete against fellow designers at our night time scavenger hunt.",
-    "place": "Meet at Student Center",
-    "links": [
-      {
-        "label": "RSVP Form",
-        "link": "https://forms.gle/3mysWA29BpbdmiyW6"
-      }
-    ]
-  },
-  {
-    "title": "Intro to Web Design",
-    "time": "11/7/2023 7:00 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Come out and learn the basics of Web design!",
-    "place": "DBH 6011",
-    "links": []
-  },
-  {
-    "title": "Pumpkin Carving",
-    "time": "2023-10-27T19:00",
-    "duration": "60",
-    "type": "Social",
-    "desc": "Hey designers are you ready for the spooky season? Sharpen your carving skills and come out to Design at UCI to carve out some pumpkins and unwind before midterms. Please fill out the rsvp form if you would like to come and participate in the craft. Hope to see you guys there!\n\nAdmission fee $2",
-    "place": "HH 143",
-    "links": [
-      {
-        "label": "RSVP Form",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSfHTPOaWvK_ew7aVk20S0ed_fZ0T-EI-vBiq1-Exy2ZOAt7Cg/viewform?usp=sf_link"
-      }
-    ]
-  },
-  {
-    "title": "Intro to Web Development",
-    "time": "2023-10-24T19:00",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Are you curious about the fundamentals of web development? Eager to dive into the coding aspects and gain the skills needed to create stunning web interfaces? Dive into the realm of web development with our “Intro to Frontend Development” workshop! 🌐\n\nIn this workshop, we'll provide you with the essential tools and knowledge to not only kickstart your web development journey but also empower you to continue learning on your own. We’ll cover the foundational topics from HTML and CSS to JavaScript. 💻✨",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/95988754169?pwd=bFk1YWZxc3lnMU5IR1lZTEVJVExRUT09"
-      }
-    ]
-  },
-  {
-    "title": "Intro to the World of Design",
-    "time": "2023-10-17T19:00",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Curious about the dynamic and creative world of UI/UX but unsure if you can find a career without a tech degree? Do you believe that design is not limited to any single discipline but can be found at the intersection of technology, art, psychology, and human behavior? If so, “Intro to the World of Design” is the workshop for you! This workshop is designed to break down the barriers often associated with a career in UI/UX design and welcomes students from all majors, not just computer science or graphic design enthusiasts, to explore the exciting journey into the realm of UI/UX.",
-    "place": "DBH 6011"
-  },
-  {
-    "title": "Intro to Figma with WICS",
-    "time": "2023-10-16T18:30",
-    "duration": "90",
-    "type": "Workshop",
-    "desc": "Interested in bringing your creative designs and visions to life? UI/UX design can make that possible! Join us for an immersive workshop brought to you by WICS and Design at UCI. During this workshop, you will learn about visual design principles and get an in-depth look into the design process. By the end of the workshop you may end up recreating one of your favorite social-media applications such as Instagram, Twitter, and more! We will be making use of Figma’s design tools for hands-on learning, so be sure to download and sign up for an account before the event (it is free for UCI students).",
-    "place": "DBH 6011",
-    "links": [
-      {
-        "label": "RSVP Form",
-        "link": "https://bit.ly/WICSxDesignFigmaWorkshop"
-      }
-    ]
-  },
-  {
-    "title": "House Design-Off",
-    "time": "2023-10-13T20:00",
-    "duration": "60",
-    "type": "Social",
-    "desc": "Welcome new and old designers! Excited to be a part of our new Design houses? Come out to Design at UCI’s first social event of the year to meet your fellow house members and get creative! Those of you who have not been assigned a house will be sorted at the time of the event. Hope to see y’all there!",
-    "place": "Cross-Cultural Center Ring Room"
-  },
-  {
-    "title": "(Re)Discovering Your Design Identity with Jeremi Dudu from LinkedIn",
-    "time": "2023-10-12T17:00",
-    "duration": "60",
-    "type": "Industry Speaker",
-    "desc": "Feeling lost in your design journey? Confused on which industry is right for you? Come join us in HICF to hear Jeremi Dudu from LinkedIn share his advice on how to align yourself with your design career to suit your interests and values. The event targets designers of all levels, with specific emphasis on those who are lost and trying to discover themselves and their passion in design.",
-    "place": "HICF 100L",
-    "links": []
-  },
-  {
-    "title": "Project Team's Demo Day",
-    "time": "6/1/2023 6:30 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Come join us for Project Team's Demo Day! This is a time where your fellow designers will showcase the designs that they have been working on over the last eight weeks. Please come out and show support for the teams! Project Teams is a quarterly program that provides students with design experience in a collaborative setting. Each quarter, students form teams and work on a design project of their choice (i.e. UI/UX design, marketing design, graphic design) from start to finish. You’ll learn essential design skills along the way, get familiar with industry-standard tools, and you’ll have a completed project for your portfolio at the end of it!",
-    "place": "ALP",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": " https://uci.zoom.us/j/98507141472"
-      }
-    ]
-  },
-  {
-    "title": "Fireside Chat with Adobe UX Designers",
-    "time": "5/25/2023 7:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Join Vicky, Trixia, and Kayla in an engaging conversation as they share their experiences and insights, guiding us through their remarkable journey at Adobe. From their initial roles as interns and new grads to their current positions as accomplished full-time UX designers. They've got some sweet tips and tricks to share on how to rock your internship and crush it in the early stages of your career. Plus, they'll share their unique experiences and the teams they've worked with at Adobe. Don't miss out on this awesome opportunity to learn from these amazing ladies!",
-    "place": "Online",
-    "links": []
-  },
-  {
-    "title": "Typography and Color Theory",
-    "time": "5/22/2023 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Ever wondered how the iconic New York subway signs came to be? Or how to add your style to any font in the world? Join us in SSL 228 to learn about typography in graphic design via Adobe Illustrator! This workshop is for users with all skill levels. Please make sure to have Adobe Illustrator downloaded on your computer before the event! The Adobe Creative Suite is free to all UCI students.",
-    "place": "SSL 228",
-    "links": []
-  },
-  {
-    "title": "Zine-Making Potluck",
-    "time": "5/15/2023 8:00 PM",
-    "duration": "60",
-    "type": "Social",
-    "desc": "Are you looking for a fun art or design project to add to your portfolio? Come join us for a zine-making social! This social will also be a potluck, so please fill out the RSVP form if you can bring an item. Any contribution is greatly appreciated! We hope to see you there!",
-    "place": "SSL 228",
-    "links": [
-      {
-        "label": "RSVP Form",
-        "link": "https://forms.gle/ekQEdG38kkAxPiNp9"
-      }
-    ]
-  },
-  {
-    "title": "Tote Bag Paint Night",
-    "time": "5/9/2023 8:00 PM",
-    "duration": "120",
-    "type": "Social",
-    "desc": "Ever wanted to make your own custom tote bag? Come hang out with Design at UCI and unleash your creative side for a social night of tote bag painting! - Limited supply",
-    "place": "TBD",
-    "links": []
-  },
-  {
-    "title": "History of Graphic Design",
-    "time": "5/8/2023 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Did you know that the iconic Nike Swoosh was made by a student for only $35? How did this happen, and how did that impact the world of design? Join us in SSL228 on Monday 5/8 at 8pm to learn about the history of graphic design with famous designers and their work in our workshop!",
-    "place": "SSL 228",
-    "links": []
-  },
-  {
-    "title": "Design Tinder",
-    "time": "4/24/2023 8:00 PM",
-    "duration": "120",
-    "type": "Social",
-    "desc": "Want to get to know your fellow designers and maybe love too? Join Design at UCI to participate in our first design themed dating roulette to enter and win prizes! We will have an interest form down below for members to sign up if you want to participate. Admission is $3. We hope to see you there!",
-    "place": "SSL 228",
-    "links": [
-      {
-        "label": "Interest Form",
-        "link": "https://docs.google.com/forms/d/e/1FAIpQLSeo12rS-V99KWMOoIY8cnruK23Clc-Ny2JIYDfjc4gc_M2xkQ/viewform?usp=sf_link"
-      }
-    ]
-  },
-  {
-    "title": "Beyond Design: Navigating Cross-Functional Collaboration",
-    "time": "4/18/2023 7:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Ever wonder what it's like to work with UX researchers, developers, and project managers? As designers, we must collaborate cross-functionally to translate our designs from ideation to creation with various goals and constraints in mind. Come join us on Zoom to hear product designer Minjun Chen from Spotify share her experience and advice on working in cross-functional teams! ",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": " https://uci.zoom.us/j/98507141472"
-      }
-    ]
-  },
-  {
-    "title": "Design <> Developer Handoff",
-    "time": "4/10/2023 8:00 PM",
-    "duration": "90",
-    "type": "Workshop",
-    "desc": "Welcome back, designers! Get pumped for our first general meeting of spring quarter, where we’ll be talking about cross-functional collaboration between designers and developers with Commit the Change :purple_heart: Learn about best practices during design handoff, including creating design systems, design documentation, and utilizing helpful handoff tools!",
-    "place": "SSL 228",
-    "links": []
-  },
-  {
-    "title": "Project Teams Demo Day",
-    "time": "3/9/2023 6:30 PM",
-    "duration": "90",
-    "type": "Project teams",
-    "desc": "Come out to Project Teams Demo Day and see what your fellow designers have been creating the last 8 weeks! Project Teams is a quarterly program that provides students with design experience in a collaborative setting. Project Teams Demo Day is open to all general Design at UCI members and a great chance for teams to showcase their designs, research, and takeaways from the program!",
-    "place": "TBD",
-    "links": []
-  },
-  {
-    "title": "Intro to Adobe Illustrator",
-    "time": "2/21/2023 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Have you always wanted to learn how to make your own graphics? If so, come join our Adobe Illustrator Workshop in ALP 1700 on 2/21 at 8pm! Participants will also have the chance to join on Zoom. This event will specifically be for beginners, and we’ll be going over some of the application’s basic tools. Please make sure to have Adobe Illustrator downloaded on your computer before the event! The Adobe Creative Suite is free to all UCI students. The link to instructions on how to download the application will be in our bio!",
-    "place": "ALP 1700",
-    "links": [
-      {
-        "label": "Download Adobe Illustrator",
-        "link": "https://www.oit.uci.edu/services/end-point-computing/adobe-software/"
-      },
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/98507141472"
-      }
-    ]
-  },
-  {
-    "title": "Intro to Logo Design with UCSB Creative Lab",
-    "time": "2/1/2023 6:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Are you interested in designing iconic and memorable logos like Apple, Nike, and many other brands? Check out our Intro to Logo Design workshop in collaboration with UCSB Creative Lab. You’ll learn about different types of logo, the design process, tips, and practice with hands-on exercises in our workshop!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/98507141472"
-      }
-    ]
-  },
-  {
-    "title": "Nailing Design Interviews: The Gaming Industry",
-    "time": "1/23/2023 8:00 PM",
-    "duration": "120",
-    "type": "Industry Speaker",
-    "desc": "It's recruitment season, everyone! Hear all the tips and tricks from Anya Li @ Riot Games to hear about her experience as a designer in the gaming industry. Learn what you need to do to get your next dream design job!👀🙌💯",
-    "place": "HG 1800",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/98507141472"
-      }
-    ]
-  },
-  {
-    "title": "Pajama Movie Night",
-    "time": "1/17/2023 8:00 PM",
-    "duration": "120",
-    "type": "Social",
-    "desc": "Cozy up in your pajamas and join Design at UCI for a movie night, where we’ll be playing a movie (exact movie TBA)! Pizza and snacks will be provided.",
-    "place": "ALP 1700 (tentative)",
-    "links": []
-  },
-  {
-    "title": "Product Design & Ideation",
-    "time": "1/9/2023 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Interested in learning more about product design? Join our beginner-friendly workshop as we discuss UI/UX design, ideation and evaluation, and the product development process. We'll also be taking a closer look at the design tool Figma and going through a quick idea generation/design thinking exercise!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/94150433960"
-      }
-    ]
-  },
-  {
-    "title": "Advanced topics in Figma with Product@UCI",
-    "time": "11/8/2022 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Interested in UI/UX design and want to learn how to creat cool projects and product design in Figma? Come join our workshop in collaboration with Product Association on Tuesday 11/8 in DBH 1600 at 8pm. We will cover some features and resources in Figma. There will also be fun follow-along design activity!Interested in UI/UX design and want to learn how to creat cool projects and product design in Figma? Come join our workshop in collaboration with Product Association on Tuesday 11/8 in DBH 1600 at 8pm. We will cover some features and resources in Figma. There will also be fun follow-along design activity!",
-    "place": "DBH 1600",
-    "links": []
-  },
-  {
-    "title": "Developing your Personal Brand w/ Rachel Kim",
-    "time": "11/1/2022 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Ever wondered what a personal brand means? Stuck on how to improve your portfolio or just need some inspiration? DAUCI is hosting a speaker event presenting Rachel Kim, who has worked with Lucid Software, TOMS Shoes, and Mattel. Come hear our featured art director speak about branding and a design that is personal to YOU!",
-    "place": "DBH 1600",
-    "links": []
-  },
-  {
-    "title": "Pumpkin Patch @ Tanaka Farms",
-    "time": "10/29/2022 3:00 PM",
-    "duration": "120",
-    "type": "Social",
-    "desc": "Hey fellow DE-SIGN-ERS, come relax before or destress after your midterms with Design @ UCI at Tanaka Farms Pumpkin Patch! Please fill out the interest form since their will be a limited number of spots available. Come with us to solve corn mazes, frolic across the pumpkins patches and look at cute farm animals!",
-    "place": "Meet at UCI Flag Poles",
-    "links": [
-      {
-        "label": "Interest Form",
-        "link": "https://forms.gle/D5Gqg8MJseTHDeQK9"
-      }
-    ]
-  },
-  {
-    "title": "Design…at UCI and Beyond!",
-    "time": "10/19/2022 6:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Hello designers!! Join us for a special event about design at UCI and beyond held over Zoom hosted by our very own exec team. Learn about the resources and opportunities here at UCI to further your design skills, including organizations, classes, and jobs. Explore what post-grad paths look like for designers who graduate out of UCI including industry, research, and grad school. We also might be inviting a special guest, so stay tuned!!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/94150433960"
-      }
-    ]
-  },
-  {
-    "title": "DaUCI x WiCS: Intro to UI/UX",
-    "time": "10/17/2022 6:30 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Are you interested in learning more about UI/UX? Join our beginner-friendly workshop in collaboration with WiCS on Monday, 10/17 in DBH 6011 at 6:30pm! We'll be discussing both UI and UX design in great detail, including visual design fundamentals, evaluating for good UI, the UX design process, and applying design principles to your code. We'll also be taking a closer look at Figma, a design tool used in industry. Remember to RSVP (link in bio) if you plan on attending!",
-    "place": "DBH 6011",
-    "links": []
-  },
-  {
-    "title": "AMA (Ask Me Anything) Summer Internship Panel",
-    "time": "10/11/2022 8:00 PM",
-    "duration": "120",
-    "type": "Industry Speaker",
-    "desc": "Hey designers! Design at UCI is holding a summer internship Ask Me Anything panel with our very own board in DBH 1600! Come and connect with our very own board members who will be detailing what their summer internship experience was like. Learn more about how you can land your next SWE, product, and/or UX/UI design internships",
-    "place": "DBH 1600",
-    "links": []
-  },
-  {
-    "title": "Game Night",
-    "time": "10/4/2022 8:00 PM",
-    "duration": "120",
-    "type": "Social Event",
-    "desc": "Hey fellow anteaters, come out to Design at UCI official Game Night where we will be hosting tournaments of your favorite games like Smash, UNO, and Codenames! Come to compete in the various games and collect tickets along the way to win some cool prizes. Game Night is a great place to meet new people, play board games and relax before classes start to ramp up. Admission is $3, see you there",
-    "place": "DBH 1600",
-    "links": []
-  },
-  {
-    "title": "Introductory Workshop",
-    "time": "9/27/2022 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Welcome back, anteaters 🍁 Join us in DBH 1600 for our first event of the year to meet the board, learn more about the events and programs for fall quarter, and get a brief introduction to design!",
-    "place": "DBH 1600",
-    "links": []
-  },
-  {
-    "title": "Project Teams Demo Day",
-    "time": "5/25/2022 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": " Interested in learning about working cross-functionally as a designer? Join us for a workshop in collaboration with UCSD Design Co (@ucsddesignco), where we’ll be discussing what collaboration in industry looks like within design teams, as well as cross-functionally with engineers, PMs, and research teams.",
-    "place": "DBH 1500",
-    "links": []
-  },
-  {
-    "title": "Cross-Functional Design",
-    "time": "5/18/2022 8:00 PM",
-    "duration": "90",
-    "type": "Workshop",
-    "desc": " Interested in learning about working cross-functionally as a designer? Join us for a workshop in collaboration with UCSD Design Co (@ucsddesignco), where we’ll be discussing what collaboration in industry looks like within design teams, as well as cross-functionally with engineers, PMs, and research teams.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "http://ucsddesign.co/gbm"
-      }
-    ]
-  },
-  {
-    "title": "Picnic in Aldrich",
-    "time": "5/13/2022 1:00 PM",
-    "duration": "90",
-    "type": "Social Event",
-    "desc": "Join us for a picnic in the middle of Aldrich where we'll host games, icebreakers, and food!",
-    "place": "Aldrich Park",
-    "links": []
-  },
-  {
-    "title": "2022 Spring Night Market",
-    "time": "5/11/2022 5:00 PM",
-    "duration": "240",
-    "type": "Social Event",
-    "desc": "Come support Design at UCI at the 2022 Spring Night Market on May 11th! We’ll be selling egg tarts at 1 for $3, 2 for $4, and our rainbow heart pen tool sticker for $3. We’ll be at booth #59, next to Langston Library from 5 to 9 PM — join us for club festivities, fundraising fun, and good vibes",
-    "place": "Ring Road",
-    "links": []
-  },
-  {
-    "title": "Mock Whiteboard Challenge",
-    "time": "5/4/2022 8:00 PM",
-    "duration": "90",
-    "type": "Workshop",
-    "desc": " Interested in practicing your design thinking skills? Unsure about how to tackle a whiteboard challenge during a design interview? We will be hosting a Mock Whiteboard Challenge event, in which participants will be paired with a design expert to complete a virtual whiteboard challenge on Figma! Note that due to high demand, spots are limited so keep an eye out for signups when they open!",
-    "place": "Online",
-    "links": []
-  },
-  {
-    "title": "Ask Me Anything: Student Intern Panel",
-    "time": "4/20/2022 8:00 PM",
-    "duration": "90",
-    "type": "Workshop",
-    "desc": " Curious about designing at the industry level? Not sure how to land internships? Swing by our Ask Me Anything: Student Intern Panel to ask student peers about their design internship experiences! From graphic to UI/UX to product, we’ll have panelists from all types of design backgrounds. Be sure to prep any burning questions you may have, and we hope to see you there!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/99935306945"
-      }
-    ]
-  },
-  {
-    "title": "Game Night Extravaganza",
-    "time": "4/13/2022 7:30 PM",
-    "duration": "90",
-    "type": "Social Event",
-    "desc": "Join Design at UCI for an ultimate game night extravaganza! We’ll be hosting a smash tournament as well as other board and card games to compete and play in! There will be a $3 admission fee & prizes!",
-    "place": "DBH 1500",
-    "links": []
-  },
-  {
-    "title": "Food And Fun At UTC",
-    "time": "4/8/2022 6:30 PM",
-    "duration": "120",
-    "type": "Social Event",
-    "desc": "Join us for boba and pizza at UTC! We’ll eat pizza, have boba, play games, and get a chance to get to know other members of the club!",
-    "place": "UTC, outside Cha & Yogurtland",
-    "links": []
-  },
-  {
-    "title": "ICS Clubs Fair",
-    "time": "3/31/2022 12:00 PM",
-    "duration": "120",
-    "type": "Social Event",
-    "desc": "Come check out Design at UCI at the ICS Clubs Fair on Thursday (3/31) from 12-2pm! We’ll be having flyers, freebies, and fun so make sure to stop by and say hi!",
-    "place": "Area by ICS 2 & DBH",
-    "links": []
-  },
-  {
-    "title": "Presenting Your Designs",
-    "time": "3/30/2022 8:00 PM",
-    "duration": "120",
-    "type": "Workshop",
-    "desc": "Welcome back from spring break, designers! Join us for our first in-person workshop of the year to learn how to effectively present your designs! Excited to see you all there! :)",
-    "place": "DBH 1500",
-    "links": []
-  },
-  {
-    "title": "Design Social: Design at UCI x SB Creative Lab",
-    "time": "1/20/2022 6:00 PM",
-    "duration": "90",
-    "type": "Social Event",
-    "desc": "Hey designers! Nervous about the upcoming designathon? Come meet other designers (potential team members!) from both UCI and UCSB at our social. We'll be creating cute little trading cards on Figma so we can all get to know each other better. It'll be a fun and chill event so make sure to come through!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/4973611565"
-      }
-    ]
-  },
-  {
-    "title": "Components and Prototyping",
-    "time": "1/10/2022 6:00 PM",
-    "duration": "90",
-    "type": "Workshop",
-    "desc": "Welcome back, designers! Hope everyone had a festive holiday season. We’re starting off winter quarter by exploring how components and prototyping are used within Figma and the overall design process. Join us for a hands-on workshop that focuses on how components can increase workflow efficiency and how Figma facilitates the building of complex prototypes!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/97658372715"
-      }
-    ]
-  },
-  {
-    "title": "Project Teams Demo Day",
-    "time": "11/19/2021 6:30 PM",
-    "duration": "90",
-    "type": "Project Teams",
-    "desc": "See what Project Teams has been up to this quarter! Each group will get the chance to present and share their hard work.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/92421119230?pwd=Ty9aeEZoU0o0U3RwT3U5bzlnMHA4Zz09"
-      }
-    ]
-  },
-  {
-    "title": "Autumn Night Market",
-    "time": "11/17/2021 5:00 PM",
-    "duration": "240",
-    "type": "Fundraiser",
-    "desc": "Visit our booth during the UCI Autumn Night Market event. We will be selling stickers and food to fundraise. See you there!",
-    "place": "Ring Road, Booth 36"
-  },
-  {
-    "title": "Smash Tournament",
-    "time": "11/15/2021 6:30 PM",
-    "duration": "90",
-    "type": "Fundraiser + Social",
-    "desc": "We will be hosting a Super Smash Bros Tournament Week 8 Monday. The top three winners will be awarded a prize, as well as a shoutout on Design at UCI's social media. Entrance fees are $3 per person.",
-    "place": "Donald Bren Hall 1200, UCI"
-  },
-  {
-    "title": "Portfolio Tips and Review with Industry Professionals",
-    "time": "11/8/2021 6:30 PM",
-    "duration": "90",
-    "type": "Industry Speaker",
-    "desc": "Portfolios are a super important way to showcase your design skills and differentiate yourself whether you're in UI/UX or graphic design. If you’re looking for tips on how to present your portfolio and potentially even get them reviewed by professionals in the industry, come sign up for our event!! People will be randomly selected to get their portfolios reviewed from the sign-ups (which are due November 2 11:59 p.m.) and contacted with instructions on what to prepare.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Recording",
-        "link": "https://www.youtube.com/watch?v=vVIX1o1-rns"
-      },
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/4973611565"
-      }
-    ]
-  },
-  {
-    "title": "Fireside Chat with Professor Arpita",
-    "time": "11/3/2021 4:00 PM",
-    "duration": "90",
-    "type": "Industry Speaker",
-    "desc": "Looking to learn more about UX in academia? Come to our second industry event of the year where Dr. Arpita, one of our very own Informatics professors here at UC Irvine, will discuss her career in academia along with her studies of designing for health and human behavior change. If you’re interested, come join our fireside chat with Dr. Arpita!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Recording",
-        "link": "https://www.youtube.com/watch?v=BiVff_o3tlo"
-      },
-      {
-        "label": "Slides",
-        "link": "https://docs.google.com/presentation/d/19zh-v2KmrBtcGo76cV-y2AcgdZkW-gUBr9XsXL9KbAo/edit?usp=sharing"
-      }
-    ]
-  },
-  {
-    "title": "User Research 101",
-    "time": "10/21/2021 6:30 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Nearly all of today’s products, designs, and applications revolve around the one same thing: users. Learn about typical research methods at our workshop to find out how you can better understand users!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/95325827537"
-      },
-      {
-        "label": "Slides",
-        "link": "https://docs.google.com/presentation/d/1yknvdxSv1k8n9gG08b5r4f4gaeGXqfGvuSYq5SMrDLo/edit?usp=sharing"
-      }
-    ]
-  },
-  {
-    "title": "Social Media Marketing",
-    "time": "10/15/2021 6:30 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Why do so many organizations focus on social media marketing? How can good design techniques increase the effectiveness of marketing via social media? If these topics interest you, join us at our Social Media Marketing workshop, an event in collaboration with Marketing Association!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/92396436828"
-      },
-      {
-        "label": "Slides",
-        "link": "https://docs.google.com/presentation/d/1_-nqqugSAnhNuGV-Ln8xKLvu9iRHl-mITkGkaD3HwNs/edit?usp=sharing"
-      }
-    ]
-  },
-  {
-    "title": "Visual Design Workshop",
-    "time": "10/13/2021 6:30 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "What makes a design aesthetically pleasing? Why do certain color combinations look good together? Find the answers to these questions and more at our Visual Design workshop!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://us02web.zoom.us/j/2609673280?pwd=b1pZeGp2MngwcFFodERBNWM0L0NaUT09"
-      },
-      {
-        "label": "Slides",
-        "link": "https://docs.google.com/presentation/d/1R4ovZjniei3OZdDY099hV6iyAsfuzkpl-fKRi54OjcY/edit?usp=sharing"
-      }
-    ]
-  },
-  {
-    "title": "Speaker Panel: Explore Careers in Design",
-    "time": "10/8/2021 6:30 PM",
-    "duration": "60",
-    "type": "Industry Speaker",
-    "desc": "Looking to learn more about design? Come to our first industry event of the year and learn from a panel of designers currently working in the field! Each speaker will give valuable insight into their career and experience in the industry. If you’re interested in the fields of product design, UX design, visual design, or graphic design, join us this Friday!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/4973611565"
-      },
-      {
-        "label": "Recording",
-        "link": "https://www.youtube.com/watch?v=jjH9QMeVoGE"
-      },
-      {
-        "label": "Slides",
-        "link": "https://docs.google.com/presentation/d/1hEZeZEXri_yi9B14c8lvJie5A9T7mldnU19WwkkTLnI/edit?usp=sharing"
-      }
-    ]
-  },
-  {
-    "title": "Introductory Workshop",
-    "time": "10/1/2021 6:30 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Get a chance to meet the Design at UCI board. See what workshops we'll be hosting this quarter and learn about the best ways you can take advatage of the resoureces we have to offer. Also get a brief introduction to design.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/91381828728"
-      }
-    ]
-  },
-  {
-    "title": "Project Teams Presentations",
-    "time": "5/28/2021 6:00 PM",
-    "duration": "60",
-    "type": "Project Teams",
-    "desc": "It's almost the end of Spring Quarter! You know what that means... Project Teams Presentations! The theme was open-ended so participants were allowed to go creative with their projects. Attend the meeting this Friday to see what our teams have made!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "Game Night Social",
-    "time": "5/14/2021 6:00 PM",
-    "duration": "60",
-    "type": "Social Event",
-    "desc": "This week we will be having a game night social. Come hang out with peers and board as we play some virtual games together. This event will take place on Discord at 6PM so join our server by this Friday! Let's have some fun!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Discord Link",
-        "link": "https://discord.com/invite/MBVrKe9"
-      }
-    ]
-  },
-  {
-    "title": "Social Media Marketing",
-    "time": "5/7/2021 6:00 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Are you a board member of a campus organization that’s struggling with marketing? Join Design at UCI’s crash course on marketing specifically for student organizations! We’ll be going over some basic aspects of branding such as logo, flyer, and web design that you can utilize to attract more attention on campus. As a design based organization, we’ll also be sharing some of our own marketing tips and tricks that have been effective for our club!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "Happy Hour Social",
-    "time": "4/23/2021 6:00 PM",
-    "duration": "60",
-    "type": "Social Event",
-    "desc": "This week, we will have a happy hour to chill after classes, bond with one another, and relax with your favorite drink (non-alcoholic drinks for anyone underage ofc ;). We will also have a live tutorial on how to make a Mojito 🥴. The event will be hosted over Discord at 6pm, so let's meet, make drinks, and chat with videos on! We can always switch to playing games or wherever the night leads.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "Something in Common",
-    "time": "4/12/2021 7:00 PM",
-    "duration": "60",
-    "type": "Social Event",
-    "desc": "Get to know your fellow designers better! We’ll put participants into groups and they'll work together to find something in common in several different rounds. More limitations will be added each round to increase difficulty.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "How to Conduct User Interviews",
-    "time": "4/12/2021 6:00 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "UX designers utilize user interviews early in the design process to understand the audience they are designing for. How do you organize a user interview? We'll be going over the basics in this workshop so you'll be ready to conduct user interviews for your own projects! We will also be hosting an after-event social, 'Something in Common', so stick around to the end and get to know each other!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "Ask Me Anything: Student Intern Panel",
-    "time": "4/9/2021 6:00 PM",
-    "duration": "60",
-    "type": "AMA",
-    "desc": "Join us for an \"ask-me-anything\" panel from fellow UCI students on how they've landed design internships and roles! We'll be discussing personal tips from our own job application processes, so come prepared with questions or just come chat for a chill time!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "Persuasive Design with Marketing Association",
-    "time": "4/8/2021 6:30 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Join us for this exciting collab workshop with Marketing Association as we explore persuasive design: design principles based on human behavior and psychology! How do these principles influence decision-making, and how can both designers and marketers use this knowledge to their advantage to create better user experiences and increased conversions? Don’t miss out on this special cross-subject deep dive into the effects of persuasive design in guiding users towards marketing goals!",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "The Basics of UX Recruiting",
-    "time": "4/2/2021 6:00 PM",
-    "duration": "60",
-    "type": "Workshop",
-    "desc": "Portfolios? Resumes? What's a whiteboard challenge? Are you interested in applying for UI/UX roles, but don't know what to expect? We'll be going over the different kinds of UX jobs, tips on the job application process, and how to position yourself for a design role no matter your major.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "Introduction to UX with Jane Chang",
-    "time": "3/12/2021 6:00 PM",
-    "duration": "60",
-    "type": "Industry Speaker",
-    "desc": "Jane is a Product Design Lead at Google in Irvine/Seattle. Before Google, she worked for Walt Disney, Universal Pictures, Toyota/Lexus, Apple, Volkswagen AG and led product design in the cybersecurity space. She started her career in the agency world at Saatchi & Saatchi and RPA, and led design at TBWA/Chiat/Day. She studied Graphic Design at NYU and received her Master's in Visual Communication from Johns Hopkins University. Jane currently lives in Irvine with her husband and 6-year-old son.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  },
-  {
-    "title": "How to Nail your UX Interview with Chris Ota",
-    "time": "2/26/2021 6:00 PM",
-    "duration": "60",
-    "type": "Industry Speaker",
-    "desc": "Originally from Hawaii, Chris Ota started off designing and building websites after graduating community college 13 years ago. He packed his bags in 2015 and moved to San Francisco with no job lined up, looking for a new chapter in his life. Starting from the bottom as a product designer, Chris has been at Lyft for about 3.5 years now, focused on patient transportation to and from their appointments. Besides his day to day, he helps with interviewing full time and intern candidates, does design mentorship at work, and is an active mentor with ADPList.",
-    "place": "Online",
-    "links": [
-      {
-        "label": "Zoom Link",
-        "link": "https://uci.zoom.us/j/5080955339"
-      }
-    ]
-  }
+	{
+		"title": "Fall 2023 Project Teams Demo Day",
+		"time": "2023-12-01T17:00",
+		"duration": "210",
+		"type": "Project Teams",
+		"desc": "Hey designers! Come support your fellow designers and see what amazing products they have designed from this fall quarter’s Project Teams! Project Teams is a quarterly program which provides students with design experience in a collaborative setting. PT Demo Day is open to all UCI members and a great chance for teams to showcase their design, research, and takeaways from the program.",
+		"place": "HH 262"
+	},
+	{
+		"title": "Fireside Chat with Jeff Kao from Riot Games",
+		"time": "2023-11-28T19:00",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "We’ve all heard of League of Legends, but how does a game come to life from a design perspective? 🎮 Join us on Zoom to hear Jeff Kao discuss his experience as a principal UX Designer at Riot Games! 🕹️ This is perfect for gaming enthusiasts and aspiring designers. See you there!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/8678626478"
+			}
+		]
+	},
+	{
+		"title": "Decoding Design Tools",
+		"time": "11/21/2023 7:00 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Overwhelmed by the number of design resources available to designers? Not sure how to find the appropriate assets or design systems for your project? Come join us as we break down the resources that Design@UCI have collected, and understand how and when to utilize them for a project! These resources range from accessibility tools, to public libraries for components and assets, to case studies offering advice on how to format a project.",
+		"place": "DBH 6011",
+		"links": [
+			{
+				"label": "Resources List",
+				"link": "https://docs.google.com/document/d/1-j13-os0r2SeL8RiH2kjxChGEml9D884sVwWkmpO4vw/edit"
+			}
+		]
+	},
+	{
+		"title": "Meta Fireside Chat",
+		"time": "11/14/2023 4:00 PM",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "Wondering how to transition into the design field? Want to learn how to stand out in the job market? Join Mosope, Akolade, and Samuel in a fireside chat as they share their experiences as product designers at Meta! They’ll discuss transitioning from an internship to full-time position and changing career paths. You’ll also have the chance to ask them specific questions near the end of the event. See you there!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/95410782921"
+			}
+		]
+	},
+	{
+		"title": "Design Dash: UCI Scavenger Hunt",
+		"time": "11/9/2023 5:30 PM",
+		"duration": "60",
+		"type": "Social",
+		"desc": "How much do you know about UCI? Come out to DAUCI and compete against fellow designers at our night time scavenger hunt.",
+		"place": "Meet at Student Center",
+		"links": [
+			{
+				"label": "RSVP Form",
+				"link": "https://forms.gle/3mysWA29BpbdmiyW6"
+			}
+		]
+	},
+	{
+		"title": "Intro to Web Design",
+		"time": "11/7/2023 7:00 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Come out and learn the basics of Web design!",
+		"place": "DBH 6011",
+		"links": []
+	},
+	{
+		"title": "Pumpkin Carving",
+		"time": "2023-10-27T19:00",
+		"duration": "60",
+		"type": "Social",
+		"desc": "Hey designers are you ready for the spooky season? Sharpen your carving skills and come out to Design at UCI to carve out some pumpkins and unwind before midterms. Please fill out the rsvp form if you would like to come and participate in the craft. Hope to see you guys there!\n\nAdmission fee $2",
+		"place": "HH 143",
+		"links": [
+			{
+				"label": "RSVP Form",
+				"link": "https://docs.google.com/forms/d/e/1FAIpQLSfHTPOaWvK_ew7aVk20S0ed_fZ0T-EI-vBiq1-Exy2ZOAt7Cg/viewform?usp=sf_link"
+			}
+		]
+	},
+	{
+		"title": "Intro to Web Development",
+		"time": "2023-10-24T19:00",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Are you curious about the fundamentals of web development? Eager to dive into the coding aspects and gain the skills needed to create stunning web interfaces? Dive into the realm of web development with our “Intro to Frontend Development” workshop! 🌐\n\nIn this workshop, we'll provide you with the essential tools and knowledge to not only kickstart your web development journey but also empower you to continue learning on your own. We’ll cover the foundational topics from HTML and CSS to JavaScript. 💻✨",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/95988754169?pwd=bFk1YWZxc3lnMU5IR1lZTEVJVExRUT09"
+			}
+		]
+	},
+	{
+		"title": "Intro to the World of Design",
+		"time": "2023-10-17T19:00",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Curious about the dynamic and creative world of UI/UX but unsure if you can find a career without a tech degree? Do you believe that design is not limited to any single discipline but can be found at the intersection of technology, art, psychology, and human behavior? If so, “Intro to the World of Design” is the workshop for you! This workshop is designed to break down the barriers often associated with a career in UI/UX design and welcomes students from all majors, not just computer science or graphic design enthusiasts, to explore the exciting journey into the realm of UI/UX.",
+		"place": "DBH 6011"
+	},
+	{
+		"title": "Intro to Figma with WICS",
+		"time": "2023-10-16T18:30",
+		"duration": "90",
+		"type": "Workshop",
+		"desc": "Interested in bringing your creative designs and visions to life? UI/UX design can make that possible! Join us for an immersive workshop brought to you by WICS and Design at UCI. During this workshop, you will learn about visual design principles and get an in-depth look into the design process. By the end of the workshop you may end up recreating one of your favorite social-media applications such as Instagram, Twitter, and more! We will be making use of Figma’s design tools for hands-on learning, so be sure to download and sign up for an account before the event (it is free for UCI students).",
+		"place": "DBH 6011",
+		"links": [
+			{
+				"label": "RSVP Form",
+				"link": "https://bit.ly/WICSxDesignFigmaWorkshop"
+			}
+		]
+	},
+	{
+		"title": "House Design-Off",
+		"time": "2023-10-13T20:00",
+		"duration": "60",
+		"type": "Social",
+		"desc": "Welcome new and old designers! Excited to be a part of our new Design houses? Come out to Design at UCI’s first social event of the year to meet your fellow house members and get creative! Those of you who have not been assigned a house will be sorted at the time of the event. Hope to see y’all there!",
+		"place": "Cross-Cultural Center Ring Room"
+	},
+	{
+		"title": "(Re)Discovering Your Design Identity with Jeremi Dudu from LinkedIn",
+		"time": "2023-10-12T17:00",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "Feeling lost in your design journey? Confused on which industry is right for you? Come join us in HICF to hear Jeremi Dudu from LinkedIn share his advice on how to align yourself with your design career to suit your interests and values. The event targets designers of all levels, with specific emphasis on those who are lost and trying to discover themselves and their passion in design.",
+		"place": "HICF 100L",
+		"links": []
+	},
+	{
+		"title": "Project Team's Demo Day",
+		"time": "6/1/2023 6:30 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Come join us for Project Team's Demo Day! This is a time where your fellow designers will showcase the designs that they have been working on over the last eight weeks. Please come out and show support for the teams! Project Teams is a quarterly program that provides students with design experience in a collaborative setting. Each quarter, students form teams and work on a design project of their choice (i.e. UI/UX design, marketing design, graphic design) from start to finish. You’ll learn essential design skills along the way, get familiar with industry-standard tools, and you’ll have a completed project for your portfolio at the end of it!",
+		"place": "ALP",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": " https://uci.zoom.us/j/98507141472"
+			}
+		]
+	},
+	{
+		"title": "Fireside Chat with Adobe UX Designers",
+		"time": "5/25/2023 7:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Join Vicky, Trixia, and Kayla in an engaging conversation as they share their experiences and insights, guiding us through their remarkable journey at Adobe. From their initial roles as interns and new grads to their current positions as accomplished full-time UX designers. They've got some sweet tips and tricks to share on how to rock your internship and crush it in the early stages of your career. Plus, they'll share their unique experiences and the teams they've worked with at Adobe. Don't miss out on this awesome opportunity to learn from these amazing ladies!",
+		"place": "Online",
+		"links": []
+	},
+	{
+		"title": "Typography and Color Theory",
+		"time": "5/22/2023 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Ever wondered how the iconic New York subway signs came to be? Or how to add your style to any font in the world? Join us in SSL 228 to learn about typography in graphic design via Adobe Illustrator! This workshop is for users with all skill levels. Please make sure to have Adobe Illustrator downloaded on your computer before the event! The Adobe Creative Suite is free to all UCI students.",
+		"place": "SSL 228",
+		"links": []
+	},
+	{
+		"title": "Zine-Making Potluck",
+		"time": "5/15/2023 8:00 PM",
+		"duration": "60",
+		"type": "Social",
+		"desc": "Are you looking for a fun art or design project to add to your portfolio? Come join us for a zine-making social! This social will also be a potluck, so please fill out the RSVP form if you can bring an item. Any contribution is greatly appreciated! We hope to see you there!",
+		"place": "SSL 228",
+		"links": [
+			{
+				"label": "RSVP Form",
+				"link": "https://forms.gle/ekQEdG38kkAxPiNp9"
+			}
+		]
+	},
+	{
+		"title": "Tote Bag Paint Night",
+		"time": "5/9/2023 8:00 PM",
+		"duration": "120",
+		"type": "Social",
+		"desc": "Ever wanted to make your own custom tote bag? Come hang out with Design at UCI and unleash your creative side for a social night of tote bag painting! - Limited supply",
+		"place": "TBD",
+		"links": []
+	},
+	{
+		"title": "History of Graphic Design",
+		"time": "5/8/2023 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Did you know that the iconic Nike Swoosh was made by a student for only $35? How did this happen, and how did that impact the world of design? Join us in SSL228 on Monday 5/8 at 8pm to learn about the history of graphic design with famous designers and their work in our workshop!",
+		"place": "SSL 228",
+		"links": []
+	},
+	{
+		"title": "Design Tinder",
+		"time": "4/24/2023 8:00 PM",
+		"duration": "120",
+		"type": "Social",
+		"desc": "Want to get to know your fellow designers and maybe love too? Join Design at UCI to participate in our first design themed dating roulette to enter and win prizes! We will have an interest form down below for members to sign up if you want to participate. Admission is $3. We hope to see you there!",
+		"place": "SSL 228",
+		"links": [
+			{
+				"label": "Interest Form",
+				"link": "https://docs.google.com/forms/d/e/1FAIpQLSeo12rS-V99KWMOoIY8cnruK23Clc-Ny2JIYDfjc4gc_M2xkQ/viewform?usp=sf_link"
+			}
+		]
+	},
+	{
+		"title": "Beyond Design: Navigating Cross-Functional Collaboration",
+		"time": "4/18/2023 7:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Ever wonder what it's like to work with UX researchers, developers, and project managers? As designers, we must collaborate cross-functionally to translate our designs from ideation to creation with various goals and constraints in mind. Come join us on Zoom to hear product designer Minjun Chen from Spotify share her experience and advice on working in cross-functional teams! ",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": " https://uci.zoom.us/j/98507141472"
+			}
+		]
+	},
+	{
+		"title": "Design <> Developer Handoff",
+		"time": "4/10/2023 8:00 PM",
+		"duration": "90",
+		"type": "Workshop",
+		"desc": "Welcome back, designers! Get pumped for our first general meeting of spring quarter, where we’ll be talking about cross-functional collaboration between designers and developers with Commit the Change :purple_heart: Learn about best practices during design handoff, including creating design systems, design documentation, and utilizing helpful handoff tools!",
+		"place": "SSL 228",
+		"links": []
+	},
+	{
+		"title": "Project Teams Demo Day",
+		"time": "3/9/2023 6:30 PM",
+		"duration": "90",
+		"type": "Project teams",
+		"desc": "Come out to Project Teams Demo Day and see what your fellow designers have been creating the last 8 weeks! Project Teams is a quarterly program that provides students with design experience in a collaborative setting. Project Teams Demo Day is open to all general Design at UCI members and a great chance for teams to showcase their designs, research, and takeaways from the program!",
+		"place": "TBD",
+		"links": []
+	},
+	{
+		"title": "Intro to Adobe Illustrator",
+		"time": "2/21/2023 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Have you always wanted to learn how to make your own graphics? If so, come join our Adobe Illustrator Workshop in ALP 1700 on 2/21 at 8pm! Participants will also have the chance to join on Zoom. This event will specifically be for beginners, and we’ll be going over some of the application’s basic tools. Please make sure to have Adobe Illustrator downloaded on your computer before the event! The Adobe Creative Suite is free to all UCI students. The link to instructions on how to download the application will be in our bio!",
+		"place": "ALP 1700",
+		"links": [
+			{
+				"label": "Download Adobe Illustrator",
+				"link": "https://www.oit.uci.edu/services/end-point-computing/adobe-software/"
+			},
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/98507141472"
+			}
+		]
+	},
+	{
+		"title": "Intro to Logo Design with UCSB Creative Lab",
+		"time": "2/1/2023 6:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Are you interested in designing iconic and memorable logos like Apple, Nike, and many other brands? Check out our Intro to Logo Design workshop in collaboration with UCSB Creative Lab. You’ll learn about different types of logo, the design process, tips, and practice with hands-on exercises in our workshop!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/98507141472"
+			}
+		]
+	},
+	{
+		"title": "Nailing Design Interviews: The Gaming Industry",
+		"time": "1/23/2023 8:00 PM",
+		"duration": "120",
+		"type": "Industry Speaker",
+		"desc": "It's recruitment season, everyone! Hear all the tips and tricks from Anya Li @ Riot Games to hear about her experience as a designer in the gaming industry. Learn what you need to do to get your next dream design job!👀🙌💯",
+		"place": "HG 1800",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/98507141472"
+			}
+		]
+	},
+	{
+		"title": "Pajama Movie Night",
+		"time": "1/17/2023 8:00 PM",
+		"duration": "120",
+		"type": "Social",
+		"desc": "Cozy up in your pajamas and join Design at UCI for a movie night, where we’ll be playing a movie (exact movie TBA)! Pizza and snacks will be provided.",
+		"place": "ALP 1700 (tentative)",
+		"links": []
+	},
+	{
+		"title": "Product Design & Ideation",
+		"time": "1/9/2023 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Interested in learning more about product design? Join our beginner-friendly workshop as we discuss UI/UX design, ideation and evaluation, and the product development process. We'll also be taking a closer look at the design tool Figma and going through a quick idea generation/design thinking exercise!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/94150433960"
+			}
+		]
+	},
+	{
+		"title": "Advanced topics in Figma with Product@UCI",
+		"time": "11/8/2022 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Interested in UI/UX design and want to learn how to creat cool projects and product design in Figma? Come join our workshop in collaboration with Product Association on Tuesday 11/8 in DBH 1600 at 8pm. We will cover some features and resources in Figma. There will also be fun follow-along design activity!Interested in UI/UX design and want to learn how to creat cool projects and product design in Figma? Come join our workshop in collaboration with Product Association on Tuesday 11/8 in DBH 1600 at 8pm. We will cover some features and resources in Figma. There will also be fun follow-along design activity!",
+		"place": "DBH 1600",
+		"links": []
+	},
+	{
+		"title": "Developing your Personal Brand w/ Rachel Kim",
+		"time": "11/1/2022 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Ever wondered what a personal brand means? Stuck on how to improve your portfolio or just need some inspiration? DAUCI is hosting a speaker event presenting Rachel Kim, who has worked with Lucid Software, TOMS Shoes, and Mattel. Come hear our featured art director speak about branding and a design that is personal to YOU!",
+		"place": "DBH 1600",
+		"links": []
+	},
+	{
+		"title": "Pumpkin Patch @ Tanaka Farms",
+		"time": "10/29/2022 3:00 PM",
+		"duration": "120",
+		"type": "Social",
+		"desc": "Hey fellow DE-SIGN-ERS, come relax before or destress after your midterms with Design @ UCI at Tanaka Farms Pumpkin Patch! Please fill out the interest form since their will be a limited number of spots available. Come with us to solve corn mazes, frolic across the pumpkins patches and look at cute farm animals!",
+		"place": "Meet at UCI Flag Poles",
+		"links": [
+			{
+				"label": "Interest Form",
+				"link": "https://forms.gle/D5Gqg8MJseTHDeQK9"
+			}
+		]
+	},
+	{
+		"title": "Design…at UCI and Beyond!",
+		"time": "10/19/2022 6:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Hello designers!! Join us for a special event about design at UCI and beyond held over Zoom hosted by our very own exec team. Learn about the resources and opportunities here at UCI to further your design skills, including organizations, classes, and jobs. Explore what post-grad paths look like for designers who graduate out of UCI including industry, research, and grad school. We also might be inviting a special guest, so stay tuned!!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/94150433960"
+			}
+		]
+	},
+	{
+		"title": "DaUCI x WiCS: Intro to UI/UX",
+		"time": "10/17/2022 6:30 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Are you interested in learning more about UI/UX? Join our beginner-friendly workshop in collaboration with WiCS on Monday, 10/17 in DBH 6011 at 6:30pm! We'll be discussing both UI and UX design in great detail, including visual design fundamentals, evaluating for good UI, the UX design process, and applying design principles to your code. We'll also be taking a closer look at Figma, a design tool used in industry. Remember to RSVP (link in bio) if you plan on attending!",
+		"place": "DBH 6011",
+		"links": []
+	},
+	{
+		"title": "AMA (Ask Me Anything) Summer Internship Panel",
+		"time": "10/11/2022 8:00 PM",
+		"duration": "120",
+		"type": "Industry Speaker",
+		"desc": "Hey designers! Design at UCI is holding a summer internship Ask Me Anything panel with our very own board in DBH 1600! Come and connect with our very own board members who will be detailing what their summer internship experience was like. Learn more about how you can land your next SWE, product, and/or UX/UI design internships",
+		"place": "DBH 1600",
+		"links": []
+	},
+	{
+		"title": "Game Night",
+		"time": "10/4/2022 8:00 PM",
+		"duration": "120",
+		"type": "Social Event",
+		"desc": "Hey fellow anteaters, come out to Design at UCI official Game Night where we will be hosting tournaments of your favorite games like Smash, UNO, and Codenames! Come to compete in the various games and collect tickets along the way to win some cool prizes. Game Night is a great place to meet new people, play board games and relax before classes start to ramp up. Admission is $3, see you there",
+		"place": "DBH 1600",
+		"links": []
+	},
+	{
+		"title": "Introductory Workshop",
+		"time": "9/27/2022 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Welcome back, anteaters 🍁 Join us in DBH 1600 for our first event of the year to meet the board, learn more about the events and programs for fall quarter, and get a brief introduction to design!",
+		"place": "DBH 1600",
+		"links": []
+	},
+	{
+		"title": "Project Teams Demo Day",
+		"time": "5/25/2022 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": " Interested in learning about working cross-functionally as a designer? Join us for a workshop in collaboration with UCSD Design Co (@ucsddesignco), where we’ll be discussing what collaboration in industry looks like within design teams, as well as cross-functionally with engineers, PMs, and research teams.",
+		"place": "DBH 1500",
+		"links": []
+	},
+	{
+		"title": "Cross-Functional Design",
+		"time": "5/18/2022 8:00 PM",
+		"duration": "90",
+		"type": "Workshop",
+		"desc": " Interested in learning about working cross-functionally as a designer? Join us for a workshop in collaboration with UCSD Design Co (@ucsddesignco), where we’ll be discussing what collaboration in industry looks like within design teams, as well as cross-functionally with engineers, PMs, and research teams.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "http://ucsddesign.co/gbm"
+			}
+		]
+	},
+	{
+		"title": "Picnic in Aldrich",
+		"time": "5/13/2022 1:00 PM",
+		"duration": "90",
+		"type": "Social Event",
+		"desc": "Join us for a picnic in the middle of Aldrich where we'll host games, icebreakers, and food!",
+		"place": "Aldrich Park",
+		"links": []
+	},
+	{
+		"title": "2022 Spring Night Market",
+		"time": "5/11/2022 5:00 PM",
+		"duration": "240",
+		"type": "Social Event",
+		"desc": "Come support Design at UCI at the 2022 Spring Night Market on May 11th! We’ll be selling egg tarts at 1 for $3, 2 for $4, and our rainbow heart pen tool sticker for $3. We’ll be at booth #59, next to Langston Library from 5 to 9 PM — join us for club festivities, fundraising fun, and good vibes",
+		"place": "Ring Road",
+		"links": []
+	},
+	{
+		"title": "Mock Whiteboard Challenge",
+		"time": "5/4/2022 8:00 PM",
+		"duration": "90",
+		"type": "Workshop",
+		"desc": " Interested in practicing your design thinking skills? Unsure about how to tackle a whiteboard challenge during a design interview? We will be hosting a Mock Whiteboard Challenge event, in which participants will be paired with a design expert to complete a virtual whiteboard challenge on Figma! Note that due to high demand, spots are limited so keep an eye out for signups when they open!",
+		"place": "Online",
+		"links": []
+	},
+	{
+		"title": "Ask Me Anything: Student Intern Panel",
+		"time": "4/20/2022 8:00 PM",
+		"duration": "90",
+		"type": "Workshop",
+		"desc": " Curious about designing at the industry level? Not sure how to land internships? Swing by our Ask Me Anything: Student Intern Panel to ask student peers about their design internship experiences! From graphic to UI/UX to product, we’ll have panelists from all types of design backgrounds. Be sure to prep any burning questions you may have, and we hope to see you there!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/99935306945"
+			}
+		]
+	},
+	{
+		"title": "Game Night Extravaganza",
+		"time": "4/13/2022 7:30 PM",
+		"duration": "90",
+		"type": "Social Event",
+		"desc": "Join Design at UCI for an ultimate game night extravaganza! We’ll be hosting a smash tournament as well as other board and card games to compete and play in! There will be a $3 admission fee & prizes!",
+		"place": "DBH 1500",
+		"links": []
+	},
+	{
+		"title": "Food And Fun At UTC",
+		"time": "4/8/2022 6:30 PM",
+		"duration": "120",
+		"type": "Social Event",
+		"desc": "Join us for boba and pizza at UTC! We’ll eat pizza, have boba, play games, and get a chance to get to know other members of the club!",
+		"place": "UTC, outside Cha & Yogurtland",
+		"links": []
+	},
+	{
+		"title": "ICS Clubs Fair",
+		"time": "3/31/2022 12:00 PM",
+		"duration": "120",
+		"type": "Social Event",
+		"desc": "Come check out Design at UCI at the ICS Clubs Fair on Thursday (3/31) from 12-2pm! We’ll be having flyers, freebies, and fun so make sure to stop by and say hi!",
+		"place": "Area by ICS 2 & DBH",
+		"links": []
+	},
+	{
+		"title": "Presenting Your Designs",
+		"time": "3/30/2022 8:00 PM",
+		"duration": "120",
+		"type": "Workshop",
+		"desc": "Welcome back from spring break, designers! Join us for our first in-person workshop of the year to learn how to effectively present your designs! Excited to see you all there! :)",
+		"place": "DBH 1500",
+		"links": []
+	},
+	{
+		"title": "Design Social: Design at UCI x SB Creative Lab",
+		"time": "1/20/2022 6:00 PM",
+		"duration": "90",
+		"type": "Social Event",
+		"desc": "Hey designers! Nervous about the upcoming designathon? Come meet other designers (potential team members!) from both UCI and UCSB at our social. We'll be creating cute little trading cards on Figma so we can all get to know each other better. It'll be a fun and chill event so make sure to come through!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/4973611565"
+			}
+		]
+	},
+	{
+		"title": "Components and Prototyping",
+		"time": "1/10/2022 6:00 PM",
+		"duration": "90",
+		"type": "Workshop",
+		"desc": "Welcome back, designers! Hope everyone had a festive holiday season. We’re starting off winter quarter by exploring how components and prototyping are used within Figma and the overall design process. Join us for a hands-on workshop that focuses on how components can increase workflow efficiency and how Figma facilitates the building of complex prototypes!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/97658372715"
+			}
+		]
+	},
+	{
+		"title": "Project Teams Demo Day",
+		"time": "11/19/2021 6:30 PM",
+		"duration": "90",
+		"type": "Project Teams",
+		"desc": "See what Project Teams has been up to this quarter! Each group will get the chance to present and share their hard work.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/92421119230?pwd=Ty9aeEZoU0o0U3RwT3U5bzlnMHA4Zz09"
+			}
+		]
+	},
+	{
+		"title": "Autumn Night Market",
+		"time": "11/17/2021 5:00 PM",
+		"duration": "240",
+		"type": "Fundraiser",
+		"desc": "Visit our booth during the UCI Autumn Night Market event. We will be selling stickers and food to fundraise. See you there!",
+		"place": "Ring Road, Booth 36"
+	},
+	{
+		"title": "Smash Tournament",
+		"time": "11/15/2021 6:30 PM",
+		"duration": "90",
+		"type": "Fundraiser + Social",
+		"desc": "We will be hosting a Super Smash Bros Tournament Week 8 Monday. The top three winners will be awarded a prize, as well as a shoutout on Design at UCI's social media. Entrance fees are $3 per person.",
+		"place": "Donald Bren Hall 1200, UCI"
+	},
+	{
+		"title": "Portfolio Tips and Review with Industry Professionals",
+		"time": "11/8/2021 6:30 PM",
+		"duration": "90",
+		"type": "Industry Speaker",
+		"desc": "Portfolios are a super important way to showcase your design skills and differentiate yourself whether you're in UI/UX or graphic design. If you’re looking for tips on how to present your portfolio and potentially even get them reviewed by professionals in the industry, come sign up for our event!! People will be randomly selected to get their portfolios reviewed from the sign-ups (which are due November 2 11:59 p.m.) and contacted with instructions on what to prepare.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Recording",
+				"link": "https://www.youtube.com/watch?v=vVIX1o1-rns"
+			},
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/4973611565"
+			}
+		]
+	},
+	{
+		"title": "Fireside Chat with Professor Arpita",
+		"time": "11/3/2021 4:00 PM",
+		"duration": "90",
+		"type": "Industry Speaker",
+		"desc": "Looking to learn more about UX in academia? Come to our second industry event of the year where Dr. Arpita, one of our very own Informatics professors here at UC Irvine, will discuss her career in academia along with her studies of designing for health and human behavior change. If you’re interested, come join our fireside chat with Dr. Arpita!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Recording",
+				"link": "https://www.youtube.com/watch?v=BiVff_o3tlo"
+			},
+			{
+				"label": "Slides",
+				"link": "https://docs.google.com/presentation/d/19zh-v2KmrBtcGo76cV-y2AcgdZkW-gUBr9XsXL9KbAo/edit?usp=sharing"
+			}
+		]
+	},
+	{
+		"title": "User Research 101",
+		"time": "10/21/2021 6:30 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Nearly all of today’s products, designs, and applications revolve around the one same thing: users. Learn about typical research methods at our workshop to find out how you can better understand users!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/95325827537"
+			},
+			{
+				"label": "Slides",
+				"link": "https://docs.google.com/presentation/d/1yknvdxSv1k8n9gG08b5r4f4gaeGXqfGvuSYq5SMrDLo/edit?usp=sharing"
+			}
+		]
+	},
+	{
+		"title": "Social Media Marketing",
+		"time": "10/15/2021 6:30 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Why do so many organizations focus on social media marketing? How can good design techniques increase the effectiveness of marketing via social media? If these topics interest you, join us at our Social Media Marketing workshop, an event in collaboration with Marketing Association!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/92396436828"
+			},
+			{
+				"label": "Slides",
+				"link": "https://docs.google.com/presentation/d/1_-nqqugSAnhNuGV-Ln8xKLvu9iRHl-mITkGkaD3HwNs/edit?usp=sharing"
+			}
+		]
+	},
+	{
+		"title": "Visual Design Workshop",
+		"time": "10/13/2021 6:30 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "What makes a design aesthetically pleasing? Why do certain color combinations look good together? Find the answers to these questions and more at our Visual Design workshop!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://us02web.zoom.us/j/2609673280?pwd=b1pZeGp2MngwcFFodERBNWM0L0NaUT09"
+			},
+			{
+				"label": "Slides",
+				"link": "https://docs.google.com/presentation/d/1R4ovZjniei3OZdDY099hV6iyAsfuzkpl-fKRi54OjcY/edit?usp=sharing"
+			}
+		]
+	},
+	{
+		"title": "Speaker Panel: Explore Careers in Design",
+		"time": "10/8/2021 6:30 PM",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "Looking to learn more about design? Come to our first industry event of the year and learn from a panel of designers currently working in the field! Each speaker will give valuable insight into their career and experience in the industry. If you’re interested in the fields of product design, UX design, visual design, or graphic design, join us this Friday!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/4973611565"
+			},
+			{
+				"label": "Recording",
+				"link": "https://www.youtube.com/watch?v=jjH9QMeVoGE"
+			},
+			{
+				"label": "Slides",
+				"link": "https://docs.google.com/presentation/d/1hEZeZEXri_yi9B14c8lvJie5A9T7mldnU19WwkkTLnI/edit?usp=sharing"
+			}
+		]
+	},
+	{
+		"title": "Introductory Workshop",
+		"time": "10/1/2021 6:30 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Get a chance to meet the Design at UCI board. See what workshops we'll be hosting this quarter and learn about the best ways you can take advatage of the resoureces we have to offer. Also get a brief introduction to design.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/91381828728"
+			}
+		]
+	},
+	{
+		"title": "Project Teams Presentations",
+		"time": "5/28/2021 6:00 PM",
+		"duration": "60",
+		"type": "Project Teams",
+		"desc": "It's almost the end of Spring Quarter! You know what that means... Project Teams Presentations! The theme was open-ended so participants were allowed to go creative with their projects. Attend the meeting this Friday to see what our teams have made!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "Game Night Social",
+		"time": "5/14/2021 6:00 PM",
+		"duration": "60",
+		"type": "Social Event",
+		"desc": "This week we will be having a game night social. Come hang out with peers and board as we play some virtual games together. This event will take place on Discord at 6PM so join our server by this Friday! Let's have some fun!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Discord Link",
+				"link": "https://discord.com/invite/MBVrKe9"
+			}
+		]
+	},
+	{
+		"title": "Social Media Marketing",
+		"time": "5/7/2021 6:00 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Are you a board member of a campus organization that’s struggling with marketing? Join Design at UCI’s crash course on marketing specifically for student organizations! We’ll be going over some basic aspects of branding such as logo, flyer, and web design that you can utilize to attract more attention on campus. As a design based organization, we’ll also be sharing some of our own marketing tips and tricks that have been effective for our club!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "Happy Hour Social",
+		"time": "4/23/2021 6:00 PM",
+		"duration": "60",
+		"type": "Social Event",
+		"desc": "This week, we will have a happy hour to chill after classes, bond with one another, and relax with your favorite drink (non-alcoholic drinks for anyone underage ofc ;). We will also have a live tutorial on how to make a Mojito 🥴. The event will be hosted over Discord at 6pm, so let's meet, make drinks, and chat with videos on! We can always switch to playing games or wherever the night leads.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "Something in Common",
+		"time": "4/12/2021 7:00 PM",
+		"duration": "60",
+		"type": "Social Event",
+		"desc": "Get to know your fellow designers better! We’ll put participants into groups and they'll work together to find something in common in several different rounds. More limitations will be added each round to increase difficulty.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "How to Conduct User Interviews",
+		"time": "4/12/2021 6:00 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "UX designers utilize user interviews early in the design process to understand the audience they are designing for. How do you organize a user interview? We'll be going over the basics in this workshop so you'll be ready to conduct user interviews for your own projects! We will also be hosting an after-event social, 'Something in Common', so stick around to the end and get to know each other!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "Ask Me Anything: Student Intern Panel",
+		"time": "4/9/2021 6:00 PM",
+		"duration": "60",
+		"type": "AMA",
+		"desc": "Join us for an \"ask-me-anything\" panel from fellow UCI students on how they've landed design internships and roles! We'll be discussing personal tips from our own job application processes, so come prepared with questions or just come chat for a chill time!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "Persuasive Design with Marketing Association",
+		"time": "4/8/2021 6:30 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Join us for this exciting collab workshop with Marketing Association as we explore persuasive design: design principles based on human behavior and psychology! How do these principles influence decision-making, and how can both designers and marketers use this knowledge to their advantage to create better user experiences and increased conversions? Don’t miss out on this special cross-subject deep dive into the effects of persuasive design in guiding users towards marketing goals!",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "The Basics of UX Recruiting",
+		"time": "4/2/2021 6:00 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Portfolios? Resumes? What's a whiteboard challenge? Are you interested in applying for UI/UX roles, but don't know what to expect? We'll be going over the different kinds of UX jobs, tips on the job application process, and how to position yourself for a design role no matter your major.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "Introduction to UX with Jane Chang",
+		"time": "3/12/2021 6:00 PM",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "Jane is a Product Design Lead at Google in Irvine/Seattle. Before Google, she worked for Walt Disney, Universal Pictures, Toyota/Lexus, Apple, Volkswagen AG and led product design in the cybersecurity space. She started her career in the agency world at Saatchi & Saatchi and RPA, and led design at TBWA/Chiat/Day. She studied Graphic Design at NYU and received her Master's in Visual Communication from Johns Hopkins University. Jane currently lives in Irvine with her husband and 6-year-old son.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	},
+	{
+		"title": "How to Nail your UX Interview with Chris Ota",
+		"time": "2/26/2021 6:00 PM",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "Originally from Hawaii, Chris Ota started off designing and building websites after graduating community college 13 years ago. He packed his bags in 2015 and moved to San Francisco with no job lined up, looking for a new chapter in his life. Starting from the bottom as a product designer, Chris has been at Lyft for about 3.5 years now, focused on patient transportation to and from their appointments. Besides his day to day, he helps with interviewing full time and intern candidates, does design mentorship at work, and is an active mentor with ADPList.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/5080955339"
+			}
+		]
+	}
 ]
