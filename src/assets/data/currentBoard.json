@@ -1,178 +1,178 @@
 [
-  {
-    "name": "Jin-Kim Niu",
-    "position": "Co-President",
-    "photo": "Jin_Kim_Niu.jpg",
-    "links": [
-      {
-        "type": "linkedin",
-        "href": "https://www.linkedin.com/in/jin-kim-niu/"
-      },
-      {
-        "type": "website",
-        "href": "https://jinkimniu.myportfolio.com/work"
-      }
-    ]
-  },
-  {
-    "name": "Christine Nguyen",
-    "position": "Co-President",
-    "photo": "Christine_Nguyen.jpeg",
-    "links": []
-  },
-  {
-    "name": "Cinta Adhiningrat",
-    "position": "Designathon Director",
-    "photo": "Cinta_Adhiningrat.jpg",
-    "links": []
-  },
-  {
-    "name": "Michelle Yang",
-    "position": "Marketing Director",
-    "photo": "Michelle_Yang.JPG",
-    "links": []
-  },
-  {
-    "name": "Khanh Tran",
-    "position": "Marketing Coordinator",
-    "photo": "",
-    "links": []
-  },
-  {
-    "name": "Nuo Yang",
-    "position": "Marketing Coordinator",
-    "photo": "Nuo_Yang.jpeg",
-    "links": []
-  },
-  {
-    "name": "Jamie Kuang",
-    "position": "Marketing Coordinator",
-    "photo": "Jamie_Kuang.jpg",
-    "links": []
-  },
-  {
-    "name": "Jasmine Wu",
-    "position": "Workshop Coordinator",
-    "photo": "Jasmine_Wu.jpg",
-    "links": []
-  },
-  {
-    "name": "Elise Alinsug",
-    "position": "Workshop Coordinator",
-    "photo": "Elise_Alinsug.jpg",
-    "links": []
-  },
-  {
-    "name": "Vanna Vuong",
-    "position": "Industry Outreach Coordinator",
-    "photo": "Vanna_Vuong.jpeg"
-  },
-  {
-    "name": "Jessica (Jay) Sotelo",
-    "position": "Industry Outreach Coordinator",
-    "photo": "Jessica_Sotelo.jpg",
-    "links": [
-      {
-        "type": "linkedin",
-        "href": "http://linkedin.com/in/jessica-sotelo"
-      }
-    ]
-  },
+	{
+		"name": "Jin-Kim Niu",
+		"position": "Co-President",
+		"photo": "Jin_Kim_Niu.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/jin-kim-niu/"
+			},
+			{
+				"type": "website",
+				"href": "https://jinkimniu.myportfolio.com/work"
+			}
+		]
+	},
+	{
+		"name": "Christine Nguyen",
+		"position": "Co-President",
+		"photo": "Christine_Nguyen.jpeg",
+		"links": []
+	},
+	{
+		"name": "Cinta Adhiningrat",
+		"position": "Designathon Director",
+		"photo": "Cinta_Adhiningrat.jpg",
+		"links": []
+	},
+	{
+		"name": "Michelle Yang",
+		"position": "Marketing Director",
+		"photo": "Michelle_Yang.JPG",
+		"links": []
+	},
+	{
+		"name": "Khanh Tran",
+		"position": "Marketing Coordinator",
+		"photo": "",
+		"links": []
+	},
+	{
+		"name": "Nuo Yang",
+		"position": "Marketing Coordinator",
+		"photo": "Nuo_Yang.jpeg",
+		"links": []
+	},
+	{
+		"name": "Jamie Kuang",
+		"position": "Marketing Coordinator",
+		"photo": "Jamie_Kuang.jpg",
+		"links": []
+	},
+	{
+		"name": "Jasmine Wu",
+		"position": "Workshop Coordinator",
+		"photo": "Jasmine_Wu.jpg",
+		"links": []
+	},
+	{
+		"name": "Elise Alinsug",
+		"position": "Workshop Coordinator",
+		"photo": "Elise_Alinsug.jpg",
+		"links": []
+	},
+	{
+		"name": "Vanna Vuong",
+		"position": "Industry Outreach Coordinator",
+		"photo": "Vanna_Vuong.jpeg"
+	},
+	{
+		"name": "Jessica (Jay) Sotelo",
+		"position": "Industry Outreach Coordinator",
+		"photo": "Jessica_Sotelo.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "http://linkedin.com/in/jessica-sotelo"
+			}
+		]
+	},
 
-  {
-    "name": "Elisa Fuji",
-    "position": "Social Chair",
-    "photo": "Elisa_Fuji.jpg"
-  },
+	{
+		"name": "Elisa Fuji",
+		"position": "Social Chair",
+		"photo": "Elisa_Fuji.jpg"
+	},
 
-  {
-    "name": "Ava Lee",
-    "position": "Social Chair",
-    "photo": "Ava_Lee.jpg"
-  },
-  {
-    "name": "Janie Seong",
-    "position": "Project Teams Coordinators",
-    "photo": "Janie_Seong.jpeg"
-  },
-  {
-    "name": "Jessica Jahja",
-    "position": "Project Teams Coordinators",
-    "photo": "Jessica_Jahja.jpg"
-  },
-  {
-    "name": "Winston Lee",
-    "position": "Project Teams Coordinators",
-    "photo": "Winston_Lee.jpeg"
-  },
+	{
+		"name": "Ava Lee",
+		"position": "Social Chair",
+		"photo": "Ava_Lee.jpg"
+	},
+	{
+		"name": "Janie Seong",
+		"position": "Project Teams Coordinators",
+		"photo": "Janie_Seong.jpeg"
+	},
+	{
+		"name": "Jessica Jahja",
+		"position": "Project Teams Coordinators",
+		"photo": "Jessica_Jahja.jpg"
+	},
+	{
+		"name": "Winston Lee",
+		"position": "Project Teams Coordinators",
+		"photo": "Winston_Lee.jpeg"
+	},
 
-  {
-    "name": "Krey Daniel",
-    "position": "Creative Director",
-    "photo": "Krey_Daniel.jpg",
-    "links": [
-      {
-        "type": "instagram",
-        "href": "https://www.instagram.com/in.krey.dible/"
-      },
-      {
-        "type": "linkedin",
-        "href": "https://www.linkedin.com/in/krey-daniel/"
-      },
-      {
-        "type": "website",
-        "href": "https://kreydaniel.wixsite.com/inkreydible"
-      }
-    ]
-  },
-  {
-    "name": "Kaitlyn Tran",
-    "position": "Graphic Designer",
-    "photo": "Kaitlyn_Tran.jpg",
-    "links": [
-      {
-        "type": "instagram",
-        "href": "https://instagram.com/kaitlyn_tranzzz?igshid=YmMyMTA2M2Y="
-      },
-      {
-        "type": "instagram",
-        "href": "https://instagram.com/noomzster?igshid=YmMyMTA2M2Y="
-      }
-    ]
-  },
-  {
-    "name": "Candyce Pham",
-    "position": "Graphic Designer",
-    "photo": "Candyce_Pham.jpg",
-    "links": [
-      {
-        "type": "linkedin",
-        "href": "http://www.linkedin.com/in/candyce-pham"
-      }
-    ]
-  },
-  {
-    "name": "Ryan Yang",
-    "position": "Webmaster",
-    "photo": "Ryan_Yang.jpg",
-    "links": [
-      {
-        "type": "instagram",
-        "href": "https://instagram.com/veryfewsbux"
-      },
-      {
-        "type": "linkedin",
-        "href": "https://www.linkedin.com/in/ryanqyang/"
-      },
-      {
-        "type": "website",
-        "href": "https://ryqn.dev"
-      }
-    ]
-  },
-  {
-    "name": "Taesung Hwang",
-    "position": "Webmaster",
-    "photo": "Taesung_Hwang.jpg"
-  }
+	{
+		"name": "Krey Daniel",
+		"position": "Creative Director",
+		"photo": "Krey_Daniel.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/in.krey.dible/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/krey-daniel/"
+			},
+			{
+				"type": "website",
+				"href": "https://kreydaniel.wixsite.com/inkreydible"
+			}
+		]
+	},
+	{
+		"name": "Kaitlyn Tran",
+		"position": "Graphic Designer",
+		"photo": "Kaitlyn_Tran.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://instagram.com/kaitlyn_tranzzz?igshid=YmMyMTA2M2Y="
+			},
+			{
+				"type": "instagram",
+				"href": "https://instagram.com/noomzster?igshid=YmMyMTA2M2Y="
+			}
+		]
+	},
+	{
+		"name": "Candyce Pham",
+		"position": "Graphic Designer",
+		"photo": "Candyce_Pham.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "http://www.linkedin.com/in/candyce-pham"
+			}
+		]
+	},
+	{
+		"name": "Ryan Yang",
+		"position": "Webmaster",
+		"photo": "Ryan_Yang.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://instagram.com/veryfewsbux"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/ryanqyang/"
+			},
+			{
+				"type": "website",
+				"href": "https://ryqn.dev"
+			}
+		]
+	},
+	{
+		"name": "Taesung Hwang",
+		"position": "Webmaster",
+		"photo": "Taesung_Hwang.jpg"
+	}
 ]
