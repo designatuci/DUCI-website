@@ -22,10 +22,10 @@ const Join = () => (
 				Design at UCI is free for everyone
 			</Text>
 			<Text color='gray' className='slim wait dx show subtle'>
-				Join our newsletter and follow our social media to get
-				notifications about what's happening.
+				Join our newsletter and follow our social media to get notifications about
+				what's happening.
 				<br />
-				Then get invovled with what interests you!
+				Then get involved with what interests you!
 			</Text>
 		</Section>
 		<Section className='center short bareBot'>

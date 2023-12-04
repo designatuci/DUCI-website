@@ -119,8 +119,8 @@ const Home = () => (
 					</Text>
 					<Space block h='32' />
 					<Text className='color gray '>
-						We feature speakers across all fields. Get a chance to
-						ask your questions and recieve a professional's advice.
+						We feature speakers across all fields. Get a chance to ask your
+						questions and receive a professional's advice.
 					</Text>
 					<Space block h='32' />
 					<Link to='/events'>
@@ -226,8 +226,8 @@ const Home = () => (
 							className='wait scale bold narrow color white'
 							size='XL'
 						>
-							We're focused on buliding a friendly community that
-							helps striving designers.
+							We're focused on building a friendly community that helps
+							striving designers.
 						</Text>
 						<Link to='/about/'>
 							<Text icon='right' color='white'>

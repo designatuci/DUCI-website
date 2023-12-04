@@ -21,7 +21,7 @@ const Contact = () => (
 					<Space h='32' block />
 					<Text className='color gray'>
 						Do you have a question, comment, or feedback for us?
-						Don't hessitate to send us an email.
+						Don't hesitate to send us an email.
 					</Text>
 				</div>
 				<div className='flex'>
