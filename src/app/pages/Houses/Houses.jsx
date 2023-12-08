@@ -167,7 +167,7 @@ const Houses = () => {
 								</div>
 								<div className={cn.housePoints}>
 									<Text color="blue" size="XL">
-										{housePoints[name] ?? 0}
+										{housePoints[name] ?? "-"}
 									</Text>
 									<span>points</span>
 								</div>
