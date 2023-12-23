@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import { Icon, Section } from "app/Symbols";
 import { Text } from "app/components";
 import clsx from "clsx";
+
 import Symbol1 from "./assets/1.png";
 import Symbol2 from "./assets/2.png";
 import Symbol3 from "./assets/3.png";
@@ -21,11 +22,14 @@ import House2 from "./assets/Group2.png";
 import House3 from "./assets/Group3.png";
 import House4 from "./assets/Group4.png";
 import FAQ_QUESTIONS from "./assets/FAQ.json";
+import useHousePoints from "./useHousePoints";
 
 const PUBLIC_POINTS_SPREADSHEET =
 	"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6BbuyZ3vqmItkfe48YYgeqdiK8cN8OogbcKvQrc3W4Y5705HWqGNEEseWb-V5rZC3-Rmd21lCaVVJ/pubhtml";
 
 const Houses = () => {
+	const housePoints = useHousePoints();
+
 	const HOUSES = [
 		{
 			name: "Water Tribe",
@@ -157,11 +161,16 @@ const Houses = () => {
 						{HOUSES.map(({ name, icon, description }) => (
 							<div key={name} className={clsx(cn.house, "wait")}>
 								<img alt="decorative" src={icon} />
-								<Text size="L">{name}</Text>
-								<Text color="gray">
-									{description}
-									<br />
-								</Text>
+								<div>
+									<Text size="L">{name}</Text>
+									<Text color="gray">{description}</Text>
+								</div>
+								<div className={cn.housePoints}>
+									<Text color="blue" size="XL">
+										{housePoints[name] ?? "-"}
+									</Text>
+									<span>points</span>
+								</div>
 							</div>
 						))}
 					</div>
