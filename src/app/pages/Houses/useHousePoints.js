@@ -5,8 +5,10 @@ const SPREADSHEET_KEY = "1AV98P5Fs3INBtbwT69oJvfN0eAgj9daVw6o_6XIGEiI";
 const MODE = "pub";
 const SHEET_GID = "1705286477";
 
+const EMPTY_HOUSE_POINTS = {};
+
 function useHousePoints() {
-	const [housePoints, setHousePoints] = useState({});
+	const [housePoints, setHousePoints] = useState(EMPTY_HOUSE_POINTS);
 
 	useEffect(() => {
 		const dataURL = new URL(`${FEED_URL}${SPREADSHEET_KEY}/${MODE}`);
