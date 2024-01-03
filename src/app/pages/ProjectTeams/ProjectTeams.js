@@ -26,13 +26,13 @@ function ProjectTeams() {
 		<Text className='color gray'>
 			To participate, complete the{' '}
 			<Text className='color blue'>
-				<a
-					href={PROJECT_TEAMS_GOOGLE_FORM}
+				<Link
+					to="registration"
 					target='_blank'
 					rel='noopener noreferrer'
 				>
 					project teams registration form
-				</a>
+				</Link>
 			</Text>{" "}
 			by {REGISTRATION_DEADLINE}.
 		</Text>
