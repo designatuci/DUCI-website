@@ -14,7 +14,7 @@ import {
 	Mentorship,
 	Merch,
 	NotFound,
-	PT,
+	ProjectTeams,
 	Resources,
 	ResourcesFeatured,
 	Shirt22,
@@ -27,7 +27,7 @@ import "./styles/animations.scss";
 import "./styles/forms.scss";
 import Designathon from "./pages/Designathons";
 import Hey from "./pages/Hey";
-import { PROJECT_TEAMS_GOOGLE_FORM } from "./pages/PT/PT";
+import { PROJECT_TEAMS_GOOGLE_FORM } from "./pages/ProjectTeams/ProjectTeams";
 
 function App() {
 	useScroll();
@@ -58,7 +58,7 @@ function App() {
 				<Route path="contact" element={<Contact />} />
 				<Route path="houses" element={<Houses />} />
 				<Route path="about" element={<About />} />
-				<Route path="pt" element={<PT />} />
+				<Route path="project-teams" element={<ProjectTeams />} />
 
 				<Route path="designathon/*" element={<Designathon />} />
 				<Route path="designathons/*" element={<Designathon />} />

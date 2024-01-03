@@ -7,7 +7,7 @@ export { default as Join } from "./Join";
 export { default as Mentorship } from "./Mentorship";
 export { default as Merch } from "./Merch";
 export { default as NotFound } from "./NotFound";
-export { default as PT } from "./PT";
+export { default as ProjectTeams } from "./ProjectTeams";
 export { default as Resources } from "./Resources";
 export { default as ResourcesFeatured } from "./ResourcesFeatured";
 export { Shirt22 } from "./Merch/pages";

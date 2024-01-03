@@ -9,7 +9,7 @@ const REGISTRATION_OPEN = true;
 const CURRENT_QUARTER = "Winter 2024";
 const REGISTRATION_DEADLINE = "Sunday, January 14th, 2024 at 11:59 PM PST";
 
-function PT() {
+function ProjectTeams() {
 	const openMessage = (
 		<Text className="color green">
 			Project Team applications for {CURRENT_QUARTER} are open!
@@ -109,4 +109,4 @@ function PT() {
 	);
 }
 
-export default PT;
+export default ProjectTeams;
