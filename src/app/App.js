@@ -68,26 +68,26 @@ function App() {
 				{/* Redirects */}
 				<Route
 					path="discord"
-					element={<Navigate to="//discord.com/invite/MBVrKe9" />}
+					element={<Redirect to="https://discord.com/invite/MBVrKe9" />}
 				/>
 
 				{/* Leaving this redirect here since that link is posted on our insta */}
-				<Route path="impact22" element={<Navigate to="/designathon/22" />} />
+				<Route path="impact22" element={<Redirect to="/designathon/22" />} />
 				<Route
 					path="ptsignup"
-					element={<Navigate to={PROJECT_TEAMS_GOOGLE_FORM} />}
+					element={<Redirect to={PROJECT_TEAMS_GOOGLE_FORM} />}
 				/>
 				<Route
 					path="ptsignups"
-					element={<Navigate to={PROJECT_TEAMS_GOOGLE_FORM} />}
+					element={<Navigate to="/ptsignup" replace={true} />}
 				/>
 				{/* <Route
 					path='buy'
-					element={<Navigate to='//forms.gle/RVoUbLPQnHYzeWMA6' />}
+					element={<Redirect to='//forms.gle/RVoUbLPQnHYzeWMA6' />}
 				/> */}
 				{/* <Route
 					path='apply'
-					element={<Navigate to='//forms.gle/UXpfUfANHZ9m6fR47' />}
+					element={<Redirect to='//forms.gle/UXpfUfANHZ9m6fR47' />}
 				/> */}
 
 				<Route path="*" element={<NotFound />} />
@@ -95,6 +95,10 @@ function App() {
 			<Footer />
 		</>
 	);
+}
+
+function Redirect({ to }) {
+	window.location.href = to;
 }
 
 export default App;
