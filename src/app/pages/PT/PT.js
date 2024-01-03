@@ -4,9 +4,24 @@ import { Link } from 'react-router-dom';
 import { Text } from 'app/components';
 import { Section, Space, Icon } from 'app/Symbols.js';
 
-export const PROJECT_TEAMS_GOOGLE_FORM = 'https://forms.gle/YoNb5Goj6gw6YGQg6';
+export const PROJECT_TEAMS_GOOGLE_FORM = "https://forms.gle/QTFb9v7HMrEyyspS9";
+const REGISTRATION_OPEN = true;
+const CURRENT_QUARTER = "Winter 2024";
+const REGISTRATION_DEADLINE = "Sunday, January 14th, 2024 at 11:59 PM PST";
 
 function PT() {
+	const openMessage = (
+		<Text className="color green">
+			Project Team applications for {CURRENT_QUARTER} are open!
+		</Text>
+	);
+
+	const closedMessage = (
+		<Text className="color red">
+			Project Team applications for {CURRENT_QUARTER} have closed.
+		</Text>
+	);
+
 	const registrationMessage = (
 		<Text className='color gray'>
 			To participate, complete the{' '}
@@ -18,8 +33,8 @@ function PT() {
 				>
 					project teams registration form
 				</a>
-			</Text>{' '}
-			by Sunday, October 8th, 2023 at 11:59 PM PDT.
+			</Text>{" "}
+			by {REGISTRATION_DEADLINE}.
 		</Text>
 	);
 
@@ -32,8 +47,6 @@ function PT() {
 			for notifications about when the next applications come out!
 		</Text>
 	);
-
-	const open = false;
 
 	return (
 		<>
@@ -50,11 +63,8 @@ function PT() {
 					className='flex left slim spaceChildrenSmall'
 					style={{ textAlign: 'left' }}
 				>
-					<Text className='color red'>
-						Project Team applications for Fall 2023 have closed.
-					</Text>
-
-					{open ? registrationMessage : joinMessage}
+					{REGISTRATION_OPEN ? openMessage : closedMessage}
+					{REGISTRATION_OPEN ? registrationMessage : joinMessage}
 
 					<br />
 					<Text size='L'>What are Project Teams?</Text>
@@ -69,9 +79,9 @@ function PT() {
 						necessary, but Project Teams will be on a first-come, first-served
 						basis due to limited capacity.
 					</Text>
-					<Text className='color gray'>
-						For Fall 2023, Project Teams will meet Thursdays at 6:30&ndash;8:30 PM
-						from weeks 2 through 9.
+					<Text className="color gray">
+						For {CURRENT_QUARTER}, Project Teams will meet Wednesdays at
+						5&ndash;7 PM from weeks 2 through 9.
 					</Text>
 
 					{/* <Space h='32' />
