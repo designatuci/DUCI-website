@@ -63,11 +63,6 @@
 		"links": []
 	},
 	{
-		"name": "Vanna Vuong",
-		"position": "Industry Outreach Coordinator",
-		"photo": "Vanna_Vuong.jpeg"
-	},
-	{
 		"name": "Jessica (Jay) Sotelo",
 		"position": "Industry Outreach Coordinator",
 		"photo": "Jessica_Sotelo.jpg",
@@ -75,6 +70,17 @@
 			{
 				"type": "linkedin",
 				"href": "http://linkedin.com/in/jessica-sotelo"
+			}
+		]
+	},
+	{
+		"name": "Vimala Machiraju",
+		"position": "Industry Outreach Coordinator",
+		"photo": "Vimala_Machiraju.JPG",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/vimalamvv/"
 			}
 		]
 	},
@@ -158,7 +164,7 @@
 		"links": [
 			{
 				"type": "instagram",
-				"href": "https://instagram.com/veryfewsbux"
+				"href": "https://www.instagram.com/veryfewsbux"
 			},
 			{
 				"type": "linkedin",
