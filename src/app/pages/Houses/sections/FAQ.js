@@ -20,10 +20,10 @@ function FAQ() {
 						<a
 							target="_blank"
 							rel="noopener noreferrer"
-							href="https://discord.com/invite/MBVrKe9"
+							href="/discord"
 							style={{ textDecoration: "underline" }}
 						>
-							discord server
+							Discord server
 						</a>
 					</Text>
 				</div>
