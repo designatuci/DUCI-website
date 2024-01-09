@@ -27,6 +27,7 @@ import "./styles/animations.scss";
 import "./styles/forms.scss";
 import Designathon from "./pages/Designathons";
 import Hey from "./pages/Hey";
+import { HOUSES_SORTING_FORM } from "./pages/Houses/sections/Join";
 import { PROJECT_TEAMS_GOOGLE_FORM } from "./pages/ProjectTeams/ProjectTeams";
 
 function App() {
@@ -57,6 +58,11 @@ function App() {
 				</Route>
 				<Route path="contact" element={<Contact />} />
 				<Route path="houses" element={<Houses />} />
+				<Route
+					path="/houses/sorting"
+					element={<Redirect to={HOUSES_SORTING_FORM} />}
+				/>
+
 				<Route path="about" element={<About />} />
 				<Route path="project-teams" element={<ProjectTeams />} />
 

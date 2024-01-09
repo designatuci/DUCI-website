@@ -81,7 +81,7 @@ function Landing({ scrollToJoin }) {
 					onClick={scrollToJoin}
 				>
 					<Text size="L" color="white" icon="right">
-						Join now
+						Join a house
 					</Text>
 				</button>
 			</div>

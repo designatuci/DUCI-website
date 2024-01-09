@@ -1,12 +1,13 @@
 import { forwardRef } from "react";
 
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 
 import { Text } from "app/components";
 
 import cn from "./Join.module.scss";
 
-const HOUSES_SORTING_FORM = "https://forms.gle/6aj3nKe3S5QttYqp8";
+export const HOUSES_SORTING_FORM = "https://forms.gle/6aj3nKe3S5QttYqp8";
 const DEADLINE = new Date("2024-01-12T17:00:00-0800");
 
 function Join(props, ref) {
@@ -21,11 +22,11 @@ function Join(props, ref) {
 				form open until <Text color="red">Friday at 5pm</Text>
 			</Text>
 			<div className={clsx("wait show drop d10 l2", cn.button)}>
-				<a href={HOUSES_SORTING_FORM} className="button L fill blue">
+				<Link to="sorting" className="button L fill blue">
 					<Text size="L" color="white" icon="right">
-						Sign up
+						Join Now
 					</Text>
-				</a>
+				</Link>
 			</div>
 		</>
 	);
