@@ -4,9 +4,9 @@
 	display: grid;
 	place-content: center;
 	row-gap: 20px;
+	text-align: center;
 
-	& > * {
-		display: grid;
+	* {
 		place-self: center;
 	}
 
