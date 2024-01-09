@@ -1,0 +1,46 @@
+.landing {
+	position: relative;
+	height: calc(100vh - 88px);
+	display: grid;
+	place-content: center;
+	row-gap: 20px;
+
+	& > * {
+		display: grid;
+		place-self: center;
+	}
+
+	.catch {
+		border-radius: 20px;
+		border: 1px solid var(--silver);
+		padding: 8px 20px;
+
+		p {
+			display: inline;
+		}
+		span {
+			display: inline;
+			color: var(--blue);
+		}
+	}
+
+	.join {
+		margin-top: 20px;
+		border: none;
+	}
+
+	.title {
+		font-weight: bold;
+	}
+
+	.decoration {
+		position: absolute;
+		transform: translate(-50%, -50%);
+		transition: opacity 250ms;
+		opacity: 0;
+
+		@media screen and (min-width: 800px) {
+			opacity: 1;
+		}
+	}
+}

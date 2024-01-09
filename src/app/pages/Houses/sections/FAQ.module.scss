@@ -1,0 +1,24 @@
+.faq {
+	.question {
+		border-radius: 20px;
+		padding: 10px 20px;
+		display: grid;
+		grid-template-columns: auto 1fr;
+		border: 2px solid transparent;
+		transition: border-color 250ms, background-color 250ms;
+
+		&.opened {
+			border: 2px solid var(--silver);
+		}
+
+		&:hover {
+			background-color: var(--silver);
+		}
+	}
+
+	.answer {
+		display: grid;
+		gap: 20px;
+		grid-template-rows: auto auto;
+	}
+}
