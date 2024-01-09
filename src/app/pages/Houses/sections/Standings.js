@@ -5,10 +5,10 @@ import { Section } from "app/Symbols";
 
 import useHousePoints from "app/pages/Houses/useHousePoints";
 
-import House1 from "app/pages/Houses/assets/Group1.png";
-import House2 from "app/pages/Houses/assets/Group2.png";
-import House3 from "app/pages/Houses/assets/Group3.png";
-import House4 from "app/pages/Houses/assets/Group4.png";
+import Bow from "app/pages/Houses/assets/Bow";
+import Dove from "app/pages/Houses/assets/Dove";
+import Flame from "app/pages/Houses/assets/Flame";
+import Lightning from "app/pages/Houses/assets/Lightning";
 
 import cn from "./Standings.module.scss";
 
@@ -18,19 +18,19 @@ const PUBLIC_POINTS_SPREADSHEET =
 const HOUSES = [
 	{
 		name: "Hades",
-		icon: House1,
+		icon: <Flame square r={45} />,
 	},
 	{
 		name: "Athena",
-		icon: House2,
+		icon: <Bow square r={45} />,
 	},
 	{
 		name: "Zeus",
-		icon: House3,
+		icon: <Lightning square r={45} />,
 	},
 	{
 		name: "Aphrodite",
-		icon: House4,
+		icon: <Dove square r={45} />,
 	},
 ];
 
@@ -44,7 +44,7 @@ function Standings() {
 			<div className={cn.list}>
 				{HOUSES.map(({ name, icon }) => (
 					<div key={name} className={clsx(cn.house, "wait")}>
-						<img alt="decorative" src={icon} />
+						{icon}
 						<div>
 							<Text size="L">{name}</Text>
 						</div>
