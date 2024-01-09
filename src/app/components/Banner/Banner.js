@@ -1,21 +1,15 @@
-import cn from './Banner.module.scss';
+import { Link } from "react-router-dom";
 
-const APPLICATION_FORM = 'https://forms.gle/e8zAUSGniWopQDNP9';
+import cn from "./Banner.module.scss";
 
 function Banner() {
 	return (
-		<div className={`fill black ${cn.banner}`}>
+		<div className={`fill blue ${cn.banner}`}>
 			<p>
-				Interested in becoming part of Design at UCI&apos;s Board? Submit a{' '}
-				<a
-					target='_blank'
-					rel='noreferrer'
-					className='color blue'
-					href={APPLICATION_FORM}
-				>
-					board application
-				</a>{' '}
-				by May 7th.
+				<Link to="/houses" className={cn.underline}>
+					Join the DAUCI Houses
+				</Link>{" "}
+				to connect with your own design family!
 			</p>
 		</div>
 	);
