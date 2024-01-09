@@ -73,7 +73,7 @@ function Landing({ scrollToJoin }) {
 				</Text>
 			</div>
 			<Text size="XXXL" className={clsx("wait", cn.title)}>
-				Avatar Houses
+				Greek Gods Houses
 			</Text>
 			<Text color="gray" className="wait">
 				be a part of your own design family

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const FEED_URL = "https://docs.google.com/spreadsheets/d/";
-const SPREADSHEET_KEY = "1AV98P5Fs3INBtbwT69oJvfN0eAgj9daVw6o_6XIGEiI";
+const SPREADSHEET_KEY = "15zDinoV1T_gBtqvEvY19KRHwzQoiWZ3A92c895IsFsg";
 const MODE = "pub";
 const SHEET_GID = "1705286477";
 

@@ -6,6 +6,8 @@ import { Text } from "app/components";
 
 import cn from "./Join.module.scss";
 
+const HOUSES_SORTING_FORM = "https://forms.gle/6aj3nKe3S5QttYqp8";
+
 function Join(props, ref) {
 	return (
 		<section className={cn.join} id="join" ref={ref}>
@@ -19,10 +21,7 @@ function Join(props, ref) {
 						form open until <Text color="red">Friday at 5pm</Text>
 					</Text>
 					<div className={clsx("wait show drop d10 l2", cn.button)}>
-						<a
-							href="https://forms.gle/FreSgK8Kuw8FP5KQ6"
-							className="button L fill blue"
-						>
+						<a href={HOUSES_SORTING_FORM} className="button L fill blue">
 							<Text size="L" color="white" icon="right">
 								Sign up
 							</Text>

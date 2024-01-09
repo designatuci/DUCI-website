@@ -13,28 +13,24 @@ import House4 from "app/pages/Houses/assets/Group4.png";
 import cn from "./Standings.module.scss";
 
 const PUBLIC_POINTS_SPREADSHEET =
-	"https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6BbuyZ3vqmItkfe48YYgeqdiK8cN8OogbcKvQrc3W4Y5705HWqGNEEseWb-V5rZC3-Rmd21lCaVVJ/pubhtml";
+	"https://docs.google.com/spreadsheets/d/e/2PACX-1vSnnktxMR0eyf8AjZDYasCiN-q_JfmBnAJuHiNjtSTrXQSUkVLmzOlHTT3Ry3o1c0SNKeoqD61GzFwO/pubhtml";
 
 const HOUSES = [
 	{
-		name: "Water Tribe",
+		name: "Hades",
 		icon: House1,
-		description: "peaceful and resilient, this group presents calm and flow",
 	},
 	{
-		name: "Earth Kingdom",
+		name: "Athena",
 		icon: House2,
-		description: "A diverse and resourceful nation known for its resolve",
 	},
 	{
-		name: "Fire Nation",
+		name: "Zeus",
 		icon: House3,
-		description: "A powerful and ambitious empire ruled by determination",
 	},
 	{
-		name: "Air Nomads",
+		name: "Aphrodite",
 		icon: House4,
-		description: "A nomadic society driven by a drive for peace",
 	},
 ];
 
@@ -46,12 +42,11 @@ function Standings() {
 				The Houses
 			</Text>
 			<div className={cn.list}>
-				{HOUSES.map(({ name, icon, description }) => (
+				{HOUSES.map(({ name, icon }) => (
 					<div key={name} className={clsx(cn.house, "wait")}>
 						<img alt="decorative" src={icon} />
 						<div>
 							<Text size="L">{name}</Text>
-							<Text color="gray">{description}</Text>
 						</div>
 						<div className={cn.housePoints}>
 							<Text color="blue" size="XL">
