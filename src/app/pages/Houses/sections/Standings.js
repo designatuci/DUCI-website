@@ -17,18 +17,22 @@ const PUBLIC_POINTS_SPREADSHEET =
 
 const HOUSES = [
 	{
+		color: "blue",
 		name: "Hades",
 		icon: <Flame square r={45} />,
 	},
 	{
+		color: "green",
 		name: "Athena",
 		icon: <Bow square r={45} />,
 	},
 	{
+		color: "yellow",
 		name: "Zeus",
 		icon: <Lightning square r={45} />,
 	},
 	{
+		color: "pink",
 		name: "Aphrodite",
 		icon: <Dove square r={45} />,
 	},
@@ -39,21 +43,18 @@ function Standings() {
 	return (
 		<Section className={cn.standings} id="houses">
 			<Text size="XXL" className={clsx(cn.title, "wait")}>
-				The Houses
+				House Standings
 			</Text>
 			<div className={cn.list}>
-				{HOUSES.map(({ name, icon }) => (
+				{HOUSES.map(({ color, name, icon }) => (
 					<div key={name} className={clsx(cn.house, "wait")}>
-						{icon}
-						<div>
-							<Text size="L">{name}</Text>
-						</div>
-						<div className={cn.housePoints}>
-							<Text color="blue" size="XL">
-								{housePoints[name] ?? "-"}
-							</Text>
-							<span>points</span>
-						</div>
+						<div className={cn.houseIcon}>{icon}</div>
+						<Text size="L" color={color} className={cn.houseTitle}>
+							{name}
+						</Text>
+						<Text size="XL" className={cn.housePoints}>
+							{housePoints[name] ?? "-"} points
+						</Text>
 					</div>
 				))}
 			</div>
