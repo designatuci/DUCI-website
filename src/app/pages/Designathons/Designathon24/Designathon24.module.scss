@@ -45,7 +45,8 @@
 
 	& > .about {
 		padding: 10px;
-		background-color: #e4e4e6;
+		background-color: var(--cream);
+		color: var(--black);
 		font-size: 1em;
 
 		& h1 {
@@ -56,6 +57,10 @@
 		& p {
 			font-size: 1.2em;
 			line-height: 1.5em;
+		}
+
+		& .aboutHeading {
+			color: var(--hot-pink);
 		}
 
 		@media screen and (min-width: 1100px) {
