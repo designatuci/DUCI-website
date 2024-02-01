@@ -1,0 +1,44 @@
+.container {
+
+    & .text {
+        color: var(--white);
+        text-align: center;
+        font-size: 1em;
+        margin: 20px;
+
+        @media screen and (min-width: 900px) {
+            font-size: 2em;
+        }
+    }
+
+    & .row {
+        display: grid;
+        grid-template-columns: repeat(4, 55px);
+        margin: 0 auto;
+        column-gap: 10px;
+        place-content: center;
+        
+        @media screen and (min-width: 900px) {
+            column-gap: 20px;
+            grid-template-columns: repeat(4, 100px);
+        }
+    }
+    & .block {
+        border-radius: 16px;
+        background-color: var(--blue);
+        place-content: center;
+        text-align: center;
+        padding: 10px;
+        color: white;
+        font-size: 0.6em;
+
+        & h3 {
+            font-size: 2.5em;
+        }
+
+        @media screen and (min-width: 900px) {
+            font-size: 1em;
+            padding: 15px;
+        }
+    }
+}
