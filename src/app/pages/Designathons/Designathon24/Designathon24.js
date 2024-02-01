@@ -1,6 +1,5 @@
 import { Icon, Section } from "app/Symbols";
 import { Text } from "../../../components";
-import { WinnerShowcase } from "../components";
 import WINNERS_2024 from "assets/data/designathon/2024/winners.json";
 import TIMER_2024 from "assets/data/designathon/2024/timer.json";
 import JUDGES_2024 from "assets/data/designathon/2024/judges.json";
@@ -19,6 +18,7 @@ import {
 	FAQ,
 	Rules,
 	Timer,
+	WinnerShowcase,
 } from "./components";
 import Schedule from "./components/Schedule";
 import { Splash } from "./components/Splash";
