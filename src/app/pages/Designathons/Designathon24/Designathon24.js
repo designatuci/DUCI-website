@@ -23,7 +23,7 @@ import {
 import Schedule from "./components/Schedule";
 import { Splash } from "./components/Splash";
 
-const Designathon23 = () => (
+const Designathon24 = () => (
 	<main className={cn.container}>
 		<div className={cn.hero}>
 			<div style={{ height: "100%", width: "100%" }}>
@@ -140,4 +140,5 @@ const Designathon23 = () => (
 		</div>
 	</main>
 );
-export default Designathon23;
+
+export default Designathon24;
