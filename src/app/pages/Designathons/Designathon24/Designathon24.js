@@ -32,7 +32,7 @@ const Designathon24 = () => (
 			<div className={cn.title}>
 				<Icon className={cn.icon} src="designathon-white.svg" w="96" h="96" />
 				<Text size="XXXL" className="bold">
-					You Belong Here
+					True to You
 				</Text>
 				<div className={cn.timer}>
 					<Timer breakpoints={TIMER_2024} />
