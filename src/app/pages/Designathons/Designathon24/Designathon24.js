@@ -1,13 +1,13 @@
 import { Icon, Section } from "app/Symbols";
 import { Text } from "../../../components";
 import { WinnerShowcase } from "../components";
-import WINNERS_2023 from "assets/data/designathon/2023/winners.json";
-import TIMER_2023 from "assets/data/designathon/2023/timer.json";
-import JUDGES_2023 from "assets/data/designathon/2023/judges.json";
-import KEYNOTE_2023 from "assets/data/designathon/2023/keynote.json";
-import PRIZES_2023 from "assets/data/designathon/2023/prizes.json";
-import WORKSHOP_HOSTS_2023 from "assets/data/designathon/2023/workshop-hosts.json";
-import RULES_2023 from "assets/data/designathon/2023/rules.json";
+import WINNERS_2024 from "assets/data/designathon/2024/winners.json";
+import TIMER_2024 from "assets/data/designathon/2024/timer.json";
+import JUDGES_2024 from "assets/data/designathon/2024/judges.json";
+import KEYNOTE_2024 from "assets/data/designathon/2024/keynote.json";
+import PRIZES_2024 from "assets/data/designathon/2024/prizes.json";
+import WORKSHOP_HOSTS_2024 from "assets/data/designathon/2024/workshop-hosts.json";
+import RULES_2024 from "assets/data/designathon/2024/rules.json";
 import cn from "./Designathon24.module.scss";
 import FOF from "./assets/FOF.png";
 import notion from "./assets/notion.png";
@@ -35,13 +35,13 @@ const Designathon24 = () => (
 					You Belong Here
 				</Text>
 				<div className={cn.timer}>
-					<Timer breakpoints={TIMER_2023} />
+					<Timer breakpoints={TIMER_2024} />
 				</div>
 			</div>
 		</div>
 
 		<SectionNavigation />
-		<WinnerShowcase winners={WINNERS_2023} />
+		<WinnerShowcase winners={WINNERS_2024} />
 
 		<div className={cn.about} id="s-overview">
 			<Section>
@@ -74,29 +74,29 @@ const Designathon24 = () => (
 			<Section>
 				<div className={cn.section}>
 					<h2>Keynote Speaker</h2>
-					{KEYNOTE_2023.map((speaker) => (
+					{KEYNOTE_2024.map((speaker) => (
 						<Profile key={speaker.photo} {...speaker} />
 					))}
 				</div>
 				<div className={cn.section}>
 					<h2>Judges</h2>
-					{JUDGES_2023.map((judge) => (
+					{JUDGES_2024.map((judge) => (
 						<Profile key={judge.photo} {...judge} />
 					))}
 				</div>
 				<div className={cn.section}>
 					<h2>Workshop Hosts</h2>
-					{WORKSHOP_HOSTS_2023.map((host) => (
+					{WORKSHOP_HOSTS_2024.map((host) => (
 						<Profile key={host.photo} {...host} />
 					))}
 				</div>
 			</Section>
 		</div>
 
-		<Rules rules={RULES_2023} />
+		<Rules rules={RULES_2024} />
 
 		<div className={cn.prizes} id="s-prizes">
-			<Prizes list={PRIZES_2023} />
+			<Prizes list={PRIZES_2024} />
 		</div>
 
 		<Schedule />
