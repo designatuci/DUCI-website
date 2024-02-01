@@ -1,66 +1,67 @@
-[{
-    "name": "Antonio Flamenco",
-    "photo": "data/designathon/2023/assets/portrait/Antonio_Flamenco.jpg",
-    "role": "Product Designer @ Workday",
-    "pronouns": "he/him",
-    "about": "Antonio is a bay area based UX designer with a love of complex domain areas and problem solving. He has worked for many places throughout his career such as Stanford, Adobe and Workday leading design centered solutions for thousands of customers across multiple industries. When it comes to the UX design field, Antonio believes in always guiding design decisions through the user and that effective communication is the key to team success. In his free time Antonio is an ultimate frisbee player, photographer and runner.",
-    "funFact": "Antonio has never traveled outside of North America in his life."
-  },
-  {
-    "name": "Mosope Adebowale",
-    "photo": "data/designathon/2023/assets/portrait/Mosope_Adebowale.jpg",
-    "role": "Product Designer @ Meta",
-    "pronouns": "he/him",
-    "about": "Mosope is a user experience designer fascinated by the relationship between human interaction and technology. Much of his work has been dedicated to designing better product user experiences. His long-term goal is to make technology easy to use and accessible to everyone. He has mentored more than 200 designers from 18 countries across the world. When Mosope is not designing, you can find him doing some DIY projects, watching anime and exploring the country.",
-    "funFact": " Mosope actually studied Geology at the university. He pivoted from Geology to graphic design and then to product design."
-  },
-  {
-    "name": "Victoria Wu",
-    "photo": "data/designathon/2023/assets/portrait/Victoria_Wu.jpg",
-    "role": "Product Designer @ LinkedIn",
-    "pronouns": "she/her",
-    "about": "Victoria is a product designer at LinkedIn, currently designing profiles! Previously she studied architecture at UC Berkeley and has worked at design agencies, startups, and architecture firms. She’s from Orange County but is currently living in San Francisco. ",
-    "funFact": "Victoria is an ENFP (Myers-Briggs Personality Type). + she has a bichon-poodle named Miso!."
-  },
-  {
-    "name": "Meghna Kaligotla",
-    "photo": "data/designathon/2023/assets/portrait/Meghna_Kaligotla.jpeg",
-    "role": "External Vice President @ CTC",
-    "pronouns": "she/her",
-    "about": "Meghna is a 4th year Informatics major and the current External Vice President (EVP) of CTC, an organization that creates software for nonprofits. As EVP, she’s in charge of choosing their nonprofit projects, collaborating with other organizations, and cultivating their club’s vision and status. Within the field of design, Meghna prioritizes designing for social good, accessibility, and affordability. She’s also passionate about bringing product design to the forefront of tech conversations and giving designers a voice within the industry.",
-    "funFact": "Meghna studied opera and musical theater for 12 years!"
-  },
-  {
-    "name": "Alexandria (Alex) Wang",
-    "photo": "data/designathon/2023/assets/portrait/Alexandria_Wang.jpeg",
-    "role": "Design Director @ CTC",
-    "pronouns": "she/her",
-    "about": "Alex is a 4th year informatics major and one of the design directors this year in CTC. Her main goal as design director is to support and advocate for the design leads and designers in the club and highlight the importance of UI/UX design in producing tech for our nonprofits. Alex’s favorite part about being a designer is using research, creativity, and problem solving to produce products that make people happy!",
-    "funFact": "Alex used to be a boba barista 😄"
-  },
-  {
-    "name": "Duong Vu",
-    "photo": "data/designathon/2023/assets/portrait/Duong_Vu.png",
-    "role": "Outreach Co-chair @ WICS",
-    "pronouns": "she/her",
-    "about": "Duong is a third year CS major. She first joined WICS in freshman year and it has helped her a lot in the COVID online period. Afterwards, she joined the WICS committee and this year she is Outreach Co-chair. In her free time, she mostly hangs out with friends. She also loves checking out new food and boba and her favorite sport is badminton.",
-    "funFact": "Duong prefers cereals with yogurt over milk."
-  },
-  {
-    "name": "Amanda Hausmann",
-    "photo": "data/designathon/2023/assets/portrait/Amanda_Hausmann.jpg",
-    "role": "Community Outreach Committee Member @ WICS",
-    "pronouns": "she/her",
-    "about": "Amanda is currently a second year Computer Science major and Archaeology minor. She joined WICS at the beginning of her second year and immediately loved being a part of the intelligent and welcoming community. Thus, Amanda joined WICS's mentorship program in October and the Community Outreach Committee in November. While her major, minor, and club memberships are unrelated to design, digital design has been a hobby of hers for years.",
-    "funFact": "Amanda has three cats!"
-  },
+[
+	{
+		"name": "Antonio Flamenco",
+		"photo": "data/designathon/2023/assets/portrait/Antonio_Flamenco.jpg",
+		"role": "Product Designer @ Workday",
+		"pronouns": "he/him",
+		"about": "Antonio is a bay area based UX designer with a love of complex domain areas and problem solving. He has worked for many places throughout his career such as Stanford, Adobe and Workday leading design centered solutions for thousands of customers across multiple industries. When it comes to the UX design field, Antonio believes in always guiding design decisions through the user and that effective communication is the key to team success. In his free time Antonio is an ultimate frisbee player, photographer and runner.",
+		"funFact": "Antonio has never traveled outside of North America in his life."
+	},
+	{
+		"name": "Mosope Adebowale",
+		"photo": "data/designathon/2023/assets/portrait/Mosope_Adebowale.jpg",
+		"role": "Product Designer @ Meta",
+		"pronouns": "he/him",
+		"about": "Mosope is a user experience designer fascinated by the relationship between human interaction and technology. Much of his work has been dedicated to designing better product user experiences. His long-term goal is to make technology easy to use and accessible to everyone. He has mentored more than 200 designers from 18 countries across the world. When Mosope is not designing, you can find him doing some DIY projects, watching anime and exploring the country.",
+		"funFact": " Mosope actually studied Geology at the university. He pivoted from Geology to graphic design and then to product design."
+	},
+	{
+		"name": "Victoria Wu",
+		"photo": "data/designathon/2023/assets/portrait/Victoria_Wu.jpg",
+		"role": "Product Designer @ LinkedIn",
+		"pronouns": "she/her",
+		"about": "Victoria is a product designer at LinkedIn, currently designing profiles! Previously she studied architecture at UC Berkeley and has worked at design agencies, startups, and architecture firms. She’s from Orange County but is currently living in San Francisco. ",
+		"funFact": "Victoria is an ENFP (Myers-Briggs Personality Type). + she has a bichon-poodle named Miso!."
+	},
+	{
+		"name": "Meghna Kaligotla",
+		"photo": "data/designathon/2023/assets/portrait/Meghna_Kaligotla.jpeg",
+		"role": "External Vice President @ CTC",
+		"pronouns": "she/her",
+		"about": "Meghna is a 4th year Informatics major and the current External Vice President (EVP) of CTC, an organization that creates software for nonprofits. As EVP, she’s in charge of choosing their nonprofit projects, collaborating with other organizations, and cultivating their club’s vision and status. Within the field of design, Meghna prioritizes designing for social good, accessibility, and affordability. She’s also passionate about bringing product design to the forefront of tech conversations and giving designers a voice within the industry.",
+		"funFact": "Meghna studied opera and musical theater for 12 years!"
+	},
+	{
+		"name": "Alexandria (Alex) Wang",
+		"photo": "data/designathon/2023/assets/portrait/Alexandria_Wang.jpeg",
+		"role": "Design Director @ CTC",
+		"pronouns": "she/her",
+		"about": "Alex is a 4th year informatics major and one of the design directors this year in CTC. Her main goal as design director is to support and advocate for the design leads and designers in the club and highlight the importance of UI/UX design in producing tech for our nonprofits. Alex’s favorite part about being a designer is using research, creativity, and problem solving to produce products that make people happy!",
+		"funFact": "Alex used to be a boba barista 😄"
+	},
+	{
+		"name": "Duong Vu",
+		"photo": "data/designathon/2023/assets/portrait/Duong_Vu.png",
+		"role": "Outreach Co-chair @ WICS",
+		"pronouns": "she/her",
+		"about": "Duong is a third year CS major. She first joined WICS in freshman year and it has helped her a lot in the COVID online period. Afterwards, she joined the WICS committee and this year she is Outreach Co-chair. In her free time, she mostly hangs out with friends. She also loves checking out new food and boba and her favorite sport is badminton.",
+		"funFact": "Duong prefers cereals with yogurt over milk."
+	},
+	{
+		"name": "Amanda Hausmann",
+		"photo": "data/designathon/2023/assets/portrait/Amanda_Hausmann.jpg",
+		"role": "Community Outreach Committee Member @ WICS",
+		"pronouns": "she/her",
+		"about": "Amanda is currently a second year Computer Science major and Archaeology minor. She joined WICS at the beginning of her second year and immediately loved being a part of the intelligent and welcoming community. Thus, Amanda joined WICS's mentorship program in October and the Community Outreach Committee in November. While her major, minor, and club memberships are unrelated to design, digital design has been a hobby of hers for years.",
+		"funFact": "Amanda has three cats!"
+	},
 
-  {
-    "name": "Joe Cahill",
-    "photo": "data/designathon/2023/assets/portrait/Joe_Cahill.jpg",
-    "role": "Experience Design Manager @ Unqork",
-    "pronouns": "he/him",
-    "about": "With over 20 years of experience, an infectious smile, and a big presence, Joe Cahill is one of the most passionate designers you will meet. His experience has led him to successfully design and build products across a range of industries, and has also helped many Fortune 50 teams restructure their product development team operations to successfully create and deploy products more effectively. His passion for the customer and excitement for design has left a rippling impact on the industry, and he continues to spend his time learning about how people experience, interact with and use digital products in this constantly evolving industry.",
-    "funFact": "Joe has officiated."
-  }
+	{
+		"name": "Joe Cahill",
+		"photo": "data/designathon/2023/assets/portrait/Joe_Cahill.jpg",
+		"role": "Experience Design Manager @ Unqork",
+		"pronouns": "he/him",
+		"about": "With over 20 years of experience, an infectious smile, and a big presence, Joe Cahill is one of the most passionate designers you will meet. His experience has led him to successfully design and build products across a range of industries, and has also helped many Fortune 50 teams restructure their product development team operations to successfully create and deploy products more effectively. His passion for the customer and excitement for design has left a rippling impact on the industry, and he continues to spend his time learning about how people experience, interact with and use digital products in this constantly evolving industry.",
+		"funFact": "Joe has officiated."
+	}
 ]
