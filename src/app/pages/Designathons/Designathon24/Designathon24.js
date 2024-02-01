@@ -43,7 +43,7 @@ const Designathon24 = () => (
 		<SectionNavigation />
 		<WinnerShowcase winners={WINNERS_2024} />
 
-		<div className={cn.about} id="s-overview">
+		<div className={cn.about} id="s-about">
 			<Section>
 				<h1>About</h1>
 				<p>
