@@ -1,5 +1,6 @@
 import { Icon, Section } from "app/Symbols";
 import { Text } from "app/components";
+import EVENTS_2024 from "assets/data/designathon/2024/events.json";
 import WINNERS_2024 from "assets/data/designathon/2024/winners.json";
 import TIMER_2024 from "assets/data/designathon/2024/timer.json";
 import JUDGES_2024 from "assets/data/designathon/2024/judges.json";
@@ -99,7 +100,7 @@ const Designathon24 = () => (
 			<Prizes list={PRIZES_2024} />
 		</div>
 
-		<Schedule />
+		<Schedule schedule={EVENTS_2024} />
 
 		<FAQ />
 
