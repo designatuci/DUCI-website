@@ -73,3 +73,19 @@
 		}
 	}
 }
+
+@media only screen and (max-width: 900px) {
+	.container {
+		& .heading {
+			font-size: 36px;
+		}
+
+		& .winnerContainer {
+			& .winnerProject {
+				& .winnerProjectDescription {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
