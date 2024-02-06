@@ -2,10 +2,8 @@
 	background-color: var(--black);
 	color: white;
 
-	& .heading {
-		font-weight: 700;
-		color: var(--peach);
-	}
+	font-weight: 700;
+	color: var(--peach);
 
 	& .winnerContainer {
 		display: flex;
