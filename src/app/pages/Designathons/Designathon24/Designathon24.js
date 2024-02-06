@@ -45,7 +45,7 @@ const Designathon24 = () => (
 
 		<div className={cn.about} id="s-about">
 			<Section>
-				<h1 className={cn.aboutHeading}>About</h1>
+				<h2 className={cn.aboutHeading}>About</h2>
 				<p>
 					Design-a-thon is a 3 day long hybrid event where you or a team design
 					a product focused on the theme: community and inclusivity. It takes
@@ -105,7 +105,7 @@ const Designathon24 = () => (
 
 		<div className={cn.sponsors} id="s-sponsors">
 			<Section>
-				<h1>Sponsors</h1>
+				<h2>Sponsors</h2>
 				<div className={cn.logos}>
 					<div>
 						<a

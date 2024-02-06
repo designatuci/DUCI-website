@@ -50,7 +50,7 @@
 		color: var(--black);
 		font-size: 1em;
 
-		& h1 {
+		& h2 {
 			font-size: 2em;
 			font-weight: bold;
 		}
@@ -67,7 +67,7 @@
 		@media screen and (min-width: 1100px) {
 			padding-bottom: 80px;
 
-			& h1 {
+			& h2 {
 				font-size: 3em;
 			}
 
@@ -141,6 +141,10 @@
 	& .sponsors {
 		background-color: var(--silver);
 
+		& h2 {
+			font-size: 2em;
+		}
+
 		& .logos {
 			padding-top: 60px;
 			display: grid;
@@ -159,6 +163,7 @@
 				display: grid;
 				place-content: center;
 			}
+
 			& img {
 				max-height: 200px;
 				width: 100%;
