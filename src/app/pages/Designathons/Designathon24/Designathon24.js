@@ -1,5 +1,5 @@
 import { Icon, Section } from "app/Symbols";
-import { Text } from "../../../components";
+import { Text } from "app/components";
 import WINNERS_2024 from "assets/data/designathon/2024/winners.json";
 import TIMER_2024 from "assets/data/designathon/2024/timer.json";
 import JUDGES_2024 from "assets/data/designathon/2024/judges.json";
