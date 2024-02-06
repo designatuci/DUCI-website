@@ -31,14 +31,16 @@
 				"description": ["Announcing Challenge Brief and opening Q&A."]
 			},
 			{
-				"time": "7:00 pm - 7:05 pm",
+				"time": "7:00 pm",
+				"endTime": "7:05 pm",
 				"title": "Closing",
 				"description": [
 					"Designathon Director, Hannah, ends the Opening Ceremony."
 				]
 			},
 			{
-				"time": "7:30 pm - 8:15 pm",
+				"time": "7:30 pm",
+				"endTime": "8:15 pm",
 				"title": "Workshop: Design for Gender Inclusivity",
 				"description": [
 					"Led by WICS (Duong Vu & Amanda Hausmann)",
@@ -47,7 +49,8 @@
 				]
 			},
 			{
-				"time": "8:00 pm - 10:00 pm",
+				"time": "8:00 pm",
+				"endTime": "10:00 pm",
 				"title": "Work session (IP)",
 				"description": [
 					"*UCI Students ONLY*",
@@ -56,7 +59,8 @@
 				]
 			},
 			{
-				"time": "8:45 pm - 9:30 pm",
+				"time": "8:45 pm",
+				"endTime": "9:30 pm",
 				"title": "Workshop: Intro to Figma",
 				"description": [
 					"Led by Victoria Wu",
@@ -65,7 +69,8 @@
 				]
 			},
 			{
-				"time": "11:00 pm - 12:00 am",
+				"time": "11:00 pm",
+				"endTime": "12:00 am",
 				"title": "Mentor Office Hours",
 				"description": [
 					"Need help or advice? Come speak with our mentors in the #mentor-office-hours channel on Discord! Ping the channel with your questions or requests. Mentors in the server will respond to your message and hop on a voice chat with you.",
@@ -78,7 +83,8 @@
 		"date": "Saturday - Feb. 25, 2023",
 		"events": [
 			{
-				"time": "10:00 am - 10:45 am",
+				"time": "10:00 am",
+				"endTime": "10:45 am",
 				"title": "Workshop: Designing for Diversity",
 				"description": [
 					"Led by Mosope Adebowale",
@@ -87,7 +93,8 @@
 				]
 			},
 			{
-				"time": "11:00 am - 12:00 pm",
+				"time": "11:00 am",
+				"endTime": "12:00 pm",
 				"title": "Mentor Office Hours",
 				"description": [
 					"Need help or advice? Come speak with our mentors in the #mentor-office-hours channel on Discord! Ping the channel with your questions or requests. Mentors in the server will respond to your message and hop on a voice chat with you.",
@@ -95,7 +102,8 @@
 				]
 			},
 			{
-				"time": "12:00 pm - 12:45 pm",
+				"time": "12:00 pm",
+				"endTime": "12:45 pm",
 				"title": "Workshop: Be F#$%ing Authentic",
 				"description": [
 					"Led by Joe Cahill",
@@ -104,7 +112,8 @@
 				]
 			},
 			{
-				"time": "1:00 pm - 3:00 pm",
+				"time": "1:00 pm",
+				"endTime": "3:00 pm",
 				"title": "Work session (IP)",
 				"description": [
 					"*UCI Students ONLY*",
@@ -113,7 +122,8 @@
 				]
 			},
 			{
-				"time": "2:00 pm - 3:00 pm",
+				"time": "2:00 pm",
+				"endTime": "3:00 pm",
 				"title": "Social",
 				"description": [
 					"Led by Design at UCI",
@@ -123,7 +133,8 @@
 				]
 			},
 			{
-				"time": "3:00 pm - 3:45 pm",
+				"time": "3:00 pm",
+				"endTime": "3:45 pm",
 				"title": "Workshop: Creating UX Case Studies",
 				"description": [
 					"Led by CTC (Alexandria (Alex) Wang & Meghna Kaligotla)",
@@ -132,7 +143,8 @@
 				]
 			},
 			{
-				"time": "4:00 pm - 5:00 pm",
+				"time": "4:00 pm",
+				"endTime": "5:00 pm",
 				"title": "Social (IP)",
 				"description": [
 					"*UCI Students ONLY*",
@@ -143,7 +155,8 @@
 				]
 			},
 			{
-				"time": "5:00 pm - 5:45 pm",
+				"time": "5:00 pm",
+				"endTime": "5:45 pm",
 				"title": "Workshop: Leveraging Accessibility in Design",
 				"description": [
 					"Led by Antonio Flamenco",
@@ -152,7 +165,8 @@
 				]
 			},
 			{
-				"time": "5:00 pm - 7:00 pm",
+				"time": "5:00 pm",
+				"endTime": "7:00 pm",
 				"title": "Work session (IP)",
 				"description": [
 					"*UCI Students ONLY*",
@@ -161,7 +175,8 @@
 				]
 			},
 			{
-				"time": "8:00 pm - 9:00 pm",
+				"time": "8:00 pm",
+				"endTime": "9:00 pm",
 				"title": "Mentor Office Hours",
 				"description": [
 					"Need help or advice? Come speak with our mentors in the #mentor-office-hours channel on Discord! Ping the channel with your questions or requests. Mentors in the server will respond to your message and hop on a voice chat with you.",
@@ -189,14 +204,16 @@
 				]
 			},
 			{
-				"time": "1:10 pm - 4:00 pm",
+				"time": "1:10 pm",
+				"endTime": "4:00 pm",
 				"title": "Work on Case Study",
 				"description": [
 					"For all the 10 finalists, make sure to prepare your presentation so that it clearly elaborates your target user base, user research, and decision making process. Please refer to the rubric or ask questions on our Discord channel for more information and clarification."
 				]
 			},
 			{
-				"time": "4:00 pm - 5:30 pm",
+				"time": "4:00 pm",
+				"endTime": "5:30 pm",
 				"title": "Presentations",
 				"isHighlight": true,
 				"description": [
@@ -204,7 +221,8 @@
 				]
 			},
 			{
-				"time": "5:30 pm - 6:15 pm",
+				"time": "5:30 pm",
+				"endTime": "6:15 pm",
 				"title": "Judging Panel",
 				"description": [
 					"Judges decide the Top 3 teams, as well as the winners for these additional awards:",
@@ -214,7 +232,8 @@
 				]
 			},
 			{
-				"time": "7:00 pm - 7:40 pm",
+				"time": "7:00 pm",
+				"endTime": "7:40 pm",
 				"title": "Closing Ceremony",
 				"isHighlight": true,
 				"description": [
@@ -222,14 +241,16 @@
 				]
 			},
 			{
-				"time": "7:40 pm - 7:50 pm",
+				"time": "7:40 pm",
+				"endTime": "7:50 pm",
 				"title": "Raffle Draw",
 				"description": [
 					"Led by Design-a-thon Director, Hannah. Raffle winners will be chosen."
 				]
 			},
 			{
-				"time": "7:50 pm - 8:00 pm",
+				"time": "7:50 pm",
+				"endTime": "8:00 pm",
 				"title": "Q&A and Closing",
 				"description": [
 					"During the final Q&A session, attendees can ask anything related to the event. Design at UCI will give final thanks and acknowledgments, then close out the event."

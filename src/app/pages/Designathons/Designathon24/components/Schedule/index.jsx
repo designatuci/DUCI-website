@@ -19,7 +19,9 @@ function Schedule({ schedule }) {
 						<div className={cn.list}>
 							{day.events.map((event, index) => (
 								<div className={cn.event} key={index}>
-									<div className={cn.time}>{event.time}</div>
+									<div className={cn.time}>
+										{event.time} <span>↓</span> {event.endTime}
+									</div>
 									<div
 										className={clsx(
 											cn.title,
