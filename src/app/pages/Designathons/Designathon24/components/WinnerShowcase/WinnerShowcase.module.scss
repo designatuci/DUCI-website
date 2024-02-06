@@ -2,10 +2,12 @@
 	background-color: var(--black);
 	color: white;
 
-	font-weight: 700;
-	color: var(--peach);
+	.heading {
+		font-weight: 700;
+		color: var(--peach);
+	}
 
-	& .winnerContainer {
+	.winnerContainer {
 		display: flex;
 		column-gap: 150px;
 		color: var(--cream);
@@ -13,26 +15,26 @@
 		border-top: 2px dotted var(--cream);
 		margin-bottom: 64px;
 
-		& .winnerInfo {
+		.winnerInfo {
 			display: flex;
 			flex-direction: column;
 			text-align: left;
 			gap: 20px;
 			min-width: 400px;
 
-			& .winnerPlace {
+			.winnerPlace {
 				margin-top: 20px;
 
 				font-weight: 700;
 				font-size: 48px;
 			}
 
-			& .winnerTeam {
+			.winnerTeam {
 				font-weight: 400;
 				font-size: 32px;
 			}
 
-			& .winnerTeamMembers {
+			.winnerTeamMembers {
 				display: flex;
 				flex-direction: column;
 				gap: 10px;
@@ -42,20 +44,20 @@
 			}
 		}
 
-		& .winnerProject {
+		.winnerProject {
 			display: flex;
 			flex-direction: column;
 			text-align: left;
 			gap: 20px;
 
-			& .winnerProjectName {
+			.winnerProjectName {
 				margin-top: 20px;
 
 				font-weight: 700;
 				font-size: 48px;
 			}
 
-			& .winnerProjectDescription {
+			.winnerProjectDescription {
 				font-weight: 400;
 				font-size: 24px;
 			}
@@ -65,7 +67,7 @@
 
 @media only screen and (max-width: 1280px) {
 	.container {
-		& .winnerContainer {
+		.winnerContainer {
 			flex-direction: column;
 			row-gap: 32px;
 		}
@@ -74,17 +76,17 @@
 
 @media only screen and (max-width: 900px) {
 	.container {
-		& .heading {
+		.heading {
 			font-size: 36px;
 		}
 
-		& .winnerContainer {
-			& .winnerInfo {
+		.winnerContainer {
+			.winnerInfo {
 				min-width: unset;
 			}
 
-			& .winnerProject {
-				& .winnerProjectDescription {
+			.winnerProject {
+				.winnerProjectDescription {
 					font-size: 18px;
 				}
 			}
