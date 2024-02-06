@@ -1,0 +1,75 @@
+.container {
+	background-color: var(--black);
+	color: white;
+
+	& .heading {
+		font-weight: 700;
+		color: var(--peach);
+	}
+
+	& .winnerContainer {
+		display: flex;
+		column-gap: 150px;
+		color: var(--cream);
+
+		border-top: 2px dotted var(--cream);
+		margin-bottom: 64px;
+
+		& .winnerInfo {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			gap: 20px;
+			min-width: 400px;
+
+			& .winnerPlace {
+				margin-top: 20px;
+
+				font-weight: 700;
+				font-size: 48px;
+			}
+
+			& .winnerTeam {
+				font-weight: 400;
+				font-size: 32px;
+			}
+
+			& .winnerTeamMembers {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+
+				font-weight: 400;
+				font-size: 24px;
+			}
+		}
+
+		& .winnerProject {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+			gap: 20px;
+
+			& .winnerProjectName {
+				margin-top: 20px;
+
+				font-weight: 700;
+				font-size: 48px;
+			}
+
+			& .winnerProjectDescription {
+				font-weight: 400;
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	.container {
+		& .winnerContainer {
+			flex-direction: column;
+			row-gap: 32px;
+		}
+	}
+}
