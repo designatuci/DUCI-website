@@ -14,8 +14,8 @@ const Designathon = () => {
 			<Route path="23" element={<Designathon23 />} />
 			<Route path="you-belong-here" element={<Designathon23 />} />
 
-			<Route path="24" element={<Designathon24 />} />
-			<Route path="true-to-you" element={<Designathon24 />} />
+			<Route path="/beta/24" element={<Designathon24 />} />
+			<Route path="/beta/true-to-you" element={<Designathon24 />} />
 		</Routes>
 	);
 };
