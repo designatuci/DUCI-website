@@ -1,0 +1,76 @@
+[
+	{
+		"symbol": "1st",
+		"label": "First place",
+		"prizes": [
+			"Each member of the first place team will receive a $50 Visa gift card. Prize will be emailed as a link.",
+			"A 1-on-team remote mentorship meeting with a judge of your choice. You can utilize this session for portfolio reviews, career conversation, etc.",
+			"A feature on the Design at UCI website",
+			"Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
+		]
+	},
+	{
+		"symbol": "2nd",
+		"label": "Second place",
+		"prizes": [
+			"Each member of the second place team will receive a $20 Visa gift card. Prize will be emailed as a link.",
+			"A 1-on-team remote mentorship meeting with a judge of your choice. You can utilize this session for portfolio reviews, career conversation, etc.",
+			"A feature on the Design at UCI website",
+			"Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
+		]
+	},
+	{
+		"symbol": "3rd",
+		"label": "Third place",
+		"prizes": [
+			"Each member of the third place team will receive a $10 Visa gift card. Prize will be emailed as a link.",
+			"A 1-on-team remote mentorship meeting with a judge of your choice. You can utilize this session for portfolio reviews, career conversation, etc.",
+			"A feature on the Design at UCI website",
+			"Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
+		]
+	},
+	{
+		"symbol": "Raffle",
+		"label": "Raffle",
+		"prizes": [
+			"Five lucky participants will receive free merch bundles from our sponsors, Figma and Notion, as well as Adobe. All participants who submit a working prototype according to the submission requirement and prompt AND complete at least 1 entry are eligible to win. See below for ways to enter.",
+			"• Participate in our #just-for-fun Discord challenge = 1 entry",
+			"• Attend a social = 1 entry",
+			"• Attend a workshop = 1 entry"
+		]
+	},
+	{
+		"symbol": "Presentation",
+		"label": "Best presentation & story-telling",
+		"prizes": [
+			"Each member of the winning team will receive a limited edition Design at UCI sticker pack.",
+			"A feature on the Design at UCI website",
+			"Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
+		]
+	},
+	{
+		"symbol": "Creative",
+		"label": "Most creative & innovative",
+		"prizes": [
+			"Each member of the winning team will receive a limited edition Design at UCI sticker pack.",
+			"A feature on the Design at UCI website",
+			"Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
+		]
+	},
+	{
+		"symbol": "Honorable",
+		"label": "Honorable Mention",
+		"prizes": [
+			"Each member of the winning team will receive a limited edition Design at UCI sticker pack.",
+			"A feature on the Design at UCI website",
+			"Merch from companies such as Figma, Adobe, and Notion (subject to change). Prize will be sent via mail."
+		]
+	},
+	{
+		"symbol": "Extras",
+		"label": "All participants",
+		"prizes": [
+			"All participants will receive a 90-day extended trial promo code for Balsamiq Cloud."
+		]
+	}
+]

@@ -1,0 +1,54 @@
+[
+	{
+		"place": "1st Place",
+		"team": "Colorful",
+		"members": [
+			{
+				"name": "William Han",
+				"school": "USC"
+			},
+			{
+				"name": "Megan Phi",
+				"school": "USC"
+			},
+			{
+				"name": "Jayden Kang",
+				"school": "USC"
+			},
+			{
+				"name": "Amy La",
+				"school": "USC"
+			}
+		],
+		"project": "Colorful",
+		"description": "Colorful is a platform that aims to democratize access to the arts and arts education for younger children with special needs. Colorful encourages creative expression with doodling tools, develops communication skills through digital galleries, and promotes art therapy with introspective daily challenge prompts."
+	},
+	{
+		"place": "2nd Place",
+		"team": "Team MLH",
+		"members": [
+			{
+				"name": "Mandy Wu",
+				"school": "University of Washington, Seattle"
+			},
+			{
+				"name": "Lea Hidaka",
+				"school": "University of Washington, Seattle"
+			}
+		],
+		"project": "Honeycomb",
+		"description": "Honeycomb is an app that aims to bridge the gap between parents and their children’s education by providing a convenient and accessible platform for all parents to stay informed and involved. The main features are to keep parents updated on the school district’s latest news, foster connection amongst families through community channels, and encourage self advocacy and inclusive decision making."
+	},
+	{
+		"place": "3rd Place",
+		"team": "Jackie",
+		"members": [
+			{
+				"name": "Hue Quan (Jackie) Vu",
+				"school": "School of the Art "
+			}
+		],
+		"project": "Connec",
+		"description": "An inclusive social platform that connects veterans to the civilian workforce by better representing the veterans’ invaluable working experiences from the military, linking them with civilians who share their career interests, and bringing the veterans to communities of people who understand and thrive with them."
+	}
+]
