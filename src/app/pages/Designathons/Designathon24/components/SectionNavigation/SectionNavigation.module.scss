@@ -8,8 +8,8 @@
 	height: 88px;
 	padding: 0 16px;
 	box-shadow: 0 0 8px #0002;
-	background-color: var(--black);
-	color: var(--cream);
+	background-color: var(--des24-black);
+	color: var(--des24-cream);
 
 	display: flex;
 	justify-content: space-between;
@@ -28,8 +28,8 @@
 		transition: background-color 250ms;
 
 		&:hover {
-			background-color: var(--pink);
-			color: var(--black);
+			background-color: var(--des24-pink);
+			color: var(--des24-black);
 		}
 		& > p {
 			white-space: nowrap;
@@ -62,8 +62,8 @@
 			transition: background-color 250ms, color 250ms;
 
 			&:hover {
-				background-color: var(--pink);
-				color: var(--black);
+				background-color: var(--des24-pink);
+				color: var(--des24-black);
 			}
 		}
 	}

@@ -1,12 +1,10 @@
-:root {
-	--pink: #ff75a4;
-	--hot-pink: #f84e72;
-	--peach: #ff6969;
-	--cream: #fff5e0;
-	--black: #242424;
-}
-
 .container {
+	--des24-pink: #ff75a4;
+	--des24-hot-pink: #f84e72;
+	--des24-peach: #ff6969;
+	--des24-cream: #fff5e0;
+	--des24-black: #242424;
+
 	& > .hero {
 		height: 100vh;
 		width: 100%;
@@ -46,8 +44,8 @@
 
 	& > .about {
 		padding: 10px;
-		background-color: var(--cream);
-		color: var(--black);
+		background-color: var(--des24-cream);
+		color: var(--des24-black);
 		font-size: 1em;
 
 		& h2 {
@@ -61,7 +59,7 @@
 		}
 
 		& .aboutHeading {
-			color: var(--hot-pink);
+			color: var(--des24-hot-pink);
 		}
 
 		@media screen and (min-width: 1100px) {

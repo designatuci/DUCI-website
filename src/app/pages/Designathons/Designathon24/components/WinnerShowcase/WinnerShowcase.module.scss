@@ -1,18 +1,18 @@
 .container {
-	background-color: var(--black);
+	background-color: var(--des24-black);
 	color: white;
 
 	.heading {
 		font-weight: 700;
-		color: var(--peach);
+		color: var(--des24-peach);
 	}
 
 	.winnerContainer {
 		display: flex;
 		column-gap: 150px;
-		color: var(--cream);
+		color: var(--des24-cream);
 
-		border-top: 2px dotted var(--cream);
+		border-top: 2px dotted var(--des24-cream);
 		margin-bottom: 64px;
 
 		.winnerInfo {

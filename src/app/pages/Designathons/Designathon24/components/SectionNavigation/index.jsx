@@ -50,7 +50,10 @@ const SectionNavigation = () => {
 					).getTime() && (
 					<a
 						className={cn.item}
-						style={{ backgroundColor: "var(--pink)", color: "var(--cream)" }}
+						style={{
+							backgroundColor: "var(--des24-pink)",
+							color: "var(--des24-cream)",
+						}}
 						href=" https://drive.google.com/file/d/1oZyJ3sv1O-JwIuaLdXqAUbpQ-pTtlL1o/view?usp=drivesdk"
 					>
 						<p>Challenge Brief</p>
@@ -58,7 +61,10 @@ const SectionNavigation = () => {
 				)}
 				<a
 					className={cn.item}
-					style={{ backgroundColor: "var(--hot-pink)", color: "var(--cream)" }}
+					style={{
+						backgroundColor: "var(--des24-hot-pink)",
+						color: "var(--des24-cream)",
+					}}
 					target="_blank"
 					rel="noopener noreferrer"
 					href="https://forms.gle/hJmEGwbSc6mhqw9QA"
