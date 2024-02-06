@@ -31,8 +31,12 @@ const Designathon24 = () => (
 				<Splash />
 			</div>
 			<div className={cn.title}>
-				<Icon className={cn.icon} src="designathon-white.svg" w="96" h="96" />
-				<Text size="XXXL" className="bold">
+				{/* <Icon className={cn.icon} src="designathon-white.svg" w="96" h="96" /> */}
+				<Text
+					size="XXXL"
+					className="bold"
+					style={{ color: "var(--des24-black)" }}
+				>
 					True to You
 				</Text>
 				<div className={cn.timer}>
