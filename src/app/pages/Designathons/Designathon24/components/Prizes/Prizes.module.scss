@@ -1,43 +1,43 @@
 .title {
-    color: black;
-    font-size: 3em;
-    font-weight: bold;
+	color: black;
+	font-size: 3em;
+	font-weight: bold;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 80px;
-    padding-bottom: 80px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 80px;
+	padding-bottom: 80px;
 
-    @media screen and (max-width: 1200px) {
-        grid-template-columns: repeat(3, 1fr);
-    }
+	@media screen and (max-width: 1200px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
 
-    @media screen and (max-width: 950px) {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    @media screen and (max-width: 640px) {
-        grid-template-columns: repeat(1, 1fr);
-    }
+	@media screen and (max-width: 950px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media screen and (max-width: 640px) {
+		grid-template-columns: repeat(1, 1fr);
+	}
 
-    &>.item {
-        &:nth-child(even) {
-            & h3 {
-                color: var(--yellow);
-            }
-        }
+	& > .item {
+		&:nth-child(even) {
+			& h3 {
+				color: var(--yellow);
+			}
+		}
 
-        & p {
-            color: black;
-            line-height: 1.4em;
-        }
-    }
+		& p {
+			color: black;
+			line-height: 1.4em;
+		}
+	}
 
-    & h3 {
-        font-weight: bold;
-        margin: 20px 0;
-        font-size: 1.5em;
-        color: var(--blue);
-    }
+	& h3 {
+		font-weight: bold;
+		margin: 20px 0;
+		font-size: 1.5em;
+		color: var(--blue);
+	}
 }
