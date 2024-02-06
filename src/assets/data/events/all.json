@@ -8,6 +8,14 @@
 		"place": "DBH 6011"
 	},
 	{
+		"title": "Design Recruitment Tips with Arielle Julie",
+		"time": "3/5/2024 5:00 PM",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "",
+		"place": "Online"
+	},
+	{
 		"title": "Shark Tank",
 		"time": "2/28/2024 6:00 PM",
 		"duration": "60",
@@ -21,6 +29,22 @@
 		"duration": "60",
 		"type": "Workshop",
 		"desc": "This workshop will discuss the interssection of human-centered data collection with design. We will be exploring the ethics of current data collection methodologies with a research professor working in the intersection of data science, ai, and research. The goal of this workshop is to introduce the intersection of design with data systems to create holistic, human-centered AI technologies and data softwares.",
+		"place": "TBD"
+	},
+	{
+		"title": "Friends of Figma Speaker Collab (event title tbd)",
+		"time": "2/20/2024 5:00 PM",
+		"duration": "90",
+		"type": "Industry Speaker",
+		"desc": "",
+		"place": "DBH 6011"
+	},
+	{
+		"title": "Dissecting Design Systems",
+		"time": "2/13/2024 5:00 PM",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "",
 		"place": "DBH 6011"
 	},
 	{
