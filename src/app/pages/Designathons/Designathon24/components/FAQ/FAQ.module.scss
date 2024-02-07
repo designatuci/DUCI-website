@@ -1,0 +1,32 @@
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 40px;
+
+	@media screen and (min-width: 900px) {
+		grid-template-columns: 240px 1fr;
+	}
+
+	@media screen and (min-width: 1000px) {
+		grid-template-columns: 300px 1fr;
+	}
+
+	& .question {
+		display: grid;
+		cursor: pointer;
+		grid-template-columns: auto 1fr;
+		margin: 8px;
+		padding: 24px;
+		border-radius: 12px;
+		background-color: white;
+		transition: background-color 250ms;
+
+		&.opened {
+			border: 2px solid var(--silver);
+		}
+
+		&:hover {
+			background-color: var(--silver);
+		}
+	}
+}
