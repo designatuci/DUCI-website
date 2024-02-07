@@ -1,4 +1,4 @@
-import { Icon, Section } from "app/Symbols";
+import { Section } from "app/Symbols";
 import { Text } from "app/components";
 import EVENTS_2024 from "assets/data/designathon/2024/events.json";
 import WINNERS_2024 from "assets/data/designathon/2024/winners.json";
