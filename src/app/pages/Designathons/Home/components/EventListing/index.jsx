@@ -3,61 +3,46 @@ import { Photo, Section, Space } from "app/Symbols";
 import { Link } from "react-router-dom";
 import { ProjectShowcase } from "./components/ProjectShowcase";
 
-const EventListing = ({title, theme, link, image, showcase}) => {
+const EventListing = ({ title, theme, link, image, showcase }) => {
 	return (
 		<Section
-			className='short'
+			className="short"
 			style={{
-				background:
-					'linear-gradient(0deg,var(--white) 50%,var(--silver) 150%',
+				background: "linear-gradient(0deg,var(--white) 50%,var(--silver) 150%",
 			}}
 		>
-			<div className='split2'>
-				<div className='flex left top spaceChildrenSmall'>
-					<Text size='XL' className='bold'>
+			<div className="split2">
+				<div className="flex left top spaceChildrenSmall">
+					<Text size="XL" className="bold">
 						{title}
 					</Text>
-					<Space h='16' />
-					<Text
-						size='S'
-						className='color blue'
-						style={{ marginBottom: '8px' }}
-					>
+					<Space h="16" />
+					<Text size="S" className="color blue" style={{ marginBottom: "8px" }}>
 						Theme
 					</Text>
-					<Text className='color gray'>
-						{theme}
-					</Text>
-					<Text
-						size='S'
-						className='color blue'
-						style={{ marginBottom: '8px' }}
-					>
+					<Text className="color gray">{theme}</Text>
+					<Text size="S" className="color blue" style={{ marginBottom: "8px" }}>
 						Participants
 					</Text>
-					<Text className='color gray'>100+</Text>
+					<Text className="color gray">100+</Text>
 				</div>
 				<div
-					className='card L fill white shadow'
-					style={{ minHeight: '256px', padding: '16px' }}
+					className="card L fill white shadow"
+					style={{ minHeight: "256px", padding: "16px" }}
 				>
-					<Link
-						className='relative fill white button shadow'
-						to={link}
-					>
-						<Text icon='right' color='blue'>
+					<Link className="relative fill white button shadow" to={link}>
+						<Text icon="right" color="blue">
 							Event Page
 						</Text>
 					</Link>
-					<Photo
-						className='background'
-						src={image}
-					/>
+					<Photo className="background" src={image} />
 				</div>
 			</div>
-			<Text size='L'>Awarded Entries</Text>
-			<div className='split2'>
-				{showcase.map(project => <ProjectShowcase {...project}/>)}
+			<Text size="L">Awarded Entries</Text>
+			<div className="split2">
+				{showcase.map((project) => (
+					<ProjectShowcase {...project} />
+				))}
 			</div>
 		</Section>
 	);

@@ -1,4 +1,4 @@
-import MerchDropListing from './MerchDropListing';
-import MerchItem from './MerchItem';
+import MerchDropListing from "./MerchDropListing";
+import MerchItem from "./MerchItem";
 
 export { MerchDropListing, MerchItem };

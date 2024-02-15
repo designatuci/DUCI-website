@@ -1,16 +1,23 @@
- /* eslint-disable */
+/* eslint-disable */
 // TODO: pending refactor
 
-import { Helmet } from 'react-helmet';
-import { useState, useEffect, Component } from 'react';
-import { Section, Space, Icon, Photo } from 'app/Symbols.js';
-import { Text } from 'app/components';
-import { Judges, Prizes, Rules, SectionNavigation, WinnerShowcase, WorkshopHosts } from './components';
-import WINNERS_2022 from 'assets/data/designathon/2022/winners.json'
-import JUDGES_2022 from 'assets/data/designathon/2022/judges.json'
-import PRIZES_2022 from 'assets/data/designathon/2022/prizes.json';
-import WORKSHOP_HOSTS_2022 from 'assets/data/designathon/2022/workshop-hosts.json';
-import RULES_2023 from 'assets/data/designathon/2022/rules.json';
+import { Helmet } from "react-helmet";
+import { useState, useEffect, Component } from "react";
+import { Section, Space, Icon, Photo } from "app/Symbols.js";
+import { Text } from "app/components";
+import {
+	Judges,
+	Prizes,
+	Rules,
+	SectionNavigation,
+	WinnerShowcase,
+	WorkshopHosts,
+} from "./components";
+import WINNERS_2022 from "assets/data/designathon/2022/winners.json";
+import JUDGES_2022 from "assets/data/designathon/2022/judges.json";
+import PRIZES_2022 from "assets/data/designathon/2022/prizes.json";
+import WORKSHOP_HOSTS_2022 from "assets/data/designathon/2022/workshop-hosts.json";
+import RULES_2023 from "assets/data/designathon/2022/rules.json";
 
 const Designathon22 = () => {
 	useEffect(() => {
@@ -20,42 +27,39 @@ const Designathon22 = () => {
 		return () => {
 			// user leaving, clean-up
 			stop();
-			window.removeEventListener('resize', resize);
-			window.removeEventListener('scroll', scroll);
+			window.removeEventListener("resize", resize);
+			window.removeEventListener("scroll", scroll);
 		};
 	}, []);
 	return (
 		<>
 			<Helmet>
 				<title>Impact 2022</title>
-				<meta property='og:type' content='website' />
-				<meta property='og:title' content='Impact 2022' />
+				<meta property="og:type" content="website" />
+				<meta property="og:title" content="Impact 2022" />
+				<meta property="og:description" content="Design-a-thon at UCI" />
 				<meta
-					property='og:description'
-					content='Design-a-thon at UCI'
+					property="og:image"
+					content="https://designatuci.com/ogimg-designathon22.png"
 				/>
 				<meta
-					property='og:image'
-					content='https://designatuci.com/ogimg-designathon22.png'
+					property="og:url"
+					content="https://designatuci.com/designathon22/"
 				/>
-				<meta
-					property='og:url'
-					content='https://designatuci.com/designathon22/'
-				/>
-				<meta property='og:site_name' content='Impact 2022' />
+				<meta property="og:site_name" content="Impact 2022" />
 			</Helmet>
 
 			<Section
-				className='bare center page fill black relative'
-				style={{ background: 'var(--black)' }}
+				className="bare center page fill black relative"
+				style={{ background: "var(--black)" }}
 			>
-				<Space h='144' />
-				<Icon src='designathon-white.svg' w='96' h='96' />
-				<Text size='XXXL' className='bold'>
+				<Space h="144" />
+				<Icon src="designathon-white.svg" w="96" h="96" />
+				<Text size="XXXL" className="bold">
 					Impact 2022
 				</Text>
 				<StatusBlock />
-				<canvas id='view' />
+				<canvas id="view" />
 				<style>{`
                 :root {
                     --d-violet: #4D82F5;
@@ -175,52 +179,48 @@ const Designathon22 = () => {
                 }
             `}</style>
 			</Section>
-			<div class='maincontent'>
-				<SectionNavigation />				
+			<div class="maincontent">
+				<SectionNavigation />
 				<WinnerShowcase winners={WINNERS_2022} />
 				<Section
-					id='s-overview'
-					className='flatBot'
+					id="s-overview"
+					className="flatBot"
 					style={{
 						background:
-							'linear-gradient(0deg,var(--white),var(--d-pink),var(--d-violet),var(--black))',
+							"linear-gradient(0deg,var(--white),var(--d-pink),var(--d-violet),var(--black))",
 					}}
 				>
-					<div className='flex center spaceChildrenLarge'>
-						<Text size='XL' className='color white'>
-							Impact 2022 is a 3 day long design-a-thon event
-							where student designers create a product with the
-							potential to impact the world.
+					<div className="flex center spaceChildrenLarge">
+						<Text size="XL" className="color white">
+							Impact 2022 is a 3 day long design-a-thon event where student
+							designers create a product with the potential to impact the world.
 						</Text>
 						<div
-							className='card flex fill black'
-							style={{ borderRadius: '16px' }}
+							className="card flex fill black"
+							style={{ borderRadius: "16px" }}
 						>
 							<Rubric />
 						</div>
-						<Space h='16' />
-						<div className='split3 textAlignLeft'>
-							<div className='flex top spaceChildrenSmall'>
-								<Text className='color blue'>Timeline</Text>
+						<Space h="16" />
+						<div className="split3 textAlignLeft">
+							<div className="flex top spaceChildrenSmall">
+								<Text className="color blue">Timeline</Text>
 								<Text>
-									January 28 6:00pm - January 30 7:00pm
-									(California, PST)
+									January 28 6:00pm - January 30 7:00pm (California, PST)
 								</Text>
 							</div>
-							<div className='flex top spaceChildrenSmall'>
-								<Text className='color blue'>Our goal</Text>
+							<div className="flex top spaceChildrenSmall">
+								<Text className="color blue">Our goal</Text>
 								<Text>
-									To challenge and hone the design thinking
-									processes of students by introducing
-									real-life challenges.
+									To challenge and hone the design thinking processes of
+									students by introducing real-life challenges.
 								</Text>
 							</div>
-							<div className='flex top spaceChildrenSmall'>
-								<Text className='color blue'>Eligibility</Text>
+							<div className="flex top spaceChildrenSmall">
+								<Text className="color blue">Eligibility</Text>
 								<Text>
-									Undergraduate students from colleges all
-									over the country will be eligible to attend
-									at no cost.
+									Undergraduate students from colleges all over the country will
+									be eligible to attend at no cost.
 								</Text>
 							</div>
 						</div>
@@ -228,46 +228,46 @@ const Designathon22 = () => {
 				</Section>
 				<Prizes list={PRIZES_2022} />
 
-				<Judges profiles={JUDGES_2022}/>
+				<Judges profiles={JUDGES_2022} />
 
 				<WorkshopHosts profiles={WORKSHOP_HOSTS_2022} />
 
 				<Rules rules={RULES_2023} />
-				<Section id='s-schedule' className='fill black'>
-					<div className='flex left'>
-						<Text size='XL' className='color white'>
+				<Section id="s-schedule" className="fill black">
+					<div className="flex left">
+						<Text size="XL" className="color white">
 							Schedule
 						</Text>
 					</div>
-					<div className='flex left'>
-						<Text size='L' className='color gray'>
+					<div className="flex left">
+						<Text size="L" className="color gray">
 							Friday January 28th
 						</Text>
 					</div>
-					<div className='schedule'>
+					<div className="schedule">
 						{[
 							{
 								line: 1,
-								time: '6:00 PM',
-								title: 'Opening Ceremony',
+								time: "6:00 PM",
+								title: "Opening Ceremony",
 								desc: (
-									<div className='flex left spaceChildren'>
+									<div className="flex left spaceChildren">
 										<TimerText
-											className='color gray'
-											start='1/28/2022 6:00:00 PM (PST)'
-											end='1/28/2022 8:00:00 PM (PST)'
+											className="color gray"
+											start="1/28/2022 6:00:00 PM (PST)"
+											end="1/28/2022 8:00:00 PM (PST)"
 										/>
 										<a
-											className='button S fill dusk'
-											href='https://www.youtube.com/watch?v=IKoF9pB88XA'
-											target='noreferer'
+											className="button S fill dusk"
+											href="https://www.youtube.com/watch?v=IKoF9pB88XA"
+											target="noreferer"
 										>
 											<Text>Recording</Text>
 											<Icon
-												w='24'
-												h='24'
-												src='pagelink-white.svg'
-												style={{ marginLeft: '8px' }}
+												w="24"
+												h="24"
+												src="pagelink-white.svg"
+												style={{ marginLeft: "8px" }}
 											/>
 										</a>
 									</div>
@@ -275,345 +275,339 @@ const Designathon22 = () => {
 							},
 							{
 								line: 1,
-								time: '8:00 PM',
-								title: 'Mentor Office Hours on Discord',
+								time: "8:00 PM",
+								title: "Mentor Office Hours on Discord",
 							},
-							{ time: '9:00 PM', title: '' },
-						].map(item => {
+							{ time: "9:00 PM", title: "" },
+						].map((item) => {
 							return (
-								<div
-									className={`split2${
-										item.line ? ' header' : ''
-									}`}
-								>
+								<div className={`split2${item.line ? " header" : ""}`}>
 									<div>
 										<Text
-											className='bold'
+											className="bold"
 											style={{
-												flexBasis: '128px',
-												color: 'var(--d-violet)',
+												flexBasis: "128px",
+												color: "var(--d-violet)",
 											}}
 										>
 											{item.time}
 										</Text>
-										{item.line && <div className='line' />}
+										{item.line && <div className="line" />}
 									</div>
-									<div className='flex left spaceChildren'>
-										<Text size='L'>{item.title}</Text>
+									<div className="flex left spaceChildren">
+										<Text size="L">{item.title}</Text>
 										{item.desc != null && item.desc}
 									</div>
 								</div>
 							);
 						})}
 					</div>
-					<div className='flex left'>
-						<Text size='L' className='color gray'>
+					<div className="flex left">
+						<Text size="L" className="color gray">
 							Saturday January 29th
 						</Text>
 					</div>
-					<div className='schedule'>
+					<div className="schedule">
 						{[
 							{
 								line: 1,
-								time: '10:00 AM',
-								title: 'Workshop: Designing Under Constraints with Katrina Liu',
+								time: "10:00 AM",
+								title: "Workshop: Designing Under Constraints with Katrina Liu",
 								desc: (
-									<div className='flex left spaceChildren'>
+									<div className="flex left spaceChildren">
 										<TimerText
-											className='color gray'
-											start='1/29/2022 10:00:00 AM (PST)'
-											end='1/29/2022 10:30:00 AM (PST)'
+											className="color gray"
+											start="1/29/2022 10:00:00 AM (PST)"
+											end="1/29/2022 10:30:00 AM (PST)"
 										/>
 										<a
-											className='button S fill dusk'
-											href='https://www.youtube.com/watch?v=gPScKK8MQCQ'
-											target='noreferer'
+											className="button S fill dusk"
+											href="https://www.youtube.com/watch?v=gPScKK8MQCQ"
+											target="noreferer"
 										>
 											<Text>Recording</Text>
 											<Icon
-												w='24'
-												h='24'
-												src='pagelink-white.svg'
-												style={{ marginLeft: '8px' }}
+												w="24"
+												h="24"
+												src="pagelink-white.svg"
+												style={{ marginLeft: "8px" }}
 											/>
 										</a>
 									</div>
 								),
 							},
-							{ time: '10:30 AM', title: '' },
+							{ time: "10:30 AM", title: "" },
 							{
 								line: 1,
-								time: '11:00 AM',
-								title: 'Mentor Office Hours on Discord',
+								time: "11:00 AM",
+								title: "Mentor Office Hours on Discord",
 							},
-							{ time: '12:00 PM', title: '' },
+							{ time: "12:00 PM", title: "" },
 							{
 								line: 1,
-								time: '12:00 PM',
-								title: 'Workshop: How to Effectively Present Your Design with Samanvay Kasarala',
+								time: "12:00 PM",
+								title:
+									"Workshop: How to Effectively Present Your Design with Samanvay Kasarala",
 								desc: (
-									<div className='flex left spaceChildren'>
+									<div className="flex left spaceChildren">
 										<TimerText
-											className='color gray'
-											start='1/29/2022 12:00:00 PM (PST)'
-											end='1/29/2022 12:30:00 PM (PST)'
+											className="color gray"
+											start="1/29/2022 12:00:00 PM (PST)"
+											end="1/29/2022 12:30:00 PM (PST)"
 										/>
 										<a
-											className='button S fill dusk'
-											href='https://drive.google.com/file/d/1bz7rmeKhZBEXDMd_rE_iixe922tWHqDz/view?usp=sharing'
-											target='noreferer'
+											className="button S fill dusk"
+											href="https://drive.google.com/file/d/1bz7rmeKhZBEXDMd_rE_iixe922tWHqDz/view?usp=sharing"
+											target="noreferer"
 										>
 											<Text>Recording</Text>
 											<Icon
-												w='24'
-												h='24'
-												src='pagelink-white.svg'
-												style={{ marginLeft: '8px' }}
+												w="24"
+												h="24"
+												src="pagelink-white.svg"
+												style={{ marginLeft: "8px" }}
 											/>
 										</a>
 									</div>
 								),
 							},
-							{ time: '12:30 PM', title: '' },
+							{ time: "12:30 PM", title: "" },
 							{
 								line: 1,
-								time: '2:00 PM',
-								title: "Workshop: How to build Tech for Social Good with CTC's Alan Chang and Mingjia Wang",
+								time: "2:00 PM",
+								title:
+									"Workshop: How to build Tech for Social Good with CTC's Alan Chang and Mingjia Wang",
 								desc: (
-									<div className='flex left spaceChildren'>
+									<div className="flex left spaceChildren">
 										<TimerText
-											className='color gray'
-											start='1/29/2022 2:00:00 PM (PST)'
-											end='1/29/2022 2:30:00 PM (PST)'
+											className="color gray"
+											start="1/29/2022 2:00:00 PM (PST)"
+											end="1/29/2022 2:30:00 PM (PST)"
 										/>
 										<a
-											className='button S fill dusk'
-											href='https://drive.google.com/file/d/1kBLKAahM0FmaftYxnDryiMuuNYP-dEAu/view?usp=sharing'
-											target='noreferer'
+											className="button S fill dusk"
+											href="https://drive.google.com/file/d/1kBLKAahM0FmaftYxnDryiMuuNYP-dEAu/view?usp=sharing"
+											target="noreferer"
 										>
 											<Text>Recording</Text>
 											<Icon
-												w='24'
-												h='24'
-												src='pagelink-white.svg'
-												style={{ marginLeft: '8px' }}
+												w="24"
+												h="24"
+												src="pagelink-white.svg"
+												style={{ marginLeft: "8px" }}
 											/>
 										</a>
 									</div>
 								),
 							},
-							{ time: '2:30 PM', title: '' },
+							{ time: "2:30 PM", title: "" },
 							{
 								line: 1,
-								time: '3:00 PM',
-								title: 'Workshop: Prototyping in Figma with Evangeline Gao',
+								time: "3:00 PM",
+								title: "Workshop: Prototyping in Figma with Evangeline Gao",
 								desc: (
-									<div className='flex left spaceChildren'>
+									<div className="flex left spaceChildren">
 										<TimerText
-											className='color gray'
-											start='1/29/2022 3:00:00 PM (PST)'
-											end='1/29/2022 3:30:00 PM (PST)'
+											className="color gray"
+											start="1/29/2022 3:00:00 PM (PST)"
+											end="1/29/2022 3:30:00 PM (PST)"
 										/>
 										<a
-											className='button S fill dusk'
-											href='https://drive.google.com/file/d/16PyW7AiRz9yzfOf15CDpWuKSPBHrHGZu/view?usp=sharing'
-											target='noreferer'
+											className="button S fill dusk"
+											href="https://drive.google.com/file/d/16PyW7AiRz9yzfOf15CDpWuKSPBHrHGZu/view?usp=sharing"
+											target="noreferer"
 										>
 											<Text>Recording</Text>
 											<Icon
-												w='24'
-												h='24'
-												src='pagelink-white.svg'
-												style={{ marginLeft: '8px' }}
+												w="24"
+												h="24"
+												src="pagelink-white.svg"
+												style={{ marginLeft: "8px" }}
 											/>
 										</a>
 									</div>
 								),
 							},
-							{ time: '3:30 PM', title: '' },
+							{ time: "3:30 PM", title: "" },
 							{
 								line: 1,
-								time: '5:00 PM',
-								title: 'Workshop: Design Basics with Hannah Limary',
+								time: "5:00 PM",
+								title: "Workshop: Design Basics with Hannah Limary",
 								desc: (
-									<div className='flex left spaceChildren'>
+									<div className="flex left spaceChildren">
 										<TimerText
-											className='color gray'
-											start='1/29/2022 5:00:00 PM (PST)'
-											end='1/29/2022 5:30:00 PM (PST)'
+											className="color gray"
+											start="1/29/2022 5:00:00 PM (PST)"
+											end="1/29/2022 5:30:00 PM (PST)"
 										/>
 										<a
-											className='button S fill dusk'
-											href='https://drive.google.com/file/d/1VrH2I56WJFUXmrEYMiwMYltx4gzpixbX/view?usp=sharing'
-											target='noreferer'
+											className="button S fill dusk"
+											href="https://drive.google.com/file/d/1VrH2I56WJFUXmrEYMiwMYltx4gzpixbX/view?usp=sharing"
+											target="noreferer"
 										>
 											<Text>Recording</Text>
 											<Icon
-												w='24'
-												h='24'
-												src='pagelink-white.svg'
-												style={{ marginLeft: '8px' }}
+												w="24"
+												h="24"
+												src="pagelink-white.svg"
+												style={{ marginLeft: "8px" }}
 											/>
 										</a>
 									</div>
 								),
 							},
-							{ time: '5:30 PM', title: '' },
+							{ time: "5:30 PM", title: "" },
 							{
 								line: 1,
-								time: '7:00 PM',
-								title: 'Design Petor 101, a social with Isabel Pham on Discord',
+								time: "7:00 PM",
+								title: "Design Petor 101, a social with Isabel Pham on Discord",
 							},
-							{ time: '7:30 PM', title: '' },
+							{ time: "7:30 PM", title: "" },
 							{
 								line: 1,
-								time: '8:00 PM',
-								title: 'Mentor Office Hours on Discord',
+								time: "8:00 PM",
+								title: "Mentor Office Hours on Discord",
 							},
-							{ time: '9:00 PM', title: '' },
-						].map(item => {
+							{ time: "9:00 PM", title: "" },
+						].map((item) => {
 							return (
-								<div
-									className={`split2${
-										item.line ? ' header' : ''
-									}`}
-								>
+								<div className={`split2${item.line ? " header" : ""}`}>
 									<div>
 										<Text
-											className='bold'
+											className="bold"
 											style={{
-												flexBasis: '128px',
-												color: 'var(--d-violet)',
+												flexBasis: "128px",
+												color: "var(--d-violet)",
 											}}
 										>
 											{item.time}
 										</Text>
-										{item.line && <div className='line' />}
+										{item.line && <div className="line" />}
 									</div>
-									<div className='flex left spaceChildren'>
-										<Text size='L'>{item.title}</Text>
+									<div className="flex left spaceChildren">
+										<Text size="L">{item.title}</Text>
 										{item.desc != null && item.desc}
 									</div>
 								</div>
 							);
 						})}
 					</div>
-					<div className='flex left'>
-						<Text size='L' className='color gray'>
+					<div className="flex left">
+						<Text size="L" className="color gray">
 							Sunday January 30th
 						</Text>
 					</div>
-					<div className='schedule'>
-						<div className='split2 header'>
+					<div className="schedule">
+						<div className="split2 header">
 							<div>
 								<Text
-									className='bold'
+									className="bold"
 									style={{
-										flexBasis: '128px',
-										color: 'var(--pink)',
+										flexBasis: "128px",
+										color: "var(--pink)",
 									}}
 								>
 									1:00 PM
 								</Text>
 							</div>
-							<div className='flex left spaceChildren'>
-								<Text size='L' style={{ color: 'var(--pink)' }}>
+							<div className="flex left spaceChildren">
+								<Text size="L" style={{ color: "var(--pink)" }}>
 									Submissions Due
 								</Text>
 								<TimerText
-									className='color gray'
-									start='1/30/2022 1:00:00 PM (PST)'
+									className="color gray"
+									start="1/30/2022 1:00:00 PM (PST)"
 								/>
 								<a
-									className='button S fill green'
-									href='https://forms.gle/B4cpgMFtYRawP2ue8'
-									target='noreferer'
+									className="button S fill green"
+									href="https://forms.gle/B4cpgMFtYRawP2ue8"
+									target="noreferer"
 								>
 									<Text>Submission Form</Text>
 									<Icon
-										w='24'
-										h='24'
-										src='pagelink-white.svg'
-										style={{ marginLeft: '8px' }}
+										w="24"
+										h="24"
+										src="pagelink-white.svg"
+										style={{ marginLeft: "8px" }}
 									/>
 								</a>
 							</div>
 						</div>
 						{[
-							{ time: '3:00 PM', title: 'Finalists Notified' },
+							{ time: "3:00 PM", title: "Finalists Notified" },
 							{
-								time: '3:45 PM',
-								title: 'Optional Slide Decks Due for Finalists',
+								time: "3:45 PM",
+								title: "Optional Slide Decks Due for Finalists",
 							},
 							{
-								time: '4:00 PM',
-								title: 'Presentations',
+								time: "4:00 PM",
+								title: "Presentations",
 								desc: (
-									<div className='flex left spaceChildren'>
+									<div className="flex left spaceChildren">
 										<TimerText
-											className='color gray'
-											start='1/30/2022 4:00:00 PM (PST)'
-											end='1/30/2022 5:00:00 PM (PST)'
+											className="color gray"
+											start="1/30/2022 4:00:00 PM (PST)"
+											end="1/30/2022 5:00:00 PM (PST)"
 										/>
 										<a
-											className='button S fill dusk'
-											href='https://drive.google.com/file/d/1l5oAqun2yqJOTyl4RpRdAX3VTOnEwnFu/view?usp=sharing'
-											target='noreferer'
+											className="button S fill dusk"
+											href="https://drive.google.com/file/d/1l5oAqun2yqJOTyl4RpRdAX3VTOnEwnFu/view?usp=sharing"
+											target="noreferer"
 										>
 											<Text>Recording</Text>
 											<Icon
-												w='24'
-												h='24'
-												src='pagelink-white.svg'
-												style={{ marginLeft: '8px' }}
+												w="24"
+												h="24"
+												src="pagelink-white.svg"
+												style={{ marginLeft: "8px" }}
 											/>
 										</a>
 									</div>
 								),
 							},
 							{
-								time: '6:00 PM',
-								title: 'Closing Ceremony',
+								time: "6:00 PM",
+								title: "Closing Ceremony",
 								desc: (
-									<div className='flex left spaceChildren'>
+									<div className="flex left spaceChildren">
 										<TimerText
-											className='color gray'
-											start='1/30/2022 6:00:00 PM (PST)'
-											end='1/30/2022 7:00:00 PM (PST)'
+											className="color gray"
+											start="1/30/2022 6:00:00 PM (PST)"
+											end="1/30/2022 7:00:00 PM (PST)"
 										/>
 										<a
-											className='button S fill dusk'
-											href='https://drive.google.com/file/d/1_f6PA_-dBKhNTTEV2ZvCUCjjErohQeZ0/view?usp=sharing'
-											target='noreferer'
+											className="button S fill dusk"
+											href="https://drive.google.com/file/d/1_f6PA_-dBKhNTTEV2ZvCUCjjErohQeZ0/view?usp=sharing"
+											target="noreferer"
 										>
 											<Text>Recording</Text>
 											<Icon
-												w='24'
-												h='24'
-												src='pagelink-white.svg'
-												style={{ marginLeft: '8px' }}
+												w="24"
+												h="24"
+												src="pagelink-white.svg"
+												style={{ marginLeft: "8px" }}
 											/>
 										</a>
 									</div>
 								),
 							},
-						].map(item => {
+						].map((item) => {
 							return (
-								<div className='split2 header'>
+								<div className="split2 header">
 									<div>
 										<Text
-											className='bold'
+											className="bold"
 											style={{
-												flexBasis: '128px',
-												color: 'var(--d-violet)',
+												flexBasis: "128px",
+												color: "var(--d-violet)",
 											}}
 										>
 											{item.time}
 										</Text>
-										{item.line && <div className='line' />}
+										{item.line && <div className="line" />}
 									</div>
-									<div className='flex left spaceChildren'>
-										<Text size='L'>{item.title}</Text>
+									<div className="flex left spaceChildren">
+										<Text size="L">{item.title}</Text>
 										{item.desc != null && item.desc}
 									</div>
 								</div>
@@ -622,223 +616,214 @@ const Designathon22 = () => {
 					</div>
 				</Section>
 
-				<Section id='s-resources' className='fill gray'>
-					<Text size='XL'>Resources</Text>
+				<Section id="s-resources" className="fill gray">
+					<Text size="XL">Resources</Text>
 					<div
-						style={{ background: 'var(--white)' }}
-						className='wait dx show card flex left fill sky spaceChildrenSmall'
+						style={{ background: "var(--white)" }}
+						className="wait dx show card flex left fill sky spaceChildrenSmall"
 					>
 						<Icon
-							w='192'
-							h='96'
-							src='res-designathon-recordings.svg'
+							w="192"
+							h="96"
+							src="res-designathon-recordings.svg"
 							style={{
-								marginTop: '-32px',
-								margin: '-16px',
-								marginBottom: '0',
+								marginTop: "-32px",
+								margin: "-16px",
+								marginBottom: "0",
 							}}
 						/>
-						<Text
-							size='L'
-							className='bold'
-							style={{ color: '#1CC29A' }}
-						>
+						<Text size="L" className="bold" style={{ color: "#1CC29A" }}>
 							Design-a-thon Workshop Recordings
 						</Text>
-						<Text className='color gray'>
-							We will be recording the workshops happening during
-							Impact 2022 and uploading them here. If you miss an
-							event, check back here later!
+						<Text className="color gray">
+							We will be recording the workshops happening during Impact 2022
+							and uploading them here. If you miss an event, check back here
+							later!
 						</Text>
-						<Space h='16' />
-						<div className='split3 maxWidth'>
+						<Space h="16" />
+						<div className="split3 maxWidth">
 							<a
-								href='https://www.youtube.com/watch?v=IKoF9pB88XA'
-								target='noreferer'
-								className='flex top left card spaceChildrenSmall'
-								style={{ background: 'var(--silver)' }}
+								href="https://www.youtube.com/watch?v=IKoF9pB88XA"
+								target="noreferer"
+								className="flex top left card spaceChildrenSmall"
+								style={{ background: "var(--silver)" }}
 							>
-								<Icon src='icon-movie.svg' w='48' h='48' />
-								<Text className='color gray'>25:37</Text>
-								<Text className='bold'>Opening Ceremony</Text>
+								<Icon src="icon-movie.svg" w="48" h="48" />
+								<Text className="color gray">25:37</Text>
+								<Text className="bold">Opening Ceremony</Text>
 							</a>
 							<a
-								href='https://www.youtube.com/watch?v=gPScKK8MQCQ'
-								target='noreferer'
-								className='flex top left card spaceChildrenSmall'
-								style={{ background: 'var(--silver)' }}
+								href="https://www.youtube.com/watch?v=gPScKK8MQCQ"
+								target="noreferer"
+								className="flex top left card spaceChildrenSmall"
+								style={{ background: "var(--silver)" }}
 							>
-								<Icon src='icon-movie.svg' w='48' h='48' />
-								<Text className='color gray'>39:18</Text>
-								<Text className='bold'>
-									Workshop: Designing Under Constraints with
-									Katrina Liu
+								<Icon src="icon-movie.svg" w="48" h="48" />
+								<Text className="color gray">39:18</Text>
+								<Text className="bold">
+									Workshop: Designing Under Constraints with Katrina Liu
 								</Text>
 							</a>
 							<a
-								href='https://drive.google.com/file/d/1bz7rmeKhZBEXDMd_rE_iixe922tWHqDz/view?usp=sharing'
-								target='noreferer'
-								className='flex top left card spaceChildrenSmall'
-								style={{ background: 'var(--silver)' }}
+								href="https://drive.google.com/file/d/1bz7rmeKhZBEXDMd_rE_iixe922tWHqDz/view?usp=sharing"
+								target="noreferer"
+								className="flex top left card spaceChildrenSmall"
+								style={{ background: "var(--silver)" }}
 							>
-								<Icon src='icon-movie.svg' w='48' h='48' />
-								<Text className='color gray'>36:42</Text>
-								<Text className='bold'>
-									Workshop: How to Effectively Present Your
-									Design with Samanvay Kasarala
+								<Icon src="icon-movie.svg" w="48" h="48" />
+								<Text className="color gray">36:42</Text>
+								<Text className="bold">
+									Workshop: How to Effectively Present Your Design with Samanvay
+									Kasarala
 								</Text>
 							</a>
 							<a
-								href='https://drive.google.com/file/d/1kBLKAahM0FmaftYxnDryiMuuNYP-dEAu/view?usp=sharing'
-								target='noreferer'
-								className='flex top left card spaceChildrenSmall'
-								style={{ background: 'var(--silver)' }}
+								href="https://drive.google.com/file/d/1kBLKAahM0FmaftYxnDryiMuuNYP-dEAu/view?usp=sharing"
+								target="noreferer"
+								className="flex top left card spaceChildrenSmall"
+								style={{ background: "var(--silver)" }}
 							>
-								<Icon src='icon-movie.svg' w='48' h='48' />
-								<Text className='color gray'>18:35</Text>
-								<Text className='bold'>
-									Workshop: How to build Tech for Social Good
-									with CTC's Alan Chang and Mingjia Wang
+								<Icon src="icon-movie.svg" w="48" h="48" />
+								<Text className="color gray">18:35</Text>
+								<Text className="bold">
+									Workshop: How to build Tech for Social Good with CTC's Alan
+									Chang and Mingjia Wang
 								</Text>
 							</a>
 							<a
-								href='https://drive.google.com/file/d/16PyW7AiRz9yzfOf15CDpWuKSPBHrHGZu/view?usp=sharing'
-								target='noreferer'
-								className='flex top left card spaceChildrenSmall'
-								style={{ background: 'var(--silver)' }}
+								href="https://drive.google.com/file/d/16PyW7AiRz9yzfOf15CDpWuKSPBHrHGZu/view?usp=sharing"
+								target="noreferer"
+								className="flex top left card spaceChildrenSmall"
+								style={{ background: "var(--silver)" }}
 							>
-								<Icon src='icon-movie.svg' w='48' h='48' />
-								<Text className='color gray'>13:57</Text>
-								<Text className='bold'>
-									Workshop: Prototyping in Figma with
-									Evangeline Gao
+								<Icon src="icon-movie.svg" w="48" h="48" />
+								<Text className="color gray">13:57</Text>
+								<Text className="bold">
+									Workshop: Prototyping in Figma with Evangeline Gao
 								</Text>
 							</a>
 							<a
-								href='https://drive.google.com/file/d/1VrH2I56WJFUXmrEYMiwMYltx4gzpixbX/view?usp=sharing'
-								target='noreferer'
-								className='flex top left card spaceChildrenSmall'
-								style={{ background: 'var(--silver)' }}
+								href="https://drive.google.com/file/d/1VrH2I56WJFUXmrEYMiwMYltx4gzpixbX/view?usp=sharing"
+								target="noreferer"
+								className="flex top left card spaceChildrenSmall"
+								style={{ background: "var(--silver)" }}
 							>
-								<Icon src='icon-movie.svg' w='48' h='48' />
-								<Text className='color gray'>13:57</Text>
-								<Text className='bold'>
+								<Icon src="icon-movie.svg" w="48" h="48" />
+								<Text className="color gray">13:57</Text>
+								<Text className="bold">
 									Workshop: Design Basics with Hannah Limary
 								</Text>
 							</a>
 							<a
-								href='https://drive.google.com/file/d/1l5oAqun2yqJOTyl4RpRdAX3VTOnEwnFu/view?usp=sharing'
-								target='noreferer'
-								className='flex top left card spaceChildrenSmall'
-								style={{ background: 'var(--silver)' }}
+								href="https://drive.google.com/file/d/1l5oAqun2yqJOTyl4RpRdAX3VTOnEwnFu/view?usp=sharing"
+								target="noreferer"
+								className="flex top left card spaceChildrenSmall"
+								style={{ background: "var(--silver)" }}
 							>
-								<Icon src='icon-movie.svg' w='48' h='48' />
-								<Text className='color gray'>58:28</Text>
-								<Text className='bold'>Presentations</Text>
+								<Icon src="icon-movie.svg" w="48" h="48" />
+								<Text className="color gray">58:28</Text>
+								<Text className="bold">Presentations</Text>
 							</a>
 							<a
-								href='https://drive.google.com/file/d/1_f6PA_-dBKhNTTEV2ZvCUCjjErohQeZ0/view?usp=sharing'
-								target='noreferer'
-								className='flex top left card spaceChildrenSmall'
-								style={{ background: 'var(--silver)' }}
+								href="https://drive.google.com/file/d/1_f6PA_-dBKhNTTEV2ZvCUCjjErohQeZ0/view?usp=sharing"
+								target="noreferer"
+								className="flex top left card spaceChildrenSmall"
+								style={{ background: "var(--silver)" }}
 							>
-								<Icon src='icon-movie.svg' w='48' h='48' />
-								<Text className='color gray'>9:13</Text>
-								<Text className='bold'>Closing Ceremony</Text>
+								<Icon src="icon-movie.svg" w="48" h="48" />
+								<Text className="color gray">9:13</Text>
+								<Text className="bold">Closing Ceremony</Text>
 							</a>
 						</div>
 					</div>
-					<Text className='color gray'>Other resources</Text>
-					<div className='split2'>
+					<Text className="color gray">Other resources</Text>
+					<div className="split2">
 						<a
-							href='https://designatuci.com/resources/featured/'
-							target='noreferrer'
-							style={{ background: 'var(--white)' }}
-							className='wait dx show card flex left fill sky spaceChildrenSmall'
+							href="https://designatuci.com/resources/featured/"
+							target="noreferrer"
+							style={{ background: "var(--white)" }}
+							className="wait dx show card flex left fill sky spaceChildrenSmall"
 						>
 							<Icon
-								w='192'
-								h='96'
-								src='res-featured.svg'
+								w="192"
+								h="96"
+								src="res-featured.svg"
 								style={{
-									marginTop: '-32px',
-									margin: '-16px',
-									marginBottom: '0',
+									marginTop: "-32px",
+									margin: "-16px",
+									marginBottom: "0",
 								}}
 							/>
-							<Text size='L' className='bold color orange'>
+							<Text size="L" className="bold color orange">
 								Featured Resources
 							</Text>
-							<Text className='color gray'>
-								Explore our curated collection of useful online
-								tools, guides, and more.
+							<Text className="color gray">
+								Explore our curated collection of useful online tools, guides,
+								and more.
 							</Text>
 						</a>
 						<a
-							href='https://designatuci.com/events/all/'
-							target='noreferrer'
-							style={{ background: 'var(--white)' }}
-							className='wait dx show card flex left fill sky spaceChildrenSmall'
+							href="https://designatuci.com/events/all/"
+							target="noreferrer"
+							style={{ background: "var(--white)" }}
+							className="wait dx show card flex left fill sky spaceChildrenSmall"
 						>
 							<Icon
-								w='192'
-								h='96'
-								src='res-recordings.svg'
+								w="192"
+								h="96"
+								src="res-recordings.svg"
 								style={{
-									marginTop: '-32px',
-									margin: '-16px',
-									marginBottom: '0',
+									marginTop: "-32px",
+									margin: "-16px",
+									marginBottom: "0",
 								}}
 							/>
-							<Text size='L' className='bold color blue'>
+							<Text size="L" className="bold color blue">
 								Past Workshop Slides & Recordings
 							</Text>
-							<Text className='color gray'>
+							<Text className="color gray">
 								View our past events and their slide decks.
 							</Text>
 						</a>
 					</div>
 				</Section>
 
-				<Section id='s-faq'>
-					<Text size='XL'>FAQ</Text>
-					<div className='split2 tc13'>
-						<div className='spaceChildren'>
+				<Section id="s-faq">
+					<Text size="XL">FAQ</Text>
+					<div className="split2 tc13">
+						<div className="spaceChildren">
 							<Text>
-								Join the live conversation on the{' '}
+								Join the live conversation on the{" "}
 								<a
-									target='noreferer'
-									href='https://discord.gg/mY8QSNaEtb'
-									style={{ textDecoration: 'underline' }}
+									target="noreferer"
+									href="https://discord.gg/mY8QSNaEtb"
+									style={{ textDecoration: "underline" }}
 								>
 									Impact22 Discord
-								</a>{' '}
+								</a>{" "}
 								for more help!
 							</Text>
 						</div>
-						<div
-							style={{ marginTop: '-16px' }}
-							className='spaceChildrenSmall'
-						>
+						<div style={{ marginTop: "-16px" }} className="spaceChildrenSmall">
 							{[
 								{
-									q: 'Why should I join?',
+									q: "Why should I join?",
 									a: "Designers create aesthetically pleasing, functional products. They listen to what our world needs, empathize with people's gain and pain points, and produce a solution that specifically targets what our world is lacking. We hope that this event can be a platform where you can start practicing your design thinking—a process of ideation, research, analysis, developing, and testing—to provide a better means to our world.",
 								},
 								{
-									q: 'When is the registration deadline?',
-									a: 'Our registration form will close at January 26, 2022 at 11:59pm (PST)',
+									q: "When is the registration deadline?",
+									a: "Our registration form will close at January 26, 2022 at 11:59pm (PST)",
 								},
 								{
-									q: 'How do I sign up?',
+									q: "How do I sign up?",
 									a: (
-										<Text className='color gray'>
-											Apply through our{' '}
+										<Text className="color gray">
+											Apply through our{" "}
 											<a
-												target='noreferer'
-												href='https://docs.google.com/forms/d/e/1FAIpQLScL-FDRROA8UJth_aMA4aHEChAGeiPu7fzN40eTLjmOyrPxDA/viewform?usp=sf_link'
+												target="noreferer"
+												href="https://docs.google.com/forms/d/e/1FAIpQLScL-FDRROA8UJth_aMA4aHEChAGeiPu7fzN40eTLjmOyrPxDA/viewform?usp=sf_link"
 												style={{
-													textDecoration: 'underline',
+													textDecoration: "underline",
 												}}
 											>
 												registration form
@@ -847,16 +832,15 @@ const Designathon22 = () => {
 									),
 								},
 								{
-									q: 'Where do I submit my project?',
+									q: "Where do I submit my project?",
 									a: (
-										<Text className='color gray'>
-											Please submit your final, working
-											prototype to the{' '}
+										<Text className="color gray">
+											Please submit your final, working prototype to the{" "}
 											<a
-												target='noreferer'
-												href='https://docs.google.com/forms/d/e/1FAIpQLSeaptGRVmxzyztUX3ZxEwVTkucHmXMPN9UtqTzNa8jH1arcKA/viewform?usp=sf_link'
+												target="noreferer"
+												href="https://docs.google.com/forms/d/e/1FAIpQLSeaptGRVmxzyztUX3ZxEwVTkucHmXMPN9UtqTzNa8jH1arcKA/viewform?usp=sf_link"
 												style={{
-													textDecoration: 'underline',
+													textDecoration: "underline",
 												}}
 											>
 												Submission form
@@ -866,36 +850,33 @@ const Designathon22 = () => {
 									),
 								},
 								{
-									q: 'Who can attend?',
-									a: 'Any undergraduate student within the US (with an associated institutional email) is able to sign up and attend.',
+									q: "Who can attend?",
+									a: "Any undergraduate student within the US (with an associated institutional email) is able to sign up and attend.",
 								},
 								{
-									q: 'How much does it cost?',
-									a: 'Impact 2022 requires no cost to attend. All you need is a working device with Zoom, Discord, and an open mind.',
+									q: "How much does it cost?",
+									a: "Impact 2022 requires no cost to attend. All you need is a working device with Zoom, Discord, and an open mind.",
 								},
 								{
-									q: 'I don’t have prior knowledge in design. Can I still attend?',
-									a: 'Of course! Design is all around us. We will provide workshops and resources for beginners to get started.',
+									q: "I don’t have prior knowledge in design. Can I still attend?",
+									a: "Of course! Design is all around us. We will provide workshops and resources for beginners to get started.",
 								},
 								{
-									q: 'How do I prepare?',
+									q: "How do I prepare?",
 									a: (
-										<Text className='color gray'>
-											During the event, we will be hosting
-											Workshops for anyone new to Design
-											thinking or the Design process. We
-											highly encourage getting the hang of
-											Figma, Sketch, Adobe XD, or the
-											prototyping tool of your choice. You
-											may find something useful in our
-											resources section as well. You can
-											also show your excitement by turning
-											on your camera, and adding our{' '}
+										<Text className="color gray">
+											During the event, we will be hosting Workshops for anyone
+											new to Design thinking or the Design process. We highly
+											encourage getting the hang of Figma, Sketch, Adobe XD, or
+											the prototyping tool of your choice. You may find
+											something useful in our resources section as well. You can
+											also show your excitement by turning on your camera, and
+											adding our{" "}
 											<a
-												target='noreferer'
-												href='https://drive.google.com/drive/folders/1ER3La0q8k1WByZt_Cn-hDhP4knOPukRD?usp=sharing'
+												target="noreferer"
+												href="https://drive.google.com/drive/folders/1ER3La0q8k1WByZt_Cn-hDhP4knOPukRD?usp=sharing"
 												style={{
-													textDecoration: 'underline',
+													textDecoration: "underline",
 												}}
 											>
 												Impact 2022 backgrounds
@@ -904,70 +885,64 @@ const Designathon22 = () => {
 									),
 								},
 								{
-									q: 'How do teams work?',
-									a: 'You have the option to (1) go solo, (2) request individuals to team up with (up to 3 other members) on the Application form, (3) be randomly assigned, (4) meet your team members through our Discord and simply note them in the Submission form.',
+									q: "How do teams work?",
+									a: "You have the option to (1) go solo, (2) request individuals to team up with (up to 3 other members) on the Application form, (3) be randomly assigned, (4) meet your team members through our Discord and simply note them in the Submission form.",
 								},
 								{
-									q: 'What if I don’t have a team?',
+									q: "What if I don’t have a team?",
 									a: (
-										<Text className='color gray'>
-											We will provide a Discord channel
-											specifically for anyone looking for
-											a team at our Designathon. Feel free
-											to join our Discord at{' '}
+										<Text className="color gray">
+											We will provide a Discord channel specifically for anyone
+											looking for a team at our Designathon. Feel free to join
+											our Discord at{" "}
 											<a
-												target='noreferer'
-												href='https://discord.gg/mY8QSNaEtb'
+												target="noreferer"
+												href="https://discord.gg/mY8QSNaEtb"
 												style={{
-													textDecoration: 'underline',
+													textDecoration: "underline",
 												}}
 											>
 												https://discord.gg/mY8QSNaEtb
 											</a>
-											. Solo participants are also
-											allowed.
+											. Solo participants are also allowed.
 										</Text>
 									),
 								},
-							].map(item => {
+							].map((item) => {
 								return (
 									<Toggle
 										closed={
-											<div className='faqitem gray card S flex left spaceChildrenSmall'>
-												<div className='flex row top'>
+											<div className="faqitem gray card S flex left spaceChildrenSmall">
+												<div className="flex row top">
 													<Icon
-														src='d22-arrow.svg'
-														w='18'
-														h='18'
+														src="d22-arrow.svg"
+														w="18"
+														h="18"
 														style={{
-															marginRight: '16px',
+															marginRight: "16px",
 														}}
 													/>
-													<Text className='bold'>
-														{item.q}
-													</Text>
+													<Text className="bold">{item.q}</Text>
 												</div>
 											</div>
 										}
 										opened={
-											<div className='faqitem open card S flex left spaceChildrenSmall'>
-												<div className='flex row top'>
+											<div className="faqitem open card S flex left spaceChildrenSmall">
+												<div className="flex row top">
 													<Icon
-														src='d22-arrow.svg'
-														w='18'
-														h='18'
+														src="d22-arrow.svg"
+														w="18"
+														h="18"
 														style={{
-															marginRight: '16px',
+															marginRight: "16px",
 														}}
 													/>
-													<Text className='bold'>
-														{item.q}
-													</Text>
+													<Text className="bold">{item.q}</Text>
 												</div>
 												<Text
-													className='color gray'
+													className="color gray"
 													style={{
-														paddingLeft: '34px',
+														paddingLeft: "34px",
 													}}
 												>
 													{item.a}
@@ -981,144 +956,135 @@ const Designathon22 = () => {
 					</div>
 				</Section>
 
-				<Section id='s-about' className='fill gray'>
-					<Text size='XL'>About</Text>
+				<Section id="s-about" className="fill gray">
+					<Text size="XL">About</Text>
 					<div></div>
-					<div className='split2 textAlignLeft'>
-						<div className='spaceChildrenSmall'>
-							<Text size='L'>Hosted by Design at UCI</Text>
+					<div className="split2 textAlignLeft">
+						<div className="spaceChildrenSmall">
+							<Text size="L">Hosted by Design at UCI</Text>
 							<Text>
-								Design at UCI is the premiere student-run
-								organization at UCI for anything graphic design,
-								UI/UX design, product design, and more. Started
-								in 2016, It has amassed many relationships in
-								the Design community of OC and SoCal.
+								Design at UCI is the premiere student-run organization at UCI
+								for anything graphic design, UI/UX design, product design, and
+								more. Started in 2016, It has amassed many relationships in the
+								Design community of OC and SoCal.
 							</Text>
 						</div>
 					</div>
-					<Text size='L'>Event Organizers</Text>
-					<div className='split4'>
+					<Text size="L">Event Organizers</Text>
+					<div className="split4">
 						{[
 							{
-								name: 'Vivian Lin',
-								photo: 'portrait/Vivian_Lin.png',
-								role: 'Industry Outreach Coordinator, Logistics Organizer, Judge & Speaker Outreach',
+								name: "Vivian Lin",
+								photo: "portrait/Vivian_Lin.png",
+								role: "Industry Outreach Coordinator, Logistics Organizer, Judge & Speaker Outreach",
 							},
 							{
-								name: 'Kevin Tsai',
-								photo: 'portrait-placeholder-gray.svg',
-								role: 'Industry Outreach Coordinator, Sketch Sponsorship Coordinator',
+								name: "Kevin Tsai",
+								photo: "portrait-placeholder-gray.svg",
+								role: "Industry Outreach Coordinator, Sketch Sponsorship Coordinator",
 							},
 							{
-								name: 'Hannah Limary',
-								photo: 'portrait/Hannah_Limary.png',
-								role: 'President, Sponsorship Coordinator, Workshop Host',
+								name: "Hannah Limary",
+								photo: "portrait/Hannah_Limary.png",
+								role: "President, Sponsorship Coordinator, Workshop Host",
 							},
 							{
-								name: 'Evangeline Gao',
-								photo: 'portrait/Evangeline_Gao.png',
-								role: 'Vice President, Workshop Host',
+								name: "Evangeline Gao",
+								photo: "portrait/Evangeline_Gao.png",
+								role: "Vice President, Workshop Host",
 							},
 							{
-								name: 'Kailer Garcia',
-								photo: 'portrait/Kailer_Garcia.png',
-								role: 'Graphic Designer, Developer & Webmaster',
+								name: "Kailer Garcia",
+								photo: "portrait/Kailer_Garcia.png",
+								role: "Graphic Designer, Developer & Webmaster",
 							},
 							{
-								name: 'Isabel PhAM (PST)',
-								photo: 'portrait/Isabel_Pham.png',
-								role: 'Graphic Designer, Social Host',
+								name: "Isabel PhAM (PST)",
+								photo: "portrait/Isabel_Pham.png",
+								role: "Graphic Designer, Social Host",
 							},
 							{
-								name: 'Vivian Chu',
-								photo: 'portrait/Vivian_Chu.png',
-								role: 'Workshop Coordinator, Discord Bot Moderator',
+								name: "Vivian Chu",
+								photo: "portrait/Vivian_Chu.png",
+								role: "Workshop Coordinator, Discord Bot Moderator",
 							},
 							{
-								name: 'Meghna Kaligotla',
-								photo: 'portrait-placeholder-gray.svg',
-								role: 'Workshop Committee',
+								name: "Meghna Kaligotla",
+								photo: "portrait-placeholder-gray.svg",
+								role: "Workshop Committee",
 							},
 							{
-								name: 'Jolin Huang',
-								photo: 'portrait/Jolin_Huang.png',
-								role: 'Marketing',
+								name: "Jolin Huang",
+								photo: "portrait/Jolin_Huang.png",
+								role: "Marketing",
 							},
 							{
-								name: 'Carly Chan',
-								photo: 'portrait/Carly_Chan.png',
-								role: 'Marketing',
+								name: "Carly Chan",
+								photo: "portrait/Carly_Chan.png",
+								role: "Marketing",
 							},
 							{
-								name: 'Iantha Khan',
-								photo: 'portrait-placeholder-gray.svg',
-								role: 'Marketing',
+								name: "Iantha Khan",
+								photo: "portrait-placeholder-gray.svg",
+								role: "Marketing",
 							},
 							{
-								name: 'Sonali Chellappa',
-								photo: 'portrait/Sonali_Chellappa.png',
-								role: 'Project Teams Committee',
+								name: "Sonali Chellappa",
+								photo: "portrait/Sonali_Chellappa.png",
+								role: "Project Teams Committee",
 							},
 							{
-								name: 'Juhi Patel',
-								photo: 'portrait-placeholder-gray.svg',
-								role: 'Project Teams Committee',
+								name: "Juhi Patel",
+								photo: "portrait-placeholder-gray.svg",
+								role: "Project Teams Committee",
 							},
 							{
-								name: 'Vivian Nguyen',
-								photo: 'portrait/Vivian_Nguyen.png',
-								role: 'Content Creation & Marketing',
+								name: "Vivian Nguyen",
+								photo: "portrait/Vivian_Nguyen.png",
+								role: "Content Creation & Marketing",
 							},
 							{
-								name: 'Amy Steinmetz',
-								photo: 'portrait/Amy_Steinmetz.png',
-								role: 'Financial Chair',
+								name: "Amy Steinmetz",
+								photo: "portrait/Amy_Steinmetz.png",
+								role: "Financial Chair",
 							},
-						].map(item => {
+						].map((item) => {
 							return (
-								<div className='flex left top spaceChildrenSmall'>
+								<div className="flex left top spaceChildrenSmall">
 									<Photo
 										src={item.photo}
 										style={{
-											height: 'unset',
-											backgroundColor: 'var(--white)',
-											width: '100%',
-											position: 'relative',
+											height: "unset",
+											backgroundColor: "var(--white)",
+											width: "100%",
+											position: "relative",
 										}}
 									>
-										<div
-											style={{ paddingBottom: '100%' }}
-										/>
+										<div style={{ paddingBottom: "100%" }} />
 									</Photo>
-									<Text size='L'>{item.name}</Text>
+									<Text size="L">{item.name}</Text>
 									<Text>{item.role}</Text>
-									<Text className='color gray'>
-										{item.about}
-									</Text>
+									<Text className="color gray">{item.about}</Text>
 								</div>
 							);
 						})}
 					</div>
-					<Space h='96' />
-					<Text size='XL'>Sponsors</Text>
-					<div className='split2 slim' style={{ margin: 'auto' }}>
+					<Space h="96" />
+					<Text size="XL">Sponsors</Text>
+					<div className="split2 slim" style={{ margin: "auto" }}>
 						<a
-							className='flex spaceChildren'
-							target='noreferer'
-							href='https://rosenfeldmedia.com/'
+							className="flex spaceChildren"
+							target="noreferer"
+							href="https://rosenfeldmedia.com/"
 						>
-							<Icon
-								src='logo-rosenfeldmedia.svg'
-								w='256'
-								h='140'
-							/>
+							<Icon src="logo-rosenfeldmedia.svg" w="256" h="140" />
 						</a>
 						<a
-							className='flex spaceChildren'
-							target='noreferer'
-							href='https://www.sketch.com'
+							className="flex spaceChildren"
+							target="noreferer"
+							href="https://www.sketch.com"
 						>
-							<Icon src='Sketch-Logo-Light.svg' w='256' h='128' />
+							<Icon src="Sketch-Logo-Light.svg" w="256" h="128" />
 						</a>
 					</div>
 				</Section>
@@ -1182,10 +1148,10 @@ function Rubric(params) {
 		<>
 			<Text
 				style={{
-					borderRadius: '8px',
-					padding: '8px 12px',
-					color: 'var(--black)',
-					background: 'var(--d-green)',
+					borderRadius: "8px",
+					padding: "8px 12px",
+					color: "var(--black)",
+					background: "var(--d-green)",
 				}}
 			>
 				Challenge Brief
@@ -1195,16 +1161,16 @@ function Rubric(params) {
 					{
 						start: 0,
 						item: (
-							<div className='flex card spaceChildren'>
-								<Text size='L' className='color white'>
-									The prompt will be revealed{' '}
+							<div className="flex card spaceChildren">
+								<Text size="L" className="color white">
+									The prompt will be revealed{" "}
 									<TimerText
 										style={{
-											color: 'white',
-											fontSize: 'inherit',
-											fontWeight: 'inherit',
+											color: "white",
+											fontSize: "inherit",
+											fontWeight: "inherit",
 										}}
-										start='1/28/2022 6:30:00 PM (PST)'
+										start="1/28/2022 6:30:00 PM (PST)"
 									/>
 									.
 								</Text>
@@ -1212,42 +1178,34 @@ function Rubric(params) {
 						),
 					},
 					{
-						start: '1/28/2022 6:30:00 PM (PST)',
+						start: "1/28/2022 6:30:00 PM (PST)",
 						item: (
-							<div className='flex card spaceChildren'>
+							<div className="flex card spaceChildren">
 								<Text
-									size='L'
-									className='color white'
-									style={{ maxWidth: '768px' }}
+									size="L"
+									className="color white"
+									style={{ maxWidth: "768px" }}
 								>
-									Design your own desktop or mobile
-									application that advocates for either (1)
-									social justice or (2) sustainability.
+									Design your own desktop or mobile application that advocates
+									for either (1) social justice or (2) sustainability.
 								</Text>
-								<Text className='color gray'>
-									To elaborate, examples of potential
-									solutions are:
+								<Text className="color gray">
+									To elaborate, examples of potential solutions are:
 								</Text>
-								<div className='split2'>
+								<div className="split2">
 									<div>
-										<Text className='color pink'>
-											Social Justice
-										</Text>
-										<Text className='color silver textAlignLeft'>
-											A product/service that encourages or
-											provides the opportunity for equity
-											in economic, political, or social
+										<Text className="color pink">Social Justice</Text>
+										<Text className="color silver textAlignLeft">
+											A product/service that encourages or provides the
+											opportunity for equity in economic, political, or social
 											issues.
 										</Text>
 									</div>
 									<div>
-										<Text className='color pink'>
-											Sustainability
-										</Text>
-										<Text className='color silver textAlignLeft'>
-											A product/service that promotes
-											sustainable behaviors to combat the
-											climate crisis.
+										<Text className="color pink">Sustainability</Text>
+										<Text className="color silver textAlignLeft">
+											A product/service that promotes sustainable behaviors to
+											combat the climate crisis.
 										</Text>
 									</div>
 								</div>
@@ -1256,427 +1214,317 @@ function Rubric(params) {
 									onClick={() => {
 										toggleExpand();
 									}}
-									className='pointer flex row'
+									className="pointer flex row"
 									style={{
-										border: 'solid 1px var(--d-green)',
-										width: 'unset',
-										borderRadius: '12px',
+										border: "solid 1px var(--d-green)",
+										width: "unset",
+										borderRadius: "12px",
 									}}
 								>
 									<Text
 										style={{
-											whiteSpace: 'nowrap',
-											borderRadius: '8px',
-											padding: '8px 12px',
-											color: 'var(--black)',
-											background: 'var(--d-green)',
-											width: 'unset',
+											whiteSpace: "nowrap",
+											borderRadius: "8px",
+											padding: "8px 12px",
+											color: "var(--black)",
+											background: "var(--d-green)",
+											width: "unset",
 										}}
 									>
 										Grading Rubric
 									</Text>
-									<div
-										style={{ padding: '4px 16px' }}
-										className='flex row'
-									>
-										<Text className='color white'>
-											{expand ? 'Hide' : 'View'} Full
-											Rubric
+									<div style={{ padding: "4px 16px" }} className="flex row">
+										<Text className="color white">
+											{expand ? "Hide" : "View"} Full Rubric
 										</Text>
 										<svg
-											viewBox='0 0 12 12'
-											xmlns='http://www.w3.org/2000/svg'
-											xmlSpace='preserve'
+											viewBox="0 0 12 12"
+											xmlns="http://www.w3.org/2000/svg"
+											xmlSpace="preserve"
 											style={{
-												fillRule: 'evenodd',
-												clipRule: 'evenodd',
-												strokeLinejoin: 'round',
+												fillRule: "evenodd",
+												clipRule: "evenodd",
+												strokeLinejoin: "round",
 												strokeMiterlimit: 2,
-												width: '12px',
-												marginLeft: '8px',
-												transform: expand
-													? 'rotateZ(0deg)'
-													: 'rotateZ(180deg)',
-												transition: '0.4s',
+												width: "12px",
+												marginLeft: "8px",
+												transform: expand ? "rotateZ(0deg)" : "rotateZ(180deg)",
+												transition: "0.4s",
 											}}
 										>
 											<path
-												style={{ fill: '#fff' }}
-												d='M2.425 7.735 6 4.16l3.575 3.575a1 1 0 0 0 1.414-1.414L6.707 2.039a.999.999 0 0 0-1.414 0L1.011 6.321a.999.999 0 1 0 1.414 1.414Z'
+												style={{ fill: "#fff" }}
+												d="M2.425 7.735 6 4.16l3.575 3.575a1 1 0 0 0 1.414-1.414L6.707 2.039a.999.999 0 0 0-1.414 0L1.011 6.321a.999.999 0 1 0 1.414 1.414Z"
 											/>
 										</svg>
 									</div>
 								</div>
 
 								{!expand ? (
-									<div className='flex'>
+									<div className="flex">
 										<div
-											className='split2 rubric'
+											className="split2 rubric"
 											style={{
-												gap: '8px',
-												gridTemplateColumns: '1fr 2fr',
-												width: '100%',
-												maxWidth: '768px',
+												gap: "8px",
+												gridTemplateColumns: "1fr 2fr",
+												width: "100%",
+												maxWidth: "768px",
 											}}
 										>
-											<div className='flex left'>
-												<Text
-													style={{ color: '#7dffcf' }}
-												>
-													70 Points
-												</Text>
+											<div className="flex left">
+												<Text style={{ color: "#7dffcf" }}>70 Points</Text>
 											</div>
-											<div className='flex left'>
-												<Text className='bold'>
-													Total
-												</Text>
+											<div className="flex left">
+												<Text className="bold">Total</Text>
 											</div>
 
-											<div className='flex left'>
-												<Text className='color green'>
-													20 Points
-												</Text>
+											<div className="flex left">
+												<Text className="color green">20 Points</Text>
 											</div>
-											<div className='flex left'>
-												<Text className='bold'>
-													User Experience
-												</Text>
+											<div className="flex left">
+												<Text className="bold">User Experience</Text>
 											</div>
 
-											<div className='flex left'>
-												<Text className='color green'>
-													10 Points
-												</Text>
+											<div className="flex left">
+												<Text className="color green">10 Points</Text>
 											</div>
-											<div className='flex left'>
-												<Text className='bold'>
-													User Interface
-												</Text>
+											<div className="flex left">
+												<Text className="bold">User Interface</Text>
 											</div>
 
-											<div className='flex left'>
-												<Text className='color pink'>
-													5 Points
-												</Text>
+											<div className="flex left">
+												<Text className="color pink">5 Points</Text>
 											</div>
-											<div className='flex left'>
-												<Text className='bold'>
-													Target Audience
-												</Text>
+											<div className="flex left">
+												<Text className="bold">Target Audience</Text>
 											</div>
 
-											<div className='flex left'>
-												<Text className='color pink'>
-													15 Points
-												</Text>
+											<div className="flex left">
+												<Text className="color pink">15 Points</Text>
 											</div>
-											<div className='flex left'>
-												<Text className='bold'>
-													User Research
-												</Text>
+											<div className="flex left">
+												<Text className="bold">User Research</Text>
 											</div>
 
-											<div className='flex left'>
-												<Text className='color pink'>
-													20 Points
-												</Text>
+											<div className="flex left">
+												<Text className="color pink">20 Points</Text>
 											</div>
-											<div className='flex left'>
-												<Text className='bold'>
-													Design Thinking Process
-												</Text>
+											<div className="flex left">
+												<Text className="bold">Design Thinking Process</Text>
 											</div>
 										</div>
 									</div>
 								) : (
-									<div className='open'>
-										<div className='rubric'>
-											<div className='flex left'>
-												<Text
-													style={{ color: '#7dffcf' }}
-												>
+									<div className="open">
+										<div className="rubric">
+											<div className="flex left">
+												<Text style={{ color: "#7dffcf" }}>
 													70 Total Points
 												</Text>
 											</div>
-											<div className='wideOnly'>
+											<div className="wideOnly">
 												<Text>Excellent</Text>
 											</div>
-											<div className='wideOnly'>
+											<div className="wideOnly">
 												<Text>Great</Text>
 											</div>
-											<div className='wideOnly'>
+											<div className="wideOnly">
 												<Text>Good</Text>
 											</div>
-											<div className='wideOnly'>
+											<div className="wideOnly">
 												<Text>Adequate</Text>
 											</div>
 
-											<div className='spaceChildrenSmall'>
-												<Text className='color green'>
-													20 Points
-												</Text>
-												<Text className='bold'>
-													User Experience
-												</Text>
+											<div className="spaceChildrenSmall">
+												<Text className="color green">20 Points</Text>
+												<Text className="bold">User Experience</Text>
 												<Text>
-													Is the final product
-													user-friendly and intuitive?
+													Is the final product user-friendly and intuitive?
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Intuitive and easily used
-													without guidance.
-													Call-to-action elements are
-													obvious, and the flow is
-													instinctual. There is a
-													clear path to complete tasks
+											<div className="wideOnly">
+												<Text className="color silver">
+													Intuitive and easily used without guidance.
+													Call-to-action elements are obvious, and the flow is
+													instinctual. There is a clear path to complete tasks
 													or reach a goal.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Solution is mostly
-													intuitive, but some guidance
-													is needed. Flow only meets
-													expectations. User is
-													eventually able to reach the
-													goal and complete the task.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Solution is mostly intuitive, but some guidance is
+													needed. Flow only meets expectations. User is
+													eventually able to reach the goal and complete the
+													task.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Requires some effort to use
-													and interact with. Users can
-													complete tasks, but in
-													longer times and with more
+											<div className="wideOnly">
+												<Text className="color silver">
+													Requires some effort to use and interact with. Users
+													can complete tasks, but in longer times and with more
 													effort.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Heavily unintuitive. Does
-													not reflect much effort.
-													User is not able to complete
-													the task.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Heavily unintuitive. Does not reflect much effort.
+													User is not able to complete the task.
 												</Text>
 											</div>
 
-											<div className='spaceChildrenSmall'>
-												<Text className='color green'>
-													10 Points
-												</Text>
-												<Text className='bold'>
-													User Interface
-												</Text>
+											<div className="spaceChildrenSmall">
+												<Text className="color green">10 Points</Text>
+												<Text className="bold">User Interface</Text>
 												<Text>
-													Is the overall user
-													interface visually appealing
-													without sacrificing its
-													functionality?
+													Is the overall user interface visually appealing
+													without sacrificing its functionality?
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Follows the visual design
-													principles with powerful
-													design choices of
-													typography, color, grids
-													that seamlessly integrates
-													with the functionality.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Follows the visual design principles with powerful
+													design choices of typography, color, grids that
+													seamlessly integrates with the functionality.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Uses a clear system of
-													grids, typography, color,
-													and design principles.
-													Visuals may not be relevant
-													to the target audience or be
-													used meaningfully to the
+											<div className="wideOnly">
+												<Text className="color silver">
+													Uses a clear system of grids, typography, color, and
+													design principles. Visuals may not be relevant to the
+													target audience or be used meaningfully to the
 													solution.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Does not employ clear use of
-													grids, typography, and
-													color. Only some design
-													principles are applied.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Does not employ clear use of grids, typography, and
+													color. Only some design principles are applied.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Lack of visual design
-													principles.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Lack of visual design principles.
 												</Text>
 											</div>
 										</div>
 
 										<div
-											className='spaceChildrenSmall'
-											style={{ padding: '32px 0' }}
+											className="spaceChildrenSmall"
+											style={{ padding: "32px 0" }}
 										>
-											<Text className='color pink'>
-												The following sections will be
-												graded based on your
-												presentations (only applicable
-												to finalists!)
+											<Text className="color pink">
+												The following sections will be graded based on your
+												presentations (only applicable to finalists!)
 											</Text>
 										</div>
 
-										<div className='rubric'>
-											<div className='spaceChildrenSmall'>
-												<Text className='color green'>
-													5 Points
-												</Text>
-												<Text className='bold'>
-													Target Audience
-												</Text>
+										<div className="rubric">
+											<div className="spaceChildrenSmall">
+												<Text className="color green">5 Points</Text>
+												<Text className="bold">Target Audience</Text>
 												<Text>
-													Does your solution target
-													the correct audience and
+													Does your solution target the correct audience and
 													their needs?
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													A clear understanding of an
-													appropriate target audience
-													and their needs. It is
-													designed with navigation,
-													visuals, and language to
-													communi-cate clearly to a
-													specific persona and their
-													needs.
+											<div className="wideOnly">
+												<Text className="color silver">
+													A clear understanding of an appropriate target
+													audience and their needs. It is designed with
+													navigation, visuals, and language to communi-cate
+													clearly to a specific persona and their needs.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Solution sufficiently
-													addresses a specific
-													audience’s needs. However
-													they are not addressed in
-													their entirety.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Solution sufficiently addresses a specific audience’s
+													needs. However they are not addressed in their
+													entirety.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Correctly addresses problems
-													and needs. Only a specific
-													group in the target audience
-													is included.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Correctly addresses problems and needs. Only a
+													specific group in the target audience is included.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													No specific target audience
-													addressed.
+											<div className="wideOnly">
+												<Text className="color silver">
+													No specific target audience addressed.
 												</Text>
 											</div>
 
-											<div className='spaceChildrenSmall'>
-												<Text className='color green'>
-													15 Points
-												</Text>
-												<Text className='bold'>
-													User Research
-												</Text>
+											<div className="spaceChildrenSmall">
+												<Text className="color green">15 Points</Text>
+												<Text className="bold">User Research</Text>
 												<Text>
-													Are the suggested solutions
-													backed up with extensive
-													research of the users’
-													needs?
+													Are the suggested solutions backed up with extensive
+													research of the users’ needs?
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Pulls data from a variety of
-													credible, meaningful
-													sources. Research is
-													conducted using both general
-													and specific lenses. Results
-													are processed and presented
+											<div className="wideOnly">
+												<Text className="color silver">
+													Pulls data from a variety of credible, meaningful
+													sources. Research is conducted using both general and
+													specific lenses. Results are processed and presented
 													in a clear way.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Collects thorough data
-													regarding potential users.
-													Sources may be surface-level
-													and not rigorous. Research
-													may not be relevant to the
-													specific problem.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Collects thorough data regarding potential users.
+													Sources may be surface-level and not rigorous.
+													Research may not be relevant to the specific problem.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Average data about the
-													general audiences’ consensus
-													is provided but does not tap
-													into users’ specific needs.
-													Conducted research does not
-													seem credible and rational.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Average data about the general audiences’ consensus is
+													provided but does not tap into users’ specific needs.
+													Conducted research does not seem credible and
+													rational.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Little to no research to
-													empathize with the target
-													user base. Data is not based
-													on factual situations.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Little to no research to empathize with the target
+													user base. Data is not based on factual situations.
 												</Text>
 											</div>
 
-											<div className='spaceChildrenSmall'>
-												<Text className='color green'>
-													20 Points
-												</Text>
-												<Text className='bold'>
-													Design Thinking Process
-												</Text>
+											<div className="spaceChildrenSmall">
+												<Text className="color green">20 Points</Text>
+												<Text className="bold">Design Thinking Process</Text>
 												<Text>
-													Does your product properly
-													address the issues through a
-													set of well-thought
-													solutions?
+													Does your product properly address the issues through
+													a set of well-thought solutions?
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Thoughtfully proposes an
-													innovative approach that
-													addresses the issue on hand.
-													Considers the real-world
-													implications of the product.
-													Solutions are creative and
-													crafted carefully with users
-													in mind.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Thoughtfully proposes an innovative approach that
+													addresses the issue on hand. Considers the real-world
+													implications of the product. Solutions are creative
+													and crafted carefully with users in mind.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Solution is practical and
-													relevant, but not creative.
-													Concept is strong and is
-													helpful to the user, but
+											<div className="wideOnly">
+												<Text className="color silver">
+													Solution is practical and relevant, but not creative.
+													Concept is strong and is helpful to the user, but
 													meets typical expectations.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Solution is not clear or
-													relevant. Does not improve
-													upon other typical
-													solutions.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Solution is not clear or relevant. Does not improve
+													upon other typical solutions.
 												</Text>
 											</div>
-											<div className='wideOnly'>
-												<Text className='color silver'>
-													Lack of creativity and
-													relevance. Does not solve
-													the problem.
+											<div className="wideOnly">
+												<Text className="color silver">
+													Lack of creativity and relevance. Does not solve the
+													problem.
 												</Text>
 											</div>
 										</div>
@@ -1693,7 +1541,7 @@ function Rubric(params) {
 
 function StatusBlock(props) {
 	return (
-		<div id='timer' className='flex spaceChildrenSmall'>
+		<div id="timer" className="flex spaceChildrenSmall">
 			<div>
 				<TimeRouter
 					timeline={[
@@ -1701,162 +1549,152 @@ function StatusBlock(props) {
 							start: 0,
 							item: (
 								<Text>
-									Registration open and closing{' '}
-									<TimerText start='1/26/2022 11:59:00 PM (PST)' />
+									Registration open and closing{" "}
+									<TimerText start="1/26/2022 11:59:00 PM (PST)" />
 								</Text>
 							),
 						},
 						{
-							start: '1/26/2022 11:59:00 PM (PST)',
+							start: "1/26/2022 11:59:00 PM (PST)",
 							item: (
 								<Text>
-									Join the opening ceremony{' '}
-									<TimerText start='1/28/2022 6:00:00 PM (PST)' />
+									Join the opening ceremony{" "}
+									<TimerText start="1/28/2022 6:00:00 PM (PST)" />
 								</Text>
 							),
 						},
 						{
-							start: '1/28/2022 5:00:00 PM (PST)',
+							start: "1/28/2022 5:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Opening ceremony starts{' '}
-										<TimerText start='1/28/2022 6:00:00 PM (PST)' />
+										Opening ceremony starts{" "}
+										<TimerText start="1/28/2022 6:00:00 PM (PST)" />
 									</Text>
 									<a
-										className='button S fill blue'
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										href='https://uci.zoom.us/j/94495432963'
-										target='noreferer'
+										href="https://uci.zoom.us/j/94495432963"
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
 							),
 						},
 						{
-							start: '1/28/2022 6:00:00 PM (PST)',
+							start: "1/28/2022 6:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>Join the opening ceremony now</Text>
 									<a
-										className='button S fill blue'
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										href='https://uci.zoom.us/j/94495432963'
-										target='noreferer'
+										href="https://uci.zoom.us/j/94495432963"
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
 							),
 						},
 						{
-							start: '1/28/2022 7:00:00 PM (PST)',
+							start: "1/28/2022 7:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Design-a-thon has begun! Tune into our
-										workshops tomorrow
+										Design-a-thon has begun! Tune into our workshops tomorrow
 									</Text>
 								</>
 							),
 						},
 
 						{
-							start: '1/29/2022 1:00:00 AM (PST)',
+							start: "1/29/2022 1:00:00 AM (PST)",
 							item: (
 								<>
 									<Text>
-										Next Workshop: Designing Under
-										Constraints with Katrina Liu{' '}
-										<TimerText start='1/29/2022 10:00:00 AM (PST)' />
+										Next Workshop: Designing Under Constraints with Katrina Liu{" "}
+										<TimerText start="1/29/2022 10:00:00 AM (PST)" />
 									</Text>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 9:55:00 AM (PST)',
+							start: "1/29/2022 9:55:00 AM (PST)",
 							item: (
 								<>
 									<Text>
-										Workshop{' '}
-										<TimerText start='1/29/2022 10:00:00 AM (PST)' />
-										: Designing Under Constraints with
-										Katrina Liu{' '}
+										Workshop <TimerText start="1/29/2022 10:00:00 AM (PST)" />:
+										Designing Under Constraints with Katrina Liu{" "}
 									</Text>
 									<a
-										className='button S fill blue'
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										href='https://uci.zoom.us/j/97624894611'
-										target='noreferer'
+										href="https://uci.zoom.us/j/97624894611"
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 10:00:00 AM (PST)',
+							start: "1/29/2022 10:00:00 AM (PST)",
 							item: (
 								<>
 									<Text>
-										<Text className='color red'>
-											<Icon
-												src='live-event.svg'
-												w='22'
-												h='22'
-											/>{' '}
-											Live Workshop:
-										</Text>{' '}
-										Designing Under Constraints with Katrina
-										Liu
+										<Text className="color red">
+											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+										</Text>{" "}
+										Designing Under Constraints with Katrina Liu
 									</Text>
 									<a
-										className='button S fill blue'
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										href='https://uci.zoom.us/j/97624894611'
-										target='noreferer'
+										href="https://uci.zoom.us/j/97624894611"
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
@@ -1864,81 +1702,74 @@ function StatusBlock(props) {
 						},
 
 						{
-							start: '1/29/2022 10:30:00 AM (PST)',
+							start: "1/29/2022 10:30:00 AM (PST)",
 							item: (
 								<>
 									<Text>
-										Next Workshop{' '}
-										<TimerText start='1/29/2022 12:00:00 PM (PST)' />
-										: How to Effectively Present Your Design
-										with Samanvay Kasarala
+										Next Workshop{" "}
+										<TimerText start="1/29/2022 12:00:00 PM (PST)" />: How to
+										Effectively Present Your Design with Samanvay Kasarala
 									</Text>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 11:55:00 AM (PST)',
+							start: "1/29/2022 11:55:00 AM (PST)",
 							item: (
 								<>
 									<Text>
-										Workshop{' '}
-										<TimerText start='1/29/2022 12:00:00 PM (PST)' />
-										: How to Effectively Present Your Design
-										with Samanvay Kasarala
+										Workshop <TimerText start="1/29/2022 12:00:00 PM (PST)" />:
+										How to Effectively Present Your Design with Samanvay
+										Kasarala
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/91028660488'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/91028660488"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 12:00:00 PM (PST)',
+							start: "1/29/2022 12:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										<Text className='color red'>
-											<Icon
-												src='live-event.svg'
-												w='22'
-												h='22'
-											/>{' '}
-											Live Workshop:
-										</Text>{' '}
-										How to Effectively Present Your Design
-										with Samanvay Kasarala
+										<Text className="color red">
+											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+										</Text>{" "}
+										How to Effectively Present Your Design with Samanvay
+										Kasarala
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/91028660488'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/91028660488"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
@@ -1946,81 +1777,74 @@ function StatusBlock(props) {
 						},
 
 						{
-							start: '1/29/2022 12:30:00 PM (PST)',
+							start: "1/29/2022 12:30:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Next Workshop{' '}
-										<TimerText start='1/29/2022 2:00:00 PM (PST)' />
-										: How to Build Tech for Social Good with
-										Alan Chang and Mingjia Wang
+										Next Workshop{" "}
+										<TimerText start="1/29/2022 2:00:00 PM (PST)" />: How to
+										Build Tech for Social Good with Alan Chang and Mingjia Wang
 									</Text>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 1:55:00 PM (PST)',
+							start: "1/29/2022 1:55:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Workshop{' '}
-										<TimerText start='1/29/2022 2:00:00 PM (PST)' />
-										: How to Build Tech for Social Good with
-										Alan Chang and Mingjia Wang
+										Workshop <TimerText start="1/29/2022 2:00:00 PM (PST)" />:
+										How to Build Tech for Social Good with Alan Chang and
+										Mingjia Wang
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/96665045518'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/96665045518"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 2:00:00 PM (PST)',
+							start: "1/29/2022 2:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										<Text className='color red'>
-											<Icon
-												src='live-event.svg'
-												w='22'
-												h='22'
-											/>{' '}
-											Live Workshop:
-										</Text>{' '}
-										How to Build Tech for Social Good with
-										Alan Chang and Mingjia Wang
+										<Text className="color red">
+											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+										</Text>{" "}
+										How to Build Tech for Social Good with Alan Chang and
+										Mingjia Wang
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/96665045518'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/96665045518"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
@@ -2028,80 +1852,72 @@ function StatusBlock(props) {
 						},
 
 						{
-							start: '1/29/2022 2:30:00 PM (PST)',
+							start: "1/29/2022 2:30:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Next Workshop{' '}
-										<TimerText start='1/29/2022 3:00:00 PM (PST)' />
-										: Prototyping in Figma with Evangeline
-										Gao
+										Next Workshop{" "}
+										<TimerText start="1/29/2022 3:00:00 PM (PST)" />:
+										Prototyping in Figma with Evangeline Gao
 									</Text>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 2:55:00 PM (PST)',
+							start: "1/29/2022 2:55:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Workshop{' '}
-										<TimerText start='1/29/2022 3:00:00 PM (PST)' />
-										: Prototyping in Figma with Evangeline
-										Gao
-									</Text>
-									<a
-										href='https://uci.zoom.us/j/97913505371'
-										className='button S fill blue'
-										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
-										}}
-										target='noreferer'
-									>
-										<Text>Zoom Link</Text>
-										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
-										/>
-									</a>
-								</>
-							),
-						},
-						{
-							start: '1/29/2022 3:00:00 PM (PST)',
-							item: (
-								<>
-									<Text>
-										<Text className='color red'>
-											<Icon
-												src='live-event.svg'
-												w='22'
-												h='22'
-											/>{' '}
-											Live Workshop:
-										</Text>{' '}
+										Workshop <TimerText start="1/29/2022 3:00:00 PM (PST)" />:
 										Prototyping in Figma with Evangeline Gao
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/97913505371'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/97913505371"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
+										/>
+									</a>
+								</>
+							),
+						},
+						{
+							start: "1/29/2022 3:00:00 PM (PST)",
+							item: (
+								<>
+									<Text>
+										<Text className="color red">
+											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+										</Text>{" "}
+										Prototyping in Figma with Evangeline Gao
+									</Text>
+									<a
+										href="https://uci.zoom.us/j/97913505371"
+										className="button S fill blue"
+										style={{
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
+										}}
+										target="noreferer"
+									>
+										<Text>Zoom Link</Text>
+										<Icon
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
@@ -2109,78 +1925,72 @@ function StatusBlock(props) {
 						},
 
 						{
-							start: '1/29/2022 3:30:00 PM (PST)',
+							start: "1/29/2022 3:30:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Next Workshop{' '}
-										<TimerText start='1/29/2022 5:00:00 PM (PST)' />
-										: Design Basics with Hannah Limary
+										Next Workshop{" "}
+										<TimerText start="1/29/2022 5:00:00 PM (PST)" />: Design
+										Basics with Hannah Limary
 									</Text>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 4:55:00 PM (PST)',
+							start: "1/29/2022 4:55:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Workshop{' '}
-										<TimerText start='1/29/2022 5:00:00 PM (PST)' />
-										: Design Basics with Hannah Limary
-									</Text>
-									<a
-										href='https://uci.zoom.us/j/94069827938'
-										className='button S fill blue'
-										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
-										}}
-										target='noreferer'
-									>
-										<Text>Zoom Link</Text>
-										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
-										/>
-									</a>
-								</>
-							),
-						},
-						{
-							start: '1/29/2022 5:00:00 PM (PST)',
-							item: (
-								<>
-									<Text>
-										<Text className='color red'>
-											<Icon
-												src='live-event.svg'
-												w='22'
-												h='22'
-											/>{' '}
-											Live Workshop:
-										</Text>{' '}
+										Workshop <TimerText start="1/29/2022 5:00:00 PM (PST)" />:
 										Design Basics with Hannah Limary
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/94069827938'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/94069827938"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
+										/>
+									</a>
+								</>
+							),
+						},
+						{
+							start: "1/29/2022 5:00:00 PM (PST)",
+							item: (
+								<>
+									<Text>
+										<Text className="color red">
+											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+										</Text>{" "}
+										Design Basics with Hannah Limary
+									</Text>
+									<a
+										href="https://uci.zoom.us/j/94069827938"
+										className="button S fill blue"
+										style={{
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
+										}}
+										target="noreferer"
+									>
+										<Text>Zoom Link</Text>
+										<Icon
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
@@ -2188,30 +1998,30 @@ function StatusBlock(props) {
 						},
 
 						{
-							start: '1/29/2022 5:30:00 PM (PST)',
+							start: "1/29/2022 5:30:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Submissions due{' '}
-										<TimerText start='1/30/2022 1:00:00 PM (PST)' />
-										. You got this!
+										Submissions due{" "}
+										<TimerText start="1/30/2022 1:00:00 PM (PST)" />. You got
+										this!
 									</Text>
 									<a
-										href='https://forms.gle/B4cpgMFtYRawP2ue8'
-										className='button S fill blue'
+										href="https://forms.gle/B4cpgMFtYRawP2ue8"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Submission Form</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
@@ -2219,90 +2029,83 @@ function StatusBlock(props) {
 						},
 
 						{
-							start: '1/30/2022 1:00:00 PM (PST)',
+							start: "1/30/2022 1:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Submissions closed – Judges are
-										reviewing prototypes now
+										Submissions closed – Judges are reviewing prototypes now
 									</Text>
 								</>
 							),
 						},
 
 						{
-							start: '1/30/2022 3:00:00 PM (PST)',
+							start: "1/30/2022 3:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										The Finalists have been notified,
-										presentations due{' '}
-										<TimerText start='1/30/2022 3:45:00 PM (PST)' />
+										The Finalists have been notified, presentations due{" "}
+										<TimerText start="1/30/2022 3:45:00 PM (PST)" />
 									</Text>
 								</>
 							),
 						},
 
 						{
-							start: '1/30/2022 3:45:00 PM (PST)',
+							start: "1/30/2022 3:45:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Finalists presentations{' '}
-										<TimerText start='1/30/2022 4:00:00 PM (PST)' />
+										Finalists presentations{" "}
+										<TimerText start="1/30/2022 4:00:00 PM (PST)" />
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/94953727209'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/94953727209"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 4:00:00 PM (PST)',
+							start: "1/29/2022 4:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										<Text className='color red'>
-											<Icon
-												src='live-event.svg'
-												w='22'
-												h='22'
-											/>{' '}
-											Live:{' '}
+										<Text className="color red">
+											<Icon src="live-event.svg" w="22" h="22" /> Live:{" "}
 										</Text>
 										Finalist Presentations
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/94953727209'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/94953727209"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
@@ -2310,65 +2113,60 @@ function StatusBlock(props) {
 						},
 
 						{
-							start: '1/30/2022 5:00:00 PM (PST)',
+							start: "1/30/2022 5:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										Closing ceremony{' '}
-										<TimerText start='1/30/2022 6:00:00 PM (PST)' />
+										Closing ceremony{" "}
+										<TimerText start="1/30/2022 6:00:00 PM (PST)" />
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/98486611942'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/98486611942"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
 							),
 						},
 						{
-							start: '1/29/2022 6:00:00 PM (PST)',
+							start: "1/29/2022 6:00:00 PM (PST)",
 							item: (
 								<>
 									<Text>
-										<Text className='color red'>
-											<Icon
-												src='live-event.svg'
-												w='22'
-												h='22'
-											/>{' '}
-											Live:
-										</Text>{' '}
+										<Text className="color red">
+											<Icon src="live-event.svg" w="22" h="22" /> Live:
+										</Text>{" "}
 										Closing Ceremony
 									</Text>
 									<a
-										href='https://uci.zoom.us/j/98486611942'
-										className='button S fill blue'
+										href="https://uci.zoom.us/j/98486611942"
+										className="button S fill blue"
 										style={{
-											marginLeft: '12px',
-											marginRight: '-8px',
-											padding: '4px 12px',
+											marginLeft: "12px",
+											marginRight: "-8px",
+											padding: "4px 12px",
 										}}
-										target='noreferer'
+										target="noreferer"
 									>
 										<Text>Zoom Link</Text>
 										<Icon
-											w='24'
-											h='24'
-											src='pagelink-white.svg'
-											style={{ marginLeft: '4px' }}
+											w="24"
+											h="24"
+											src="pagelink-white.svg"
+											style={{ marginLeft: "4px" }}
 										/>
 									</a>
 								</>
@@ -2376,13 +2174,10 @@ function StatusBlock(props) {
 						},
 
 						{
-							start: '1/30/2022 6:30:00 PM (PST)',
+							start: "1/30/2022 6:30:00 PM (PST)",
 							item: (
 								<>
-									<Text>
-										Design-a-thon has concluded, thank you
-										every one!
-									</Text>
+									<Text>Design-a-thon has concluded, thank you every one!</Text>
 								</>
 							),
 						},
@@ -2405,7 +2200,7 @@ function Toggle(props) {
 	if (expand) {
 		return (
 			<div
-				className='pointer'
+				className="pointer"
 				onClick={() => {
 					toggleExpand();
 				}}
@@ -2416,7 +2211,7 @@ function Toggle(props) {
 	} else {
 		return (
 			<div
-				className='pointer'
+				className="pointer"
 				onClick={() => {
 					toggleExpand();
 				}}
@@ -2438,16 +2233,16 @@ var view, gl;
 var Main = {};
 const RESOLUTION = window.devicePixelRatio;
 function initialize() {
-	view = document.getElementById('view');
+	view = document.getElementById("view");
 	// gl = view.getContext("webgl2", {antialias: false, preserveDrawingBuffer: true, premultipliedAlpha: false })
-	gl = view.getContext('webgl', {
+	gl = view.getContext("webgl", {
 		antialias: false,
 		preserveDrawingBuffer: true,
 		premultipliedAlpha: false,
 	});
 
-	window.addEventListener('resize', resize);
-	window.addEventListener('scroll', scroll);
+	window.addEventListener("resize", resize);
+	window.addEventListener("scroll", scroll);
 
 	Main.target = {};
 	Main.target.view = {
@@ -2482,24 +2277,24 @@ function frame() {
 	}
 
 	Main.prog.render.prepareDraw();
-	Main.prog.render.setUniform['u_T'](T + 0.5);
+	Main.prog.render.setUniform["u_T"](T + 0.5);
 	Main.prog.render.draw();
 
 	if (run) requestAnimationFrame(frame);
 }
 function resize() {
 	Main.target.view.w = Math.ceil(
-		view.getBoundingClientRect().width * RESOLUTION
+		view.getBoundingClientRect().width * RESOLUTION,
 	);
 	Main.target.view.h = Math.ceil(
-		view.getBoundingClientRect().height * RESOLUTION
+		view.getBoundingClientRect().height * RESOLUTION,
 	);
 
 	view.width = Main.target.view.w;
 	view.height = Main.target.view.h;
 
-	Main.prog.render.setUniform['aspect'](
-		Main.target.view.w / Main.target.view.h
+	Main.prog.render.setUniform["aspect"](
+		Main.target.view.w / Main.target.view.h,
 	);
 }
 function scroll() {
@@ -2539,52 +2334,47 @@ class Program {
 		const vertexBuffer = gl.createBuffer();
 		gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 		gl.bufferData(gl.ARRAY_BUFFER, Verticies, gl.STATIC_DRAW);
-		const positionAttribLocation = gl.getAttribLocation(
-			this.program,
-			'vertex'
-		);
+		const positionAttribLocation = gl.getAttribLocation(this.program, "vertex");
 		gl.vertexAttribPointer(
 			positionAttribLocation,
 			2,
 			gl.FLOAT,
 			gl.FALSE,
 			2 * Float32Array.BYTES_PER_ELEMENT,
-			0
+			0,
 		);
 		gl.enableVertexAttribArray(positionAttribLocation);
 
 		// Generate uniform setters
 		this.setUniform = {};
 		this.uLocation = {};
-		let uniformArgs = (vertCode + fragCode).matchAll(
-			'uniform +(.+) +(.+);'
-		);
+		let uniformArgs = (vertCode + fragCode).matchAll("uniform +(.+) +(.+);");
 		for (let i of uniformArgs) {
 			let location = gl.getUniformLocation(this.program, i[2]);
 			this.uLocation[i[2]] = location;
-			let setFuncName = 'uniform';
-			if (!['sampler2D'].includes(i[1])) {
+			let setFuncName = "uniform";
+			if (!["sampler2D"].includes(i[1])) {
 				switch (i[1]) {
-					case 'float':
-						setFuncName += '1f';
+					case "float":
+						setFuncName += "1f";
 						break;
-					case 'vec2':
-						setFuncName += '2fv';
+					case "vec2":
+						setFuncName += "2fv";
 						break;
-					case 'vec3':
-						setFuncName += '3fv';
+					case "vec3":
+						setFuncName += "3fv";
 						break;
-					case 'vec4':
-						setFuncName += '4fv';
+					case "vec4":
+						setFuncName += "4fv";
 						break;
-					case 'int':
-						setFuncName += '1i';
+					case "int":
+						setFuncName += "1i";
 						break;
 					default:
-						alert('Undefined uniform type');
+						alert("Undefined uniform type");
 						break;
 				}
-				this.setUniform[i[2]] = value => {
+				this.setUniform[i[2]] = (value) => {
 					gl.useProgram(this.program);
 					gl[setFuncName](location, value);
 				};

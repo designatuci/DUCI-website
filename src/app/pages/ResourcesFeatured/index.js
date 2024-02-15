@@ -1,3 +1,3 @@
-import ResourcesFeatured from './ResourcesFeatured';
+import ResourcesFeatured from "./ResourcesFeatured";
 
 export default ResourcesFeatured;

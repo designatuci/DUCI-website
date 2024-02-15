@@ -1,171 +1,171 @@
-@import 'app/styles/variables';
+@import "app/styles/variables";
 
 .container {
-    display: inline-block;
-    line-height: 1.12;
-    font-size: 18px;
+	display: inline-block;
+	line-height: 1.12;
+	font-size: 18px;
 }
 
-.container>.container,
+.container > .container,
 .container s {
-    display: inline;
-    vertical-align: baseline;
+	display: inline;
+	vertical-align: baseline;
 }
 
-.block-paragraph>.container {
-    display: inline-block;
+.block-paragraph > .container {
+	display: inline-block;
 }
 
 .container s {
-    text-decoration: none;
-    font-size: inherit;
-    font-weight: inherit;
+	text-decoration: none;
+	font-size: inherit;
+	font-weight: inherit;
 }
 
 // colors
 .container {
-    &.white {
-        color: $white;
-    }
+	&.white {
+		color: $white;
+	}
 
-    &.black {
-        color: $black;
-    }
+	&.black {
+		color: $black;
+	}
 
-    &.gray {
-        color: $gray;
-    }
+	&.gray {
+		color: $gray;
+	}
 
-    &.grey {
-        color: $gray;
-    }
+	&.grey {
+		color: $gray;
+	}
 
-    &.silver {
-        color: $silver;
-    }
+	&.silver {
+		color: $silver;
+	}
 
-    &.blue {
-        color: $blue;
-    }
+	&.blue {
+		color: $blue;
+	}
 
-    &.sky {
-        color: $sky;
-    }
+	&.sky {
+		color: $sky;
+	}
 
-    &.orange {
-        color: $orange;
-    }
+	&.orange {
+		color: $orange;
+	}
 
-    &.yellow {
-        color: $yellow;
-    }
+	&.yellow {
+		color: $yellow;
+	}
 
-    &.pink {
-        color: $pink;
-    }
+	&.pink {
+		color: $pink;
+	}
 
-    &.red {
-        color: $red;
-    }
+	&.red {
+		color: $red;
+	}
 
-    &.violet {
-        color: $ultraviolet;
-    }
+	&.violet {
+		color: $ultraviolet;
+	}
 
-    &.green {
-        color: $green;
-    }
+	&.green {
+		color: $green;
+	}
 
-    // size
-    &.S {
-        font-size: 14px;
-    }
+	// size
+	&.S {
+		font-size: 14px;
+	}
 
-    &.L {
-        font-size: 24px;
-    }
+	&.L {
+		font-size: 24px;
+	}
 
-    &.XL {
-        font-size: 36px;
-    }
+	&.XL {
+		font-size: 36px;
+	}
 
-    &.XXL {
-        font-size: 56px;
-    }
+	&.XXL {
+		font-size: 56px;
+	}
 
-    &.XXXL {
-        font-size: 64px;
-    }
-    @media screen and (max-width: 768px) {
-        font-size: 16px;
+	&.XXXL {
+		font-size: 64px;
+	}
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
 
-        &.S {
-            font-size: 14px;
-        }
-    
-        &.L {
-            font-size: 20px;
-        }
-    
-        &.XL {
-            font-size: 32px;
-        }
-    
-        &.XXL {
-            font-size: 48px;
-        }
-    
-        &.XXXL {
-            font-size: 44px;
-        }
-    }
+		&.S {
+			font-size: 14px;
+		}
+
+		&.L {
+			font-size: 20px;
+		}
+
+		&.XL {
+			font-size: 32px;
+		}
+
+		&.XXL {
+			font-size: 48px;
+		}
+
+		&.XXXL {
+			font-size: 44px;
+		}
+	}
 }
 
 .container .link {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 .container .link:hover {
-    color: black;
+	color: black;
 }
 
 .containerAlignLeft .container,
 .containerAlignLeft {
-    text-align: left;
+	text-align: left;
 }
 
 .container.indent {
-    text-indent: 2em;
+	text-indent: 2em;
 }
 
 .container {
-    &.pagelink::after {
-        z-index: 1;
-        content: "";
-        display: inline-block;
-        background: url("https://designatuci.com/static/icon/link-arrow.svg") center no-repeat;
-        background-size: contain;
-        width: 18px;
-        height: 18px;
-        vertical-align: middle;
-        transform: translate(0px, -2px);
-        margin-left: 6px;
-        transition: transform 0.4s cubic-bezier(.47, .4, 0, 1);
-    
+	&.pagelink::after {
+		z-index: 1;
+		content: "";
+		display: inline-block;
+		background: url("https://designatuci.com/static/icon/link-arrow.svg") center
+			no-repeat;
+		background-size: contain;
+		width: 18px;
+		height: 18px;
+		vertical-align: middle;
+		transform: translate(0px, -2px);
+		margin-left: 6px;
+		transition: transform 0.4s cubic-bezier(0.47, 0.4, 0, 1);
+	}
+	&.pagelink.white::after {
+		background: url("https://designatuci.com/static/icon/link-arrow-white.svg")
+			center no-repeat;
+	}
+	&.pagelink.L::after {
+		width: 24px;
+		height: 24px;
+		margin-left: 10px;
+		background-size: contain;
+	}
 
-    }
-    &.pagelink.white::after {
-        background: url("https://designatuci.com/static/icon/link-arrow-white.svg") center no-repeat;
-    }
-    &.pagelink.L::after {
-        width: 24px;
-        height: 24px;
-        margin-left: 10px;
-        background-size: contain;
-    }
-    
-    &.pagelink:hover::after {
-        transform: translate(2px, -2px) scale(1.62);
-        transition-timing-function: cubic-bezier(.42, 1.52, .56, 1);
-    }
+	&.pagelink:hover::after {
+		transform: translate(2px, -2px) scale(1.62);
+		transition-timing-function: cubic-bezier(0.42, 1.52, 0.56, 1);
+	}
 }

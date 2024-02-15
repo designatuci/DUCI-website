@@ -1,23 +1,20 @@
-import { Text } from 'app/components';
-import { Section } from 'app/Symbols';
-import cn from './Rules.module.scss';
+import { Text } from "app/components";
+import { Section } from "app/Symbols";
+import cn from "./Rules.module.scss";
 
 const Rules = ({ rules }) => {
 	return (
-		<Section id='s-rules' className={cn.container}>
+		<Section id="s-rules" className={cn.container}>
 			<h2>Rules</h2>
 			{rules.map((rule, i) => (
-				<div
-					key={rule}
-					className='flex row left top spaceChildrenSmall'
-				>
+				<div key={rule} className="flex row left top spaceChildrenSmall">
 					<Text
-						size='L'
+						size="L"
 						style={{
-							minWidth: '48px',
-							display: 'block',
-							color: 'var(--deepBlue)',
-							fontWeight: 'bold'
+							minWidth: "48px",
+							display: "block",
+							color: "var(--deepBlue)",
+							fontWeight: "bold",
 						}}
 					>
 						{i + 1}

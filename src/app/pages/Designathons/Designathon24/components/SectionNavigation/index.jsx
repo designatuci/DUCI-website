@@ -46,7 +46,7 @@ const SectionNavigation = () => {
 			<div className={cn.linkButtons}>
 				{currentTime >
 					new Date(
-						"Feb 24 2023 19:00:00 GMT-0800 (Pacific Standard Time)"
+						"Feb 24 2023 19:00:00 GMT-0800 (Pacific Standard Time)",
 					).getTime() && (
 					<a
 						className={cn.item}

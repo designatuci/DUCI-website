@@ -1,11 +1,11 @@
-import { useCallback, useState } from 'react';
-import cn from './Profile.module.scss';
-import { Modal } from './Modal';
+import { useCallback, useState } from "react";
+import cn from "./Profile.module.scss";
+import { Modal } from "./Modal";
 
 const Profile = ({ name, photo, role, ...rest }) => {
 	const [open, setOpen] = useState(false);
 
-	const toggleProfile = useCallback(() => setOpen(p => !p), []);
+	const toggleProfile = useCallback(() => setOpen((p) => !p), []);
 
 	return (
 		<>
@@ -14,7 +14,16 @@ const Profile = ({ name, photo, role, ...rest }) => {
 				<p>{name}</p>
 				<span>{role}</span>
 			</div>
-			{open && <Modal name={name} photo={photo} role={role} open={open} toggleProfile={toggleProfile} {...rest}/>}
+			{open && (
+				<Modal
+					name={name}
+					photo={photo}
+					role={role}
+					open={open}
+					toggleProfile={toggleProfile}
+					{...rest}
+				/>
+			)}
 		</>
 	);
 };
