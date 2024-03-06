@@ -1,6 +1,7 @@
 import cn from "./About.module.scss";
 import { useRef, useState, useEffect } from "react";
 import airplane from "../../assets/graphics/about/airplane.svg";
+import paperclip from "../../assets/graphics/about/paperclip.svg";
 
 const LINE_BREAKPOINTS = {
 	XL: 48,
@@ -100,6 +101,7 @@ const About = () => {
 			</div>
 
 			<img src={airplane} alt="airplane" className={cn.airplane} />
+			<img src={paperclip} alt="paperclip" className={cn.paperclip} />
 		</div>
 	);
 };

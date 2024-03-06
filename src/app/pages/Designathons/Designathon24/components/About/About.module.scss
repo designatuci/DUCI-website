@@ -85,6 +85,28 @@
 			max-width: 300px;
 		}
 	}
+
+	.paperclip {
+		position: absolute;
+		max-width: 75px;
+
+		top: 320px;
+		left: -24px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 100px;
+
+			top: 374px;
+			left: 22px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 250px;
+
+			top: 386px;
+			left: 74px;
+		}
+	}
 }
 
 @media screen and (min-width: 640px) {
