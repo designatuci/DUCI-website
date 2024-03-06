@@ -4,7 +4,7 @@
 	background-color: var(--des24-cream);
 	color: var(--des24-black);
 
-	padding: 3rem 1rem;
+	padding: 3rem 1rem 5rem;
 	font-size: 0.75em;
 
 	& .aboutHeading {
@@ -32,6 +32,7 @@
 
 		.text {
 			margin-top: 0.5rem;
+			max-width: 95%;
 
 			p {
 				display: flex;
@@ -68,7 +69,7 @@
 
 @media screen and (min-width: 640px) {
 	.container {
-		padding: 4rem 2rem;
+		padding: 4rem 2rem 6rem;
 
 		& .aboutHeading {
 			font-size: 70px;
@@ -101,7 +102,7 @@
 @media screen and (min-width: 1280px) {
 	.container {
 		font-size: 1em;
-		padding: 4rem 5rem;
+		padding: 4rem 5rem 6rem;
 
 		.noteCard {
 			position: relative;
@@ -115,7 +116,6 @@
 
 			.text {
 				margin-top: 0.5rem;
-				max-width: 95%;
 
 				p {
 					font-size: 24px;
