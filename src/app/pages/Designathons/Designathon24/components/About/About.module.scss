@@ -1,5 +1,6 @@
 .container {
 	position: relative;
+	overflow: hidden;
 
 	background-color: var(--des24-cream);
 	color: var(--des24-black);
@@ -105,6 +106,23 @@
 
 			top: 386px;
 			left: 74px;
+		}
+	}
+
+	.tr_gradient {
+		position: absolute;
+		max-width: 300px;
+
+		top: -100px;
+		right: -60px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
+			right: -50px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			right: -25px;
 		}
 	}
 }

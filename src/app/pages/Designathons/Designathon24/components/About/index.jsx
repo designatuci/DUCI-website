@@ -2,6 +2,7 @@ import cn from "./About.module.scss";
 import { useRef, useState, useEffect } from "react";
 import airplane from "../../assets/graphics/about/airplane.svg";
 import paperclip from "../../assets/graphics/about/paperclip.svg";
+import tr_gradient from "../../assets/graphics/about/tr_gradient.svg";
 
 const LINE_BREAKPOINTS = {
 	XL: 48,
@@ -102,6 +103,7 @@ const About = () => {
 
 			<img src={airplane} alt="airplane" className={cn.airplane} />
 			<img src={paperclip} alt="paperclip" className={cn.paperclip} />
+			<img src={tr_gradient} alt="tr_gradient" className={cn.tr_gradient} />
 		</div>
 	);
 };
