@@ -30,31 +30,27 @@
 		}
 
 		.text {
-			p {
-				padding: 0.5rem 2.5rem 3rem 2.5rem;
+			margin-top: 0.5rem;
 
+			p {
 				display: flex;
 				flex-direction: column;
 				gap: 3rem;
 
+				padding: 0 2.5rem 3rem 2.5rem;
 				line-height: 200%;
 				font-size: 24px;
 			}
 		}
 
 		& .lines {
-			display: flex;
-			flex-direction: column;
-			gap: 48px;
-
-			// margin-top: -576px;
-
 			.line {
-				background-color: #8ebbdc;
-				opacity: 30%;
-
+				position: absolute;
 				height: 3px;
 				width: 100%;
+
+				background-color: #8ebbdc;
+				opacity: 30%;
 
 				z-index: -10;
 			}

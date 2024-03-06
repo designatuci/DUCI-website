@@ -1,13 +1,34 @@
 import cn from "./About.module.scss";
+import { useRef, useState, useEffect } from "react";
 
 const About = () => {
+	const [height, setHeight] = useState(0);
+	const textRef = useRef(null);
+
+	const handleResize = () => {
+		if (textRef.current) {
+			const height = textRef.current.clientHeight;
+			setHeight(height);
+		}
+	};
+
+	useEffect(() => {
+		handleResize();
+
+		window.addEventListener("resize", handleResize);
+
+		return () => {
+			window.removeEventListener("resize", handleResize);
+		};
+	}, []);
+
 	return (
 		<div className={cn.container} id="s-about">
 			<h2 className={cn.aboutHeading}>About</h2>
 			<div className={cn.noteCard}>
 				<div className={cn.noteCardHeader} />
 
-				<div className={cn.text}>
+				<div className={cn.text} ref={textRef}>
 					<p>
 						Design-a-thon is a 3 day long hybrid event where you or a team
 						design a product focused on the theme: community and inclusivity. It
@@ -32,11 +53,20 @@ const About = () => {
 					</p>
 				</div>
 
-				{/* <div className={cn.lines}>
-					{[...Array(10).keys()].map((index) => (
-						<div className={cn.line} key={index} />
+				<div className={cn.lines}>
+					{/* The number of lines, determined by line height (48) and height of total text */}
+					{[
+						...Array(
+							Math.floor(height / 48) - 1 > 0 ? Math.floor(height / 48) - 1 : 1,
+						).keys(),
+					].map((index) => (
+						<div
+							className={cn.line}
+							style={{ top: `calc(128px + ${index * 48}px)` }}
+							key={index}
+						/>
 					))}
-				</div> */}
+				</div>
 			</div>
 		</div>
 	);
