@@ -12,12 +12,15 @@
 	}
 
 	& .noteCard {
+		position: relative;
+
 		background-color: #fbfbfb;
 		color: var(--des24-black);
 
 		box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
 
 		margin: 1.5rem 8rem 0;
+		margin-top: 0px;
 
 		.noteCardHeader {
 			height: 80px;
@@ -28,7 +31,7 @@
 
 		.text {
 			p {
-				padding: 0.5rem 2.5rem 2.5rem 2.5rem;
+				padding: 0.5rem 2.5rem 3rem 2.5rem;
 
 				display: flex;
 				flex-direction: column;
@@ -36,6 +39,24 @@
 
 				line-height: 200%;
 				font-size: 24px;
+			}
+		}
+
+		& .lines {
+			display: flex;
+			flex-direction: column;
+			gap: 48px;
+
+			// margin-top: -576px;
+
+			.line {
+				background-color: #8ebbdc;
+				opacity: 30%;
+
+				height: 3px;
+				width: 100%;
+
+				z-index: -10;
 			}
 		}
 	}

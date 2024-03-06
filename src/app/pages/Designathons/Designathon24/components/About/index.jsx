@@ -31,6 +31,12 @@ const About = () => {
 						designer.
 					</p>
 				</div>
+
+				{/* <div className={cn.lines}>
+					{[...Array(10).keys()].map((index) => (
+						<div className={cn.line} key={index} />
+					))}
+				</div> */}
 			</div>
 		</div>
 	);
