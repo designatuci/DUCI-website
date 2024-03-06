@@ -76,13 +76,11 @@
 
 		@media screen and (min-width: 1024px) {
 			max-width: 200px;
+
+			right: 0px;
 		}
 
 		@media screen and (min-width: 1280px) {
-			max-width: 250px;
-		}
-
-		@media screen and (min-width: 1536px) {
 			max-width: 300px;
 		}
 	}
