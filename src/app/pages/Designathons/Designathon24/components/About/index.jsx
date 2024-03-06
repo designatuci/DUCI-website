@@ -1,5 +1,6 @@
 import cn from "./About.module.scss";
 import { useRef, useState, useEffect } from "react";
+import airplane from "../../assets/graphics/about/airplane.svg";
 
 const LINE_BREAKPOINTS = {
 	XL: 48,
@@ -97,6 +98,8 @@ const About = () => {
 					))}
 				</div>
 			</div>
+
+			<img src={airplane} alt="airplane" className={cn.airplane} />
 		</div>
 	);
 };

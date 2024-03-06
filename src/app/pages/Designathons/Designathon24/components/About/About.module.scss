@@ -1,4 +1,6 @@
 .container {
+	position: relative;
+
 	background-color: var(--des24-cream);
 	color: var(--des24-black);
 
@@ -54,6 +56,13 @@
 				z-index: -10;
 			}
 		}
+	}
+
+	.airplane {
+		position: absolute;
+
+		bottom: 0;
+		right: 0;
 	}
 }
 
