@@ -5,6 +5,7 @@ import paperclip from "../../assets/graphics/about/paperclip.svg";
 import tr_gradient from "../../assets/graphics/about/tr_gradient.svg";
 import bl_gradient from "../../assets/graphics/about/bl_gradient.svg";
 import tr_stars from "../../assets/graphics/about/tr_stars.svg";
+import bl_stars from "../../assets/graphics/about/bl_stars.svg";
 
 const LINE_BREAKPOINTS = {
 	XL: 48,
@@ -108,6 +109,7 @@ const About = () => {
 			<img src={tr_gradient} alt="tr_gradient" className={cn.tr_gradient} />
 			<img src={bl_gradient} alt="bl_gradient" className={cn.bl_gradient} />
 			<img src={tr_stars} alt="tr_stars" className={cn.tr_stars} />
+			<img src={bl_stars} alt="bl_stars" className={cn.bl_stars} />
 		</div>
 	);
 };

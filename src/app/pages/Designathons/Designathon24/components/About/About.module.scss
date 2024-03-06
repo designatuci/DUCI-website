@@ -130,6 +130,7 @@
 	.bl_gradient {
 		position: absolute;
 		max-width: 200px;
+		z-index: -1;
 
 		bottom: 0;
 		left: -60px;
@@ -171,6 +172,19 @@
 			max-width: 400px;
 
 			right: 0px;
+		}
+	}
+
+	.bl_stars {
+		position: absolute;
+		max-width: 200px;
+		z-index: -1;
+
+		bottom: 0px;
+		left: 0px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
 		}
 	}
 }
