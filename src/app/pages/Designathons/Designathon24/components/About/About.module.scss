@@ -1,0 +1,41 @@
+.container {
+	background-color: var(--des24-cream);
+	color: var(--des24-black);
+
+	padding: 4rem 5rem;
+	font-size: 1em;
+
+	& .aboutHeading {
+		color: var(--des24-hot-pink);
+		font-size: 90px;
+		font-weight: 700;
+	}
+
+	& .noteCard {
+		background-color: #fbfbfb;
+		color: var(--des24-black);
+
+		margin: 1.5rem 8rem 0;
+
+		.noteCardHeader {
+			height: 80px;
+			border-bottom: 4px solid;
+			border-color: var(--des24-hot-pink);
+			opacity: 70%;
+		}
+
+		.text p {
+			padding: 0.5rem 2.5rem 2.5rem 2.5rem;
+
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+
+			line-height: 200%;
+			font-size: 24px;
+		}
+	}
+
+	@media screen and (min-width: 1100px) {
+	}
+}
