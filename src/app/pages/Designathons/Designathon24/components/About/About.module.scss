@@ -125,6 +125,24 @@
 			right: -25px;
 		}
 	}
+
+	.bl_gradient {
+		position: absolute;
+		max-width: 200px;
+
+		bottom: 0;
+		left: -60px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 300px;
+
+			left: -50px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			left: 0;
+		}
+	}
 }
 
 @media screen and (min-width: 640px) {
