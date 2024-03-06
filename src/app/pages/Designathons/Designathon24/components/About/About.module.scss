@@ -61,9 +61,29 @@
 
 	.airplane {
 		position: absolute;
+		max-width: 125px;
 
-		bottom: 0;
-		right: 0;
+		bottom: 10px;
+		right: 10px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 150px;
+
+			bottom: 20px;
+			right: 40px;
+		}
+
+		@media screen and (min-width: 1024px) {
+			max-width: 200px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 250px;
+		}
+
+		@media screen and (min-width: 1536px) {
+			max-width: 300px;
+		}
 	}
 }
 
