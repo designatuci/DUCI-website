@@ -13,13 +13,14 @@ function useScroll() {
 	}, [scrollableElements]);
 
 	useEffect(() => {
-		if (pathname.includes("beta")) return; // makes life easier during dev
+		if (!pathname.includes("beta")) {
+			window.scrollTo({
+				top: 0,
+				left: 0,
+				behavior: "smooth",
+			});
+		}
 
-		window.scrollTo({
-			top: 0,
-			left: 0,
-			behavior: "smooth",
-		});
 		setScrollableElements(document.getElementsByClassName("wait"));
 		window.addEventListener("scroll", pageScroll);
 		pageScroll();
