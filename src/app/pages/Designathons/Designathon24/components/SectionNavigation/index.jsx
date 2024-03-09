@@ -37,6 +37,7 @@ const SectionNavigation = () => {
 						onClick={() => {
 							scrollToSection(item.id);
 						}}
+						key={item.id}
 					>
 						<p>{item.label}</p>
 					</a>
