@@ -38,7 +38,7 @@ const About = () => {
 			const numLines = Math.floor(height / notecardLineHeight) - 1;
 			setLines(numLines > 0 ? numLines : 1);
 
-			/* Distance from top (pink) border of card */
+			/* Distance between notecard (blue) lines */
 			setNotecardLineHeight(
 				width >= 1280
 					? LINE_BREAKPOINTS.XL
@@ -47,7 +47,7 @@ const About = () => {
 						: LINE_BREAKPOINTS.SM,
 			);
 
-			/* Distance from top (pink) border of card */
+			/* Distance from top border of card */
 			setNotecardLineTop(width >= 640 ? 128 : 96);
 		};
 
@@ -97,6 +97,7 @@ const About = () => {
 						<div
 							className={cn.line}
 							style={{
+								/* The distance between lines, accounting for the top of the card */
 								top: `calc(${notecardLineTop}px + ${index * notecardLineHeight}px)`,
 							}}
 							key={index}
