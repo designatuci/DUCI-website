@@ -13,12 +13,12 @@ const ProjectShowcase = ({ title, image, name, creators, links }) => {
 						src={image}
 						className="shadow"
 						style={{ minHeight: "256px" }}
-					></Photo>
+					/>
 				</div>
 				<Text size="L">{name}</Text>
 				<Text className="color gray">Created by {creators.join(", ")}</Text>
 				{links.map((link) => (
-					<a href={link.href} target="noreferer">
+					<a href={link.href} target="noreferer" key={link}>
 						<Text icon="right" color="blue">
 							View {link.type}
 						</Text>

@@ -179,7 +179,7 @@ const Designathon22 = () => {
                 }
             `}</style>
 			</Section>
-			<div class="maincontent">
+			<div className="maincontent">
 				<SectionNavigation />
 				<WinnerShowcase winners={WINNERS_2022} />
 				<Section
@@ -281,7 +281,10 @@ const Designathon22 = () => {
 							{ time: "9:00 PM", title: "" },
 						].map((item) => {
 							return (
-								<div className={`split2${item.line ? " header" : ""}`}>
+								<div
+									className={`split2${item.line ? " header" : ""}`}
+									key={item.title + item.time}
+								>
 									<div>
 										<Text
 											className="bold"
@@ -471,7 +474,10 @@ const Designathon22 = () => {
 							{ time: "9:00 PM", title: "" },
 						].map((item) => {
 							return (
-								<div className={`split2${item.line ? " header" : ""}`}>
+								<div
+									className={`split2${item.line ? " header" : ""}`}
+									key={item.title + item.time}
+								>
 									<div>
 										<Text
 											className="bold"
@@ -593,7 +599,7 @@ const Designathon22 = () => {
 							},
 						].map((item) => {
 							return (
-								<div className="split2 header">
+								<div className="split2 header" key={item.title + item.time}>
 									<div>
 										<Text
 											className="bold"
@@ -949,6 +955,7 @@ const Designathon22 = () => {
 												</Text>
 											</div>
 										}
+										key={item.q}
 									/>
 								);
 							})}
@@ -1050,7 +1057,10 @@ const Designathon22 = () => {
 							},
 						].map((item) => {
 							return (
-								<div className="flex left top spaceChildrenSmall">
+								<div
+									className="flex left top spaceChildrenSmall"
+									key={item.name + item.role}
+								>
 									<Photo
 										src={item.photo}
 										style={{
@@ -2294,7 +2304,7 @@ function resize() {
 	view.height = Main.target.view.h;
 
 	Main.prog.render.setUniform["aspect"](
-		Main.target.view.w / Main.target.view.h,
+		Main.target.view.w / Main.target.view.h
 	);
 }
 function scroll() {

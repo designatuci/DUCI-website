@@ -32,7 +32,7 @@ const WinnerShowcase = ({ winners }) => {
 							<div className="flex top left spaceChildrenSmall">
 								{item.members.map((item, i) => {
 									return (
-										<Text>
+										<Text key={item.name + item.school}>
 											{item.name}
 											<Text className="color gray"> - {item.school}</Text>
 										</Text>

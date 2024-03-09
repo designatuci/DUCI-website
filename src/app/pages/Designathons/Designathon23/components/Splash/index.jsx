@@ -10,7 +10,7 @@ const Splash = memo(() => {
 			xmlns="http://www.w3.org/2000/svg"
 			xmlnsXlink="http://www.w3.org/1999/xlink"
 		>
-			<g clip-path="url(#clip0_409_136)">
+			<g clipPath="url(#clip0_409_136)">
 				<rect width="3840" height="3840" fill="#000024" />
 				<g filter="url(#filter)">
 					<path
@@ -79,7 +79,7 @@ const Splash = memo(() => {
 						width="3840"
 						height="3840"
 						fill="url(#pattern0)"
-						fill-opacity="0.3"
+						fillOpacity="0.3"
 					/>
 				</g>
 				<g style={{ mixBlendMode: "overlay" }} opacity="0.3">
@@ -94,7 +94,7 @@ const Splash = memo(() => {
 					width="100"
 					height="100"
 					filterUnits="objectBoundingBox"
-					color-interpolation-filters="sRGB"
+					colorInterpolationFilters="sRGB"
 				>
 					<feGaussianBlur stdDeviation="50" />
 				</filter>

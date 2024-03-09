@@ -12,14 +12,14 @@ function Schedule() {
 					only.
 				</span>
 				<h2>Friday - Feb. 24, 2023</h2>
-				<div class={cn.list}>
-					<div class={cn.event}>
-						<div class={cn.time}>
+				<div className={cn.list}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							5:30 pm
 							<span>↓</span>
 						</div>
-						<div class={clsx(cn.title, cn.highlight)}>Opening Ceremony</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title, cn.highlight)}>Opening Ceremony</div>
+						<div className={cn.description}>
 							<p>
 								Join us on our{" "}
 								<a
@@ -34,13 +34,13 @@ function Schedule() {
 							Led by Design at UCI’s Designathon Director, Hannah.
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							5:35 pm
 							<span>↓</span>
 						</div>
-						<div class={clsx(cn.title)}>Judges Introduction</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title)}>Judges Introduction</div>
+						<div className={cn.description}>
 							<p>Judges share their design background and journey.</p>
 							<p>
 								Introducing our judges: Minjun Chen, Jeremy Marusek, Antonio
@@ -48,48 +48,50 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							6:00 pm
 							<span>↓</span>
 						</div>
-						<div class={clsx(cn.title)}>Keynote speech</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title)}>Keynote speech</div>
+						<div className={cn.description}>
 							Led by Keynote Speaker: Harrison Wheeler
 							<br />
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							6:35 pm
 							<span>↓</span>
 						</div>
-						<div class={clsx(cn.title, cn.special)}>
+						<div className={clsx(cn.title, cn.special)}>
 							Challenge Brief and Q&A
 						</div>
-						<div class={cn.description}>
+						<div className={cn.description}>
 							Announcing Challenge Brief and opening Q&A.
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							7:00 pm
 							<span>↓</span>
 							7:05 pm
 						</div>
-						<div class={clsx(cn.title)}>Closing</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title)}>Closing</div>
+						<div className={cn.description}>
 							<p>Designathon Director, Hannah, ends the Opening Ceremony.</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							7:30 pm
 							<span>↓</span>
 							8:15 pm
 						</div>
-						<div class={cn.title}>Workshop: Design for Gender Inclusivity</div>
-						<div class={cn.description}>
+						<div className={cn.title}>
+							Workshop: Design for Gender Inclusivity
+						</div>
+						<div className={cn.description}>
 							<p>Led by WICS (Duong Vu & Amanda Hausmann)</p>
 							<p>
 								In celebration of Inclusivity, we invite you to the talk about
@@ -110,14 +112,14 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							8:00 pm
 							<span>↓</span>
 							10:00 pm
 						</div>
-						<div class={cn.title}>Work session (IP)</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Work session (IP)</div>
+						<div className={cn.description}>
 							<p>*UCI Students ONLY* </p>
 							<p>
 								Teams can work together in-person at our designated work rooms.
@@ -128,14 +130,14 @@ function Schedule() {
 							<p>Location: DBH 3011 & DBH 4011</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							8:45 pm
 							<span>↓</span>
 							9:30 pm
 						</div>
-						<div class={cn.title}>Workshop: Intro to Figma</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Workshop: Intro to Figma</div>
+						<div className={cn.description}>
 							<p>Led by Victoria Wu </p>
 							<p>
 								New to UX Design and curious about the tools UX Designers use?
@@ -156,14 +158,14 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							11:00 pm
 							<span>↓</span>
 							12:00 am
 						</div>
-						<div class={cn.title}>Mentor Office Hours</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Mentor Office Hours</div>
+						<div className={cn.description}>
 							<p>
 								Need help or advice? Come speak with our mentors in the
 								#mentor-office-hours channel on Discord! Ping the channel with
@@ -185,13 +187,13 @@ function Schedule() {
 				</div>
 
 				<h2>Saturday - Feb. 25, 2023</h2>
-				<div class={cn.list}>
-					<div class={cn.event}>
-						<div class={cn.time}>
+				<div className={cn.list}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							10:00 am<span>↓</span>10:45 am
 						</div>
-						<div class={cn.title}>Workshop: Designing for Diversity</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Workshop: Designing for Diversity</div>
+						<div className={cn.description}>
 							<p>Led by Mosope Adebowale</p>
 							<p>
 								Do you envision yourself designing for products that will be
@@ -210,14 +212,14 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							11:00 am
 							<span>↓</span>
 							12:00 pm
 						</div>
-						<div class={cn.title}>Mentor Office Hours</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Mentor Office Hours</div>
+						<div className={cn.description}>
 							<p>
 								Need help or advice? Come speak with our mentors in the
 								#mentor-office-hours channel on Discord! Ping the channel with
@@ -236,12 +238,12 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							12:00 pm<span>↓</span>12:45 pm
 						</div>
-						<div class={cn.title}>Workshop: Be F#$%ing Authentic</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Workshop: Be F#$%ing Authentic</div>
+						<div className={cn.description}>
 							<p>Led by Joe Cahill </p>
 							<p>
 								When you are in college we are told to fit in this box of being
@@ -263,14 +265,14 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							1:00 pm
 							<span>↓</span>
 							3:00 pm
 						</div>
-						<div class={cn.title}>Work session (IP)</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Work session (IP)</div>
+						<div className={cn.description}>
 							<p>*UCI Students ONLY* </p>
 							<p>
 								Teams can work together in-person at our designated work rooms.
@@ -281,14 +283,14 @@ function Schedule() {
 							<p>Location: DBH 3011 & DBH 4011</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							2:00 pm
 							<span>↓</span>
 							3:00 pm
 						</div>
-						<div class={cn.title}>Social</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Social</div>
+						<div className={cn.description}>
 							<p>Led by Design at UCI</p>
 							<p>Game Extravaganza</p>
 
@@ -300,12 +302,12 @@ function Schedule() {
 							<p>Location: #game-extravaganza-social channel in our Discord</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							3:00 pm<span>↓</span>3:45 pm
 						</div>
-						<div class={cn.title}>Workshop: Creating UX Case Studies</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Workshop: Creating UX Case Studies</div>
+						<div className={cn.description}>
 							Led by CTC (Alexandria (Alex) Wang & Meghna Kaligotla)
 							<p>
 								Are you interested in learning how to create case studies for
@@ -325,14 +327,14 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							4:00 pm
 							<span>↓</span>
 							5:00 pm
 						</div>
-						<div class={cn.title}>Social (IP)</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Social (IP)</div>
+						<div className={cn.description}>
 							<p>*UCI Students ONLY* </p>
 							<p>Led by Design at UCI</p>
 							<p>Event: DIY Designathon Zines</p>
@@ -345,14 +347,14 @@ function Schedule() {
 							<p>Location: DBH 3011</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							5:00 pm<span>↓</span>5:45 pm
 						</div>
-						<div class={cn.title}>
+						<div className={cn.title}>
 							Workshop: Leveraging Accessibility in Design
 						</div>
-						<div class={cn.description}>
+						<div className={cn.description}>
 							<p>Led by Antonio Flamenco</p>
 							<p>
 								Accessible design should be universal design and yet most
@@ -374,14 +376,14 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							5:00 pm
 							<span>↓</span>
 							7:00 pm
 						</div>
-						<div class={cn.title}>Work session (IP)</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Work session (IP)</div>
+						<div className={cn.description}>
 							<p>*UCI Students ONLY* </p>
 							<p>
 								Teams can work together in-person at our designated work rooms.
@@ -392,14 +394,14 @@ function Schedule() {
 							<p>Location: DBH 3011 & DBH 4011</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							8:00 pm
 							<span>↓</span>
 							9:00 pm
 						</div>
-						<div class={cn.title}>Mentor Office Hours</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Mentor Office Hours</div>
+						<div className={cn.description}>
 							<p>
 								Need help or advice? Come speak with our mentors in the
 								#mentor-office-hours channel on Discord! Ping the channel with
@@ -421,11 +423,13 @@ function Schedule() {
 				</div>
 
 				<h2>Sunday - Feb. 26, 2023</h2>
-				<div class={cn.list}>
-					<div class={cn.event}>
-						<div class={cn.time}>8:00 am</div>
-						<div class={clsx(cn.title, cn.special)}>Submission Deadline</div>
-						<div class={cn.description}>
+				<div className={cn.list}>
+					<div className={cn.event}>
+						<div className={cn.time}>8:00 am</div>
+						<div className={clsx(cn.title, cn.special)}>
+							Submission Deadline
+						</div>
+						<div className={cn.description}>
 							<p>
 								Submit your working prototype through our{" "}
 								<a
@@ -439,24 +443,24 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>1:10 pm</div>
-						<div class={clsx(cn.title)}>Announcing 10 finalists</div>
-						<div class={cn.description}>
+					<div className={cn.event}>
+						<div className={cn.time}>1:10 pm</div>
+						<div className={clsx(cn.title)}>Announcing 10 finalists</div>
+						<div className={cn.description}>
 							Our team will reach out to the email provided in the Submission
 							Form to let the team know. Make sure to check your spam! These
 							teams will move forward to and present their case study during the
 							final round of the judging panel.
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							1:10 pm
 							<span>↓</span>
 							4:00 pm
 						</div>
-						<div class={cn.title}>Work on Case Study</div>
-						<div class={cn.description}>
+						<div className={cn.title}>Work on Case Study</div>
+						<div className={cn.description}>
 							<p>
 								For all the 10 finalists, make sure to prepare your presentation
 								so that it clearly elaborates your target user base, user
@@ -473,14 +477,14 @@ function Schedule() {
 							</p>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							4:00 pm
 							<span>↓</span>
 							5:30 pm
 						</div>
-						<div class={clsx(cn.title, cn.highlight)}>Presentations</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title, cn.highlight)}>Presentations</div>
+						<div className={cn.description}>
 							<p>
 								Join us on our{" "}
 								<a
@@ -496,14 +500,14 @@ function Schedule() {
 							to present their case study. Anyone can attend.
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							5:30 pm
 							<span>↓</span>
 							6:15 pm
 						</div>
-						<div class={clsx(cn.title)}>Judging Panel</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title)}>Judging Panel</div>
+						<div className={cn.description}>
 							Judges decide the Top 3 teams, as well as the winners for these
 							additional awards:
 							<ul>
@@ -513,14 +517,14 @@ function Schedule() {
 							</ul>
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							7:00 pm
 							<span>↓</span>
 							7:40 pm
 						</div>
-						<div class={clsx(cn.title, cn.highlight)}>Closing Ceremony</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title, cn.highlight)}>Closing Ceremony</div>
+						<div className={cn.description}>
 							<p>
 								Join us on our{" "}
 								<a
@@ -536,26 +540,26 @@ function Schedule() {
 							to share their experience.
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							7:40 pm
 							<span>↓</span>
 							7:50 pm
 						</div>
-						<div class={clsx(cn.title)}>Raffle Draw</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title)}>Raffle Draw</div>
+						<div className={cn.description}>
 							Led by Design-a-thon Director, Hannah. Raffle winners will be
 							chosen.
 						</div>
 					</div>
-					<div class={cn.event}>
-						<div class={cn.time}>
+					<div className={cn.event}>
+						<div className={cn.time}>
 							7:50 pm
 							<span>↓</span>
 							8:00 pm
 						</div>
-						<div class={clsx(cn.title)}>Q&A and Closing</div>
-						<div class={cn.description}>
+						<div className={clsx(cn.title)}>Q&A and Closing</div>
+						<div className={cn.description}>
 							During the final Q&A session, attendees can ask anything related
 							to the event. Design at UCI will give final thanks and
 							acknowledgments, then close out the event.

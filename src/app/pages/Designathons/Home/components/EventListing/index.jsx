@@ -41,7 +41,7 @@ const EventListing = ({ title, theme, link, image, showcase }) => {
 			<Text size="L">Awarded Entries</Text>
 			<div className="split2">
 				{showcase.map((project) => (
-					<ProjectShowcase {...project} />
+					<ProjectShowcase {...project} key={project.title + project.name} />
 				))}
 			</div>
 		</Section>

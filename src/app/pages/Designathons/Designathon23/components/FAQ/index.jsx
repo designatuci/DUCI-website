@@ -211,6 +211,7 @@ const FAQ = () => {
 										</Text>
 									</div>
 								}
+								key={item.q}
 							/>
 						);
 					})}

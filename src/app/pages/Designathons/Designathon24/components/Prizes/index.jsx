@@ -7,11 +7,11 @@ const Prizes = ({ list }) => {
 			<h2 className={cn.title}>Prizes</h2>
 			<div className={cn.container}>
 				{list.map((item) => (
-					<div className={cn.item}>
+					<div className={cn.item} key={item.symbol}>
 						<h3>{item.label}</h3>
 						<div className="flex left spaceChildrenSmall">
-							{item.prizes.map((prize) => (
-								<p>{prize}</p>
+							{item.prizes.map((prize, index) => (
+								<p key={index}>{prize}</p>
 							))}
 						</div>
 					</div>
