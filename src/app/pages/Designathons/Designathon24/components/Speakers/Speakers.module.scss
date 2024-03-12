@@ -239,26 +239,19 @@
 	}
 }
 
-.airplane {
+.br_star_stripe_gradient {
 	position: absolute;
-	max-width: 125px;
+	max-width: 400px;
 
+	z-index: -1;
 	bottom: 0px;
-	right: 10px;
+	right: 0px;
 
 	@media screen and (min-width: 640px) {
-		max-width: 200px;
-
-		right: 40px;
-	}
-
-	@media screen and (min-width: 1024px) {
-		max-width: 250px;
-
-		right: 0px;
+		max-width: 700px;
 	}
 
 	@media screen and (min-width: 1280px) {
-		max-width: 300px;
+		max-width: 800px;
 	}
 }

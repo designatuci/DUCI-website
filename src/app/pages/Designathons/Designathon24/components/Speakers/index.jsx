@@ -3,6 +3,7 @@ import cn from "./Speakers.module.scss";
 import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
 import splat from "../../assets/graphics/speakers/splat.svg";
+import br_star_stripe_gradient from "../../assets/graphics/speakers/br_star_stripe_gradient.svg";
 
 import JUDGES from "../../assets/data/judges.json";
 import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
@@ -79,7 +80,11 @@ const Speakers = () => {
 			</div>
 
 			{/* <img src={splat} alt="splat" className={`${cn.splat} wait flopR`} /> */}
-			{/* <img src={splat} alt="splat" className={cn.splat} /> */}
+			<img
+				src={br_star_stripe_gradient}
+				alt="br_star_stripe_gradient"
+				className={cn.br_star_stripe_gradient}
+			/>
 		</div>
 	);
 };
