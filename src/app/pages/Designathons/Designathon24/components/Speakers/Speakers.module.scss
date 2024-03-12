@@ -133,7 +133,7 @@
 
 @media screen and (min-width: 768px) {
 	.container {
-		padding: 9rem 1rem 5rem;
+		padding: 9rem 1rem 9rem;
 
 		.heading {
 			font-size: 70px;
@@ -179,7 +179,7 @@
 
 @media screen and (min-width: 1024px) {
 	.container {
-		padding: 12rem 5rem 6rem;
+		padding: 12rem 5rem 12rem;
 
 		.polaroids {
 			margin-top: 5rem;
@@ -285,6 +285,24 @@
 	@media screen and (min-width: 1280px) {
 		top: 10%;
 		max-width: 400px;
+	}
+}
+
+.ml_stripe {
+	position: absolute;
+	max-width: 300px;
+
+	z-index: -1;
+	top: 47.5%;
+	left: 0px;
+
+	@media screen and (min-width: 640px) {
+		top: 42.5%;
+		max-width: 600px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 700px;
 	}
 }
 
