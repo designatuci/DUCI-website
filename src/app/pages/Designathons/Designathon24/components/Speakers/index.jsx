@@ -28,7 +28,7 @@ const Polaroid = ({ photo, name, position, odd }) => {
 const Speakers = () => {
 	return (
 		<div className={cn.container} id="s-speakers">
-			<h2 className={cn.aboutHeading}>Speakers</h2>
+			<h2 className={cn.heading}>Speakers</h2>
 
 			<div className={cn.polaroids}>
 				<div className={cn.keynote}>
