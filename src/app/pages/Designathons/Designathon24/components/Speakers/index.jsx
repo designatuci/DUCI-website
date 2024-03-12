@@ -4,6 +4,7 @@ import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
 import splat from "../../assets/graphics/speakers/splat.svg";
 import tl_gradient from "../../assets/graphics/speakers/tl_gradient.svg";
+import mr_star_stripe from "../../assets/graphics/speakers/mr_star_stripe.svg";
 import br_star_stripe_gradient from "../../assets/graphics/speakers/br_star_stripe_gradient.svg";
 
 import JUDGES from "../../assets/data/judges.json";
@@ -82,6 +83,11 @@ const Speakers = () => {
 
 			{/* <img src={splat} alt="splat" className={`${cn.splat} wait flopR`} /> */}
 			<img src={tl_gradient} alt="tl_gradient" className={cn.tl_gradient} />
+			<img
+				src={mr_star_stripe}
+				alt="mr_star_stripe"
+				className={cn.mr_star_stripe}
+			/>
 			<img
 				src={br_star_stripe_gradient}
 				alt="br_star_stripe_gradient"

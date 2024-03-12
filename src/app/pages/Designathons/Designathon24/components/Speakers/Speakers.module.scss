@@ -270,6 +270,24 @@
 	}
 }
 
+.mr_star_stripe {
+	position: absolute;
+	max-width: 200px;
+
+	z-index: -1;
+	top: 45%;
+	right: 0px;
+
+	@media screen and (min-width: 640px) {
+		max-width: 600px;
+		top: 20%;
+	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 700px;
+	}
+}
+
 .br_star_stripe_gradient {
 	position: absolute;
 	max-width: 400px;
