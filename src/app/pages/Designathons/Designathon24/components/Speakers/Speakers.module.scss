@@ -7,7 +7,7 @@
 	background-color: var(--des24-cream);
 	color: var(--des24-black);
 
-	padding: 3rem 1rem 5rem;
+	padding: 5rem 1rem 5rem;
 	font-size: 1em;
 
 	* {
@@ -18,6 +18,8 @@
 		color: var(--des24-hot-pink);
 		font-size: 50px;
 		font-weight: 700;
+
+		padding: 0 2rem;
 	}
 
 	& .polaroids {
@@ -131,6 +133,14 @@
 
 @media screen and (min-width: 768px) {
 	.container {
+		padding: 9rem 1rem 5rem;
+
+		.heading {
+			font-size: 70px;
+
+			padding: 0 4rem;
+		}
+
 		.polaroids {
 			.polaroid {
 				width: 300px;
@@ -169,7 +179,7 @@
 
 @media screen and (min-width: 1024px) {
 	.container {
-		padding: 4rem 5rem 6rem;
+		padding: 12rem 5rem 6rem;
 
 		.polaroids {
 			margin-top: 5rem;
@@ -236,6 +246,27 @@
 		.peopleContainer {
 			width: 1568px;
 		}
+	}
+}
+
+.tl_gradient {
+	position: absolute;
+	max-width: 300px;
+
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+
+	@media screen and (min-width: 640px) {
+		max-width: 600px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 700px;
+	}
+
+	@media screen and (min-width: 1536px) {
+		max-width: 800px;
 	}
 }
 
