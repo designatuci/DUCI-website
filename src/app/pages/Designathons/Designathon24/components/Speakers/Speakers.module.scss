@@ -87,7 +87,12 @@
 			text-align: center;
 		}
 
-		& .judges {
+		& .peopleContainer {
+			.people {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				row-gap: 6rem;
+			}
 		}
 	}
 

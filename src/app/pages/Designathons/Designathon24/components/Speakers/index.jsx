@@ -4,10 +4,10 @@ import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
 import JUDGES_2024 from "../../assets/data/judges.json";
 
-const Polaroid = ({ photo, name, position }) => {
+const Polaroid = ({ photo, name, position, odd }) => {
 	return (
 		<div className={cn.polaroid}>
-			<img src={tape_black} alt="tape" className={cn.tape} />
+			<img src={odd ? tape_white : tape_black} alt="tape" className={cn.tape} />
 
 			<img
 				src={require(`../../assets/${photo}`)}
@@ -39,14 +39,20 @@ const Speakers = () => {
 					/>
 				</div>
 
-				<div className={cn.judges}>
+				<div className={cn.peopleContainer}>
 					<h3 className={cn.polaroidHeading}>Judges</h3>
 
-					<Polaroid
-						photo={JUDGES_2024[0].photo}
-						name={JUDGES_2024[0].name}
-						position={JUDGES_2024[0].role}
-					/>
+					<div className={cn.people}>
+						{JUDGES_2024.map((judge, index) => (
+							<Polaroid
+								key={index} // FIXME: Don't use index
+								photo={judge.photo}
+								name={judge.name}
+								position={judge.role}
+								odd={index % 2 === 0}
+							/>
+						))}
+					</div>
 				</div>
 			</div>
 
