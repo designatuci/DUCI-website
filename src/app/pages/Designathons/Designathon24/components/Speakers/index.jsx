@@ -2,6 +2,7 @@ import cn from "./Speakers.module.scss";
 
 import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
+import splat from "../../assets/graphics/speakers/splat.svg";
 
 import JUDGES from "../../assets/data/judges.json";
 import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
@@ -34,11 +35,14 @@ const Speakers = () => {
 				<div className={cn.keynote}>
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
 
-					<Polaroid
-						photo={JUDGES[0].photo}
-						name={JUDGES[0].name}
-						position={JUDGES[0].role}
-					/>
+					<div className={cn.keynotePolaroid}>
+						<Polaroid
+							photo={JUDGES[0].photo}
+							name={JUDGES[0].name}
+							position={JUDGES[0].role}
+						/>
+						<img src={splat} alt="splat" className={cn.splat} />
+					</div>
 				</div>
 
 				<div className={cn.peopleContainer}>
@@ -74,16 +78,8 @@ const Speakers = () => {
 				</div>
 			</div>
 
-			{/* <img
-				src={airplane}
-				alt="airplane"
-				className={`${cn.airplane} wait flopR`}
-			/>
-			<img src={paperclip} alt="paperclip" className={cn.paperclip} />
-			<img src={tr_gradient} alt="tr_gradient" className={cn.tr_gradient} />
-			<img src={bl_gradient} alt="bl_gradient" className={cn.bl_gradient} />
-			<img src={tr_stars} alt="tr_stars" className={cn.tr_stars} />
-			<img src={bl_stars} alt="bl_stars" className={cn.bl_stars} /> */}
+			{/* <img src={splat} alt="splat" className={`${cn.splat} wait flopR`} /> */}
+			{/* <img src={splat} alt="splat" className={cn.splat} /> */}
 		</div>
 	);
 };
