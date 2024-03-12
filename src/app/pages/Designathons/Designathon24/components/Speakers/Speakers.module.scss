@@ -67,6 +67,10 @@
 	& .polaroids {
 		margin-top: 5rem;
 
+		display: flex;
+		flex-direction: column;
+		gap: 8rem;
+
 		& .polaroidHeading {
 			font-size: 2.5rem;
 			font-weight: 700;
@@ -81,6 +85,9 @@
 			align-items: center;
 
 			text-align: center;
+		}
+
+		& .judges {
 		}
 	}
 

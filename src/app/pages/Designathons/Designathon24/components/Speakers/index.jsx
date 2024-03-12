@@ -4,20 +4,16 @@ import tape from "../../assets/graphics/speakers/tape.svg";
 
 import Cassandra_Hoo from "../../assets/graphics/speakers/Cassandra_Hoo.svg";
 
-const Polaroid = () => {
+const Polaroid = ({ img, name, position }) => {
 	return (
 		<div className={cn.polaroid}>
 			<img src={tape} alt="black tape" className={cn.tape} />
 
-			<img
-				src={Cassandra_Hoo}
-				alt={`polaroid of ${"person"}`}
-				className={cn.polaroidImage}
-			/>
+			<img src={img} alt={`polaroid of ${name}`} className={cn.polaroidImage} />
 
 			<div className={cn.polaroidDetails}>
-				<h6 className={cn.polaroidName}>Cassandra Hoo</h6>
-				<p className={cn.polaroidPosition}>Position @ Place</p>
+				<h6 className={cn.polaroidName}>{name}</h6>
+				<p className={cn.polaroidPosition}>{position}</p>
 			</div>
 		</div>
 	);
@@ -32,7 +28,11 @@ const Speakers = () => {
 				<div className={cn.keynote}>
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
 
-					<Polaroid />
+					<Polaroid
+						img={Cassandra_Hoo}
+						name="Cassandra Hoo"
+						position="Position @ Place"
+					/>
 				</div>
 			</div>
 
