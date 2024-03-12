@@ -13,6 +13,7 @@ import FOF from "./assets/FOF.png";
 import notion from "./assets/notion.png";
 import balsamiq from "./assets/balsamiq.png";
 import {
+	About,
 	Profile,
 	Prizes,
 	SectionNavigation,
@@ -23,7 +24,6 @@ import {
 } from "./components";
 import Schedule from "./components/Schedule";
 import { Splash } from "./components/Splash";
-import { About } from "./components/About";
 
 const Designathon24 = () => (
 	<main className={cn.container}>
