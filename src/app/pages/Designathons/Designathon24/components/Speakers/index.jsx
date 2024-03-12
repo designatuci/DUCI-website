@@ -2,7 +2,9 @@ import cn from "./Speakers.module.scss";
 
 import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
-import JUDGES_2024 from "../../assets/data/judges.json";
+
+import JUDGES from "../../assets/data/judges.json";
+import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
 
 const Polaroid = ({ photo, name, position, odd }) => {
 	return (
@@ -33,9 +35,9 @@ const Speakers = () => {
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
 
 					<Polaroid
-						photo={JUDGES_2024[0].photo}
-						name={JUDGES_2024[0].name}
-						position={JUDGES_2024[0].role}
+						photo={JUDGES[0].photo}
+						name={JUDGES[0].name}
+						position={JUDGES[0].role}
 					/>
 				</div>
 
@@ -43,12 +45,28 @@ const Speakers = () => {
 					<h3 className={cn.polaroidHeading}>Judges</h3>
 
 					<div className={cn.people}>
-						{JUDGES_2024.map((judge, index) => (
+						{JUDGES.map((judge, index) => (
 							<Polaroid
 								key={index} // FIXME: Don't use index
 								photo={judge.photo}
 								name={judge.name}
 								position={judge.role}
+								odd={index % 2 === 0}
+							/>
+						))}
+					</div>
+				</div>
+
+				<div className={cn.peopleContainer}>
+					<h3 className={cn.polaroidHeading}>Workshop Hosts</h3>
+
+					<div className={cn.people}>
+						{WORKSHOP_HOSTS.map((host, index) => (
+							<Polaroid
+								key={index} // FIXME: Don't use index
+								photo={host.photo}
+								name={host.name}
+								position={host.role}
 								odd={index % 2 === 0}
 							/>
 						))}
