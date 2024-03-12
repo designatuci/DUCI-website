@@ -3,6 +3,7 @@ import cn from "./Speakers.module.scss";
 import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
 import splat from "../../assets/graphics/speakers/splat.svg";
+import pencil from "../../assets/graphics/speakers/pencil.svg";
 import tl_gradient from "../../assets/graphics/speakers/tl_gradient.svg";
 import tl_star_stripe from "../../assets/graphics/speakers/tl_star_stripe.svg";
 import tr_star_stripe from "../../assets/graphics/speakers/tr_star_stripe.svg";
@@ -84,7 +85,7 @@ const Speakers = () => {
 				</div>
 			</div>
 
-			{/* <img src={splat} alt="splat" className={`${cn.splat} wait flopR`} /> */}
+			<img src={pencil} alt="pencil" className={`${cn.pencil} wait flopR`} />
 			<img src={tl_gradient} alt="tl_gradient" className={cn.tl_gradient} />
 			<img
 				src={tl_star_stripe}

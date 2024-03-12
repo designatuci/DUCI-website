@@ -19,7 +19,7 @@
 		font-size: 50px;
 		font-weight: 700;
 
-		padding: 0 2rem;
+		padding: 0 1rem;
 	}
 
 	& .polaroids {
@@ -127,6 +127,18 @@
 				row-gap: 3rem;
 				column-gap: 1rem;
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.container {
+		padding: 9rem 1rem 9rem;
+
+		.heading {
+			font-size: 70px;
+
+			padding: 0 3rem;
 		}
 	}
 }
@@ -249,6 +261,37 @@
 	}
 }
 
+.pencil {
+	position: absolute;
+	max-width: 100px;
+
+	z-index: -1;
+	top: 10px;
+	right: 75px;
+
+	@media screen and (min-width: 640px) {
+		max-width: 100px;
+	}
+
+	@media screen and (min-width: 768px) {
+		max-width: 150px;
+
+		right: 200px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 200px;
+
+		top: 20px;
+		right: 275px;
+	}
+
+	@media screen and (min-width: 1536px) {
+		max-width: 200px;
+		right: 325px;
+	}
+}
+
 .tl_gradient {
 	position: absolute;
 	max-width: 300px;
@@ -290,14 +333,20 @@
 
 .tr_star_stripe {
 	position: absolute;
-	max-width: 100px;
+	max-width: 150px;
 
 	z-index: -1;
 	top: 0;
-	right: 0px;
+	right: -75px;
 
 	@media screen and (min-width: 640px) {
 		max-width: 150px;
+	}
+
+	@media screen and (min-width: 768px) {
+		max-width: 200px;
+
+		right: 0px;
 	}
 
 	@media screen and (min-width: 1280px) {
