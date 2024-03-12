@@ -1,19 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 
-* {
-	font-family: "DM Sans";
-	font-weight: normal;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
 .container {
 	--des24-pink: #ff75a4;
 	--des24-hot-pink: #f84e72;
 	--des24-peach: #ff6969;
 	--des24-cream: #fff5e0;
 	--des24-black: #242424;
+
+	* {
+		font-family: "DM Sans";
+	}
 
 	& > .hero {
 		height: 100vh;
