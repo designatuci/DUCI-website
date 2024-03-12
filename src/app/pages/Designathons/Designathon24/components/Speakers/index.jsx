@@ -90,18 +90,22 @@ const Speakers = () => {
 			<img
 				src={tl_star_stripe}
 				alt="tl_star_stripe"
-				className={cn.tl_star_stripe}
+				className={`${cn.tl_star_stripe} wait flopL`}
 			/>
 			<img
 				src={tr_star_stripe}
 				alt="tr_star_stripe"
-				className={cn.tr_star_stripe}
+				className={`${cn.tr_star_stripe} wait flopR`}
 			/>
-			<img src={ml_stripe} alt="ml_stripe" className={cn.ml_stripe} />
+			<img
+				src={ml_stripe}
+				alt="ml_stripe"
+				className={`${cn.ml_stripe} wait flopL`}
+			/>
 			<img
 				src={mr_star_stripe}
 				alt="mr_star_stripe"
-				className={cn.mr_star_stripe}
+				className={`${cn.mr_star_stripe} wait flopL`}
 			/>
 			<img
 				src={br_star_stripe_gradient}
