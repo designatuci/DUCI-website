@@ -1,3 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+.polaroid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+
+	width: fit-content;
+
+	.polaroidImage {
+		width: 475px;
+		height: 475px;
+
+		border-radius: 0.5rem;
+	}
+
+	.polaroidDetails {
+		padding-top: 4px;
+		text-align: left;
+
+		.polaroidName {
+			font-size: 2rem;
+			font-weight: 600;
+
+			padding-bottom: 8px;
+		}
+
+		.polaroidPosition {
+			font-size: 1.5rem;
+			font-weight: 400;
+		}
+	}
+
+	.tape {
+		width: 300px;
+		height: 80px;
+		z-index: 5;
+
+		position: absolute;
+		top: -48px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
 .container {
 	position: relative;
 	overflow: hidden;
@@ -8,55 +54,33 @@
 	padding: 3rem 1rem 5rem;
 	font-size: 0.75em;
 
+	* {
+		font-family: "Inter";
+	}
+
 	& .aboutHeading {
 		color: var(--des24-hot-pink);
 		font-size: 50px;
 		font-weight: 700;
 	}
 
-	& .noteCard {
-		position: relative;
+	& .polaroids {
+		margin-top: 5rem;
 
-		background-color: #fbfbfb;
-		color: var(--des24-black);
+		& .polaroidHeading {
+			font-size: 2.5rem;
+			font-weight: 700;
 
-		box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
-
-		margin: 1.5rem 1rem 0;
-
-		.noteCardHeader {
-			height: 60px;
-			border-bottom: 4px solid;
-			border-color: var(--des24-hot-pink);
-			opacity: 70%;
+			padding-bottom: 5rem;
 		}
 
-		.text {
-			margin-top: 0.5rem;
-			max-width: 95%;
+		& .keynote {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
 
-			p {
-				display: flex;
-				flex-direction: column;
-				gap: 3rem;
-
-				padding: 0 1.5rem 2rem 1.5rem;
-				line-height: 200%;
-				font-size: 16px;
-			}
-		}
-
-		& .lines {
-			.line {
-				position: absolute;
-				height: 3px;
-				width: 100%;
-
-				background-color: #8ebbdc;
-				opacity: 30%;
-
-				z-index: -10;
-			}
+			text-align: center;
 		}
 	}
 
