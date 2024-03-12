@@ -1,15 +1,20 @@
 import cn from "./Speakers.module.scss";
 
 import tape from "../../assets/graphics/speakers/tape.svg";
+import JUDGES_2024 from "../../assets/data/judges.json";
 
-import Cassandra_Hoo from "../../assets/graphics/speakers/Cassandra_Hoo.svg";
+const Polaroid = ({ photo, name, position }) => {
+	console.log(photo);
 
-const Polaroid = ({ img, name, position }) => {
 	return (
 		<div className={cn.polaroid}>
 			<img src={tape} alt="black tape" className={cn.tape} />
 
-			<img src={img} alt={`polaroid of ${name}`} className={cn.polaroidImage} />
+			<img
+				src={require(`../../assets/${photo}`)}
+				alt={`polaroid of ${name}`}
+				className={cn.polaroidImage}
+			/>
 
 			<div className={cn.polaroidDetails}>
 				<h6 className={cn.polaroidName}>{name}</h6>
@@ -29,9 +34,19 @@ const Speakers = () => {
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
 
 					<Polaroid
-						img={Cassandra_Hoo}
-						name="Cassandra Hoo"
-						position="Position @ Place"
+						photo={JUDGES_2024[0].photo}
+						name={JUDGES_2024[0].name}
+						position={JUDGES_2024[0].role}
+					/>
+				</div>
+
+				<div className={cn.judges}>
+					<h3 className={cn.polaroidHeading}>Judges</h3>
+
+					<Polaroid
+						photo={JUDGES_2024[0].photo}
+						name={JUDGES_2024[0].name}
+						position={JUDGES_2024[0].role}
 					/>
 				</div>
 			</div>
