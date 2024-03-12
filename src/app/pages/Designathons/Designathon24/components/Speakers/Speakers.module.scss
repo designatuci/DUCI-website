@@ -88,6 +88,10 @@
 		}
 
 		& .peopleContainer {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+
 			.people {
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
