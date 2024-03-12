@@ -1,0 +1,246 @@
+.container {
+	position: relative;
+	overflow: hidden;
+
+	background-color: var(--des24-cream);
+	color: var(--des24-black);
+
+	padding: 3rem 1rem 5rem;
+	font-size: 0.75em;
+
+	& .aboutHeading {
+		color: var(--des24-hot-pink);
+		font-size: 50px;
+		font-weight: 700;
+	}
+
+	& .noteCard {
+		position: relative;
+
+		background-color: #fbfbfb;
+		color: var(--des24-black);
+
+		box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+
+		margin: 1.5rem 1rem 0;
+
+		.noteCardHeader {
+			height: 60px;
+			border-bottom: 4px solid;
+			border-color: var(--des24-hot-pink);
+			opacity: 70%;
+		}
+
+		.text {
+			margin-top: 0.5rem;
+			max-width: 95%;
+
+			p {
+				display: flex;
+				flex-direction: column;
+				gap: 3rem;
+
+				padding: 0 1.5rem 2rem 1.5rem;
+				line-height: 200%;
+				font-size: 16px;
+			}
+		}
+
+		& .lines {
+			.line {
+				position: absolute;
+				height: 3px;
+				width: 100%;
+
+				background-color: #8ebbdc;
+				opacity: 30%;
+
+				z-index: -10;
+			}
+		}
+	}
+
+	.airplane {
+		position: absolute;
+		max-width: 125px;
+
+		bottom: 0px;
+		right: 10px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 200px;
+
+			right: 40px;
+		}
+
+		@media screen and (min-width: 1024px) {
+			max-width: 250px;
+
+			right: 0px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 300px;
+		}
+	}
+
+	.paperclip {
+		position: absolute;
+		max-width: 75px;
+
+		top: 320px;
+		left: -24px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 100px;
+
+			top: 374px;
+			left: 22px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 250px;
+
+			top: 386px;
+			left: 74px;
+		}
+	}
+
+	.tr_gradient {
+		position: absolute;
+		max-width: 300px;
+		z-index: -1;
+
+		top: -100px;
+		right: -60px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
+			right: -50px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			right: -25px;
+		}
+	}
+
+	.bl_gradient {
+		position: absolute;
+		max-width: 200px;
+		z-index: -1;
+
+		bottom: 0;
+		left: -60px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 300px;
+
+			left: -50px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			left: 0;
+		}
+	}
+
+	.tr_stars {
+		position: absolute;
+		max-width: 200px;
+		z-index: -1;
+
+		top: -10px;
+		right: -100px;
+
+		@media screen and (min-width: 384px) {
+			max-width: 200px;
+
+			top: 0px;
+			right: -50px;
+		}
+
+		@media screen and (min-width: 640px) {
+			max-width: 350px;
+
+			top: -25px;
+			right: -25px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 400px;
+
+			right: 0px;
+		}
+	}
+
+	.bl_stars {
+		position: absolute;
+		max-width: 200px;
+		z-index: -1;
+
+		bottom: 0px;
+		left: 0px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
+		}
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.container {
+		padding: 4rem 2rem 6rem;
+
+		& .aboutHeading {
+			font-size: 70px;
+			font-weight: 700;
+		}
+
+		.noteCard {
+			margin: 1.5rem 4rem 0;
+
+			.noteCardHeader {
+				height: 80px;
+				border-bottom: 4px solid;
+				border-color: var(--des24-hot-pink);
+				opacity: 70%;
+			}
+
+			.text {
+				margin-top: 0.75rem;
+
+				p {
+					padding: 0 2rem 2.5rem;
+					line-height: 200%;
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container {
+		font-size: 1em;
+		padding: 4rem 5rem 6rem;
+
+		.noteCard {
+			position: relative;
+
+			background-color: #fbfbfb;
+			color: var(--des24-black);
+
+			box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+
+			margin: 1.5rem 6rem 0;
+
+			.text {
+				margin-top: 0.5rem;
+
+				p {
+					font-size: 24px;
+					padding: 0 2.5rem 3rem 2.5rem;
+				}
+			}
+		}
+	}
+}
