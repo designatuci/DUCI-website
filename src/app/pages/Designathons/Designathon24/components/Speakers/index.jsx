@@ -1,14 +1,13 @@
 import cn from "./Speakers.module.scss";
 
-import tape from "../../assets/graphics/speakers/tape.svg";
+import tape_black from "../../assets/graphics/speakers/tape_black.svg";
+import tape_white from "../../assets/graphics/speakers/tape_white.svg";
 import JUDGES_2024 from "../../assets/data/judges.json";
 
 const Polaroid = ({ photo, name, position }) => {
-	console.log(photo);
-
 	return (
 		<div className={cn.polaroid}>
-			<img src={tape} alt="black tape" className={cn.tape} />
+			<img src={tape_black} alt="tape" className={cn.tape} />
 
 			<img
 				src={require(`../../assets/${photo}`)}
