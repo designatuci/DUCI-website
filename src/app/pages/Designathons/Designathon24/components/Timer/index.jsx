@@ -10,7 +10,7 @@ const Timer = ({ breakpoints }) => {
 			const { date, text } = breakpoints.find(
 				(breakpoint) =>
 					breakpoint.date === "end" ||
-					new Date().getTime() < new Date(breakpoint.date).getTime()
+					new Date().getTime() < new Date(breakpoint.date).getTime(),
 			);
 
 			setText(text);

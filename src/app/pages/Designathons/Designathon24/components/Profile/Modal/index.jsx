@@ -1,5 +1,5 @@
-import clsx from 'clsx';
-import cn from './Modal.module.scss';
+import clsx from "clsx";
+import cn from "./Modal.module.scss";
 
 export const Modal = ({
 	toggleProfile,

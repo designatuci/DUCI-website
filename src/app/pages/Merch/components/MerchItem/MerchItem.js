@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
-import { Text } from 'app/components';
+import { Text } from "app/components";
 
-import cn from './MerchItem.module.scss';
+import cn from "./MerchItem.module.scss";
 
 const MerchItem = ({ path, ...item }) => (
 	<div key={item.name} className={cn.container}>
@@ -28,12 +28,12 @@ const MerchItem = ({ path, ...item }) => (
 		)} */}
 		<div className={cn.content}>
 			<Text>{item?.name}</Text>
-			{item?.note?.type === 'link' ? (
-				<Link to={'/merch' + item.note.href}>
-					<Text className='color blue'>{item.note.content}</Text>
+			{item?.note?.type === "link" ? (
+				<Link to={"/merch" + item.note.href}>
+					<Text className="color blue">{item.note.content}</Text>
 				</Link>
 			) : (
-				<Text className='color blue'>{item?.note}</Text>
+				<Text className="color blue">{item?.note}</Text>
 			)}
 		</div>
 	</div>

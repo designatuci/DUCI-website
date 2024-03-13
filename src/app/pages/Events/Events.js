@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
-import { Text } from 'app/components';
-import { Section, Space, Icon, LoadingD, PageIcon } from 'app/Symbols.js';
-import EVENT_DATA from 'assets/data/events/all.json';
+import { Text } from "app/components";
+import { Section, Space, Icon, LoadingD, PageIcon } from "app/Symbols.js";
+import EVENT_DATA from "assets/data/events/all.json";
 
-import EventCard from './components/EventCard/EventCard.js';
+import EventCard from "./components/EventCard/EventCard.js";
 
 const Events = () => {
 	const [eventData, setEventData] = useState(null);
@@ -19,7 +19,7 @@ const Events = () => {
 		let now = new Date();
 		for (let event of EVENT_DATA) {
 			let time = new Date(
-				new Date(event.time).getTime() + event.duration * 60000
+				new Date(event.time).getTime() + event.duration * 60000,
 			);
 			if (now < time) {
 				eventData.next = event;
@@ -38,144 +38,122 @@ const Events = () => {
 			</Helmet>
 			<Section
 				className={`center short ${
-					eventData == null || eventData.next != null
-						? 'widePage hint'
-						: ''
+					eventData == null || eventData.next != null ? "widePage hint" : ""
 				}`}
-				style={{ paddingTop: '32px' }}
+				style={{ paddingTop: "32px" }}
 			>
 				{eventData == null ? (
 					// Loading animation
-					<LoadingD width='128' />
+					<LoadingD width="128" />
 				) : // Large next event card
 				eventData.next == null ? (
-					<div className='flex spaceChildrenSmall'>
-						<Space h='64' />
-						<Text
-							size='XXL'
-							className='wait show scale bold color blue'
-						>
+					<div className="flex spaceChildrenSmall">
+						<Space h="64" />
+						<Text size="XXL" className="wait show scale bold color blue">
 							Stay Tuned
 						</Text>
-						<Text className='wait show subtle color blue'>
+						<Text className="wait show subtle color blue">
 							There are currently no upcoming events.
 						</Text>
-						<Space h='32' />
-						<Text className='wait show subtle color gray'>
-							Be sure to{' '}
-							<Link to='/join/'>
-								join us
-							</Link>{' '}
-							for notifications.
+						<Space h="32" />
+						<Text className="wait show subtle color gray">
+							Be sure to <Link to="/join/">join us</Link> for notifications.
 						</Text>
 					</div>
 				) : new Date(eventData.next.time) > new Date() ? (
 					<>
-						<div className='wait show flex row'>
-							<Icon w='32' h='32' src='next-event.svg' />
-							<Space w='16' />
-							<Text size='L' className='color blue'>
+						<div className="wait show flex row">
+							<Icon w="32" h="32" src="next-event.svg" />
+							<Space w="16" />
+							<Text size="L" className="color blue">
 								Upcoming Event
 							</Text>
 						</div>
-						<Text className='color blue wait show subtle d05'>
+						<Text className="color blue wait show subtle d05">
 							{formatRelativeDate(eventData.next.time)}
 						</Text>
 						<LargeEvent event={eventData.next} />
 					</>
 				) : (
 					<>
-						<div className='wait show flex row'>
-							<Icon w='32' h='32' src='live-event.svg' />
-							<Space w='16' />
-							<Text size='L' className='bold color red'>
+						<div className="wait show flex row">
+							<Icon w="32" h="32" src="live-event.svg" />
+							<Space w="16" />
+							<Text size="L" className="bold color red">
 								Live Now
 							</Text>
 						</div>
-						<LargeEvent event={eventData.next} live='true' />
+						<LargeEvent event={eventData.next} live="true" />
 					</>
 				)}
 			</Section>
 			{eventData != null && eventData.upcoming.length > 0 && (
 				<>
 					<div
-						className='center maxWidth'
+						className="center maxWidth"
 						style={{
-							height: '88px',
-							marginBottom: '-88px',
-							background:
-								'linear-gradient(0,var(--white),var(--sky))',
+							height: "88px",
+							marginBottom: "-88px",
+							background: "linear-gradient(0,var(--white),var(--sky))",
 						}}
 					>
-						<Text size='L' className='color blue'>
+						<Text size="L" className="color blue">
 							Next Upcoming Event
-							{eventData.upcoming.length > 1 ? 's' : ''}
+							{eventData.upcoming.length > 1 ? "s" : ""}
 						</Text>
 					</div>
-					<Section className='center'>
-						<div className='spaceChildrenLarge'>
+					<Section className="center">
+						<div className="spaceChildrenLarge">
 							{eventData.upcoming.map((event, i) => {
-								return (
-										<LargeEvent key={event.title} event={event} />
-								);
+								return <LargeEvent key={event.title} event={event} />;
 							})}
 						</div>
 					</Section>
 				</>
 			)}
 			<div
-				className='center maxWidth fill gray'
-				style={{ height: '88px', marginBottom: '0' }}
+				className="center maxWidth fill gray"
+				style={{ height: "88px", marginBottom: "0" }}
 			>
-				<Text size='L'>Past Events</Text>
+				<Text size="L">Past Events</Text>
 			</div>
-			<Section className='center bare fill gray'>
-				<div
-					className='splitEventCard maxWidth'
-					style={{ textAlign: 'left' }}
-				>
+			<Section className="center bare fill gray">
+				<div className="splitEventCard maxWidth" style={{ textAlign: "left" }}>
 					{eventData != null &&
 						eventData.past
 							.slice(0, 12)
-							.map(event => (
-								<EventCard
-									key={event.time + event.title}
-									{...event}
-								/>
+							.map((event) => (
+								<EventCard key={event.time + event.title} {...event} />
 							))}
 				</div>
 			</Section>
 			<Section
-				className='center bare fill gray'
-				style={{ height: '128px', display: 'flex' }}
+				className="center bare fill gray"
+				style={{ height: "128px", display: "flex" }}
 			>
-				<Link to='/events/all/' className='button color blue'>
-					<Text icon='right'>View all events</Text>
+				<Link to="/events/all/" className="button color blue">
+					<Text icon="right">View all events</Text>
 				</Link>
 			</Section>
-			<Section className='center'>
+			<Section className="center">
 				<div
-					className='flex left narrow spaceChildren'
-					style={{ textAlign: 'left' }}
+					className="flex left narrow spaceChildren"
+					style={{ textAlign: "left" }}
 				>
-					<Icon src='workshop-icon-black.svg' w='64' h='64' />
-					<Text size='XL'>
-						We host events with a wide range of topics about each
-						week during the academic quarter.
+					<Icon src="workshop-icon-black.svg" w="64" h="64" />
+					<Text size="XL">
+						We host events with a wide range of topics about each week during
+						the academic quarter.
 					</Text>
-					<Text color='gray'>
-						Including UX design concepts, graphic design techniques,
-						interactive advice from industry speakers, social
-						events, and more.
+					<Text color="gray">
+						Including UX design concepts, graphic design techniques, interactive
+						advice from industry speakers, social events, and more.
 					</Text>
-					<Text color='gray'>
+					<Text color="gray">
 						Have a suggestion of something you would like to see?
 						<br />
-						Submit your feedback to{' '}
-						<a href='mailto:hello@designatuci.com'>
-							hello@designatuci.com
-						</a>
-						.
+						Submit your feedback to{" "}
+						<a href="mailto:hello@designatuci.com">hello@designatuci.com</a>.
 					</Text>
 				</div>
 			</Section>
@@ -185,50 +163,51 @@ const Events = () => {
 
 function LargeEvent(props) {
 	return (
-		<div className='slim flex left textAlignLeft spaceChildren largeEvent' style={{textAlign: 'left'}}>
-			<Text size='XL' className='bold'>
+		<div
+			className="slim flex left textAlignLeft spaceChildren largeEvent"
+			style={{ textAlign: "left" }}
+		>
+			<Text size="XL" className="bold">
 				{props.event.title}
 			</Text>
-			<div className='split2 info'>
-				<div className='flex top row'>
-					<Icon w='24' h='24' src='time-blue.svg' />
-					<Space w='8' />
-					<Text className='color blue'>
-						{formatDate(props.event.time)}
-					</Text>
+			<div className="split2 info">
+				<div className="flex top row">
+					<Icon w="24" h="24" src="time-blue.svg" />
+					<Space w="8" />
+					<Text className="color blue">{formatDate(props.event.time)}</Text>
 				</div>
-				<div className='split2'>
-					<div className='flex top row'>
-						<Icon w='24' h='24' src='type-blue.svg' />
-						<Space w='8' />
-						<Text className='color blue'>{props.event.type}</Text>
+				<div className="split2">
+					<div className="flex top row">
+						<Icon w="24" h="24" src="type-blue.svg" />
+						<Space w="8" />
+						<Text className="color blue">{props.event.type}</Text>
 					</div>
-					<div className='flex top row'>
-						<Icon w='24' h='24' src='place-blue.svg' />
-						<Space w='8' />
-						<Text className='color blue'>{props.event.place}</Text>
+					<div className="flex top row">
+						<Icon w="24" h="24" src="place-blue.svg" />
+						<Space w="8" />
+						<Text className="color blue">{props.event.place}</Text>
 					</div>
 				</div>
 			</div>
 			{props.event.links != null && (
 				<div>
 					{props.event.links.map((item, i) => {
-						if (item.label === 'Zoom Link')
+						if (item.label === "Zoom Link")
 							if (props.live)
 								return (
 									<a
 										key={item.link}
-										className='button S fill red'
-										target='noreferer'
+										className="button S fill red"
+										target="noreferer"
 										href={item.link}
 									>
 										<Text>
 											{item.label}
 											<PageIcon
-												color='var(--white)'
+												color="var(--white)"
 												style={{
-													width: '24px',
-													marginLeft: '4px',
+													width: "24px",
+													marginLeft: "4px",
 												}}
 											/>
 										</Text>
@@ -237,18 +216,18 @@ function LargeEvent(props) {
 							else
 								return (
 									<a
-										key={item.link} 
-										className='button S fill blue'
-										target='noreferer'
+										key={item.link}
+										className="button S fill blue"
+										target="noreferer"
 										href={item.link}
 									>
 										<Text>
 											{item.label}
 											<PageIcon
-												color='var(--sky)'
+												color="var(--sky)"
 												style={{
-													width: '24px',
-													marginLeft: '4px',
+													width: "24px",
+													marginLeft: "4px",
 												}}
 											/>
 										</Text>
@@ -258,17 +237,17 @@ function LargeEvent(props) {
 							return (
 								<a
 									key={item.link}
-									className='button S fill gray'
-									target='noreferer'
+									className="button S fill gray"
+									target="noreferer"
 									href={item.link}
 								>
 									<Text>
 										{item.label}
 										<PageIcon
-											color='var(--white)'
+											color="var(--white)"
 											style={{
-												width: '24px',
-												marginLeft: '4px',
+												width: "24px",
+												marginLeft: "4px",
 											}}
 										/>
 									</Text>
@@ -277,7 +256,7 @@ function LargeEvent(props) {
 					})}
 				</div>
 			)}
-			<Text className='color gray'>{props.event.desc}</Text>
+			<Text className="color gray">{props.event.desc}</Text>
 		</div>
 	);
 }
@@ -286,14 +265,14 @@ export default Events;
 
 function formatDate(date) {
 	let time = new Date(date);
-	let str = '';
-	str += mapDay(time.getDay()) + ', ';
-	str += mapMonth(time.getMonth()) + ' ';
-	str += time.getDate() + ' at ';
-	str += getHour(time.getHours()) + ':';
-	str += getMinutes(time.getMinutes()) + ' ';
+	let str = "";
+	str += mapDay(time.getDay()) + ", ";
+	str += mapMonth(time.getMonth()) + " ";
+	str += time.getDate() + " at ";
+	str += getHour(time.getHours()) + ":";
+	str += getMinutes(time.getMinutes()) + " ";
 	str += getPeriod(time.getHours());
-	str += ' your time';
+	str += " your time";
 	return str;
 }
 function formatRelativeDate(date) {
@@ -351,9 +330,9 @@ function formatRelativeDate(date) {
 				return `${months} months ago`;
 			}
 		} else if (days < 365) {
-			return 'Several months ago';
+			return "Several months ago";
 		} else {
-			return 'Over a year ago';
+			return "Over a year ago";
 		}
 	}
 }
@@ -366,42 +345,42 @@ function getHour(h) {
 }
 function getMinutes(m) {
 	if (m < 10) {
-		return '0' + m;
+		return "0" + m;
 	} else {
 		return m;
 	}
 }
 function getPeriod(h) {
 	if (h >= 12) {
-		return 'PM';
+		return "PM";
 	} else {
-		return 'AM';
+		return "AM";
 	}
 }
 
 const days = [
-	'Sunday',
-	'Monday',
-	'Tuesday',
-	'Wednesday',
-	'Thursday',
-	'Friday',
-	'Saturday',
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday",
 ];
 const months = [
-	'Jan',
-	'Feb',
-	'Mar',
-	'Apr',
-	'May',
-	'Jun',
-	'Jul',
-	'Aug',
-	'Sep',
-	'Oct',
-	'Nov',
-	'Dec',
+	"Jan",
+	"Feb",
+	"Mar",
+	"Apr",
+	"May",
+	"Jun",
+	"Jul",
+	"Aug",
+	"Sep",
+	"Oct",
+	"Nov",
+	"Dec",
 ];
 
-const mapDay = n => days[n];
-const mapMonth = n => months[n];
+const mapDay = (n) => days[n];
+const mapMonth = (n) => months[n];

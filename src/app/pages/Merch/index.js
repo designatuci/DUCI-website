@@ -1,3 +1,3 @@
-import Merch from './Merch';
+import Merch from "./Merch";
 
 export default Merch;

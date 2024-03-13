@@ -1,45 +1,42 @@
-import { useEffect, useState } from 'react';
-import cn from './Timer.module.scss';
+import { useEffect, useState } from "react";
+import cn from "./Timer.module.scss";
 
 const Timer = ({ breakpoints }) => {
-
 	const [timeLeft, setTimeLeft] = useState([]);
 	const [text, setText] = useState(null);
 
 	useEffect(() => {
 		const countdown = setInterval(() => {
-			const {date, text} = breakpoints.find(
-				breakpoint =>
-					breakpoint.date === 'end' ||
-					new Date().getTime() < new Date(breakpoint.date).getTime()
+			const { date, text } = breakpoints.find(
+				(breakpoint) =>
+					breakpoint.date === "end" ||
+					new Date().getTime() < new Date(breakpoint.date).getTime(),
 			);
 
 			setText(text);
-			if(date === 'end') return setTimeLeft([]);
+			if (date === "end") return setTimeLeft([]);
 
 			const timeBuilder = [];
 			let timeDiff = new Date(date).getTime() - new Date().getTime();
 			timeDiff /= 1000;
 			timeBuilder.unshift({
 				time: parseInt(timeDiff % 60),
-				text: 'seconds',
+				text: "seconds",
 			});
 			timeDiff /= 60;
 			timeBuilder.unshift({
 				time: parseInt(timeDiff % 60),
-				text: 'minutes',
+				text: "minutes",
 			});
 			timeDiff /= 60;
 			timeBuilder.unshift({
 				time: parseInt(timeDiff % 24),
-				text: 'hours',
+				text: "hours",
 			});
 			timeDiff /= 24;
-			timeBuilder.unshift({ time: parseInt(timeDiff), text: 'days' });
+			timeBuilder.unshift({ time: parseInt(timeDiff), text: "days" });
 
 			setTimeLeft(timeBuilder);
-
-
 		}, 500);
 
 		return () => clearImmediate(countdown);

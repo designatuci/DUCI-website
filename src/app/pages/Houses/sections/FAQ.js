@@ -34,7 +34,7 @@ function FAQ() {
 							closed={
 								<div
 									className={clsx(
-										"faqitem gray card S flex left spaceChildrenSmall"
+										"faqitem gray card S flex left spaceChildrenSmall",
 									)}
 								>
 									<div className="flex row top">

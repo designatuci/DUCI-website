@@ -1,4 +1,4 @@
-@import 'app/styles/variables';
+@import "app/styles/variables";
 
 .form {
 	width: 88%;
@@ -27,7 +27,9 @@
 }
 
 .form input:focus {
-	box-shadow: 0 0 0 3px $blue, 0 4px 4px -1px $blue;
+	box-shadow:
+		0 0 0 3px $blue,
+		0 4px 4px -1px $blue;
 }
 
 @media only screen and (max-width: 768px) {

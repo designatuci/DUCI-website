@@ -1,4 +1,3 @@
-
 //
 //  Animation
 //
@@ -6,16 +5,16 @@ var view, gl;
 var Main = {};
 const RESOLUTION = window.devicePixelRatio;
 function initialize() {
-	view = document.getElementById('view');
+	view = document.getElementById("view");
 	// gl = view.getContext("webgl2", {antialias: false, preserveDrawingBuffer: true, premultipliedAlpha: false })
-	gl = view.getContext('webgl', {
+	gl = view.getContext("webgl", {
 		antialias: false,
 		preserveDrawingBuffer: true,
 		premultipliedAlpha: false,
 	});
 
-	window.addEventListener('resize', resize);
-	window.addEventListener('scroll', scroll);
+	window.addEventListener("resize", resize);
+	window.addEventListener("scroll", scroll);
 
 	Main.target = {};
 	Main.target.view = {
@@ -50,24 +49,24 @@ function frame() {
 	}
 
 	Main.prog.render.prepareDraw();
-	Main.prog.render.setUniform['u_T'](T + 0.5);
+	Main.prog.render.setUniform["u_T"](T + 0.5);
 	Main.prog.render.draw();
 
 	if (run) requestAnimationFrame(frame);
 }
 function resize() {
 	Main.target.view.w = Math.ceil(
-		view.getBoundingClientRect().width * RESOLUTION
+		view.getBoundingClientRect().width * RESOLUTION,
 	);
 	Main.target.view.h = Math.ceil(
-		view.getBoundingClientRect().height * RESOLUTION
+		view.getBoundingClientRect().height * RESOLUTION,
 	);
 
 	view.width = Main.target.view.w;
 	view.height = Main.target.view.h;
 
-	Main.prog.render.setUniform['aspect'](
-		Main.target.view.w / Main.target.view.h
+	Main.prog.render.setUniform["aspect"](
+		Main.target.view.w / Main.target.view.h,
 	);
 }
 function scroll() {
@@ -108,52 +107,47 @@ class Program {
 		const vertexBuffer = gl.createBuffer();
 		gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 		gl.bufferData(gl.ARRAY_BUFFER, Verticies, gl.STATIC_DRAW);
-		const positionAttribLocation = gl.getAttribLocation(
-			this.program,
-			'vertex'
-		);
+		const positionAttribLocation = gl.getAttribLocation(this.program, "vertex");
 		gl.vertexAttribPointer(
 			positionAttribLocation,
 			2,
 			gl.FLOAT,
 			gl.FALSE,
 			2 * Float32Array.BYTES_PER_ELEMENT,
-			0
+			0,
 		);
 		gl.enableVertexAttribArray(positionAttribLocation);
 
 		// Generate uniform setters
 		this.setUniform = {};
 		this.uLocation = {};
-		let uniformArgs = (vertCode + fragCode).matchAll(
-			'uniform +(.+) +(.+);'
-		);
+		let uniformArgs = (vertCode + fragCode).matchAll("uniform +(.+) +(.+);");
 		for (let i of uniformArgs) {
 			let location = gl.getUniformLocation(this.program, i[2]);
 			this.uLocation[i[2]] = location;
-			let setFuncName = 'uniform';
-			if (!['sampler2D'].includes(i[1])) {
+			let setFuncName = "uniform";
+			if (!["sampler2D"].includes(i[1])) {
 				switch (i[1]) {
-					case 'float':
-						setFuncName += '1f';
+					case "float":
+						setFuncName += "1f";
 						break;
-					case 'vec2':
-						setFuncName += '2fv';
+					case "vec2":
+						setFuncName += "2fv";
 						break;
-					case 'vec3':
-						setFuncName += '3fv';
+					case "vec3":
+						setFuncName += "3fv";
 						break;
-					case 'vec4':
-						setFuncName += '4fv';
+					case "vec4":
+						setFuncName += "4fv";
 						break;
-					case 'int':
-						setFuncName += '1i';
+					case "int":
+						setFuncName += "1i";
 						break;
 					default:
-						alert('Undefined uniform type');
+						alert("Undefined uniform type");
 						break;
 				}
-				this.setUniform[i[2]] = value => {
+				this.setUniform[i[2]] = (value) => {
 					gl.useProgram(this.program);
 					gl[setFuncName](location, value);
 				};

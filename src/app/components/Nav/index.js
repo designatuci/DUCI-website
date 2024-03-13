@@ -1,4 +1,3 @@
-import Nav from './Nav.js';
+import Nav from "./Nav.js";
 
 export default Nav;
-
