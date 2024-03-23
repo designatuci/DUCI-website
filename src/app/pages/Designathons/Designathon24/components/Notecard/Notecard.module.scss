@@ -1,0 +1,90 @@
+.noteCard {
+	position: relative;
+
+	background-color: #fbfbfb;
+	color: var(--des24-black);
+
+	box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+
+	margin: 1.5rem 1rem 0;
+
+	.noteCardHeader {
+		height: 60px;
+		border-bottom: 4px solid;
+		border-color: var(--des24-hot-pink);
+		opacity: 70%;
+	}
+
+	.text {
+		margin-top: 0.5rem;
+		max-width: 95%;
+
+		p {
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+
+			padding: 0 1.5rem 2rem 1.5rem;
+			line-height: 200%;
+			font-size: 16px;
+		}
+	}
+
+	& .lines {
+		.line {
+			position: absolute;
+			height: 3px;
+			width: 100%;
+
+			background-color: #8ebbdc;
+			opacity: 30%;
+
+			z-index: -10;
+		}
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.noteCard {
+		margin: 1.5rem 4rem 0;
+
+		.noteCardHeader {
+			height: 80px;
+			border-bottom: 4px solid;
+			border-color: var(--des24-hot-pink);
+			opacity: 70%;
+		}
+
+		.text {
+			margin-top: 0.75rem;
+
+			p {
+				padding: 0 2rem 2.5rem;
+				line-height: 200%;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.noteCard {
+		position: relative;
+
+		background-color: #fbfbfb;
+		color: var(--des24-black);
+
+		box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+
+		margin: 1.5rem 6rem 0;
+
+		.text {
+			margin-top: 0.5rem;
+
+			p {
+				font-size: 24px;
+				padding: 0 2.5rem 3rem 2.5rem;
+			}
+		}
+	}
+}
