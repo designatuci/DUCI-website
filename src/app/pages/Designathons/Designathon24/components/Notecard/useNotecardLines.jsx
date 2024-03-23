@@ -6,6 +6,10 @@ const LINE_BREAKPOINTS = {
 	SM: 32,
 };
 
+const SMALL_SCREEN = 640;
+const TOP_MARGIN = 128;
+const TOP_MARGIN_SM = 96;
+
 function useNotecardLines(textRef) {
 	const [dimensions, setDimensions] = useState({
 		width: 0,
@@ -37,7 +41,8 @@ function useNotecardLines(textRef) {
 		const lines = numLines > 0 ? numLines : 1;
 
 		/* Distance from top border of card */
-		const notecardLineTop = newWidth >= 640 ? 128 : 96;
+		const notecardLineTop =
+			newWidth >= SMALL_SCREEN ? TOP_MARGIN : TOP_MARGIN_SM;
 
 		setDimensions({
 			width: newWidth,
