@@ -1,71 +1,68 @@
-.container {    
-    display: grid;
-    text-align: center;
-    border: 2px solid transparent;
-    padding: 20px;
-    border-radius: 20px;
-    transition: border-color 250ms;
-    cursor: pointer;
+.container {
+	display: grid;
+	text-align: center;
+	border: 2px solid transparent;
+	padding: 20px;
+	border-radius: 20px;
+	transition: border-color 250ms;
+	cursor: pointer;
 
-    &:hover {
-        border: 2px solid var(--gray);
-    }
+	&:hover {
+		border: 2px solid var(--gray);
+	}
 
-    &>img {
-        margin: 0 auto;
-        border-radius: 50%;
-        height: 100px;
-        width: 100px;
-        object-fit: cover;
-        cursor: pointer;
-    }
+	& > img {
+		margin: 0 auto;
+		border-radius: 50%;
+		height: 100px;
+		width: 100px;
+		object-fit: cover;
+		cursor: pointer;
+	}
 
-    &>p {
-        font-size: 1em;
-        line-height: 1.4em;
-        font-weight: bold;
-        margin: 8px 0;
-        cursor: pointer;
-    }
-    
-    &>span {
-        color: grey;
-        cursor: pointer;
-        font-size: 0.9em;
-        line-height: 1.2em;
-    }
-    
+	& > p {
+		font-size: 1em;
+		line-height: 1.4em;
+		font-weight: bold;
+		margin: 8px 0;
+		cursor: pointer;
+	}
 
-    @media screen and (min-width: 900px) {
-        &>img {
-            border-radius: 50%;
-            height: 150px;
-            width: 150px;
-        }
-    
-        &>p {
-            font-size: 1.4em;
-        }
-        
-        &>span {
-            font-size: 1.2em;
-        }
-    }
-    @media screen and (min-width: 1350px) {
-        &>img {
-            height: 200px;
-            width: 200px;
-        }
-    
-        &>p {
-            font-size: 1.8em;
-            margin: 10px 0;
-        }
-        
-        &>span {
-            font-size: 1.3em;
-        }
-    }
+	& > span {
+		color: grey;
+		cursor: pointer;
+		font-size: 0.9em;
+		line-height: 1.2em;
+	}
 
+	@media screen and (min-width: 900px) {
+		& > img {
+			border-radius: 50%;
+			height: 150px;
+			width: 150px;
+		}
 
+		& > p {
+			font-size: 1.4em;
+		}
+
+		& > span {
+			font-size: 1.2em;
+		}
+	}
+	@media screen and (min-width: 1350px) {
+		& > img {
+			height: 200px;
+			width: 200px;
+		}
+
+		& > p {
+			font-size: 1.8em;
+			margin: 10px 0;
+		}
+
+		& > span {
+			font-size: 1.3em;
+		}
+	}
 }

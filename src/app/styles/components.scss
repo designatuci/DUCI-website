@@ -1,4 +1,4 @@
-@import 'app/styles/variables';
+@import "app/styles/variables";
 
 .photo {
 	width: 100%;
@@ -76,7 +76,9 @@
 .largeEvent {
 	border-radius: 16px;
 	/* border: solid 2px $silver; */
-	box-shadow: 0 1px 2px 1px $silver, 0 16px 32px $silver;
+	box-shadow:
+		0 1px 2px 1px $silver,
+		0 16px 32px $silver;
 	padding: 64px;
 	opacity: 0;
 	animation: largeEvent-show 1.8s cubic-bezier(0.18, 0.62, 0, 1) forwards;

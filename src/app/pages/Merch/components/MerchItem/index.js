@@ -1,3 +1,3 @@
-import MerchItem from './MerchItem';
+import MerchItem from "./MerchItem";
 
 export default MerchItem;

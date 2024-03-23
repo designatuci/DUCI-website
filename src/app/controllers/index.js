@@ -1,5 +1,3 @@
-import useScroll from './useScroll.js';
+import useScroll from "./useScroll.js";
 
-export {
-    useScroll,
-}
+export { useScroll };

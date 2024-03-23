@@ -1,6 +1,6 @@
-import clsx from 'clsx';
+import clsx from "clsx";
 
-import cn from './Text.module.scss';
+import cn from "./Text.module.scss";
 
 const Text = ({ children, className, size, color, icon, ...props }) => (
 	<div
@@ -8,8 +8,8 @@ const Text = ({ children, className, size, color, icon, ...props }) => (
 			cn.container,
 			cn[size],
 			cn[color],
-			icon === 'right' && cn.pagelink,
-			className
+			icon === "right" && cn.pagelink,
+			className,
 		)}
 		{...props}
 	>

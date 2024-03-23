@@ -1,11 +1,11 @@
-import clsx from 'clsx';
+import clsx from "clsx";
 
-import { Text } from 'app/components';
-import { Section, Space } from 'app/Symbols';
+import { Text } from "app/components";
+import { Section, Space } from "app/Symbols";
 
-import MerchItem from '../MerchItem';
+import MerchItem from "../MerchItem";
 
-import cn from './MerchDropListing.module.scss';
+import cn from "./MerchDropListing.module.scss";
 
 const MerchDropListing = ({
 	name,
@@ -15,32 +15,32 @@ const MerchDropListing = ({
 	items,
 	path,
 }) => (
-	<Section className={clsx(cn.container, 'short')}>
-		<div className='flex left spaceChildren'>
-			<Text size='XL'>{name}</Text>
-			<div className='flex left spaceChildrenSmall'>
+	<Section className={clsx(cn.container, "short")}>
+		<div className="flex left spaceChildren">
+			<Text size="XL">{name}</Text>
+			<div className="flex left spaceChildrenSmall">
 				{inStock ? (
 					<>
-						<Text className='color yellow'>Limited Stock</Text>
+						<Text className="color yellow">Limited Stock</Text>
 						<a
-							className={clsx(cn.link, 'color blue')}
-							target='_blank'
-							rel='noopener noreferrer'
+							className={clsx(cn.link, "color blue")}
+							target="_blank"
+							rel="noopener noreferrer"
 							href={buyLink}
 						>
 							Buy Here
 						</a>
 					</>
 				) : (
-					<Text className='color red'>Sold out</Text>
+					<Text className="color red">Sold out</Text>
 				)}
 
-				<Text className='color gray'>{description}</Text>
+				<Text className="color gray">{description}</Text>
 			</div>
 		</div>
-		<Space h='0' />
-		<div className={clsx(cn.split4, 'split4')}>
-			{items.map(item => (
+		<Space h="0" />
+		<div className={clsx(cn.split4, "split4")}>
+			{items.map((item) => (
 				<MerchItem key={item.name} path={path} {...item} />
 			))}
 		</div>

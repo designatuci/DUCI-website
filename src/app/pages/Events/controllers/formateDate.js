@@ -42,9 +42,9 @@ function formatRelativeDate(date) {
 				return `${months} months ago`;
 			}
 		} else if (days < 365) {
-			return 'Several months ago';
+			return "Several months ago";
 		} else {
-			return 'Over a year ago';
+			return "Over a year ago";
 		}
 	}
 }
