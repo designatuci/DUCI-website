@@ -43,10 +43,14 @@ const About = () => {
 				className={clsx(cn.airplane, "wait flopR")}
 			/>
 			<img src={paperclip} alt="paperclip" className={cn.paperclip} />
-			<img src={tr_gradient} alt="tr_gradient" className={cn.tr_gradient} />
-			<img src={bl_gradient} alt="bl_gradient" className={cn.bl_gradient} />
-			<img src={tr_stars} alt="tr_stars" className={cn.tr_stars} />
-			<img src={bl_stars} alt="bl_stars" className={cn.bl_stars} />
+			<img
+				src={tr_gradient}
+				alt="tr_gradient"
+				className={clsx(cn.tr, cn.gradient)}
+			/>
+			<img src={bl_gradient} alt="bl_gradient" className={cn.bl} />
+			<img src={tr_stars} alt="tr_stars" className={cn.tr} />
+			<img src={bl_stars} alt="bl_stars" className={cn.bl} />
 		</div>
 	);
 };

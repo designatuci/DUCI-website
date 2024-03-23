@@ -60,73 +60,7 @@
 		}
 	}
 
-	.tr_gradient {
-		position: absolute;
-		max-width: 300px;
-		z-index: -1;
-
-		top: -100px;
-		right: -60px;
-
-		@media screen and (min-width: 640px) {
-			max-width: 500px;
-			right: -50px;
-		}
-
-		@media screen and (min-width: 1280px) {
-			right: -25px;
-		}
-	}
-
-	.bl_gradient {
-		position: absolute;
-		max-width: 200px;
-		z-index: -1;
-
-		bottom: 0;
-		left: -60px;
-
-		@media screen and (min-width: 640px) {
-			max-width: 300px;
-
-			left: -50px;
-		}
-
-		@media screen and (min-width: 1280px) {
-			left: 0;
-		}
-	}
-
-	.tr_stars {
-		position: absolute;
-		max-width: 200px;
-		z-index: -1;
-
-		top: -10px;
-		right: -100px;
-
-		@media screen and (min-width: 384px) {
-			max-width: 200px;
-
-			top: 0px;
-			right: -50px;
-		}
-
-		@media screen and (min-width: 640px) {
-			max-width: 350px;
-
-			top: -25px;
-			right: -25px;
-		}
-
-		@media screen and (min-width: 1280px) {
-			max-width: 400px;
-
-			right: 0px;
-		}
-	}
-
-	.bl_stars {
+	.bl {
 		position: absolute;
 		max-width: 200px;
 		z-index: -1;
@@ -138,11 +72,29 @@
 			max-width: 500px;
 		}
 	}
+
+	.tr {
+		position: absolute;
+		max-width: 200px;
+		z-index: -1;
+
+		top: 0px;
+		right: 0px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
+		}
+	}
+
+	.gradient {
+		max-width: 300px;
+		top: -100px;
+	}
 }
 
 @media screen and (min-width: 640px) {
 	.container {
-		padding: 4rem 2rem 6rem;
+		padding: 6rem 2rem 6rem;
 
 		& .aboutHeading {
 			font-size: 70px;
@@ -154,6 +106,6 @@
 @media screen and (min-width: 1280px) {
 	.container {
 		font-size: 1em;
-		padding: 4rem 5rem 6rem;
+		padding: 6rem 5rem 6rem;
 	}
 }
