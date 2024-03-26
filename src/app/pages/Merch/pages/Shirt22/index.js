@@ -1,3 +1,3 @@
-import Shirt22 from './Shirt22';
+import Shirt22 from "./Shirt22";
 
 export default Shirt22;

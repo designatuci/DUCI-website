@@ -1,3 +1,3 @@
-import MerchDropListing from './MerchDropListing';
+import MerchDropListing from "./MerchDropListing";
 
 export default MerchDropListing;

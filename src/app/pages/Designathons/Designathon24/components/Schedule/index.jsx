@@ -26,7 +26,7 @@ function Schedule({ schedule }) {
 										className={clsx(
 											cn.title,
 											event.isHighlight && cn.highlight,
-											event.isSpecial && cn.special
+											event.isSpecial && cn.special,
 										)}
 									>
 										{event.title}

@@ -2294,10 +2294,10 @@ function frame() {
 }
 function resize() {
 	Main.target.view.w = Math.ceil(
-		view.getBoundingClientRect().width * RESOLUTION
+		view.getBoundingClientRect().width * RESOLUTION,
 	);
 	Main.target.view.h = Math.ceil(
-		view.getBoundingClientRect().height * RESOLUTION
+		view.getBoundingClientRect().height * RESOLUTION,
 	);
 
 	view.width = Main.target.view.w;
@@ -2351,7 +2351,7 @@ class Program {
 			gl.FLOAT,
 			gl.FALSE,
 			2 * Float32Array.BYTES_PER_ELEMENT,
-			0
+			0,
 		);
 		gl.enableVertexAttribArray(positionAttribLocation);
 

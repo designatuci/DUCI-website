@@ -1,4 +1,4 @@
-@import 'app/styles/variables';
+@import "app/styles/variables";
 
 :root {
 	--white: #{$white};
@@ -43,7 +43,7 @@ script {
 	scrollbar-width: none;
 	box-sizing: border-box;
 	vertical-align: middle;
-	font-family: 'ducimain', helvetica, sans-serif;
+	font-family: "ducimain", helvetica, sans-serif;
 	font-weight: normal;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -52,7 +52,6 @@ script {
 	margin: 0;
 	padding: 0;
 }
-
 
 body {
 	min-height: 100vh;
@@ -87,7 +86,9 @@ a:hover .icon.hoverable {
 }
 
 .shadow {
-	box-shadow: 0 0 1px 1px #2232, 0 6px 12px -4px #2231;
+	box-shadow:
+		0 0 1px 1px #2232,
+		0 6px 12px -4px #2231;
 }
 
 a > * {

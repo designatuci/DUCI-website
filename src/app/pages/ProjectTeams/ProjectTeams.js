@@ -1,8 +1,8 @@
-import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
-import { Text } from 'app/components';
-import { Section, Space, Icon } from 'app/Symbols.js';
+import { Text } from "app/components";
+import { Section, Space, Icon } from "app/Symbols.js";
 
 export const PROJECT_TEAMS_GOOGLE_FORM = "https://forms.gle/QTFb9v7HMrEyyspS9";
 const REGISTRATION_OPEN = true;
@@ -23,14 +23,10 @@ function ProjectTeams() {
 	);
 
 	const registrationMessage = (
-		<Text className='color gray'>
-			To participate, complete the{' '}
-			<Text className='color blue'>
-				<Link
-					to="registration"
-					target='_blank'
-					rel='noopener noreferrer'
-				>
+		<Text className="color gray">
+			To participate, complete the{" "}
+			<Text className="color blue">
+				<Link to="registration" target="_blank" rel="noopener noreferrer">
 					project teams registration form
 				</Link>
 			</Text>{" "}
@@ -39,11 +35,11 @@ function ProjectTeams() {
 	);
 
 	const joinMessage = (
-		<Text className='color gray'>
-			To get involved,{' '}
-			<Text color='blue'>
-				<Link to='/join/'>join our newsletter</Link>
-			</Text>{' '}
+		<Text className="color gray">
+			To get involved,{" "}
+			<Text color="blue">
+				<Link to="/join/">join our newsletter</Link>
+			</Text>{" "}
 			for notifications about when the next applications come out!
 		</Text>
 	);
@@ -53,22 +49,22 @@ function ProjectTeams() {
 			<Helmet>
 				<title>Project Teams – Design at UCI</title>
 			</Helmet>
-			<Section className='center page short'>
-				<Icon className='wait dx scale' w='96' h='96' src='pt.svg' />
-				<Text size='XXL' className='wait dx scale'>
+			<Section className="center page short">
+				<Icon className="wait dx scale" w="96" h="96" src="pt.svg" />
+				<Text size="XXL" className="wait dx scale">
 					Project Teams
 				</Text>
-				<Space h='16' />
+				<Space h="16" />
 				<div
-					className='flex left slim spaceChildrenSmall'
-					style={{ textAlign: 'left' }}
+					className="flex left slim spaceChildrenSmall"
+					style={{ textAlign: "left" }}
 				>
 					{REGISTRATION_OPEN ? openMessage : closedMessage}
 					{REGISTRATION_OPEN ? registrationMessage : joinMessage}
 
 					<br />
-					<Text size='L'>What are Project Teams?</Text>
-					<Text className='color gray'>
+					<Text size="L">What are Project Teams?</Text>
+					<Text className="color gray">
 						Project Teams is a quarterly program that provides students with
 						design experience in a collaborative setting. Each quarter, students
 						form teams and work on a design project of their choice (e.g. UI/UX

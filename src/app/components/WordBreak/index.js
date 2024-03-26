@@ -1,4 +1,3 @@
-import WordBreak from './WordBreak.jsx';
+import WordBreak from "./WordBreak.jsx";
 
 export default WordBreak;
-

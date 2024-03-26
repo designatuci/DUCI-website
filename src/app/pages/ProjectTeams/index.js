@@ -1,3 +1,3 @@
-import ProjectTeams from './ProjectTeams';
+import ProjectTeams from "./ProjectTeams";
 
 export default ProjectTeams;
