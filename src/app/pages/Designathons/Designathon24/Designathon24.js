@@ -48,11 +48,7 @@ const Designathon24 = () => (
 		<SectionNavigation />
 		<WinnerShowcase winners={WINNERS_2024} />
 
-		<div
-			className={cn.about}
-			id="s-about"
-			style={{ borderBottom: "4px solid black" }}
-		>
+		<div className={cn.about} id="s-about">
 			<Section>
 				<h2 className={cn.aboutHeading}>About</h2>
 				<p>
