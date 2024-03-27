@@ -42,10 +42,8 @@
 			z-index: -10;
 		}
 	}
-}
 
-@media screen and (min-width: 640px) {
-	.noteCard {
+	@media screen and (min-width: 640px) {
 		margin: 1.5rem 4rem 0;
 
 		.noteCardHeader {
@@ -64,10 +62,8 @@
 			}
 		}
 	}
-}
 
-@media screen and (min-width: 1280px) {
-	.noteCard {
+	@media screen and (min-width: 1280px) {
 		position: relative;
 
 		background-color: #fbfbfb;
