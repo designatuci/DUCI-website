@@ -1,28 +1,52 @@
-import { Text } from "app/components";
-import { Section } from "app/Symbols";
 import cn from "./Rules.module.scss";
+import clsx from "clsx";
 
-const Rules = ({ rules }) => {
+import RULES from "../../assets/data/rules.json";
+
+import cream_hot_pink from "../../assets/graphics/rules/cream_hot_pink.svg";
+import cream from "../../assets/graphics/rules/cream.svg";
+import peach_cream from "../../assets/graphics/rules/peach_cream.svg";
+import pink from "../../assets/graphics/rules/pink.svg";
+import hearts from "../../assets/graphics/rules/hearts.svg";
+
+const BACKGROUND_MAP = {
+	0: cream_hot_pink,
+	1: peach_cream,
+	2: pink,
+	3: pink,
+	4: cream,
+	5: peach_cream,
+	6: peach_cream,
+};
+
+const Rules = () => {
 	return (
-		<Section id="s-rules" className={cn.container}>
-			<h2>Rules</h2>
-			{rules.map((rule, i) => (
-				<div key={rule} className="flex row left top spaceChildrenSmall">
-					<Text
-						size="L"
-						style={{
-							minWidth: "48px",
-							display: "block",
-							color: "var(--deepBlue)",
-							fontWeight: "bold",
-						}}
-					>
-						{i + 1}
-					</Text>
-					<Text>{rule}</Text>
-				</div>
-			))}
-		</Section>
+		<div className={cn.container} id="s-rules">
+			<h2 className={cn.heading}>Rules</h2>
+
+			<div className={cn.rules}>
+				{RULES.map((rule, index) => (
+					<div className={cn.rule} key={rule}>
+						<div className={cn.text}>
+							<span className={cn.number}>{index + 1}.</span>
+							<span>{rule}</span>
+						</div>
+
+						<img
+							src={BACKGROUND_MAP[index]}
+							alt=""
+							className={cn.bg}
+						/>
+					</div>
+				))}
+			</div>
+
+			<img
+				src={hearts}
+				alt=""
+				className={clsx(cn.hearts, "wait flopR")}
+			/>
+		</div>
 	);
 };
 
