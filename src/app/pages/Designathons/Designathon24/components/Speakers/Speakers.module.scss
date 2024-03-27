@@ -5,7 +5,7 @@
 	background-color: var(--des24-cream);
 	color: var(--des24-black);
 
-	padding: 5rem 1rem 5rem;
+	padding: 5rem 1rem;
 	font-size: 1rem;
 
 	.heading {
@@ -13,10 +13,12 @@
 		font-size: 3rem;
 		font-weight: 700;
 
-		padding: 0 1rem;
+		padding: 0 2.5%;
 
 		@media screen and (min-width: 640px) {
 			font-size: 5rem;
+
+			padding: 0 2%;
 		}
 
 		@media screen and (min-width: 1280px) {
@@ -96,60 +98,21 @@
 	}
 
 	@media screen and (min-width: 640px) {
-		padding: 9rem 5rem 9rem;
-	}
-}
-
-.pencil {
-	position: absolute;
-	max-width: 100px;
-
-	z-index: -1;
-	top: 10px;
-	right: 75px;
-
-	@media screen and (min-width: 640px) {
-		max-width: 100px;
-	}
-
-	@media screen and (min-width: 768px) {
-		max-width: 150px;
-
-		right: 200px;
+		padding: 9rem 3rem 9rem;
 	}
 
 	@media screen and (min-width: 1280px) {
-		max-width: 200px;
-
-		top: 20px;
-		right: 275px;
-	}
-
-	@media screen and (min-width: 1536px) {
-		max-width: 200px;
-		right: 325px;
+		padding: 9rem 5rem 9rem;
 	}
 }
 
 .tl_gradient {
 	position: absolute;
-	max-width: 300px;
+	max-width: 60%;
 
 	z-index: -1;
 	top: 0px;
 	left: 0px;
-
-	@media screen and (min-width: 640px) {
-		max-width: 600px;
-	}
-
-	@media screen and (min-width: 1280px) {
-		max-width: 700px;
-	}
-
-	@media screen and (min-width: 1536px) {
-		max-width: 800px;
-	}
 }
 
 .tl_star_stripe {
@@ -157,79 +120,48 @@
 	max-width: 150px;
 
 	z-index: -1;
-	top: 12.5%;
+	top: 15%;
 	left: 0px;
 
 	@media screen and (min-width: 640px) {
-		max-width: 300px;
-	}
-
-	@media screen and (min-width: 1280px) {
-		top: 10%;
-		max-width: 400px;
+		max-width: 50%;
 	}
 }
 
-.tr_star_stripe {
+.tr_pencil_star_stripe {
 	position: absolute;
-	max-width: 150px;
+	max-width: 40%;
 
 	z-index: -1;
 	top: 0;
-	right: -75px;
+	right: 0px;
 
 	@media screen and (min-width: 640px) {
-		max-width: 150px;
-	}
-
-	@media screen and (min-width: 768px) {
-		max-width: 200px;
-
-		right: 0px;
-	}
-
-	@media screen and (min-width: 1280px) {
-		max-width: 300px;
-	}
-
-	@media screen and (min-width: 1536px) {
-		max-width: 400px;
+		max-width: 50%;
 	}
 }
 
-.ml_stripe {
-	position: absolute;
-	max-width: 300px;
-
-	z-index: -1;
-	top: 47.5%;
+.stripe {
+	top: 45%;
 	left: 0px;
-
-	@media screen and (min-width: 640px) {
-		top: 42.5%;
-		max-width: 600px;
-	}
-
-	@media screen and (min-width: 1280px) {
-		max-width: 700px;
-	}
 }
 
-.mr_star_stripe {
-	position: absolute;
-	max-width: 200px;
-
-	z-index: -1;
+.star_stripe {
 	top: 45%;
 	right: 0px;
 
 	@media screen and (min-width: 640px) {
-		max-width: 600px;
-		top: 20%;
+		top: 30%;
 	}
+}
 
-	@media screen and (min-width: 1280px) {
-		max-width: 700px;
+.m {
+	position: absolute;
+	max-width: 250px;
+	z-index: -1;
+
+	@media screen and (min-width: 640px) {
+		max-width: 650px;
 	}
 }
 
@@ -243,9 +175,5 @@
 
 	@media screen and (min-width: 640px) {
 		max-width: 700px;
-	}
-
-	@media screen and (min-width: 1280px) {
-		max-width: 800px;
 	}
 }
