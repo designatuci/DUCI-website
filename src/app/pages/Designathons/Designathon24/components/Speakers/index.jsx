@@ -1,4 +1,5 @@
 import cn from "./Speakers.module.scss";
+import clsx from "clsx";
 
 import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
@@ -17,7 +18,11 @@ import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
 const Polaroid = ({ photo, name, position, odd }) => {
 	return (
 		<div className={cn.polaroid}>
-			<img src={odd ? tape_white : tape_black} alt="tape" className={cn.tape} />
+			<img
+				src={odd ? tape_white : tape_black}
+				alt="tape"
+				className={cn.tape}
+			/>
 
 			<img
 				src={require(`../../assets/${photo}`)}
@@ -85,31 +90,35 @@ const Speakers = () => {
 				</div>
 			</div>
 
-			<img src={pencil} alt="pencil" className={`${cn.pencil} wait flopR`} />
-			<img src={tl_gradient} alt="tl_gradient" className={cn.tl_gradient} />
+			<img
+				src={pencil}
+				alt=""
+				className={clsx(cn.pencil, "wait flopR")}
+			/>
+			<img src={tl_gradient} alt="" className={cn.tl_gradient} />
 			<img
 				src={tl_star_stripe}
-				alt="tl_star_stripe"
+				alt=""
 				className={`${cn.tl_star_stripe} wait flopL`}
 			/>
 			<img
 				src={tr_star_stripe}
-				alt="tr_star_stripe"
+				alt=""
 				className={`${cn.tr_star_stripe} wait flopR`}
 			/>
 			<img
 				src={ml_stripe}
-				alt="ml_stripe"
+				alt=""
 				className={`${cn.ml_stripe} wait flopL`}
 			/>
 			<img
 				src={mr_star_stripe}
-				alt="mr_star_stripe"
+				alt=""
 				className={`${cn.mr_star_stripe} wait flopL`}
 			/>
 			<img
 				src={br_star_stripe_gradient}
-				alt="br_star_stripe_gradient"
+				alt=""
 				className={cn.br_star_stripe_gradient}
 			/>
 		</div>
