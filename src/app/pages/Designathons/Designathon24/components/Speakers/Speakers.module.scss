@@ -14,7 +14,7 @@
 		font-family: "Inter";
 	}
 
-	& .heading {
+	.heading {
 		color: var(--des24-hot-pink);
 		font-size: 50px;
 		font-weight: 700;
@@ -22,7 +22,7 @@
 		padding: 0 1rem;
 	}
 
-	& .polaroids {
+	.polaroids {
 		margin-top: 3rem;
 
 		display: flex;
@@ -138,10 +138,8 @@
 			}
 		}
 	}
-}
 
-@media screen and (min-width: 640px) {
-	.container {
+	@media screen and (min-width: 640px) {
 		padding: 9rem 1rem 9rem;
 
 		.heading {
@@ -164,15 +162,9 @@
 			}
 		}
 	}
-}
 
-@media screen and (min-width: 768px) {
-	.container {
-		padding: 9rem 1rem 9rem;
-
+	@media screen and (min-width: 768px) {
 		.heading {
-			font-size: 70px;
-
 			padding: 0 4rem;
 		}
 
@@ -193,10 +185,8 @@
 			}
 		}
 	}
-}
 
-@media screen and (min-width: 1024px) {
-	.container {
+	@media screen and (min-width: 1024px) {
 		padding: 12rem 5rem 12rem;
 
 		.polaroids {
@@ -222,10 +212,8 @@
 			}
 		}
 	}
-}
 
-@media screen and (min-width: 1536px) {
-	.container {
+	@media screen and (min-width: 1536px) {
 		.polaroids {
 			.peopleContainer {
 				.people {
@@ -234,10 +222,8 @@
 			}
 		}
 	}
-}
 
-@media screen and (min-width: 1728px) {
-	.container {
+	@media screen and (min-width: 1728px) {
 		.polaroids {
 			.polaroid {
 				width: 450px;
