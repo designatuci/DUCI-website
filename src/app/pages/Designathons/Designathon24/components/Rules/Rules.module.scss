@@ -1,9 +1,76 @@
 .container {
-	background-color: var(--silver);
+	background-color: var(--des24-black);
 
-	& h2 {
-		padding-bottom: 20px;
-		font-size: 3em;
-		font-weight: bold;
+	padding: 3rem 5rem 5rem;
+	font-size: 1em;
+
+	.heading {
+		color: var(--des24-hot-pink);
+		font-size: 3rem;
+		font-weight: 700;
+
+		@media screen and (min-width: 640px) {
+			font-size: 5rem;
+		}
+
+		@media screen and (min-width: 1280px) {
+			font-size: 6rem;
+		}
+	}
+
+	.rules {
+		margin-top: 8rem;
+		height: 100%;
+		min-height: 100%;
+
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 7.5%;
+
+		@media screen and (min-width: 1280px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		.rule {
+			width: 100%;
+			aspect-ratio: 1;
+
+			position: relative;
+			display: flex;
+			justify-content: center;
+
+			.text {
+				color: var(--des24-black);
+				width: 75%;
+				margin-top: auto;
+				margin-bottom: auto;
+
+				font-size: 1.5rem;
+
+				display: flex;
+				flex-direction: column;
+				gap: 2rem;
+
+				.number {
+					font-size: 2rem;
+					text-align: center;
+				}
+			}
+
+			.bg {
+				position: absolute;
+				z-index: -1;
+
+				height: 100%;
+
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+
+	@media screen and (min-width: 1280px) {
+		padding: 6rem 5rem 18rem;
 	}
 }
