@@ -6,14 +6,22 @@
 	color: var(--des24-black);
 
 	padding: 5rem 1rem 5rem;
-	font-size: 1em;
+	font-size: 1rem;
 
 	.heading {
 		color: var(--des24-hot-pink);
-		font-size: 50px;
+		font-size: 3rem;
 		font-weight: 700;
 
 		padding: 0 1rem;
+
+		@media screen and (min-width: 640px) {
+			font-size: 5rem;
+		}
+
+		@media screen and (min-width: 1280px) {
+			font-size: 6rem;
+		}
 	}
 
 	.polaroids {
@@ -24,11 +32,16 @@
 		justify-content: center;
 		gap: 4rem;
 
-		& .polaroidHeading {
+		.polaroidHeading {
 			font-size: 2rem;
 			font-weight: 700;
 
 			padding-bottom: 3rem;
+
+			@media screen and (min-width: 1280px) {
+				font-size: 2.5rem;
+				padding-bottom: 5rem;
+			}
 		}
 
 		.keynote {
@@ -51,19 +64,6 @@
 					z-index: -1;
 
 					width: 150%;
-
-					@media screen and (min-width: 768px) {
-						top: -10%;
-						width: 550px;
-					}
-
-					@media screen and (min-width: 1024px) {
-						width: 700px;
-					}
-
-					@media screen and (min-width: 1728px) {
-						width: 800px;
-					}
 				}
 			}
 		}
@@ -78,74 +78,25 @@
 				grid-template-columns: repeat(2, 1fr);
 				row-gap: 3rem;
 				column-gap: 1rem;
-			}
-		}
-	}
 
-	@media screen and (min-width: 640px) {
-		padding: 9rem 1rem 9rem;
-
-		.heading {
-			font-size: 70px;
-
-			padding: 0 3rem;
-		}
-	}
-
-	@media screen and (min-width: 768px) {
-		.heading {
-			padding: 0 4rem;
-		}
-
-		.polaroids {
-			.peopleContainer {
-				margin: auto;
-
-				.people {
-					column-gap: 3rem;
-					row-gap: 3rem;
-				}
-			}
-		}
-	}
-
-	@media screen and (min-width: 1024px) {
-		padding: 12rem 5rem 12rem;
-
-		.polaroids {
-			margin-top: 5rem;
-			gap: 8rem;
-
-			.polaroidHeading {
-				font-size: 2.5rem;
-				padding-bottom: 5rem;
-			}
-
-			.peopleContainer {
-				margin: auto;
-
-				.people {
-					row-gap: 6rem;
+				@media screen and (min-width: 768px) {
 					column-gap: 3rem;
 				}
-			}
-		}
-	}
 
-	@media screen and (min-width: 1536px) {
-		.polaroids {
-			.peopleContainer {
-				.people {
+				@media screen and (min-width: 1280px) {
 					grid-template-columns: repeat(3, 1fr);
 				}
 			}
 		}
+
+		@media screen and (min-width: 1280px) {
+			margin-top: 5rem;
+			gap: 8rem;
+		}
 	}
 
-	@media screen and (min-width: 1728px) {
-		.peopleContainer {
-			width: 1568px;
-		}
+	@media screen and (min-width: 640px) {
+		padding: 9rem 5rem 9rem;
 	}
 }
 
