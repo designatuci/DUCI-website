@@ -13,13 +13,13 @@ import FOF from "./assets/FOF.png";
 import notion from "./assets/notion.png";
 import balsamiq from "./assets/balsamiq.png";
 import {
-	Profile,
 	Prizes,
 	SectionNavigation,
 	FAQ,
 	Rules,
 	Timer,
 	WinnerShowcase,
+	Speakers,
 } from "./components";
 import Schedule from "./components/Schedule";
 import { Splash } from "./components/Splash";
@@ -75,28 +75,7 @@ const Designathon24 = () => (
 			</Section>
 		</div>
 
-		<div className={cn.people} id="s-people">
-			<Section>
-				<div className={cn.section}>
-					<h2>Keynote Speaker</h2>
-					{KEYNOTE_2024.map((speaker) => (
-						<Profile key={speaker.photo} {...speaker} />
-					))}
-				</div>
-				<div className={cn.section}>
-					<h2>Judges</h2>
-					{JUDGES_2024.map((judge) => (
-						<Profile key={judge.photo} {...judge} />
-					))}
-				</div>
-				<div className={cn.section}>
-					<h2>Workshop Hosts</h2>
-					{WORKSHOP_HOSTS_2024.map((host) => (
-						<Profile key={host.photo} {...host} />
-					))}
-				</div>
-			</Section>
-		</div>
+		<Speakers />
 
 		<Rules rules={RULES_2024} />
 
