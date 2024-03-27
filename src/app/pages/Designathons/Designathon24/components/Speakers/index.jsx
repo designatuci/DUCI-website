@@ -1,8 +1,8 @@
 import cn from "./Speakers.module.scss";
 import clsx from "clsx";
 
-import tape_black from "../../assets/graphics/speakers/tape_black.svg";
-import tape_white from "../../assets/graphics/speakers/tape_white.svg";
+import Polaroid from "../Polaroid/Polaroid";
+
 import splat from "../../assets/graphics/speakers/splat.svg";
 import pencil from "../../assets/graphics/speakers/pencil.svg";
 import tl_gradient from "../../assets/graphics/speakers/tl_gradient.svg";
@@ -14,29 +14,6 @@ import br_star_stripe_gradient from "../../assets/graphics/speakers/br_star_stri
 
 import JUDGES from "../../assets/data/judges.json";
 import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
-
-const Polaroid = ({ photo, name, position, odd }) => {
-	return (
-		<div className={cn.polaroid}>
-			<img
-				src={odd ? tape_white : tape_black}
-				alt="tape"
-				className={cn.tape}
-			/>
-
-			<img
-				src={require(`../../assets/${photo}`)}
-				alt={`polaroid of ${name}`}
-				className={cn.polaroidImage}
-			/>
-
-			<div className={cn.polaroidDetails}>
-				<h6 className={cn.polaroidName}>{name}</h6>
-				<p className={cn.polaroidPosition}>{position}</p>
-			</div>
-		</div>
-	);
-};
 
 const Speakers = () => {
 	return (
