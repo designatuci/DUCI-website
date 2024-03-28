@@ -1,8 +1,4 @@
-import { Text } from "app/components";
-import { Section, Icon } from "app/Symbols";
-
 import cn from "./FAQ.module.scss";
-import clsx from "clsx";
 
 import { useCallback, useState } from "react";
 
@@ -242,10 +238,7 @@ const Toggle = ({ opened, closed }) => {
 	}, []);
 
 	return (
-		<div
-			className={clsx(cn.qa_item, open && cn.opened)}
-			onClick={toggleExpand}
-		>
+		<div className={cn.qa_item} onClick={toggleExpand}>
 			<img
 				src={down_carat}
 				alt="down carat icon for accordion menu item"
