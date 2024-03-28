@@ -35,8 +35,6 @@
 			grid-template-columns: auto 1fr;
 			border-radius: 12px;
 
-			transition: transform 1s ease;
-
 			.question {
 				font-size: 2rem;
 				cursor: pointer;
@@ -52,6 +50,8 @@
 
 	background-color: #ffe5e5;
 
+	animation: fadeIn 0.5s ease-in;
+
 	font-size: 1.25rem;
 	line-height: 2.5rem;
 
@@ -61,5 +61,17 @@
 
 	p {
 		line-height: 2.5rem;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	30% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
