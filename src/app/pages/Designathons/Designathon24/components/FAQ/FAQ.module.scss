@@ -30,11 +30,7 @@
 		grid-template-columns: 1fr;
 		gap: 1.5rem;
 
-		@media screen and (min-width: 640px) {
-			gap: 2rem;
-		}
-
-		@media screen and (min-width: 1280px) {
+		@media screen and (min-width: 768px) {
 			gap: 3rem;
 		}
 
@@ -64,11 +60,7 @@
 
 				cursor: "pointer";
 
-				@media screen and (min-width: 640px) {
-					height: 1.5rem;
-				}
-
-				@media screen and (min-width: 1280px) {
+				@media screen and (min-width: 768px) {
 					height: 2rem;
 				}
 			}
