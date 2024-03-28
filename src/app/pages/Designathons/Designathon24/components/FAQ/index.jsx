@@ -243,12 +243,9 @@ const Toggle = ({ opened, closed }) => {
 				src={down_carat}
 				alt="down carat icon for accordion menu item"
 				style={{
-					width: 24,
-					height: 32,
-					marginRight: 16,
 					transform: open ? "rotate(180deg)" : "rotate(0deg)",
-					cursor: "pointer",
 				}}
+				className={cn.down_carat}
 			/>
 			{open ? opened : closed}
 		</div>
