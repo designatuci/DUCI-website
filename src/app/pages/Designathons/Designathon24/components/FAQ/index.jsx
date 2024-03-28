@@ -201,21 +201,10 @@ const FAQ = () => {
 							),
 						},
 					].map((item) => {
-						const question = (
-							<div>
-								<h3 className={cn.question}>{item.q}</h3>
-							</div>
-						);
-
 						return (
 							<Toggle
-								closed={question}
-								opened={
-									<div>
-										{question}
-										<AnswerTag answer={item.a} />
-									</div>
-								}
+								question={item.q}
+								answer={item.a}
 								key={item.q}
 							/>
 						);
@@ -230,7 +219,7 @@ const AnswerTag = ({ answer }) => {
 	return <div className={cn.answer_tag}>{answer}</div>;
 };
 
-const Toggle = ({ opened, closed }) => {
+const Toggle = ({ question, answer }) => {
 	const [open, setOpen] = useState(false);
 
 	const toggleExpand = useCallback(() => {
@@ -239,15 +228,19 @@ const Toggle = ({ opened, closed }) => {
 
 	return (
 		<div className={cn.qa_item} onClick={toggleExpand}>
-			<img
-				src={down_carat}
-				alt="down carat icon for accordion menu item"
-				style={{
-					transform: open ? "rotate(180deg)" : "rotate(0deg)",
-				}}
-				className={cn.down_carat}
-			/>
-			{open ? opened : closed}
+			<div className={cn.question}>
+				<img
+					src={down_carat}
+					alt="down carat icon for accordion menu item"
+					style={{
+						transform: open ? "rotate(180deg)" : "rotate(0deg)",
+					}}
+					className={cn.down_carat}
+				/>
+				{question}
+			</div>
+
+			{open ? <AnswerTag answer={answer} /> : null}
 		</div>
 	);
 };
