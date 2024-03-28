@@ -1,16 +1,29 @@
 import React from "react";
-import { Section } from "app/Symbols";
-import clsx from "clsx";
+// import { Section } from "app/Symbols";
+// import clsx from "clsx";
 import cn from "./Schedule.module.scss";
+
+import coming_soon from "../../assets/graphics/schedule/coming_soon.svg";
+import dark_splat from "../../assets/graphics/background/dark_splat.svg";
 
 function Schedule({ schedule }) {
 	return (
 		<div className={cn.container} id="s-schedule">
-			<Section>
+			<h2 className={cn.heading}>Schedule</h2>
+
+			<img
+				src={coming_soon}
+				alt="Coming Soon"
+				className={cn.coming_soon}
+			/>
+
+			<img src={dark_splat} alt="" className={cn.dark_splat} />
+
+			{/* <Section>
 				<h1 className={cn.title}>Schedule</h1>
 				<span className={cn.note}>
-					In-person events are marked with (IP) and are open to UCI students
-					only.
+					In-person events are marked with (IP) and are open to UCI
+					students only.
 				</span>
 
 				{schedule.map((day) => (
@@ -20,7 +33,8 @@ function Schedule({ schedule }) {
 							{day.events.map((event, index) => (
 								<div className={cn.event} key={index}>
 									<div className={cn.time}>
-										{event.time} <span>↓</span> {event.endTime}
+										{event.time} <span>↓</span>{" "}
+										{event.endTime}
 									</div>
 									<div
 										className={clsx(
@@ -32,16 +46,18 @@ function Schedule({ schedule }) {
 										{event.title}
 									</div>
 									<div className={cn.description}>
-										{event.description.map((paragraph, pIndex) => (
-											<p key={pIndex}>{paragraph}</p>
-										))}
+										{event.description.map(
+											(paragraph, pIndex) => (
+												<p key={pIndex}>{paragraph}</p>
+											),
+										)}
 									</div>
 								</div>
 							))}
 						</div>
 					</React.Fragment>
 				))}
-			</Section>
+			</Section> */}
 		</div>
 	);
 }
