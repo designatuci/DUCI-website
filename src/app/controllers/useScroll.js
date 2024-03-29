@@ -20,7 +20,6 @@ function useScroll() {
 				behavior: "smooth",
 			});
 		}
-
 		setScrollableElements(document.getElementsByClassName("wait"));
 		window.addEventListener("scroll", pageScroll);
 		pageScroll();
