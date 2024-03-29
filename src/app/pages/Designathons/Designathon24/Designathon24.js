@@ -7,7 +7,6 @@ import JUDGES_2024 from "assets/data/designathon/2024/judges.json";
 import KEYNOTE_2024 from "assets/data/designathon/2024/keynote.json";
 import PRIZES_2024 from "assets/data/designathon/2024/prizes.json";
 import WORKSHOP_HOSTS_2024 from "assets/data/designathon/2024/workshop-hosts.json";
-import RULES_2024 from "assets/data/designathon/2024/rules.json";
 import cn from "./Designathon24.module.scss";
 import FOF from "./assets/FOF.png";
 import notion from "./assets/notion.png";
@@ -50,7 +49,6 @@ const Designathon24 = () => (
 		<WinnerShowcase winners={WINNERS_2024} />
 
 		<About />
-
 		<div className={cn.people} id="s-people">
 			<Section>
 				<div className={cn.section}>
@@ -74,7 +72,7 @@ const Designathon24 = () => (
 			</Section>
 		</div>
 
-		<Rules rules={RULES_2024} />
+		<Rules />
 
 		<div className={cn.prizes} id="s-prizes">
 			<Prizes list={PRIZES_2024} />
