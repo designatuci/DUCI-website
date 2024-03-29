@@ -49,7 +49,7 @@ const Designathon24 = () => (
 		<SectionNavigation />
 		<WinnerShowcase winners={WINNERS_2024} />
 
-
+		<About />
 		<Speakers />
 
 		<Rules />
