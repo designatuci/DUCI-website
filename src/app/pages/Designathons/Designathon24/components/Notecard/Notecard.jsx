@@ -4,18 +4,16 @@ import { useRef } from "react";
 import useNotecardLines from "./useNotecardLines";
 
 const Notecard = ({ children }) => {
-	const textRef = useRef(null);
+	const notecardRef = useRef(null);
 
 	const { lines, notecardLineTop, notecardLineHeight } =
-		useNotecardLines(textRef);
+		useNotecardLines(notecardRef);
 
 	return (
-		<div className={cn.noteCard}>
+		<div className={cn.noteCard} ref={notecardRef}>
 			<div className={cn.noteCardHeader} />
 
-			<div className={cn.text} ref={textRef}>
-				{children}
-			</div>
+			<div className={cn.text}>{children}</div>
 
 			<div className={cn.lines}>
 				{/* The number of lines, determined by line height and height of total text */}

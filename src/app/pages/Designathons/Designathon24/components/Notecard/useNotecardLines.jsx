@@ -10,7 +10,7 @@ const SMALL_SCREEN = 640;
 const TOP_MARGIN = 128;
 const TOP_MARGIN_SM = 96;
 
-function useNotecardLines(textRef) {
+function useNotecardLines(notecardRef) {
 	const [dimensions, setDimensions] = useState({
 		width: 0,
 		height: 0,
@@ -23,8 +23,9 @@ function useNotecardLines(textRef) {
 		let newHeight = 0;
 		let newWidth = 0;
 
-		if (textRef.current) {
-			newHeight = textRef.current.clientHeight;
+		if (notecardRef.current) {
+			newHeight =
+				notecardRef.current.clientHeight - (SMALL_SCREEN ? 60 : 80);
 		}
 
 		newWidth = window.innerWidth;
@@ -51,7 +52,7 @@ function useNotecardLines(textRef) {
 			notecardLineHeight,
 			notecardLineTop,
 		});
-	}, [textRef]);
+	}, [notecardRef]);
 
 	useEffect(() => {
 		handleResize();
