@@ -1,0 +1,111 @@
+.container {
+	position: relative;
+	overflow: hidden;
+
+	background-color: var(--des24-cream);
+	color: var(--des24-black);
+
+	padding: 3rem 1rem 5rem;
+	font-size: 0.75em;
+
+	& .aboutHeading {
+		color: var(--des24-hot-pink);
+		font-size: 50px;
+		font-weight: 700;
+	}
+
+	.airplane {
+		position: absolute;
+		max-width: 125px;
+
+		bottom: 0px;
+		right: 10px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 200px;
+
+			right: 40px;
+		}
+
+		@media screen and (min-width: 1024px) {
+			max-width: 250px;
+
+			right: 0px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 300px;
+		}
+	}
+
+	.paperclip {
+		position: absolute;
+		max-width: 75px;
+
+		top: 320px;
+		left: -24px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 100px;
+
+			top: 374px;
+			left: 22px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 250px;
+
+			top: 386px;
+			left: 74px;
+		}
+	}
+
+	.bl {
+		position: absolute;
+		max-width: 200px;
+		z-index: -1;
+
+		bottom: 0px;
+		left: 0px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
+		}
+	}
+
+	.tr {
+		position: absolute;
+		max-width: 200px;
+		z-index: -1;
+
+		top: 0px;
+		right: 0px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
+		}
+	}
+
+	.gradient {
+		max-width: 300px;
+		top: -100px;
+	}
+}
+
+@media screen and (min-width: 640px) {
+	.container {
+		padding: 6rem 2rem 6rem;
+
+		& .aboutHeading {
+			font-size: 70px;
+			font-weight: 700;
+		}
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container {
+		font-size: 1em;
+		padding: 6rem 5rem 6rem;
+	}
+}
