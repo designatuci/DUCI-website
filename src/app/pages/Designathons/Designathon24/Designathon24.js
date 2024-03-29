@@ -20,6 +20,7 @@ import {
 	Rules,
 	Timer,
 	WinnerShowcase,
+	Speakers,
 } from "./components";
 import Schedule from "./components/Schedule";
 import { Splash } from "./components/Splash";
@@ -48,29 +49,8 @@ const Designathon24 = () => (
 		<SectionNavigation />
 		<WinnerShowcase winners={WINNERS_2024} />
 
-		<About />
-		<div className={cn.people} id="s-people">
-			<Section>
-				<div className={cn.section}>
-					<h2>Keynote Speaker</h2>
-					{KEYNOTE_2024.map((speaker) => (
-						<Profile key={speaker.photo} {...speaker} />
-					))}
-				</div>
-				<div className={cn.section}>
-					<h2>Judges</h2>
-					{JUDGES_2024.map((judge) => (
-						<Profile key={judge.photo} {...judge} />
-					))}
-				</div>
-				<div className={cn.section}>
-					<h2>Workshop Hosts</h2>
-					{WORKSHOP_HOSTS_2024.map((host) => (
-						<Profile key={host.photo} {...host} />
-					))}
-				</div>
-			</Section>
-		</div>
+
+		<Speakers />
 
 		<Rules />
 

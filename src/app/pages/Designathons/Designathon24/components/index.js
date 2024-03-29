@@ -6,3 +6,4 @@ export * from "./FAQ";
 export * from "./Rules";
 export * from "./Timer";
 export * from "./WinnerShowcase";
+export * from "./Speakers";
