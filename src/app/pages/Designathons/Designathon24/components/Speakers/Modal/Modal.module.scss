@@ -104,3 +104,40 @@
 		}
 	}
 }
+
+.popupContainer {
+	display: flex;
+	gap: 2rem;
+
+	margin: 3.5rem 2rem 2rem;
+	width: 100%;
+
+	.popupProfile {
+		min-width: 40%;
+
+		p {
+			padding: 0;
+		}
+
+		background-color: #fff;
+		box-shadow: 0px 4px 6px 0 #00000030;
+		transition: 0.1s ease-in;
+	}
+
+	.popupDetails {
+		flex-direction: column;
+
+		.heading {
+			font-size: 2rem;
+			margin-top: 0.25rem;
+		}
+
+		.text {
+			margin-top: 0.75rem;
+		}
+
+		p {
+			padding: 0;
+		}
+	}
+}

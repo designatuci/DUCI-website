@@ -24,11 +24,7 @@ const Speakers = () => {
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
 
 					<div className={cn.keynotePolaroid}>
-						<Polaroid
-							photo={JUDGES[0].photo}
-							name={JUDGES[0].name}
-							role={JUDGES[0].role}
-						/>
+						<Polaroid person={JUDGES[0]} />
 						<img src={splat} alt="splat" className={cn.splat} />
 					</div>
 				</div>
@@ -40,7 +36,7 @@ const Speakers = () => {
 						{JUDGES.map((judge, index) => (
 							<Polaroid
 								key={index} // FIXME: Don't use index
-								{...judge}
+								person={judge}
 								odd={index % 2 === 0}
 							/>
 						))}
@@ -54,7 +50,7 @@ const Speakers = () => {
 						{WORKSHOP_HOSTS.map((host, index) => (
 							<Polaroid
 								key={index} // FIXME: Don't use index
-								{...host}
+								person={host}
 								odd={index % 2 === 0}
 							/>
 						))}

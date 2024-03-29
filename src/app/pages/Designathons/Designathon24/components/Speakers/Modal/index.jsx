@@ -2,8 +2,12 @@ import clsx from "clsx";
 import cn from "./Modal.module.scss";
 
 import { useEffect } from "react";
+import Notecard from "../../Notecard/Notecard";
+import { Profile } from "../../Polaroid/Polaroid";
 
-export const Modal = ({ toggleProfile, photo, name, role, about }) => {
+export const Modal = ({ toggleProfile, person }) => {
+	const { about } = person;
+
 	useEffect(() => {
 		const handleKeyDown = (event) => {
 			if (event.key === "Escape") {
@@ -20,18 +24,18 @@ export const Modal = ({ toggleProfile, photo, name, role, about }) => {
 
 	return (
 		<div className={clsx(cn.modal)} onClick={toggleProfile}>
-			<div className={cn.container}>
-				<img src={require(`../../../assets/${photo}`)} alt={name} />
-				<div className={cn.profile}>
-					<h3>{name}</h3>
-					<p className={cn.role}>{role}</p>
+			<Notecard>
+				<div className={cn.popupContainer}>
+					<div className={cn.popupProfile}>
+						<Profile person={person} showTape={false} />
+					</div>
+
+					<div className={cn.popupDetails}>
+						<h6 className={cn.heading}>About</h6>
+						<p className={cn.text}>{about}</p>
+					</div>
 				</div>
-				<div className={cn.content}>
-					<h4>About Me: </h4>
-					<p>{about}</p>
-					<h4>Fun Fact: </h4>
-				</div>
-			</div>
+			</Notecard>
 		</div>
 	);
 };
