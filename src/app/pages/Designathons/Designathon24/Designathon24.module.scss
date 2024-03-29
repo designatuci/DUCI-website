@@ -42,40 +42,6 @@
 		}
 	}
 
-	& > .about {
-		padding: 10px;
-		background-color: var(--des24-cream);
-		color: var(--des24-black);
-		font-size: 1em;
-
-		& h2 {
-			font-size: 2em;
-			font-weight: bold;
-		}
-
-		& p {
-			font-size: 1.2em;
-			line-height: 1.5em;
-		}
-
-		& .aboutHeading {
-			color: var(--des24-hot-pink);
-		}
-
-		@media screen and (min-width: 1100px) {
-			padding-bottom: 80px;
-
-			& h2 {
-				font-size: 3em;
-			}
-
-			& p {
-				font-size: 1.3em;
-				line-height: 1.4em;
-			}
-		}
-	}
-
 	& > .prizes {
 		background-color: white;
 	}
