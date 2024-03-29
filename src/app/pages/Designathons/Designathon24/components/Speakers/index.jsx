@@ -27,7 +27,7 @@ const Speakers = () => {
 						<Polaroid
 							photo={JUDGES[0].photo}
 							name={JUDGES[0].name}
-							position={JUDGES[0].role}
+							role={JUDGES[0].role}
 						/>
 						<img src={splat} alt="splat" className={cn.splat} />
 					</div>
@@ -40,9 +40,7 @@ const Speakers = () => {
 						{JUDGES.map((judge, index) => (
 							<Polaroid
 								key={index} // FIXME: Don't use index
-								photo={judge.photo}
-								name={judge.name}
-								position={judge.role}
+								{...judge}
 								odd={index % 2 === 0}
 							/>
 						))}
@@ -56,9 +54,7 @@ const Speakers = () => {
 						{WORKSHOP_HOSTS.map((host, index) => (
 							<Polaroid
 								key={index} // FIXME: Don't use index
-								photo={host.photo}
-								name={host.name}
-								position={host.role}
+								{...host}
 								odd={index % 2 === 0}
 							/>
 						))}

@@ -13,7 +13,7 @@ export const Modal = ({
 	return (
 		<div className={clsx(cn.modal)} onClick={toggleProfile}>
 			<div className={cn.container}>
-				<img src={require(`assets/${photo}`)} alt={name} />
+				<img src={require(`../../../assets/${photo}`)} alt={name} />
 				<div className={cn.profile}>
 					<h3>{name}</h3>
 					<p className={cn.pronouns}>{pronouns}</p>
