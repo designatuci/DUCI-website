@@ -34,12 +34,13 @@ export const Profile = ({ person, odd, tape: showTape }) => {
 	);
 };
 
-const Polaroid = ({ person, odd }) => {
+const Polaroid = ({ person, odd, container }) => {
 	const [open, setOpen] = useState(false);
 
 	const handleClick = useCallback(() => {
+		container.current.style.zIndex = open ? "1" : "100";
 		setOpen((prev) => !prev);
-	}, []);
+	}, [container, open]);
 
 	return (
 		<>

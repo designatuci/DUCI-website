@@ -1,6 +1,8 @@
 import cn from "./Speakers.module.scss";
 import clsx from "clsx";
 
+import { useRef } from "react";
+
 import Polaroid from "../Polaroid/Polaroid";
 
 import splat from "../../assets/graphics/speakers/splat.svg";
@@ -15,43 +17,49 @@ import JUDGES from "../../assets/data/judges.json";
 import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
 
 const Speakers = () => {
+	const keynoteRef = useRef(null);
+	const judgesRef = useRef(null);
+	const workshopRef = useRef(null);
+
 	return (
 		<div className={cn.container} id="s-speakers">
 			<h2 className={cn.heading}>Speakers</h2>
 
 			<div className={cn.polaroids}>
-				<div className={cn.keynote}>
+				<div className={cn.keynote} ref={keynoteRef}>
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
 
 					<div className={cn.keynotePolaroid}>
-						<Polaroid person={JUDGES[0]} />
+						<Polaroid person={JUDGES[0]} container={keynoteRef} />
 						<img src={splat} alt="splat" className={cn.splat} />
 					</div>
 				</div>
 
-				<div className={cn.peopleContainer}>
+				<div className={cn.peopleContainer} ref={judgesRef}>
 					<h3 className={cn.polaroidHeading}>Judges</h3>
 
 					<div className={cn.people}>
 						{JUDGES.map((judge, index) => (
 							<Polaroid
-								key={index} // FIXME: Don't use index
+								key={judge.name}
 								person={judge}
 								odd={index % 2 === 0}
+								container={judgesRef}
 							/>
 						))}
 					</div>
 				</div>
 
-				<div className={cn.peopleContainer}>
+				<div className={cn.peopleContainer} ref={workshopRef}>
 					<h3 className={cn.polaroidHeading}>Workshop Hosts</h3>
 
 					<div className={cn.people}>
 						{WORKSHOP_HOSTS.map((host, index) => (
 							<Polaroid
-								key={index} // FIXME: Don't use index
+								key={host.name}
 								person={host}
 								odd={index % 2 === 0}
+								container={workshopRef}
 							/>
 						))}
 					</div>
