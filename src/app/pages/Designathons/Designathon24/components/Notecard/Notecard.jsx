@@ -6,9 +6,13 @@ import clsx from "clsx";
 
 const Notecard = ({ children, modalCard }) => {
 	const notecardRef = useRef(null);
+	const textRef = useRef(null);
 
-	const { lines, notecardLineTop, notecardLineHeight } =
-		useNotecardLines(notecardRef);
+	const { lines, notecardLineTop, notecardLineHeight } = useNotecardLines(
+		notecardRef,
+		textRef,
+		modalCard,
+	);
 
 	return (
 		<div
@@ -17,7 +21,9 @@ const Notecard = ({ children, modalCard }) => {
 		>
 			<div className={cn.noteCardHeader} />
 
-			<div className={cn.text}>{children}</div>
+			<div className={cn.text} ref={textRef}>
+				{children}
+			</div>
 
 			<div className={cn.lines}>
 				{/* The number of lines, determined by line height and height of total text */}

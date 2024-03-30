@@ -10,7 +10,7 @@ const SMALL_SCREEN = 640;
 const TOP_MARGIN = 128;
 const TOP_MARGIN_SM = 96;
 
-function useNotecardLines(notecardRef) {
+function useNotecardLines(notecardRef, textRef, modalCard) {
 	const [dimensions, setDimensions] = useState({
 		width: 0,
 		height: 0,
@@ -28,9 +28,14 @@ function useNotecardLines(notecardRef) {
 		let newHeight = 0;
 		let newWidth = 0;
 
-		if (notecardRef.current) {
-			newHeight =
-				notecardRef.current.clientHeight - (SMALL_SCREEN ? 60 : 80);
+		/* Height without the top margin */
+		const adjustedNotecardHeight =
+			notecardRef.current.clientHeight - (SMALL_SCREEN ? 60 : 80);
+
+		const textHeight = textRef.current.clientHeight;
+
+		if (notecardRef.current && textRef.current) {
+			newHeight = Math.max(adjustedNotecardHeight, textHeight);
 		}
 
 		newWidth = window.innerWidth;
@@ -43,7 +48,9 @@ function useNotecardLines(notecardRef) {
 					? LINE_BREAKPOINTS.LG
 					: LINE_BREAKPOINTS.SM;
 
-		const numLines = Math.floor(newHeight / notecardLineHeight) - 1;
+		const numLines =
+			Math.floor(newHeight / notecardLineHeight) +
+			(modalCard && adjustedNotecardHeight < textHeight ? 1 : -1);
 		const lines = numLines > 0 ? numLines : 1;
 
 		/* Distance from top border of card */
