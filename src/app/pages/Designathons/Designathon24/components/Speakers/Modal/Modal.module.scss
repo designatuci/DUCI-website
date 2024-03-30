@@ -112,8 +112,10 @@
 	margin: 3.5rem 2rem 2rem;
 	width: 100%;
 
+	text-align: left;
+
 	.popupProfile {
-		min-width: 40%;
+		height: fit-content;
 
 		p {
 			padding: 0;
@@ -126,6 +128,7 @@
 
 	.popupDetails {
 		flex-direction: column;
+		max-width: 60%;
 
 		.heading {
 			font-size: 2rem;
