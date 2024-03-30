@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 
 const LINE_BREAKPOINTS = {
 	XL: 48,
@@ -19,7 +19,12 @@ function useNotecardLines(notecardRef) {
 		notecardLineTop: 0,
 	});
 
-	const handleResize = useCallback(() => {
+	/**
+	 * If dimensions aren't calculated on every render,
+	 * the notecard will not have the right amount of lines
+	 */
+	// eslint-disable-next-line react-hooks/exhaustive-deps
+	const handleResize = () => {
 		let newHeight = 0;
 		let newWidth = 0;
 
@@ -52,7 +57,7 @@ function useNotecardLines(notecardRef) {
 			notecardLineHeight,
 			notecardLineTop,
 		});
-	}, [notecardRef]);
+	};
 
 	useEffect(() => {
 		handleResize();
