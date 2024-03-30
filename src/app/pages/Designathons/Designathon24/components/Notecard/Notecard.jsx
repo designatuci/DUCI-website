@@ -21,11 +21,10 @@ const Notecard = ({ children, modalCard, lineAdjustment, toggleProfile }) => {
 			ref={notecardRef}
 		>
 			{toggleProfile ? (
-				<button className={cn.close_button}>
+				<button className={cn.close_button} onClick={toggleProfile}>
 					<img
 						src={close_icon}
 						alt="x icon to close notecard modal"
-						onClick={toggleProfile}
 					/>
 				</button>
 			) : null}
