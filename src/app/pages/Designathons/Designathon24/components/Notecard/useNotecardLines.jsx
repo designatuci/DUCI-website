@@ -35,7 +35,7 @@ function useNotecardLines(notecardRef, textRef, modalCard) {
 		const textHeight = textRef.current.clientHeight;
 
 		if (notecardRef.current && textRef.current) {
-			newHeight = Math.max(adjustedNotecardHeight, textHeight);
+			newHeight = Math.max(adjustedNotecardHeight, textHeight) + 88;
 		}
 
 		newWidth = window.innerWidth;

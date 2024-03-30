@@ -116,6 +116,8 @@
 
 	.popupProfile {
 		height: fit-content;
+		min-width: 40%;
+		aspect-ratio: 1;
 
 		p {
 			padding: 0;
