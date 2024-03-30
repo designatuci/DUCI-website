@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 const LINE_BREAKPOINTS = {
 	XL: 48,
@@ -24,7 +24,7 @@ function useNotecardLines(notecardRef, textRef, modalCard) {
 	 * the notecard will not have the right amount of lines
 	 */
 	// eslint-disable-next-line react-hooks/exhaustive-deps
-	const handleResize = () => {
+	const handleResize = useCallback(() => {
 		let newHeight = 0;
 		let newWidth = 0;
 
@@ -64,7 +64,7 @@ function useNotecardLines(notecardRef, textRef, modalCard) {
 			notecardLineHeight,
 			notecardLineTop,
 		});
-	};
+	}, [modalCard, notecardRef, textRef]);
 
 	useEffect(() => {
 		handleResize();
