@@ -115,6 +115,7 @@
 	text-align: left;
 
 	.popupProfile {
+		display: none;
 		height: fit-content;
 		min-width: 40%;
 		aspect-ratio: 1;
@@ -126,19 +127,46 @@
 		background-color: #fff;
 		box-shadow: 0px 4px 6px 0 #00000030;
 		transition: 0.1s ease-in;
+
+		@media screen and (min-width: 768px) {
+			display: flex;
+		}
 	}
 
 	.popupDetails {
 		flex-direction: column;
-		max-width: 60%;
+		max-width: 90%;
+
+		@media screen and (min-width: 768px) {
+			max-width: 60%;
+		}
 
 		.heading {
-			font-size: 2rem;
-			margin-top: 0.25rem;
+			font-size: 1.5rem;
+			margin-top: -0.75rem;
+
+			@media screen and (min-width: 640px) {
+				font-size: 1.75rem;
+				margin-top: 0rem;
+			}
+
+			@media screen and (min-width: 1280px) {
+				font-size: 2rem;
+				margin-top: 0.25rem;
+			}
 		}
 
 		.text {
-			margin-top: 0.75rem;
+			margin-top: 0.25rem;
+			margin-right: 5%;
+
+			@media screen and (min-width: 640px) {
+				margin-top: 0.5rem;
+			}
+
+			@media screen and (min-width: 1280px) {
+				margin-top: 0.75rem;
+			}
 		}
 
 		p {

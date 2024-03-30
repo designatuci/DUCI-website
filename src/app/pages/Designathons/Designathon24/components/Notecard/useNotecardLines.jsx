@@ -49,8 +49,8 @@ function useNotecardLines(notecardRef, textRef, modalCard) {
 					: LINE_BREAKPOINTS.SM;
 
 		const numLines =
-			Math.floor(newHeight / notecardLineHeight) +
-			(modalCard && adjustedNotecardHeight < textHeight ? 1 : -1);
+			Math.ceil(newHeight / notecardLineHeight) +
+			(modalCard && adjustedNotecardHeight < textHeight ? 1 : -2);
 		const lines = numLines > 0 ? numLines : 1;
 
 		/* Distance from top border of card */

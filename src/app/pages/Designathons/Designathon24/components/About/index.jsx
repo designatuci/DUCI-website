@@ -13,7 +13,7 @@ const About = () => {
 	return (
 		<div className={cn.container} id="s-about">
 			<h2 className={cn.aboutHeading}>About</h2>
-			<Notecard>
+			<Notecard lineAdjustment={1}>
 				<p>
 					Design-a-thon is a 3 day long hybrid event where you or a
 					team design a product focused on the theme: community and

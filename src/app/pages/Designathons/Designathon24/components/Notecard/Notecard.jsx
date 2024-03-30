@@ -4,7 +4,7 @@ import { useRef } from "react";
 import useNotecardLines from "./useNotecardLines";
 import clsx from "clsx";
 
-const Notecard = ({ children, modalCard }) => {
+const Notecard = ({ children, modalCard, lineAdjustment }) => {
 	const notecardRef = useRef(null);
 	const textRef = useRef(null);
 
@@ -27,7 +27,9 @@ const Notecard = ({ children, modalCard }) => {
 
 			<div className={cn.lines}>
 				{/* The number of lines, determined by line height and height of total text */}
-				{[...Array(lines).keys()].map((index) => (
+				{[
+					...Array(Math.max(lines - (lineAdjustment ?? 0), 1)).keys(),
+				].map((index) => (
 					<div
 						className={cn.line}
 						style={{
