@@ -23,8 +23,8 @@ export const Modal = ({ toggleProfile, person }) => {
 	}, [toggleProfile]);
 
 	return (
-		<div className={clsx(cn.modal)} onClick={toggleProfile}>
-			<Notecard>
+		<div className={clsx(cn.modal)} /*onClick={toggleProfile}*/>
+			<Notecard modalCard={true}>
 				<div className={cn.popupContainer}>
 					<div className={cn.popupProfile}>
 						<Profile person={person} showTape={false} />
