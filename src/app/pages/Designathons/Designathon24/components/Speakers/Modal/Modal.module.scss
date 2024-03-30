@@ -111,7 +111,7 @@
 	display: flex;
 	gap: 2rem;
 
-	margin: 3.5rem 2rem 2rem;
+	margin: 0 2rem 2rem;
 	width: 100%;
 
 	text-align: left;
@@ -138,6 +138,8 @@
 	.popupDetails {
 		flex-direction: column;
 		max-width: 90%;
+
+		margin-top: 3rem;
 
 		@media screen and (min-width: 768px) {
 			max-width: 60%;
