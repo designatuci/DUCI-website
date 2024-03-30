@@ -67,6 +67,10 @@
 			@media screen and (min-width: 1024px) {
 				font-size: 1.25rem;
 			}
+
+			p {
+				-webkit-line-clamp: 1;
+			}
 		}
 	}
 

@@ -48,7 +48,7 @@ function useNotecardLines(notecardRef, textRef) {
 					? LINE_BREAKPOINTS.LG
 					: LINE_BREAKPOINTS.SM;
 
-		const numLines = Math.round(newHeight / notecardLineHeight) - 1;
+		const numLines = Math.ceil(newHeight / notecardLineHeight) - 1;
 		const lines = numLines > 0 ? numLines : 1;
 
 		/* Distance from top border of card */
