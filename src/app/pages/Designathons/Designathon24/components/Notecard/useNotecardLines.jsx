@@ -35,7 +35,7 @@ function useNotecardLines(notecardRef, textRef) {
 		const textHeight = textRef.current.clientHeight;
 
 		if (notecardRef.current && textRef.current) {
-			newHeight = Math.max(adjustedNotecardHeight, textHeight) + 88;
+			newHeight = Math.max(adjustedNotecardHeight, textHeight) + 48;
 		}
 
 		newWidth = window.innerWidth;
@@ -48,7 +48,7 @@ function useNotecardLines(notecardRef, textRef) {
 					? LINE_BREAKPOINTS.LG
 					: LINE_BREAKPOINTS.SM;
 
-		const numLines = Math.floor(newHeight / notecardLineHeight) - 1;
+		const numLines = Math.round(newHeight / notecardLineHeight) - 1;
 		const lines = numLines > 0 ? numLines : 1;
 
 		/* Distance from top border of card */

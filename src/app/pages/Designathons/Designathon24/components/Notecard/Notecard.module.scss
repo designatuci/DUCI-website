@@ -8,7 +8,8 @@
 
 	margin: 1.5rem 1rem 0;
 
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 
 	.close_button {
 		position: sticky;
@@ -49,7 +50,6 @@
 
 	.text {
 		margin-top: 0.5rem;
-		max-width: 95%;
 
 		p {
 			display: flex;

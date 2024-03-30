@@ -112,7 +112,7 @@
 	gap: 2rem;
 
 	margin: 0 2rem 2rem;
-	width: 100%;
+	width: fit-content;
 
 	text-align: left;
 
@@ -142,7 +142,7 @@
 		margin-top: 3rem;
 
 		@media screen and (min-width: 768px) {
-			max-width: 60%;
+			max-width: 52.5%;
 		}
 
 		.heading {
