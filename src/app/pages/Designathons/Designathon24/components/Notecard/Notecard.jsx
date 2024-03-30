@@ -4,7 +4,9 @@ import { useRef } from "react";
 import useNotecardLines from "./useNotecardLines";
 import clsx from "clsx";
 
-const Notecard = ({ children, modalCard, lineAdjustment }) => {
+import close_icon from "../../assets/close_icon.svg";
+
+const Notecard = ({ children, modalCard, lineAdjustment, toggleProfile }) => {
 	const notecardRef = useRef(null);
 	const textRef = useRef(null);
 
@@ -19,6 +21,16 @@ const Notecard = ({ children, modalCard, lineAdjustment }) => {
 			className={clsx(cn.noteCard, modalCard && cn.modalCard)}
 			ref={notecardRef}
 		>
+			{toggleProfile ? (
+				<button className={cn.close_button}>
+					<img
+						src={close_icon}
+						alt="x icon to close notecard modal"
+						onClick={toggleProfile}
+					/>
+				</button>
+			) : null}
+
 			<div className={cn.noteCardHeader} />
 
 			<div className={cn.text} ref={textRef}>

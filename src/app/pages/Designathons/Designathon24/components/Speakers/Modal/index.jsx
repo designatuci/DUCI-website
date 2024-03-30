@@ -5,8 +5,6 @@ import { useEffect } from "react";
 import Notecard from "../../Notecard/Notecard";
 import { Profile } from "../../Polaroid/Polaroid";
 
-import close_icon from "../../../assets/close_icon.svg";
-
 export const Modal = ({ toggleProfile, person }) => {
 	const { about } = person;
 
@@ -25,16 +23,8 @@ export const Modal = ({ toggleProfile, person }) => {
 	}, [toggleProfile]);
 
 	return (
-		<div className={clsx(cn.modal)} /*onClick={toggleProfile}*/>
-			<Notecard modalCard={true}>
-				<button className={cn.close_button}>
-					<img
-						src={close_icon}
-						alt="x icon to close notecard modal"
-						onClick={toggleProfile}
-					/>
-				</button>
-
+		<div className={clsx(cn.modal)}>
+			<Notecard modalCard={true} toggleProfile={toggleProfile}>
 				<div className={cn.popupContainer}>
 					<div className={cn.popupProfile}>
 						<Profile person={person} showTape={false} />
