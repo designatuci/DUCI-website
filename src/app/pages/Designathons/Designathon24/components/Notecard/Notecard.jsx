@@ -13,7 +13,6 @@ const Notecard = ({ children, modalCard, lineAdjustment, toggleProfile }) => {
 	const { lines, notecardLineTop, notecardLineHeight } = useNotecardLines(
 		notecardRef,
 		textRef,
-		modalCard,
 	);
 
 	return (
