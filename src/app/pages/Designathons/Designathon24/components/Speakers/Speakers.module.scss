@@ -2,6 +2,8 @@
 	position: relative;
 	overflow: hidden;
 
+	z-index: 10000;
+
 	background-color: var(--des24-cream);
 	color: var(--des24-black);
 
@@ -27,6 +29,7 @@
 	}
 
 	.polaroids {
+		position: inherit;
 		margin-top: 3rem;
 
 		display: flex;
