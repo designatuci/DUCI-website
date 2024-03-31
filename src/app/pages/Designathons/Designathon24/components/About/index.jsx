@@ -10,7 +10,7 @@ import bl_gradient from "../../assets/graphics/about/bl_gradient.svg";
 import tr_stars from "../../assets/graphics/about/tr_stars.svg";
 import bl_stars from "../../assets/graphics/about/bl_stars.svg";
 
-import light_graph from "../../assets/graphics/background/light_graph.svg";
+import LightBackground from "../Backgrounds/Light/LightBackground";
 
 const About = () => {
 	return (
@@ -56,7 +56,7 @@ const About = () => {
 			<img src={tr_stars} alt="" className={clsx(cn.tr, cn.stars)} />
 			<img src={bl_stars} alt="" className={cn.bl} />
 
-			<img src={light_graph} alt="" className={cn.graph} />
+			<LightBackground />
 		</div>
 	);
 };
