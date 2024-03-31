@@ -1,8 +1,6 @@
 import cn from "./Speakers.module.scss";
 import clsx from "clsx";
 
-import { useRef } from "react";
-
 import Polaroid from "../Polaroid/Polaroid";
 
 import splat from "../../assets/graphics/speakers/splat.svg";
@@ -35,7 +33,7 @@ const Speakers = () => {
 				className={clsx(
 					cn.decoration,
 					cn.tr_pencil_star_stripe,
-					"wait flopR"
+					"wait flopR",
 				)}
 			/>
 			<img
@@ -50,7 +48,7 @@ const Speakers = () => {
 					cn.decoration,
 					cn.m,
 					cn.star_stripe,
-					"wait flopR"
+					"wait flopR",
 				)}
 			/>
 			<img

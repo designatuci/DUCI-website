@@ -1,8 +1,5 @@
 import { Section } from "app/Symbols";
-import { Text } from "app/components";
 import EVENTS_2024 from "assets/data/designathon/2024/events.json";
-import WINNERS_2024 from "assets/data/designathon/2024/winners.json";
-import TIMER_2024 from "assets/data/designathon/2024/timer.json";
 import PRIZES_2024 from "assets/data/designathon/2024/prizes.json";
 import cn from "./Designathon24.module.scss";
 import FOF from "./assets/FOF.png";
@@ -14,8 +11,6 @@ import {
 	SectionNavigation,
 	FAQ,
 	Rules,
-	Timer,
-	WinnerShowcase,
 	Speakers,
 } from "./components";
 import Schedule from "./components/Schedule";
