@@ -110,6 +110,8 @@
 .popupContainer {
 	display: flex;
 	flex-direction: column;
+	position: relative;
+	z-index: 1;
 
 	margin: 0 2rem 2rem;
 	width: fit-content;
