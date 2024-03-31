@@ -8,6 +8,39 @@
 
 	margin: 1.5rem 1rem 0;
 
+	overflow-y: scroll;
+	overflow-x: hidden;
+
+	.close_button {
+		position: sticky;
+		top: 3%;
+		left: 1rem;
+		width: 1rem;
+		margin-top: -1rem;
+		z-index: 10;
+
+		@media screen and (min-width: 768px) {
+			left: 1rem;
+			width: 1.5rem;
+			margin-top: -1.5rem;
+		}
+
+		background-color: transparent;
+		border: 0;
+		cursor: pointer;
+
+		border-radius: 100%;
+
+		img {
+			width: 100%;
+			cursor: inherit;
+
+			&:hover {
+				opacity: 75%;
+			}
+		}
+	}
+
 	.noteCardHeader {
 		height: 60px;
 		border-bottom: 4px solid;
@@ -17,7 +50,6 @@
 
 	.text {
 		margin-top: 0.5rem;
-		max-width: 95%;
 
 		p {
 			display: flex;
@@ -77,9 +109,13 @@
 			margin-top: 0.5rem;
 
 			p {
+				padding: 0 2.5rem 3rem;
 				font-size: 24px;
-				padding: 0 2.5rem 3rem 2.5rem;
 			}
 		}
 	}
+}
+
+.modalCard {
+	max-height: 80vh;
 }

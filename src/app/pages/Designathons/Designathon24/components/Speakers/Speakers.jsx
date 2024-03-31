@@ -18,19 +18,58 @@ import LightBackground from "../Backgrounds/Light/LightBackground";
 const Speakers = () => {
 	return (
 		<div className={cn.container} id="s-speakers">
+			<img
+				src={tl_gradient}
+				alt=""
+				className={clsx(cn.decoration, cn.tl_gradient)}
+			/>
+			<img
+				src={tl_star_stripe}
+				alt=""
+				className={clsx(cn.decoration, cn.tl_star_stripe, "wait flopL")}
+			/>
+			<img
+				src={tr_pencil_star_stripe}
+				alt=""
+				className={clsx(
+					cn.decoration,
+					cn.tr_pencil_star_stripe,
+					"wait flopR",
+				)}
+			/>
+			<img
+				src={ml_stripe}
+				alt=""
+				className={clsx(cn.decoration, cn.m, cn.stripe, "wait flopL")}
+			/>
+			<img
+				src={mr_star_stripe}
+				alt=""
+				className={clsx(
+					cn.decoration,
+					cn.m,
+					cn.star_stripe,
+					"wait flopR",
+				)}
+			/>
+			<img
+				src={br_star_stripe_gradient}
+				alt=""
+				className={clsx(cn.decoration, cn.br_star_stripe_gradient)}
+			/>
 			<h2 className={cn.heading}>Speakers</h2>
 
 			<div className={cn.polaroids}>
 				<div className={cn.keynote}>
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
 
-					<div className={cn.keynotePolaroid}>
-						<Polaroid
-							photo={JUDGES[0].photo}
-							name={JUDGES[0].name}
-							position={JUDGES[0].role}
-						/>
-						<img src={splat} alt="splat" className={cn.splat} />
+					<div
+						className={cn.keynotePolaroid}
+						style={{ backgroundImage: `url(${splat})` }}
+					>
+						<div className={cn.content}>
+							<Polaroid person={JUDGES[0]} />
+						</div>
 					</div>
 				</div>
 
@@ -40,10 +79,8 @@ const Speakers = () => {
 					<div className={cn.people}>
 						{JUDGES.map((judge, index) => (
 							<Polaroid
-								key={index} // FIXME: Don't use index
-								photo={judge.photo}
-								name={judge.name}
-								position={judge.role}
+								key={judge.name}
+								person={judge}
 								odd={index % 2 === 0}
 							/>
 						))}
@@ -56,43 +93,14 @@ const Speakers = () => {
 					<div className={cn.people}>
 						{WORKSHOP_HOSTS.map((host, index) => (
 							<Polaroid
-								key={index} // FIXME: Don't use index
-								photo={host.photo}
-								name={host.name}
-								position={host.role}
+								key={host.name}
+								person={host}
 								odd={index % 2 === 0}
 							/>
 						))}
 					</div>
 				</div>
 			</div>
-
-			<img src={tl_gradient} alt="" className={cn.tl_gradient} />
-			<img
-				src={tl_star_stripe}
-				alt=""
-				className={clsx(cn.tl_star_stripe, "wait flopL")}
-			/>
-			<img
-				src={tr_pencil_star_stripe}
-				alt=""
-				className={clsx(cn.tr_pencil_star_stripe, "wait flopR")}
-			/>
-			<img
-				src={ml_stripe}
-				alt=""
-				className={clsx(cn.m, cn.stripe, "wait flopL")}
-			/>
-			<img
-				src={mr_star_stripe}
-				alt=""
-				className={clsx(cn.m, cn.star_stripe, "wait flopR")}
-			/>
-			<img
-				src={br_star_stripe_gradient}
-				alt=""
-				className={cn.br_star_stripe_gradient}
-			/>
 
 			<LightBackground
 				positions={[

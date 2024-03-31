@@ -10,7 +10,7 @@ const SMALL_SCREEN = 640;
 const TOP_MARGIN = 128;
 const TOP_MARGIN_SM = 96;
 
-function useNotecardLines(textRef) {
+function useNotecardLines(notecardRef, textRef) {
 	const [dimensions, setDimensions] = useState({
 		width: 0,
 		height: 0,
@@ -19,12 +19,23 @@ function useNotecardLines(textRef) {
 		notecardLineTop: 0,
 	});
 
+	/**
+	 * If dimensions aren't calculated on every render,
+	 * the notecard will not have the right amount of lines
+	 */
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	const handleResize = useCallback(() => {
 		let newHeight = 0;
 		let newWidth = 0;
 
-		if (textRef.current) {
-			newHeight = textRef.current.clientHeight;
+		/* Height without the top margin */
+		const adjustedNotecardHeight =
+			notecardRef.current.clientHeight - (SMALL_SCREEN ? 60 : 80);
+
+		const textHeight = textRef.current.clientHeight;
+
+		if (notecardRef.current && textRef.current) {
+			newHeight = Math.max(adjustedNotecardHeight, textHeight) + 48;
 		}
 
 		newWidth = window.innerWidth;
@@ -37,7 +48,7 @@ function useNotecardLines(textRef) {
 					? LINE_BREAKPOINTS.LG
 					: LINE_BREAKPOINTS.SM;
 
-		const numLines = Math.floor(newHeight / notecardLineHeight) - 1;
+		const numLines = Math.ceil(newHeight / notecardLineHeight) - 1;
 		const lines = numLines > 0 ? numLines : 1;
 
 		/* Distance from top border of card */
@@ -51,7 +62,7 @@ function useNotecardLines(textRef) {
 			notecardLineHeight,
 			notecardLineTop,
 		});
-	}, [textRef]);
+	}, [notecardRef, textRef]);
 
 	useEffect(() => {
 		handleResize();
