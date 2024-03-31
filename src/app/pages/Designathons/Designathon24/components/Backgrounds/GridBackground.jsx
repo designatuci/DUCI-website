@@ -1,8 +1,10 @@
 import React from "react";
 
-import cn from "./Dark.module.scss";
+import cn from "./GridBackground.module.scss";
+import clsx from "clsx";
 
-import dark_graph from "../../../assets/graphics/background/dark_graph.svg";
+import light_graph from "../../assets/graphics/background/light_graph.svg";
+import dark_graph from "../../assets/graphics/background/dark_graph.svg";
 
 /**
  * @typedef {Object} Positions
@@ -14,9 +16,10 @@ import dark_graph from "../../../assets/graphics/background/dark_graph.svg";
 
 /**
  * @param {Positions[]} positions
+ * @param {boolean} isLight
  * @returns {JSX.Element}
  */
-const DarkBackground = ({ positions }) => {
+const GridBackground = ({ positions, isLight }) => {
 	return (
 		<div>
 			{positions.map((position) => {
@@ -24,9 +27,9 @@ const DarkBackground = ({ positions }) => {
 
 				return (
 					<img
-						src={dark_graph}
+						src={isLight ? light_graph : dark_graph}
 						alt=""
-						className={cn.graph}
+						className={clsx(cn.graph, isLight ? cn.light : cn.dark)}
 						style={{
 							top: `${top ?? "unset"}`,
 							left: `${left ?? "unset"}`,
@@ -41,4 +44,4 @@ const DarkBackground = ({ positions }) => {
 	);
 };
 
-export default DarkBackground;
+export default GridBackground;

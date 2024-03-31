@@ -3,13 +3,16 @@ import cn from "./FAQ.module.scss";
 import { useCallback, useState } from "react";
 
 import down_carat from "../../assets/graphics/faq/down_carat.svg";
-import LightBackground from "../Backgrounds/Light/LightBackground";
+import GridBackground from "../Backgrounds/GridBackground";
 
 const FAQ = () => {
 	return (
 		<div id="s-faq">
 			<div className={cn.container}>
-				<LightBackground positions={[{ top: 0, left: 0 }]} />
+				<GridBackground
+					positions={[{ top: 0, left: 0 }]}
+					isLight={true}
+				/>
 
 				<h2 className={cn.heading}>FAQ</h2>
 				{/* <div className="spaceChildren">

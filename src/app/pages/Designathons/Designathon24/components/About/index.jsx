@@ -10,12 +10,12 @@ import bl_gradient from "../../assets/graphics/about/bl_gradient.svg";
 import tr_stars from "../../assets/graphics/about/tr_stars.svg";
 import bl_stars from "../../assets/graphics/about/bl_stars.svg";
 
-import LightBackground from "../Backgrounds/Light/LightBackground";
+import GridBackground from "../Backgrounds/GridBackground";
 
 const About = () => {
 	return (
 		<div className={cn.container} id="s-about">
-			<LightBackground positions={[{ top: 0, left: 0 }]} />
+			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
 
 			<img
 				src={tr_gradient}
