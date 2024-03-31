@@ -24,7 +24,7 @@ const SectionNavigation = () => {
 			<div className={cn.navButtons}>
 				{[
 					{ label: "About", id: "s-about" },
-					{ label: "Judges & Speakers", id: "s-people" },
+					{ label: "Judges & Speakers", id: "s-speakers" },
 					{ label: "Rules", id: "s-rules" },
 					{ label: "Prizes", id: "s-prizes" },
 					{ label: "Schedule", id: "s-schedule" },
