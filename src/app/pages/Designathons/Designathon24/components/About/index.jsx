@@ -12,6 +12,15 @@ import Notecard from "../Notecard/Notecard";
 const About = () => {
 	return (
 		<div className={cn.container} id="s-about">
+			<img
+				src={tr_gradient}
+				alt="tr_gradient"
+				className={clsx(cn.tr, cn.gradient)}
+			/>
+			<img src={bl_gradient} alt="" className={cn.bl} />
+			<img src={tr_stars} alt="" className={cn.tr} />
+			<img src={bl_stars} alt="" className={cn.bl} />
+
 			<h2 className={cn.aboutHeading}>About</h2>
 			<Notecard lineAdjustment={1}>
 				<div style={{ maxWidth: "95%" }}>
@@ -41,21 +50,12 @@ const About = () => {
 					</p>
 				</div>
 			</Notecard>
-
+			<img src={paperclip} alt="" className={cn.paperclip} />
 			<img
 				src={airplane}
 				alt=""
 				className={clsx(cn.airplane, "wait flopR")}
 			/>
-			<img src={paperclip} alt="" className={cn.paperclip} />
-			<img
-				src={tr_gradient}
-				alt="tr_gradient"
-				className={clsx(cn.tr, cn.gradient)}
-			/>
-			<img src={bl_gradient} alt="" className={cn.bl} />
-			<img src={tr_stars} alt="" className={cn.tr} />
-			<img src={bl_stars} alt="" className={cn.bl} />
 		</div>
 	);
 };
