@@ -1,9 +1,44 @@
+import React from "react";
+
 import cn from "./Light.module.scss";
 
 import light_graph from "../../../assets/graphics/background/light_graph.svg";
 
-const LightBackground = () => {
-	return <img src={light_graph} alt="" className={cn.graph} />;
+/**
+ * @typedef {Object} Positions
+ * @property {number} [top]
+ * @property {number} [left]
+ * @property {number} [right]
+ * @property {number} [bottom]
+ */
+
+/**
+ * @param {Positions[]} positions
+ * @returns {JSX.Element}
+ */
+const LightBackground = ({ positions }) => {
+	return (
+		<div style={{ width: "100%", height: "100%" }}>
+			{positions.map((position) => {
+				const { top, left, right, bottom } = position;
+
+				return (
+					<img
+						src={light_graph}
+						alt=""
+						className={cn.graph}
+						style={{
+							top: `${top ?? "unset"}`,
+							left: `${left ?? "unset"}`,
+							right: `${right ?? "unset"}`,
+							bottom: `${bottom ?? "unset"}`,
+						}}
+						key={(top, left, right, bottom)}
+					/>
+				);
+			})}
+		</div>
+	);
 };
 
 export default LightBackground;

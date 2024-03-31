@@ -56,7 +56,7 @@ const About = () => {
 			<img src={tr_stars} alt="" className={clsx(cn.tr, cn.stars)} />
 			<img src={bl_stars} alt="" className={cn.bl} />
 
-			<LightBackground />
+			<LightBackground positions={[{ top: 0, left: 0 }]} />
 		</div>
 	);
 };

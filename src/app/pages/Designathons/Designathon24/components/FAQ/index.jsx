@@ -3,6 +3,7 @@ import cn from "./FAQ.module.scss";
 import { useCallback, useState } from "react";
 
 import down_carat from "../../assets/graphics/faq/down_carat.svg";
+import LightBackground from "../Backgrounds/Light/LightBackground";
 
 const FAQ = () => {
 	return (
@@ -23,7 +24,6 @@ const FAQ = () => {
 						for more help!
 					</Text>
 				</div> */}
-
 				<div className={cn.qa_container}>
 					{[
 						{
@@ -210,6 +210,8 @@ const FAQ = () => {
 						);
 					})}
 				</div>
+
+				<LightBackground positions={[{ top: 0, left: 0 }]} />
 			</div>
 		</div>
 	);

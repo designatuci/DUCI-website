@@ -13,6 +13,7 @@ import br_star_stripe_gradient from "../../assets/graphics/speakers/br_star_stri
 
 import JUDGES from "../../assets/data/judges.json";
 import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
+import LightBackground from "../Backgrounds/Light/LightBackground";
 
 const Speakers = () => {
 	return (
@@ -91,6 +92,19 @@ const Speakers = () => {
 				src={br_star_stripe_gradient}
 				alt=""
 				className={cn.br_star_stripe_gradient}
+			/>
+
+			<LightBackground
+				positions={[
+					{
+						top: 0,
+						left: 0,
+					},
+					{
+						bottom: 0,
+						right: 0,
+					},
+				]}
 			/>
 		</div>
 	);
