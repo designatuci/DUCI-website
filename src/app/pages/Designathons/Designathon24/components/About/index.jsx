@@ -1,13 +1,16 @@
 import cn from "./About.module.scss";
 import clsx from "clsx";
 
+import Notecard from "../Notecard/Notecard";
+
 import airplane from "../../assets/graphics/about/airplane.svg";
 import paperclip from "../../assets/graphics/about/paperclip.svg";
 import tr_gradient from "../../assets/graphics/about/tr_gradient.svg";
 import bl_gradient from "../../assets/graphics/about/bl_gradient.svg";
 import tr_stars from "../../assets/graphics/about/tr_stars.svg";
 import bl_stars from "../../assets/graphics/about/bl_stars.svg";
-import Notecard from "../Notecard/Notecard";
+
+import light_graph from "../../assets/graphics/background/light_graph.svg";
 
 const About = () => {
 	return (
@@ -52,6 +55,8 @@ const About = () => {
 			<img src={bl_gradient} alt="" className={cn.bl} />
 			<img src={tr_stars} alt="" className={clsx(cn.tr, cn.stars)} />
 			<img src={bl_stars} alt="" className={cn.bl} />
+
+			<img src={light_graph} alt="" className={cn.graph} />
 		</div>
 	);
 };
