@@ -39,6 +39,8 @@
 		.polaroidName {
 			font-size: 1rem;
 			font-weight: 600;
+			overflow: hidden;
+			text-overflow: ellipsis;
 
 			padding-bottom: 8px;
 
