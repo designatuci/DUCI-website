@@ -8,6 +8,7 @@ import cream from "../../assets/graphics/rules/cream.svg";
 import peach_cream from "../../assets/graphics/rules/peach_cream.svg";
 import pink from "../../assets/graphics/rules/pink.svg";
 import hearts from "../../assets/graphics/rules/hearts.svg";
+import DarkBackground from "../Backgrounds/Dark/DarkBackground";
 
 const BACKGROUND_MAP = {
 	0: cream_hot_pink,
@@ -46,6 +47,8 @@ const Rules = () => {
 				alt=""
 				className={clsx(cn.hearts, "wait flopR")}
 			/>
+
+			<DarkBackground />
 		</div>
 	);
 };
