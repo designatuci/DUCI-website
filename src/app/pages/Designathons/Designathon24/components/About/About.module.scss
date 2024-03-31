@@ -22,87 +22,87 @@
 			font-size: 6rem;
 		}
 	}
+}
 
-	.airplane {
-		position: absolute;
-		max-width: 125px;
+.airplane {
+	position: absolute;
+	max-width: 125px;
 
-		bottom: 0px;
-		right: 10px;
+	bottom: 0px;
+	right: 10px;
 
-		@media screen and (min-width: 640px) {
-			max-width: 200px;
-
-			right: 40px;
-		}
-
-		@media screen and (min-width: 1024px) {
-			max-width: 250px;
-
-			right: 0px;
-		}
-
-		@media screen and (min-width: 1280px) {
-			max-width: 300px;
-		}
-	}
-
-	.paperclip {
-		position: absolute;
-		max-width: 75px;
-
-		top: 320px;
-		left: -24px;
-
-		@media screen and (min-width: 640px) {
-			max-width: 100px;
-
-			top: 374px;
-			left: 22px;
-		}
-
-		@media screen and (min-width: 1280px) {
-			max-width: 250px;
-
-			top: 386px;
-			left: 74px;
-		}
-	}
-
-	.bl {
-		position: absolute;
+	@media screen and (min-width: 640px) {
 		max-width: 200px;
-		z-index: -1;
 
-		bottom: 0px;
-		left: 0px;
-
-		@media screen and (min-width: 640px) {
-			max-width: 500px;
-		}
+		right: 40px;
 	}
 
-	.tr {
-		position: absolute;
-		max-width: 200px;
-		z-index: -1;
+	@media screen and (min-width: 1024px) {
+		max-width: 250px;
 
-		top: 0px;
 		right: 0px;
-
-		@media screen and (min-width: 640px) {
-			max-width: 500px;
-		}
 	}
 
-	.gradient {
+	@media screen and (min-width: 1280px) {
 		max-width: 300px;
-		top: -100px;
+	}
+}
+
+.paperclip {
+	position: absolute;
+	max-width: 75px;
+
+	top: 320px;
+	left: -24px;
+
+	@media screen and (min-width: 640px) {
+		max-width: 100px;
+
+		top: 374px;
+		left: 22px;
 	}
 
-	.stars {
-		max-width: 50%;
+	@media screen and (min-width: 1280px) {
+		max-width: 250px;
+
+		top: 386px;
+		left: 74px;
 	}
+}
+
+.bl {
+	position: absolute;
+	max-width: 200px;
+	z-index: -1;
+
+	bottom: 0px;
+	left: 0px;
+
+	@media screen and (min-width: 640px) {
+		max-width: 500px;
+	}
+}
+
+.tr {
+	position: absolute;
+	max-width: 200px;
+	z-index: -1;
+
+	top: 0px;
+	right: 0px;
+
+	@media screen and (min-width: 640px) {
+		max-width: 500px;
+	}
+}
+
+.gradient {
+	max-width: 300px;
+	top: -100px;
+}
+
+.stars {
+	max-width: 50%;
 }
 
 @media screen and (min-width: 640px) {
