@@ -18,7 +18,7 @@ import light_graph from "../../../assets/graphics/background/light_graph.svg";
  */
 const LightBackground = ({ positions }) => {
 	return (
-		<div style={{ width: "100%", height: "100%" }}>
+		<div>
 			{positions.map((position) => {
 				const { top, left, right, bottom } = position;
 

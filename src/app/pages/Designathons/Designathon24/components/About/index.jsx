@@ -15,6 +15,17 @@ import LightBackground from "../Backgrounds/Light/LightBackground";
 const About = () => {
 	return (
 		<div className={cn.container} id="s-about">
+			<LightBackground positions={[{ top: 0, left: 0 }]} />
+
+			<img
+				src={tr_gradient}
+				alt="tr_gradient"
+				className={clsx(cn.tr, cn.gradient)}
+			/>
+			<img src={bl_gradient} alt="" className={cn.bl} />
+			<img src={tr_stars} alt="" className={clsx(cn.tr, cn.stars)} />
+			<img src={bl_stars} alt="" className={cn.bl} />
+
 			<h2 className={cn.heading}>About</h2>
 			<Notecard lineAdjustment={1}>
 				<div style={{ maxWidth: "95%" }}>
@@ -51,16 +62,6 @@ const About = () => {
 				className={clsx(cn.airplane, "wait flopR")}
 			/>
 			<img src={paperclip} alt="" className={cn.paperclip} />
-			<img
-				src={tr_gradient}
-				alt="tr_gradient"
-				className={clsx(cn.tr, cn.gradient)}
-			/>
-			<img src={bl_gradient} alt="" className={cn.bl} />
-			<img src={tr_stars} alt="" className={clsx(cn.tr, cn.stars)} />
-			<img src={bl_stars} alt="" className={cn.bl} />
-
-			<LightBackground positions={[{ top: 0, left: 0 }]} />
 		</div>
 	);
 };

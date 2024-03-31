@@ -18,6 +18,19 @@ import LightBackground from "../Backgrounds/Light/LightBackground";
 const Speakers = () => {
 	return (
 		<div className={cn.container} id="s-speakers">
+			<LightBackground
+				positions={[
+					{
+						top: 0,
+						left: 0,
+					},
+					{
+						bottom: 0,
+						right: 0,
+					},
+				]}
+			/>
+
 			<img
 				src={tl_gradient}
 				alt=""
@@ -101,19 +114,6 @@ const Speakers = () => {
 					</div>
 				</div>
 			</div>
-
-			<LightBackground
-				positions={[
-					{
-						top: 0,
-						left: 0,
-					},
-					{
-						bottom: 0,
-						right: 0,
-					},
-				]}
-			/>
 		</div>
 	);
 };

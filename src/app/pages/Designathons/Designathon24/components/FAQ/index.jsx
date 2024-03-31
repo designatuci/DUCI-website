@@ -9,6 +9,8 @@ const FAQ = () => {
 	return (
 		<div id="s-faq">
 			<div className={cn.container}>
+				<LightBackground positions={[{ top: 0, left: 0 }]} />
+
 				<h2 className={cn.heading}>FAQ</h2>
 				{/* <div className="spaceChildren">
 					<Text style={{ lineHeight: "1.4em" }}>
@@ -210,8 +212,6 @@ const FAQ = () => {
 						);
 					})}
 				</div>
-
-				<LightBackground positions={[{ top: 0, left: 0 }]} />
 			</div>
 		</div>
 	);
