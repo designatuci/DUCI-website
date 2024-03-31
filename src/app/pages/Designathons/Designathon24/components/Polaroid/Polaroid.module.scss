@@ -13,6 +13,7 @@
 	flex-direction: column;
 	justify-content: center;
 	cursor: inherit;
+	position: relative;
 
 	width: 100%;
 	height: fit-content;
@@ -74,10 +75,10 @@
 	}
 
 	.tape {
+		position: absolute;
 		width: 66%;
 		z-index: 5;
 
-		// position: absolute;
 		top: -5%;
 		left: 50%;
 		transform: translateX(-50%);
