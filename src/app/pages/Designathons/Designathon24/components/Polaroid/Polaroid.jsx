@@ -7,7 +7,7 @@ import { Modal } from "../Speakers/Modal/Modal";
 import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
 
-export const Profile = ({ person, odd, tape: showTape }) => {
+export const Profile = ({ person, odd, showTape }) => {
 	const { photo, name, role } = person;
 
 	return (
