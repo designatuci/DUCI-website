@@ -33,7 +33,7 @@ const LightBackground = ({ positions }) => {
 							right: `${right ?? "unset"}`,
 							bottom: `${bottom ?? "unset"}`,
 						}}
-						key={(top, left, right, bottom)}
+						key={"" + top + left + right + bottom}
 					/>
 				);
 			})}
