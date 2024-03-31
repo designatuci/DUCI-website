@@ -1,14 +1,9 @@
 .graph {
 	position: absolute;
-	z-index: -10;
 	object-fit: cover;
-	background-repeat: repeat-y;
-	background-size: 100% auto;
+	pointer-events: none;
 
-	top: 0;
-	left: 0;
-
-	width: 60%;
+	width: 40%;
 	height: 80%;
 	max-height: calc(100vh - 88px); // 88px is the navbar
 }

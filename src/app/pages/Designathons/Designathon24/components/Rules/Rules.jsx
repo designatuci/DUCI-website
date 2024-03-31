@@ -22,6 +22,8 @@ const BACKGROUND_MAP = {
 
 export const Rules = () => (
 	<div className={cn.container} id="s-rules">
+		<DarkBackground positions={[{ top: 0, right: 0 }]} />
+
 		<div className={cn.content}>
 			<img
 				src={hearts}
@@ -47,8 +49,6 @@ export const Rules = () => (
 					</div>
 				))}
 			</div>
-
-			<DarkBackground />
 		</div>
 	</div>
 );

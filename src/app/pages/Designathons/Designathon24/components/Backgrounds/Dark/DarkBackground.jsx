@@ -18,15 +18,13 @@ import dark_graph from "../../../assets/graphics/background/dark_graph.svg";
  */
 const DarkBackground = ({ positions }) => {
 	return (
-		<div style={{ width: "100%", height: "100%" }}>
-			<img src={dark_graph} alt="" className={cn.graph} />
-
-			{/* {positions.map((position) => {
+		<div>
+			{positions.map((position) => {
 				const { top, left, right, bottom } = position;
 
 				return (
 					<img
-						src={light_graph}
+						src={dark_graph}
 						alt=""
 						className={cn.graph}
 						style={{
@@ -35,10 +33,10 @@ const DarkBackground = ({ positions }) => {
 							right: `${right ?? "unset"}`,
 							bottom: `${bottom ?? "unset"}`,
 						}}
-						key={(top, left, right, bottom)}
+						key={"" + top + left + right + bottom}
 					/>
 				);
-			})} */}
+			})}
 		</div>
 	);
 };
