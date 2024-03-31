@@ -6,10 +6,7 @@
 	color: var(--des24-black);
 
 	padding: 3rem 1rem 5rem;
-
-	@media screen and (min-width: 768px) {
-		padding: 6rem 5rem;
-	}
+	font-size: 0.75em;
 
 	.heading {
 		position: relative;
@@ -26,87 +23,95 @@
 			font-size: 6rem;
 		}
 	}
-}
 
-.airplane {
-	position: absolute;
-	max-width: 125px;
+	.airplane {
+		position: absolute;
+		max-width: 125px;
 
-	bottom: 0px;
-	right: 10px;
+		bottom: 0px;
+		right: 10px;
 
-	@media screen and (min-width: 640px) {
+		@media screen and (min-width: 640px) {
+			max-width: 200px;
+
+			right: 40px;
+		}
+
+		@media screen and (min-width: 1024px) {
+			max-width: 250px;
+
+			right: 0px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 300px;
+		}
+	}
+
+	.paperclip {
+		position: absolute;
+		max-width: 75px;
+
+		top: 320px;
+		left: -24px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 100px;
+
+			top: 374px;
+			left: 22px;
+		}
+
+		@media screen and (min-width: 1280px) {
+			max-width: 250px;
+
+			top: 386px;
+			left: 74px;
+		}
+	}
+
+	.bl {
+		position: absolute;
 		max-width: 200px;
+		bottom: 0px;
+		left: 0px;
 
-		right: 40px;
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
+		}
 	}
 
-	@media screen and (min-width: 1024px) {
-		max-width: 250px;
-
+	.tr {
+		position: absolute;
+		max-width: 200px;
+		top: 0px;
 		right: 0px;
+
+		@media screen and (min-width: 640px) {
+			max-width: 500px;
+		}
 	}
 
-	@media screen and (min-width: 1280px) {
+	.gradient {
 		max-width: 300px;
+		top: -100px;
 	}
 }
 
-.paperclip {
-	position: absolute;
-	max-width: 75px;
+@media screen and (min-width: 640px) {
+	.container {
+		padding: 6rem 2rem 6rem;
 
-	top: 320px;
-	left: -24px;
-
-	@media screen and (min-width: 640px) {
-		max-width: 100px;
-
-		top: 374px;
-		left: 0.4rem;
-	}
-
-	@media screen and (min-width: 768px) {
-		left: 4.4rem;
-	}
-
-	@media screen and (min-width: 1280px) {
-		max-width: 250px;
-
-		top: 386px;
-		left: 74px;
+		& .aboutHeading {
+			font-size: 70px;
+			font-weight: 700;
+		}
 	}
 }
 
-.bl {
-	position: absolute;
-	max-width: 200px;
-
-	bottom: 0px;
-	left: 0px;
-
-	@media screen and (min-width: 640px) {
-		max-width: 500px;
+@media screen and (min-width: 1280px) {
+	.container {
+		font-size: 1em;
+		padding: 6rem 5rem 6rem;
 	}
-}
-
-.tr {
-	position: absolute;
-	max-width: 200px;
-
-	top: 0px;
-	right: 0px;
-
-	@media screen and (min-width: 640px) {
-		max-width: 500px;
-	}
-}
-
-.gradient {
-	max-width: 300px;
-	top: -100px;
-}
-
-.stars {
-	max-width: 50%;
 }

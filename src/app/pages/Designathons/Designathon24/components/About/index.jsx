@@ -23,10 +23,11 @@ const About = () => {
 				className={clsx(cn.tr, cn.gradient)}
 			/>
 			<img src={bl_gradient} alt="" className={cn.bl} />
-			<img src={tr_stars} alt="" className={clsx(cn.tr, cn.stars)} />
+			<img src={tr_stars} alt="" className={cn.tr} />
 			<img src={bl_stars} alt="" className={cn.bl} />
 
 			<h2 className={cn.heading}>About</h2>
+
 			<Notecard lineAdjustment={1}>
 				<div style={{ maxWidth: "95%" }}>
 					<p>
