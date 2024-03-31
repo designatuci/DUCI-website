@@ -19,35 +19,33 @@ const BACKGROUND_MAP = {
 	6: peach_cream,
 };
 
-const Rules = () => {
-	return (
-		<div className={cn.container} id="s-rules">
-			<h2 className={cn.heading}>Rules</h2>
-
-			<div className={cn.rules}>
-				{RULES.map((rule, index) => (
-					<div className={cn.rule} key={rule}>
-						<div className={cn.text}>
-							<span className={cn.number}>{index + 1}.</span>
-							<span>{rule}</span>
-						</div>
-
-						<img
-							src={BACKGROUND_MAP[index]}
-							alt=""
-							className={cn.bg}
-						/>
-					</div>
-				))}
-			</div>
-
+export const Rules = () => (
+	<div className={cn.container} id="s-rules">
+		<div className={cn.content}>
 			<img
 				src={hearts}
 				alt=""
 				className={clsx(cn.hearts, "wait flopR")}
 			/>
-		</div>
-	);
-};
 
-export { Rules };
+			<h2 className={cn.heading}>Rules</h2>
+
+			<div className={cn.rules}>
+				{RULES.map((rule, index) => (
+					<div
+						className={cn.rule}
+						key={rule}
+						style={{
+							backgroundImage: `url(${BACKGROUND_MAP[index]})`,
+						}}
+					>
+						<div className={cn.text}>
+							<span className={cn.number}>{index + 1}.</span>
+							<span>{rule}</span>
+						</div>
+					</div>
+				))}
+			</div>
+		</div>
+	</div>
+);

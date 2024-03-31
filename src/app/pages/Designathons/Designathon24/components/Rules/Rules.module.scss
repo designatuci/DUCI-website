@@ -5,6 +5,11 @@
 	padding: 5rem 2rem;
 	font-size: 1em;
 
+	.content {
+		margin: 0 auto;
+		max-width: 980px;
+	}
+
 	.heading {
 		color: var(--des24-hot-pink);
 		font-size: 3rem;
@@ -40,33 +45,27 @@
 
 		.rule {
 			width: 100%;
-			max-width: 400px;
 			aspect-ratio: 1;
-
-			position: relative;
-			display: flex;
-			justify-content: center;
-			margin: auto;
+			display: grid;
+			place-content: center;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
 
 			.text {
-				color: var(--des24-black);
-				width: 75%;
-				margin: auto 10%;
-
-				font-size: 0.75rem;
-
-				display: flex;
-				flex-direction: column;
-				gap: 0.5rem;
+				margin:0 auto;
+				max-width: calc(80% - 20px);
+				color: black;
+				text-align: center;
 
 				font-size: 1rem;
 
 				@media screen and (min-width: 1280px) {
-					font-size: 1.5rem;
+					font-size: 1rem;
 				}
 
 				.number {
-					font-size: 1.5rem;
+					font-size: 1rem;
 					text-align: center;
 
 					@media screen and (min-width: 1024px) {
@@ -76,9 +75,6 @@
 			}
 
 			.bg {
-				position: absolute;
-				z-index: -1;
-
 				height: 100%;
 
 				top: 50%;
@@ -97,8 +93,8 @@
 	position: absolute;
 	width: 25%;
 
-	top: 2.5%;
-	right: 2.5%;
+	top: 2%;
+	right: 2%;
 
 	@media screen and (min-width: 768px) {
 		width: 15%;

@@ -24,12 +24,12 @@ import { Splash } from "./components/Splash";
 const Designathon24 = () => (
 	<main className={cn.container}>
 		<div className={cn.hero}>
-			<div style={{ height: "100%", width: "100%" }}>
-				<Splash />
-			</div>
+			{/* <div style={{ height: "100%", width: "100%" }}> */}
+			<Splash />
+			{/* </div> */}
 			<div className={cn.title}>
 				{/* <Icon className={cn.icon} src="designathon-white.svg" w="96" h="96" /> */}
-				<Text
+				{/* <Text
 					size="XXXL"
 					className="bold"
 					style={{ color: "var(--des24-black)" }}
@@ -38,12 +38,13 @@ const Designathon24 = () => (
 				</Text>
 				<div className={cn.timer}>
 					<Timer breakpoints={TIMER_2024} />
-				</div>
+				</div> */}
 			</div>
 		</div>
 
 		<SectionNavigation />
-		<WinnerShowcase winners={WINNERS_2024} />
+		{/* Winners section will be updated when winners are announced */}
+		{/* <WinnerShowcase winners={WINNERS_2024} /> */}
 
 		<About />
 		<Speakers />

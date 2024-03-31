@@ -8,7 +8,9 @@
 	place-content: center;
 	background-color: #00000088;
 	transition: opacity 250ms;
-	z-index: 10;
+	// z-index: 10;
+
+	padding-top: 5%;
 
 	& > .container {
 		background-color: black;
@@ -101,6 +103,108 @@
 			& > .profile {
 				padding: 0px;
 			}
+		}
+	}
+}
+
+.popupContainer {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0 2rem 2rem;
+	width: fit-content;
+
+	text-align: left;
+
+	@media screen and (min-width: 1024px) {
+		flex-direction: row;
+		gap: 2rem;
+	}
+
+	.popupProfileContainer {
+		min-height: 275px;
+
+		@media screen and (min-width: 768px) {
+			min-height: 375px;
+		}
+
+		.popupProfile {
+			display: flex;
+			height: fit-content;
+			width: 200px;
+			aspect-ratio: 1;
+
+			margin: auto;
+
+			@media screen and (min-width: 768px) {
+				width: 300px;
+			}
+
+			@media screen and (min-width: 1024px) {
+				width: unset;
+				margin: unset;
+			}
+
+			p {
+				padding: 0;
+			}
+
+			background-color: #fff;
+			box-shadow: 0px 4px 6px 0 #00000030;
+			transition: 0.1s ease-in;
+		}
+	}
+
+	.popupDetails {
+		flex-direction: column;
+		max-width: 100%;
+
+		margin-top: 1rem;
+
+		@media screen and (min-width: 640px) {
+			margin-top: 1.75rem;
+		}
+
+		@media screen and (min-width: 768px) {
+			margin-top: 2rem;
+		}
+
+		@media screen and (min-width: 1024px) {
+			margin-top: 3rem;
+			max-width: 60%;
+		}
+
+		.heading {
+			font-size: 1.5rem;
+			text-overflow: ellipsis;
+			overflow: hidden;
+
+			@media screen and (min-width: 1024px) {
+				font-size: 1.75rem;
+				margin-top: 0rem;
+			}
+
+			@media screen and (min-width: 1280px) {
+				font-size: 2rem;
+				margin-top: 0.25rem;
+			}
+		}
+
+		.text {
+			margin-top: 0.25rem;
+			margin-right: 5%;
+
+			@media screen and (min-width: 640px) {
+				margin-top: 0.5rem;
+			}
+
+			@media screen and (min-width: 1280px) {
+				margin-top: 0.75rem;
+			}
+		}
+
+		p {
+			padding: 0;
 		}
 	}
 }
