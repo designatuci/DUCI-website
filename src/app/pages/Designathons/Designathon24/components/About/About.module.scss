@@ -83,13 +83,9 @@
 
 	.tr {
 		position: absolute;
-		max-width: 200px;
+		max-width: 50%;
 		top: 0px;
 		right: 0px;
-
-		@media screen and (min-width: 640px) {
-			max-width: 500px;
-		}
 	}
 
 	.gradient {
