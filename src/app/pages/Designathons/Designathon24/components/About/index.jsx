@@ -12,7 +12,7 @@ import Notecard from "../Notecard/Notecard";
 const About = () => {
 	return (
 		<div className={cn.container} id="s-about">
-			<h2 className={cn.aboutHeading}>About</h2>
+			<h2 className={cn.heading}>About</h2>
 			<Notecard>
 				<p>
 					Design-a-thon is a 3 day long hybrid event where you or a
@@ -50,7 +50,7 @@ const About = () => {
 				className={clsx(cn.tr, cn.gradient)}
 			/>
 			<img src={bl_gradient} alt="" className={cn.bl} />
-			<img src={tr_stars} alt="" className={cn.tr} />
+			<img src={tr_stars} alt="" className={clsx(cn.tr, cn.stars)} />
 			<img src={bl_stars} alt="" className={cn.bl} />
 		</div>
 	);
