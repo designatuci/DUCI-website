@@ -17,25 +17,64 @@ import JUDGES from "../../assets/data/judges.json";
 import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
 
 const Speakers = () => {
-	const keynoteRef = useRef(null);
-	const judgesRef = useRef(null);
-	const workshopRef = useRef(null);
-
 	return (
 		<div className={cn.container} id="s-speakers">
+			<img
+				src={tl_gradient}
+				alt=""
+				className={clsx(cn.decoration, cn.tl_gradient)}
+			/>
+			<img
+				src={tl_star_stripe}
+				alt=""
+				className={clsx(cn.decoration, cn.tl_star_stripe, "wait flopL")}
+			/>
+			<img
+				src={tr_pencil_star_stripe}
+				alt=""
+				className={clsx(
+					cn.decoration,
+					cn.tr_pencil_star_stripe,
+					"wait flopR"
+				)}
+			/>
+			<img
+				src={ml_stripe}
+				alt=""
+				className={clsx(cn.decoration, cn.m, cn.stripe, "wait flopL")}
+			/>
+			<img
+				src={mr_star_stripe}
+				alt=""
+				className={clsx(
+					cn.decoration,
+					cn.m,
+					cn.star_stripe,
+					"wait flopR"
+				)}
+			/>
+			<img
+				src={br_star_stripe_gradient}
+				alt=""
+				className={clsx(cn.decoration, cn.br_star_stripe_gradient)}
+			/>
 			<h2 className={cn.heading}>Speakers</h2>
 
 			<div className={cn.polaroids}>
-				<div className={cn.keynote} ref={keynoteRef}>
+				<div className={cn.keynote}>
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
 
-					<div className={cn.keynotePolaroid}>
-						<Polaroid person={JUDGES[0]} container={keynoteRef} />
-						<img src={splat} alt="splat" className={cn.splat} />
+					<div
+						className={cn.keynotePolaroid}
+						style={{ backgroundImage: `url(${splat})` }}
+					>
+						<div className={cn.content}>
+							<Polaroid person={JUDGES[0]} />
+						</div>
 					</div>
 				</div>
 
-				<div className={cn.peopleContainer} ref={judgesRef}>
+				<div className={cn.peopleContainer}>
 					<h3 className={cn.polaroidHeading}>Judges</h3>
 
 					<div className={cn.people}>
@@ -44,13 +83,12 @@ const Speakers = () => {
 								key={judge.name}
 								person={judge}
 								odd={index % 2 === 0}
-								container={judgesRef}
 							/>
 						))}
 					</div>
 				</div>
 
-				<div className={cn.peopleContainer} ref={workshopRef}>
+				<div className={cn.peopleContainer}>
 					<h3 className={cn.polaroidHeading}>Workshop Hosts</h3>
 
 					<div className={cn.people}>
@@ -59,39 +97,11 @@ const Speakers = () => {
 								key={host.name}
 								person={host}
 								odd={index % 2 === 0}
-								container={workshopRef}
 							/>
 						))}
 					</div>
 				</div>
 			</div>
-
-			<img src={tl_gradient} alt="" className={cn.tl_gradient} />
-			<img
-				src={tl_star_stripe}
-				alt=""
-				className={clsx(cn.tl_star_stripe, "wait flopL")}
-			/>
-			<img
-				src={tr_pencil_star_stripe}
-				alt=""
-				className={clsx(cn.tr_pencil_star_stripe, "wait flopR")}
-			/>
-			<img
-				src={ml_stripe}
-				alt=""
-				className={clsx(cn.m, cn.stripe, "wait flopL")}
-			/>
-			<img
-				src={mr_star_stripe}
-				alt=""
-				className={clsx(cn.m, cn.star_stripe, "wait flopR")}
-			/>
-			<img
-				src={br_star_stripe_gradient}
-				alt=""
-				className={cn.br_star_stripe_gradient}
-			/>
 		</div>
 	);
 };

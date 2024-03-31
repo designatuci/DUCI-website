@@ -2,7 +2,7 @@ import cn from "./Polaroid.module.scss";
 
 import { useCallback, useState } from "react";
 
-import { Modal } from "../Speakers/Modal";
+import { Modal } from "../Speakers/Modal/Modal";
 
 import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
@@ -34,21 +34,16 @@ export const Profile = ({ person, odd, tape: showTape }) => {
 	);
 };
 
-const Polaroid = ({ person, odd, container }) => {
+const Polaroid = ({ person, odd }) => {
 	const [open, setOpen] = useState(false);
 
 	const handleClick = useCallback(() => {
-		container.current.style.zIndex = open ? "1" : "100";
 		setOpen((prev) => !prev);
-	}, [container, open]);
+	}, []);
 
 	return (
 		<>
-			<div
-				className={cn.polaroidContainer}
-				onClick={handleClick}
-				style={{ cursor: "pointer" }}
-			>
+			<div className={cn.polaroidContainer} onClick={handleClick}>
 				<Profile person={person} odd={odd} showTape={true} />
 			</div>
 

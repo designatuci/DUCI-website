@@ -12,6 +12,7 @@ export const Modal = ({ toggleProfile, person }) => {
 		const handleKeyDown = (event) => {
 			if (event.key === "Escape") {
 				toggleProfile();
+				event.preventDefault();
 			}
 		};
 

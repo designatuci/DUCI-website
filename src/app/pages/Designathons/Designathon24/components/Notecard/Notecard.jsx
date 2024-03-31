@@ -12,7 +12,7 @@ const Notecard = ({ children, modalCard, lineAdjustment, toggleProfile }) => {
 
 	const { lines, notecardLineTop, notecardLineHeight } = useNotecardLines(
 		notecardRef,
-		textRef,
+		textRef
 	);
 
 	return (
@@ -44,7 +44,9 @@ const Notecard = ({ children, modalCard, lineAdjustment, toggleProfile }) => {
 						className={cn.line}
 						style={{
 							/* The distance between lines, accounting for the top of the card */
-							top: `calc(${notecardLineTop}px + ${index * notecardLineHeight}px)`,
+							top: `calc(${notecardLineTop}px + ${
+								index * notecardLineHeight
+							}px)`,
 						}}
 						key={index}
 					/>
