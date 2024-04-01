@@ -14,14 +14,12 @@ import {
 	Speakers,
 } from "./components";
 import Schedule from "./components/Schedule";
-import { Splash } from "./components/Splash";
+import { Splash } from "./components/Splash/Splash";
 
 const Designathon24 = () => (
 	<main className={cn.container}>
 		<div className={cn.hero}>
-			{/* <div style={{ height: "100%", width: "100%" }}> */}
 			<Splash />
-			{/* </div> */}
 			<div className={cn.title}>
 				{/* <Icon className={cn.icon} src="designathon-white.svg" w="96" h="96" /> */}
 				{/* <Text
