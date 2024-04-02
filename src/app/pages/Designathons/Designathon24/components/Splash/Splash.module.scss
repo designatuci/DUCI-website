@@ -1,0 +1,40 @@
+.container {
+    background-color: #fff5e0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    place-content: center;
+
+    .logo {
+        max-width: 50vw;
+        margin: 0 auto;
+
+        path {
+            stroke-width: 5;
+            .word {
+                stroke-dashoffset: 10px;
+                stroke-width: 5;
+                stroke-dasharray: 1500;
+                opacity: 0;
+    
+                @for $i from 1 through 10 {
+                    &:nth-child(#{$i}n) {
+                        animation: fadeIn forwards 1s #{$i * 350}ms ease-in;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}

@@ -6,9 +6,8 @@ import Notecard from "../Notecard/Notecard";
 import airplane from "../../assets/graphics/about/airplane.svg";
 import paperclip from "../../assets/graphics/about/paperclip.svg";
 import tr_gradient from "../../assets/graphics/about/tr_gradient.svg";
-import bl_gradient from "../../assets/graphics/about/bl_gradient.svg";
+import bl_blob_stars from "../../assets/graphics/about/bl_blob_stars.svg";
 import tr_stars from "../../assets/graphics/about/tr_stars.svg";
-import bl_stars from "../../assets/graphics/about/bl_stars.svg";
 
 import GridBackground from "../Backgrounds/GridBackground";
 
@@ -22,9 +21,8 @@ const About = () => {
 				alt="tr_gradient"
 				className={clsx(cn.tr, cn.gradient)}
 			/>
-			<img src={bl_gradient} alt="" className={cn.bl} />
+			<img src={bl_blob_stars} alt="" className={cn.bl} />
 			<img src={tr_stars} alt="" className={cn.tr} />
-			<img src={bl_stars} alt="" className={cn.bl} />
 
 			<h2 className={cn.heading}>About</h2>
 
