@@ -57,7 +57,6 @@ const Speakers = () => {
 				className={clsx(cn.decoration, cn.br_star_stripe_gradient)}
 			/>
 			<h2 className={cn.heading}>Speakers</h2>
-
 			<div className={cn.polaroids}>
 				<div className={cn.keynote}>
 					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
