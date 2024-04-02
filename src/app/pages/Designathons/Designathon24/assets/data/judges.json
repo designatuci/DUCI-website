@@ -1,0 +1,32 @@
+[
+	{
+		"name": "Cassandra Hoo",
+		"photo": "graphics/portraits/Cassandra_Hoo.svg",
+		"role": "Senior UX Designer at the LEGO Group",
+		"about": "Cassandra Hoo is currently a Senior UX Designer at the LEGO Group. She is passionate about human centered design, deeply understanding users, accessibility, and the process of iteration. She has a Master's degree in Human Computer Interaction and Design from UC Irvine and a BFA in Writing from University of the Arts. In her free time she enjoys cuddling with her cat Pixel, going on adventures, and Pilates."
+	},
+	{
+		"name": "Shana Sanford",
+		"photo": "graphics/portraits/Shana_Sanford.png",
+		"role": "Product Designer at Uber",
+		"about": "Shana is an Product Designer originally from Los Angeles, CA, with roots in Psychology and Communications. In her role on the Safety and Insurance team at Uber, Shana takes a holistic approach to designing user-centric products. Her professional ethos is grounded in the belief that accessibility is fundamental to innovation, driving her to advocate for equitable solutions. Shana now lives in Orange County with her fianceé, two kids and goldendoodle, Pixel. While not designing, you might find her sipping chai, practicing Mandarin, or learning a new skill."
+	},
+	{
+		"name": "Nikhil Mehrotra",
+		"photo": "graphics/portraits/Nikhil_Mehrotra.png",
+		"role": "UX Designer at Indeed",
+		"about": "Nikhil is a UX Designer at Indeed where he’s leading design efforts to improve the interviewing experience for both Job Seekers and Employers. He’s passionate about utilizing design and storytelling to help make the world a better place. Outside of work, Nikhil loves to work out and build Legos."
+	},
+	{
+		"name": "Marga Tokar",
+		"photo": "graphics/portraits/Marga_Tokar.png",
+		"role": "Team Manager at SAP",
+		"about": "Marga has over 20 years professional experience designing responsive and native mobile products for Enterprise and e-commerce companies. She brings user insights through research into improving designs and usability. Marga is a voracious learner, who enjoys keeping current with the constant evolution of technology and design. She currently manages a team of designers at SAP, who are creating new cloud native enterprise products."
+	},
+	{
+		"name": "Charithra Sathyanarayan",
+		"photo": "graphics/portraits/Charithra_Sathyanarayan.png",
+		"role": "Senior UX Designer at Deloitte",
+		"about": "With over seven years of experience in the design industry, Charithra has established herself as a distinguished Senior UX Designer at Deloitte, specializing in creating exceptional user experiences. Her career began with a solid foundation in Computer Science Engineering, which provided her with essential technical skills and an analytical mindset. However, Charithra's passion for enhancing people's interactions with technology led her to transition towards the design side of the tech world. She furthered her expertise by pursuing an MFA in Design Management at Savannah College of Art and Design, equipping her with a profound understanding of design principles and management skills. Currently, she plays a pivotal role in a leading Fintech company, where she is committed to improving customer engagement. Charithra's work is characterized by her meticulous attention to detail, deep understanding of user behavior, and dedication to creating intuitive and accessible designs."
+	}
+]

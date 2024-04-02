@@ -1,0 +1,93 @@
+.polaroidContainer {
+	&:hover {
+		background-color: #fffbf3;
+		box-shadow: 0px 4px 6px 0 #00000030;
+		transition: 0.1s ease-in;
+	}
+
+	position: relative;
+	height: fit-content;
+}
+
+.polaroid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	cursor: inherit;
+	position: relative;
+
+	width: 100%;
+	height: fit-content;
+
+	padding: 0.35rem 0.35rem;
+
+	.polaroidImage {
+		width: 100%;
+		height: 100%;
+
+		border-radius: 0.25rem;
+		pointer-events: none;
+
+		cursor: inherit;
+	}
+
+	.polaroidDetails {
+		height: 100%;
+		padding-top: 0.5rem;
+		text-align: left;
+		cursor: inherit;
+
+		.polaroidName {
+			font-size: 1rem;
+			font-weight: 600;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+			padding-bottom: 8px;
+
+			cursor: inherit;
+
+			@media screen and (min-width: 640px) {
+				font-size: 1.5rem;
+			}
+
+			@media screen and (min-width: 1024px) {
+				font-size: 2rem;
+			}
+		}
+
+		.polaroidRole {
+			font-size: 0.75rem;
+			font-weight: 400;
+			line-height: normal;
+
+			cursor: inherit;
+
+			@media screen and (min-width: 640px) {
+				font-size: 1rem;
+			}
+
+			@media screen and (min-width: 1024px) {
+				font-size: 1.25rem;
+			}
+
+			p {
+				-webkit-line-clamp: 1;
+			}
+		}
+	}
+
+	.tape {
+		position: absolute;
+		width: 66%;
+		z-index: 5;
+
+		top: -5%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	@media screen and (min-width: 640px) {
+		padding: 1rem;
+	}
+}
