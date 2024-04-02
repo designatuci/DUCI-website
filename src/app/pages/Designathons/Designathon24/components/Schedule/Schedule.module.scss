@@ -1,7 +1,9 @@
 .container {
 	position: relative;
 	background-color: var(--des24-black);
-	color: white;
+	background-image: url("../../assets/graphics/background/dark_splash.svg");
+	background-repeat: repeat-y;
+	background-size: 100% auto;
 
 	padding: 5rem 2rem;
 

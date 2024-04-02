@@ -4,7 +4,6 @@ import React from "react";
 import cn from "./Schedule.module.scss";
 
 import coming_soon from "../../assets/graphics/schedule/coming_soon.svg";
-import dark_splat from "../../assets/graphics/background/dark_splat.svg";
 
 function Schedule({ schedule }) {
 	return (
@@ -16,8 +15,6 @@ function Schedule({ schedule }) {
 				alt="Coming Soon"
 				className={cn.coming_soon}
 			/>
-
-			<img src={dark_splat} alt="" className={cn.dark_splat} />
 
 			{/* <Section>
 				<h1 className={cn.title}>Schedule</h1>
