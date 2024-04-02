@@ -8,6 +8,7 @@ import cream from "../../assets/graphics/rules/cream.svg";
 import peach_cream from "../../assets/graphics/rules/peach_cream.svg";
 import pink from "../../assets/graphics/rules/pink.svg";
 import hearts from "../../assets/graphics/rules/hearts.svg";
+import GridBackground from "../Backgrounds/GridBackground";
 
 const BACKGROUND_MAP = {
 	0: cream_hot_pink,
@@ -21,6 +22,8 @@ const BACKGROUND_MAP = {
 
 export const Rules = () => (
 	<div className={cn.container} id="s-rules">
+		<GridBackground positions={[{ top: 0, right: 0 }]} isLight={false} />
+
 		<div className={cn.content}>
 			<img
 				src={hearts}

@@ -13,10 +13,25 @@ import br_star_stripe_gradient from "../../assets/graphics/speakers/br_star_stri
 
 import JUDGES from "../../assets/data/judges.json";
 import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
+import GridBackground from "../Backgrounds/GridBackground";
 
 const Speakers = () => {
 	return (
 		<div className={cn.container} id="s-speakers">
+			<GridBackground
+				positions={[
+					{
+						top: 0,
+						left: 0,
+					},
+					{
+						bottom: 0,
+						right: 0,
+					},
+				]}
+				isLight={true}
+			/>
+
 			<img
 				src={tl_gradient}
 				alt=""

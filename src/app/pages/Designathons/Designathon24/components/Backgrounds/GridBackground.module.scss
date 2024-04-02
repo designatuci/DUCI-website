@@ -1,0 +1,16 @@
+.graph {
+	position: absolute;
+	object-fit: cover;
+	pointer-events: none;
+
+	height: 80%;
+	max-height: calc(100vh - 88px); // 88px is the navbar
+}
+
+.light {
+	width: 60%;
+}
+
+.dark {
+	width: 40%;
+}

@@ -1,16 +1,21 @@
 import cn from "./About.module.scss";
 import clsx from "clsx";
 
+import Notecard from "../Notecard/Notecard";
+
 import airplane from "../../assets/graphics/about/airplane.svg";
 import paperclip from "../../assets/graphics/about/paperclip.svg";
 import tr_gradient from "../../assets/graphics/about/tr_gradient.svg";
 import bl_blob_stars from "../../assets/graphics/about/bl_blob_stars.svg";
 import tr_stars from "../../assets/graphics/about/tr_stars.svg";
-import Notecard from "../Notecard/Notecard";
+
+import GridBackground from "../Backgrounds/GridBackground";
 
 const About = () => {
 	return (
 		<div className={cn.container} id="s-about">
+			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
+
 			<img
 				src={tr_gradient}
 				alt="tr_gradient"
@@ -19,7 +24,8 @@ const About = () => {
 			<img src={bl_blob_stars} alt="" className={cn.bl} />
 			<img src={tr_stars} alt="" className={cn.tr} />
 
-			<h2 className={cn.aboutHeading}>About</h2>
+			<h2 className={cn.heading}>About</h2>
+
 			<Notecard lineAdjustment={1}>
 				<div style={{ maxWidth: "95%" }}>
 					<p>
@@ -48,12 +54,13 @@ const About = () => {
 					</p>
 				</div>
 			</Notecard>
-			<img src={paperclip} alt="" className={cn.paperclip} />
+
 			<img
 				src={airplane}
 				alt=""
 				className={clsx(cn.airplane, "wait flopR")}
 			/>
+			<img src={paperclip} alt="" className={cn.paperclip} />
 		</div>
 	);
 };

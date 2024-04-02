@@ -5,6 +5,7 @@
 		transition: 0.1s ease-in;
 	}
 
+	position: relative;
 	height: fit-content;
 }
 
@@ -39,6 +40,8 @@
 		.polaroidName {
 			font-size: 1rem;
 			font-weight: 600;
+			overflow: hidden;
+			text-overflow: ellipsis;
 
 			padding-bottom: 8px;
 

@@ -3,11 +3,17 @@ import cn from "./FAQ.module.scss";
 import { useCallback, useState } from "react";
 
 import down_carat from "../../assets/graphics/faq/down_carat.svg";
+import GridBackground from "../Backgrounds/GridBackground";
 
 const FAQ = () => {
 	return (
 		<div id="s-faq">
 			<div className={cn.container}>
+				<GridBackground
+					positions={[{ top: 0, left: 0 }]}
+					isLight={true}
+				/>
+
 				<h2 className={cn.heading}>FAQ</h2>
 				{/* <div className="spaceChildren">
 					<Text style={{ lineHeight: "1.4em" }}>
@@ -23,7 +29,6 @@ const FAQ = () => {
 						for more help!
 					</Text>
 				</div> */}
-
 				<div className={cn.qa_container}>
 					{[
 						{
