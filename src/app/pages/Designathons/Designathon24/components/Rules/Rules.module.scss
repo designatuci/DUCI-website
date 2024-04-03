@@ -97,6 +97,7 @@
 .hearts {
 	position: absolute;
 	width: 25%;
+	pointer-events: none;
 
 	top: 2%;
 	right: 2%;
