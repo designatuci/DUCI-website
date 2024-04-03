@@ -6,6 +6,17 @@
 				"name": "Vanna Vuong",
 				"position": "Industry Outreach Coordinator",
 				"photo": "Vanna_Vuong.jpeg"
+			},
+			{
+				"name": "Candyce Pham",
+				"position": "Graphic Designer",
+				"photo": "Candyce_Pham.jpg",
+				"links": [
+					{
+						"type": "linkedin",
+						"href": "http://www.linkedin.com/in/candyce-pham"
+					}
+				]
 			}
 		]
 	},
