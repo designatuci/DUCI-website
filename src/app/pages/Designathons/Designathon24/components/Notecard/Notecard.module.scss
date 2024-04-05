@@ -6,7 +6,7 @@
 
 	box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
 
-	margin: 1.5rem 1rem 0;
+	margin: 1.5rem 0rem 0;
 
 	overflow-y: scroll;
 	overflow-x: hidden;
@@ -74,7 +74,7 @@
 	}
 
 	@media screen and (min-width: 640px) {
-		margin: 1.5rem 4rem 0;
+		margin: 1.5rem 0rem 0;
 
 		.noteCardHeader {
 			height: 80px;
@@ -101,7 +101,7 @@
 
 		box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
 
-		margin: 1.5rem 6rem 0;
+		margin: 1.5rem 0rem 0;
 
 		.text {
 			margin-top: 0.5rem;
