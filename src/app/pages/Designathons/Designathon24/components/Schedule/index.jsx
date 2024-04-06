@@ -48,7 +48,9 @@ function Schedule() {
 								<div className={clsx(cn.title)}>
 									Team Formation Social
 								</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>
+									Crystal Cove Auditorium (Student Center)
+								</div>
 							</div>
 							<div className={cn.time}>3:30 PM → 4:45 PM</div>
 						</div>
@@ -75,7 +77,9 @@ function Schedule() {
 								<div className={clsx(cn.title)}>
 									Opening Ceremony
 								</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>
+									Location of the Event
+								</div>
 							</div>
 							<div className={cn.time}>5:00 PM → 6:00 PM</div>
 						</div>
@@ -102,7 +106,7 @@ function Schedule() {
 								<div className={clsx(cn.title)}>
 									Dinner Served
 								</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>6:30 PM → 7:30 PM</div>
 						</div>
@@ -127,7 +131,7 @@ function Schedule() {
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>Work Hours</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>6:30 PM → 9:00 PM</div>
 						</div>
@@ -152,7 +156,7 @@ function Schedule() {
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>Workshop</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>6:45 PM → 7:30 PM</div>
 						</div>
@@ -226,13 +230,64 @@ function Schedule() {
 					</div>
 
 					<h2 className={cn.date}>Saturday - May 18th, 2024</h2>
+
+					<div className={cn.event}>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.titleContainer)}>
+								<div className={clsx(cn.title)}>Check-In</div>
+								<div className={cn.location}>DBH 6011</div>
+							</div>
+							<div className={cn.time}>9:00 AM → 11:00 AM</div>
+						</div>
+						<div className={cn.description}>
+							<p>
+								Join us or on our{" "}
+								<a
+									href="https://uci.zoom.us/j/93490306811"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Zoom.
+								</a>
+							</p>
+							<br />
+							Led by Design at UCI's Design-a-thon Directors, Jay
+							Sotelo, Jasmine Wu, & Elise Alinsug
+						</div>
+					</div>
+
 					<div className={cn.event}>
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>
 									Breakfast Served
 								</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
+							</div>
+							<div className={cn.time}>10:00 AM → 11:00 AM</div>
+						</div>
+						<div className={cn.description}>
+							<p>
+								Join us or on our{" "}
+								<a
+									href="https://uci.zoom.us/j/93490306811"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Zoom.
+								</a>
+							</p>
+							<br />
+							Led by Design at UCI's Design-a-thon Directors, Jay
+							Sotelo, Jasmine Wu, & Elise Alinsug
+						</div>
+					</div>
+
+					<div className={cn.event}>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.titleContainer)}>
+								<div className={clsx(cn.title)}>Workshop</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>11:00 AM → 11:45 AM</div>
 						</div>
@@ -256,8 +311,8 @@ function Schedule() {
 					<div className={cn.event}>
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
-								<div className={clsx(cn.title)}>Workshop</div>
-								<div className={cn.location}>Online</div>
+								<div className={clsx(cn.title)}>Work Hours</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>11:45 AM → 1:15 PM</div>
 						</div>
@@ -284,7 +339,7 @@ function Schedule() {
 								<div className={clsx(cn.title)}>
 									Lunch Served
 								</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>1:15 PM → 2:15 PM</div>
 						</div>
