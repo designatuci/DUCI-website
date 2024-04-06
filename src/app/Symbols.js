@@ -11,7 +11,11 @@ const Icon = (props) => {
 	return (
 		<div
 			id={props.id}
-			className={clsx("icon", props.hoverable && "hoverable", props.className)}
+			className={clsx(
+				"icon",
+				props.hoverable && "hoverable",
+				props.className,
+			)}
 			style={style}
 		>
 			{props.children}
@@ -60,7 +64,11 @@ export function Space({ block, ...props }) {
 		style.display = "block";
 	}
 	return (
-		<div className={"space " + props.className} {...props} style={style}></div>
+		<div
+			className={"space " + props.className}
+			{...props}
+			style={style}
+		></div>
 	);
 }
 

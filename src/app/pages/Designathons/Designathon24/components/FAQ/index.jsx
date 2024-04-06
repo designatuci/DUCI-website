@@ -1,8 +1,10 @@
 import cn from "./FAQ.module.scss";
+import clsx from "clsx";
 
 import { useCallback, useState } from "react";
 
 import down_carat from "../../assets/graphics/faq/down_carat.svg";
+import star_lines from "../../assets/graphics/faq/star_lines.svg";
 import GridBackground from "../Backgrounds/GridBackground";
 
 const FAQ = () => {
@@ -12,6 +14,12 @@ const FAQ = () => {
 				<GridBackground
 					positions={[{ top: 0, left: 0 }]}
 					isLight={true}
+				/>
+            <div className={cn.content}>
+				<img
+					src={star_lines}
+					alt=""
+					className={clsx(cn.star_lines, "wait flopR")}
 				/>
 
 				<h2 className={cn.heading}>FAQ</h2>
@@ -214,6 +222,7 @@ const FAQ = () => {
 							/>
 						);
 					})}
+          </div>
 				</div>
 			</div>
 		</div>

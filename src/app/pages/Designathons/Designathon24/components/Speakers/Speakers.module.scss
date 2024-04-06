@@ -7,6 +7,11 @@
 
 	padding: 5rem 2rem;
 
+	.content {
+		margin: 0 auto;
+		max-width: 1280px;
+	}
+
 	.heading {
 		position: relative;
 		color: var(--des24-hot-pink);
@@ -26,15 +31,16 @@
 
 	.polaroids {
 		margin: 0 auto;
-		max-width: 980px;
 		margin-top: 3rem;
 
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		gap: 4rem;
+		max-width: 80%;
 
 		.polaroidHeading {
+			position: relative;
 			font-size: 2rem;
 			font-weight: 700;
 

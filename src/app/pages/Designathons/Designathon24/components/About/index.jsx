@@ -24,15 +24,15 @@ const About = () => {
 			<img src={bl_blob_stars} alt="" className={cn.bl} />
 			<img src={tr_stars} alt="" className={cn.tr} />
 
+          			<div className={cn.content}>
 			<h2 className={cn.heading}>About</h2>
 
-			<Notecard lineAdjustment={1}>
+			<Notecard lineAdjustment={2}>
 				<div style={{ maxWidth: "95%" }}>
 					<p>
 						Design-a-thon is a 3 day long hybrid event where you or
-						a team design a product focused on the theme: community
-						and inclusivity. It takes place on February 24, starting
-						at 5:30 pm and ends February 26, 8:00 pm PST.
+						a team design a product focused on the theme: True to
+						You! It takes place on May 17th, and ends May 19th.
 					</p>
 					<p>
 						Design at UCI is the premier student-run organization at
@@ -54,13 +54,13 @@ const About = () => {
 					</p>
 				</div>
 			</Notecard>
+</div>
 
 			<img
 				src={airplane}
 				alt=""
 				className={clsx(cn.airplane, "wait flopR")}
 			/>
-			<img src={paperclip} alt="" className={cn.paperclip} />
 		</div>
 	);
 };
