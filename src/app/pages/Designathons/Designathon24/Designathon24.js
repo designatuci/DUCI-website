@@ -1,10 +1,12 @@
+
+import EVENTS_2024 from "assets/data/designathon/2024/events.json";
+
 import { Section } from "app/Symbols";
 // import EVENTS_2024 from "assets/data/designathon/2024/events.json";
+
 import PRIZES_2024 from "assets/data/designathon/2024/prizes.json";
 import cn from "./Designathon24.module.scss";
-import FOF from "./assets/FOF.png";
-import notion from "./assets/notion.png";
-import balsamiq from "./assets/balsamiq.png";
+
 import {
 	About,
 	Prizes,
@@ -12,6 +14,7 @@ import {
 	FAQ,
 	Rules,
 	Speakers,
+	Sponsors,
 } from "./components";
 import Schedule from "./components/Schedule";
 import { Splash } from "./components/Splash/Splash";
@@ -52,41 +55,7 @@ const Designathon24 = () => (
 
 		<FAQ />
 
-		<div className={cn.sponsors} id="s-sponsors">
-			<Section>
-				<h2>Sponsors</h2>
-				<div className={cn.logos}>
-					<div>
-						<a
-							href="https://friends.figma.com/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img src={FOF} alt="Friends of Figma" />
-						</a>
-					</div>
-					<div>
-						<a
-							href="https://www.notion.so/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							{" "}
-							<img src={notion} alt="Notion" />
-						</a>
-					</div>
-					<div>
-						<a
-							href="https://balsamiq.com/"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							<img src={balsamiq} alt="balsamiq" />
-						</a>
-					</div>
-				</div>
-			</Section>
-		</div>
+		<Sponsors />
 	</main>
 );
 

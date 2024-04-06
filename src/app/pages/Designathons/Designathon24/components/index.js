@@ -6,3 +6,4 @@ export * from "./Rules/Rules";
 export * from "./Timer";
 export * from "./WinnerShowcase";
 export * from "./Speakers/Speakers";
+export * from "./Sponsors";

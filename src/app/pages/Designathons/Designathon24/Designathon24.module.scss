@@ -101,38 +101,4 @@
 			}
 		}
 	}
-
-	& .sponsors {
-		background-color: var(--silver);
-
-		& h2 {
-			font-size: 2em;
-		}
-
-		& .logos {
-			padding-top: 60px;
-			display: grid;
-			column-gap: 80px;
-			row-gap: 80px;
-			width: 100%;
-			grid-template-columns: repeat(1, 1fr);
-			place-content: center;
-
-			@media screen and (min-width: 800px) {
-				max-height: none;
-				grid-template-columns: repeat(3, 1fr);
-			}
-
-			& > div {
-				display: grid;
-				place-content: center;
-			}
-
-			& img {
-				max-height: 200px;
-				width: 100%;
-				object-fit: contain;
-			}
-		}
-	}
 }

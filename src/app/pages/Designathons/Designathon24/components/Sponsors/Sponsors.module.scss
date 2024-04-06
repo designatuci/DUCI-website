@@ -1,0 +1,52 @@
+.sponsors {
+	position: relative;
+	background-color: var(--des24-black);
+	background-image: url("../../assets/graphics/background/dark_splash.svg");
+	background-repeat: repeat-y;
+	background-size: 100% auto;
+
+	.heading {
+		color: var(--des24-hot-pink);
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 4rem;
+
+		@media screen and (min-width: 640px) {
+			font-size: 5rem;
+		}
+
+		@media screen and (min-width: 1280px) {
+			font-size: 6rem;
+		}
+	}
+
+	.content {
+		max-width: 1280px;
+	}
+
+	& .logos {
+		padding-top: 60px;
+		display: grid;
+		column-gap: 80px;
+		row-gap: 80px;
+		width: 100%;
+		grid-template-columns: repeat(1, 1fr);
+		place-content: center;
+
+		@media screen and (min-width: 800px) {
+			max-height: none;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		& > div {
+			display: grid;
+			place-content: center;
+		}
+
+		& img {
+			max-height: 200px;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}
