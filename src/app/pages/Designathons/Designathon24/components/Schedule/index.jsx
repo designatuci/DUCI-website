@@ -7,19 +7,17 @@ function Schedule() {
 	return (
 		<div className={cn.container} id="s-schedule">
 			<Section>
-				<h1 className={cn.title}>Schedule</h1>
+				<h2 className={cn.heading}>Schedule</h2>
 
 				<span className={cn.note}>All times are in PST.</span>
 
-				<h2>Friday - May 17th, 2024</h2>
+				<h2 className={cn.date}>Friday - May 17th, 2024</h2>
 				<div className={cn.list}>
 					<div className={cn.event}>
 						<div className={cn.time}>
 							3:00 PM <span>↓</span> 5:00 PM
 						</div>
-						<div className={clsx(cn.title, cn.highlight)}>
-							Check-In Begins
-						</div>
+						<div className={clsx(cn.title)}>Check-In Begins</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -201,7 +199,7 @@ function Schedule() {
 					</div>
 				</div>
 
-				<h2>Saturday - May 18th, 2024</h2>
+				<h2 className={cn.date}>Saturday - May 18th, 2024</h2>
 				<div className={cn.list}>
 					<div className={cn.event}>
 						<div className={cn.time}>
@@ -466,7 +464,7 @@ function Schedule() {
 					</div>
 				</div>
 
-				<h2>Sunday - May 19th, 2024</h2>
+				<h2 className={cn.date}>Sunday - May 19th, 2024</h2>
 				<div className={cn.list}>
 					<div className={cn.event}>
 						<div className={cn.time}>
