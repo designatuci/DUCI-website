@@ -103,6 +103,13 @@
 	}
 }
 
+.star_lines {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 30%;
+}
+
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
