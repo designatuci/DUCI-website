@@ -54,7 +54,7 @@
 			grid-template-columns: auto 1fr;
 			column-gap: 20px;
 			padding-bottom: 20px;
-			border-bottom: 2px solid var(--gray);
+			border-bottom: 2px dotted var(--des24-cream);
 
 			@media screen and (min-width: 950px) {
 				grid-template-columns: 150px 1fr 1fr;
