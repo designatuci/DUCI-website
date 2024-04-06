@@ -25,7 +25,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>3:00 PM → 5:00 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us live at Crystal Cove or on our{" "}
 								<a
@@ -39,7 +39,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -54,7 +54,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>3:30 PM → 4:45 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us on our{" "}
 								<a
@@ -68,7 +68,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -83,7 +83,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>5:00 PM → 6:00 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -97,7 +97,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -110,7 +110,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>6:30 PM → 7:30 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -124,7 +124,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -135,7 +135,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>6:30 PM → 9:00 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -149,7 +149,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -160,7 +160,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>6:45 PM → 7:30 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -174,7 +174,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -185,7 +185,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>9:40 PM → 10:25 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -199,7 +199,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -212,7 +212,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>10:30 PM → 11:59 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -226,7 +226,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<h2 className={cn.date}>Saturday - May 18th, 2024</h2>
@@ -239,7 +239,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>9:00 AM → 10:00 AM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -253,7 +253,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -266,7 +266,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>10:00 AM → 11:00 AM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -280,7 +280,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -291,7 +291,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>11:00 AM → 11:45 AM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -305,7 +305,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -316,7 +316,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>11:45 AM → 1:15 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -330,7 +330,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -343,7 +343,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>1:15 PM → 2:15 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -357,7 +357,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -368,7 +368,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>2:15 PM → 3:00 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -382,7 +382,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -395,7 +395,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>3:00 PM → 3:45 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -409,7 +409,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -420,7 +420,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>4:00 PM → 4:45 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -434,7 +434,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -447,7 +447,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>4:45 PM → 5:45 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -461,7 +461,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -472,7 +472,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>5:45 PM → 7:00 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -486,7 +486,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -497,7 +497,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>7:00 PM → 7:45 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -511,7 +511,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -522,7 +522,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>7:45 PM → 9:00 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -536,7 +536,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<div className={cn.event}>
@@ -549,7 +549,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>9:00 PM → 11:59 PM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -563,7 +563,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 
 					<h2 className={cn.date}>Sunday - May 19th, 2024</h2>
@@ -577,7 +577,7 @@ function Schedule() {
 							</div>
 							<div className={cn.time}>10:00 AM → 11:45 AM</div>
 						</div>
-						<div className={cn.description}>
+						{/* <div className={cn.description}>
 							<p>
 								Join us or on our{" "}
 								<a
@@ -591,7 +591,7 @@ function Schedule() {
 							<br />
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</Section>
