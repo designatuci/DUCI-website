@@ -228,7 +228,6 @@ function Schedule() {
 						<div className={cn.time}>
 							11:00 AM
 							<span>↓</span>
-							11:45 AM
 						</div>
 						<div className={cn.title}>Breakfast Served</div>
 						<div className={cn.description}>
@@ -249,7 +248,7 @@ function Schedule() {
 					</div>
 					<div className={cn.event}>
 						<div className={cn.time}>
-							11:45 AM<span>↓</span>1:15 PM
+							11:45 AM<span>↓</span>
 						</div>
 						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
@@ -272,7 +271,6 @@ function Schedule() {
 						<div className={cn.time}>
 							1:15 PM
 							<span>↓</span>
-							2:15 PM
 						</div>
 						<div className={cn.title}>Lunch Served</div>
 						<div className={cn.description}>
@@ -295,7 +293,6 @@ function Schedule() {
 						<div className={cn.time}>
 							2:15 PM
 							<span>↓</span>
-							3:00 PM
 						</div>
 						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
@@ -339,7 +336,6 @@ function Schedule() {
 						<div className={cn.time}>
 							4:00 PM
 							<span>↓</span>
-							4:45 PM
 						</div>
 						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
@@ -360,7 +356,7 @@ function Schedule() {
 					</div>
 					<div className={cn.event}>
 						<div className={cn.time}>
-							4:45 PM<span>↓</span>5:45 PM
+							4:45 PM<span>↓</span>
 						</div>
 						<div className={cn.title}>Dinner Served</div>
 						<div className={cn.description}>
@@ -383,7 +379,6 @@ function Schedule() {
 						<div className={cn.time}>
 							5:45 PM
 							<span>↓</span>
-							7:00 PM
 						</div>
 						<div className={cn.title}>Work Hours</div>
 						<div className={cn.description}>
@@ -406,7 +401,6 @@ function Schedule() {
 						<div className={cn.time}>
 							7:00 PM
 							<span>↓</span>
-							7:45 PM
 						</div>
 						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
@@ -429,7 +423,6 @@ function Schedule() {
 						<div className={cn.time}>
 							7:45 PM
 							<span>↓</span>
-							9:00 PM
 						</div>
 						<div className={cn.title}>Work Hours</div>
 						<div className={cn.description}>
