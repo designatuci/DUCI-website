@@ -7,17 +7,22 @@ function Schedule() {
 	return (
 		<div className={cn.container} id="s-schedule">
 			<Section>
-				<h2 className={cn.heading}>Schedule</h2>
+				<h1 className={cn.heading}>Schedule</h1>
 
 				<span className={cn.note}>All times are in PST.</span>
 
 				<h2 className={cn.date}>Friday - May 17th, 2024</h2>
 				<div className={cn.list}>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							3:00 PM <span>↓</span> 5:00 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>
+								Check-In Begins
+							</div>
+							<div className={cn.location}>
+								Crystal Cove Auditorium (Student Center)
+							</div>
+							<div className={cn.time}>3:00 PM → 5:00 PM</div>
 						</div>
-						<div className={clsx(cn.title)}>Check-In Begins</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -35,13 +40,12 @@ function Schedule() {
 						</div>
 					</div>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							3:30 PM
-							<span>↓</span>
-							4:45 PM
-						</div>
-						<div className={clsx(cn.title)}>
-							Team Formation Social
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>
+								Team Formation Social
+							</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>3:30 PM → 4:45 PM</div>
 						</div>
 						<div className={cn.description}>
 							<p>
@@ -60,12 +64,13 @@ function Schedule() {
 						</div>
 					</div>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							5:00 PM
-							<span>↓</span>
-							6:00 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>
+								Opening Ceremony
+							</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>5:00 PM → 6:00 PM</div>
 						</div>
-						<div className={clsx(cn.title)}>Opening Ceremony</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -83,12 +88,11 @@ function Schedule() {
 						</div>
 					</div>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							6:30 PM
-							<span>↓</span>
-							7:30 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Dinner Served</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>6:30 PM → 7:30 PM</div>
 						</div>
-						<div className={clsx(cn.title)}>Dinner Served</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -106,12 +110,11 @@ function Schedule() {
 						</div>
 					</div>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							6:30 PM
-							<span>↓</span>
-							9:00 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Work Hours</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>6:30 PM → 9:00 PM</div>
 						</div>
-						<div className={clsx(cn.title)}>Work Hours</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -129,12 +132,11 @@ function Schedule() {
 						</div>
 					</div>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							6:45 PM
-							<span>↓</span>
-							7:30 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Workshop</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>6:45 PM → 7:30 PM</div>
 						</div>
-						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -152,12 +154,11 @@ function Schedule() {
 						</div>
 					</div>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							9:40 PM
-							<span>↓</span>
-							10:25 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Workshop</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>9:40 PM → 10:25 PM</div>
 						</div>
-						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -175,12 +176,13 @@ function Schedule() {
 						</div>
 					</div>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							10:30 PM
-							<span>↓</span>
-							11:59 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>
+								Mentorship Hours
+							</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>10:30 PM → 11:59 PM</div>
 						</div>
-						<div className={cn.title}>Mentorship Hours</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -202,10 +204,11 @@ function Schedule() {
 				<h2 className={cn.date}>Saturday - May 18th, 2024</h2>
 				<div className={cn.list}>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							10:00 AM<span>↓</span>10:45 AM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Check-In</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>10:00 AM → 10:45 AM</div>
 						</div>
-						<div className={cn.title}>Check-In</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -222,12 +225,15 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							11:00 AM
-							<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>
+								Breakfast Served
+							</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>11:00 AM → 11:45 AM</div>
 						</div>
-						<div className={cn.title}>Breakfast Served</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -244,11 +250,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							11:45 AM<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Workshop</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>11:45 AM → 1:15 PM</div>
 						</div>
-						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -265,12 +273,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							1:15 PM
-							<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Lunch Served</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>1:15 PM → 2:15 PM</div>
 						</div>
-						<div className={cn.title}>Lunch Served</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -287,12 +296,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							2:15 PM
-							<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Workshop</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>2:15 PM → 3:00 PM</div>
 						</div>
-						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -309,11 +319,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							3:00 PM<span>↓</span>3:45 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Notion Social</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>3:00 PM → 3:45 PM</div>
 						</div>
-						<div className={cn.title}>Notion Social</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -330,12 +342,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							4:00 PM
-							<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Workshop</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>4:00 PM → 4:45 PM</div>
 						</div>
-						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -352,11 +365,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							4:45 PM<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Dinner Served</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>4:45 PM → 5:45 PM</div>
 						</div>
-						<div className={cn.title}>Dinner Served</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -373,12 +388,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							5:45 PM
-							<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Work Hours</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>5:45 PM → 7:00 PM</div>
 						</div>
-						<div className={cn.title}>Work Hours</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -395,12 +411,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							7:00 PM
-							<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Workshop</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>7:00 PM → 7:45 PM</div>
 						</div>
-						<div className={cn.title}>Workshop</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -417,12 +434,13 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							7:45 PM
-							<span>↓</span>
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Work Hours</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>7:45 PM → 9:00 PM</div>
 						</div>
-						<div className={cn.title}>Work Hours</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -439,13 +457,15 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div>
 					</div>
+
 					<div className={cn.event}>
-						<div className={cn.time}>
-							9:00 PM
-							<span>↓</span>
-							11:59 PM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>
+								Mentorship Hours
+							</div>
+							<div className={cn.location}>Online</div>
+							<div className={cn.time}>9:00 PM → 11:59 PM</div>
 						</div>
-						<div className={cn.title}>Mentorship Hours</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}
@@ -467,12 +487,17 @@ function Schedule() {
 				<h2 className={cn.date}>Sunday - May 19th, 2024</h2>
 				<div className={cn.list}>
 					<div className={cn.event}>
-						<div className={cn.time}>
-							10:00 AM
-							<span>↓</span>
-							11:45 AM
+						<div className={clsx(cn.info)}>
+							<div className={clsx(cn.title)}>Check-In</div>
+							<div className={cn.location}>
+								Crystal Cove Auditorium (Student Center)
+							</div>
+							<div className={cn.time}>
+								10:00 AM
+								<span>→</span>
+								11:45 AM
+							</div>
 						</div>
-						<div className={cn.title}>Check-In</div>
 						<div className={cn.description}>
 							<p>
 								Join us or on our{" "}

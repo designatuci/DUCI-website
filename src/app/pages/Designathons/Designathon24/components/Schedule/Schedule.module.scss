@@ -29,6 +29,7 @@
 
 	.date {
 		color: var(--des24-peach);
+		font-weight: bold;
 	}
 
 	a {
@@ -40,10 +41,10 @@
 		}
 	}
 
-	& h2 {
-		color: var(--blue);
-		font-weight: bold;
-	}
+	// & h2 {
+	// 	color: var(--blue);
+	// 	font-weight: bold;
+	// }
 
 	& .list {
 		display: grid;
@@ -51,33 +52,42 @@
 
 		& > .event {
 			display: grid;
-			grid-template-columns: auto 1fr;
+			grid-template-columns: 2fr 3fr;
 			column-gap: 20px;
 			padding-bottom: 20px;
 			border-bottom: 2px dotted var(--des24-cream);
 
-			@media screen and (min-width: 950px) {
-				grid-template-columns: 150px 1fr 1fr;
+			@media screen and (min-width: 1280) {
+				grid-template-columns: 500px 2fr;
 			}
 
-			& > .title {
-				font-size: 1.4em;
-				font-weight: bold;
-				text-align: right;
+			& > .info {
+				display: flex;
+				flex-direction: column;
 
-				&.special {
-					color: var(--yellow);
+				& > .title {
+					font-size: 1.8em;
+					font-weight: bold;
+
+					&.special {
+						color: var(--yellow);
+					}
+
+					&.highlight {
+						color: var(--blue);
+					}
 				}
 
-				&.highlight {
-					color: var(--blue);
+				& > .location {
+					margin-top: 0.5rem;
 				}
-			}
 
-			& > .time {
-				font-size: 1.3em;
-				display: grid;
-				row-gap: 8px;
+				& > .time {
+					font-size: 1.4em;
+					display: flex;
+					gap: 8px;
+					margin-top: auto;
+				}
 			}
 
 			& > .description {
@@ -95,7 +105,7 @@
 
 				@media screen and (min-width: 950px) {
 					padding-top: 0px;
-					grid-column: 3 / 4;
+					grid-column: 2;
 				}
 			}
 		}
