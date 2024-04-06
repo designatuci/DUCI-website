@@ -8,6 +8,13 @@
 	padding: 3rem 1rem 5rem;
 	font-size: 0.75em;
 
+	.content {
+		margin: 0 auto;
+		max-width: 1280px;
+
+		position: relative;
+	}
+
 	.heading {
 		position: relative;
 		color: var(--des24-hot-pink);
@@ -54,21 +61,21 @@
 		max-width: 75px;
 		pointer-events: none;
 
-		top: 320px;
-		left: -24px;
+		top: 438px;
+		left: -55px;
 
 		@media screen and (min-width: 640px) {
 			max-width: 100px;
 
-			top: 374px;
-			left: 22px;
+			top: 358px;
+			left: -74px;
 		}
 
 		@media screen and (min-width: 1280px) {
 			max-width: 250px;
 
-			top: 386px;
-			left: 74px;
+			top: 340px;
+			left: -102px;
 		}
 	}
 

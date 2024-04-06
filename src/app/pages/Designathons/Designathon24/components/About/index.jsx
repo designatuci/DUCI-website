@@ -24,6 +24,7 @@ const About = () => {
 			<img src={bl_blob_stars} alt="" className={cn.bl} />
 			<img src={tr_stars} alt="" className={cn.tr} />
 
+          			<div className={cn.content}>
 			<h2 className={cn.heading}>About</h2>
 
 			<Notecard lineAdjustment={2}>
@@ -53,13 +54,13 @@ const About = () => {
 					</p>
 				</div>
 			</Notecard>
+</div>
 
 			<img
 				src={airplane}
 				alt=""
 				className={clsx(cn.airplane, "wait flopR")}
 			/>
-			<img src={paperclip} alt="" className={cn.paperclip} />
 		</div>
 	);
 };

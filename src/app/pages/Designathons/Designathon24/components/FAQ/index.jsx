@@ -15,7 +15,7 @@ const FAQ = () => {
 					positions={[{ top: 0, left: 0 }]}
 					isLight={true}
 				/>
-
+            <div className={cn.content}>
 				<img
 					src={star_lines}
 					alt=""
@@ -222,6 +222,7 @@ const FAQ = () => {
 							/>
 						);
 					})}
+          </div>
 				</div>
 			</div>
 		</div>

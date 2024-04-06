@@ -71,46 +71,43 @@ const Speakers = () => {
 				alt=""
 				className={clsx(cn.decoration, cn.br_star_stripe_gradient)}
 			/>
-			<h2 className={cn.heading}>Speakers</h2>
-			<div className={cn.polaroids}>
-				<div className={cn.keynote}>
-					<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
-
-					<div
-						className={cn.keynotePolaroid}
-						style={{ backgroundImage: `url(${splat})` }}
-					>
-						<div className={cn.content}>
-							<Polaroid person={JUDGES[0]} />
+			<div className={cn.content}>
+				<h2 className={cn.heading}>Speakers</h2>
+				<div className={cn.polaroids}>
+					<div className={cn.keynote}>
+						<h3 className={cn.polaroidHeading}>Keynote Speaker</h3>
+						<div
+							className={cn.keynotePolaroid}
+							style={{ backgroundImage: `url(${splat})` }}
+						>
+							<div className={cn.content}>
+								<Polaroid person={JUDGES[0]} />
+							</div>
 						</div>
 					</div>
-				</div>
-
-				<div className={cn.peopleContainer}>
-					<h3 className={cn.polaroidHeading}>Judges</h3>
-
-					<div className={cn.people}>
-						{JUDGES.map((judge, index) => (
-							<Polaroid
-								key={judge.name}
-								person={judge}
-								odd={index % 2 === 0}
-							/>
-						))}
+					<div className={cn.peopleContainer}>
+						<h3 className={cn.polaroidHeading}>Judges</h3>
+						<div className={cn.people}>
+							{JUDGES.map((judge, index) => (
+								<Polaroid
+									key={judge.name}
+									person={judge}
+									odd={index % 2 === 0}
+								/>
+							))}
+						</div>
 					</div>
-				</div>
-
-				<div className={cn.peopleContainer}>
-					<h3 className={cn.polaroidHeading}>Workshop Hosts</h3>
-
-					<div className={cn.people}>
-						{WORKSHOP_HOSTS.map((host, index) => (
-							<Polaroid
-								key={host.name}
-								person={host}
-								odd={index % 2 === 0}
-							/>
-						))}
+					<div className={cn.peopleContainer}>
+						<h3 className={cn.polaroidHeading}>Workshop Hosts</h3>
+						<div className={cn.people}>
+							{WORKSHOP_HOSTS.map((host, index) => (
+								<Polaroid
+									key={host.name}
+									person={host}
+									odd={index % 2 === 0}
+								/>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
