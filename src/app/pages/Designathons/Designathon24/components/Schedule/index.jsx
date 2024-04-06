@@ -2,10 +2,19 @@ import React from "react";
 import { Section } from "app/Symbols";
 import clsx from "clsx";
 import cn from "./Schedule.module.scss";
+import GridBackground from "../Backgrounds/GridBackground";
 
 function Schedule() {
 	return (
 		<div className={cn.container} id="s-schedule">
+			<GridBackground
+				positions={[
+					{ top: 0, right: 0 },
+					{ bottom: 0, left: 0 },
+				]}
+				isLight={false}
+			/>
+
 			<Section>
 				<h1 className={cn.heading}>Schedule</h1>
 
