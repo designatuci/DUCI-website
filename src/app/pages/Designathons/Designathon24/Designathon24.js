@@ -1,5 +1,5 @@
 import { Section } from "app/Symbols";
-import EVENTS_2024 from "assets/data/designathon/2024/events.json";
+// import EVENTS_2024 from "assets/data/designathon/2024/events.json";
 import PRIZES_2024 from "assets/data/designathon/2024/prizes.json";
 import cn from "./Designathon24.module.scss";
 import FOF from "./assets/FOF.png";
@@ -48,7 +48,7 @@ const Designathon24 = () => (
 			<Prizes list={PRIZES_2024} />
 		</div>
 
-		<Schedule schedule={EVENTS_2024} />
+		<Schedule />
 
 		<FAQ />
 
