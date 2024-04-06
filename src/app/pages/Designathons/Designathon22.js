@@ -37,7 +37,10 @@ const Designathon22 = () => {
 				<title>Impact 2022</title>
 				<meta property="og:type" content="website" />
 				<meta property="og:title" content="Impact 2022" />
-				<meta property="og:description" content="Design-a-thon at UCI" />
+				<meta
+					property="og:description"
+					content="Design-a-thon at UCI"
+				/>
 				<meta
 					property="og:image"
 					content="https://designatuci.com/ogimg-designathon22.png"
@@ -192,8 +195,9 @@ const Designathon22 = () => {
 				>
 					<div className="flex center spaceChildrenLarge">
 						<Text size="XL" className="color white">
-							Impact 2022 is a 3 day long design-a-thon event where student
-							designers create a product with the potential to impact the world.
+							Impact 2022 is a 3 day long design-a-thon event
+							where student designers create a product with the
+							potential to impact the world.
 						</Text>
 						<div
 							className="card flex fill black"
@@ -206,21 +210,24 @@ const Designathon22 = () => {
 							<div className="flex top spaceChildrenSmall">
 								<Text className="color blue">Timeline</Text>
 								<Text>
-									January 28 6:00pm - January 30 7:00pm (California, PST)
+									January 28 6:00pm - January 30 7:00pm
+									(California, PST)
 								</Text>
 							</div>
 							<div className="flex top spaceChildrenSmall">
 								<Text className="color blue">Our goal</Text>
 								<Text>
-									To challenge and hone the design thinking processes of
-									students by introducing real-life challenges.
+									To challenge and hone the design thinking
+									processes of students by introducing
+									real-life challenges.
 								</Text>
 							</div>
 							<div className="flex top spaceChildrenSmall">
 								<Text className="color blue">Eligibility</Text>
 								<Text>
-									Undergraduate students from colleges all over the country will
-									be eligible to attend at no cost.
+									Undergraduate students from colleges all
+									over the country will be eligible to attend
+									at no cost.
 								</Text>
 							</div>
 						</div>
@@ -282,7 +289,9 @@ const Designathon22 = () => {
 						].map((item) => {
 							return (
 								<div
-									className={`split2${item.line ? " header" : ""}`}
+									className={`split2${
+										item.line ? " header" : ""
+									}`}
 									key={item.title + item.time}
 								>
 									<div>
@@ -349,8 +358,7 @@ const Designathon22 = () => {
 							{
 								line: 1,
 								time: "12:00 PM",
-								title:
-									"Workshop: How to Effectively Present Your Design with Samanvay Kasarala",
+								title: "Workshop: How to Effectively Present Your Design with Samanvay Kasarala",
 								desc: (
 									<div className="flex left spaceChildren">
 										<TimerText
@@ -378,8 +386,7 @@ const Designathon22 = () => {
 							{
 								line: 1,
 								time: "2:00 PM",
-								title:
-									"Workshop: How to build Tech for Social Good with CTC's Alan Chang and Mingjia Wang",
+								title: "Workshop: How to build Tech for Social Good with CTC's Alan Chang and Mingjia Wang",
 								desc: (
 									<div className="flex left spaceChildren">
 										<TimerText
@@ -475,7 +482,9 @@ const Designathon22 = () => {
 						].map((item) => {
 							return (
 								<div
-									className={`split2${item.line ? " header" : ""}`}
+									className={`split2${
+										item.line ? " header" : ""
+									}`}
 									key={item.title + item.time}
 								>
 									<div>
@@ -599,7 +608,10 @@ const Designathon22 = () => {
 							},
 						].map((item) => {
 							return (
-								<div className="split2 header" key={item.title + item.time}>
+								<div
+									className="split2 header"
+									key={item.title + item.time}
+								>
 									<div>
 										<Text
 											className="bold"
@@ -638,13 +650,17 @@ const Designathon22 = () => {
 								marginBottom: "0",
 							}}
 						/>
-						<Text size="L" className="bold" style={{ color: "#1CC29A" }}>
+						<Text
+							size="L"
+							className="bold"
+							style={{ color: "#1CC29A" }}
+						>
 							Design-a-thon Workshop Recordings
 						</Text>
 						<Text className="color gray">
-							We will be recording the workshops happening during Impact 2022
-							and uploading them here. If you miss an event, check back here
-							later!
+							We will be recording the workshops happening during
+							Impact 2022 and uploading them here. If you miss an
+							event, check back here later!
 						</Text>
 						<Space h="16" />
 						<div className="split3 maxWidth">
@@ -667,7 +683,8 @@ const Designathon22 = () => {
 								<Icon src="icon-movie.svg" w="48" h="48" />
 								<Text className="color gray">39:18</Text>
 								<Text className="bold">
-									Workshop: Designing Under Constraints with Katrina Liu
+									Workshop: Designing Under Constraints with
+									Katrina Liu
 								</Text>
 							</a>
 							<a
@@ -679,8 +696,8 @@ const Designathon22 = () => {
 								<Icon src="icon-movie.svg" w="48" h="48" />
 								<Text className="color gray">36:42</Text>
 								<Text className="bold">
-									Workshop: How to Effectively Present Your Design with Samanvay
-									Kasarala
+									Workshop: How to Effectively Present Your
+									Design with Samanvay Kasarala
 								</Text>
 							</a>
 							<a
@@ -692,8 +709,8 @@ const Designathon22 = () => {
 								<Icon src="icon-movie.svg" w="48" h="48" />
 								<Text className="color gray">18:35</Text>
 								<Text className="bold">
-									Workshop: How to build Tech for Social Good with CTC's Alan
-									Chang and Mingjia Wang
+									Workshop: How to build Tech for Social Good
+									with CTC's Alan Chang and Mingjia Wang
 								</Text>
 							</a>
 							<a
@@ -705,7 +722,8 @@ const Designathon22 = () => {
 								<Icon src="icon-movie.svg" w="48" h="48" />
 								<Text className="color gray">13:57</Text>
 								<Text className="bold">
-									Workshop: Prototyping in Figma with Evangeline Gao
+									Workshop: Prototyping in Figma with
+									Evangeline Gao
 								</Text>
 							</a>
 							<a
@@ -764,8 +782,8 @@ const Designathon22 = () => {
 								Featured Resources
 							</Text>
 							<Text className="color gray">
-								Explore our curated collection of useful online tools, guides,
-								and more.
+								Explore our curated collection of useful online
+								tools, guides, and more.
 							</Text>
 						</a>
 						<a
@@ -810,7 +828,10 @@ const Designathon22 = () => {
 								for more help!
 							</Text>
 						</div>
-						<div style={{ marginTop: "-16px" }} className="spaceChildrenSmall">
+						<div
+							style={{ marginTop: "-16px" }}
+							className="spaceChildrenSmall"
+						>
 							{[
 								{
 									q: "Why should I join?",
@@ -841,7 +862,8 @@ const Designathon22 = () => {
 									q: "Where do I submit my project?",
 									a: (
 										<Text className="color gray">
-											Please submit your final, working prototype to the{" "}
+											Please submit your final, working
+											prototype to the{" "}
 											<a
 												target="noreferer"
 												href="https://docs.google.com/forms/d/e/1FAIpQLSeaptGRVmxzyztUX3ZxEwVTkucHmXMPN9UtqTzNa8jH1arcKA/viewform?usp=sf_link"
@@ -871,13 +893,16 @@ const Designathon22 = () => {
 									q: "How do I prepare?",
 									a: (
 										<Text className="color gray">
-											During the event, we will be hosting Workshops for anyone
-											new to Design thinking or the Design process. We highly
-											encourage getting the hang of Figma, Sketch, Adobe XD, or
-											the prototyping tool of your choice. You may find
-											something useful in our resources section as well. You can
-											also show your excitement by turning on your camera, and
-											adding our{" "}
+											During the event, we will be hosting
+											Workshops for anyone new to Design
+											thinking or the Design process. We
+											highly encourage getting the hang of
+											Figma, Sketch, Adobe XD, or the
+											prototyping tool of your choice. You
+											may find something useful in our
+											resources section as well. You can
+											also show your excitement by turning
+											on your camera, and adding our{" "}
 											<a
 												target="noreferer"
 												href="https://drive.google.com/drive/folders/1ER3La0q8k1WByZt_Cn-hDhP4knOPukRD?usp=sharing"
@@ -898,9 +923,10 @@ const Designathon22 = () => {
 									q: "What if I don’t have a team?",
 									a: (
 										<Text className="color gray">
-											We will provide a Discord channel specifically for anyone
-											looking for a team at our Designathon. Feel free to join
-											our Discord at{" "}
+											We will provide a Discord channel
+											specifically for anyone looking for
+											a team at our Designathon. Feel free
+											to join our Discord at{" "}
 											<a
 												target="noreferer"
 												href="https://discord.gg/mY8QSNaEtb"
@@ -910,7 +936,8 @@ const Designathon22 = () => {
 											>
 												https://discord.gg/mY8QSNaEtb
 											</a>
-											. Solo participants are also allowed.
+											. Solo participants are also
+											allowed.
 										</Text>
 									),
 								},
@@ -928,7 +955,9 @@ const Designathon22 = () => {
 															marginRight: "16px",
 														}}
 													/>
-													<Text className="bold">{item.q}</Text>
+													<Text className="bold">
+														{item.q}
+													</Text>
 												</div>
 											</div>
 										}
@@ -943,7 +972,9 @@ const Designathon22 = () => {
 															marginRight: "16px",
 														}}
 													/>
-													<Text className="bold">{item.q}</Text>
+													<Text className="bold">
+														{item.q}
+													</Text>
 												</div>
 												<Text
 													className="color gray"
@@ -970,10 +1001,11 @@ const Designathon22 = () => {
 						<div className="spaceChildrenSmall">
 							<Text size="L">Hosted by Design at UCI</Text>
 							<Text>
-								Design at UCI is the premiere student-run organization at UCI
-								for anything graphic design, UI/UX design, product design, and
-								more. Started in 2016, It has amassed many relationships in the
-								Design community of OC and SoCal.
+								Design at UCI is the premiere student-run
+								organization at UCI for anything graphic design,
+								UI/UX design, product design, and more. Started
+								in 2016, It has amassed many relationships in
+								the Design community of OC and SoCal.
 							</Text>
 						</div>
 					</div>
@@ -1070,11 +1102,15 @@ const Designathon22 = () => {
 											position: "relative",
 										}}
 									>
-										<div style={{ paddingBottom: "100%" }} />
+										<div
+											style={{ paddingBottom: "100%" }}
+										/>
 									</Photo>
 									<Text size="L">{item.name}</Text>
 									<Text>{item.role}</Text>
-									<Text className="color gray">{item.about}</Text>
+									<Text className="color gray">
+										{item.about}
+									</Text>
 								</div>
 							);
 						})}
@@ -1087,7 +1123,11 @@ const Designathon22 = () => {
 							target="noreferer"
 							href="https://rosenfeldmedia.com/"
 						>
-							<Icon src="logo-rosenfeldmedia.svg" w="256" h="140" />
+							<Icon
+								src="logo-rosenfeldmedia.svg"
+								w="256"
+								h="140"
+							/>
 						</a>
 						<a
 							className="flex spaceChildren"
@@ -1152,7 +1192,6 @@ function Rubric(params) {
 	const [expand, setExpand] = useState(false);
 	function toggleExpand() {
 		setExpand(!expand);
-		console.log(`Toggle: ${expand}`);
 	}
 	return (
 		<>
@@ -1196,26 +1235,34 @@ function Rubric(params) {
 									className="color white"
 									style={{ maxWidth: "768px" }}
 								>
-									Design your own desktop or mobile application that advocates
-									for either (1) social justice or (2) sustainability.
+									Design your own desktop or mobile
+									application that advocates for either (1)
+									social justice or (2) sustainability.
 								</Text>
 								<Text className="color gray">
-									To elaborate, examples of potential solutions are:
+									To elaborate, examples of potential
+									solutions are:
 								</Text>
 								<div className="split2">
 									<div>
-										<Text className="color pink">Social Justice</Text>
+										<Text className="color pink">
+											Social Justice
+										</Text>
 										<Text className="color silver textAlignLeft">
-											A product/service that encourages or provides the
-											opportunity for equity in economic, political, or social
+											A product/service that encourages or
+											provides the opportunity for equity
+											in economic, political, or social
 											issues.
 										</Text>
 									</div>
 									<div>
-										<Text className="color pink">Sustainability</Text>
+										<Text className="color pink">
+											Sustainability
+										</Text>
 										<Text className="color silver textAlignLeft">
-											A product/service that promotes sustainable behaviors to
-											combat the climate crisis.
+											A product/service that promotes
+											sustainable behaviors to combat the
+											climate crisis.
 										</Text>
 									</div>
 								</div>
@@ -1243,9 +1290,13 @@ function Rubric(params) {
 									>
 										Grading Rubric
 									</Text>
-									<div style={{ padding: "4px 16px" }} className="flex row">
+									<div
+										style={{ padding: "4px 16px" }}
+										className="flex row"
+									>
 										<Text className="color white">
-											{expand ? "Hide" : "View"} Full Rubric
+											{expand ? "Hide" : "View"} Full
+											Rubric
 										</Text>
 										<svg
 											viewBox="0 0 12 12"
@@ -1258,7 +1309,9 @@ function Rubric(params) {
 												strokeMiterlimit: 2,
 												width: "12px",
 												marginLeft: "8px",
-												transform: expand ? "rotateZ(0deg)" : "rotateZ(180deg)",
+												transform: expand
+													? "rotateZ(0deg)"
+													: "rotateZ(180deg)",
 												transition: "0.4s",
 											}}
 										>
@@ -1282,45 +1335,71 @@ function Rubric(params) {
 											}}
 										>
 											<div className="flex left">
-												<Text style={{ color: "#7dffcf" }}>70 Points</Text>
+												<Text
+													style={{ color: "#7dffcf" }}
+												>
+													70 Points
+												</Text>
 											</div>
 											<div className="flex left">
-												<Text className="bold">Total</Text>
-											</div>
-
-											<div className="flex left">
-												<Text className="color green">20 Points</Text>
-											</div>
-											<div className="flex left">
-												<Text className="bold">User Experience</Text>
-											</div>
-
-											<div className="flex left">
-												<Text className="color green">10 Points</Text>
-											</div>
-											<div className="flex left">
-												<Text className="bold">User Interface</Text>
+												<Text className="bold">
+													Total
+												</Text>
 											</div>
 
 											<div className="flex left">
-												<Text className="color pink">5 Points</Text>
+												<Text className="color green">
+													20 Points
+												</Text>
 											</div>
 											<div className="flex left">
-												<Text className="bold">Target Audience</Text>
-											</div>
-
-											<div className="flex left">
-												<Text className="color pink">15 Points</Text>
-											</div>
-											<div className="flex left">
-												<Text className="bold">User Research</Text>
+												<Text className="bold">
+													User Experience
+												</Text>
 											</div>
 
 											<div className="flex left">
-												<Text className="color pink">20 Points</Text>
+												<Text className="color green">
+													10 Points
+												</Text>
 											</div>
 											<div className="flex left">
-												<Text className="bold">Design Thinking Process</Text>
+												<Text className="bold">
+													User Interface
+												</Text>
+											</div>
+
+											<div className="flex left">
+												<Text className="color pink">
+													5 Points
+												</Text>
+											</div>
+											<div className="flex left">
+												<Text className="bold">
+													Target Audience
+												</Text>
+											</div>
+
+											<div className="flex left">
+												<Text className="color pink">
+													15 Points
+												</Text>
+											</div>
+											<div className="flex left">
+												<Text className="bold">
+													User Research
+												</Text>
+											</div>
+
+											<div className="flex left">
+												<Text className="color pink">
+													20 Points
+												</Text>
+											</div>
+											<div className="flex left">
+												<Text className="bold">
+													Design Thinking Process
+												</Text>
 											</div>
 										</div>
 									</div>
@@ -1328,7 +1407,9 @@ function Rubric(params) {
 									<div className="open">
 										<div className="rubric">
 											<div className="flex left">
-												<Text style={{ color: "#7dffcf" }}>
+												<Text
+													style={{ color: "#7dffcf" }}
+												>
 													70 Total Points
 												</Text>
 											</div>
@@ -1346,74 +1427,103 @@ function Rubric(params) {
 											</div>
 
 											<div className="spaceChildrenSmall">
-												<Text className="color green">20 Points</Text>
-												<Text className="bold">User Experience</Text>
+												<Text className="color green">
+													20 Points
+												</Text>
+												<Text className="bold">
+													User Experience
+												</Text>
 												<Text>
-													Is the final product user-friendly and intuitive?
+													Is the final product
+													user-friendly and intuitive?
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Intuitive and easily used without guidance.
-													Call-to-action elements are obvious, and the flow is
-													instinctual. There is a clear path to complete tasks
+													Intuitive and easily used
+													without guidance.
+													Call-to-action elements are
+													obvious, and the flow is
+													instinctual. There is a
+													clear path to complete tasks
 													or reach a goal.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Solution is mostly intuitive, but some guidance is
-													needed. Flow only meets expectations. User is
-													eventually able to reach the goal and complete the
-													task.
+													Solution is mostly
+													intuitive, but some guidance
+													is needed. Flow only meets
+													expectations. User is
+													eventually able to reach the
+													goal and complete the task.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Requires some effort to use and interact with. Users
-													can complete tasks, but in longer times and with more
+													Requires some effort to use
+													and interact with. Users can
+													complete tasks, but in
+													longer times and with more
 													effort.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Heavily unintuitive. Does not reflect much effort.
-													User is not able to complete the task.
+													Heavily unintuitive. Does
+													not reflect much effort.
+													User is not able to complete
+													the task.
 												</Text>
 											</div>
 
 											<div className="spaceChildrenSmall">
-												<Text className="color green">10 Points</Text>
-												<Text className="bold">User Interface</Text>
+												<Text className="color green">
+													10 Points
+												</Text>
+												<Text className="bold">
+													User Interface
+												</Text>
 												<Text>
-													Is the overall user interface visually appealing
-													without sacrificing its functionality?
+													Is the overall user
+													interface visually appealing
+													without sacrificing its
+													functionality?
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Follows the visual design principles with powerful
-													design choices of typography, color, grids that
-													seamlessly integrates with the functionality.
+													Follows the visual design
+													principles with powerful
+													design choices of
+													typography, color, grids
+													that seamlessly integrates
+													with the functionality.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Uses a clear system of grids, typography, color, and
-													design principles. Visuals may not be relevant to the
-													target audience or be used meaningfully to the
+													Uses a clear system of
+													grids, typography, color,
+													and design principles.
+													Visuals may not be relevant
+													to the target audience or be
+													used meaningfully to the
 													solution.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Does not employ clear use of grids, typography, and
-													color. Only some design principles are applied.
+													Does not employ clear use of
+													grids, typography, and
+													color. Only some design
+													principles are applied.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Lack of visual design principles.
+													Lack of visual design
+													principles.
 												</Text>
 											</div>
 										</div>
@@ -1423,118 +1533,165 @@ function Rubric(params) {
 											style={{ padding: "32px 0" }}
 										>
 											<Text className="color pink">
-												The following sections will be graded based on your
-												presentations (only applicable to finalists!)
+												The following sections will be
+												graded based on your
+												presentations (only applicable
+												to finalists!)
 											</Text>
 										</div>
 
 										<div className="rubric">
 											<div className="spaceChildrenSmall">
-												<Text className="color green">5 Points</Text>
-												<Text className="bold">Target Audience</Text>
+												<Text className="color green">
+													5 Points
+												</Text>
+												<Text className="bold">
+													Target Audience
+												</Text>
 												<Text>
-													Does your solution target the correct audience and
+													Does your solution target
+													the correct audience and
 													their needs?
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													A clear understanding of an appropriate target
-													audience and their needs. It is designed with
-													navigation, visuals, and language to communi-cate
-													clearly to a specific persona and their needs.
+													A clear understanding of an
+													appropriate target audience
+													and their needs. It is
+													designed with navigation,
+													visuals, and language to
+													communi-cate clearly to a
+													specific persona and their
+													needs.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Solution sufficiently addresses a specific audience’s
-													needs. However they are not addressed in their
-													entirety.
+													Solution sufficiently
+													addresses a specific
+													audience’s needs. However
+													they are not addressed in
+													their entirety.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Correctly addresses problems and needs. Only a
-													specific group in the target audience is included.
+													Correctly addresses problems
+													and needs. Only a specific
+													group in the target audience
+													is included.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													No specific target audience addressed.
+													No specific target audience
+													addressed.
 												</Text>
 											</div>
 
 											<div className="spaceChildrenSmall">
-												<Text className="color green">15 Points</Text>
-												<Text className="bold">User Research</Text>
+												<Text className="color green">
+													15 Points
+												</Text>
+												<Text className="bold">
+													User Research
+												</Text>
 												<Text>
-													Are the suggested solutions backed up with extensive
-													research of the users’ needs?
+													Are the suggested solutions
+													backed up with extensive
+													research of the users’
+													needs?
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Pulls data from a variety of credible, meaningful
-													sources. Research is conducted using both general and
-													specific lenses. Results are processed and presented
+													Pulls data from a variety of
+													credible, meaningful
+													sources. Research is
+													conducted using both general
+													and specific lenses. Results
+													are processed and presented
 													in a clear way.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Collects thorough data regarding potential users.
-													Sources may be surface-level and not rigorous.
-													Research may not be relevant to the specific problem.
+													Collects thorough data
+													regarding potential users.
+													Sources may be surface-level
+													and not rigorous. Research
+													may not be relevant to the
+													specific problem.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Average data about the general audiences’ consensus is
-													provided but does not tap into users’ specific needs.
-													Conducted research does not seem credible and
-													rational.
+													Average data about the
+													general audiences’ consensus
+													is provided but does not tap
+													into users’ specific needs.
+													Conducted research does not
+													seem credible and rational.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Little to no research to empathize with the target
-													user base. Data is not based on factual situations.
+													Little to no research to
+													empathize with the target
+													user base. Data is not based
+													on factual situations.
 												</Text>
 											</div>
 
 											<div className="spaceChildrenSmall">
-												<Text className="color green">20 Points</Text>
-												<Text className="bold">Design Thinking Process</Text>
+												<Text className="color green">
+													20 Points
+												</Text>
+												<Text className="bold">
+													Design Thinking Process
+												</Text>
 												<Text>
-													Does your product properly address the issues through
-													a set of well-thought solutions?
+													Does your product properly
+													address the issues through a
+													set of well-thought
+													solutions?
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Thoughtfully proposes an innovative approach that
-													addresses the issue on hand. Considers the real-world
-													implications of the product. Solutions are creative
-													and crafted carefully with users in mind.
+													Thoughtfully proposes an
+													innovative approach that
+													addresses the issue on hand.
+													Considers the real-world
+													implications of the product.
+													Solutions are creative and
+													crafted carefully with users
+													in mind.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Solution is practical and relevant, but not creative.
-													Concept is strong and is helpful to the user, but
+													Solution is practical and
+													relevant, but not creative.
+													Concept is strong and is
+													helpful to the user, but
 													meets typical expectations.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Solution is not clear or relevant. Does not improve
-													upon other typical solutions.
+													Solution is not clear or
+													relevant. Does not improve
+													upon other typical
+													solutions.
 												</Text>
 											</div>
 											<div className="wideOnly">
 												<Text className="color silver">
-													Lack of creativity and relevance. Does not solve the
-													problem.
+													Lack of creativity and
+													relevance. Does not solve
+													the problem.
 												</Text>
 											</div>
 										</div>
@@ -1633,7 +1790,8 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										Design-a-thon has begun! Tune into our workshops tomorrow
+										Design-a-thon has begun! Tune into our
+										workshops tomorrow
 									</Text>
 								</>
 							),
@@ -1644,7 +1802,8 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										Next Workshop: Designing Under Constraints with Katrina Liu{" "}
+										Next Workshop: Designing Under
+										Constraints with Katrina Liu{" "}
 										<TimerText start="1/29/2022 10:00:00 AM (PST)" />
 									</Text>
 								</>
@@ -1655,8 +1814,10 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										Workshop <TimerText start="1/29/2022 10:00:00 AM (PST)" />:
-										Designing Under Constraints with Katrina Liu{" "}
+										Workshop{" "}
+										<TimerText start="1/29/2022 10:00:00 AM (PST)" />
+										: Designing Under Constraints with
+										Katrina Liu{" "}
 									</Text>
 									<a
 										className="button S fill blue"
@@ -1685,9 +1846,15 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										<Text className="color red">
-											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+											<Icon
+												src="live-event.svg"
+												w="22"
+												h="22"
+											/>{" "}
+											Live Workshop:
 										</Text>{" "}
-										Designing Under Constraints with Katrina Liu
+										Designing Under Constraints with Katrina
+										Liu
 									</Text>
 									<a
 										className="button S fill blue"
@@ -1717,8 +1884,9 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										Next Workshop{" "}
-										<TimerText start="1/29/2022 12:00:00 PM (PST)" />: How to
-										Effectively Present Your Design with Samanvay Kasarala
+										<TimerText start="1/29/2022 12:00:00 PM (PST)" />
+										: How to Effectively Present Your Design
+										with Samanvay Kasarala
 									</Text>
 								</>
 							),
@@ -1728,9 +1896,10 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										Workshop <TimerText start="1/29/2022 12:00:00 PM (PST)" />:
-										How to Effectively Present Your Design with Samanvay
-										Kasarala
+										Workshop{" "}
+										<TimerText start="1/29/2022 12:00:00 PM (PST)" />
+										: How to Effectively Present Your Design
+										with Samanvay Kasarala
 									</Text>
 									<a
 										href="https://uci.zoom.us/j/91028660488"
@@ -1759,10 +1928,15 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										<Text className="color red">
-											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+											<Icon
+												src="live-event.svg"
+												w="22"
+												h="22"
+											/>{" "}
+											Live Workshop:
 										</Text>{" "}
-										How to Effectively Present Your Design with Samanvay
-										Kasarala
+										How to Effectively Present Your Design
+										with Samanvay Kasarala
 									</Text>
 									<a
 										href="https://uci.zoom.us/j/91028660488"
@@ -1792,8 +1966,9 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										Next Workshop{" "}
-										<TimerText start="1/29/2022 2:00:00 PM (PST)" />: How to
-										Build Tech for Social Good with Alan Chang and Mingjia Wang
+										<TimerText start="1/29/2022 2:00:00 PM (PST)" />
+										: How to Build Tech for Social Good with
+										Alan Chang and Mingjia Wang
 									</Text>
 								</>
 							),
@@ -1803,9 +1978,10 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										Workshop <TimerText start="1/29/2022 2:00:00 PM (PST)" />:
-										How to Build Tech for Social Good with Alan Chang and
-										Mingjia Wang
+										Workshop{" "}
+										<TimerText start="1/29/2022 2:00:00 PM (PST)" />
+										: How to Build Tech for Social Good with
+										Alan Chang and Mingjia Wang
 									</Text>
 									<a
 										href="https://uci.zoom.us/j/96665045518"
@@ -1834,10 +2010,15 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										<Text className="color red">
-											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+											<Icon
+												src="live-event.svg"
+												w="22"
+												h="22"
+											/>{" "}
+											Live Workshop:
 										</Text>{" "}
-										How to Build Tech for Social Good with Alan Chang and
-										Mingjia Wang
+										How to Build Tech for Social Good with
+										Alan Chang and Mingjia Wang
 									</Text>
 									<a
 										href="https://uci.zoom.us/j/96665045518"
@@ -1867,8 +2048,9 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										Next Workshop{" "}
-										<TimerText start="1/29/2022 3:00:00 PM (PST)" />:
-										Prototyping in Figma with Evangeline Gao
+										<TimerText start="1/29/2022 3:00:00 PM (PST)" />
+										: Prototyping in Figma with Evangeline
+										Gao
 									</Text>
 								</>
 							),
@@ -1878,8 +2060,10 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										Workshop <TimerText start="1/29/2022 3:00:00 PM (PST)" />:
-										Prototyping in Figma with Evangeline Gao
+										Workshop{" "}
+										<TimerText start="1/29/2022 3:00:00 PM (PST)" />
+										: Prototyping in Figma with Evangeline
+										Gao
 									</Text>
 									<a
 										href="https://uci.zoom.us/j/97913505371"
@@ -1908,7 +2092,12 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										<Text className="color red">
-											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+											<Icon
+												src="live-event.svg"
+												w="22"
+												h="22"
+											/>{" "}
+											Live Workshop:
 										</Text>{" "}
 										Prototyping in Figma with Evangeline Gao
 									</Text>
@@ -1940,8 +2129,8 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										Next Workshop{" "}
-										<TimerText start="1/29/2022 5:00:00 PM (PST)" />: Design
-										Basics with Hannah Limary
+										<TimerText start="1/29/2022 5:00:00 PM (PST)" />
+										: Design Basics with Hannah Limary
 									</Text>
 								</>
 							),
@@ -1951,8 +2140,9 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										Workshop <TimerText start="1/29/2022 5:00:00 PM (PST)" />:
-										Design Basics with Hannah Limary
+										Workshop{" "}
+										<TimerText start="1/29/2022 5:00:00 PM (PST)" />
+										: Design Basics with Hannah Limary
 									</Text>
 									<a
 										href="https://uci.zoom.us/j/94069827938"
@@ -1981,7 +2171,12 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										<Text className="color red">
-											<Icon src="live-event.svg" w="22" h="22" /> Live Workshop:
+											<Icon
+												src="live-event.svg"
+												w="22"
+												h="22"
+											/>{" "}
+											Live Workshop:
 										</Text>{" "}
 										Design Basics with Hannah Limary
 									</Text>
@@ -2013,8 +2208,8 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										Submissions due{" "}
-										<TimerText start="1/30/2022 1:00:00 PM (PST)" />. You got
-										this!
+										<TimerText start="1/30/2022 1:00:00 PM (PST)" />
+										. You got this!
 									</Text>
 									<a
 										href="https://forms.gle/B4cpgMFtYRawP2ue8"
@@ -2043,7 +2238,8 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										Submissions closed – Judges are reviewing prototypes now
+										Submissions closed – Judges are
+										reviewing prototypes now
 									</Text>
 								</>
 							),
@@ -2054,7 +2250,8 @@ function StatusBlock(props) {
 							item: (
 								<>
 									<Text>
-										The Finalists have been notified, presentations due{" "}
+										The Finalists have been notified,
+										presentations due{" "}
 										<TimerText start="1/30/2022 3:45:00 PM (PST)" />
 									</Text>
 								</>
@@ -2096,7 +2293,12 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										<Text className="color red">
-											<Icon src="live-event.svg" w="22" h="22" /> Live:{" "}
+											<Icon
+												src="live-event.svg"
+												w="22"
+												h="22"
+											/>{" "}
+											Live:{" "}
 										</Text>
 										Finalist Presentations
 									</Text>
@@ -2157,7 +2359,12 @@ function StatusBlock(props) {
 								<>
 									<Text>
 										<Text className="color red">
-											<Icon src="live-event.svg" w="22" h="22" /> Live:
+											<Icon
+												src="live-event.svg"
+												w="22"
+												h="22"
+											/>{" "}
+											Live:
 										</Text>{" "}
 										Closing Ceremony
 									</Text>
@@ -2187,7 +2394,10 @@ function StatusBlock(props) {
 							start: "1/30/2022 6:30:00 PM (PST)",
 							item: (
 								<>
-									<Text>Design-a-thon has concluded, thank you every one!</Text>
+									<Text>
+										Design-a-thon has concluded, thank you
+										every one!
+									</Text>
 								</>
 							),
 						},
@@ -2294,10 +2504,10 @@ function frame() {
 }
 function resize() {
 	Main.target.view.w = Math.ceil(
-		view.getBoundingClientRect().width * RESOLUTION,
+		view.getBoundingClientRect().width * RESOLUTION
 	);
 	Main.target.view.h = Math.ceil(
-		view.getBoundingClientRect().height * RESOLUTION,
+		view.getBoundingClientRect().height * RESOLUTION
 	);
 
 	view.width = Main.target.view.w;
@@ -2344,21 +2554,26 @@ class Program {
 		const vertexBuffer = gl.createBuffer();
 		gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 		gl.bufferData(gl.ARRAY_BUFFER, Verticies, gl.STATIC_DRAW);
-		const positionAttribLocation = gl.getAttribLocation(this.program, "vertex");
+		const positionAttribLocation = gl.getAttribLocation(
+			this.program,
+			"vertex"
+		);
 		gl.vertexAttribPointer(
 			positionAttribLocation,
 			2,
 			gl.FLOAT,
 			gl.FALSE,
 			2 * Float32Array.BYTES_PER_ELEMENT,
-			0,
+			0
 		);
 		gl.enableVertexAttribArray(positionAttribLocation);
 
 		// Generate uniform setters
 		this.setUniform = {};
 		this.uLocation = {};
-		let uniformArgs = (vertCode + fragCode).matchAll("uniform +(.+) +(.+);");
+		let uniformArgs = (vertCode + fragCode).matchAll(
+			"uniform +(.+) +(.+);"
+		);
 		for (let i of uniformArgs) {
 			let location = gl.getUniformLocation(this.program, i[2]);
 			this.uLocation[i[2]] = location;

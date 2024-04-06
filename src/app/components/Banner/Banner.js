@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import cn from "./Banner.module.scss";
 
 function Banner() {
+	const location = useLocation();
+	if (location.pathname.includes("/designathon")) return null;
+
 	return (
 		<div className={`fill blue ${cn.banner}`}>
 			<p>

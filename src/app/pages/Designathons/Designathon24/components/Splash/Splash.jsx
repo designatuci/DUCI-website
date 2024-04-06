@@ -6,9 +6,6 @@ import anime from "animejs";
 const Splash = memo(() => {
 	const logoRef = useRef(null);
 	useEffect(() => {
-		console.log(logoRef.current.children[0]);
-		console.dir(logoRef.current.children[0]);
-
 		anime({
 			targets: "path.word",
 			strokeDashoffset: [anime.setDashoffset, 0],
