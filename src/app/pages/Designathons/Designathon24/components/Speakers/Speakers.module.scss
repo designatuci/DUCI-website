@@ -37,8 +37,10 @@
 		flex-direction: column;
 		justify-content: center;
 		gap: 4rem;
+		max-width: 80%;
 
 		.polaroidHeading {
+			position: relative;
 			font-size: 2rem;
 			font-weight: 700;
 
