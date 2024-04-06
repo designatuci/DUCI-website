@@ -237,7 +237,7 @@ function Schedule() {
 								<div className={clsx(cn.title)}>Check-In</div>
 								<div className={cn.location}>DBH 6011</div>
 							</div>
-							<div className={cn.time}>9:00 AM → 11:00 AM</div>
+							<div className={cn.time}>9:00 AM → 10:00 AM</div>
 						</div>
 						<div className={cn.description}>
 							<p>
@@ -364,7 +364,7 @@ function Schedule() {
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>Workshop</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>2:15 PM → 3:00 PM</div>
 						</div>
@@ -391,7 +391,7 @@ function Schedule() {
 								<div className={clsx(cn.title)}>
 									Notion Social
 								</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>3:00 PM → 3:45 PM</div>
 						</div>
@@ -416,7 +416,7 @@ function Schedule() {
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>Workshop</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>4:00 PM → 4:45 PM</div>
 						</div>
@@ -443,7 +443,7 @@ function Schedule() {
 								<div className={clsx(cn.title)}>
 									Dinner Served
 								</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>4:45 PM → 5:45 PM</div>
 						</div>
@@ -468,7 +468,7 @@ function Schedule() {
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>Work Hours</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>5:45 PM → 7:00 PM</div>
 						</div>
@@ -493,7 +493,7 @@ function Schedule() {
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>Workshop</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>7:00 PM → 7:45 PM</div>
 						</div>
@@ -518,7 +518,7 @@ function Schedule() {
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>Work Hours</div>
-								<div className={cn.location}>Online</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>7:45 PM → 9:00 PM</div>
 						</div>
