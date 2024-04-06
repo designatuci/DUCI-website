@@ -31,7 +31,7 @@
 		color: var(--des24-peach);
 		font-size: 2rem;
 		font-weight: bold;
-		margin-top: 1rem;
+		margin-top: 4rem;
 	}
 
 	a {
@@ -57,8 +57,8 @@
 			grid-template-rows: auto 1fr;
 			grid-template-columns: 1fr;
 			column-gap: 20px;
-			padding-bottom: 20px;
-			border-bottom: 2px dotted var(--des24-cream);
+			padding-top: 20px;
+			border-top: 2px dotted var(--des24-cream);
 
 			@media screen and (min-width: 950px) {
 				grid-template-columns: 500px 2fr;
@@ -132,6 +132,19 @@
 					padding-top: 0px;
 					grid-column: 2;
 				}
+			}
+		}
+
+		.important {
+			font-size: 2rem;
+			font-weight: bold;
+
+			padding-top: 20px;
+			border-top: 2px dotted var(--des24-cream);
+			text-align: left;
+
+			@media screen and (min-width: 768px) {
+				text-align: center;
 			}
 		}
 	}

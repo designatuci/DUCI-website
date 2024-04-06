@@ -100,6 +100,10 @@ function Schedule() {
 						</div> */}
 					</div>
 
+					<div className={cn.important}>
+						6:30 PM | Designing Officially Begins
+					</div>
+
 					<div className={cn.event}>
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
@@ -176,6 +180,8 @@ function Schedule() {
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div> */}
 					</div>
+
+					<div className={cn.important}>9:00 PM | Venue Closes</div>
 
 					<div className={cn.event}>
 						<div className={clsx(cn.info)}>
@@ -489,6 +495,10 @@ function Schedule() {
 						</div> */}
 					</div>
 
+					<div className={cn.important}>
+						7:00 PM | Team Check-In Due
+					</div>
+
 					<div className={cn.event}>
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
@@ -539,6 +549,8 @@ function Schedule() {
 						</div> */}
 					</div>
 
+					<div className={cn.important}>9:00 PM | Venue Closes</div>
+
 					<div className={cn.event}>
 						<div className={clsx(cn.info)}>
 							<div className={clsx(cn.titleContainer)}>
@@ -567,6 +579,11 @@ function Schedule() {
 					</div>
 
 					<h2 className={cn.date}>Sunday - May 19th, 2024</h2>
+
+					<div className={cn.important}>
+						8:00 AM | Final Submissions Due
+					</div>
+
 					<div className={cn.event}>
 						<div className={cn.info}>
 							<div className={clsx(cn.titleContainer)}>
