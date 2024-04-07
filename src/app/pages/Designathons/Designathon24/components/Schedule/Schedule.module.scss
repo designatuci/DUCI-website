@@ -10,6 +10,7 @@
 		color: var(--gray);
 		font-size: 1.2em;
 		line-height: 1.3em;
+		margin-bottom: 0.5rem;
 	}
 
 	.heading {
@@ -31,7 +32,6 @@
 		color: var(--des24-peach);
 		font-size: 2rem;
 		font-weight: bold;
-		margin-top: 4rem;
 	}
 
 	a {
@@ -146,5 +146,40 @@
 				text-align: center;
 			}
 		}
+	}
+}
+
+.dateToggle {
+	display: flex;
+	margin-bottom: 1rem;
+	position: relative;
+
+	.button {
+		width: 6rem;
+		height: 3rem;
+		border: 2px solid var(--des24-peach);
+		background-color: #ffdce4;
+		font-size: 1.5rem;
+		color: var(--des24-peach);
+	}
+
+	.friday {
+		border-top-left-radius: 20px;
+		border-bottom-left-radius: 20px;
+	}
+
+	.saturday {
+		border-left: 0px;
+		border-right: 0px;
+	}
+
+	.sunday {
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+	}
+
+	.selected {
+		background-color: var(--des24-peach);
+		color: #ffdce4;
 	}
 }
