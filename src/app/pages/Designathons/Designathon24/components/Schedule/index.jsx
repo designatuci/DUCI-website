@@ -597,9 +597,7 @@ function Schedule() {
 						<div className={cn.info}>
 							<div className={clsx(cn.titleContainer)}>
 								<div className={clsx(cn.title)}>Check-In</div>
-								<div className={cn.location}>
-									Crystal Cove Auditorium (Student Center)
-								</div>
+								<div className={cn.location}>DBH 6011</div>
 							</div>
 							<div className={cn.time}>10:00 AM → 11:45 AM</div>
 						</div>
@@ -618,6 +616,150 @@ function Schedule() {
 							Led by Design at UCI's Design-a-thon Directors, Jay
 							Sotelo, Jasmine Wu, & Elise Alinsug
 						</div> */}
+					</div>
+					<div className={cn.event}>
+						<div className={cn.info}>
+							<div className={clsx(cn.titleContainer)}>
+								<div className={clsx(cn.title)}>
+									Mentorship Hours
+								</div>
+								<div className={cn.location}>DBH 6011</div>
+							</div>
+							<div className={cn.time}>10:00 AM → 12:00 PM</div>
+						</div>
+						{/* <div className={cn.description}>
+							<p>
+								Join us or on our{" "}
+								<a
+									href="https://uci.zoom.us/j/93490306811"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Zoom.
+								</a>
+							</p>
+							<br />
+							Led by Design at UCI's Design-a-thon Directors, Jay
+							Sotelo, Jasmine Wu, & Elise Alinsug
+						</div> */}
+					</div>
+
+					<div className={cn.important}>
+						12:00 PM | Announcing Top 10 Finalists
+					</div>
+
+					<div className={cn.event}>
+						<div className={cn.info}>
+							<div className={clsx(cn.titleContainer)}>
+								<div className={clsx(cn.title)}>
+									Top 10 Prepare Demos
+								</div>
+								<div className={cn.location}>DBH 6011</div>
+							</div>
+							<div className={cn.time}>12:10 PM → 1:00 PM</div>
+						</div>
+						{/* <div className={cn.description}>
+							<p>
+								Join us or on our{" "}
+								<a
+									href="https://uci.zoom.us/j/93490306811"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Zoom.
+								</a>
+							</p>
+							<br />
+							Led by Design at UCI's Design-a-thon Directors, Jay
+							Sotelo, Jasmine Wu, & Elise Alinsug
+						</div> */}
+					</div>
+
+					<div className={cn.important}>
+						1:00 PM | Top 10 Demos Due
+					</div>
+
+					<div className={cn.event}>
+						<div className={cn.info}>
+							<div className={clsx(cn.titleContainer)}>
+								<div className={clsx(cn.title)}>
+									Top 10 Present Demos
+								</div>
+								<div className={cn.location}>DBH 6011</div>
+							</div>
+							<div className={cn.time}>1:00 PM → 1:30 PM</div>
+						</div>
+						{/* <div className={cn.description}>
+							<p>
+								Join us or on our{" "}
+								<a
+									href="https://uci.zoom.us/j/93490306811"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Zoom.
+								</a>
+							</p>
+							<br />
+							Led by Design at UCI's Design-a-thon Directors, Jay
+							Sotelo, Jasmine Wu, & Elise Alinsug
+						</div> */}
+					</div>
+					<div className={cn.event}>
+						<div className={cn.info}>
+							<div className={clsx(cn.titleContainer)}>
+								<div className={clsx(cn.title)}>
+									Mentorship Hours
+								</div>
+								<div className={cn.location}>DBH 6011</div>
+							</div>
+							<div className={cn.time}>2:30 PM → 3:30 PM</div>
+						</div>
+						{/* <div className={cn.description}>
+							<p>
+								Join us or on our{" "}
+								<a
+									href="https://uci.zoom.us/j/93490306811"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Zoom.
+								</a>
+							</p>
+							<br />
+							Led by Design at UCI's Design-a-thon Directors, Jay
+							Sotelo, Jasmine Wu, & Elise Alinsug
+						</div> */}
+					</div>
+					<div className={cn.event}>
+						<div className={cn.info}>
+							<div className={clsx(cn.titleContainer)}>
+								<div className={clsx(cn.title)}>
+									Winners Announced & Closing Ceremony
+								</div>
+								<div className={cn.location}>DBH 6011</div>
+							</div>
+							<div className={cn.time}>3:30 PM → 4:30 PM</div>
+						</div>
+						{/* <div className={cn.description}>
+							<p>
+								Join us or on our{" "}
+								<a
+									href="https://uci.zoom.us/j/93490306811"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									Zoom.
+								</a>
+							</p>
+							<br />
+							Led by Design at UCI's Design-a-thon Directors, Jay
+							Sotelo, Jasmine Wu, & Elise Alinsug
+						</div> */}
+					</div>
+
+					<div className={cn.important}>
+						4:30 PM | Design-a-thon Ends
 					</div>
 				</div>
 			</Section>
