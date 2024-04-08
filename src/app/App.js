@@ -79,6 +79,20 @@ function App() {
 					}
 				/>
 
+				{/* Leaving this redirect here since that link is posted on our insta */}
+				<Route
+					path="impact22"
+					element={<Redirect to="/designathon/22" />}
+				/>
+				<Route
+					path="truetoyou"
+					element={<Redirect to="/designathon/24" />}
+				/>
+				<Route
+					path="true-to-you"
+					element={<Redirect to="/designathon/24" />}
+				/>
+
 				<Route
 					path="/ptsignup"
 					element={
