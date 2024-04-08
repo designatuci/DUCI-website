@@ -74,18 +74,28 @@ function App() {
 				{/* Redirects */}
 				<Route
 					path="discord"
-					element={<Redirect to="https://discord.com/invite/MBVrKe9" />}
+					element={
+						<Redirect to="https://discord.com/invite/MBVrKe9" />
+					}
 				/>
 
-				{/* Leaving this redirect here since that link is posted on our insta */}
-				<Route path="impact22" element={<Redirect to="/designathon/22" />} />
 				<Route
 					path="/ptsignup"
-					element={<Navigate to="/project-teams/registration" replace={true} />}
+					element={
+						<Navigate
+							to="/project-teams/registration"
+							replace={true}
+						/>
+					}
 				/>
 				<Route
 					path="/pt-registration"
-					element={<Navigate to="/project-teams/registration" replace={true} />}
+					element={
+						<Navigate
+							to="/project-teams/registration"
+							replace={true}
+						/>
+					}
 				/>
 				<Route
 					path="/project-teams/registration"
