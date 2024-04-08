@@ -180,3 +180,20 @@
 		max-height: 250px;
 	}
 }
+
+.lines {
+	position: absolute;
+	max-width: 30%;
+}
+
+.tr {
+	top: 3%;
+	right: 3%;
+}
+
+.bl {
+	bottom: 1%;
+	left: 3%;
+
+	transform: rotate(180deg);
+}

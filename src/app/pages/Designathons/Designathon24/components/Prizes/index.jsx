@@ -2,6 +2,7 @@ import cn from "./Prizes.module.scss";
 import clsx from "clsx";
 
 import trophy from "../../assets/graphics/prizes/trophy.svg";
+import lines from "../../assets/graphics/prizes/lines.svg";
 
 import GridBackground from "../Backgrounds/GridBackground";
 
@@ -16,6 +17,9 @@ const Prizes = () => {
 					]}
 					isLight={true}
 				/>
+
+				<img src={lines} alt="" className={clsx(cn.lines, cn.tr)} />
+				<img src={lines} alt="" className={clsx(cn.lines, cn.bl)} />
 
 				<div className={cn.content}>
 					<h2 className={cn.heading}>Prizes</h2>
