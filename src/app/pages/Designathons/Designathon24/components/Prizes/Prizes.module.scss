@@ -31,6 +31,10 @@
 		}
 	}
 
+	.prizeSectionContainer {
+		margin-bottom: 4rem;
+	}
+
 	.prizeSectionHeading {
 		font-weight: bold;
 		font-size: 4rem;
@@ -42,7 +46,7 @@
 
 		display: flex;
 		flex-direction: column;
-		padding: 4rem 2.5rem;
+		padding: 2.5rem;
 		width: 100%;
 		border-radius: 0.5rem;
 		margin-bottom: 30px;
@@ -64,19 +68,45 @@
 		background-color: var(--des24-pink);
 		color: var(--des24-cream);
 
+		padding: 4rem 2.5rem;
 		gap: 40px;
 	}
 
 	.secondThirdContainer {
-		display: flex;
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 20px;
 
 		.secondThird {
-			padding: 2.5rem;
 			border: 2px solid var(--des24-hot-pink);
 			background-image: url("../../assets/graphics/prizes/second_third_bg.svg");
 			gap: 20px;
+		}
+	}
+
+	.inpersonContainer {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 20px;
+
+		.prizeHeader {
+			color: var(--des24-blue);
+		}
+
+		.prizeDetails {
+			color: #808080;
+			font-size: 1.25rem;
+			margin-top: 0.5rem;
+		}
+
+		.inperson {
+			border: 2px solid var(--des24-blue);
+			gap: 40px;
+			background-color: var(--des24-cream);
+		}
+
+		.prizes {
+			margin-top: auto;
 		}
 	}
 }
