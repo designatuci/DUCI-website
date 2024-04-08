@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import cn from "./SectionNavigation.module.scss";
 
 const SectionNavigation = () => {
-	const [currentTime, setCurrentTime] = useState(() => new Date().getTime());
+	// const [currentTime, setCurrentTime] = useState(() => new Date().getTime());
 
-	useEffect(() => {
-		const timer = setInterval(() => {
-			setCurrentTime(new Date().getTime());
-		}, 1000);
+	// useEffect(() => {
+	// 	const timer = setInterval(() => {
+	// 		setCurrentTime(new Date().getTime());
+	// 	}, 1000);
 
-		return () => clearInterval(timer);
-	}, []);
+	// 	return () => clearInterval(timer);
+	// }, []);
 
 	const scrollToSection = (id) => {
 		window.scrollTo({
