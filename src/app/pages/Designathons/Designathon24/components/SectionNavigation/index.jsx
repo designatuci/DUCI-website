@@ -45,7 +45,7 @@ const SectionNavigation = () => {
 			</div>
 
 			<div className={cn.linkButtons}>
-				{currentTime >
+				{/* {currentTime >
 					new Date(
 						"Feb 24 2023 19:00:00 GMT-0800 (Pacific Standard Time)",
 					).getTime() && (
@@ -71,7 +71,7 @@ const SectionNavigation = () => {
 					href="https://forms.gle/hJmEGwbSc6mhqw9QA"
 				>
 					<p>Submission Form</p>
-				</a>
+				</a> */}
 			</div>
 		</div>
 	);
