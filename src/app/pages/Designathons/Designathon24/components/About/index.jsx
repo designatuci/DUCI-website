@@ -58,6 +58,7 @@ const About = () => {
 				</Notecard>
 				<img src={paperclip} alt="" className={cn.paperclip} />
 			</div>
+
 			<img
 				src={airplane}
 				alt=""
