@@ -5,7 +5,7 @@ import trophy from "../../assets/graphics/prizes/trophy.svg";
 
 import GridBackground from "../Backgrounds/GridBackground";
 
-const Prizes = ({ list }) => {
+const Prizes = () => {
 	return (
 		<div id="s-prizes">
 			<div className={cn.container}>
@@ -24,7 +24,10 @@ const Prizes = ({ list }) => {
 						<h3 className={cn.prizeSectionHeading}>Top 3</h3>
 
 						<div className={clsx(cn.prizeContainer, cn.first)}>
+							<img src={trophy} alt="" className={cn.trophy} />
+
 							<h6 className={cn.prizeHeader}>1st Place</h6>
+
 							<div className={cn.prizes}>
 								<p>$100 Visa Card</p>
 								<p>
@@ -36,8 +39,8 @@ const Prizes = ({ list }) => {
 									UCI Instagram
 								</p>
 							</div>
-							<img src={trophy} alt="" className={cn.trophy} />
 						</div>
+
 						<div className={cn.secondThirdContainer}>
 							<div
 								className={clsx(

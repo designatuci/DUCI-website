@@ -32,13 +32,22 @@
 	}
 
 	.prizeSectionContainer {
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
+
+		@media screen and (min-width: 1024px) {
+			margin-bottom: 4rem;
+		}
 	}
 
 	.prizeSectionHeading {
 		font-weight: bold;
-		font-size: 4rem;
-		margin-bottom: 40px;
+		font-size: 2rem;
+		margin-bottom: 20px;
+
+		@media screen and (min-width: 640px) {
+			font-size: 3rem;
+			margin-bottom: 40px;
+		}
 	}
 
 	.prizeContainer {
@@ -46,21 +55,39 @@
 
 		display: flex;
 		flex-direction: column;
-		padding: 2.5rem;
+		padding: 1.5rem;
 		width: 100%;
 		border-radius: 0.5rem;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+
+		@media screen and (min-width: 1024px) {
+			padding: 2.5rem;
+			margin-bottom: 30px;
+		}
 
 		.prizeHeader {
 			font-weight: bold;
-			font-size: 2.5rem;
+			font-size: 1.5rem;
+
+			@media screen and (min-width: 1024px) {
+				font-size: 2.5rem;
+			}
 		}
 
 		.prizes {
+			position: relative;
+
 			display: flex;
 			flex-direction: column;
-			font-size: 1.5rem;
-			gap: 20px;
+			gap: 12px;
+
+			font-size: 1rem;
+			word-wrap: break-word;
+
+			@media screen and (min-width: 1024px) {
+				font-size: 1.75rem;
+				gap: 20px;
+			}
 		}
 	}
 
@@ -68,14 +95,29 @@
 		background-color: var(--des24-pink);
 		color: var(--des24-cream);
 
-		padding: 4rem 2.5rem;
-		gap: 40px;
+		padding: 2rem 1.5rem;
+		gap: 20px;
+
+		@media screen and (min-width: 1024px) {
+			gap: 40px;
+			padding: 4 2.5rem;
+		}
+
+		.prizes {
+			@media screen and (min-width: 1024px) {
+				max-width: 75%;
+			}
+		}
 	}
 
 	.secondThirdContainer {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		gap: 20px;
+		grid-template-columns: repeat(1, 1fr);
+
+		@media screen and (min-width: 1024px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
 
 		.secondThird {
 			border: 2px solid var(--des24-hot-pink);
@@ -86,8 +128,12 @@
 
 	.inpersonContainer {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		gap: 20px;
+		grid-template-columns: repeat(1, 1fr);
+
+		@media screen and (min-width: 1024px) {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+		}
 
 		.prizeHeader {
 			color: var(--des24-blue);
@@ -95,14 +141,23 @@
 
 		.prizeDetails {
 			color: #808080;
-			font-size: 1.25rem;
+			font-size: 1rem;
 			margin-top: 0.5rem;
+
+			@media screen and (min-width: 1024px) {
+				margin-top: 1rem;
+				font-size: 1.25rem;
+			}
 		}
 
 		.inperson {
-			border: 2px solid var(--des24-blue);
-			gap: 40px;
 			background-color: var(--des24-cream);
+			border: 2px solid var(--des24-blue);
+			gap: 20px;
+
+			@media screen and (min-width: 1024px) {
+				gap: 40px;
+			}
 		}
 
 		.prizes {
@@ -115,6 +170,12 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	height: 100%;
-	max-height: 320px;
+
+	width: 30%;
+
+	display: none;
+
+	@media screen and (min-width: 1024px) {
+		display: flex;
+	}
 }
