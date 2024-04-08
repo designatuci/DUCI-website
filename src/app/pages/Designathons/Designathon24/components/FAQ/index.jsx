@@ -23,20 +23,7 @@ const FAQ = () => {
 					/>
 
 					<h2 className={cn.heading}>FAQ</h2>
-					{/* <div className="spaceChildren">
-					<Text style={{ lineHeight: "1.4em" }}>
-						Join the live conversation on the{" "}
-						<a
-							style={{ textDecoration: "underline" }}
-							href="https://discord.gg/jumJqhBy4Y"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							You Belong Here 2023 Discord
-						</a>{" "}
-						for more help!
-					</Text>
-				</div> */}
+
 					<div className={cn.qa_container}>
 						{[
 							{
