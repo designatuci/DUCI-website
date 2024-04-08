@@ -101,7 +101,8 @@
 
 @keyframes rainbow-fadein {
 	0% {
-		transform: perspective(256px) translateY(-64px) scale(1.24) rotateX(60deg);
+		transform: perspective(256px) translateY(-64px) scale(1.24)
+			rotateX(60deg);
 		filter: hue-rotate(360deg);
 	}
 
