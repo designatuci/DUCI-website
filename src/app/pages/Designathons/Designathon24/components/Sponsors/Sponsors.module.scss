@@ -9,7 +9,7 @@
 		color: var(--des24-hot-pink);
 		font-size: 3rem;
 		font-weight: 700;
-		margin-bottom: 4rem;
+		margin-bottom: 2rem;
 
 		@media screen and (min-width: 640px) {
 			font-size: 5rem;
@@ -22,31 +22,94 @@
 
 	.content {
 		max-width: 1280px;
+		margin-bottom: 4rem;
 	}
 
 	& .logos {
 		padding-top: 60px;
 		display: grid;
-		column-gap: 80px;
-		row-gap: 80px;
+		column-gap: 40px;
+		row-gap: 40px;
 		width: 100%;
-		grid-template-columns: repeat(1, 1fr);
 		place-content: center;
 
-		@media screen and (min-width: 800px) {
-			max-height: none;
+		@media screen and (min-width: 768px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media screen and (min-width: 1280px) {
 			grid-template-columns: repeat(3, 1fr);
 		}
 
 		& > div {
+			position: relative;
 			display: grid;
 			place-content: center;
+			aspect-ratio: 1;
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			max-width: max(50vw, 350px);
+		}
+
+		.tape {
+			position: absolute;
+			top: -5%;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.mirrorTape {
+			transform: scaleX(-1) translateX(50%);
 		}
 
 		& img {
 			max-height: 200px;
-			width: 100%;
+			width: 80%;
 			object-fit: contain;
+			margin: auto;
 		}
 	}
+}
+
+.decoration {
+	position: absolute;
+
+	max-width: 50%;
+}
+
+.tr {
+	top: 0;
+	right: 0;
+}
+
+.ml {
+	top: 50%;
+	left: 0;
+}
+
+.mr {
+	top: 50%;
+	right: 0;
+}
+
+.headingContainer {
+	position: relative;
+	width: fit-content;
+}
+
+.heart {
+	max-width: 30%;
+	top: -150%;
+
+	@media screen and (min-width: 768px) {
+		top: unset;
+		right: -30%;
+	}
+}
+
+.double_heart {
+	max-width: 40%;
+
+	right: -45%;
 }
