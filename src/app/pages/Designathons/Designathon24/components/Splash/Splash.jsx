@@ -34,16 +34,6 @@ const Splash = memo(() => {
 							Apply as Designer
 						</a>
 					</div>
-					<div className={cn.border}>
-						<a
-							className={cn.app}
-							href="https://docs.google.com/forms/d/11YEH02IGBs800naIoY8gpi_dZ5hrH15_1OXlBKNnuAs"
-							target="_blank"
-							rel="noreferrer noopener"
-						>
-							Apply as Mentor
-						</a>
-					</div>
 				</div>
 			</div>
 			<SplashLogo ref={logoRef} className={cn.logo} />
