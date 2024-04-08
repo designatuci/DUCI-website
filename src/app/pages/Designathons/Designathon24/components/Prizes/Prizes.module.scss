@@ -1,43 +1,202 @@
-.title {
-	color: black;
-	font-size: 3em;
-	font-weight: bold;
-}
-
 .container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 80px;
-	padding-bottom: 80px;
+	position: relative;
+	background-color: var(--des24-cream);
+	color: var(--des24-black);
 
-	@media screen and (max-width: 1200px) {
-		grid-template-columns: repeat(3, 1fr);
+	padding: 5rem 2rem;
+
+	@media screen and (min-width: 768px) {
+		padding: 6rem 5rem;
 	}
 
-	@media screen and (max-width: 950px) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	@media screen and (max-width: 640px) {
-		grid-template-columns: repeat(1, 1fr);
+	.content {
+		margin: 0 auto;
+		max-width: 1280px;
 	}
 
-	& > .item {
-		&:nth-child(even) {
-			& h3 {
-				color: var(--yellow);
+	.heading {
+		position: relative;
+		color: var(--des24-hot-pink);
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+
+		@media screen and (min-width: 640px) {
+			font-size: 5rem;
+			margin-bottom: 4rem;
+		}
+
+		@media screen and (min-width: 1280px) {
+			font-size: 6rem;
+		}
+	}
+
+	.prizeSectionContainer {
+		margin-bottom: 2rem;
+
+		@media screen and (min-width: 1024px) {
+			margin-bottom: 4rem;
+		}
+	}
+
+	.prizeSectionHeading {
+		font-weight: bold;
+		font-size: 2rem;
+		margin-bottom: 20px;
+
+		@media screen and (min-width: 640px) {
+			font-size: 3rem;
+			margin-bottom: 40px;
+		}
+	}
+
+	.prizeContainer {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		padding: 1.5rem;
+		border-radius: 0.5rem;
+		margin-bottom: 20px;
+		width: 100%;
+
+		@media screen and (min-width: 768px) {
+			max-width: 85%;
+		}
+
+		@media screen and (min-width: 1024px) {
+			max-width: unset;
+			padding: 2.5rem;
+			margin-bottom: 30px;
+		}
+
+		.prizeHeader {
+			font-weight: bold;
+			font-size: 1.5rem;
+
+			@media screen and (min-width: 1024px) {
+				font-size: 2.5rem;
 			}
 		}
 
-		& p {
-			color: black;
-			line-height: 1.4em;
+		.prizes {
+			position: relative;
+
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+
+			font-size: 1rem;
+			word-wrap: break-word;
+
+			@media screen and (min-width: 1024px) {
+				font-size: 1.75rem;
+				gap: 20px;
+			}
 		}
 	}
 
-	& h3 {
-		font-weight: bold;
-		margin: 20px 0;
-		font-size: 1.5em;
-		color: var(--blue);
+	.first {
+		background-color: var(--des24-pink);
+		color: var(--des24-cream);
+
+		padding: 2rem 1.5rem;
+		gap: 20px;
+
+		@media screen and (min-width: 1024px) {
+			gap: 40px;
+			padding: 4 2.5rem;
+		}
+
+		.prizes {
+			@media screen and (min-width: 1024px) {
+				max-width: 75%;
+			}
+		}
 	}
+
+	.secondThirdContainer {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+
+		@media screen and (min-width: 1024px) {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px;
+		}
+
+		.secondThird {
+			border: 2px solid var(--des24-hot-pink);
+			background-image: url("../../assets/graphics/prizes/second_third_bg.svg");
+			gap: 20px;
+		}
+	}
+
+	.inpersonContainer {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+
+		@media screen and (min-width: 1024px) {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 20px;
+		}
+
+		.prizeHeader {
+			color: var(--des24-blue);
+		}
+
+		.prizeDetails {
+			color: #808080;
+			font-size: 1rem;
+			margin-top: 0.5rem;
+
+			@media screen and (min-width: 1024px) {
+				margin-top: 1rem;
+				font-size: 1.25rem;
+			}
+		}
+
+		.inperson {
+			background-color: var(--des24-cream);
+			border: 2px solid var(--des24-blue);
+			gap: 20px;
+
+			@media screen and (min-width: 1024px) {
+				gap: 40px;
+			}
+		}
+
+		.prizes {
+			margin-top: auto;
+		}
+	}
+}
+
+.trophy {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+	display: none;
+
+	@media screen and (min-width: 1024px) {
+		display: flex;
+		max-height: 250px;
+	}
+}
+
+.lines {
+	position: absolute;
+	max-width: 30%;
+}
+
+.tr {
+	top: 3%;
+	right: 3%;
+}
+
+.bl {
+	bottom: 1%;
+	left: 3%;
+
+	transform: rotate(180deg);
 }
