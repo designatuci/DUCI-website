@@ -23,20 +23,7 @@ const FAQ = () => {
 					/>
 
 					<h2 className={cn.heading}>FAQ</h2>
-					{/* <div className="spaceChildren">
-					<Text style={{ lineHeight: "1.4em" }}>
-						Join the live conversation on the{" "}
-						<a
-							style={{ textDecoration: "underline" }}
-							href="https://discord.gg/jumJqhBy4Y"
-							target="_blank"
-							rel="noopener noreferrer"
-						>
-							You Belong Here 2023 Discord
-						</a>{" "}
-						for more help!
-					</Text>
-				</div> */}
+
 					<div className={cn.qa_container}>
 						{[
 							{
@@ -53,7 +40,7 @@ const FAQ = () => {
 										<a
 											target="_blank"
 											rel="noopener noreferrer"
-											href="https://forms.gle/MQ1zaWpUJi3mWSQy5"
+											href="https://docs.google.com/forms/d/1dt6fiBAjGVi4M4PO3V2ZUkieRHR6fn6wWvC5E6RZoZM"
 											style={{
 												textDecoration: "underline",
 											}}
@@ -74,7 +61,7 @@ const FAQ = () => {
 										<a
 											target="_blank"
 											rel="noopener noreferrer"
-											href="https://forms.gle/MQ1zaWpUJi3mWSQy5"
+											href="https://docs.google.com/forms/d/1dt6fiBAjGVi4M4PO3V2ZUkieRHR6fn6wWvC5E6RZoZM"
 											style={{
 												textDecoration: "underline",
 											}}
@@ -90,136 +77,27 @@ const FAQ = () => {
 							},
 							{
 								q: "How much does it cost?",
-								a: "You Belong Here requires no cost to participate. All you need is a working device with Zoom, Discord, and an open mind. ",
+								a: "You Belong Here requires no cost to participate. All you need is a working device with Zoom, Discord, and an open mind.",
 							},
 							{
 								q: "When is the registration deadline?",
-								a: (
-									<p>
-										Our{" "}
-										<a
-											target="_blank"
-											rel="noopener noreferrer"
-											href="https://forms.gle/MQ1zaWpUJi3mWSQy5"
-											style={{
-												textDecoration: "underline",
-											}}
-										>
-											participant sign-up form
-										</a>{" "}
-										has been extended until February 19th at
-										11:59pm (PST)
-									</p>
-								),
+								a: "April 28th, 2024 11:59 PM",
 							},
 							{
 								q: "How do I prepare?",
-								a: (
-									<p>
-										During the event, we will be hosting
-										workshops for anyone new to design
-										thinking or the design process. We
-										highly encourage getting the hang of
-										Figma, Sketch, Adobe XD, or the
-										prototyping tool of your choice. You are
-										also free to look through our Design at
-										UCI{" "}
-										<a
-											href="https://designatuci.com/resources"
-											target="_blank"
-											rel="noopener noreferrer"
-											style={{
-												textDecoration: "underline",
-											}}
-										>
-											Resources
-										</a>{" "}
-										page for extra information. Want to go
-										the extra mile? Show your excitement by
-										turning on your camera and adding our{" "}
-										<a
-											href="https://drive.google.com/drive/folders/1fe5vj6NJAvQFFcxWp9OFQCkc6qI7Avcn?usp=sharing"
-											target="_blank"
-											rel="noopener noreferrer"
-											style={{
-												textDecoration: "underline",
-											}}
-										>
-											You Belong Here Zoom backgrounds.
-										</a>
-									</p>
-								),
+								a: "During the event, we will be hosting workshops for anyone new to design thinking or the design process. We highly encourage getting the hang of Figma, Sketch, Adobe XD, or the prototyping tool of your choice. You are also free to look through our Design at UCI Resources page for extra information. Want to go the extra mile? Show your excitement by turning on your camera and adding our True to You Zoom backgrounds.",
 							},
 							{
 								q: "How do teams work?",
-								a: (
-									<p>
-										You have the option to (1) go solo, or
-										(2) form a team of up to 4 people total.
-										You may list your team members in the
-										sign-up form, but it’s okay if plans
-										change! Take advantage of our
-										#find-a-team{" "}
-										<a
-											style={{
-												textDecoration: "underline",
-											}}
-											href="https://discord.gg/jumJqhBy4Y"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											Discord channel
-										</a>{" "}
-										to meet potential team members. We will
-										consider your final team members to be
-										the ones indicated when submitting your
-										project.
-									</p>
-								),
+								a: "You have the option to (1) go solo, or (2) form a team of up to 4 people total. You may list your team members in the sign-up form, but it’s okay if plans change! We will consider your final team members to be the ones indicated when submitting your project.",
 							},
 							{
 								q: "What if I don’t have a team?",
-								a: (
-									<p>
-										Our #find-a-team Discord channel is the
-										perfect place for anyone looking for a
-										team at our Designathon. If you haven’t
-										already, join our You Belong Here{" "}
-										<a
-											style={{
-												textDecoration: "underline",
-											}}
-											href="https://discord.gg/jumJqhBy4Y"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											Discord channel
-										</a>{" "}
-										. Solo participants are also allowed.
-									</p>
-								),
+								a: "We will be hosting a team finding event in person during Check-Ins! You can also find a team on our Discord. Solo participants are also allowed.",
 							},
 							{
 								q: "Where do I submit my project?",
-								a: (
-									<p>
-										You will submit your final, working
-										prototype to the{" "}
-										<a
-											target="_blank"
-											rel="noopener noreferrer"
-											href="https://forms.gle/Tf1FySVor1RC5rHq8"
-											style={{
-												textDecoration: "underline",
-											}}
-										>
-											Submission Form
-										</a>{" "}
-										(opens during event). Only one person on
-										your team should submit a form, which
-										will be on behalf of all contributors.
-									</p>
-								),
+								a: "You will submit your final, working prototype to the Submission Form (opens during the event). Only ONE (1) person on your team should submit a form, which will be on behalf of all contributors.",
 							},
 						].map((item) => {
 							return (
