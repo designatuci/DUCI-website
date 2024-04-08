@@ -92,3 +92,24 @@
 	top: 50%;
 	right: 0;
 }
+
+.headingContainer {
+	position: relative;
+	width: fit-content;
+}
+
+.heart {
+	max-width: 30%;
+	top: -150%;
+
+	@media screen and (min-width: 768px) {
+		top: unset;
+		right: -30%;
+	}
+}
+
+.double_heart {
+	max-width: 40%;
+
+	right: -45%;
+}

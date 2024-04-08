@@ -16,6 +16,8 @@ import tape from "../../assets/graphics/sponsors/tape.svg";
 import tr_squiggle from "../../assets/graphics/sponsors/tr_squiggle.svg";
 import ml_squiggle from "../../assets/graphics/sponsors/ml_squiggle.svg";
 import mr_squiggle from "../../assets/graphics/sponsors/mr_squiggle.svg";
+import heart from "../../assets/graphics/sponsors/heart.svg";
+import double_heart from "../../assets/graphics/sponsors/double_heart.svg";
 
 const SPONSOR_DETAILS = [
 	{
@@ -91,7 +93,14 @@ const Sponsors = () => {
 
 			<Section>
 				<div className={cn.content}>
-					<h2 className={cn.heading}>Sponsors</h2>
+					<div className={cn.headingContainer}>
+						<img
+							src={heart}
+							alt=""
+							className={clsx(cn.heart, cn.decoration)}
+						/>
+						<h2 className={cn.heading}>Sponsors</h2>
+					</div>
 					<div className={cn.logos}>
 						{SPONSOR_DETAILS.map((item) => (
 							<div
@@ -123,7 +132,14 @@ const Sponsors = () => {
 				</div>
 
 				<div className={cn.content}>
-					<h2 className={cn.heading}>Partners</h2>
+					<div className={cn.headingContainer}>
+						<img
+							src={double_heart}
+							alt=""
+							className={clsx(cn.decoration, cn.double_heart)}
+						/>
+						<h2 className={cn.heading}>Partners</h2>
+					</div>
 					<div className={cn.logos}>
 						{PARTNER_DETAILS.map((item) => (
 							<div
