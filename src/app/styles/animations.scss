@@ -64,7 +64,6 @@
 .wait.show.flopL {
 	transform-origin: right;
 	animation: flopL-fadein 2.4s cubic-bezier(0.32, 0.35, 0.07, 1) forwards;
-	animation-delay: 3s;
 }
 
 @keyframes flopL-fadein {

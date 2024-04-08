@@ -31,47 +31,27 @@ const Splash = memo(() => {
 			<img
 				src={tl_clouds}
 				alt=""
-				className={clsx(
-					cn.decoration,
-					cn.tl_clouds,
-					"wait flopL_des24",
-				)}
+				className={clsx(cn.decoration, cn.tl_clouds, "wait flopL")}
 			/>
 			<img
 				src={butterfly}
 				alt=""
-				className={clsx(
-					cn.decoration,
-					cn.butterfly,
-					"wait flopL_des24",
-				)}
+				className={clsx(cn.decoration, cn.butterfly, "wait flopL")}
 			/>
 			<img
 				src={bl_star_stripe}
 				alt=""
-				className={clsx(
-					cn.decoration,
-					cn.bl_star_stripe,
-					"wait flopL_des24",
-				)}
+				className={clsx(cn.decoration, cn.bl_star_stripe, "wait flopL")}
 			/>
 			<img
 				src={mr_cloud_stars}
 				alt=""
-				className={clsx(
-					cn.decoration,
-					cn.mr_cloud_stars,
-					"wait flopR_des24",
-				)}
+				className={clsx(cn.decoration, cn.mr_cloud_stars, "wait flopR")}
 			/>
 			<img
 				src={br_star_stripe}
 				alt=""
-				className={clsx(
-					cn.decoration,
-					cn.br_star_stripe,
-					"wait flopR_des24",
-				)}
+				className={clsx(cn.decoration, cn.br_star_stripe, "wait flopR")}
 			/>
 
 			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
