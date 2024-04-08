@@ -1,4 +1,3 @@
-import PRIZES_2024 from "assets/data/designathon/2024/prizes.json";
 import cn from "./Designathon24.module.scss";
 
 import {
@@ -41,9 +40,7 @@ const Designathon24 = () => (
 
 		<Rules />
 
-		<div className={cn.prizes} id="s-prizes">
-			<Prizes list={PRIZES_2024} />
-		</div>
+		<Prizes />
 
 		<Schedule />
 

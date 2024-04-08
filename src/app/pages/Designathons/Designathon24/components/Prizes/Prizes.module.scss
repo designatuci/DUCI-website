@@ -1,43 +1,90 @@
-.title {
-	color: black;
-	font-size: 3em;
-	font-weight: bold;
+.container {
+	position: relative;
+	background-color: var(--des24-cream);
+	color: var(--des24-black);
+
+	padding: 5rem 2rem;
+
+	@media screen and (min-width: 768px) {
+		padding: 6rem 5rem;
+	}
+
+	.content {
+		margin: 0 auto;
+		max-width: 1280px;
+	}
+
+	.heading {
+		position: relative;
+		color: var(--des24-hot-pink);
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 2rem;
+
+		@media screen and (min-width: 640px) {
+			font-size: 5rem;
+			margin-bottom: 4rem;
+		}
+
+		@media screen and (min-width: 1280px) {
+			font-size: 6rem;
+		}
+	}
+
+	.prizeSectionHeading {
+		font-weight: bold;
+		font-size: 4rem;
+		margin-bottom: 40px;
+	}
+
+	.prizeContainer {
+		position: relative;
+
+		display: flex;
+		flex-direction: column;
+		padding: 4rem 2.5rem;
+		width: 100%;
+		border-radius: 0.5rem;
+		margin-bottom: 30px;
+
+		.prizeHeader {
+			font-weight: bold;
+			font-size: 2.5rem;
+		}
+
+		.prizes {
+			display: flex;
+			flex-direction: column;
+			font-size: 1.5rem;
+			gap: 20px;
+		}
+	}
+
+	.first {
+		background-color: var(--des24-pink);
+		color: var(--des24-cream);
+
+		gap: 40px;
+	}
+
+	.secondThirdContainer {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+
+		.secondThird {
+			padding: 2.5rem;
+			border: 2px solid var(--des24-hot-pink);
+			background-image: url("../../assets/graphics/prizes/second_third_bg.svg");
+			gap: 20px;
+		}
+	}
 }
 
-.container {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	gap: 80px;
-	padding-bottom: 80px;
-
-	@media screen and (max-width: 1200px) {
-		grid-template-columns: repeat(3, 1fr);
-	}
-
-	@media screen and (max-width: 950px) {
-		grid-template-columns: repeat(2, 1fr);
-	}
-	@media screen and (max-width: 640px) {
-		grid-template-columns: repeat(1, 1fr);
-	}
-
-	& > .item {
-		&:nth-child(even) {
-			& h3 {
-				color: var(--yellow);
-			}
-		}
-
-		& p {
-			color: black;
-			line-height: 1.4em;
-		}
-	}
-
-	& h3 {
-		font-weight: bold;
-		margin: 20px 0;
-		font-size: 1.5em;
-		color: var(--blue);
-	}
+.trophy {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 100%;
+	max-height: 320px;
 }
