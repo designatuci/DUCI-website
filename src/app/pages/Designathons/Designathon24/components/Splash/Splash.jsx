@@ -60,7 +60,7 @@ const Splash = memo(() => {
 
 			<div className={clsx(cn.info, "wait")}>
 				<div className={cn.time}>
-					May 17th 6:30 PM - May 19th 4:30 PM
+					May 17th 5:00 PM - May 19th 6:00 PM
 				</div>
 				<div className={cn.wrapper}>
 					<div className={cn.border}>
