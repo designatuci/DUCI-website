@@ -120,7 +120,7 @@ const Prizes = () => {
 										Honorable Mentions
 									</h6>
 									<p className={cn.prizeDetails}>
-										Voted by in-person participants.
+										Voted by Design at UCI Board.
 									</p>
 								</div>
 

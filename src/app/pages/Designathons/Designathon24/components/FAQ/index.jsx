@@ -77,7 +77,7 @@ const FAQ = () => {
 							},
 							{
 								q: "How much does it cost?",
-								a: "You Belong Here requires no cost to participate. All you need is a working device with Zoom, Discord, and an open mind.",
+								a: "True to You requires no cost to participate. All you need is a working device with Zoom, Discord, and an open mind.",
 							},
 							{
 								q: "When is the registration deadline?",

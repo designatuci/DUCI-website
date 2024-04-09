@@ -68,7 +68,9 @@ const FridaySchedule = () => {
 				<div className={clsx(cn.info)}>
 					<div className={clsx(cn.titleContainer)}>
 						<div className={clsx(cn.title)}>Opening Ceremony</div>
-						<div className={cn.location}>Location of the Event</div>
+						<div className={cn.location}>
+							Crystal Cove Auditorium (Student Center)
+						</div>
 					</div>
 					<div className={cn.time}>5:00 PM → 6:00 PM</div>
 				</div>
