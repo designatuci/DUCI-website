@@ -28,6 +28,8 @@ const Splash = memo(() => {
 
 	return (
 		<div className={cn.container}>
+			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
+
 			<img
 				src={tl_clouds}
 				alt=""
@@ -53,8 +55,6 @@ const Splash = memo(() => {
 				alt=""
 				className={clsx(cn.decoration, cn.br_star_stripe, "wait flopR")}
 			/>
-
-			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
 
 			<SplashLogo ref={logoRef} className={cn.logo} />
 
