@@ -54,6 +54,7 @@
 
 		.tape {
 			position: absolute;
+			pointer-events: none;
 			top: -5%;
 			left: 50%;
 			transform: translateX(-50%);
@@ -76,6 +77,7 @@
 	position: absolute;
 
 	max-width: 50%;
+	pointer-events: none;
 }
 
 .tr {
