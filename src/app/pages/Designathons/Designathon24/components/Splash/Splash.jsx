@@ -56,7 +56,9 @@ const Splash = memo(() => {
 
 			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
 
-			<div className={cn.info}>
+			<SplashLogo ref={logoRef} className={cn.logo} />
+
+			<div className={clsx(cn.info, "wait")}>
 				<div className={cn.time}>
 					May 17th 6:30 PM - May 19th 4:30 PM
 				</div>
@@ -73,7 +75,6 @@ const Splash = memo(() => {
 					</div>
 				</div>
 			</div>
-			<SplashLogo ref={logoRef} className={cn.logo} />
 		</div>
 	);
 });
