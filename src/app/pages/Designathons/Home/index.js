@@ -6,6 +6,8 @@ import { Section, Space, Icon } from "app/Symbols";
 
 import PAST_EVENTS from "assets/data/designathon/overall.json";
 import { EventListing } from "./components";
+import SplashGraphics from "../Designathon24/components/Splash/SplashGraphics";
+import SplashLogo from "../Designathon24/components/Splash/SplashLogo";
 
 const Designathons = () => (
 	<>
@@ -24,8 +26,8 @@ const Designathons = () => (
 			<div className="split2 textAlignLeft slim">
 				<div className="flex left slim spaceChildrenSmall">
 					<Text className="color gray">
-						A large-scale event where teams work to design a prototype product
-						within a few days.
+						A large-scale event where teams work to design a
+						prototype product within a few days.
 					</Text>
 					<Text className="color gray">
 						To get involved, <Link to="/join/">join us</Link> to get
@@ -34,37 +36,53 @@ const Designathons = () => (
 				</div>
 				<div className="flex left slim spaceChildrenSmall">
 					<Text className="color gray">
-						Our Design-a-thon is held once per year, and is open to everyone.
-						Bring your team or form one during the event, and compete to create
-						the best design centered around the prompt. Additionally, you can
-						attend workshops hosted during the event to get extra help and
+						Our Design-a-thon is held once per year, and is open to
+						everyone. Bring your team or form one during the event,
+						and compete to create the best design centered around
+						the prompt. Additionally, you can attend workshops
+						hosted during the event to get extra help and
 						inspiration from industry professionals.
 					</Text>
 				</div>
 			</div>
 		</Section>
+
 		<Section
-			className="center fill black"
+			className="center fill black relative"
 			style={{
 				height: "90vh",
 				background:
-					"url(/static/photo/designathon-2023.png) center/cover no-repeat",
+					"url(/static/photo/2024-4.png) center/cover no-repeat",
 				backgroundColor: "black",
 			}}
 		>
-			<Link to="/designathon/23" className="flex spaceChildren">
+			<SplashLogo
+				style={{
+					maxWidth: "min(700px, 50%)",
+					minWidth: 300,
+					height: "fit-content",
+					position: "absolute",
+					marginBottom: "15%",
+				}}
+			/>
+
+			<div style={{ position: "absolute", bottom: "5%" }}>
+				<Text size="XL" className="bold" color="black">
+					May 17-19, 2023
+				</Text>
 				<Space h="96" />
-				<Text className="bold">Design-a-thon 2023</Text>
-				<Text size="XXL" className="bold">
-					You Belong Here
-				</Text>
-				<Text className="bold">February 24-26, 2023</Text>
-				<Space h="32" />
-				<Text className="button" color="blue" icon="right">
-					Event Page
-				</Text>
-			</Link>
+				<Link to="/designathon/24" className="flex spaceChildren">
+					<Text className="button" color="blue" icon="right">
+						Event Page
+					</Text>
+				</Link>
+			</div>
+
+			<div>
+				<SplashGraphics />
+			</div>
 		</Section>
+
 		{PAST_EVENTS.map((event) => (
 			<EventListing key={event.title} {...event} />
 		))}
