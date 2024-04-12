@@ -59,7 +59,7 @@ const Designathons = () => (
 			<SplashLogo
 				style={{
 					maxWidth: "min(700px, 50%)",
-					minWidth: 300,
+					minWidth: "min(350px, 100%)",
 					height: "fit-content",
 					position: "absolute",
 					marginBottom: "15%",
