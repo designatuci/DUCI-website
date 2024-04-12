@@ -659,7 +659,7 @@ const SundaySchedule = () => {
 						</div>
 						<div className={cn.location}>DBH 6011</div>
 					</div>
-					<div className={cn.time}>1:00 PM → 1:30 PM</div>
+					<div className={cn.time}>1:30 PM → 3:00 PM</div>
 				</div>
 				{/* <div className={cn.description}>
 							<p>
@@ -680,10 +680,12 @@ const SundaySchedule = () => {
 			<div className={cn.event}>
 				<div className={cn.info}>
 					<div className={clsx(cn.titleContainer)}>
-						<div className={clsx(cn.title)}>Mentorship Hours</div>
+						<div className={clsx(cn.title)}>
+							Judges Deliberation & Mentorship Hours
+						</div>
 						<div className={cn.location}>DBH 6011</div>
 					</div>
-					<div className={cn.time}>2:30 PM → 3:30 PM</div>
+					<div className={cn.time}>3:00 PM → 5:30 PM</div>
 				</div>
 				{/* <div className={cn.description}>
 							<p>
@@ -709,7 +711,7 @@ const SundaySchedule = () => {
 						</div>
 						<div className={cn.location}>DBH 6011</div>
 					</div>
-					<div className={cn.time}>3:30 PM → 4:30 PM</div>
+					<div className={cn.time}>5:30 PM → 6:00 PM</div>
 				</div>
 				{/* <div className={cn.description}>
 							<p>
@@ -728,7 +730,7 @@ const SundaySchedule = () => {
 						</div> */}
 			</div>
 
-			<div className={cn.important}>4:30 PM | Design-a-thon Ends</div>
+			<div className={cn.important}>6:00 PM | Design-a-thon Ends</div>
 		</div>
 	);
 };

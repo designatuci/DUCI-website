@@ -1,5 +1,4 @@
 import { memo } from "react";
-// import { ReactComponent as SplashLogo } from "./logo.svg";
 import cn from "./Splash.module.scss";
 import clsx from "clsx";
 
@@ -11,6 +10,7 @@ const Splash = memo(() => {
 	return (
 		<div className={cn.container}>
 			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
+
 			<SplashGraphics />
 
 			<SplashLogo />

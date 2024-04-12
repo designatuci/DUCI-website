@@ -1,5 +1,24 @@
 [
 	{
+		"title": "House Design-Off",
+		"time": "2024-04-17T16:00",
+		"duration": "60",
+		"type": "Social",
+		"desc": "Hey Designers! It’s that time of the quarter to get to know your new house members. Come out to our first social of the quarter to design and create your house aesthetic with some friendly competition. If you have not been sorted into a house, talk to a board member so you can be a part of our house system. Hope to see y’all there!",
+		"place": "DBH 6011"
+	},
+	{
+		"title": "Alumni Panel",
+		"time": "2024-04-10T19:00",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": " 🎨 Calling all designers! Wondering what post-grad life is like? Curious about working as a designer full-time? Join us for our Alumni Panel! 🌟 Listen to our panelists share their experience transitioning from UCI to industry, bootcamp, and grad school. See you there! 🚀",
+		"place": "Online",
+		"links": [
+			{ "label": "Zoom Link", "link": "https://uci.zoom.us/j/92016931400" }
+		]
+	},
+	{
 		"title": "How to Build a Case Study",
 		"time": "2024-04-03T16:00",
 		"duration": "60",
