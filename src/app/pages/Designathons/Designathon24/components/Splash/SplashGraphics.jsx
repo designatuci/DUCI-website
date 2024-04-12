@@ -1,6 +1,8 @@
 import cn from "./Splash.module.scss";
 import clsx from "clsx";
 
+import GridBackground from "../Backgrounds/GridBackground";
+
 import tl_clouds from "../../assets/graphics/splash/clouds.svg";
 import butterfly from "../../assets/graphics/splash/butterfly.svg";
 import bl_star_stripe from "../../assets/graphics/splash/bl_star_stripe.svg";
@@ -10,6 +12,8 @@ import br_star_stripe from "../../assets/graphics/splash/br_star_stripe.svg";
 const SplashGraphics = () => {
 	return (
 		<>
+			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
+
 			<img
 				src={tl_clouds}
 				alt=""

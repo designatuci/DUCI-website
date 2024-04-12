@@ -53,9 +53,13 @@ const Designathons = () => (
 				height: "90vh",
 				background:
 					"url(/static/photo/2024-4.png) center/cover no-repeat",
-				backgroundColor: "black",
+				backgroundColor: "#FFF4E0",
 			}}
 		>
+			<div>
+				<SplashGraphics />
+			</div>
+
 			<SplashLogo
 				style={{
 					maxWidth: "min(700px, 50%)",
@@ -76,10 +80,6 @@ const Designathons = () => (
 						Event Page
 					</Text>
 				</Link>
-			</div>
-
-			<div>
-				<SplashGraphics />
 			</div>
 		</Section>
 
