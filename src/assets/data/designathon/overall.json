@@ -7,7 +7,7 @@
 		"showcase": [
 			{
 				"title": "1st Place",
-				"image": "ratatouille.jpg",
+				"image": "colorful.png",
 				"name": "Colorful",
 				"creators": [
 					"William Han",
@@ -15,14 +15,16 @@
 					"Jayden Kang",
 					"Amy La"
 				],
-				"links": []
+				"links": [],
+				"style": { "backgroundPosition": "top" }
 			},
 			{
 				"title": "2nd Place",
-				"image": "carbonology.jpg",
+				"image": "honeycomb.png",
 				"name": "Honeycomb",
 				"creators": ["Mandy Wu", "Lea Hidaka"],
-				"links": []
+				"links": [],
+				"style": { "backgroundPosition": "top" }
 			}
 		],
 		"participants": "300+"
