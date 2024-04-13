@@ -63,7 +63,7 @@ const EventListing = ({
 					<ProjectShowcase
 						{...project}
 						key={project.title + project.name}
-						style={project.style}
+						photoStyle={project.photoStyle}
 					/>
 				))}
 			</div>

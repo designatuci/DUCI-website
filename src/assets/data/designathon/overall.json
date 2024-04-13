@@ -16,7 +16,7 @@
 					"Amy La"
 				],
 				"links": [],
-				"style": { "backgroundPosition": "top" }
+				"photoStyle": { "backgroundPosition": "top" }
 			},
 			{
 				"title": "2nd Place",
@@ -24,7 +24,7 @@
 				"name": "Honeycomb",
 				"creators": ["Mandy Wu", "Lea Hidaka"],
 				"links": [],
-				"style": { "backgroundPosition": "top" }
+				"photoStyle": { "backgroundPosition": "top" }
 			}
 		],
 		"participants": "300+"

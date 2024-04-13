@@ -1,7 +1,14 @@
 import { Text } from "app/components";
 import { Photo } from "app/Symbols";
 
-const ProjectShowcase = ({ title, image, name, creators, links, style }) => {
+const ProjectShowcase = ({
+	title,
+	image,
+	name,
+	creators,
+	links,
+	photoStyle,
+}) => {
 	return (
 		<>
 			<div className="card shadow flex spaceChildrenSmall">
@@ -15,7 +22,7 @@ const ProjectShowcase = ({ title, image, name, creators, links, style }) => {
 					<Photo
 						src={image}
 						className="shadow"
-						style={{ minHeight: "256px", ...style }}
+						style={{ minHeight: "256px", ...photoStyle }}
 					/>
 				</div>
 				<Text size="L">{name}</Text>
