@@ -85,6 +85,7 @@ const Speakers = () => {
 							</div>
 						</div>
 					</div>
+
 					<div className={cn.peopleContainer}>
 						<h3 className={cn.polaroidHeading}>Judges</h3>
 						<div className={cn.people}>
@@ -97,6 +98,7 @@ const Speakers = () => {
 							))}
 						</div>
 					</div>
+
 					<div className={cn.peopleContainer}>
 						<h3 className={cn.polaroidHeading}>Workshop Hosts</h3>
 						<div className={cn.people}>
