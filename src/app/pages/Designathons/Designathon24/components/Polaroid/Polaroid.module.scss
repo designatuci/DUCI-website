@@ -19,14 +19,15 @@
 	width: 100%;
 	height: fit-content;
 
-	padding: 0.35rem 0.5rem;
+	padding: 0.35rem 0.35rem;
 
-	@media screen and (min-width: 640px) {
+	@media screen and (min-width: 1024px) {
 		padding: 1rem;
 	}
 
 	.polaroidImage {
 		width: 100%;
+		max-width: 400px;
 		aspect-ratio: 1;
 		object-fit: cover;
 

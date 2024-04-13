@@ -126,11 +126,7 @@
 	}
 
 	.popupProfileContainer {
-		min-height: 275px;
-
-		@media screen and (min-width: 768px) {
-			min-height: 375px;
-		}
+		min-height: 300px;
 
 		.popupProfile {
 			display: flex;
@@ -163,18 +159,17 @@
 		flex-direction: column;
 		max-width: 100%;
 
-		margin-top: 1rem;
+		margin-top: 1.35rem;
 
 		@media screen and (min-width: 640px) {
 			margin-top: 1.75rem;
 		}
 
 		@media screen and (min-width: 768px) {
-			margin-top: 2rem;
+			margin-top: 2.75rem;
 		}
 
 		@media screen and (min-width: 1024px) {
-			margin-top: 3rem;
 			max-width: 60%;
 		}
 
