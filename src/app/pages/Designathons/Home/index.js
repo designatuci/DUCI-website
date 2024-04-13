@@ -70,9 +70,9 @@ const Designathons = () => (
 				}}
 			/>
 
-			<div style={{ position: "absolute", bottom: "5%" }}>
+			<div style={{ position: "absolute", bottom: "10%" }}>
 				<Text size="XL" className="bold" color="black">
-					May 17-19, 2023
+					May 17-19, 2024
 				</Text>
 				<Space h="96" />
 				<Link to="/designathon/24" className="flex spaceChildren">
