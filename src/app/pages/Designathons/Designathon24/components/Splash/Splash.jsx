@@ -1,62 +1,16 @@
-import { memo, useEffect, useRef } from "react";
-import { ReactComponent as SplashLogo } from "./logo.svg";
+import { memo } from "react";
 import cn from "./Splash.module.scss";
 import clsx from "clsx";
-import anime from "animejs";
 
-import tl_clouds from "../../assets/graphics/splash/clouds.svg";
-import butterfly from "../../assets/graphics/splash/butterfly.svg";
-import bl_star_stripe from "../../assets/graphics/splash/bl_star_stripe.svg";
-import mr_cloud_stars from "../../assets/graphics/splash/mr_cloud_stars.svg";
-import br_star_stripe from "../../assets/graphics/splash/br_star_stripe.svg";
-
-import GridBackground from "../Backgrounds/GridBackground";
+import SplashGraphics from "./SplashGraphics";
+import SplashLogo from "./SplashLogo";
 
 const Splash = memo(() => {
-	const logoRef = useRef(null);
-	useEffect(() => {
-		anime({
-			targets: "path.word",
-			strokeDashoffset: [anime.setDashoffset, 0],
-			easing: "easeInOutSine",
-			duration: 2000,
-			delay: function (el, i) {
-				return i * 300;
-			},
-		});
-	}, []);
-
 	return (
 		<div className={cn.container}>
-			<GridBackground positions={[{ top: 0, left: 0 }]} isLight={true} />
+			<SplashGraphics />
 
-			<img
-				src={tl_clouds}
-				alt=""
-				className={clsx(cn.decoration, cn.tl_clouds, "wait flopL")}
-			/>
-			<img
-				src={butterfly}
-				alt=""
-				className={clsx(cn.decoration, cn.butterfly, "wait flopL")}
-			/>
-			<img
-				src={bl_star_stripe}
-				alt=""
-				className={clsx(cn.decoration, cn.bl_star_stripe, "wait flopL")}
-			/>
-			<img
-				src={mr_cloud_stars}
-				alt=""
-				className={clsx(cn.decoration, cn.mr_cloud_stars, "wait flopR")}
-			/>
-			<img
-				src={br_star_stripe}
-				alt=""
-				className={clsx(cn.decoration, cn.br_star_stripe, "wait flopR")}
-			/>
-
-			<SplashLogo ref={logoRef} className={cn.logo} />
+			<SplashLogo />
 
 			<div className={clsx(cn.info, "wait")}>
 				<div className={cn.time}>

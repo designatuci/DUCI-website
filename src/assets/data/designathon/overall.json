@@ -1,5 +1,35 @@
 [
 	{
+		"title": "Design-a-thon 2023",
+		"theme": "Community & Inclusivity",
+		"link": "23",
+		"image": "designathon-2023-logo.png",
+		"showcase": [
+			{
+				"title": "1st Place",
+				"image": "colorful.png",
+				"name": "Colorful",
+				"creators": [
+					"William Han",
+					"Megan Phi",
+					"Jayden Kang",
+					"Amy La"
+				],
+				"links": [],
+				"photoStyle": { "backgroundPosition": "top" }
+			},
+			{
+				"title": "2nd Place",
+				"image": "honeycomb.png",
+				"name": "Honeycomb",
+				"creators": ["Mandy Wu", "Lea Hidaka"],
+				"links": [],
+				"photoStyle": { "backgroundPosition": "top" }
+			}
+		],
+		"participants": "300+"
+	},
+	{
 		"title": "Design-a-thon 2022",
 		"theme": "Impact",
 		"link": "22",
@@ -16,10 +46,16 @@
 				"title": "2nd Place",
 				"image": "carbonology.jpg",
 				"name": "Carbonology",
-				"creators": ["Ashley Chang", "An Nguyen", "Ryan Yang", "Angel Yim"],
+				"creators": [
+					"Ashley Chang",
+					"An Nguyen",
+					"Ryan Yang",
+					"Angel Yim"
+				],
 				"links": []
 			}
-		]
+		],
+		"participants": "100+"
 	},
 	{
 		"title": "Design-a-thon 2021",
@@ -51,6 +87,7 @@
 					}
 				]
 			}
-		]
+		],
+		"participants": "100+"
 	}
 ]

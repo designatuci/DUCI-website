@@ -124,20 +124,24 @@
 	pointer-events: none;
 
 	max-width: 30%;
+
+	@media screen and (min-width: 800px) {
+		max-width: 20%;
+	}
 }
 
 .tl_clouds {
 	top: 0;
 	left: 0;
 
-	max-width: 60%;
+	max-width: 50%;
 
 	@media screen and (min-width: 475px) {
-		max-width: 50%;
+		max-width: 40%;
 	}
 
 	@media screen and (min-width: 640px) {
-		max-width: 25%;
+		max-width: 20%;
 	}
 
 	@media screen and (min-width: 1024px) {
@@ -151,7 +155,7 @@
 
 	@media screen and (min-width: 1024px) {
 		top: 30%;
-		max-width: 25%;
+		max-width: 15%;
 	}
 }
 
@@ -162,7 +166,7 @@
 
 .mr_cloud_stars {
 	top: unset;
-	bottom: 35%;
+	bottom: 32.5%;
 
 	right: 0;
 	max-width: 33.5%;
@@ -173,7 +177,7 @@
 	}
 
 	@media screen and (min-width: 1024px) {
-		top: 20%;
+		top: 15%;
 	}
 }
 
