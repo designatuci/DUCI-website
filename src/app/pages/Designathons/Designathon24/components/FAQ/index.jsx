@@ -34,9 +34,10 @@ const FAQ = () => {
 								q: "Who can attend?",
 								a: (
 									<p>
-										Any undergraduate student within the
-										United States (with an associated
-										institutional email) is able to{" "}
+										Any undergraduate OR graduate student
+										within the United States, with an
+										associated institutional (.edu) email is
+										able to{" "}
 										<a
 											target="_blank"
 											rel="noopener noreferrer"
