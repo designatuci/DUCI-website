@@ -13,9 +13,7 @@ const Splash = memo(() => {
 			<SplashLogo />
 
 			<div className={clsx(cn.info, "wait")}>
-				<div className={cn.time}>
-					May 17th 5:00 PM - May 19th 6:00 PM
-				</div>
+				<div className={cn.time}>May 17th - May 19th</div>
 				<div className={cn.wrapper}>
 					<div className={cn.border}>
 						<a
@@ -25,6 +23,26 @@ const Splash = memo(() => {
 							href="https://docs.google.com/forms/d/1dt6fiBAjGVi4M4PO3V2ZUkieRHR6fn6wWvC5E6RZoZM"
 						>
 							Apply as Designer
+						</a>
+					</div>
+					<div className={cn.border}>
+						<a
+							className={cn.app}
+							target="_blank"
+							rel="noreferrer noopener"
+							href=""
+						>
+							Apply as Mentor
+						</a>
+					</div>
+					<div className={cn.border}>
+						<a
+							className={cn.app}
+							target="_blank"
+							rel="noreferrer noopener"
+							href=""
+						>
+							Apply as Volunteer
 						</a>
 					</div>
 				</div>
