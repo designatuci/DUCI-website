@@ -59,7 +59,10 @@
 
 		.wrapper {
 			display: grid;
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(
+				2,
+				1fr
+			); // TODO: Turn into 3 columns when volunteer form is ready
 			column-gap: 20px;
 			row-gap: 10px;
 			max-width: 800px;
