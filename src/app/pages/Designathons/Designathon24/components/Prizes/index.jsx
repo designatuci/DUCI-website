@@ -33,7 +33,7 @@ const Prizes = () => {
 							<h6 className={cn.prizeHeader}>1st Place</h6>
 
 							<div className={cn.prizes}>
-								<p>$100 Visa Card</p>
+								<p>2nd Gen Airpods</p>
 								<p>
 									1:1 Mentorship/Career Discussion with judge
 									of your choice
@@ -55,7 +55,7 @@ const Prizes = () => {
 								<h6 className={cn.prizeHeader}>2nd Place</h6>
 
 								<div className={cn.prizes}>
-									<p>$50 Visa Card</p>
+									<p>Wireless Keyboard</p>
 									<p>
 										1:1 Mentorship/Career Discussion with
 										judge of your choice
@@ -74,7 +74,7 @@ const Prizes = () => {
 							>
 								<h6 className={cn.prizeHeader}>3rd Place</h6>
 								<div className={cn.prizes}>
-									<p>$25 Visa Card</p>
+									<p>Light-up Cat Lamp</p>
 									<p>
 										1:1 Mentorship/Career Discussion with
 										judge of your choice
