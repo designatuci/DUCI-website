@@ -35,16 +35,16 @@ const Splash = memo(() => {
 							Apply as Mentor
 						</a>
 					</div>
-					{/* <div className={cn.border}>
+					<div className={cn.border}>
 						<a
 							className={cn.app}
 							target="_blank"
 							rel="noreferrer noopener"
-							href=""
+							href="https://docs.google.com/forms/d/1g6CjdlOxet1fplwTCWQE8pZ-wKzHjku-t_a-bwRwK_Q/viewform"
 						>
 							Apply as Volunteer
 						</a>
-					</div> */}
+					</div>
 				</div>
 			</div>
 		</div>
