@@ -6,7 +6,7 @@ import { Section } from "app/Symbols";
 import notion from "../../assets/graphics/sponsors/notion.png";
 import FOF from "../../assets/graphics/sponsors/FOF.png";
 import odit from "../../assets/graphics/sponsors/odit.svg";
-import codazen from "../../assets/graphics/sponsors/codazen.png";
+import codazen from "../../assets/graphics/sponsors/codazen.jpg";
 import balsamiq from "../../assets/graphics/sponsors/balsamiq.png";
 import vgdc from "../../assets/graphics/sponsors/vgdc.png";
 import ctc from "../../assets/graphics/sponsors/ctc.png";
