@@ -6,6 +6,7 @@ import { Section } from "app/Symbols";
 import notion from "../../assets/graphics/sponsors/notion.png";
 import FOF from "../../assets/graphics/sponsors/FOF.png";
 import odit from "../../assets/graphics/sponsors/odit.svg";
+import codazen from "../../assets/graphics/sponsors/codazen.png";
 import balsamiq from "../../assets/graphics/sponsors/balsamiq.png";
 import vgdc from "../../assets/graphics/sponsors/vgdc.png";
 import ctc from "../../assets/graphics/sponsors/ctc.png";
@@ -41,6 +42,15 @@ const SPONSOR_DETAILS = [
 		link: "https://odit.uci.edu/",
 		img: odit,
 		alt: "UCI Office of Data and Information Technology",
+		tape: true,
+		mirrorTape: true,
+	},
+	{
+		id: 4,
+		backgroundImage: tilt_up,
+		link: "https://www.codazen.com/",
+		img: codazen,
+		alt: "Codazen",
 		tape: true,
 		mirrorTape: true,
 	},
