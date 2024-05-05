@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: 70px auto auto 1fr;
+    padding: 8px;
+    gap: 8px;
+
+    .percent {
+        font-weight: bold;
+    }
+
+    .label {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 8px;
+        color: var(--gray);
+
+        span {
+            color: #151515;
+        }
+
+        .box {
+            height: 16px;
+            width: 16px;
+            border-radius: 8px;
+        }
+    }
+
+    .date {
+        text-align: right;
+    }
+}

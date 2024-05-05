@@ -9,4 +9,15 @@
 	.underline {
 		text-decoration: underline;
 	}
+	.close {
+		position: absolute;
+		right: 20px;
+		background-color: transparent;
+		border: none;
+		color: white;
+		top: 0;
+		height: 100%;
+		font-size: 1.3em;
+		cursor: pointer;
+	}
 }

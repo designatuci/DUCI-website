@@ -1,0 +1,48 @@
+
+.centered {
+    text-align: center;
+}
+.page {
+    min-height: calc(100vh - 88px);
+    display: grid;
+    place-content: center;
+    box-sizing: border-box;
+
+    grid-auto-flow: row;
+    gap: 20px;
+    margin: 0 auto;
+
+    padding: 20px;
+    box-sizing: border-box;
+    
+
+    .container {
+        padding: 20px;
+        border: 2px solid var(--silver);
+        border-radius: 18px;
+
+        .split {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 20px;
+
+            .color {
+                height: 200px;
+                width: 200px;
+                border-radius: 8px;        
+                margin-bottom: 0px;
+            }
+
+            @media screen and (max-width: 900px) {
+                grid-template-columns: auto;
+                gap: 20px;
+
+                .color { 
+                    width: 100%;
+                    margin: 0 auto;
+                }
+
+            }
+        }
+    }
+}

@@ -29,6 +29,7 @@ import Designathon from "./pages/Designathons";
 import Hey from "./pages/Hey";
 import { HOUSES_SORTING_FORM } from "./pages/Houses/sections/Join";
 import { PROJECT_TEAMS_GOOGLE_FORM } from "./pages/ProjectTeams/ProjectTeams";
+import { ColorGame } from "./pages/ColorGame/ColorGame";
 
 function App() {
 	useScroll();
@@ -70,6 +71,8 @@ function App() {
 				<Route path="designathons/*" element={<Designathon />} />
 
 				<Route path="brand" element={<Brand />} />
+
+				<Route path="color-game" element={<ColorGame />} />
 
 				{/* Redirects */}
 				<Route

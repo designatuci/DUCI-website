@@ -37,11 +37,18 @@ const Resources = () => (
 						}}
 						className="wait dx show card flex left fill sky spaceChildrenSmall"
 					>
-						<Icon className={cn.icon} w="192" h="96" src={card.icon} />
+						<Icon
+							className={cn.icon}
+							w="192"
+							h="96"
+							src={card.icon}
+						/>
 						<Text size="L" className={`bold color ${card.main}`}>
 							{card.title}
 						</Text>
-						<Text className={`color ${card.accent}`}>{card.desc}</Text>
+						<Text className={`color ${card.accent}`}>
+							{card.desc}
+						</Text>
 					</TabComponent>
 				))}
 			</div>
