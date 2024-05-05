@@ -1,7 +1,6 @@
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 import cn from "./ColorGame.module.scss";
 import { Text } from "app/components";
-import { Section, Space } from "app/Symbols";
 import clsx from "clsx";
 import { Leaderboard } from "./components/Leaderboard/Leaderboard";
 import {
