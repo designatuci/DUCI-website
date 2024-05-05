@@ -58,9 +58,26 @@ export const HexColorInput = memo(function HexColorInput({
 		focusEndOfInput(input[0].current);
 	};
 
-	const handleChange = (index) => (event) => {
-		const userKeyInput = event.key.toUpperCase();
+	const handleInput = (index) => (event) => {
+		const userKeyInput = event.nativeEvent.data.toUpperCase();
 
+		if (!DIGITS.includes(userKeyInput)) return;
+
+		setGuess((prev) => {
+			const next = [...prev];
+			next[index] = userKeyInput;
+			return next;
+		});
+
+		if (index > 4) return;
+		focusEndOfInput(input[index + 1].current);
+	};
+
+	const handleChange = (index) => (event) => {
+		if (event.keyCode === 229) {
+			// really strange use case where chrome on android doesn't allow this method of input
+			return;
+		}
 		switch (event.key) {
 			case "Backspace":
 				if (index > 0 && !guess[index].length) {
@@ -84,18 +101,11 @@ export const HexColorInput = memo(function HexColorInput({
 				return;
 
 			default:
-				if (!DIGITS.includes(userKeyInput)) return;
-
-				setGuess((prev) => {
-					const next = [...prev];
-					next[index] = userKeyInput;
-					return next;
-				});
-
-				if (index > 4) return;
-				focusEndOfInput(input[index + 1].current);
+				// handle actual text input with the oninput handler
+				return;
 		}
 	};
+
 	return (
 		<form className={cn.container} onSubmit={handleSubmit}>
 			<div className={cn.input}>
@@ -108,6 +118,7 @@ export const HexColorInput = memo(function HexColorInput({
 				/>
 				{guess.map((digit, index) => (
 					<input
+						onInput={handleInput(index)}
 						key={index}
 						ref={input[index]}
 						type="text"
