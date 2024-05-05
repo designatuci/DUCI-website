@@ -2,8 +2,6 @@ const RANGE_PER_PIXEL_COLOR = 255;
 const TOTAL_RANGE_PER_PIXEL = RANGE_PER_PIXEL_COLOR * 3;
 
 export const generateReport = (actualHexCode, guessHexCode) => {
-	console.log(actualHexCode, guessHexCode);
-
 	const actualRGBValues = [
 		Number("0x" + actualHexCode.slice(0, 2).join("")),
 		Number("0x" + actualHexCode.slice(2, 4).join("")),
@@ -25,8 +23,6 @@ export const generateReport = (actualHexCode, guessHexCode) => {
 		(percentageDifference.reduce((acc, val) => acc + Math.abs(val), 0) /
 			TOTAL_RANGE_PER_PIXEL) *
 			100;
-
-	console.log(percentageDifference, similarityPercentage);
 
 	return {
 		actual: actualHexCode.join(""),
