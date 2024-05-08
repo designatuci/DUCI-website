@@ -22,8 +22,7 @@ const FridaySchedule = () => {
 					<p>
 						Please check in to confirm your attendance at True to
 						You!
-						<br />
-						<br />
+						<br /> <br />
 						If you are an in-person participant, check in at the
 						Crystal Cove Auditorium. If you are an online
 						participant, fill out the online check-in form!
@@ -35,7 +34,7 @@ const FridaySchedule = () => {
 				<div className={clsx(cn.info)}>
 					<div className={clsx(cn.titleContainer)}>
 						<div className={clsx(cn.title)}>
-							Team Formation Social (in-person)
+							Team Formation Social
 						</div>
 						<div className={cn.location}>
 							Crystal Cove Auditorium (Student Center)
@@ -96,7 +95,7 @@ const FridaySchedule = () => {
 				<div className={clsx(cn.info)}>
 					<div className={clsx(cn.titleContainer)}>
 						<div className={clsx(cn.title)}>
-							Intro to Figma Workshop (CTC)
+							Intro to Figma Workshop
 						</div>
 						<div className={cn.location}>DBH 6011</div>
 					</div>
@@ -105,10 +104,12 @@ const FridaySchedule = () => {
 				<div className={cn.description}>
 					<p>
 						Join us for an "Intro to Figma" Workshop where we will
-						cover the fundamentals of Figma. Throughout the session,
-						you will gain a comprehensive understanding of Figma's
-						interface, basic functionalities, and workflow,
-						empowering you to create stunning designs with ease!
+						cover the fundamentals of Figma.
+						<br /> <br />
+						Throughout the session, you will gain a comprehensive
+						understanding of Figma's interface, basic
+						functionalities, and workflow, empowering you to create
+						stunning designs with ease!
 					</p>
 					<br />
 					<p className={cn.host}>Hosted by Commit the Change</p>
@@ -129,13 +130,19 @@ const FridaySchedule = () => {
 				</div>
 				<div className={cn.description}>
 					<p>
-						Be yourself. Another piece of advice that’s just so much
-						easier said than done. Naheel was a lost and confused
-						business student trying to figure out how to embrace his
-						inner creative self, and build a life where he could do
-						the creative things that made him happy. Listen to an
-						illustrated story of how Naheel embraced his authentic
-						creative self, and got to where he is today.
+						Be yourself.
+						<br /> <br />
+						Another piece of advice that’s just so much easier said
+						than done.
+						<br /> <br />
+						Naheel was a lost and confused business student trying
+						to figure out how to embrace his inner creative self,
+						and build a life where he could do the creative things
+						that made him happy.
+						<br /> <br />
+						Listen to an illustrated story of how Naheel embraced
+						his authentic creative self, and got to where he is
+						today.
 					</p>
 					<br />
 					<p className={cn.host}>
@@ -209,8 +216,7 @@ const SaturdaySchedule = () => {
 						experience. This workshop will showcase the beauty of
 						research by providing tips on how you can navigate user
 						needs and market dynamics.
-						<br />
-						<br />
+						<br /> <br />
 						By using research and converting it to actionable
 						insights, you'll be better equipped to create solutions
 						that truly resonate with your audience. Whether you’re a
