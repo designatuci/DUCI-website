@@ -65,7 +65,7 @@ const FridaySchedule = () => {
 				<div className={cn.description}>
 					<p>Join us for True to You's Opening Ceremony!</p>
 					<br />
-					<p>
+					<p className={cn.host}>
 						Led by co-directors Jasmine Wu, Jay Sotelo, and Elise
 						Alinsug.
 					</p>
@@ -111,7 +111,7 @@ const FridaySchedule = () => {
 						empowering you to create stunning designs with ease!
 					</p>
 					<br />
-					<p>Hosted by Commit the Change</p>
+					<p className={cn.host}>Hosted by Commit the Change</p>
 				</div>
 			</div>
 
@@ -138,7 +138,9 @@ const FridaySchedule = () => {
 						creative self, and got to where he is today.
 					</p>
 					<br />
-					<p>Hosted by Naheel Jawaid (Product Designer @ Google)</p>
+					<p className={cn.host}>
+						Hosted by Naheel Jawaid (Product Designer @ Google)
+					</p>
 				</div>
 			</div>
 		</div>
@@ -217,7 +219,7 @@ const SaturdaySchedule = () => {
 						your Design-a-thon journey!
 					</p>
 					<br />
-					<p>Hosted by Wenting Zhu</p>
+					<p className={cn.host}>Hosted by Wenting Zhu</p>
 				</div>
 			</div>
 
@@ -262,7 +264,7 @@ const SaturdaySchedule = () => {
 						another.
 					</p>
 					<br />
-					<p>
+					<p className={cn.host}>
 						Hosted by Cassandra Hoo (Senior UX Designer @ The Lego
 						Group)
 					</p>
@@ -313,7 +315,7 @@ const SaturdaySchedule = () => {
 						supplies last)
 					</p>
 					<br />
-					<p>Hosted by Notion</p>
+					<p className={cn.host}>Hosted by Notion</p>
 				</div>
 			</div>
 
@@ -341,7 +343,9 @@ const SaturdaySchedule = () => {
 						and bring them to the next level.
 					</p>
 					<br />
-					<p>Hosted by Video Game Design Club (VGDC)</p>
+					<p className={cn.host}>
+						Hosted by Video Game Design Club (VGDC)
+					</p>
 				</div>
 			</div>
 
@@ -394,7 +398,7 @@ const SaturdaySchedule = () => {
 						examples.
 					</p>
 					<br />
-					<p>
+					<p className={cn.host}>
 						Hosted by Gresshaa Mehta (Senior Product Designer @
 						Microsoft)
 					</p>
@@ -560,8 +564,10 @@ const SundaySchedule = () => {
 						will be announced, alongside in-person awards!
 					</p>
 					<br />
-					Led by Design at UCI's Design-a-thon Directors, Jay Sotelo,
-					Jasmine Wu, & Elise Alinsug
+					<p className={cn.host}>
+						Led by Design at UCI's Design-a-thon Directors, Jay
+						Sotelo, Jasmine Wu, & Elise Alinsug
+					</p>
 				</div>
 			</div>
 
