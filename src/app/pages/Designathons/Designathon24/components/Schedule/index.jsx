@@ -368,9 +368,6 @@ const SaturdaySchedule = () => {
 						Come have some food before locking into the final
 						stretch of the event!
 					</p>
-					<br />
-					Led by Design at UCI's Design-a-thon Directors, Jay Sotelo,
-					Jasmine Wu, & Elise Alinsug
 				</div>
 			</div>
 
