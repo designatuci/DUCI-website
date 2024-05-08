@@ -1,5 +1,19 @@
 [
 	{
+		"title": "Cross-Collaboration Between Researcher and Designer",
+		"time": "2024-05-08T16:00",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "🌟 Curious about how researchers and designers collaborate in UX teams? Join us at our industry event, where experts from Warner Music 🎵 will share insights into their collaborative process within UX teams. Explore the dynamic synergy between these roles and how it drives innovation in user experience. Whether you're just starting out or are an experienced professional, you’ll gain valuable insights into effective teamwork and how cross-disciplinary collaboration can enhance your UX strategies. 🚀",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/7640924297"
+			}
+		]
+	},
+	{
 		"title": "House Design-Off",
 		"time": "2024-04-17T16:00",
 		"duration": "60",
@@ -15,7 +29,10 @@
 		"desc": " 🎨 Calling all designers! Wondering what post-grad life is like? Curious about working as a designer full-time? Join us for our Alumni Panel! 🌟 Listen to our panelists share their experience transitioning from UCI to industry, bootcamp, and grad school. See you there! 🚀",
 		"place": "Online",
 		"links": [
-			{ "label": "Zoom Link", "link": "https://uci.zoom.us/j/92016931400" }
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/92016931400"
+			}
 		]
 	},
 	{
