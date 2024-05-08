@@ -331,7 +331,7 @@ const SaturdaySchedule = () => {
 						<div className={clsx(cn.title)}>
 							Intro to Prototyping Workshop
 						</div>
-						<div className={cn.location}>DBH 6011 (Patio)</div>
+						<div className={cn.location}>DBH 6011</div>
 					</div>
 					<div className={cn.time}>3:45 PM → 4:30 PM</div>
 				</div>
