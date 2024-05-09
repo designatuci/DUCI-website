@@ -16,11 +16,8 @@ const Nav = () => {
 	if (pathname === "/designathon22/" || pathname === "/designathon22")
 		return <></>;
 
-	// Catches paths with text after designathon/ or designathons/
-	const isDesignathon = /designathons?\/\w+/.test(pathname);
-
 	return (
-		<nav className={isDesignathon ? null : "stickyNav"}>
+		<nav>
 			<div id="nav" mobile-expand={mobileExpand ? "true" : "false"}>
 				<div className="wrapper center wide">
 					<div className="center row group left">
