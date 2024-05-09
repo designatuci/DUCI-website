@@ -42,11 +42,11 @@
 		text-align: center;
 		position: absolute;
 		place-self: center;
-		bottom: 5%;
+		bottom: 25%;
 		z-index: 110;
 
 		@media screen and (min-width: 851px) {
-			bottom: 15%;
+			bottom: 20%;
 		}
 
 		.time {
@@ -54,7 +54,7 @@
 			grid-column: 1/3;
 			font-family: "Gluten", cursive;
 			font-weight: 600;
-			margin: 0 2rem 1rem;
+			margin: 0 2rem em;
 		}
 
 		.wrapper {
