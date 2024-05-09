@@ -18,6 +18,7 @@ const BACKGROUND_MAP = {
 	4: cream,
 	5: peach_cream,
 	6: peach_cream,
+	7: cream_hot_pink,
 };
 
 export const Rules = () => (
