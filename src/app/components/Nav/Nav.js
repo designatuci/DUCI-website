@@ -32,7 +32,12 @@ const Nav = () => {
 										href={link}
 										className="item social center"
 									>
-										<Icon w="24" h="24" hoverable src={icons.nav} />
+										<Icon
+											w="24"
+											h="24"
+											hoverable
+											src={icons.nav}
+										/>
 									</a>
 								))}
 							</>
@@ -73,8 +78,17 @@ const Nav = () => {
 							<>
 								<Space w="8" />
 								{socials.map(({ name, icons, link }) => (
-									<a key={name} href={link} className="item social center">
-										<Icon w="24" h="24" hoverable src={icons.nav} />
+									<a
+										key={name}
+										href={link}
+										className="item social center"
+									>
+										<Icon
+											w="24"
+											h="24"
+											hoverable
+											src={icons.nav}
+										/>
 									</a>
 								))}
 							</>
@@ -112,7 +126,10 @@ const Nav = () => {
 								<Text size="L">{label}</Text>
 							</Link>
 						))}
-						<Link to="/join" className="item center button fill sky">
+						<Link
+							to="/join"
+							className="item center button fill sky"
+						>
 							<Text size="L">Join</Text>
 						</Link>
 					</div>
