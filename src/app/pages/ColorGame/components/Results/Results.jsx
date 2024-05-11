@@ -16,6 +16,7 @@ const TIPS = [
 	"To get a pastel color, make sure all three colors values are high",
 	"To get a neon color, make sure your accent color/s is high but low in the others",
 	"RGB color mixing works opposite of traditional print",
+	"Hex codes are split into 3 colors: R, G and B",
 ];
 
 const convertPixelValueDiffToReadablePercent = (pixelValue) =>
