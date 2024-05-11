@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { memo, useRef } from "react";
+import { memo } from "react";
 import cn from "./Instructions.module.scss";
 import { Text } from "app/components";
 import COLOR_BREAKDOWN from "./breakdown.png";
