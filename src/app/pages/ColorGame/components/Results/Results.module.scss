@@ -8,6 +8,10 @@
     width: 100%;
     padding: 40px;
 
+    @media screen and (max-width: 900px) {
+        padding: 20px;
+    }
+
     .split {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -21,7 +25,7 @@
 
             .description {
                 display: grid;
-                place-content:  center start;
+                place-content: center start;
             }
         }
 
@@ -32,19 +36,21 @@
 
             .description {
                 display: grid;
-                place-content:  center end;
+                place-content: center end;
             }
         }
 
         .color {
             font-size: 3em;
         }
+
         .box {
             height: 120px;
             width: 120px;
             border-radius: 8px;
 
         }
+
         @media screen and (max-width: 900px) {
             grid-template-columns: 1fr;
 
@@ -52,10 +58,41 @@
                 height: 60px;
                 width: 60px;
             }
-            // .right 
 
             .color {
                 font-size: 2em;
+            }
+        }
+    }
+
+    .analysis {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 30px;
+
+        margin-top: 20px;
+        text-align: left;
+        font-size: 1.2em;
+        line-height: 1.2em;
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+        }
+
+        span {
+            color: var(--gray);
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        .tips {
+            color: #555;
+            text-align: right;
+
+            @media screen and (max-width: 900px) {
+                text-align: left;
+                
             }
         }
     }
