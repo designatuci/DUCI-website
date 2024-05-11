@@ -1,4 +1,4 @@
-import { createRef, memo, useMemo, useState } from "react";
+import { createRef, memo, useEffect, useMemo, useState } from "react";
 import cn from "./HexColorInput.module.scss";
 import clsx from "clsx";
 import { generateReport } from "./generateReport";
@@ -36,9 +36,14 @@ export const HexColorInput = memo(function HexColorInput({
 	resetColor,
 }) {
 	const [guess, setGuess] = useState(EMPTY_GUESS);
+	const [showErrorMessage, setErrorMessage] = useState(false);
 	const [input] = useState(() => Array.from({ length: 6 }, createRef));
 
 	const guessIsValid = useMemo(() => guess.join("").length === 6, [guess]);
+
+	useEffect(() => {
+		if (showErrorMessage) setTimeout(() => setErrorMessage(false), 2500);
+	}, [showErrorMessage]);
 
 	const ignoreEvent = (event) => {
 		event.preventDefault();
@@ -61,7 +66,7 @@ export const HexColorInput = memo(function HexColorInput({
 	const handleInput = (index) => (event) => {
 		const userKeyInput = event.nativeEvent.data.toUpperCase();
 
-		if (!DIGITS.includes(userKeyInput)) return;
+		if (!DIGITS.includes(userKeyInput)) return setErrorMessage(true);
 
 		setGuess((prev) => {
 			const next = [...prev];
@@ -96,7 +101,7 @@ export const HexColorInput = memo(function HexColorInput({
 				return;
 
 			case "ArrowRight":
-				if (index > 5) return;
+				if (index > 4) return;
 				focusEndOfInput(input[index + 1].current);
 				return;
 
@@ -143,6 +148,9 @@ export const HexColorInput = memo(function HexColorInput({
 				>
 					<img alt="refresh" src={REFRESH_ICON} />
 				</button>
+			</div>
+			<div className={clsx(cn.error, showErrorMessage && cn.visible)}>
+				Only 0-9 and A-F are valid hex values.
 			</div>
 		</form>
 	);

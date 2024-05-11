@@ -9,6 +9,7 @@ import {
 } from "./components/HexColorInput/HexColorInput";
 import { Results } from "./components/Results/Results";
 import Auto from "react-animate-height";
+import { Instructions } from "./components/Instructions/Instructions";
 const generateRandomHexString = () => {
 	const randomHex = [];
 
@@ -24,6 +25,7 @@ export const ColorGame = memo(function ColorGame() {
 	const [color, setColor] = useState(generateRandomHexString);
 	const [report, setReport] = useState();
 	const [height, setHeight] = useState("auto");
+	const contentRef = useRef(null);
 
 	const resetColor = useCallback(
 		() => setColor(generateRandomHexString()),
@@ -41,7 +43,6 @@ export const ColorGame = memo(function ColorGame() {
 
 		return () => resizeObserver.disconnect();
 	}, []);
-	const contentRef = useRef(null);
 
 	return (
 		<div className={cn.page}>
@@ -72,6 +73,7 @@ export const ColorGame = memo(function ColorGame() {
 				{report && <Results report={report} />}
 			</Auto>
 			<Leaderboard report={report} />
+			<Instructions />
 		</div>
 	);
 });

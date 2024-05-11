@@ -1,6 +1,62 @@
 .container {
     text-align: center;
-    margin: 40px;
     display: grid;
-    gap: 8px;
+    margin-top: 20px;
+
+    background-color: var(--silver);
+    border-radius: 8px;
+    width: 100%;
+    padding: 40px;
+
+    .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding-top: 20px;
+
+        .left {
+            text-align: left;
+            display: grid;
+            grid-template-columns: 1fr auto;
+
+            .description {
+                display: grid;
+                place-content:  center start;
+            }
+        }
+
+        .right {
+            text-align: right;
+            display: grid;
+            grid-template-columns: auto 1fr;
+
+            .description {
+                display: grid;
+                place-content:  center end;
+            }
+        }
+
+        .color {
+            font-size: 3em;
+        }
+        .box {
+            height: 120px;
+            width: 120px;
+            border-radius: 8px;
+
+        }
+        @media screen and (max-width: 900px) {
+            grid-template-columns: 1fr;
+
+            .box {
+                height: 60px;
+                width: 60px;
+            }
+            // .right 
+
+            .color {
+                font-size: 2em;
+            }
+        }
+    }
 }

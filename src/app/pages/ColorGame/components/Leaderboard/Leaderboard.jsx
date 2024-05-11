@@ -6,7 +6,7 @@ import Auto from "react-animate-height";
 import { Text } from "app/components";
 import { ScoreItem } from "./components/ScoreItem";
 
-const PADDING = 40;
+const PADDING = 16;
 const HIGHSCORE_LOCALSTORAGE_KEY = "@duci/color-game-highscore";
 
 export const Leaderboard = memo(function Leaderboard({ report }) {
@@ -45,16 +45,12 @@ export const Leaderboard = memo(function Leaderboard({ report }) {
 	}, []);
 
 	return (
-		<Auto
-			duration={500}
-			height={height}
-			className={clsx(cn.container, "slim")}
-		>
-			<div ref={contentRef}>
-				<Text color="blue" className={clsx(cn.title, "bold")} size="L">
-					High Scores
-				</Text>
-				<div className={cn.list}>
+		<div className={clsx(cn.container, "slim")}>
+			<Text color="blue" className={clsx(cn.title, "bold")} size="L">
+				High Scores
+			</Text>
+			<Auto duration={500} height={height} className={clsx(cn.list)}>
+				<div ref={contentRef}>
 					{!highscores.length && (
 						<div className={cn.empty}>
 							No previous scores to show.
@@ -64,7 +60,7 @@ export const Leaderboard = memo(function Leaderboard({ report }) {
 						<ScoreItem key={score.timestamp} report={score} />
 					))}
 				</div>
-			</div>
-		</Auto>
+			</Auto>
+		</div>
 	);
 });

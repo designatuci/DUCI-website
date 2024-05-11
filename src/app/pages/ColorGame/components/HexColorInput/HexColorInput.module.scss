@@ -4,6 +4,7 @@
     grid-template-columns: auto auto;
     gap: 20px;
     min-width: 600px;
+    transition: width 250ms;
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: auto;
@@ -16,7 +17,7 @@
         }
 
     }
-    
+
     .actions {
         display: grid;
         grid-template-columns: auto auto;
@@ -27,7 +28,7 @@
         display: grid;
         grid-template-columns: repeat(7, 32px);
         gap: 8px;
-        
+
         input {
             border: none;
             border-bottom: 2px solid var(--gray);
@@ -37,15 +38,15 @@
             &::placeholder {
                 opacity: 0.1;
             }
-    
+
             &.underline {
                 color: var(--gray);
                 border: none;
             }
         }
     }
-    
-    button{
+
+    button {
         border: 2px solid var(--silver);
         padding: 0 20px;
         border-radius: 8px;
@@ -57,12 +58,12 @@
             color: var(--silver);
             font-weight: bold;
             cursor: not-allowed;
-    
+
             &.allowed {
                 color: var(--green);
                 border-color: var(--green);
                 cursor: pointer;
-    
+
                 &:hover {
                     background-color: var(--green);
                     color: var(--white);
@@ -83,5 +84,27 @@
             }
         }
 
+    }
+
+    .error {
+        display: grid;
+        grid-column: 1 / 3;
+        color: transparent;
+
+        transition: color 250ms;
+        font-size: 0.9em;
+        text-align: center;
+
+        height: 0;
+        overflow: visible;
+
+        &.visible {
+            color: var(--red);
+        }
+
+        @media screen and (max-width: 1000px) {
+            height: auto;
+            grid-column: 1/ 2;
+        }
     }
 }
