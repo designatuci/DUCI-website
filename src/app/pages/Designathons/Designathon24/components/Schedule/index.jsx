@@ -78,7 +78,7 @@ const FridaySchedule = () => {
 			<div className={cn.event}>
 				<div className={clsx(cn.info)}>
 					<div className={clsx(cn.titleContainer)}>
-						<div className={clsx(cn.title)}>Dinner Served!</div>
+						<div className={clsx(cn.title)}>Dinner Served</div>
 						<div className={cn.location}>DBH 6011 (Patio)</div>
 					</div>
 					<div className={cn.time}>6:30 PM → 7:30 PM</div>
