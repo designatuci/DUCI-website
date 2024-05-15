@@ -166,6 +166,7 @@
 		background-color: #ffdce4;
 		font-size: 1.5rem;
 		color: var(--des24-peach);
+		cursor: pointer;
 	}
 
 	.friday {
@@ -186,5 +187,43 @@
 	.selected {
 		background-color: var(--des24-peach);
 		color: #ffdce4;
+	}
+}
+
+.zoomButton {
+	font-size: 1.25rem;
+	padding: 12px 24px;
+	border-radius: 999px;
+	border: 0;
+	background-color: var(--des24-hot-pink);
+	color: var(--des24-cream);
+	transition: 150ms;
+	width: fit-content;
+	margin-top: 40px;
+	position: relative;
+
+	& > p {
+		white-space: nowrap;
+		font-weight: bold;
+	}
+
+	&.beforeDate {
+		cursor: initial;
+		background-color: transparent;
+		border: 2px dotted var(--des24-cream);
+	}
+
+	&.afterDate {
+		background-color: var(--des24-hot-pink);
+		cursor: pointer;
+
+		&:hover {
+			color: var(--des24-cream);
+			opacity: 80%;
+		}
+
+		& > p {
+			cursor: pointer;
+		}
 	}
 }
