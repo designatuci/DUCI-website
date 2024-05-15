@@ -430,7 +430,7 @@ const SundaySchedule = () => {
 				</div>
 				<div className={cn.description}>
 					<p>
-						Good morning designers and congrats on finishing! your
+						Good morning designers and congrats on finishing your
 						designs!
 						<br /> <br />
 						If you are an in-person participant, check in at Donald
