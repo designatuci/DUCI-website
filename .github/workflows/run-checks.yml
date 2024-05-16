@@ -10,7 +10,7 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  run-checks:
     runs-on: ubuntu-latest
 
     steps:
