@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState, useMemo, useCallback } from "react";
+
 import { Section } from "app/Symbols";
 import clsx from "clsx";
 import cn from "./Schedule.module.scss";
@@ -63,12 +64,16 @@ const FridaySchedule = () => {
 				</div>
 				<div className={cn.description}>
 					<p>Join us for True to You's Opening Ceremony!</p>
-					<br />
 					<p className={cn.host}>
 						Led by co-directors Jasmine Wu, Jay Sotelo, and Elise
 						Alinsug.
 					</p>
 				</div>
+
+				<ZoomButton
+					date={new Date(2024, 4, 17, 16, 30)}
+					eventType={"ceremony"}
+				/>
 			</div>
 
 			<div className={cn.important}>
@@ -111,9 +116,10 @@ const FridaySchedule = () => {
 						functionalities, and workflow, empowering you to create
 						stunning designs with ease!
 					</p>
-					<br />
 					<p className={cn.host}>Hosted by Commit the Change</p>
 				</div>
+
+				<ZoomButton date={new Date(2024, 4, 17, 18, 40)} />
 			</div>
 
 			<div className={cn.important}>9:00 PM | Venue Closes</div>
@@ -144,11 +150,12 @@ const FridaySchedule = () => {
 						his authentic creative self, and got to where he is
 						today.
 					</p>
-					<br />
 					<p className={cn.host}>
 						Hosted by Naheel Jawaid (Product Designer @ Google)
 					</p>
 				</div>
+
+				<ZoomButton date={new Date(2024, 4, 17, 21, 40)} />
 			</div>
 		</div>
 	);
@@ -224,9 +231,10 @@ const SaturdaySchedule = () => {
 						for the first time, this workshop will empower you on
 						your Design-a-thon journey!
 					</p>
-					<br />
 					<p className={cn.host}>Hosted by Wenting Zhu</p>
 				</div>
+
+				<ZoomButton date={new Date(2024, 4, 18, 11, 30)} />
 			</div>
 
 			<div className={cn.event}>
@@ -348,11 +356,12 @@ const SaturdaySchedule = () => {
 						animations, to help you get hands on with your designs
 						and bring them to the next level.
 					</p>
-					<br />
 					<p className={cn.host}>
 						Hosted by Video Game Design Club (VGDC)
 					</p>
 				</div>
+
+				<ZoomButton date={new Date(2024, 4, 18, 15, 45)} />
 			</div>
 
 			<div className={cn.event}>
@@ -400,12 +409,13 @@ const SaturdaySchedule = () => {
 						differences by looking at case studies of real world
 						examples.
 					</p>
-					<br />
 					<p className={cn.host}>
 						Hosted by Gresshaa Mehta (Senior Product Designer @
 						Microsoft)
 					</p>
 				</div>
+
+				<ZoomButton date={new Date(2024, 4, 18, 19, 10)} />
 			</div>
 
 			<div className={cn.important}>9:00 PM | Venue Closes</div>
@@ -531,6 +541,8 @@ const SundaySchedule = () => {
 						3 teams!
 					</p>
 				</div>
+
+				<ZoomButton date={new Date(2024, 4, 19, 13, 30)} />
 			</div>
 
 			<div className={cn.event}>
@@ -566,12 +578,16 @@ const SundaySchedule = () => {
 						The final Closing Ceremony of True to You! Final winners
 						will be announced, alongside in-person awards!
 					</p>
-					<br />
 					<p className={cn.host}>
 						Led by Design at UCI's Design-a-thon Directors, Jay
 						Sotelo, Jasmine Wu, & Elise Alinsug
 					</p>
 				</div>
+
+				<ZoomButton
+					date={new Date(2024, 4, 19, 17, 0)}
+					eventType={"ceremony"}
+				/>
 			</div>
 
 			<div className={cn.important}>6:00 PM | Design-a-thon Ends</div>
@@ -637,6 +653,53 @@ const DateToggle = ({ handleSelect, defaultDay }) => {
 				Sun
 			</button>
 		</div>
+	);
+};
+
+const ZoomButton = ({ date, eventType }) => {
+	const [isUpcoming, setIsUpcoming] = useState(date > new Date());
+
+	const handleClick = useCallback(() => {
+		if (!isUpcoming) {
+			window.open(
+				eventType === "ceremony"
+					? "https://uci.zoom.us/j/92344530635"
+					: "https://uci.zoom.us/j/94772751120",
+				"_blank",
+			);
+		}
+	}, [eventType, isUpcoming]);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setIsUpcoming(date > new Date());
+		}, 1000);
+
+		return () => clearInterval(interval);
+	}, [date]);
+
+	const buttonClassName = useMemo(() => {
+		return clsx(cn.zoomButton, isUpcoming ? cn.beforeDate : cn.afterDate);
+	}, [isUpcoming]);
+
+	const buttonText = useMemo(() => {
+		return isUpcoming ? "Zoom Link Posted Soon" : "Join Zoom";
+	}, [isUpcoming]);
+
+	const ariaLabel = useMemo(() => {
+		return isUpcoming
+			? "Zoom link will be posted soon"
+			: "Join Zoom meeting in a new tab";
+	}, [isUpcoming]);
+
+	return (
+		<button
+			className={buttonClassName}
+			onClick={handleClick}
+			aria-label={ariaLabel}
+		>
+			<p>{buttonText}</p>
+		</button>
 	);
 };
 
