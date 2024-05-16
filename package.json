@@ -23,7 +23,8 @@
 		"postbuild": "cp build/index.html build/404.html",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"format": "npx prettier --write ."
+		"format": "npx prettier --write .",
+		"lint": "eslint src"
 	},
 	"eslintConfig": {
 		"extends": [

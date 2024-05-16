@@ -27,3 +27,6 @@ jobs:
       
       - name: Build React project
         run: npm run build
+
+      - name: Run linter
+        run: npm run lint
