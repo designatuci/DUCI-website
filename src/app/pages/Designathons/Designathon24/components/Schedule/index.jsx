@@ -598,9 +598,9 @@ const SundaySchedule = () => {
 const calculateDefaultDay = () => {
 	const currentDate = new Date();
 
-	if (currentDate < new Date(2024, 4, 17)) {
+	if (currentDate < new Date(2024, 4, 18)) {
 		return "Friday";
-	} else if (currentDate < new Date(2024, 4, 18)) {
+	} else if (currentDate < new Date(2024, 4, 19)) {
 		return "Saturday";
 	} else {
 		return "Sunday";
