@@ -108,7 +108,7 @@ const Prizes = () => {
 
 								<div className={cn.prizes}>
 									<p>Lego Sets</p>
-									<p>Figma Pins</p>
+									<p>Pixel Perf Merch</p>
 									<p>Design at UCI Stickers</p>
 								</div>
 							</div>
@@ -126,7 +126,7 @@ const Prizes = () => {
 
 								<div className={cn.prizes}>
 									<p>Lego Sets</p>
-									<p>Figma Pins</p>
+									<p>Pixel Perf Merch</p>
 									<p>Design at UCI Stickers</p>
 								</div>
 							</div>
