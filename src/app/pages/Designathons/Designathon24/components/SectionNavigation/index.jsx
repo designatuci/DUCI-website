@@ -1,16 +1,16 @@
-// import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import cn from "./SectionNavigation.module.scss";
 
 const SectionNavigation = () => {
-	// const [currentTime, setCurrentTime] = useState(() => new Date().getTime());
+	const [currentTime, setCurrentTime] = useState(() => new Date().getTime());
 
-	// useEffect(() => {
-	// 	const timer = setInterval(() => {
-	// 		setCurrentTime(new Date().getTime());
-	// 	}, 1000);
+	useEffect(() => {
+		const timer = setInterval(() => {
+			setCurrentTime(new Date().getTime());
+		}, 1000);
 
-	// 	return () => clearInterval(timer);
-	// }, []);
+		return () => clearInterval(timer);
+	}, []);
 
 	const scrollToSection = (id) => {
 		window.scrollTo({
@@ -45,21 +45,21 @@ const SectionNavigation = () => {
 			</div>
 
 			<div className={cn.linkButtons}>
-				{/* {currentTime >
-					new Date(
-						"Feb 24 2023 19:00:00 GMT-0800 (Pacific Standard Time)",
-					).getTime() && (
+				{currentTime > new Date(2024, 4, 17, 17, 30).getTime() && (
 					<a
 						className={cn.item}
 						style={{
 							backgroundColor: "var(--des24-pink)",
 							color: "var(--des24-cream)",
 						}}
-						href=" https://drive.google.com/file/d/1oZyJ3sv1O-JwIuaLdXqAUbpQ-pTtlL1o/view?usp=drivesdk"
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://drive.google.com/file/d/1-ukGX1LUc8NtjZpjR1CSW_p1dsP0sHgS/view"
 					>
 						<p>Challenge Brief</p>
 					</a>
 				)}
+
 				<a
 					className={cn.item}
 					style={{
@@ -68,10 +68,10 @@ const SectionNavigation = () => {
 					}}
 					target="_blank"
 					rel="noopener noreferrer"
-					href="https://forms.gle/hJmEGwbSc6mhqw9QA"
+					href="https://drive.google.com/file/d/16pPV0akDO-dMmDiPptWOdiBPETkGuw5o/view"
 				>
-					<p>Submission Form</p>
-				</a> */}
+					<p>Handbook</p>
+				</a>
 			</div>
 		</div>
 	);
