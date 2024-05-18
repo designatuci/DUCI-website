@@ -71,7 +71,8 @@ const FridaySchedule = () => {
 				</div>
 
 				<ZoomButton
-					date={new Date(2024, 4, 17, 16, 30)}
+					start={new Date(2024, 4, 17, 16, 30)}
+					duration={60}
 					eventType={"ceremony"}
 				/>
 			</div>
@@ -119,7 +120,10 @@ const FridaySchedule = () => {
 					<p className={cn.host}>Hosted by Commit the Change</p>
 				</div>
 
-				<ZoomButton date={new Date(2024, 4, 17, 18, 40)} />
+				<ZoomButton
+					start={new Date(2024, 4, 17, 18, 40)}
+					duration={45}
+				/>
 			</div>
 
 			<div className={cn.important}>9:00 PM | Venue Closes</div>
@@ -155,7 +159,10 @@ const FridaySchedule = () => {
 					</p>
 				</div>
 
-				<ZoomButton date={new Date(2024, 4, 17, 21, 40)} />
+				<ZoomButton
+					start={new Date(2024, 4, 17, 21, 40)}
+					duration={55}
+				/>
 			</div>
 		</div>
 	);
@@ -234,7 +241,10 @@ const SaturdaySchedule = () => {
 					<p className={cn.host}>Hosted by Wenting Zhu</p>
 				</div>
 
-				<ZoomButton date={new Date(2024, 4, 18, 11, 30)} />
+				<ZoomButton
+					start={new Date(2024, 4, 18, 11, 30)}
+					duration={45}
+				/>
 			</div>
 
 			<div className={cn.event}>
@@ -361,7 +371,10 @@ const SaturdaySchedule = () => {
 					</p>
 				</div>
 
-				<ZoomButton date={new Date(2024, 4, 18, 15, 45)} />
+				<ZoomButton
+					start={new Date(2024, 4, 18, 15, 45)}
+					duration={45}
+				/>
 			</div>
 
 			<div className={cn.event}>
@@ -415,7 +428,10 @@ const SaturdaySchedule = () => {
 					</p>
 				</div>
 
-				<ZoomButton date={new Date(2024, 4, 18, 19, 10)} />
+				<ZoomButton
+					start={new Date(2024, 4, 18, 19, 10)}
+					duration={45}
+				/>
 			</div>
 
 			<div className={cn.important}>9:00 PM | Venue Closes</div>
@@ -542,7 +558,10 @@ const SundaySchedule = () => {
 					</p>
 				</div>
 
-				<ZoomButton date={new Date(2024, 4, 19, 13, 30)} />
+				<ZoomButton
+					start={new Date(2024, 4, 19, 13, 30)}
+					duration={90}
+				/>
 			</div>
 
 			<div className={cn.event}>
@@ -585,7 +604,8 @@ const SundaySchedule = () => {
 				</div>
 
 				<ZoomButton
-					date={new Date(2024, 4, 19, 17, 0)}
+					start={new Date(2024, 4, 19, 17, 0)}
+					duration={60}
 					eventType={"ceremony"}
 				/>
 			</div>
@@ -656,11 +676,14 @@ const DateToggle = ({ handleSelect, defaultDay }) => {
 	);
 };
 
-const ZoomButton = ({ date, eventType }) => {
-	const [isUpcoming, setIsUpcoming] = useState(date > new Date());
+const ZoomButton = ({ start, duration, eventType, recording }) => {
+	const [isUpcoming, setIsUpcoming] = useState(start > new Date());
+	const [isOver, setIsOver] = useState(false);
 
 	const handleClick = useCallback(() => {
-		if (!isUpcoming) {
+		if (isOver && recording) {
+			window.open(recording, "_blank");
+		} else if (!isUpcoming) {
 			window.open(
 				eventType === "ceremony"
 					? "https://uci.zoom.us/j/92344530635"
@@ -668,29 +691,43 @@ const ZoomButton = ({ date, eventType }) => {
 				"_blank",
 			);
 		}
-	}, [eventType, isUpcoming]);
+	}, [eventType, isOver, isUpcoming, recording]);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setIsUpcoming(date > new Date());
+			setIsUpcoming(start > new Date());
+
+			const end = new Date(start.getTime() + duration * 60000); // minutes to milliseconds
+
+			setIsOver(new Date() > end);
 		}, 1000);
 
 		return () => clearInterval(interval);
-	}, [date]);
+	}, [duration, start]);
 
 	const buttonClassName = useMemo(() => {
 		return clsx(cn.zoomButton, isUpcoming ? cn.beforeDate : cn.afterDate);
 	}, [isUpcoming]);
 
 	const buttonText = useMemo(() => {
-		return isUpcoming ? "Zoom Link Posted Soon" : "Join Zoom";
-	}, [isUpcoming]);
+		return isOver
+			? "Zoom Recording"
+			: isUpcoming
+				? "Zoom Link Posted Soon"
+				: "Join Zoom";
+	}, [isOver, isUpcoming]);
 
 	const ariaLabel = useMemo(() => {
-		return isUpcoming
-			? "Zoom link will be posted soon"
-			: "Join Zoom meeting in a new tab";
-	}, [isUpcoming]);
+		return isOver
+			? "Watch Zoom recording in a new tab"
+			: isUpcoming
+				? "Zoom link will be posted soon"
+				: "Join Zoom meeting in a new tab";
+	}, [isOver, isUpcoming]);
+
+	if (isOver && !recording) {
+		return null;
+	}
 
 	return (
 		<button
