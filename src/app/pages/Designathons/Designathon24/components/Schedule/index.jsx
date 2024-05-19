@@ -676,9 +676,15 @@ const DateToggle = ({ handleSelect, defaultDay }) => {
 	);
 };
 
+function addDuration(start, duration) {
+	return new Date(start.getTime() + duration * 60000); // minutes to milliseconds
+}
+
 const ZoomButton = ({ start, duration, eventType, recording }) => {
 	const [isUpcoming, setIsUpcoming] = useState(start > new Date());
-	const [isOver, setIsOver] = useState(false);
+	const [isOver, setIsOver] = useState(
+		new Date() > addDuration(start, duration),
+	);
 
 	const handleClick = useCallback(() => {
 		if (isOver && recording) {
@@ -697,9 +703,7 @@ const ZoomButton = ({ start, duration, eventType, recording }) => {
 		const interval = setInterval(() => {
 			setIsUpcoming(start > new Date());
 
-			const end = new Date(start.getTime() + duration * 60000); // minutes to milliseconds
-
-			setIsOver(new Date() > end);
+			setIsOver(new Date() > addDuration(start, duration));
 		}, 1000);
 
 		return () => clearInterval(interval);
