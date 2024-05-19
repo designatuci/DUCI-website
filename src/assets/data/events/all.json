@@ -1,5 +1,19 @@
 [
 	{
+		"title": "Design Career Exploration Panel",
+		"time": "2024-05-22T16:00",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "🚀 Join us for the Design Career Exploration Panel! 🎨✨ 🌟 Curious about the different kinds of jobs within the design industry? Discover the diverse career paths in design with insights from industry experts who have excelled in various roles and sectors. Hear from experienced designers and researchers about UI/UX, graphic design, and more. Gain practical advice on integrating research into design practice and leveraging interdisciplinary skills for success.",
+		"place": "Online",
+		"links": [
+			{
+				"label": "Zoom Link",
+				"link": "https://uci.zoom.us/j/7640924297"
+			}
+		]
+	},
+	{
 		"title": "House Social",
 		"time": "2024-05-15T16:00",
 		"duration": "60",
