@@ -1,4 +1,4 @@
-import { useState, memo } from "react";
+import { useState, memo, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { Text } from "app/components";
@@ -11,9 +11,9 @@ const Nav = () => {
 	const { pathname } = useLocation();
 	const [mobileExpand, setMobileExpand] = useState(false);
 
-	const toggleMobileExpand = () => {
+	const toggleMobileExpand = useCallback(() => {
 		setMobileExpand(!mobileExpand);
-	};
+	}, [mobileExpand]);
 
 	if (pathname === "/designathon22/" || pathname === "/designathon22")
 		return <></>;
