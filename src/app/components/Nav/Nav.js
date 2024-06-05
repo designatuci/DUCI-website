@@ -1,4 +1,4 @@
-import { useState, memo } from "react";
+import { useState, memo, useCallback } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { Text } from "app/components";
@@ -10,9 +10,11 @@ import "./Nav.scss";
 const Nav = () => {
 	const { pathname } = useLocation();
 	const [mobileExpand, setMobileExpand] = useState(false);
-	const toggleMobileExpand = () => {
+
+	const toggleMobileExpand = useCallback(() => {
 		setMobileExpand(!mobileExpand);
-	};
+	}, [mobileExpand]);
+
 	if (pathname === "/designathon22/" || pathname === "/designathon22")
 		return <></>;
 
@@ -122,13 +124,19 @@ const Nav = () => {
 							{ label: "Contact", url: "/contact" },
 							{ label: "Houses", url: "/houses" },
 						].map(({ label, url }) => (
-							<Link key={url} to={url} className="item center">
+							<Link
+								key={url}
+								to={url}
+								className="item center"
+								onClick={toggleMobileExpand}
+							>
 								<Text size="L">{label}</Text>
 							</Link>
 						))}
 						<Link
 							to="/join"
 							className="item center button fill sky"
+							onClick={toggleMobileExpand}
 						>
 							<Text size="L">Join</Text>
 						</Link>
