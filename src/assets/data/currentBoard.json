@@ -141,27 +141,22 @@
 		]
 	},
 	{
-		"name": "Ryan Yang",
+		"name": "Kevin Wu",
 		"position": "Webmaster",
-		"photo": "Ryan_Yang.jpg",
+		"photo": "Kevin_Wu.png",
 		"links": [
 			{
 				"type": "instagram",
-				"href": "https://www.instagram.com/veryfewsbux"
+				"href": "https://www.instagram.com/kevin.wuuu/"
 			},
 			{
 				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/ryanqyang/"
+				"href": "https://www.linkedin.com/in/kevinwu098"
 			},
 			{
 				"type": "website",
-				"href": "https://ryqn.dev"
+				"href": "https://github.com/kevinwu098"
 			}
 		]
-	},
-	{
-		"name": "Taesung Hwang",
-		"position": "Webmaster",
-		"photo": "Taesung_Hwang.jpg"
 	}
 ]

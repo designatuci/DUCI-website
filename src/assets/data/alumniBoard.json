@@ -17,6 +17,30 @@
 						"href": "http://www.linkedin.com/in/candyce-pham"
 					}
 				]
+			},
+			{
+				"name": "Ryan Yang",
+				"position": "Webmaster",
+				"photo": "Ryan_Yang.jpg",
+				"links": [
+					{
+						"type": "instagram",
+						"href": "https://www.instagram.com/veryfewsbux"
+					},
+					{
+						"type": "linkedin",
+						"href": "https://www.linkedin.com/in/ryanqyang/"
+					},
+					{
+						"type": "website",
+						"href": "https://ryqn.dev"
+					}
+				]
+			},
+			{
+				"name": "Taesung Hwang",
+				"position": "Webmaster",
+				"photo": "Taesung_Hwang.jpg"
 			}
 		]
 	},
