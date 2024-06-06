@@ -35,6 +35,30 @@
 		"links": []
 	},
 	{
+		"name": "Thanusree Ammisetti",
+		"position": "Workshop Coordinator",
+		"photo": "Thanusree_Ammisetti.jpg"
+	},
+	{
+		"name": "Krey Daniel",
+		"position": "Workshop Coordinator",
+		"photo": "Krey_Daniel.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/in.krey.dible/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/krey-daniel/"
+			},
+			{
+				"type": "website",
+				"href": "https://kreydaniel.wixsite.com/inkreydible"
+			}
+		]
+	},
+	{
 		"name": "Jasmine Wu",
 		"position": "Designathon Director",
 		"photo": "Jasmine_Wu.jpg",
@@ -83,26 +107,6 @@
 		"name": "Winston Lee",
 		"position": "Project Teams Coordinators",
 		"photo": "Winston_Lee.jpeg"
-	},
-
-	{
-		"name": "Krey Daniel",
-		"position": "Creative Director",
-		"photo": "Krey_Daniel.jpg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/in.krey.dible/"
-			},
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/krey-daniel/"
-			},
-			{
-				"type": "website",
-				"href": "https://kreydaniel.wixsite.com/inkreydible"
-			}
-		]
 	},
 	{
 		"name": "Kaitlyn Tran",
