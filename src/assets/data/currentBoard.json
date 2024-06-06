@@ -128,6 +128,21 @@
 		]
 	},
 	{
+		"name": "Daniela Herrera",
+		"position": "Creative Director",
+		"photo": "Daniela_Herrera.jpeg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/danie1aherrera/"
+			},
+			{
+				"type": "website",
+				"href": "https://danielaherreraportfolio.framer.website/"
+			}
+		]
+	},
+	{
 		"name": "Kaitlyn Tran",
 		"position": "Graphic Designer",
 		"photo": "Kaitlyn_Tran.jpg",
