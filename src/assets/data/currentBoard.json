@@ -12,8 +12,20 @@
 	},
 	{
 		"name": "Jamie Kuang",
-		"position": "Marketing Coordinator",
+		"position": "Marketing Director",
 		"photo": "Jamie_Kuang.jpg",
+		"links": []
+	},
+	{
+		"name": "Aven Chew",
+		"position": "Marketing Coordinator",
+		"photo": "",
+		"links": []
+	},
+	{
+		"name": "Emma Choi",
+		"position": "Marketing Coordinator",
+		"photo": "",
 		"links": []
 	},
 	{
@@ -76,6 +88,11 @@
 				"href": "https://kreydaniel.wixsite.com/inkreydible"
 			}
 		]
+	},
+	{
+		"name": "Christina Thanh Thao Tran",
+		"position": "Social Relations Chair",
+		"photo": ""
 	},
 	{
 		"name": "Elisa Fuji",
@@ -151,6 +168,12 @@
 		]
 	},
 	{
+		"name": "Malina Miura",
+		"position": "Graphic Designer",
+		"photo": "",
+		"links": []
+	},
+	{
 		"name": "Grace Jong",
 		"position": "Graphic Designer",
 		"photo": "Grace_Jong.jpg",
@@ -170,21 +193,19 @@
 		]
 	},
 	{
+		"name": "Sammi Li",
+		"position": "Financial Chair",
+		"photo": "",
+		"links": []
+	},
+	{
 		"name": "Kevin Wu",
 		"position": "Webmaster",
 		"photo": "Kevin_Wu.png",
 		"links": [
 			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/kevin.wuuu/"
-			},
-			{
 				"type": "linkedin",
 				"href": "https://www.linkedin.com/in/kevinwu098"
-			},
-			{
-				"type": "website",
-				"href": "https://github.com/kevinwu098"
 			}
 		]
 	}
