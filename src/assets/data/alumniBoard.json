@@ -3,6 +3,27 @@
 		"year": 2024,
 		"members": [
 			{
+				"name": "Jin-Kim Niu",
+				"position": "Co-President",
+				"photo": "Jin_Kim_Niu.jpg",
+				"links": [
+					{
+						"type": "linkedin",
+						"href": "https://www.linkedin.com/in/jin-kim-niu/"
+					},
+					{
+						"type": "website",
+						"href": "https://jinkimniu.framer.website/"
+					}
+				]
+			},
+			{
+				"name": "Christine Nguyen",
+				"position": "Co-President",
+				"photo": "Christine_Nguyen.jpeg",
+				"links": []
+			},
+			{
 				"name": "Vanna Vuong",
 				"position": "Industry Outreach Coordinator",
 				"photo": "Vanna_Vuong.jpeg"

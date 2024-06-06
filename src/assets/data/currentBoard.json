@@ -1,24 +1,14 @@
 [
 	{
-		"name": "Jin-Kim Niu",
+		"name": "Elise Alinsug",
 		"position": "Co-President",
-		"photo": "Jin_Kim_Niu.jpg",
-		"links": [
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/jin-kim-niu/"
-			},
-			{
-				"type": "website",
-				"href": "https://jinkimniu.framer.website/"
-			}
-		]
+		"photo": "Elise_Alinsug.jpg",
+		"links": []
 	},
 	{
-		"name": "Christine Nguyen",
+		"name": "Janie Seong",
 		"position": "Co-President",
-		"photo": "Christine_Nguyen.jpeg",
-		"links": []
+		"photo": "Janie_Seong.jpeg"
 	},
 	{
 		"name": "Michelle Yang",
@@ -48,12 +38,6 @@
 		"name": "Jasmine Wu",
 		"position": "Workshop Coordinator",
 		"photo": "Jasmine_Wu.jpg",
-		"links": []
-	},
-	{
-		"name": "Elise Alinsug",
-		"position": "Workshop Coordinator",
-		"photo": "Elise_Alinsug.jpg",
 		"links": []
 	},
 	{
@@ -89,11 +73,6 @@
 		"name": "Ava Lee",
 		"position": "Social Chair",
 		"photo": "Ava_Lee.jpg"
-	},
-	{
-		"name": "Janie Seong",
-		"position": "Project Teams Coordinators",
-		"photo": "Janie_Seong.jpeg"
 	},
 	{
 		"name": "Jessica Jahja",
