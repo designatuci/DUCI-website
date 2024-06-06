@@ -17,26 +17,13 @@
 		"links": []
 	},
 	{
-		"name": "Thanusree Ammisetti",
-		"position": "Workshop Coordinator",
-		"photo": "Thanusree_Ammisetti.jpg"
-	},
-	{
-		"name": "Krey Daniel",
-		"position": "Workshop Coordinator",
-		"photo": "Krey_Daniel.jpg",
+		"name": "Brandon Kahn",
+		"position": "Industry Outreach Coordinator",
+		"photo": "Brandon_Kahn.jpg",
 		"links": [
 			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/in.krey.dible/"
-			},
-			{
 				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/krey-daniel/"
-			},
-			{
-				"type": "website",
-				"href": "https://kreydaniel.wixsite.com/inkreydible"
+				"href": "https://linkedin.com/in/bdkahn"
 			}
 		]
 	},
@@ -67,6 +54,30 @@
 		]
 	},
 	{
+		"name": "Thanusree Ammisetti",
+		"position": "Workshop Coordinator",
+		"photo": "Thanusree_Ammisetti.jpg"
+	},
+	{
+		"name": "Krey Daniel",
+		"position": "Workshop Coordinator",
+		"photo": "Krey_Daniel.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/in.krey.dible/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/krey-daniel/"
+			},
+			{
+				"type": "website",
+				"href": "https://kreydaniel.wixsite.com/inkreydible"
+			}
+		]
+	},
+	{
 		"name": "Elisa Fuji",
 		"position": "Social Relations Chair",
 		"photo": "Elisa_Fuji.jpg"
@@ -83,7 +94,7 @@
 		"links": [
 			{
 				"type": "linkedin",
-				"href": "http://linkedin.com/in/carolinehudavid"
+				"href": "https://linkedin.com/in/carolinehudavid"
 			}
 		]
 	},
