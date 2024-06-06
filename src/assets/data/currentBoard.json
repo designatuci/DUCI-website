@@ -59,12 +59,6 @@
 		]
 	},
 	{
-		"name": "Jasmine Wu",
-		"position": "Designathon Director",
-		"photo": "Jasmine_Wu.jpg",
-		"links": []
-	},
-	{
 		"name": "John Daniel Norombaba",
 		"position": "Industry Outreach Coordinator",
 		"photo": "John_Daniel.jpeg",
@@ -128,6 +122,12 @@
 		]
 	},
 	{
+		"name": "Jasmine Wu",
+		"position": "Designathon Director",
+		"photo": "Jasmine_Wu.jpg",
+		"links": []
+	},
+	{
 		"name": "Daniela Herrera",
 		"position": "Creative Director",
 		"photo": "Daniela_Herrera.jpeg",
@@ -154,6 +154,25 @@
 			{
 				"type": "instagram",
 				"href": "https://instagram.com/noomzster?igshid=YmMyMTA2M2Y="
+			}
+		]
+	},
+	{
+		"name": "Grace Jong",
+		"position": "Graphic Designer",
+		"photo": "Grace_Jong.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://instagram.com/chenen010"
+			},
+			{
+				"type": "linkedin",
+				"href": "www.linkedin.com/in/grace-jong030"
+			},
+			{
+				"type": "website",
+				"href": "https://open.spotify.com/user/qrwc744s19oeihuxs13kc58s0?si=93304a8d5c2b4043"
 			}
 		]
 	},
