@@ -24,6 +24,17 @@
 				"links": []
 			},
 			{
+				"name": "Jessica (Jay) Sotelo",
+				"position": "Industry Outreach Coordinator",
+				"photo": "Jessica_Sotelo.jpg",
+				"links": [
+					{
+						"type": "linkedin",
+						"href": "http://linkedin.com/in/jessica-sotelo"
+					}
+				]
+			},
+			{
 				"name": "Vanna Vuong",
 				"position": "Industry Outreach Coordinator",
 				"photo": "Vanna_Vuong.jpeg"

@@ -65,13 +65,17 @@
 		"links": []
 	},
 	{
-		"name": "Jessica (Jay) Sotelo",
+		"name": "John Daniel Norombaba",
 		"position": "Industry Outreach Coordinator",
-		"photo": "Jessica_Sotelo.jpg",
+		"photo": "John_Daniel.jpeg",
 		"links": [
 			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/norombabajd"
+			},
+			{
 				"type": "linkedin",
-				"href": "http://linkedin.com/in/jessica-sotelo"
+				"href": "https://www.linkedin.com/in/norombabajd/"
 			}
 		]
 	},
