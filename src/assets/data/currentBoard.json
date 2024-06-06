@@ -100,13 +100,35 @@
 	},
 	{
 		"name": "Jessica Jahja",
-		"position": "Project Teams Coordinators",
+		"position": "Project Teams Director",
 		"photo": "Jessica_Jahja.jpg"
 	},
 	{
+		"name": "Caroline David",
+		"position": "Project Teams Coordinator",
+		"photo": "Caroline_David.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "http://linkedin.com/in/carolinehudavid"
+			}
+		]
+	},
+	{
 		"name": "Winston Lee",
-		"position": "Project Teams Coordinators",
+		"position": "Project Teams Coordinator",
 		"photo": "Winston_Lee.jpeg"
+	},
+	{
+		"name": "Megan Rhee",
+		"position": "Project Teams Coordinator",
+		"photo": "Megan_Rhee.png",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://instagram.com/meganrheee"
+			}
+		]
 	},
 	{
 		"name": "Kaitlyn Tran",
