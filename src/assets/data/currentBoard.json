@@ -19,14 +19,32 @@
 	{
 		"name": "Aven Chew",
 		"position": "Marketing Coordinator",
-		"photo": "",
-		"links": []
+		"photo": "Aven_Chew.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/avennchew"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/avenchew/"
+			}
+		]
 	},
 	{
 		"name": "Emma Choi",
 		"position": "Marketing Coordinator",
-		"photo": "",
-		"links": []
+		"photo": "Emma_Choi.jpeg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/emma.__.choi"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/emma-choi-a48b35218/"
+			}
+		]
 	},
 	{
 		"name": "Brandon Kahn",
@@ -92,7 +110,13 @@
 	{
 		"name": "Christina Thanh Thao Tran",
 		"position": "Social Relations Chair",
-		"photo": ""
+		"photo": "Christina_Tran.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/crisptinaa"
+			}
+		]
 	},
 	{
 		"name": "Elisa Fuji",
@@ -170,8 +194,17 @@
 	{
 		"name": "Malina Miura",
 		"position": "Graphic Designer",
-		"photo": "",
-		"links": []
+		"photo": "Malina_Miura.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/malina-miura-a66933245/"
+			},
+			{
+				"type": "instagram",
+				"href": "https://instagram.com/kiyoberries"
+			}
+		]
 	},
 	{
 		"name": "Grace Jong",
