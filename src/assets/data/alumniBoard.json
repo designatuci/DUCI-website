@@ -3,9 +3,64 @@
 		"year": 2024,
 		"members": [
 			{
+				"name": "Jin-Kim Niu",
+				"position": "Co-President",
+				"photo": "Jin_Kim_Niu.jpg",
+				"links": [
+					{
+						"type": "linkedin",
+						"href": "https://www.linkedin.com/in/jin-kim-niu/"
+					},
+					{
+						"type": "website",
+						"href": "https://jinkimniu.framer.website/"
+					}
+				]
+			},
+			{
+				"name": "Christine Nguyen",
+				"position": "Co-President",
+				"photo": "Christine_Nguyen.jpeg",
+				"links": []
+			},
+			{
+				"name": "Jessica (Jay) Sotelo",
+				"position": "Industry Outreach Coordinator",
+				"photo": "Jessica_Sotelo.jpg",
+				"links": [
+					{
+						"type": "linkedin",
+						"href": "http://linkedin.com/in/jessica-sotelo"
+					}
+				]
+			},
+			{
+				"name": "Michelle Yang",
+				"position": "Marketing Director",
+				"photo": "Michelle_Yang.JPG",
+				"links": []
+			},
+			{
+				"name": "Khanh Tran",
+				"position": "Marketing Coordinator",
+				"photo": "Khanh_Tran.jpg",
+				"links": []
+			},
+			{
+				"name": "Nuo Yang",
+				"position": "Marketing Coordinator",
+				"photo": "Nuo_Yang.jpeg",
+				"links": []
+			},
+			{
 				"name": "Vanna Vuong",
 				"position": "Industry Outreach Coordinator",
 				"photo": "Vanna_Vuong.jpeg"
+			},
+			{
+				"name": "Ava Lee",
+				"position": "Social Chair",
+				"photo": "Ava_Lee.jpg"
 			},
 			{
 				"name": "Candyce Pham",
@@ -17,6 +72,30 @@
 						"href": "http://www.linkedin.com/in/candyce-pham"
 					}
 				]
+			},
+			{
+				"name": "Ryan Yang",
+				"position": "Webmaster",
+				"photo": "Ryan_Yang.jpg",
+				"links": [
+					{
+						"type": "instagram",
+						"href": "https://www.instagram.com/veryfewsbux"
+					},
+					{
+						"type": "linkedin",
+						"href": "https://www.linkedin.com/in/ryanqyang/"
+					},
+					{
+						"type": "website",
+						"href": "https://ryqn.dev"
+					}
+				]
+			},
+			{
+				"name": "Taesung Hwang",
+				"position": "Webmaster",
+				"photo": "Taesung_Hwang.jpg"
 			}
 		]
 	},

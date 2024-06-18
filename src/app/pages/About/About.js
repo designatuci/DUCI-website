@@ -48,18 +48,20 @@ const About = () => (
 				</div>
 			</Section>
 		</div>
+
 		<Section className="">
 			<Text size="XL" className="wait slim">
-				We provide a friendly space with helpful resources for students to
-				become better designers.
+				We provide a friendly space with helpful resources for students
+				to become better designers.
 			</Text>
 			<Space block h="16" />
 			<div className="split2" style={{ textAlign: "left" }}>
 				<div className="narrow wait dx">
 					<Text className="paragraph middle">
-						Whether they're just starting out, or have been designing for
-						several years. Through community, education, and collaboration, we
-						strive to find meaningful ways to support and foster a design
+						Whether they're just starting out, or have been
+						designing for several years. Through community,
+						education, and collaboration, we strive to find
+						meaningful ways to support and foster a design
 						community.
 					</Text>
 					<Space block h="32" />
@@ -69,10 +71,11 @@ const About = () => (
 				</div>
 				<div className="narrow wait dx">
 					<Text className="paragraph middle">
-						Design at UCI meets once a week for a general meeting on most weeks
-						while the academic quarter is in session. Join us on our social
-						media pages and newsletter to get the latest updates regarding
-						workshops, meetings and events. We can't wait to meet you!
+						Design at UCI meets once a week for a general meeting on
+						most weeks while the academic quarter is in session.
+						Join us on our social media pages and newsletter to get
+						the latest updates regarding workshops, meetings and
+						events. We can't wait to meet you!
 					</Text>
 					<Space block h="32" />
 					<Link to="/events/" className="color blue">
@@ -81,10 +84,10 @@ const About = () => (
 				</div>
 				<div className="narrow wait">
 					<Text className="paragraph middle">
-						There are no requirements to join, everyone is welcome to attend our
-						meetings and use the resources we provide. Although some events may
-						be exclusive to UCI students, we also host events with participants
-						around the globe.
+						There are no requirements to join, everyone is welcome
+						to attend our meetings and use the resources we provide.
+						Although some events may be exclusive to UCI students,
+						we also host events with participants around the globe.
 					</Text>
 					<Space block h="32" />
 					<Link to="/join/" className="color blue">
@@ -93,6 +96,7 @@ const About = () => (
 				</div>
 			</div>
 		</Section>
+
 		<Section className="short fill color gray">
 			<h2
 				style={{
@@ -110,7 +114,10 @@ const About = () => (
 				// showStatus={false}
 				renderArrowNext={(click, show) => <LinkArrow onClick={click} />}
 				renderArrowPrev={(click, show) => (
-					<LinkArrow style={{ transform: "rotateY(180deg)" }} onClick={click} />
+					<LinkArrow
+						style={{ transform: "rotateY(180deg)" }}
+						onClick={click}
+					/>
 				)}
 			>
 				{TESTIMONIALS.map(({ quote, name }) => (
@@ -121,10 +128,11 @@ const About = () => (
 				))}
 			</Carousel>
 		</Section>
+
 		<Section className="board center">
 			<Text size="XL">Board Members</Text>
 			<div className="center row">
-				{CURRENT_BOARD.map((member, i) => (
+				{CURRENT_BOARD?.map((member, i) => (
 					<Profile key={i} data={member} />
 				))}
 			</div>
@@ -144,9 +152,11 @@ const About = () => (
 				Board Alumni
 			</Text>
 			<div className="center row">
-				{ALUMNI_BOARD.map(({ year, members }) => (
+				{ALUMNI_BOARD?.map(({ year, members }) => (
 					<Fragment key={year}>
-						<Text className="color blue year-divider">Departed {year}</Text>
+						<Text className="color blue year-divider">
+							Departed {year}
+						</Text>
 						{members.map((member, i) => (
 							<Profile key={i} textOnly data={member} />
 						))}
@@ -154,6 +164,7 @@ const About = () => (
 				))}
 			</div>
 		</Section>
+
 		<Section className="short center fill color gray">
 			<Text>Partners</Text>
 			<div className="split3" style={{ columnGap: "128px" }}>

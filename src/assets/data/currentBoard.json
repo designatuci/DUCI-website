@@ -1,69 +1,74 @@
 [
 	{
-		"name": "Jin-Kim Niu",
-		"position": "Co-President",
-		"photo": "Jin_Kim_Niu.jpg",
-		"links": [
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/jin-kim-niu/"
-			},
-			{
-				"type": "website",
-				"href": "https://jinkimniu.framer.website/"
-			}
-		]
-	},
-	{
-		"name": "Christine Nguyen",
-		"position": "Co-President",
-		"photo": "Christine_Nguyen.jpeg",
-		"links": []
-	},
-	{
-		"name": "Michelle Yang",
-		"position": "Marketing Director",
-		"photo": "Michelle_Yang.JPG",
-		"links": []
-	},
-	{
-		"name": "Khanh Tran",
-		"position": "Marketing Coordinator",
-		"photo": "",
-		"links": []
-	},
-	{
-		"name": "Nuo Yang",
-		"position": "Marketing Coordinator",
-		"photo": "Nuo_Yang.jpeg",
-		"links": []
-	},
-	{
-		"name": "Jamie Kuang",
-		"position": "Marketing Coordinator",
-		"photo": "Jamie_Kuang.jpg",
-		"links": []
-	},
-	{
-		"name": "Jasmine Wu",
-		"position": "Workshop Coordinator",
-		"photo": "Jasmine_Wu.jpg",
-		"links": []
-	},
-	{
 		"name": "Elise Alinsug",
-		"position": "Workshop Coordinator",
+		"position": "Co-President",
 		"photo": "Elise_Alinsug.jpg",
 		"links": []
 	},
 	{
-		"name": "Jessica (Jay) Sotelo",
+		"name": "Janie Seong",
+		"position": "Co-President",
+		"photo": "Janie_Seong.jpeg"
+	},
+	{
+		"name": "Jamie Kuang",
+		"position": "Marketing Director",
+		"photo": "Jamie_Kuang.jpg",
+		"links": []
+	},
+	{
+		"name": "Aven Chew",
+		"position": "Marketing Coordinator",
+		"photo": "Aven_Chew.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/avennchew"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/avenchew/"
+			}
+		]
+	},
+	{
+		"name": "Emma Choi",
+		"position": "Marketing Coordinator",
+		"photo": "Emma_Choi.jpeg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/emma.__.choi"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/emma-choi-a48b35218/"
+			}
+		]
+	},
+	{
+		"name": "Brandon Kahn",
 		"position": "Industry Outreach Coordinator",
-		"photo": "Jessica_Sotelo.jpg",
+		"photo": "Brandon_Kahn.jpg",
 		"links": [
 			{
 				"type": "linkedin",
-				"href": "http://linkedin.com/in/jessica-sotelo"
+				"href": "https://linkedin.com/in/bdkahn"
+			}
+		]
+	},
+	{
+		"name": "John Daniel Norombaba",
+		"position": "Industry Outreach Coordinator",
+		"photo": "John_Daniel.jpeg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/norombabajd"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/norombabajd/"
 			}
 		]
 	},
@@ -78,37 +83,14 @@
 			}
 		]
 	},
-
 	{
-		"name": "Elisa Fuji",
-		"position": "Social Chair",
-		"photo": "Elisa_Fuji.jpg"
+		"name": "Thanusree Ammisetti",
+		"position": "Workshop Coordinator",
+		"photo": "Thanusree_Ammisetti.jpg"
 	},
-
-	{
-		"name": "Ava Lee",
-		"position": "Social Chair",
-		"photo": "Ava_Lee.jpg"
-	},
-	{
-		"name": "Janie Seong",
-		"position": "Project Teams Coordinators",
-		"photo": "Janie_Seong.jpeg"
-	},
-	{
-		"name": "Jessica Jahja",
-		"position": "Project Teams Coordinators",
-		"photo": "Jessica_Jahja.jpg"
-	},
-	{
-		"name": "Winston Lee",
-		"position": "Project Teams Coordinators",
-		"photo": "Winston_Lee.jpeg"
-	},
-
 	{
 		"name": "Krey Daniel",
-		"position": "Creative Director",
+		"position": "Workshop Coordinator",
 		"photo": "Krey_Daniel.jpg",
 		"links": [
 			{
@@ -122,6 +104,75 @@
 			{
 				"type": "website",
 				"href": "https://kreydaniel.wixsite.com/inkreydible"
+			}
+		]
+	},
+	{
+		"name": "Christina Thanh Thao Tran",
+		"position": "Social Relations Chair",
+		"photo": "Christina_Tran.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/crisptinaa"
+			}
+		]
+	},
+	{
+		"name": "Elisa Fuji",
+		"position": "Social Relations Chair",
+		"photo": "Elisa_Fuji.jpg"
+	},
+	{
+		"name": "Jessica Jahja",
+		"position": "Project Teams Director",
+		"photo": "Jessica_Jahja.jpg"
+	},
+	{
+		"name": "Caroline David",
+		"position": "Project Teams Coordinator",
+		"photo": "Caroline_David.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://linkedin.com/in/carolinehudavid"
+			}
+		]
+	},
+	{
+		"name": "Winston Lee",
+		"position": "Project Teams Coordinator",
+		"photo": "Winston_Lee.jpeg"
+	},
+	{
+		"name": "Megan Rhee",
+		"position": "Project Teams Coordinator",
+		"photo": "Megan_Rhee.png",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://instagram.com/meganrheee"
+			}
+		]
+	},
+	{
+		"name": "Jasmine Wu",
+		"position": "Designathon Director",
+		"photo": "Jasmine_Wu.jpg",
+		"links": []
+	},
+	{
+		"name": "Daniela Herrera",
+		"position": "Creative Director",
+		"photo": "Daniela_Herrera.jpeg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/danie1aherrera/"
+			},
+			{
+				"type": "website",
+				"href": "https://danielaherreraportfolio.framer.website/"
 			}
 		]
 	},
@@ -141,27 +192,54 @@
 		]
 	},
 	{
-		"name": "Ryan Yang",
-		"position": "Webmaster",
-		"photo": "Ryan_Yang.jpg",
+		"name": "Malina Miura",
+		"position": "Graphic Designer",
+		"photo": "Malina_Miura.jpg",
 		"links": [
 			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/veryfewsbux"
-			},
-			{
 				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/ryanqyang/"
+				"href": "https://www.linkedin.com/in/malina-miura-a66933245/"
 			},
 			{
-				"type": "website",
-				"href": "https://ryqn.dev"
+				"type": "instagram",
+				"href": "https://instagram.com/kiyoberries"
 			}
 		]
 	},
 	{
-		"name": "Taesung Hwang",
+		"name": "Grace Jong",
+		"position": "Graphic Designer",
+		"photo": "Grace_Jong.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://instagram.com/chenen010"
+			},
+			{
+				"type": "linkedin",
+				"href": "www.linkedin.com/in/grace-jong030"
+			},
+			{
+				"type": "website",
+				"href": "https://open.spotify.com/user/qrwc744s19oeihuxs13kc58s0?si=93304a8d5c2b4043"
+			}
+		]
+	},
+	{
+		"name": "Sammi Li",
+		"position": "Financial Chair",
+		"photo": "",
+		"links": []
+	},
+	{
+		"name": "Kevin Wu",
 		"position": "Webmaster",
-		"photo": "Taesung_Hwang.jpg"
+		"photo": "Kevin_Wu.png",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/kevinwu098"
+			}
+		]
 	}
 ]

@@ -11,7 +11,9 @@ const Profile = ({ textOnly = false, data }) => {
 			{!textOnly && (
 				<div className={cn.aspect}>
 					<img
-						src={require(`assets/images/board/current/${data.photo}`)}
+						src={require(
+							`assets/images/board/current/${data.photo}`,
+						)}
 						alt={data.name + " headshot"}
 					/>
 				</div>
@@ -24,7 +26,12 @@ const Profile = ({ textOnly = false, data }) => {
 
 			<div className={cn.socials}>
 				{data.links?.map(({ type, href }) => (
-					<a key={href} target="_blank" rel="noopener noreferrer" href={href}>
+					<a
+						key={href}
+						target="_blank"
+						rel="noopener noreferrer"
+						href={href}
+					>
 						<Icon hoverable src={`nav-${type}.svg`} w="20" h="20" />
 					</a>
 				))}
