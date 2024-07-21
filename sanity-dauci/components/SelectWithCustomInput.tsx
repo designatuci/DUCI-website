@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, FormEvent } from "react";
 import { TextInput, Stack, Select, Card } from "@sanity/ui";
 import { set, unset, StringInputProps, StringSchemaType } from "sanity";
 
@@ -7,16 +7,15 @@ export const SelectWithCustomInput = React.forwardRef(function SelectWithCustomI
 	ref: React.ForwardedRef<HTMLSelectElement>,
 ) {
 	const { value, onChange } = props;
-	const [selectedValue, setSelectedValue] = useState(value || "");
+	const [selectedValue, setSelectedValue] = useState(value || "other");
 	const [customValue, setCustomValue] = useState("");
 
 	const predefinedValues = [
-		{ title: "Industry Speaker", value: "Industry Speaker" },
-		{ title: "Workshop", value: "Workshop" },
-		{ title: "Social", value: "Social" },
-		{ title: "Project Teams", value: "Project Teams" },
-		{ title: "Fundraiser", value: "Fundraiser" },
-		{ title: "AMA", value: "AMA" },
+		{ title: "RSVP Form", value: "RSVP Form" },
+		{ title: "Recording", value: "Recording" },
+		{ title: "Resources", value: "Resources" },
+		{ title: "Slides", value: "Slides" },
+		{ title: "Zoom Link", value: "Zoom Link" },
 	];
 
 	useEffect(() => {
@@ -26,19 +25,22 @@ export const SelectWithCustomInput = React.forwardRef(function SelectWithCustomI
 		}
 	}, [value]);
 
-	const handleSelectChange = (event) => {
-		const newValue = event.target.value;
+	const handleSelectChange = (event: FormEvent<HTMLSelectElement>) => {
+		const newValue = event.currentTarget.value;
+
 		setSelectedValue(newValue);
 		if (newValue === "other") {
 			onChange(customValue ? set(customValue) : unset());
 		} else {
+			setCustomValue(""); // Reset custom value when a predefined option is selected
 			onChange(set(newValue));
 		}
 	};
 
-	const handleInputChange = (event) => {
-		const newValue = event.target.value;
+	const handleInputChange = (event: FormEvent<HTMLInputElement>) => {
+		const newValue = event.currentTarget.value;
 		setCustomValue(newValue);
+
 		if (selectedValue === "other") {
 			onChange(newValue ? set(newValue) : unset());
 		}
