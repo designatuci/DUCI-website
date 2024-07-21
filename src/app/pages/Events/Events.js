@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -38,8 +38,6 @@ const joinEvents = (a, b) => {
 	a = a.upcoming && a.past ? a : { upcoming: [], past: [] };
 	b = b.upcoming && b.past ? b : { upcoming: [], past: [] };
 
-	console.log("ab", a, b);
-
 	const combinedUpcoming = [...a.upcoming, ...b.upcoming];
 	const combinedPast = [...a.past, ...b.past];
 
@@ -59,38 +57,37 @@ const joinEvents = (a, b) => {
 	};
 };
 
+const legacyEvents = parseEvents(EVENT_DATA); // events from manual JSON file
+
 const Events = () => {
-	const legacyEvents = parseEvents(EVENT_DATA); // events from manual JSON file
-	const [sanityEvents, setSanityEvents] = useState([]);
 	const [events, setEvents] = useState();
 
-	const fetchEvents = async () => {
-		return client
-			.fetch(`*[_type == "event"] | order(time desc)`, {})
-			.then((result) =>
-				result.map((item) => ({
-					title: item.title,
-					time: item.time,
-					duration: item.duration,
-					type: item.type,
-					desc: item.desc,
-					place: item.place,
-					links: item.links
-						? item.links.map((linkItem) => ({
-								label: linkItem.label,
-								link: linkItem.link,
-							}))
-						: [],
-				})),
-			);
-	};
+	const fetchEvents = useCallback(async () => {
+		const result = await client.fetch(
+			`*[_type == "event"] | order(time desc)`,
+			{},
+		);
+		return result.map((item) => ({
+			title: item.title,
+			time: item.time,
+			duration: item.duration,
+			type: item.type,
+			desc: item.desc,
+			place: item.place,
+			links: item.links
+				? item.links.map((linkItem) => ({
+						label: linkItem.label,
+						link: linkItem.link,
+					}))
+				: [],
+		}));
+	}, []);
 
 	useEffect(async () => {
 		try {
 			const data = await fetchEvents();
 			const eventData = parseEvents(data);
 
-			setSanityEvents(eventData);
 			const joinedEvents = joinEvents(eventData, legacyEvents);
 			setEvents(joinedEvents);
 		} catch (e) {
@@ -158,36 +155,6 @@ const Events = () => {
 					</>
 				)}
 			</Section>
-			{events != null && events.upcoming.length > 0 && (
-				<>
-					<div
-						className="center maxWidth"
-						style={{
-							height: "88px",
-							marginBottom: "-88px",
-							background:
-								"linear-gradient(0,var(--white),var(--sky))",
-						}}
-					>
-						<Text size="L" className="color blue">
-							Next Upcoming Event
-							{events.upcoming.length > 1 ? "s" : ""}
-						</Text>
-					</div>
-					<Section className="center">
-						<div className="spaceChildrenLarge">
-							{events.upcoming.map((event, i) => {
-								return (
-									<LargeEvent
-										key={event.title}
-										event={event}
-									/>
-								);
-							})}
-						</div>
-					</Section>
-				</>
-			)}
 			<div
 				className="center maxWidth fill gray"
 				style={{ height: "88px", marginBottom: "0" }}
