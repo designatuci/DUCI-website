@@ -10,58 +10,93 @@ import EventCard from "./components/EventCard/EventCard.js";
 
 import { client } from "sanity-client.js";
 
-const Events = () => {
-	const [eventData, setEventData] = useState(null);
-	const [posts, setPosts] = useState([]);
-
-	const fetchPosts = () => {
-		return client.fetch({
-			query: `*[_type == "post"] | order(publishedAt desc)`,
-			params: {},
-			transform: (result) =>
-				result.map((item) => ({
-					title: item.title,
-					slug: item.slug,
-					body: item.body,
-					publishedAt: item.publishedAt,
-					mainImage: {
-						asset: {
-							_id: item.mainImage.asset._id,
-							url: item.mainImage.asset.url,
-						},
-						alt: item.mainImage.alt,
-					},
-				})),
-		});
+const parseEvents = (events) => {
+	let eventData = {
+		upcoming: [],
+		past: [],
 	};
 
-	useEffect(() => {
-		let eventData = {
-			upcoming: [],
-			past: [],
-			next: null,
-		};
-		let now = new Date();
-		for (let event of EVENT_DATA) {
-			let time = new Date(new Date(event.time).getTime() + event.duration * 60000);
-			if (now < time) {
-				eventData.next = event;
-				eventData.upcoming.unshift(event);
-			} else {
-				eventData.past.push(event);
-			}
+	const now = new Date();
+
+	for (let event of events) {
+		const eventTime = new Date(
+			new Date(event.time).getTime() + event.duration * 60000,
+		);
+
+		if (now < eventTime) {
+			eventData.upcoming.unshift(event);
+		} else {
+			eventData.past.push(event);
 		}
-		eventData.upcoming.shift();
-		setEventData(eventData);
-	}, []);
+	}
 
-	useEffect(() => {
-		fetchPosts()
-			.then((data) => setPosts(data))
-			.catch(console.error);
-	}, []);
+	return eventData;
+};
 
-	console.log(posts);
+const joinEvents = (a, b) => {
+	// handle uninitialized/unparsed event lists
+	a = a.upcoming && a.past ? a : { upcoming: [], past: [] };
+	b = b.upcoming && b.past ? b : { upcoming: [], past: [] };
+
+	console.log("ab", a, b);
+
+	const combinedUpcoming = [...a.upcoming, ...b.upcoming];
+	const combinedPast = [...a.past, ...b.past];
+
+	let nextEvent = null;
+
+	if (combinedUpcoming.length > 0) {
+		combinedUpcoming.sort(
+			(e1, e2) => new Date(e1.time) - new Date(e2.time),
+		);
+		nextEvent = combinedUpcoming.at(0) ?? null;
+	}
+
+	return {
+		upcoming: combinedUpcoming,
+		past: combinedPast,
+		next: nextEvent,
+	};
+};
+
+const Events = () => {
+	const legacyEvents = parseEvents(EVENT_DATA); // events from manual JSON file
+	const [sanityEvents, setSanityEvents] = useState([]);
+	const [events, setEvents] = useState();
+
+	const fetchEvents = async () => {
+		return client
+			.fetch(`*[_type == "event"] | order(time desc)`, {})
+			.then((result) =>
+				result.map((item) => ({
+					title: item.title,
+					time: item.time,
+					duration: item.duration,
+					type: item.type,
+					desc: item.desc,
+					place: item.place,
+					links: item.links
+						? item.links.map((linkItem) => ({
+								label: linkItem.label,
+								link: linkItem.link,
+							}))
+						: [],
+				})),
+			);
+	};
+
+	useEffect(async () => {
+		try {
+			const data = await fetchEvents();
+			const eventData = parseEvents(data);
+
+			setSanityEvents(eventData);
+			const joinedEvents = joinEvents(eventData, legacyEvents);
+			setEvents(joinedEvents);
+		} catch (e) {
+			console.error(e);
+		}
+	}, []);
 
 	return (
 		<>
@@ -70,18 +105,21 @@ const Events = () => {
 			</Helmet>
 			<Section
 				className={`center short ${
-					eventData == null || eventData.next != null ? "widePage hint" : ""
+					events == null || events.next != null ? "widePage hint" : ""
 				}`}
 				style={{ paddingTop: "32px" }}
 			>
-				{eventData == null ? (
+				{events == null ? (
 					// Loading animation
 					<LoadingD width="128" />
 				) : // Large next event card
-				eventData.next == null ? (
+				events.next == null ? (
 					<div className="flex spaceChildrenSmall">
 						<Space h="64" />
-						<Text size="XXL" className="wait show scale bold color blue">
+						<Text
+							size="XXL"
+							className="wait show scale bold color blue"
+						>
 							Stay Tuned
 						</Text>
 						<Text className="wait show subtle color blue">
@@ -89,10 +127,11 @@ const Events = () => {
 						</Text>
 						<Space h="32" />
 						<Text className="wait show subtle color gray">
-							Be sure to <Link to="/join/">join us</Link> for notifications.
+							Be sure to <Link to="/join/">join us</Link> for
+							notifications.
 						</Text>
 					</div>
-				) : new Date(eventData.next.time) > new Date() ? (
+				) : new Date(events.next.time) > new Date() ? (
 					<>
 						<div className="wait show flex row">
 							<Icon w="32" h="32" src="next-event.svg" />
@@ -102,9 +141,9 @@ const Events = () => {
 							</Text>
 						</div>
 						<Text className="color blue wait show subtle d05">
-							{formatRelativeDate(eventData.next.time)}
+							{formatRelativeDate(events.next.time)}
 						</Text>
-						<LargeEvent event={eventData.next} />
+						<LargeEvent event={events.next} />
 					</>
 				) : (
 					<>
@@ -115,29 +154,35 @@ const Events = () => {
 								Live Now
 							</Text>
 						</div>
-						<LargeEvent event={eventData.next} live="true" />
+						<LargeEvent event={events.next} live="true" />
 					</>
 				)}
 			</Section>
-			{eventData != null && eventData.upcoming.length > 0 && (
+			{events != null && events.upcoming.length > 0 && (
 				<>
 					<div
 						className="center maxWidth"
 						style={{
 							height: "88px",
 							marginBottom: "-88px",
-							background: "linear-gradient(0,var(--white),var(--sky))",
+							background:
+								"linear-gradient(0,var(--white),var(--sky))",
 						}}
 					>
 						<Text size="L" className="color blue">
 							Next Upcoming Event
-							{eventData.upcoming.length > 1 ? "s" : ""}
+							{events.upcoming.length > 1 ? "s" : ""}
 						</Text>
 					</div>
 					<Section className="center">
 						<div className="spaceChildrenLarge">
-							{eventData.upcoming.map((event, i) => {
-								return <LargeEvent key={event.title} event={event} />;
+							{events.upcoming.map((event, i) => {
+								return (
+									<LargeEvent
+										key={event.title}
+										event={event}
+									/>
+								);
 							})}
 						</div>
 					</Section>
@@ -150,36 +195,52 @@ const Events = () => {
 				<Text size="L">Past Events</Text>
 			</div>
 			<Section className="center bare fill gray">
-				<div className="splitEventCard maxWidth" style={{ textAlign: "left" }}>
-					{eventData != null &&
-						eventData.past
+				<div
+					className="splitEventCard maxWidth"
+					style={{ textAlign: "left" }}
+				>
+					{events != null &&
+						events.past
 							.slice(0, 12)
 							.map((event) => (
-								<EventCard key={event.time + event.title} {...event} />
+								<EventCard
+									key={event.time + event.title}
+									{...event}
+								/>
 							))}
 				</div>
 			</Section>
-			<Section className="center bare fill gray" style={{ height: "128px", display: "flex" }}>
+			<Section
+				className="center bare fill gray"
+				style={{ height: "128px", display: "flex" }}
+			>
 				<Link to="/events/all/" className="button color blue">
 					<Text icon="right">View all events</Text>
 				</Link>
 			</Section>
 			<Section className="center">
-				<div className="flex left narrow spaceChildren" style={{ textAlign: "left" }}>
+				<div
+					className="flex left narrow spaceChildren"
+					style={{ textAlign: "left" }}
+				>
 					<Icon src="workshop-icon-black.svg" w="64" h="64" />
 					<Text size="XL">
-						We host events with a wide range of topics about each week during the
-						academic quarter.
+						We host events with a wide range of topics about each
+						week during the academic quarter.
 					</Text>
 					<Text color="gray">
-						Including UX design concepts, graphic design techniques, interactive advice
-						from industry speakers, social events, and more.
+						Including UX design concepts, graphic design techniques,
+						interactive advice from industry speakers, social
+						events, and more.
 					</Text>
 					<Text color="gray">
 						Have a suggestion of something you would like to see?
 						<br />
 						Submit your feedback to{" "}
-						<a href="mailto:hello@designatuci.com">hello@designatuci.com</a>.
+						<a href="mailto:hello@designatuci.com">
+							hello@designatuci.com
+						</a>
+						.
 					</Text>
 				</div>
 			</Section>
@@ -200,7 +261,9 @@ function LargeEvent(props) {
 				<div className="flex top row">
 					<Icon w="24" h="24" src="time-blue.svg" />
 					<Space w="8" />
-					<Text className="color blue">{formatDate(props.event.time)}</Text>
+					<Text className="color blue">
+						{formatDate(props.event.time)}
+					</Text>
 				</div>
 				<div className="split2">
 					<div className="flex top row">
@@ -384,8 +447,29 @@ function getPeriod(h) {
 	}
 }
 
-const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const days = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday",
+];
+const months = [
+	"Jan",
+	"Feb",
+	"Mar",
+	"Apr",
+	"May",
+	"Jun",
+	"Jul",
+	"Aug",
+	"Sep",
+	"Oct",
+	"Nov",
+	"Dec",
+];
 
 const mapDay = (n) => days[n];
 const mapMonth = (n) => months[n];
