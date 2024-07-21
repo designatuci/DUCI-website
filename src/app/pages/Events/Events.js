@@ -8,8 +8,33 @@ import EVENT_DATA from "assets/data/events/all.json";
 
 import EventCard from "./components/EventCard/EventCard.js";
 
+import { client } from "sanity-client.js";
+
 const Events = () => {
 	const [eventData, setEventData] = useState(null);
+	const [posts, setPosts] = useState([]);
+
+	const fetchPosts = () => {
+		return client.fetch({
+			query: `*[_type == "post"] | order(publishedAt desc)`,
+			params: {},
+			transform: (result) =>
+				result.map((item) => ({
+					title: item.title,
+					slug: item.slug,
+					body: item.body,
+					publishedAt: item.publishedAt,
+					mainImage: {
+						asset: {
+							_id: item.mainImage.asset._id,
+							url: item.mainImage.asset.url,
+						},
+						alt: item.mainImage.alt,
+					},
+				})),
+		});
+	};
+
 	useEffect(() => {
 		let eventData = {
 			upcoming: [],
@@ -18,9 +43,7 @@ const Events = () => {
 		};
 		let now = new Date();
 		for (let event of EVENT_DATA) {
-			let time = new Date(
-				new Date(event.time).getTime() + event.duration * 60000,
-			);
+			let time = new Date(new Date(event.time).getTime() + event.duration * 60000);
 			if (now < time) {
 				eventData.next = event;
 				eventData.upcoming.unshift(event);
@@ -31,6 +54,15 @@ const Events = () => {
 		eventData.upcoming.shift();
 		setEventData(eventData);
 	}, []);
+
+	useEffect(() => {
+		fetchPosts()
+			.then((data) => setPosts(data))
+			.catch(console.error);
+	}, []);
+
+	console.log(posts);
+
 	return (
 		<>
 			<Helmet>
@@ -127,27 +159,21 @@ const Events = () => {
 							))}
 				</div>
 			</Section>
-			<Section
-				className="center bare fill gray"
-				style={{ height: "128px", display: "flex" }}
-			>
+			<Section className="center bare fill gray" style={{ height: "128px", display: "flex" }}>
 				<Link to="/events/all/" className="button color blue">
 					<Text icon="right">View all events</Text>
 				</Link>
 			</Section>
 			<Section className="center">
-				<div
-					className="flex left narrow spaceChildren"
-					style={{ textAlign: "left" }}
-				>
+				<div className="flex left narrow spaceChildren" style={{ textAlign: "left" }}>
 					<Icon src="workshop-icon-black.svg" w="64" h="64" />
 					<Text size="XL">
-						We host events with a wide range of topics about each week during
-						the academic quarter.
+						We host events with a wide range of topics about each week during the
+						academic quarter.
 					</Text>
 					<Text color="gray">
-						Including UX design concepts, graphic design techniques, interactive
-						advice from industry speakers, social events, and more.
+						Including UX design concepts, graphic design techniques, interactive advice
+						from industry speakers, social events, and more.
 					</Text>
 					<Text color="gray">
 						Have a suggestion of something you would like to see?
@@ -358,29 +384,8 @@ function getPeriod(h) {
 	}
 }
 
-const days = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday",
-];
-const months = [
-	"Jan",
-	"Feb",
-	"Mar",
-	"Apr",
-	"May",
-	"Jun",
-	"Jul",
-	"Aug",
-	"Sep",
-	"Oct",
-	"Nov",
-	"Dec",
-];
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 const mapDay = (n) => days[n];
 const mapMonth = (n) => months[n];
