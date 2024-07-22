@@ -41,7 +41,7 @@ export const useEvents = () => {
 			}
 		};
 		getEvents();
-	}, [fetchEvents, legacyEvents]);
+	}, []);
 
 	return events;
 };
