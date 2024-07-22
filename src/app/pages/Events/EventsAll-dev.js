@@ -2,21 +2,31 @@ import { Helmet } from "react-helmet";
 
 import { Text } from "app/components";
 import { Section, LoadingD } from "app/Symbols.js";
-import EVENT_DATA from "assets/data/events/all.json";
 
 import { EventCard } from "./components";
+import { useEvents } from "./useEvents";
 
-const EventsAll = () => {
+const EventsAllDev = () => {
+	const { events, loading } = useEvents();
+
+	if (loading) {
+		return (
+			<Helmet>
+				<title>Event Archive - Design at UCI</title>
+			</Helmet>
+		);
+	}
+
 	return (
 		<>
 			<Helmet>
-				<title>Event Archive – Design at UCI</title>
+				<title>Event Archive - Design at UCI</title>
 			</Helmet>
 			<Section className="center short">
 				<Text size="XL">All Events</Text>
 			</Section>
 			<Section className="center short fill gray">
-				{EVENT_DATA == null ? (
+				{!events?.past ? (
 					// Loading animation
 					<LoadingD width="128" style={{ marginBottom: "256px" }} />
 				) : (
@@ -25,7 +35,7 @@ const EventsAll = () => {
 						className="splitEventCard maxWidth"
 						style={{ textAlign: "left" }}
 					>
-						{EVENT_DATA.map((event) => (
+						{events?.past.map((event) => (
 							<EventCard
 								key={event.time + event.title}
 								{...event}
@@ -38,4 +48,4 @@ const EventsAll = () => {
 	);
 };
 
-export default EventsAll;
+export default EventsAllDev;
