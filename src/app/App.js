@@ -18,6 +18,8 @@ import {
 	Resources,
 	ResourcesFeatured,
 	Shirt22,
+	EventsAllDev,
+	EventsDev,
 } from "./pages";
 import "./styles/global.scss";
 import "./styles/colors.scss";
@@ -128,6 +130,13 @@ function App() {
 				/> */}
 
 				<Route path="*" element={<NotFound />} />
+
+				<Route path="dev">
+					<Route path="events">
+						<Route index element={<EventsDev />} />
+						<Route path="all" element={<EventsAllDev />} />
+					</Route>
+				</Route>
 			</Routes>
 			<Footer />
 		</>

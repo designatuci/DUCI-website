@@ -1,54 +1,40 @@
-import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import { Text } from "app/components";
 import { Section, Space, Icon, LoadingD, PageIcon } from "app/Symbols.js";
-import EVENT_DATA from "assets/data/events/all.json";
 
 import EventCard from "./components/EventCard/EventCard.js";
 
-const Events = () => {
-	const [eventData, setEventData] = useState(null);
-	useEffect(() => {
-		let eventData = {
-			upcoming: [],
-			past: [],
-			next: null,
-		};
-		let now = new Date();
-		for (let event of EVENT_DATA) {
-			let time = new Date(
-				new Date(event.time).getTime() + event.duration * 60000,
-			);
-			if (now < time) {
-				eventData.next = event;
-				eventData.upcoming.unshift(event);
-			} else {
-				eventData.past.push(event);
-			}
-		}
-		eventData.upcoming.shift();
-		setEventData(eventData);
-	}, []);
+import { useEvents } from "./useEvents.js";
+
+const EventsDev = () => {
+	const { events, loading } = useEvents();
+
+	if (loading) {
+		return (
+			<Helmet>
+				<title>Events - Design at UCI</title>
+			</Helmet>
+		);
+	}
+
 	return (
 		<>
 			<Helmet>
-				<title>Events – Design at UCI</title>
+				<title>Events - Design at UCI</title>
 			</Helmet>
 			<Section
 				className={`center short ${
-					eventData == null || eventData.next != null
-						? "widePage hint"
-						: ""
+					events == null || events.next != null ? "widePage hint" : ""
 				}`}
 				style={{ paddingTop: "32px" }}
 			>
-				{eventData == null ? (
+				{!events ? (
 					// Loading animation
 					<LoadingD width="128" />
 				) : // Large next event card
-				eventData.next == null ? (
+				!events.next ? (
 					<div className="flex spaceChildrenSmall">
 						<Space h="64" />
 						<Text
@@ -66,7 +52,7 @@ const Events = () => {
 							notifications.
 						</Text>
 					</div>
-				) : new Date(eventData.next.time) > new Date() ? (
+				) : new Date(events.next.time) > new Date() ? (
 					<>
 						<div className="wait show flex row">
 							<Icon w="32" h="32" src="next-event.svg" />
@@ -76,9 +62,9 @@ const Events = () => {
 							</Text>
 						</div>
 						<Text className="color blue wait show subtle d05">
-							{formatRelativeDate(eventData.next.time)}
+							{formatRelativeDate(events.next.time)}
 						</Text>
-						<LargeEvent event={eventData.next} />
+						<LargeEvent event={events.next} />
 					</>
 				) : (
 					<>
@@ -89,40 +75,10 @@ const Events = () => {
 								Live Now
 							</Text>
 						</div>
-						<LargeEvent event={eventData.next} live="true" />
+						<LargeEvent event={events.next} live="true" />
 					</>
 				)}
 			</Section>
-			{eventData != null && eventData.upcoming.length > 0 && (
-				<>
-					<div
-						className="center maxWidth"
-						style={{
-							height: "88px",
-							marginBottom: "-88px",
-							background:
-								"linear-gradient(0,var(--white),var(--sky))",
-						}}
-					>
-						<Text size="L" className="color blue">
-							Next Upcoming Event
-							{eventData.upcoming.length > 1 ? "s" : ""}
-						</Text>
-					</div>
-					<Section className="center">
-						<div className="spaceChildrenLarge">
-							{eventData.upcoming.map((event, i) => {
-								return (
-									<LargeEvent
-										key={event.title}
-										event={event}
-									/>
-								);
-							})}
-						</div>
-					</Section>
-				</>
-			)}
 			<div
 				className="center maxWidth fill gray"
 				style={{ height: "88px", marginBottom: "0" }}
@@ -134,8 +90,8 @@ const Events = () => {
 					className="splitEventCard maxWidth"
 					style={{ textAlign: "left" }}
 				>
-					{eventData != null &&
-						eventData.past
+					{events?.past &&
+						events?.past
 							.slice(0, 12)
 							.map((event) => (
 								<EventCard
@@ -285,7 +241,7 @@ function LargeEvent(props) {
 	);
 }
 
-export default Events;
+export default EventsDev;
 
 function formatDate(date) {
 	let time = new Date(date);
