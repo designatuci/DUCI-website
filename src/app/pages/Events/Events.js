@@ -9,12 +9,20 @@ import EventCard from "./components/EventCard/EventCard.js";
 import { useEvents } from "./useEvents.js";
 
 const Events = () => {
-	const events = useEvents();
+	const { events, loading } = useEvents();
+
+	if (loading) {
+		return (
+			<Helmet>
+				<title>Events - Design at UCI</title>
+			</Helmet>
+		);
+	}
 
 	return (
 		<>
 			<Helmet>
-				<title>Events – Design at UCI</title>
+				<title>Events - Design at UCI</title>
 			</Helmet>
 			<Section
 				className={`center short ${

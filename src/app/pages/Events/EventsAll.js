@@ -7,12 +7,20 @@ import { EventCard } from "./components";
 import { useEvents } from "./useEvents";
 
 const EventsAll = () => {
-	const events = useEvents();
+	const { events, loading } = useEvents();
+
+	if (loading) {
+		return (
+			<Helmet>
+				<title>Event Archive - Design at UCI</title>
+			</Helmet>
+		);
+	}
 
 	return (
 		<>
 			<Helmet>
-				<title>Event Archive – Design at UCI</title>
+				<title>Event Archive - Design at UCI</title>
 			</Helmet>
 			<Section className="center short">
 				<Text size="XL">All Events</Text>

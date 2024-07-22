@@ -1,10 +1,46 @@
 import { defineField, defineType } from "sanity";
 import { SelectWithCustomInput } from "../components/SelectWithCustomInput";
+import React from "react";
 
 type Link = {
 	label?: string;
 	link?: string;
 };
+
+const EVENT_OPTIONS = [
+	{
+		title: "Industry Speaker",
+		value: "Industry Speaker",
+	},
+	{ title: "Workshop", value: "Workshop" },
+	{ title: "Social", value: "Social" },
+	{ title: "Project Teams", value: "Project Teams" },
+	{ title: "Fundraiser", value: "Fundraiser" },
+	{ title: "AMA", value: "AMA" },
+];
+
+const LINK_OPTIONS = [
+	{
+		title: "RSVP Form",
+		value: "RSVP Form",
+	},
+	{
+		title: "Recording",
+		value: "Recording",
+	},
+	{
+		title: "Resources",
+		value: "Resources",
+	},
+	{
+		title: "Slides",
+		value: "Slides",
+	},
+	{
+		title: "Zoom Link",
+		value: "Zoom Link",
+	},
+];
 
 export default defineType({
 	name: "event",
@@ -19,7 +55,7 @@ export default defineType({
 		}),
 		defineField({
 			name: "time",
-			title: "Time",
+			title: "Time (PST)",
 			type: "datetime",
 			validation: (Rule) => Rule.required().error("Time is required"),
 		}),
@@ -31,17 +67,12 @@ export default defineType({
 		}),
 		defineField({
 			name: "type",
-			title: "Type",
+			title: "Event Type",
 			type: "string",
-			options: {
-				list: [
-					{ title: "Industry Speaker", value: "Industry Speaker" },
-					{ title: "Workshop", value: "Workshop" },
-					{ title: "Social", value: "Social" },
-					{ title: "Project Teams", value: "Project Teams" },
-					{ title: "Fundraiser", value: "Fundraiser" },
-					{ title: "AMA", value: "AMA" },
-				],
+			components: {
+				input: (props) => (
+					<SelectWithCustomInput {...props} options={EVENT_OPTIONS} />
+				),
 			},
 			validation: (Rule) => Rule.required().error("Type is required"),
 		}),
@@ -49,7 +80,8 @@ export default defineType({
 			name: "desc",
 			title: "Description",
 			type: "text",
-			validation: (Rule) => Rule.required().error("Description is required"),
+			validation: (Rule) =>
+				Rule.required().error("Description is required"),
 		}),
 		defineField({
 			name: "place",
@@ -72,15 +104,22 @@ export default defineType({
 							title: "Label",
 							type: "string",
 							components: {
-								input: SelectWithCustomInput,
+								input: (props) => (
+									<SelectWithCustomInput
+										{...props}
+										options={LINK_OPTIONS}
+									/>
+								),
 							},
-							validation: (Rule) => Rule.required().error("Label is required"),
+							validation: (Rule) =>
+								Rule.required().error("Label is required"),
 						}),
 						defineField({
 							name: "link",
 							title: "URL",
 							type: "url",
-							validation: (Rule) => Rule.required().error("URL is required"),
+							validation: (Rule) =>
+								Rule.required().error("URL is required"),
 						}),
 					],
 					validation: (Rule) =>

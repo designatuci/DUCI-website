@@ -7,12 +7,16 @@ const legacyEvents = parseEvents(EVENT_DATA); // events from manual JSON file
 
 export const useEvents = () => {
 	const [events, setEvents] = useState([]);
+	const [loading, setLoading] = useState(false);
 
 	const fetchEvents = useCallback(async () => {
+		setLoading(true);
 		const result = await client.fetch(
 			`*[_type == "event"] | order(time desc)`,
 			{},
 		);
+
+		setLoading(false);
 		return result.map((item) => ({
 			title: item.title,
 			time: item.time,
@@ -43,5 +47,5 @@ export const useEvents = () => {
 		getEvents();
 	}, [fetchEvents]);
 
-	return events;
+	return { events, loading };
 };
