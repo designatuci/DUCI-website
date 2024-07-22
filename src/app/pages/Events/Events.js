@@ -1,99 +1,15 @@
-import { useState, useEffect, useCallback } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import { Text } from "app/components";
 import { Section, Space, Icon, LoadingD, PageIcon } from "app/Symbols.js";
-import EVENT_DATA from "assets/data/events/all.json";
 
 import EventCard from "./components/EventCard/EventCard.js";
 
-import { client } from "sanity-client.js";
-
-const parseEvents = (events) => {
-	let eventData = {
-		upcoming: [],
-		past: [],
-	};
-
-	const now = new Date();
-
-	for (let event of events) {
-		const eventTime = new Date(
-			new Date(event.time).getTime() + event.duration * 60000,
-		);
-
-		if (now < eventTime) {
-			eventData.upcoming.unshift(event);
-		} else {
-			eventData.past.push(event);
-		}
-	}
-
-	return eventData;
-};
-
-const joinEvents = (a, b) => {
-	// handle uninitialized/unparsed event lists
-	a = a.upcoming && a.past ? a : { upcoming: [], past: [] };
-	b = b.upcoming && b.past ? b : { upcoming: [], past: [] };
-
-	const combinedUpcoming = [...a.upcoming, ...b.upcoming];
-	const combinedPast = [...a.past, ...b.past];
-
-	let nextEvent = null;
-
-	if (combinedUpcoming.length > 0) {
-		combinedUpcoming.sort(
-			(e1, e2) => new Date(e1.time) - new Date(e2.time),
-		);
-		nextEvent = combinedUpcoming.at(0) ?? null;
-	}
-
-	return {
-		upcoming: combinedUpcoming,
-		past: combinedPast,
-		next: nextEvent,
-	};
-};
-
-const legacyEvents = parseEvents(EVENT_DATA); // events from manual JSON file
+import { useEvents } from "./useEvents.js";
 
 const Events = () => {
-	const [events, setEvents] = useState();
-
-	const fetchEvents = useCallback(async () => {
-		const result = await client.fetch(
-			`*[_type == "event"] | order(time desc)`,
-			{},
-		);
-		return result.map((item) => ({
-			title: item.title,
-			time: item.time,
-			duration: item.duration,
-			type: item.type,
-			desc: item.desc,
-			place: item.place,
-			links: item.links
-				? item.links.map((linkItem) => ({
-						label: linkItem.label,
-						link: linkItem.link,
-					}))
-				: [],
-		}));
-	}, []);
-
-	useEffect(async () => {
-		try {
-			const data = await fetchEvents();
-			const eventData = parseEvents(data);
-
-			const joinedEvents = joinEvents(eventData, legacyEvents);
-			setEvents(joinedEvents);
-		} catch (e) {
-			console.error(e);
-		}
-	}, []);
+	const events = useEvents();
 
 	return (
 		<>
@@ -106,11 +22,11 @@ const Events = () => {
 				}`}
 				style={{ paddingTop: "32px" }}
 			>
-				{events == null ? (
+				{!events ? (
 					// Loading animation
 					<LoadingD width="128" />
 				) : // Large next event card
-				events.next == null ? (
+				!events.next ? (
 					<div className="flex spaceChildrenSmall">
 						<Space h="64" />
 						<Text
@@ -166,8 +82,8 @@ const Events = () => {
 					className="splitEventCard maxWidth"
 					style={{ textAlign: "left" }}
 				>
-					{events != null &&
-						events.past
+					{events?.past &&
+						events?.past
 							.slice(0, 12)
 							.map((event) => (
 								<EventCard

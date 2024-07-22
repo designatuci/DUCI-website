@@ -2,11 +2,13 @@ import { Helmet } from "react-helmet";
 
 import { Text } from "app/components";
 import { Section, LoadingD } from "app/Symbols.js";
-import EVENT_DATA from "assets/data/events/all.json";
 
 import { EventCard } from "./components";
+import { useEvents } from "./useEvents";
 
 const EventsAll = () => {
+	const events = useEvents();
+
 	return (
 		<>
 			<Helmet>
@@ -16,7 +18,7 @@ const EventsAll = () => {
 				<Text size="XL">All Events</Text>
 			</Section>
 			<Section className="center short fill gray">
-				{EVENT_DATA == null ? (
+				{!events?.past ? (
 					// Loading animation
 					<LoadingD width="128" style={{ marginBottom: "256px" }} />
 				) : (
@@ -25,8 +27,11 @@ const EventsAll = () => {
 						className="splitEventCard maxWidth"
 						style={{ textAlign: "left" }}
 					>
-						{EVENT_DATA.map((event) => (
-							<EventCard key={event.time + event.title} {...event} />
+						{events?.past.map((event) => (
+							<EventCard
+								key={event.time + event.title}
+								{...event}
+							/>
 						))}
 					</div>
 				)}
