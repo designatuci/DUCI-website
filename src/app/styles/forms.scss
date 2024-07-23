@@ -1,51 +1,51 @@
 @import "app/styles/variables";
 
 .form {
-	width: 88%;
-	max-width: 768px;
+    width: 88%;
+    max-width: 768px;
 }
 
 .form .inputs {
-	width: 100%;
-	gap: 16px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .form input:nth-child(1) {
-	grid-column: 1/3;
+    grid-column: 1/3;
 }
 
 .form input {
-	width: auto;
-	min-width: unset;
-	border: none;
-	font-size: 20px;
-	padding: 12px 24px;
-	border-radius: 8px;
-	/* box-shadow: 0 0 0 1.5px $silver, 0 2px 4px -1px $silver; */
+    width: auto;
+    min-width: unset;
+    border: none;
+    font-size: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 0 1.5px $silver, 0 2px 4px -1px $silver; */
 }
 
 .form input:focus {
-	box-shadow:
-		0 0 0 3px $blue,
-		0 4px 4px -1px $blue;
+    box-shadow:
+        0 0 0 3px $blue,
+        0 4px 4px -1px $blue;
 }
 
 @media only screen and (max-width: 768px) {
-	.form {
-		width: 88%;
-	}
+    .form {
+        width: 88%;
+    }
 
-	.form .inputs {
-		grid-template-columns: 1fr;
-	}
+    .form .inputs {
+        grid-template-columns: 1fr;
+    }
 
-	.form input {
-		width: 100%;
-	}
+    .form input {
+        width: 100%;
+    }
 
-	.form input:nth-child(1) {
-		grid-column: 1/2;
-	}
+    .form input:nth-child(1) {
+        grid-column: 1/2;
+    }
 }

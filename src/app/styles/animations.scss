@@ -1,196 +1,196 @@
 .freeze,
 .freeze * {
-	animation-play-state: paused !important;
+    animation-play-state: paused !important;
 }
 
 .wait {
-	opacity: 0;
-	will-change: transform, opacity;
+    opacity: 0;
+    will-change: transform, opacity;
 }
 
 .wait.show {
-	transform-origin: top;
-	animation: simple-fadein 0.8s cubic-bezier(0.32, 0.35, 0.07, 1) forwards;
+    transform-origin: top;
+    animation: simple-fadein 0.8s cubic-bezier(0.32, 0.35, 0.07, 1) forwards;
 }
 
 @keyframes simple-fadein {
-	0% {
-		opacity: 0;
-		transform: translateY(64px) skewY(3deg);
-	}
+    0% {
+        opacity: 0;
+        transform: translateY(64px) skewY(3deg);
+    }
 
-	100% {
-		opacity: 1;
-		transform: translateY(0px) skewY(0deg);
-	}
+    100% {
+        opacity: 1;
+        transform: translateY(0px) skewY(0deg);
+    }
 }
 
 .wait.show.drop {
-	transform-origin: top;
-	animation-name: drop-fadein;
-	animation-duration: 1.8s;
-	animation-timing-function: cubic-bezier(0.32, 0.35, 0.07, 1);
-	animation-fill-mode: forwards;
+    transform-origin: top;
+    animation-name: drop-fadein;
+    animation-duration: 1.8s;
+    animation-timing-function: cubic-bezier(0.32, 0.35, 0.07, 1);
+    animation-fill-mode: forwards;
 }
 
 @keyframes drop-fadein {
-	0% {
-		transform: translateY(128px);
-	}
+    0% {
+        transform: translateY(128px);
+    }
 
-	100% {
-		opacity: 1;
-		transform: none;
-	}
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .wait.show.flopR {
-	transform-origin: left;
-	animation: flopR-fadein 2.4s cubic-bezier(0.32, 0.35, 0.07, 1) forwards;
+    transform-origin: left;
+    animation: flopR-fadein 2.4s cubic-bezier(0.32, 0.35, 0.07, 1) forwards;
 }
 
 @keyframes flopR-fadein {
-	0% {
-		transform: perspective(512px) translateX(64px) RotateY(-20deg);
-	}
+    0% {
+        transform: perspective(512px) translateX(64px) RotateY(-20deg);
+    }
 
-	100% {
-		opacity: 1;
-		transform: none;
-		clip-path: inset(0% 0% 0% 0%);
-	}
+    100% {
+        opacity: 1;
+        transform: none;
+        clip-path: inset(0% 0% 0% 0%);
+    }
 }
 
 .wait.show.flopL {
-	transform-origin: right;
-	animation: flopL-fadein 2.4s cubic-bezier(0.32, 0.35, 0.07, 1) forwards;
+    transform-origin: right;
+    animation: flopL-fadein 2.4s cubic-bezier(0.32, 0.35, 0.07, 1) forwards;
 }
 
 @keyframes flopL-fadein {
-	0% {
-		transform: perspective(512px) translateX(-64px) RotateY(20deg);
-	}
+    0% {
+        transform: perspective(512px) translateX(-64px) RotateY(20deg);
+    }
 
-	100% {
-		opacity: 1;
-		transform: none;
-		clip-path: inset(0% 0% 0% 0%);
-	}
+    100% {
+        opacity: 1;
+        transform: none;
+        clip-path: inset(0% 0% 0% 0%);
+    }
 }
 
 .wait.show.scale {
-	transform-origin: bottom;
-	animation: scale-fadein 1.8s cubic-bezier(0.42, 0.63, 0, 1) forwards;
+    transform-origin: bottom;
+    animation: scale-fadein 1.8s cubic-bezier(0.42, 0.63, 0, 1) forwards;
 }
 
 @keyframes scale-fadein {
-	0% {
-		transform: translateY(-32px) scale(1.24);
-	}
+    0% {
+        transform: translateY(-32px) scale(1.24);
+    }
 
-	100% {
-		opacity: 1;
-		transform: none;
-	}
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .wait.show.rainbow {
-	transform-origin: top;
-	animation: rainbow-fadein 3s cubic-bezier(0.42, 0.63, 0, 1) forwards;
+    transform-origin: top;
+    animation: rainbow-fadein 3s cubic-bezier(0.42, 0.63, 0, 1) forwards;
 }
 
 @keyframes rainbow-fadein {
-	0% {
-		transform: perspective(256px) translateY(-64px) scale(1.24)
-			rotateX(60deg);
-		filter: hue-rotate(360deg);
-	}
+    0% {
+        transform: perspective(256px) translateY(-64px) scale(1.24)
+            rotateX(60deg);
+        filter: hue-rotate(360deg);
+    }
 
-	100% {
-		opacity: 1;
-		transform: none;
-		filter: none;
-	}
+    100% {
+        opacity: 1;
+        transform: none;
+        filter: none;
+    }
 }
 
 .wait.show.subtle {
-	transform-origin: bottom;
-	animation-name: subtle-fadein;
-	animation-duration: 1s;
-	animation-timing-function: cubic-bezier(0.42, 0.63, 0, 1) forwards;
+    transform-origin: bottom;
+    animation-name: subtle-fadein;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.42, 0.63, 0, 1) forwards;
 }
 
 @keyframes subtle-fadein {
-	0% {
-		transform: translateY(-8px);
-	}
+    0% {
+        transform: translateY(-8px);
+    }
 
-	100% {
-		opacity: 1;
-		transform: none;
-	}
+    100% {
+        opacity: 1;
+        transform: none;
+    }
 }
 
 .wait.dx {
-	animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .wait.dx:nth-child(1) {
-	animation-delay: 0s;
+    animation-delay: 0s;
 }
 
 .wait.dx:nth-child(2) {
-	animation-delay: 0.05s;
+    animation-delay: 0.05s;
 }
 
 .wait.dx:nth-child(3) {
-	animation-delay: 0.1s;
+    animation-delay: 0.1s;
 }
 
 .wait.dx:nth-child(4) {
-	animation-delay: 0.15s;
+    animation-delay: 0.15s;
 }
 
 .wait.dx:nth-child(5) {
-	animation-delay: 0.2s;
+    animation-delay: 0.2s;
 }
 
 .wait.dx:nth-child(6) {
-	animation-delay: 0.25s;
+    animation-delay: 0.25s;
 }
 
 .wait.dx:nth-child(7) {
-	animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
 .wait.dx:nth-child(8) {
-	animation-delay: 0.35s;
+    animation-delay: 0.35s;
 }
 
 .wait.dx:nth-child(9) {
-	animation-delay: 0.4s;
+    animation-delay: 0.4s;
 }
 
 .wait.dx:nth-child(10) {
-	animation-delay: 0.45s;
+    animation-delay: 0.45s;
 }
 
 .wait.d05 {
-	animation-delay: 0.5s;
+    animation-delay: 0.5s;
 }
 
 .wait.d10 {
-	animation-delay: 1s;
+    animation-delay: 1s;
 }
 
 .wait.d15 {
-	animation-delay: 1.5s;
+    animation-delay: 1.5s;
 }
 
 .wait.l2 {
-	animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 .wait.l3 {
-	animation-duration: 3s;
+    animation-duration: 3s;
 }

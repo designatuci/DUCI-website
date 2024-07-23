@@ -1,4 +1,6 @@
 build
 public/static
-node_modules
+*node_modules*
 *.yml
+sanity-dauci/.sanity/*
+sanity-dauci/dist/*

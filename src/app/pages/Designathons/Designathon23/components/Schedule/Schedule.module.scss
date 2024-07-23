@@ -1,85 +1,85 @@
 .container {
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
 
-	& .note {
-		color: var(--gray);
-		font-size: 1.2em;
-		line-height: 1.3em;
-	}
+    & .note {
+        color: var(--gray);
+        font-size: 1.2em;
+        line-height: 1.3em;
+    }
 
-	& .title {
-		font-size: 3em;
-		font-weight: bold;
-		padding-bottom: 20px;
-	}
+    & .title {
+        font-size: 3em;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
 
-	a {
-		text-decoration: underline;
-		transition: color 350ms;
+    a {
+        text-decoration: underline;
+        transition: color 350ms;
 
-		&:hover {
-			color: white;
-		}
-	}
-	& h2 {
-		color: var(--blue);
-		font-weight: bold;
-	}
+        &:hover {
+            color: white;
+        }
+    }
+    & h2 {
+        color: var(--blue);
+        font-weight: bold;
+    }
 
-	& .list {
-		display: grid;
-		row-gap: 20px;
+    & .list {
+        display: grid;
+        row-gap: 20px;
 
-		& > .event {
-			display: grid;
-			grid-template-columns: auto 1fr;
-			column-gap: 20px;
-			padding-bottom: 20px;
-			border-bottom: 2px solid var(--gray);
+        & > .event {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--gray);
 
-			@media screen and (min-width: 950px) {
-				grid-template-columns: 150px 1fr 1fr;
-			}
+            @media screen and (min-width: 950px) {
+                grid-template-columns: 150px 1fr 1fr;
+            }
 
-			& > .title {
-				font-size: 1.4em;
-				font-weight: bold;
-				text-align: right;
+            & > .title {
+                font-size: 1.4em;
+                font-weight: bold;
+                text-align: right;
 
-				&.special {
-					color: var(--yellow);
-				}
+                &.special {
+                    color: var(--yellow);
+                }
 
-				&.highlight {
-					color: var(--blue);
-				}
-			}
+                &.highlight {
+                    color: var(--blue);
+                }
+            }
 
-			& > .time {
-				font-size: 1.3em;
-				display: grid;
-				row-gap: 8px;
-			}
+            & > .time {
+                font-size: 1.3em;
+                display: grid;
+                row-gap: 8px;
+            }
 
-			& > .description {
-				padding-top: 20px;
-				color: var(--gray);
-				grid-column: 1 / 3;
-				font-size: 1.1em;
-				line-height: 1.2em;
-				display: grid;
-				row-gap: 20px;
+            & > .description {
+                padding-top: 20px;
+                color: var(--gray);
+                grid-column: 1 / 3;
+                font-size: 1.1em;
+                line-height: 1.2em;
+                display: grid;
+                row-gap: 20px;
 
-				& > p {
-					line-height: 1.2em;
-				}
+                & > p {
+                    line-height: 1.2em;
+                }
 
-				@media screen and (min-width: 950px) {
-					padding-top: 0px;
-					grid-column: 3 / 4;
-				}
-			}
-		}
-	}
+                @media screen and (min-width: 950px) {
+                    padding-top: 0px;
+                    grid-column: 3 / 4;
+                }
+            }
+        }
+    }
 }

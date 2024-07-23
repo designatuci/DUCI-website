@@ -15,7 +15,6 @@
             place-self: center;
             gap: 10px;
         }
-
     }
 
     .actions {
@@ -51,7 +50,10 @@
         padding: 0 20px;
         border-radius: 8px;
         text-transform: uppercase;
-        transition: border-color 250ms, color 250ms, background-color 250ms;
+        transition:
+            border-color 250ms,
+            color 250ms,
+            background-color 250ms;
         background-color: transparent;
 
         &.submit {
@@ -83,7 +85,6 @@
                 object-fit: contain;
             }
         }
-
     }
 
     .error {

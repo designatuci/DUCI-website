@@ -18,14 +18,13 @@
         @media screen and (max-width: 1000px) {
             font-size: 1em;
         }
-
     }
-     img {
+    img {
         margin: 0 auto;
         max-height: 200px;
 
         @media screen and (max-width: 1000px) {
             max-height: 100px;
         }
-     }
+    }
 }

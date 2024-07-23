@@ -1,190 +1,190 @@
 .container {
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
 
-	background-color: var(--des24-cream);
-	color: var(--des24-black);
+    background-color: var(--des24-cream);
+    color: var(--des24-black);
 
-	padding: 5rem 2rem;
+    padding: 5rem 2rem;
 
-	.content {
-		margin: 0 auto;
-		max-width: 1280px;
-	}
+    .content {
+        margin: 0 auto;
+        max-width: 1280px;
+    }
 
-	.heading {
-		position: relative;
-		color: var(--des24-hot-pink);
-		font-size: 3rem;
-		font-weight: 700;
-		padding: 0 2.5%;
+    .heading {
+        position: relative;
+        color: var(--des24-hot-pink);
+        font-size: 3rem;
+        font-weight: 700;
+        padding: 0 2.5%;
 
-		@media screen and (min-width: 640px) {
-			font-size: 5rem;
-			padding: 0 2%;
-		}
+        @media screen and (min-width: 640px) {
+            font-size: 5rem;
+            padding: 0 2%;
+        }
 
-		@media screen and (min-width: 1280px) {
-			font-size: 6rem;
-		}
-	}
+        @media screen and (min-width: 1280px) {
+            font-size: 6rem;
+        }
+    }
 
-	.polaroids {
-		margin: 0 auto;
-		margin-top: 3rem;
+    .polaroids {
+        margin: 0 auto;
+        margin-top: 3rem;
 
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		gap: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
 
-		@media screen and (min-width: 640px) {
-			max-width: 80%;
-		}
+        @media screen and (min-width: 640px) {
+            max-width: 80%;
+        }
 
-		@media screen and (min-width: 1280px) {
-			max-width: unset;
-			margin-top: 5rem;
-			gap: 8rem;
-		}
+        @media screen and (min-width: 1280px) {
+            max-width: unset;
+            margin-top: 5rem;
+            gap: 8rem;
+        }
 
-		.polaroidHeading {
-			position: relative;
-			font-size: 2rem;
-			font-weight: 700;
+        .polaroidHeading {
+            position: relative;
+            font-size: 2rem;
+            font-weight: 700;
 
-			padding-bottom: 3rem;
+            padding-bottom: 3rem;
 
-			@media screen and (min-width: 1280px) {
-				font-size: 2.5rem;
-				padding-bottom: 5rem;
-			}
-		}
+            @media screen and (min-width: 1280px) {
+                font-size: 2.5rem;
+                padding-bottom: 5rem;
+            }
+        }
 
-		.keynote {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+        .keynote {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
-			text-align: center;
+            text-align: center;
 
-			.keynotePolaroid {
-				background: no-repeat center;
-				background-size: contain;
+            .keynotePolaroid {
+                background: no-repeat center;
+                background-size: contain;
 
-				display: grid;
-				place-content: center;
+                display: grid;
+                place-content: center;
 
-				max-width: min(350px, 90%);
+                max-width: min(350px, 90%);
 
-				@media screen and (min-width: 640px) {
-					position: relative;
-					width: 60%;
-					max-width: unset;
+                @media screen and (min-width: 640px) {
+                    position: relative;
+                    width: 60%;
+                    max-width: unset;
 
-					.content {
-						margin: 0 auto;
-						width: 90%;
-					}
-				}
-			}
-		}
+                    .content {
+                        margin: 0 auto;
+                        width: 90%;
+                    }
+                }
+            }
+        }
 
-		.people {
-			display: grid;
-			grid-template-columns: repeat(1, 1fr);
-			row-gap: 3rem;
-			max-width: min(350px, 90%);
-			margin: auto;
+        .people {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 3rem;
+            max-width: min(350px, 90%);
+            margin: auto;
 
-			@media screen and (min-width: 640px) {
-				grid-template-columns: repeat(2, 1fr);
-				max-width: unset;
-			}
+            @media screen and (min-width: 640px) {
+                grid-template-columns: repeat(2, 1fr);
+                max-width: unset;
+            }
 
-			@media screen and (min-width: 768px) {
-				column-gap: 2rem;
-			}
+            @media screen and (min-width: 768px) {
+                column-gap: 2rem;
+            }
 
-			@media screen and (min-width: 1280px) {
-				grid-template-columns: repeat(3, 1fr);
-			}
-		}
-	}
+            @media screen and (min-width: 1280px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
 
-	@media screen and (min-width: 640px) {
-		padding: 9rem 3rem 9rem;
-	}
+    @media screen and (min-width: 640px) {
+        padding: 9rem 3rem 9rem;
+    }
 
-	@media screen and (min-width: 1280px) {
-		padding: 9rem 5rem 9rem;
-	}
+    @media screen and (min-width: 1280px) {
+        padding: 9rem 5rem 9rem;
+    }
 }
 
 .decoration {
-	position: absolute;
-	pointer-events: none;
+    position: absolute;
+    pointer-events: none;
 
-	&.tl_gradient {
-		max-width: 60%;
+    &.tl_gradient {
+        max-width: 60%;
 
-		top: 0px;
-		left: 0px;
-	}
+        top: 0px;
+        left: 0px;
+    }
 
-	&.tl_star_stripe {
-		max-width: 150px;
+    &.tl_star_stripe {
+        max-width: 150px;
 
-		top: 15%;
-		left: 0px;
+        top: 15%;
+        left: 0px;
 
-		@media screen and (min-width: 640px) {
-			max-width: 50%;
-		}
-	}
+        @media screen and (min-width: 640px) {
+            max-width: 50%;
+        }
+    }
 
-	&.tr_pencil_star_stripe {
-		max-width: 40%;
+    &.tr_pencil_star_stripe {
+        max-width: 40%;
 
-		top: 0;
-		right: 0px;
+        top: 0;
+        right: 0px;
 
-		@media screen and (min-width: 640px) {
-			max-width: 50%;
-		}
-	}
+        @media screen and (min-width: 640px) {
+            max-width: 50%;
+        }
+    }
 
-	&.stripe {
-		top: 45%;
-		left: 0px;
-	}
+    &.stripe {
+        top: 45%;
+        left: 0px;
+    }
 
-	&.star_stripe {
-		top: 50%;
-		right: 0px;
+    &.star_stripe {
+        top: 50%;
+        right: 0px;
 
-		@media screen and (min-width: 640px) {
-			top: 30%;
-		}
-	}
+        @media screen and (min-width: 640px) {
+            top: 30%;
+        }
+    }
 
-	&.m {
-		max-width: 250px;
+    &.m {
+        max-width: 250px;
 
-		@media screen and (min-width: 640px) {
-			max-width: 650px;
-		}
-	}
+        @media screen and (min-width: 640px) {
+            max-width: 650px;
+        }
+    }
 
-	&.br_star_stripe_gradient {
-		max-width: 400px;
+    &.br_star_stripe_gradient {
+        max-width: 400px;
 
-		bottom: 0px;
-		right: 0px;
+        bottom: 0px;
+        right: 0px;
 
-		@media screen and (min-width: 640px) {
-			max-width: 700px;
-		}
-	}
+        @media screen and (min-width: 640px) {
+            max-width: 700px;
+        }
+    }
 }

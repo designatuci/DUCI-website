@@ -1,66 +1,66 @@
 [
-	{
-		"place": "1st Place",
-		"team": "Ratatouille",
-		"members": [
-			{
-				"name": "Stephanie Chang",
-				"school": "UCLA - @stephcha7"
-			},
-			{
-				"name": "Michelle Kou",
-				"school": "UCLA - @michiskou"
-			}
-		],
-		"project": "Ratatouille",
-		"description": "Ratatouille is an app that aims to inspire individuals to pursue a more sustainable diet in order to decrease carbon emissions. The app features alternative recipes to familiar meals so that individuals can overcome their fear of trying a new diet without any pressure or guilt.  Most importantly, users can see the carbon emissions of each dish to increase awareness of the carbon footprint of certain foods. Being able to visualize the changes they’re making allows them to believe they can make a difference with small steps. In the words of Remy, the famous rat chef from the Disney movie 'Ratatouille', anyone can cook (sustainably)."
-	},
-	{
-		"place": "2nd Place",
-		"team": "Best Team Ever",
-		"members": [
-			{
-				"name": "Ashley Chang",
-				"school": "UC Davis - @ashhhcha"
-			},
-			{
-				"name": "An Nguyen",
-				"school": "UC Riverside - @annguyen.ig"
-			},
-			{
-				"name": "Ryan Yang",
-				"school": "UC Irvine - @veryfewsbux"
-			},
-			{
-				"name": "Angel Yim",
-				"school": "UC Berkeley - @angelysy_"
-			}
-		],
-		"project": "Carbonology",
-		"description": "Carbonology is an app that provides convenient access to important sustainability information of common household products and aims to help consumers lead a more sustainable life. By simply scanning products, users can conveniently find sustainability statistics to guide their purchase decisions. Being eco-friendly isn't that simple for everyone and we know that. Carbonology provides a tiered reward system by collaborating with various recycling sites to provide financial incentives for those looking to be more sustainable, while still being affordable."
-	},
-	{
-		"place": "3rd Place",
-		"team": "Figma Sigma Chi",
-		"members": [
-			{
-				"name": "Amanda Griffith",
-				"school": "University of North Texas - @nekobekoart"
-			},
-			{
-				"name": "Brett Johnson",
-				"school": "University of North Texas - @brett_c_johnson"
-			},
-			{
-				"name": "Khrystal Mendonca",
-				"school": "University of North Texas - @khrysleanna"
-			},
-			{
-				"name": "Michael Romero",
-				"school": "University of North Texas - @mjmrla"
-			}
-		],
-		"project": "Readeasy",
-		"description": "An app that gives high school and middle school students the ability to access their schools’ banned books and the tools necessary to fight for their education."
-	}
+    {
+        "place": "1st Place",
+        "team": "Ratatouille",
+        "members": [
+            {
+                "name": "Stephanie Chang",
+                "school": "UCLA - @stephcha7"
+            },
+            {
+                "name": "Michelle Kou",
+                "school": "UCLA - @michiskou"
+            }
+        ],
+        "project": "Ratatouille",
+        "description": "Ratatouille is an app that aims to inspire individuals to pursue a more sustainable diet in order to decrease carbon emissions. The app features alternative recipes to familiar meals so that individuals can overcome their fear of trying a new diet without any pressure or guilt.  Most importantly, users can see the carbon emissions of each dish to increase awareness of the carbon footprint of certain foods. Being able to visualize the changes they’re making allows them to believe they can make a difference with small steps. In the words of Remy, the famous rat chef from the Disney movie 'Ratatouille', anyone can cook (sustainably)."
+    },
+    {
+        "place": "2nd Place",
+        "team": "Best Team Ever",
+        "members": [
+            {
+                "name": "Ashley Chang",
+                "school": "UC Davis - @ashhhcha"
+            },
+            {
+                "name": "An Nguyen",
+                "school": "UC Riverside - @annguyen.ig"
+            },
+            {
+                "name": "Ryan Yang",
+                "school": "UC Irvine - @veryfewsbux"
+            },
+            {
+                "name": "Angel Yim",
+                "school": "UC Berkeley - @angelysy_"
+            }
+        ],
+        "project": "Carbonology",
+        "description": "Carbonology is an app that provides convenient access to important sustainability information of common household products and aims to help consumers lead a more sustainable life. By simply scanning products, users can conveniently find sustainability statistics to guide their purchase decisions. Being eco-friendly isn't that simple for everyone and we know that. Carbonology provides a tiered reward system by collaborating with various recycling sites to provide financial incentives for those looking to be more sustainable, while still being affordable."
+    },
+    {
+        "place": "3rd Place",
+        "team": "Figma Sigma Chi",
+        "members": [
+            {
+                "name": "Amanda Griffith",
+                "school": "University of North Texas - @nekobekoart"
+            },
+            {
+                "name": "Brett Johnson",
+                "school": "University of North Texas - @brett_c_johnson"
+            },
+            {
+                "name": "Khrystal Mendonca",
+                "school": "University of North Texas - @khrysleanna"
+            },
+            {
+                "name": "Michael Romero",
+                "school": "University of North Texas - @mjmrla"
+            }
+        ],
+        "project": "Readeasy",
+        "description": "An app that gives high school and middle school students the ability to access their schools’ banned books and the tools necessary to fight for their education."
+    }
 ]

@@ -1,57 +1,57 @@
 .container {
-	z-index: 100;
-	position: sticky;
-	top: 0;
-	right: 0;
-	left: 0;
-	max-width: 100%;
-	height: 88px;
-	padding: 0 16px;
-	box-shadow: 0 0 8px #0002;
-	background-color: black;
-	color: white;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    height: 88px;
+    padding: 0 16px;
+    box-shadow: 0 0 8px #0002;
+    background-color: black;
+    color: white;
 
-	display: grid;
-	place-content: center start;
-	column-gap: 10px;
-	grid-auto-flow: column;
-	overflow: hidden;
-	overflow-x: scroll;
+    display: grid;
+    place-content: center start;
+    column-gap: 10px;
+    grid-auto-flow: column;
+    overflow: hidden;
+    overflow-x: scroll;
 
-	& > .item {
-		font-size: 0.8em;
-		padding: 8px 12px;
-		cursor: pointer;
-		border-radius: 999px;
-		background-color: transparent;
-		transition: background-color 250ms;
+    & > .item {
+        font-size: 0.8em;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 999px;
+        background-color: transparent;
+        transition: background-color 250ms;
 
-		&:hover {
-			background-color: #5b4de1;
-			color: black;
-		}
-		& > p {
-			white-space: nowrap;
-		}
-	}
+        &:hover {
+            background-color: #5b4de1;
+            color: black;
+        }
+        & > p {
+            white-space: nowrap;
+        }
+    }
 
-	@media screen and (min-width: 800px) {
-		padding: 0 32px;
+    @media screen and (min-width: 800px) {
+        padding: 0 32px;
 
-		& > .item {
-			font-size: 1em;
-			padding: 12px 24px;
-			cursor: pointer;
-			border-radius: 999px;
-			background-color: transparent;
-			transition:
-				background-color 250ms,
-				color 250ms;
+        & > .item {
+            font-size: 1em;
+            padding: 12px 24px;
+            cursor: pointer;
+            border-radius: 999px;
+            background-color: transparent;
+            transition:
+                background-color 250ms,
+                color 250ms;
 
-			&:hover {
-				background-color: var(--blue);
-				color: black;
-			}
-		}
-	}
+            &:hover {
+                background-color: var(--blue);
+                color: black;
+            }
+        }
+    }
 }

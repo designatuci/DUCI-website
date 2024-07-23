@@ -1,21 +1,21 @@
 .join {
-	height: 60vh;
-	display: grid;
-	place-content: center;
-	max-width: 800px;
-	margin: 0 auto;
+    height: 60vh;
+    display: grid;
+    place-content: center;
+    max-width: 800px;
+    margin: 0 auto;
 
-	.title {
-		text-align: center;
-		font-weight: bold;
-	}
+    .title {
+        text-align: center;
+        font-weight: bold;
+    }
 
-	.description {
-		text-align: center;
-		margin-top: 20px;
-	}
+    .description {
+        text-align: center;
+        margin-top: 20px;
+    }
 
-	.button {
-		margin: 40px auto;
-	}
+    .button {
+        margin: 40px auto;
+    }
 }

@@ -1,525 +1,525 @@
 [
-	{
-		"year": 2024,
-		"members": [
-			{
-				"name": "Jin-Kim Niu",
-				"position": "Co-President",
-				"photo": "Jin_Kim_Niu.jpg",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/jin-kim-niu/"
-					},
-					{
-						"type": "website",
-						"href": "https://jinkimniu.framer.website/"
-					}
-				]
-			},
-			{
-				"name": "Christine Nguyen",
-				"position": "Co-President",
-				"photo": "Christine_Nguyen.jpeg",
-				"links": []
-			},
-			{
-				"name": "Jessica (Jay) Sotelo",
-				"position": "Industry Outreach Coordinator",
-				"photo": "Jessica_Sotelo.jpg",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "http://linkedin.com/in/jessica-sotelo"
-					}
-				]
-			},
-			{
-				"name": "Michelle Yang",
-				"position": "Marketing Director",
-				"photo": "Michelle_Yang.JPG",
-				"links": []
-			},
-			{
-				"name": "Khanh Tran",
-				"position": "Marketing Coordinator",
-				"photo": "Khanh_Tran.jpg",
-				"links": []
-			},
-			{
-				"name": "Nuo Yang",
-				"position": "Marketing Coordinator",
-				"photo": "Nuo_Yang.jpeg",
-				"links": []
-			},
-			{
-				"name": "Vanna Vuong",
-				"position": "Industry Outreach Coordinator",
-				"photo": "Vanna_Vuong.jpeg"
-			},
-			{
-				"name": "Ava Lee",
-				"position": "Social Chair",
-				"photo": "Ava_Lee.jpg"
-			},
-			{
-				"name": "Candyce Pham",
-				"position": "Graphic Designer",
-				"photo": "Candyce_Pham.jpg",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "http://www.linkedin.com/in/candyce-pham"
-					}
-				]
-			},
-			{
-				"name": "Ryan Yang",
-				"position": "Webmaster",
-				"photo": "Ryan_Yang.jpg",
-				"links": [
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/veryfewsbux"
-					},
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/ryanqyang/"
-					},
-					{
-						"type": "website",
-						"href": "https://ryqn.dev"
-					}
-				]
-			},
-			{
-				"name": "Taesung Hwang",
-				"position": "Webmaster",
-				"photo": "Taesung_Hwang.jpg"
-			}
-		]
-	},
-	{
-		"year": 2023,
-		"members": [
-			{
-				"name": "Meghna Kaligotla",
-				"position": "President",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/meghna-kaligotla-605/"
-					}
-				]
-			},
-			{
-				"name": "Carly Chan",
-				"position": "Vice President",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/carlychan/"
-					},
-					{
-						"type": "website",
-						"href": "https://carlychan.com/"
-					},
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/_carlychan_/"
-					}
-				]
-			},
-			{
-				"name": "Jolin Huang",
-				"position": "Marketing Director",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/jolin-huang-30a4451b0/"
-					},
-					{
-						"type": "website",
-						"href": "https://jolinuxui.myportfolio.com"
-					},
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/j.huanggg/"
-					}
-				]
-			},
-			{
-				"name": "Kristy Chung",
-				"position": "Marketing Coordinator",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/kristychung1/"
-					},
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/kriisty.c/"
-					}
-				]
-			},
-			{
-				"name": "Vyctoria Vu",
-				"position": "Marketing Coordinator"
-			},
+    {
+        "year": 2024,
+        "members": [
+            {
+                "name": "Jin-Kim Niu",
+                "position": "Co-President",
+                "photo": "Jin_Kim_Niu.jpg",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/jin-kim-niu/"
+                    },
+                    {
+                        "type": "website",
+                        "href": "https://jinkimniu.framer.website/"
+                    }
+                ]
+            },
+            {
+                "name": "Christine Nguyen",
+                "position": "Co-President",
+                "photo": "Christine_Nguyen.jpeg",
+                "links": []
+            },
+            {
+                "name": "Jessica (Jay) Sotelo",
+                "position": "Industry Outreach Coordinator",
+                "photo": "Jessica_Sotelo.jpg",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "http://linkedin.com/in/jessica-sotelo"
+                    }
+                ]
+            },
+            {
+                "name": "Michelle Yang",
+                "position": "Marketing Director",
+                "photo": "Michelle_Yang.JPG",
+                "links": []
+            },
+            {
+                "name": "Khanh Tran",
+                "position": "Marketing Coordinator",
+                "photo": "Khanh_Tran.jpg",
+                "links": []
+            },
+            {
+                "name": "Nuo Yang",
+                "position": "Marketing Coordinator",
+                "photo": "Nuo_Yang.jpeg",
+                "links": []
+            },
+            {
+                "name": "Vanna Vuong",
+                "position": "Industry Outreach Coordinator",
+                "photo": "Vanna_Vuong.jpeg"
+            },
+            {
+                "name": "Ava Lee",
+                "position": "Social Chair",
+                "photo": "Ava_Lee.jpg"
+            },
+            {
+                "name": "Candyce Pham",
+                "position": "Graphic Designer",
+                "photo": "Candyce_Pham.jpg",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "http://www.linkedin.com/in/candyce-pham"
+                    }
+                ]
+            },
+            {
+                "name": "Ryan Yang",
+                "position": "Webmaster",
+                "photo": "Ryan_Yang.jpg",
+                "links": [
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/veryfewsbux"
+                    },
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/ryanqyang/"
+                    },
+                    {
+                        "type": "website",
+                        "href": "https://ryqn.dev"
+                    }
+                ]
+            },
+            {
+                "name": "Taesung Hwang",
+                "position": "Webmaster",
+                "photo": "Taesung_Hwang.jpg"
+            }
+        ]
+    },
+    {
+        "year": 2023,
+        "members": [
+            {
+                "name": "Meghna Kaligotla",
+                "position": "President",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/meghna-kaligotla-605/"
+                    }
+                ]
+            },
+            {
+                "name": "Carly Chan",
+                "position": "Vice President",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/carlychan/"
+                    },
+                    {
+                        "type": "website",
+                        "href": "https://carlychan.com/"
+                    },
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/_carlychan_/"
+                    }
+                ]
+            },
+            {
+                "name": "Jolin Huang",
+                "position": "Marketing Director",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/jolin-huang-30a4451b0/"
+                    },
+                    {
+                        "type": "website",
+                        "href": "https://jolinuxui.myportfolio.com"
+                    },
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/j.huanggg/"
+                    }
+                ]
+            },
+            {
+                "name": "Kristy Chung",
+                "position": "Marketing Coordinator",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/kristychung1/"
+                    },
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/kriisty.c/"
+                    }
+                ]
+            },
+            {
+                "name": "Vyctoria Vu",
+                "position": "Marketing Coordinator"
+            },
 
-			{
-				"name": "Emily Huynh",
-				"position": "Marketing Coordinator"
-			},
-			{
-				"name": "Vera Zhang",
-				"position": "Workshop Coordinator"
-			},
-			{
-				"name": "Hannah Limary",
-				"position": "Designathon Director",
-				"photo": "Hannah_Limary.jpg",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/hannah-limary"
-					},
-					{
-						"type": "website",
-						"href": "https://hannahlimary.squarespace.com/"
-					}
-				]
-			},
-			{
-				"name": "Sunny Stetsyuk",
-				"position": "Project Teams Coordinator",
-				"photo": "Sunny_Stetsyuk.jpg"
-			},
-			{
-				"name": "Jorina Chen",
-				"position": "Project Teams Coordinator",
-				"photo": "Jorina_Chen.jpg",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/jorinachen/"
-					},
-					{
-						"type": "website",
-						"href": "https://www.jorinachen.com/"
-					}
-				]
-			},
-			{
-				"name": "Zoya Soy",
-				"position": "Project Teams Coordinator",
-				"photo": "Zoya_Soy.jpg"
-			},
-			{
-				"name": "Isabel Pham",
-				"position": "Creative Director",
-				"photo": "Isabel_Pham.png",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/isabe1pham/"
-					}
-				]
-			},
-			{
-				"name": "Karla Avalos",
-				"position": "Graphic Designer",
-				"photo": "Karla_Avalos.jpg"
-			},
-			{
-				"name": "Katherine Park",
-				"position": "Internal Intern",
-				"photo": "Katherine_Park.jpg",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/katherine-p-a93a10219"
-					}
-				]
-			},
-			{
-				"name": "Samantha Purganan",
-				"position": "Internal Intern",
-				"photo": "Samantha_Purganan.jpg",
-				"links": [
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/samgmpurg/?hl=en"
-					}
-				]
-			},
-			{
-				"name": "Adora Chen",
-				"position": "Internal Intern",
-				"photo": "Adora_Chen.jpeg"
-			},
-			{
-				"name": "Moneer Ghani",
-				"position": "External Intern",
-				"photo": "Moneer_Ghani.jpeg",
-				"links": [
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/moneerg/?hl=en"
-					},
-					{
-						"type": "linkedin",
-						"href": "http://www.linkedin.com/in/moneerg"
-					}
-				]
-			},
-			{
-				"name": "Krisha Konchadi",
-				"position": "Design Intern",
-				"photo": "Krisha_Konchadi.jpg"
-			},
-			{
-				"name": "Brandon Gumayagay",
-				"position": "Developer Intern",
-				"photo": "Brandon_Gumayagay.jpg",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/brandon-gumayagay/"
-					}
-				]
-			},
-			{
-				"name": "Rosalind Guo",
-				"position": "Developer Intern",
-				"photo": "RosalindGuo.jpg",
-				"links": [
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/rozguo/"
-					}
-				]
-			},
-			{
-				"name": "Kaitlen Ngo",
-				"position": "Developer Intern",
-				"links": [
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/no.11002012014/"
-					}
-				]
-			}
-		]
-	},
-	{
-		"year": 2022,
-		"members": [
-			{
-				"name": "Sonali Chellappa",
-				"position": "Project Teams Coordinator"
-			},
-			{
-				"name": "Juhi Patel",
-				"position": "Project Teams Coordinator"
-			},
-			{
-				"name": "Evangeline Gao",
-				"position": "Vice President",
-				"color": "blue"
-			},
-			{
-				"name": "Gabby Tom",
-				"position": "Project Teams Coordinator",
-				"color": "pink"
-			},
-			{
-				"name": "Iantha Khan",
-				"position": "Marketing Coordinator",
-				"color": "green"
-			},
-			{
-				"name": "Vivian Chu",
-				"position": "Workshop Coordinator",
-				"color": "red",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/vivianchu204/"
-					}
-				]
-			},
-			{
-				"name": "Michael Chang",
-				"position": "Financial Chair",
-				"color": "red"
-			},
-			{
-				"name": "Kailer Garcia",
-				"position": "Creative Director",
-				"color": "blue",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/kailer/"
-					},
-					{
-						"type": "website",
-						"href": "https://www.kailerg.com/"
-					}
-				]
-			},
-			{
-				"name": "Vivian Nguyen",
-				"position": "Media Content Creator",
-				"color": "blue",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/vivvnguyenn/"
-					}
-				]
-			},
-			{
-				"name": "Amy Steinmetz",
-				"position": "Financial Chair",
-				"color": "blue",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/amysteinmetz/"
-					},
-					{
-						"type": "website",
-						"href": "https://uxfol.io/steinmea"
-					},
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/amytallgirl/"
-					}
-				]
-			},
-			{
-				"name": "Vivian Lin",
-				"position": "Industry Outreach Coordinator",
-				"color": "blue",
-				"links": [
-					{
-						"type": "linkedin",
-						"href": "https://www.linkedin.com/in/vivianplin/"
-					},
-					{
-						"type": "instagram",
-						"href": "https://www.instagram.com/strawbbyv/"
-					}
-				]
-			},
-			{
-				"name": "Kevin Tsai",
-				"position": "Industry Outreach Coordinator",
-				"color": "blue",
-				"links": []
-			}
-		]
-	},
-	{
-		"year": 2021,
-		"members": [
-			{
-				"name": "Jody Jamin",
-				"position": "President",
-				"color": "blue"
-			},
-			{
-				"name": "Ivy Thong",
-				"position": "Vice President",
-				"color": "blue"
-			},
-			{
-				"name": "Andrew Benson",
-				"position": "Financial Chair",
-				"color": "blue"
-			},
-			{
-				"name": "Laney Dang",
-				"position": "Marketing Director",
-				"color": "green"
-			},
-			{
-				"name": "John Ly",
-				"position": "Marketing",
-				"color": "green"
-			},
-			{
-				"name": "Ashlyn Riambon",
-				"position": "Marketing",
-				"color": "green"
-			},
-			{
-				"name": "Stella Adriana",
-				"position": "Industry Outreach",
-				"color": "red"
-			},
-			{
-				"name": "Sophia Huang",
-				"position": "Workshop Committee",
-				"color": "red"
-			},
-			{
-				"name": "Sruthi Ramabadran",
-				"position": "Social Coordinator",
-				"color": "red"
-			},
-			{
-				"name": "Jonathan Fung",
-				"position": "Project Teams Committee",
-				"color": "pink"
-			},
-			{
-				"name": "Angela Martin",
-				"position": "Project Teams Committee",
-				"color": "pink"
-			}
-		]
-	},
-	{
-		"year": 2020,
-		"members": [
-			{
-				"name": "Tiffany Nguyen",
-				"position": "President",
-				"color": "blue"
-			},
-			{
-				"name": "Nguyen Dang",
-				"position": "Visual Designer",
-				"color": "blue"
-			},
-			{
-				"name": "Kacey Diep",
-				"position": "Financial Chair",
-				"color": "blue"
-			},
-			{
-				"name": "Akshita Nathani",
-				"position": "Industry Outreach",
-				"color": "red"
-			},
-			{
-				"name": "Danny Pham",
-				"position": "Social Coordinator",
-				"color": "red"
-			},
-			{
-				"name": "Sabrina Lee",
-				"position": "Social Coordinator",
-				"color": "red"
-			},
-			{
-				"name": "Dachelle Alo",
-				"position": "Project Teams Committee",
-				"color": "pink"
-			}
-		]
-	}
+            {
+                "name": "Emily Huynh",
+                "position": "Marketing Coordinator"
+            },
+            {
+                "name": "Vera Zhang",
+                "position": "Workshop Coordinator"
+            },
+            {
+                "name": "Hannah Limary",
+                "position": "Designathon Director",
+                "photo": "Hannah_Limary.jpg",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/hannah-limary"
+                    },
+                    {
+                        "type": "website",
+                        "href": "https://hannahlimary.squarespace.com/"
+                    }
+                ]
+            },
+            {
+                "name": "Sunny Stetsyuk",
+                "position": "Project Teams Coordinator",
+                "photo": "Sunny_Stetsyuk.jpg"
+            },
+            {
+                "name": "Jorina Chen",
+                "position": "Project Teams Coordinator",
+                "photo": "Jorina_Chen.jpg",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/jorinachen/"
+                    },
+                    {
+                        "type": "website",
+                        "href": "https://www.jorinachen.com/"
+                    }
+                ]
+            },
+            {
+                "name": "Zoya Soy",
+                "position": "Project Teams Coordinator",
+                "photo": "Zoya_Soy.jpg"
+            },
+            {
+                "name": "Isabel Pham",
+                "position": "Creative Director",
+                "photo": "Isabel_Pham.png",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/isabe1pham/"
+                    }
+                ]
+            },
+            {
+                "name": "Karla Avalos",
+                "position": "Graphic Designer",
+                "photo": "Karla_Avalos.jpg"
+            },
+            {
+                "name": "Katherine Park",
+                "position": "Internal Intern",
+                "photo": "Katherine_Park.jpg",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/katherine-p-a93a10219"
+                    }
+                ]
+            },
+            {
+                "name": "Samantha Purganan",
+                "position": "Internal Intern",
+                "photo": "Samantha_Purganan.jpg",
+                "links": [
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/samgmpurg/?hl=en"
+                    }
+                ]
+            },
+            {
+                "name": "Adora Chen",
+                "position": "Internal Intern",
+                "photo": "Adora_Chen.jpeg"
+            },
+            {
+                "name": "Moneer Ghani",
+                "position": "External Intern",
+                "photo": "Moneer_Ghani.jpeg",
+                "links": [
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/moneerg/?hl=en"
+                    },
+                    {
+                        "type": "linkedin",
+                        "href": "http://www.linkedin.com/in/moneerg"
+                    }
+                ]
+            },
+            {
+                "name": "Krisha Konchadi",
+                "position": "Design Intern",
+                "photo": "Krisha_Konchadi.jpg"
+            },
+            {
+                "name": "Brandon Gumayagay",
+                "position": "Developer Intern",
+                "photo": "Brandon_Gumayagay.jpg",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/brandon-gumayagay/"
+                    }
+                ]
+            },
+            {
+                "name": "Rosalind Guo",
+                "position": "Developer Intern",
+                "photo": "RosalindGuo.jpg",
+                "links": [
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/rozguo/"
+                    }
+                ]
+            },
+            {
+                "name": "Kaitlen Ngo",
+                "position": "Developer Intern",
+                "links": [
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/no.11002012014/"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "year": 2022,
+        "members": [
+            {
+                "name": "Sonali Chellappa",
+                "position": "Project Teams Coordinator"
+            },
+            {
+                "name": "Juhi Patel",
+                "position": "Project Teams Coordinator"
+            },
+            {
+                "name": "Evangeline Gao",
+                "position": "Vice President",
+                "color": "blue"
+            },
+            {
+                "name": "Gabby Tom",
+                "position": "Project Teams Coordinator",
+                "color": "pink"
+            },
+            {
+                "name": "Iantha Khan",
+                "position": "Marketing Coordinator",
+                "color": "green"
+            },
+            {
+                "name": "Vivian Chu",
+                "position": "Workshop Coordinator",
+                "color": "red",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/vivianchu204/"
+                    }
+                ]
+            },
+            {
+                "name": "Michael Chang",
+                "position": "Financial Chair",
+                "color": "red"
+            },
+            {
+                "name": "Kailer Garcia",
+                "position": "Creative Director",
+                "color": "blue",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/kailer/"
+                    },
+                    {
+                        "type": "website",
+                        "href": "https://www.kailerg.com/"
+                    }
+                ]
+            },
+            {
+                "name": "Vivian Nguyen",
+                "position": "Media Content Creator",
+                "color": "blue",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/vivvnguyenn/"
+                    }
+                ]
+            },
+            {
+                "name": "Amy Steinmetz",
+                "position": "Financial Chair",
+                "color": "blue",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/amysteinmetz/"
+                    },
+                    {
+                        "type": "website",
+                        "href": "https://uxfol.io/steinmea"
+                    },
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/amytallgirl/"
+                    }
+                ]
+            },
+            {
+                "name": "Vivian Lin",
+                "position": "Industry Outreach Coordinator",
+                "color": "blue",
+                "links": [
+                    {
+                        "type": "linkedin",
+                        "href": "https://www.linkedin.com/in/vivianplin/"
+                    },
+                    {
+                        "type": "instagram",
+                        "href": "https://www.instagram.com/strawbbyv/"
+                    }
+                ]
+            },
+            {
+                "name": "Kevin Tsai",
+                "position": "Industry Outreach Coordinator",
+                "color": "blue",
+                "links": []
+            }
+        ]
+    },
+    {
+        "year": 2021,
+        "members": [
+            {
+                "name": "Jody Jamin",
+                "position": "President",
+                "color": "blue"
+            },
+            {
+                "name": "Ivy Thong",
+                "position": "Vice President",
+                "color": "blue"
+            },
+            {
+                "name": "Andrew Benson",
+                "position": "Financial Chair",
+                "color": "blue"
+            },
+            {
+                "name": "Laney Dang",
+                "position": "Marketing Director",
+                "color": "green"
+            },
+            {
+                "name": "John Ly",
+                "position": "Marketing",
+                "color": "green"
+            },
+            {
+                "name": "Ashlyn Riambon",
+                "position": "Marketing",
+                "color": "green"
+            },
+            {
+                "name": "Stella Adriana",
+                "position": "Industry Outreach",
+                "color": "red"
+            },
+            {
+                "name": "Sophia Huang",
+                "position": "Workshop Committee",
+                "color": "red"
+            },
+            {
+                "name": "Sruthi Ramabadran",
+                "position": "Social Coordinator",
+                "color": "red"
+            },
+            {
+                "name": "Jonathan Fung",
+                "position": "Project Teams Committee",
+                "color": "pink"
+            },
+            {
+                "name": "Angela Martin",
+                "position": "Project Teams Committee",
+                "color": "pink"
+            }
+        ]
+    },
+    {
+        "year": 2020,
+        "members": [
+            {
+                "name": "Tiffany Nguyen",
+                "position": "President",
+                "color": "blue"
+            },
+            {
+                "name": "Nguyen Dang",
+                "position": "Visual Designer",
+                "color": "blue"
+            },
+            {
+                "name": "Kacey Diep",
+                "position": "Financial Chair",
+                "color": "blue"
+            },
+            {
+                "name": "Akshita Nathani",
+                "position": "Industry Outreach",
+                "color": "red"
+            },
+            {
+                "name": "Danny Pham",
+                "position": "Social Coordinator",
+                "color": "red"
+            },
+            {
+                "name": "Sabrina Lee",
+                "position": "Social Coordinator",
+                "color": "red"
+            },
+            {
+                "name": "Dachelle Alo",
+                "position": "Project Teams Committee",
+                "color": "pink"
+            }
+        ]
+    }
 ]

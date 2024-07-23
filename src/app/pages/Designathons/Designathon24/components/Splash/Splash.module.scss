@@ -1,193 +1,193 @@
 .container {
-	background-color: #fff5e0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	display: grid;
-	place-content: center;
+    background-color: #fff5e0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: grid;
+    place-content: center;
 
-	.logo {
-		position: relative;
-		max-width: max(70vw, 360px);
-		margin: 0 auto;
-		padding-bottom: 40%;
+    .logo {
+        position: relative;
+        max-width: max(70vw, 360px);
+        margin: 0 auto;
+        padding-bottom: 40%;
 
-		@media screen and (min-width: 1024px) {
-			max-width: max(60vw, 360px);
-		}
+        @media screen and (min-width: 1024px) {
+            max-width: max(60vw, 360px);
+        }
 
-		@media screen and (min-width: 1280px) {
-			max-width: max(45vw, 360px);
-		}
+        @media screen and (min-width: 1280px) {
+            max-width: max(45vw, 360px);
+        }
 
-		path {
-			stroke-width: 5;
-			.word {
-				stroke-dashoffset: 10px;
-				stroke-width: 5;
-				stroke-dasharray: 1500;
-				opacity: 0;
+        path {
+            stroke-width: 5;
+            .word {
+                stroke-dashoffset: 10px;
+                stroke-width: 5;
+                stroke-dasharray: 1500;
+                opacity: 0;
 
-				@for $i from 1 through 10 {
-					&:nth-child(#{$i}n) {
-						animation: fadeIn forwards 1s #{$i * 350}ms ease-in;
-					}
-				}
-			}
-		}
-	}
+                @for $i from 1 through 10 {
+                    &:nth-child(#{$i}n) {
+                        animation: fadeIn forwards 1s #{$i * 350}ms ease-in;
+                    }
+                }
+            }
+        }
+    }
 
-	.info {
-		font-size: 1.8em;
-		text-align: center;
-		position: absolute;
-		place-self: center;
-		bottom: 25%;
-		z-index: 110;
+    .info {
+        font-size: 1.8em;
+        text-align: center;
+        position: absolute;
+        place-self: center;
+        bottom: 25%;
+        z-index: 110;
 
-		@media screen and (min-width: 851px) {
-			bottom: 22.5%;
-		}
+        @media screen and (min-width: 851px) {
+            bottom: 22.5%;
+        }
 
-		.time {
-			font-size: min(7vw, 40px);
-			grid-column: 1/3;
-			font-family: "Gluten", cursive;
-			font-weight: 600;
-			margin: 0 2rem em;
-		}
+        .time {
+            font-size: min(7vw, 40px);
+            grid-column: 1/3;
+            font-family: "Gluten", cursive;
+            font-weight: 600;
+            margin: 0 2rem em;
+        }
 
-		.wrapper {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			column-gap: 20px;
-			row-gap: 10px;
-			max-width: 800px;
-			margin: 0 auto;
-			width: fit-content;
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 20px;
+            row-gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+            width: fit-content;
 
-			@media screen and (max-width: 850px) {
-				grid-template-columns: repeat(1, 1fr);
+            @media screen and (max-width: 850px) {
+                grid-template-columns: repeat(1, 1fr);
 
-				.border {
-					padding: 4px !important;
-					min-width: 100%;
-				}
-				.app {
-					border-radius: 16px !important;
-					padding: 14px 20px !important;
-					font-size: 18px !important;
-				}
-			}
+                .border {
+                    padding: 4px !important;
+                    min-width: 100%;
+                }
+                .app {
+                    border-radius: 16px !important;
+                    padding: 14px 20px !important;
+                    font-size: 18px !important;
+                }
+            }
 
-			.border {
-				margin: 0 auto;
-				width: max-content;
-				border-radius: 20px;
-				background: linear-gradient(
-					93.29deg,
-					#1f3066 8.27%,
-					#f84e72 74.24%,
-					#ff6969 99.26%
-				);
-				padding: 6px;
-				transition: background 250ms;
+            .border {
+                margin: 0 auto;
+                width: max-content;
+                border-radius: 20px;
+                background: linear-gradient(
+                    93.29deg,
+                    #1f3066 8.27%,
+                    #f84e72 74.24%,
+                    #ff6969 99.26%
+                );
+                padding: 6px;
+                transition: background 250ms;
 
-				&:hover {
-					background: #1f3066;
-					.app {
-						background: #1f3066;
-						color: white;
-					}
-				}
+                &:hover {
+                    background: #1f3066;
+                    .app {
+                        background: #1f3066;
+                        color: white;
+                    }
+                }
 
-				.app {
-					transition:
-						background 250ms,
-						color 250ms;
-					background-color: #fff5e0;
-					width: 100%;
-					border-radius: 14px;
-					font-size: 0.6em;
-					padding: 20px 40px;
-				}
-			}
-		}
-	}
+                .app {
+                    transition:
+                        background 250ms,
+                        color 250ms;
+                    background-color: #fff5e0;
+                    width: 100%;
+                    border-radius: 14px;
+                    font-size: 0.6em;
+                    padding: 20px 40px;
+                }
+            }
+        }
+    }
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
+    from {
+        opacity: 0;
+    }
 
-	to {
-		opacity: 1;
-	}
+    to {
+        opacity: 1;
+    }
 }
 
 .decoration {
-	position: absolute;
+    position: absolute;
 
-	max-width: 30%;
+    max-width: 30%;
 
-	@media screen and (min-width: 800px) {
-		max-width: 20%;
-	}
+    @media screen and (min-width: 800px) {
+        max-width: 20%;
+    }
 }
 
 .tl_clouds {
-	top: 0;
-	left: 0;
+    top: 0;
+    left: 0;
 
-	max-width: 50%;
+    max-width: 50%;
 
-	@media screen and (min-width: 475px) {
-		max-width: 40%;
-	}
+    @media screen and (min-width: 475px) {
+        max-width: 40%;
+    }
 
-	@media screen and (min-width: 640px) {
-		max-width: 20%;
-	}
+    @media screen and (min-width: 640px) {
+        max-width: 20%;
+    }
 
-	@media screen and (min-width: 1024px) {
-		max-width: 20%;
-	}
+    @media screen and (min-width: 1024px) {
+        max-width: 20%;
+    }
 }
 
 .butterfly {
-	bottom: 30%;
-	left: 0;
+    bottom: 30%;
+    left: 0;
 
-	@media screen and (min-width: 1024px) {
-		top: 30%;
-		max-width: 15%;
-	}
+    @media screen and (min-width: 1024px) {
+        top: 30%;
+        max-width: 15%;
+    }
 }
 
 .bl_star_stripe {
-	bottom: 0;
-	left: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .mr_cloud_stars {
-	top: unset;
-	bottom: 32.5%;
+    top: unset;
+    bottom: 32.5%;
 
-	right: 0;
-	max-width: 33.5%;
+    right: 0;
+    max-width: 33.5%;
 
-	@media screen and (min-width: 640px) {
-		bottom: 35%;
-		max-width: 20%;
-	}
+    @media screen and (min-width: 640px) {
+        bottom: 35%;
+        max-width: 20%;
+    }
 
-	@media screen and (min-width: 1024px) {
-		top: 15%;
-	}
+    @media screen and (min-width: 1024px) {
+        top: 15%;
+    }
 }
 
 .br_star_stripe {
-	bottom: 0;
-	right: 0;
+    bottom: 0;
+    right: 0;
 }

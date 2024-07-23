@@ -5,178 +5,183 @@ var view, gl;
 var Main = {};
 const RESOLUTION = window.devicePixelRatio;
 function initialize() {
-	view = document.getElementById("view");
-	// gl = view.getContext("webgl2", {antialias: false, preserveDrawingBuffer: true, premultipliedAlpha: false })
-	gl = view.getContext("webgl", {
-		antialias: false,
-		preserveDrawingBuffer: true,
-		premultipliedAlpha: false,
-	});
+    view = document.getElementById("view");
+    // gl = view.getContext("webgl2", {antialias: false, preserveDrawingBuffer: true, premultipliedAlpha: false })
+    gl = view.getContext("webgl", {
+        antialias: false,
+        preserveDrawingBuffer: true,
+        premultipliedAlpha: false,
+    });
 
-	window.addEventListener("resize", resize);
-	window.addEventListener("scroll", scroll);
+    window.addEventListener("resize", resize);
+    window.addEventListener("scroll", scroll);
 
-	Main.target = {};
-	Main.target.view = {
-		w: Math.ceil(view.getBoundingClientRect().width * RESOLUTION),
-		h: Math.ceil(view.getBoundingClientRect().height * RESOLUTION),
-		buffer: null,
-	};
+    Main.target = {};
+    Main.target.view = {
+        w: Math.ceil(view.getBoundingClientRect().width * RESOLUTION),
+        h: Math.ceil(view.getBoundingClientRect().height * RESOLUTION),
+        buffer: null,
+    };
 
-	view.width = Main.target.view.w;
-	view.height = Main.target.view.h;
+    view.width = Main.target.view.w;
+    view.height = Main.target.view.h;
 
-	Main.prog = {};
+    Main.prog = {};
 
-	Main.prog.render = new Program(SHADER_VERT, SHADER_FRAG, Main.target.view);
+    Main.prog.render = new Program(SHADER_VERT, SHADER_FRAG, Main.target.view);
 
-	resize();
-	start();
+    resize();
+    start();
 }
 var run = false;
 function start() {
-	run = true;
-	requestAnimationFrame(frame);
+    run = true;
+    requestAnimationFrame(frame);
 }
 function stop() {
-	run = false;
+    run = false;
 }
 var T = 0;
 function frame() {
-	T += 1 / 60;
-	if (T > 310) {
-		T -= 300;
-	}
+    T += 1 / 60;
+    if (T > 310) {
+        T -= 300;
+    }
 
-	Main.prog.render.prepareDraw();
-	Main.prog.render.setUniform["u_T"](T + 0.5);
-	Main.prog.render.draw();
+    Main.prog.render.prepareDraw();
+    Main.prog.render.setUniform["u_T"](T + 0.5);
+    Main.prog.render.draw();
 
-	if (run) requestAnimationFrame(frame);
+    if (run) requestAnimationFrame(frame);
 }
 function resize() {
-	Main.target.view.w = Math.ceil(
-		view.getBoundingClientRect().width * RESOLUTION,
-	);
-	Main.target.view.h = Math.ceil(
-		view.getBoundingClientRect().height * RESOLUTION,
-	);
+    Main.target.view.w = Math.ceil(
+        view.getBoundingClientRect().width * RESOLUTION,
+    );
+    Main.target.view.h = Math.ceil(
+        view.getBoundingClientRect().height * RESOLUTION,
+    );
 
-	view.width = Main.target.view.w;
-	view.height = Main.target.view.h;
+    view.width = Main.target.view.w;
+    view.height = Main.target.view.h;
 
-	Main.prog.render.setUniform["aspect"](
-		Main.target.view.w / Main.target.view.h,
-	);
+    Main.prog.render.setUniform["aspect"](
+        Main.target.view.w / Main.target.view.h,
+    );
 }
 function scroll() {
-	if (window.scrollY > window.innerHeight - 90) {
-		if (run) stop();
-	} else {
-		if (!run) start();
-	}
+    if (window.scrollY > window.innerHeight - 90) {
+        if (run) stop();
+    } else {
+        if (!run) start();
+    }
 }
 
 class Program {
-	// Create a new program
-	constructor(vertCode, fragCode, target) {
-		gl.useProgram(null);
+    // Create a new program
+    constructor(vertCode, fragCode, target) {
+        gl.useProgram(null);
 
-		this.program = gl.createProgram();
-		this.target = target;
+        this.program = gl.createProgram();
+        this.target = target;
 
-		// Compile shaders
-		const vertShader = gl.createShader(gl.VERTEX_SHADER);
-		gl.shaderSource(vertShader, vertCode);
-		gl.compileShader(vertShader);
-		const fragShader = gl.createShader(gl.FRAGMENT_SHADER);
-		gl.shaderSource(fragShader, fragCode);
-		gl.compileShader(fragShader);
+        // Compile shaders
+        const vertShader = gl.createShader(gl.VERTEX_SHADER);
+        gl.shaderSource(vertShader, vertCode);
+        gl.compileShader(vertShader);
+        const fragShader = gl.createShader(gl.FRAGMENT_SHADER);
+        gl.shaderSource(fragShader, fragCode);
+        gl.compileShader(fragShader);
 
-		// Attach shaders
-		gl.attachShader(this.program, vertShader);
-		gl.attachShader(this.program, fragShader);
-		gl.linkProgram(this.program);
-		gl.useProgram(this.program);
-		gl.clearColor(0, 0, 0, 1);
+        // Attach shaders
+        gl.attachShader(this.program, vertShader);
+        gl.attachShader(this.program, fragShader);
+        gl.linkProgram(this.program);
+        gl.useProgram(this.program);
+        gl.clearColor(0, 0, 0, 1);
 
-		// Upload render triangles
-		const Verticies = new Float32Array([
-			-1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
-		]);
-		const vertexBuffer = gl.createBuffer();
-		gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
-		gl.bufferData(gl.ARRAY_BUFFER, Verticies, gl.STATIC_DRAW);
-		const positionAttribLocation = gl.getAttribLocation(this.program, "vertex");
-		gl.vertexAttribPointer(
-			positionAttribLocation,
-			2,
-			gl.FLOAT,
-			gl.FALSE,
-			2 * Float32Array.BYTES_PER_ELEMENT,
-			0,
-		);
-		gl.enableVertexAttribArray(positionAttribLocation);
+        // Upload render triangles
+        const Verticies = new Float32Array([
+            -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
+        ]);
+        const vertexBuffer = gl.createBuffer();
+        gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+        gl.bufferData(gl.ARRAY_BUFFER, Verticies, gl.STATIC_DRAW);
+        const positionAttribLocation = gl.getAttribLocation(
+            this.program,
+            "vertex",
+        );
+        gl.vertexAttribPointer(
+            positionAttribLocation,
+            2,
+            gl.FLOAT,
+            gl.FALSE,
+            2 * Float32Array.BYTES_PER_ELEMENT,
+            0,
+        );
+        gl.enableVertexAttribArray(positionAttribLocation);
 
-		// Generate uniform setters
-		this.setUniform = {};
-		this.uLocation = {};
-		let uniformArgs = (vertCode + fragCode).matchAll("uniform +(.+) +(.+);");
-		for (let i of uniformArgs) {
-			let location = gl.getUniformLocation(this.program, i[2]);
-			this.uLocation[i[2]] = location;
-			let setFuncName = "uniform";
-			if (!["sampler2D"].includes(i[1])) {
-				switch (i[1]) {
-					case "float":
-						setFuncName += "1f";
-						break;
-					case "vec2":
-						setFuncName += "2fv";
-						break;
-					case "vec3":
-						setFuncName += "3fv";
-						break;
-					case "vec4":
-						setFuncName += "4fv";
-						break;
-					case "int":
-						setFuncName += "1i";
-						break;
-					default:
-						alert("Undefined uniform type");
-						break;
-				}
-				this.setUniform[i[2]] = (value) => {
-					gl.useProgram(this.program);
-					gl[setFuncName](location, value);
-				};
-			}
-		}
+        // Generate uniform setters
+        this.setUniform = {};
+        this.uLocation = {};
+        let uniformArgs = (vertCode + fragCode).matchAll(
+            "uniform +(.+) +(.+);",
+        );
+        for (let i of uniformArgs) {
+            let location = gl.getUniformLocation(this.program, i[2]);
+            this.uLocation[i[2]] = location;
+            let setFuncName = "uniform";
+            if (!["sampler2D"].includes(i[1])) {
+                switch (i[1]) {
+                    case "float":
+                        setFuncName += "1f";
+                        break;
+                    case "vec2":
+                        setFuncName += "2fv";
+                        break;
+                    case "vec3":
+                        setFuncName += "3fv";
+                        break;
+                    case "vec4":
+                        setFuncName += "4fv";
+                        break;
+                    case "int":
+                        setFuncName += "1i";
+                        break;
+                    default:
+                        alert("Undefined uniform type");
+                        break;
+                }
+                this.setUniform[i[2]] = (value) => {
+                    gl.useProgram(this.program);
+                    gl[setFuncName](location, value);
+                };
+            }
+        }
 
-		// Check errors
-		gl.useProgram(this.program);
-		if (gl.getError() !== 0) {
-			// alert("Error creating progrAM (PST)")
-		}
+        // Check errors
+        gl.useProgram(this.program);
+        if (gl.getError() !== 0) {
+            // alert("Error creating progrAM (PST)")
+        }
 
-		gl.viewport(0, 0, this.target.w, this.target.h);
-	}
-	// Draw frame
-	draw() {
-		gl.drawArrays(gl.TRIANGLES, 0, 6);
-	}
-	use() {
-		gl.useProgram(this.program);
-	}
-	prepareDraw() {
-		gl.useProgram(this.program);
-		gl.bindFramebuffer(gl.FRAMEBUFFER, this.target.buffer);
-		gl.viewport(0, 0, this.target.w, this.target.h);
-	}
-	clear() {
-		gl.clear(gl.COLOR_BUFFER_BIT);
-	}
+        gl.viewport(0, 0, this.target.w, this.target.h);
+    }
+    // Draw frame
+    draw() {
+        gl.drawArrays(gl.TRIANGLES, 0, 6);
+    }
+    use() {
+        gl.useProgram(this.program);
+    }
+    prepareDraw() {
+        gl.useProgram(this.program);
+        gl.bindFramebuffer(gl.FRAMEBUFFER, this.target.buffer);
+        gl.viewport(0, 0, this.target.w, this.target.h);
+    }
+    clear() {
+        gl.clear(gl.COLOR_BUFFER_BIT);
+    }
 }
 const SHADER_VERT = `precision highp float;
 

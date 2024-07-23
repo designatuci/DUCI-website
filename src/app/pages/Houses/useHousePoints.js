@@ -8,36 +8,39 @@ const SHEET_GID = "1705286477";
 const EMPTY_HOUSE_POINTS = {};
 
 function useHousePoints() {
-	const [housePoints, setHousePoints] = useState(EMPTY_HOUSE_POINTS);
+    const [housePoints, setHousePoints] = useState(EMPTY_HOUSE_POINTS);
 
-	useEffect(() => {
-		const dataURL = new URL(`${FEED_URL}${SPREADSHEET_KEY}/${MODE}`);
-		dataURL.searchParams.set("gid", SHEET_GID);
-		dataURL.searchParams.set("single", "true");
-		dataURL.searchParams.set("output", "tsv");
+    useEffect(() => {
+        const dataURL = new URL(`${FEED_URL}${SPREADSHEET_KEY}/${MODE}`);
+        dataURL.searchParams.set("gid", SHEET_GID);
+        dataURL.searchParams.set("single", "true");
+        dataURL.searchParams.set("output", "tsv");
 
-		const getHousePoints = async () => {
-			try {
-				const response = await fetch(dataURL);
-				const text = await response.text();
+        const getHousePoints = async () => {
+            try {
+                const response = await fetch(dataURL);
+                const text = await response.text();
 
-				const data = {};
-				// Parse each tab-separated line
-				for (const line of text.split("\n")) {
-					const [key, value] = line.split("\t");
-					data[key] = value;
-				}
+                const data = {};
+                // Parse each tab-separated line
+                for (const line of text.split("\n")) {
+                    const [key, value] = line.split("\t");
+                    data[key] = value;
+                }
 
-				setHousePoints(data);
-			} catch (err) {
-				console.error("Error occurred while fetching sheets data:", err);
-			}
-		};
+                setHousePoints(data);
+            } catch (err) {
+                console.error(
+                    "Error occurred while fetching sheets data:",
+                    err,
+                );
+            }
+        };
 
-		getHousePoints();
-	}, []);
+        getHousePoints();
+    }, []);
 
-	return housePoints;
+    return housePoints;
 }
 
 export default useHousePoints;

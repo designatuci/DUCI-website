@@ -1,39 +1,39 @@
 .container {
-	width: 100%;
-	display: grid;
-	grid-auto-flow: row;
-	row-gap: 16px;
-	height: max-content;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 16px;
+    height: max-content;
 
-	& > .aspect {
-		border-radius: 8px;
-		position: relative;
-		width: 100%;
-		padding-bottom: 100%;
-		overflow: hidden;
-		background: rgb(240, 240, 240);
-		background: linear-gradient(
-			0deg,
-			rgba(240, 240, 240, 1) 0%,
-			rgba(227, 227, 232, 1) 92%
-		);
+    & > .aspect {
+        border-radius: 8px;
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        overflow: hidden;
+        background: rgb(240, 240, 240);
+        background: linear-gradient(
+            0deg,
+            rgba(240, 240, 240, 1) 0%,
+            rgba(227, 227, 232, 1) 92%
+        );
 
-		& > img.photo {
-			box-sizing: border-box;
-			position: absolute;
-			width: 100%;
-			top: 50%;
-			transform: translate(0%, -50%);
-			background-position: center;
-			background-size: cover;
-			border-radius: 12px;
-			overflow: hidden;
-		}
-	}
+        & > img.photo {
+            box-sizing: border-box;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translate(0%, -50%);
+            background-position: center;
+            background-size: cover;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+    }
 
-	& > .content {
-		padding: 0 5px;
-		display: grid;
-		row-gap: 16px;
-	}
+    & > .content {
+        padding: 0 5px;
+        display: grid;
+        row-gap: 16px;
+    }
 }

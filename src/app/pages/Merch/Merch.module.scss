@@ -2,42 +2,42 @@
 
 .holo-effect1,
 .holo-effect2 {
-	opacity: 0;
-	height: 100%;
-	mix-blend-mode: darken;
-	filter: saturate(3);
-	animation: effect-pulse 2s cubic-bezier(0.62, 0.01, 0.51, 1) infinite;
+    opacity: 0;
+    height: 100%;
+    mix-blend-mode: darken;
+    filter: saturate(3);
+    animation: effect-pulse 2s cubic-bezier(0.62, 0.01, 0.51, 1) infinite;
 }
 
 .holo-effect2 {
-	animation: effect-pulse 2s 0.2s cubic-bezier(0.62, 0.01, 0.51, 1) infinite;
+    animation: effect-pulse 2s 0.2s cubic-bezier(0.62, 0.01, 0.51, 1) infinite;
 }
 
 @keyframes effect-pulse {
-	0% {
-		opacity: 0;
-		filter: saturate(3) hue-rotate(0deg);
-	}
+    0% {
+        opacity: 0;
+        filter: saturate(3) hue-rotate(0deg);
+    }
 
-	40% {
-		opacity: 0.38;
-		filter: saturate(3) hue-rotate(-360deg);
-	}
+    40% {
+        opacity: 0.38;
+        filter: saturate(3) hue-rotate(-360deg);
+    }
 
-	80% {
-		opacity: 0;
-		filter: saturate(3) hue-rotate(0);
-	}
+    80% {
+        opacity: 0;
+        filter: saturate(3) hue-rotate(0);
+    }
 }
 
 .split4 > div > div {
-	height: unset;
+    height: unset;
 }
 
 .header {
-	background: linear-gradient(10deg, $silver -50%, $green);
+    background: linear-gradient(10deg, $silver -50%, $green);
 
-	& > .text {
-		text-shadow: 0 8px 16px $green;
-	}
+    & > .text {
+        text-shadow: 0 8px 16px $green;
+    }
 }

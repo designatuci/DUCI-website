@@ -1,32 +1,32 @@
 {
-	"links": [
-		{
-			"code": "discord",
-			"link": "https://discord.com/invite/MBVrKe9"
-		},
-		{
-			"code": "event",
-			"link": "/events/"
-		},
-		{
-			"code": "ptsignup",
-			"link": "https://docs.google.com/forms/d/e/1FAIpQLSeYy72tOr8WSRE3yzs_EBi5095UASMrGF7f-WaAidUlXAPRUw/viewform"
-		},
-		{
-			"code": "buy",
-			"link": "https://docs.google.com/forms/d/e/1FAIpQLSeBzHjsYOGxG7666GqJqsufLO4D9Yy6wmm718WFEHiI8zYMmg/viewform"
-		},
-		{
-			"code": "impact22",
-			"link": "/designathon22/"
-		},
-		{
-			"code": "designathon",
-			"link": "/designathon22/"
-		},
-		{
-			"code": "apply",
-			"link": "https://forms.gle/QRhbXhUzhi2EpF3e6"
-		}
-	]
+    "links": [
+        {
+            "code": "discord",
+            "link": "https://discord.com/invite/MBVrKe9"
+        },
+        {
+            "code": "event",
+            "link": "/events/"
+        },
+        {
+            "code": "ptsignup",
+            "link": "https://docs.google.com/forms/d/e/1FAIpQLSeYy72tOr8WSRE3yzs_EBi5095UASMrGF7f-WaAidUlXAPRUw/viewform"
+        },
+        {
+            "code": "buy",
+            "link": "https://docs.google.com/forms/d/e/1FAIpQLSeBzHjsYOGxG7666GqJqsufLO4D9Yy6wmm718WFEHiI8zYMmg/viewform"
+        },
+        {
+            "code": "impact22",
+            "link": "/designathon22/"
+        },
+        {
+            "code": "designathon",
+            "link": "/designathon22/"
+        },
+        {
+            "code": "apply",
+            "link": "https://forms.gle/QRhbXhUzhi2EpF3e6"
+        }
+    ]
 }

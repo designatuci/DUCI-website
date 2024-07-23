@@ -1,119 +1,119 @@
 .noteCard {
-	position: relative;
+    position: relative;
 
-	background-color: #fbfbfb;
-	color: var(--des24-black);
+    background-color: #fbfbfb;
+    color: var(--des24-black);
 
-	box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
 
-	margin: 1.5rem 0rem 0;
+    margin: 1.5rem 0rem 0;
 
-	overflow-y: scroll;
-	overflow-x: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 
-	.close_button {
-		position: sticky;
-		top: 3%;
-		left: 1rem;
-		width: 1rem;
-		margin-top: -1rem;
-		z-index: 10;
+    .close_button {
+        position: sticky;
+        top: 3%;
+        left: 1rem;
+        width: 1rem;
+        margin-top: -1rem;
+        z-index: 10;
 
-		@media screen and (min-width: 768px) {
-			left: 1rem;
-			width: 1.5rem;
-			margin-top: -1.5rem;
-		}
+        @media screen and (min-width: 768px) {
+            left: 1rem;
+            width: 1.5rem;
+            margin-top: -1.5rem;
+        }
 
-		background-color: transparent;
-		border: 0;
-		cursor: pointer;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
 
-		border-radius: 100%;
+        border-radius: 100%;
 
-		img {
-			width: 100%;
-			cursor: inherit;
+        img {
+            width: 100%;
+            cursor: inherit;
 
-			&:hover {
-				opacity: 75%;
-			}
-		}
-	}
+            &:hover {
+                opacity: 75%;
+            }
+        }
+    }
 
-	.noteCardHeader {
-		height: 60px;
-		border-bottom: 4px solid;
-		border-color: var(--des24-hot-pink);
-		opacity: 70%;
-	}
+    .noteCardHeader {
+        height: 60px;
+        border-bottom: 4px solid;
+        border-color: var(--des24-hot-pink);
+        opacity: 70%;
+    }
 
-	.text {
-		margin-top: 0.5rem;
+    .text {
+        margin-top: 0.5rem;
 
-		p {
-			display: flex;
-			flex-direction: column;
-			gap: 3rem;
+        p {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
 
-			padding: 0 1.5rem 2rem 1.5rem;
-			line-height: 200%;
-			font-size: 16px;
-		}
-	}
+            padding: 0 1.5rem 2rem 1.5rem;
+            line-height: 200%;
+            font-size: 16px;
+        }
+    }
 
-	& .lines {
-		.line {
-			position: absolute;
-			height: 3px;
-			width: 100%;
+    & .lines {
+        .line {
+            position: absolute;
+            height: 3px;
+            width: 100%;
 
-			background-color: #8ebbdc;
-			opacity: 30%;
-		}
-	}
+            background-color: #8ebbdc;
+            opacity: 30%;
+        }
+    }
 
-	@media screen and (min-width: 640px) {
-		margin: 1.5rem 0rem 0;
+    @media screen and (min-width: 640px) {
+        margin: 1.5rem 0rem 0;
 
-		.noteCardHeader {
-			height: 80px;
-			border-bottom: 4px solid;
-			border-color: var(--des24-hot-pink);
-			opacity: 70%;
-		}
+        .noteCardHeader {
+            height: 80px;
+            border-bottom: 4px solid;
+            border-color: var(--des24-hot-pink);
+            opacity: 70%;
+        }
 
-		.text {
-			margin-top: 0.75rem;
+        .text {
+            margin-top: 0.75rem;
 
-			p {
-				padding: 0 2rem 2.5rem;
-				font-size: 20px;
-			}
-		}
-	}
+            p {
+                padding: 0 2rem 2.5rem;
+                font-size: 20px;
+            }
+        }
+    }
 
-	@media screen and (min-width: 1280px) {
-		position: relative;
+    @media screen and (min-width: 1280px) {
+        position: relative;
 
-		background-color: #fbfbfb;
-		color: var(--des24-black);
+        background-color: #fbfbfb;
+        color: var(--des24-black);
 
-		box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 6px 4px rgba(0, 0, 0, 0.1);
 
-		margin: 1.5rem 0rem 0;
+        margin: 1.5rem 0rem 0;
 
-		.text {
-			margin-top: 0.5rem;
+        .text {
+            margin-top: 0.5rem;
 
-			p {
-				padding: 0 2.5rem 3rem;
-				font-size: 24px;
-			}
-		}
-	}
+            p {
+                padding: 0 2.5rem 3rem;
+                font-size: 24px;
+            }
+        }
+    }
 }
 
 .modalCard {
-	max-height: 80vh;
+    max-height: 80vh;
 }

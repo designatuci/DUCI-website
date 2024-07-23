@@ -1,118 +1,118 @@
 @import "app/styles/variables";
 
 .board .wrapper > .center::after {
-	content: "";
-	flex: auto;
-	display: block;
-	width: 100%;
+    content: "";
+    flex: auto;
+    display: block;
+    width: 100%;
 }
 
 .board {
-	padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .board .wrapper > .center {
-	width: 100%;
-	justify-content: center;
-	flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .board .item {
-	align-self: flex-start;
-	width: 100%;
-	max-width: 210px;
-	display: inline-block;
-	margin-bottom: 64px;
+    align-self: flex-start;
+    width: 100%;
+    max-width: 210px;
+    display: inline-block;
+    margin-bottom: 64px;
 }
 @media only screen and (max-width: 768px) {
-	.board .item {
-		width: 50%;
-	}
-	.board .wrapper > .center {
-		width: calc(100% + 32px);
-	}
+    .board .item {
+        width: 50%;
+    }
+    .board .wrapper > .center {
+        width: calc(100% + 32px);
+    }
 }
 @media only screen and (max-width: 340px) {
-	.board .item {
-		width: 100%;
-	}
+    .board .item {
+        width: 100%;
+    }
 }
 .board .item .photo {
-	position: relative;
-	width: 88%;
-	max-width: 192px;
-	border-radius: 12px;
-	background-color: $silver;
-	margin-bottom: 16px;
+    position: relative;
+    width: 88%;
+    max-width: 192px;
+    border-radius: 12px;
+    background-color: $silver;
+    margin-bottom: 16px;
 }
 .board .item .photo > div {
-	padding-bottom: 100%;
+    padding-bottom: 100%;
 }
 .custom-carousel {
-	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
-	position: relative;
-	background-color: $gray;
-	background-image: url("https://designatuci.com/static/photo/img1.png");
-	background-size: cover;
-	background-position: center;
-	@media screen and (max-width: 768px) {
-		font-size: 1em;
-	}
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    position: relative;
+    background-color: $gray;
+    background-image: url("https://designatuci.com/static/photo/img1.png");
+    background-size: cover;
+    background-position: center;
+    @media screen and (max-width: 768px) {
+        font-size: 1em;
+    }
 }
 .carousel {
-	display: grid;
-	grid-template-columns: 30px 1fr 30px;
-	column-gap: 15px;
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    column-gap: 15px;
 
-	& svg {
-		place-self: center;
-		cursor: pointer;
-	}
+    & svg {
+        place-self: center;
+        cursor: pointer;
+    }
 }
 .custom-carousel {
-	text-shadow: 4px 4px 16px #0018;
+    text-shadow: 4px 4px 16px #0018;
 }
 .custom-carousel .noise {
-	pointer-events: none;
-	background-image: url("https://designatuci.com/static/photo/static.gif");
-	background-size: 32px;
-	background-position: center;
-	background-repeat: repeat;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity: 0.12;
-	mix-blend-mode: screen;
+    pointer-events: none;
+    background-image: url("https://designatuci.com/static/photo/static.gif");
+    background-size: 32px;
+    background-position: center;
+    background-repeat: repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.12;
+    mix-blend-mode: screen;
 }
 
 .year-divider {
-	width: 100%;
-	margin-top: 40px;
-	padding-top: 32px;
-	box-shadow: 0 -12px 24px -24px $gray;
-	margin-bottom: 40px;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 32px;
+    box-shadow: 0 -12px 24px -24px $gray;
+    margin-bottom: 40px;
 }
 
 .alumni-header {
-	margin: 40px 0px 80px !important;
+    margin: 40px 0px 80px !important;
 }
 .quote {
-	// height: auto;
-	margin-bottom: 50px;
-	text-align: center;
+    // height: auto;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .quote > p {
-	font-size: 18px;
-	color: black;
-	font-weight: bold;
-	// text-shadow: 4px 4px 16px #0018;
-	margin: 0 0 15px;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    // text-shadow: 4px 4px 16px #0018;
+    margin: 0 0 15px;
 }
 
 .quote > span {
-	font-size: 18px;
+    font-size: 18px;
 }

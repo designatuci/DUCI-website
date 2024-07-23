@@ -1,80 +1,80 @@
 [
-	{
-		"name": "Cassandra Hoo",
-		"photo": "graphics/portraits/Cassandra_Hoo.png",
-		"role": "Senior UX Designer @ LEGO Group",
-		"about": "Cassandra Hoo is currently a Senior UX Designer at the LEGO Group. She is passionate about human centered design, deeply understanding users, accessibility, and the process of iteration. She has a Master's degree in Human Computer Interaction and Design from UC Irvine and a BFA in Writing from University of the Arts. In her free time she enjoys cuddling with her cat Pixel, going on adventures, and Pilates."
-	},
-	{
-		"name": "Naheel Jawaid",
-		"photo": "graphics/portraits/Naheel_Jawaid.jpeg",
-		"role": "Product Designer @ Google",
-		"about": "Naheel is a product designer at Google where his work focussed on inventing new products. He’s currently working on a new AI-based video creation tool, and previously worked on AR Glasses.\nOutside work, he’s always working on a range of side projects, including Kids Take Over, a hip hop media brand that he helps his brother run."
-	},
-	{
-		"name": "Gresshaa Mehta",
-		"photo": "graphics/portraits/Gresshaa_Mehta.jpg",
-		"role": "Senior Product Designer @ Microsoft",
-		"about": "Gresshaa is a Senior Product Designer at Microsoft working on Fabric, an AI powered analytics platform. Previously, she has worked in the crypto industry as well as at traditional tech companies Apple and Uber. She is passionate about creating accessible spaces, lowering the barrier into tech, and designing for growth.\n\nShe’s an active mentor on ADPList offering career and recruiting mentorship for free. Outside of work, she spends her free time dancing salsa and bachata, paddleboarding, and playing board games."
-	},
-	{
-		"name": "Wenting Zhu",
-		"photo": "graphics/portraits/Wenting_Zhu.png",
-		"role": "Senior Design Researcher & Strategist",
-		"about": "Wenting has 8 years of experience in Design Research & Strategy with a background in both Service Design and Structural Engineering. She has led various projects and helped clients improve their Digital/Physical Products, Intangible Experiences/Services, and Operation Management in different industries: Retail, Museum, Jewelry, Restaurant, Healthcare, etc.\nShe is a Data Teller and a Systems Thinker, who believes in research-driven design strategy. Solid research is the foundation to unveil and narrate system institutes, leading to win-win solutions. As an emphatic team worker, she embraces diversity and values co-creation as a trait that translates research findings into meaningful design insights.\nBefore switching to Research & Strategy, she had 2 years of experience in Product/UX Management from 2015 to 2017 and 2 years of experience in BIM (Building Information Modeling) Project Management from 2013 to 2015"
-	},
-	{
-		"name": "Minh Nguyen",
-		"photo": "graphics/portraits/Minh_Nguyen.jpg",
-		"role": "Design Lead @ Commit the Change",
-		"about": "Minh is a 4th year Computer Science major and a Design Lead for the Feeding Pets of the Homeless team at CTC. She has experience in product design and frontend development, and is passionate about creating enjoyable experiences for all types of people."
-	},
-	{
-		"name": "Selina Arjomand",
-		"photo": "graphics/portraits/Selina_Arjomand.jpg",
-		"role": "Design Lead @ Commit the Change",
-		"about": "Selina is a 4th-year Informatics major, and current Design Lead at CTC and the DAPLAB. She enjoys crafting valuable user experiences, and she’s particularly passionate about the intersection of design, education, and technology."
-	},
-	{
-		"name": "Rafael Carrillo Muñoz",
-		"photo": "graphics/portraits/Rafael_Munoz.jpg",
-		"role": "Design Lead @ Commit the Change",
-		"about": "Rafael is a 4th-year Informatics Major and current Design Lead for Stand Up to Trash at CTC. He enjoys creating designs for apps and websites on Figma and specializes in Human-Computer Interaction."
-	},
-	{
-		"name": "Gage Johnson",
-		"photo": "graphics/portraits/Gage_Johnson.jpg",
-		"role": "UI/UX Director @ VGDC",
-		"about": "Gage is a 4th year CGS major and outgoing UX/UI Director for VGDC. Last summer he interned at Riot Games as a UX Designer, and this upcoming summer he will continue full-time. He loves to talk about accessibility, designing for prosocial play, and personal expression online."
-	},
-	{
-		"name": "Matthew Jung",
-		"photo": "graphics/portraits/Matthew_Jung.jpg",
-		"role": "UI/UX Officer @ VGDC",
-		"about": "Matthew is a 4th-year GDIM major and outgoing UX/UI Officer for VGDC. He focuses primarily on UI programming and the technical aspects of UI in the video game development process!"
-	},
-	{
-		"name": "Evelyn Lee",
-		"photo": "graphics/portraits/Evelyn_Lee.png",
-		"role": "UI/UX Officer @ VGDC",
-		"about": "Evelyn is a 3rd-year GDIM major and a current UX/UI Officer for VGDC. She personally values creating enjoyable experiences for all kinds of players, and she is passionate about how UX/UI design can be used to foster a more inclusive gaming environment."
-	},
-	{
-		"name": "Chelsea Park",
-		"photo": "graphics/portraits/Chelsea_Park.png",
-		"role": "UI/UX Officer @ VGDC",
-		"about": "Chelsea is a second-year Informatics major passionate about UI/UX in gaming, particularly an accessible future and fostering inclusive experiences."
-	},
-	{
-		"name": "Lukas Hauge",
-		"photo": "graphics/portraits/Lukas_Hauge.jpg",
-		"role": "UI/UX Officer @ VGDC",
-		"about": "Lukas is a first-year student going into computer science and super into UI/UX for gaming. He is mainly interested in using artistic principles and accessibility to craft a smooth experience and satisfying eye-candy in games."
-	},
-	{
-		"name": "Ella Chung",
-		"photo": "graphics/portraits/Ella_Chung.jpeg",
-		"role": "Campus Leader for Notion @ UC Irvine",
-		"about": "Ella is a Campus Leader for Notion at UC Irvine. Her favorite feature about Notion is databases and integrations that she is a computer science student. In her free time, she likes exploring artistic hobbies like sewing, graphic design, painting and more."
-	}
+    {
+        "name": "Cassandra Hoo",
+        "photo": "graphics/portraits/Cassandra_Hoo.png",
+        "role": "Senior UX Designer @ LEGO Group",
+        "about": "Cassandra Hoo is currently a Senior UX Designer at the LEGO Group. She is passionate about human centered design, deeply understanding users, accessibility, and the process of iteration. She has a Master's degree in Human Computer Interaction and Design from UC Irvine and a BFA in Writing from University of the Arts. In her free time she enjoys cuddling with her cat Pixel, going on adventures, and Pilates."
+    },
+    {
+        "name": "Naheel Jawaid",
+        "photo": "graphics/portraits/Naheel_Jawaid.jpeg",
+        "role": "Product Designer @ Google",
+        "about": "Naheel is a product designer at Google where his work focussed on inventing new products. He’s currently working on a new AI-based video creation tool, and previously worked on AR Glasses.\nOutside work, he’s always working on a range of side projects, including Kids Take Over, a hip hop media brand that he helps his brother run."
+    },
+    {
+        "name": "Gresshaa Mehta",
+        "photo": "graphics/portraits/Gresshaa_Mehta.jpg",
+        "role": "Senior Product Designer @ Microsoft",
+        "about": "Gresshaa is a Senior Product Designer at Microsoft working on Fabric, an AI powered analytics platform. Previously, she has worked in the crypto industry as well as at traditional tech companies Apple and Uber. She is passionate about creating accessible spaces, lowering the barrier into tech, and designing for growth.\n\nShe’s an active mentor on ADPList offering career and recruiting mentorship for free. Outside of work, she spends her free time dancing salsa and bachata, paddleboarding, and playing board games."
+    },
+    {
+        "name": "Wenting Zhu",
+        "photo": "graphics/portraits/Wenting_Zhu.png",
+        "role": "Senior Design Researcher & Strategist",
+        "about": "Wenting has 8 years of experience in Design Research & Strategy with a background in both Service Design and Structural Engineering. She has led various projects and helped clients improve their Digital/Physical Products, Intangible Experiences/Services, and Operation Management in different industries: Retail, Museum, Jewelry, Restaurant, Healthcare, etc.\nShe is a Data Teller and a Systems Thinker, who believes in research-driven design strategy. Solid research is the foundation to unveil and narrate system institutes, leading to win-win solutions. As an emphatic team worker, she embraces diversity and values co-creation as a trait that translates research findings into meaningful design insights.\nBefore switching to Research & Strategy, she had 2 years of experience in Product/UX Management from 2015 to 2017 and 2 years of experience in BIM (Building Information Modeling) Project Management from 2013 to 2015"
+    },
+    {
+        "name": "Minh Nguyen",
+        "photo": "graphics/portraits/Minh_Nguyen.jpg",
+        "role": "Design Lead @ Commit the Change",
+        "about": "Minh is a 4th year Computer Science major and a Design Lead for the Feeding Pets of the Homeless team at CTC. She has experience in product design and frontend development, and is passionate about creating enjoyable experiences for all types of people."
+    },
+    {
+        "name": "Selina Arjomand",
+        "photo": "graphics/portraits/Selina_Arjomand.jpg",
+        "role": "Design Lead @ Commit the Change",
+        "about": "Selina is a 4th-year Informatics major, and current Design Lead at CTC and the DAPLAB. She enjoys crafting valuable user experiences, and she’s particularly passionate about the intersection of design, education, and technology."
+    },
+    {
+        "name": "Rafael Carrillo Muñoz",
+        "photo": "graphics/portraits/Rafael_Munoz.jpg",
+        "role": "Design Lead @ Commit the Change",
+        "about": "Rafael is a 4th-year Informatics Major and current Design Lead for Stand Up to Trash at CTC. He enjoys creating designs for apps and websites on Figma and specializes in Human-Computer Interaction."
+    },
+    {
+        "name": "Gage Johnson",
+        "photo": "graphics/portraits/Gage_Johnson.jpg",
+        "role": "UI/UX Director @ VGDC",
+        "about": "Gage is a 4th year CGS major and outgoing UX/UI Director for VGDC. Last summer he interned at Riot Games as a UX Designer, and this upcoming summer he will continue full-time. He loves to talk about accessibility, designing for prosocial play, and personal expression online."
+    },
+    {
+        "name": "Matthew Jung",
+        "photo": "graphics/portraits/Matthew_Jung.jpg",
+        "role": "UI/UX Officer @ VGDC",
+        "about": "Matthew is a 4th-year GDIM major and outgoing UX/UI Officer for VGDC. He focuses primarily on UI programming and the technical aspects of UI in the video game development process!"
+    },
+    {
+        "name": "Evelyn Lee",
+        "photo": "graphics/portraits/Evelyn_Lee.png",
+        "role": "UI/UX Officer @ VGDC",
+        "about": "Evelyn is a 3rd-year GDIM major and a current UX/UI Officer for VGDC. She personally values creating enjoyable experiences for all kinds of players, and she is passionate about how UX/UI design can be used to foster a more inclusive gaming environment."
+    },
+    {
+        "name": "Chelsea Park",
+        "photo": "graphics/portraits/Chelsea_Park.png",
+        "role": "UI/UX Officer @ VGDC",
+        "about": "Chelsea is a second-year Informatics major passionate about UI/UX in gaming, particularly an accessible future and fostering inclusive experiences."
+    },
+    {
+        "name": "Lukas Hauge",
+        "photo": "graphics/portraits/Lukas_Hauge.jpg",
+        "role": "UI/UX Officer @ VGDC",
+        "about": "Lukas is a first-year student going into computer science and super into UI/UX for gaming. He is mainly interested in using artistic principles and accessibility to craft a smooth experience and satisfying eye-candy in games."
+    },
+    {
+        "name": "Ella Chung",
+        "photo": "graphics/portraits/Ella_Chung.jpeg",
+        "role": "Campus Leader for Notion @ UC Irvine",
+        "about": "Ella is a Campus Leader for Notion at UC Irvine. Her favorite feature about Notion is databases and integrations that she is a computer science student. In her free time, she likes exploring artistic hobbies like sewing, graphic design, painting and more."
+    }
 ]

@@ -1,107 +1,107 @@
 .container {
-	--des24-pink: #ff75a4;
-	--des24-hot-pink: #f84e72;
-	--des24-peach: #ff6969;
-	--des24-cream: #fff5e0;
-	--des24-black: #242424;
-	--des24-blue: #1f3066;
+    --des24-pink: #ff75a4;
+    --des24-hot-pink: #f84e72;
+    --des24-peach: #ff6969;
+    --des24-cream: #fff5e0;
+    --des24-black: #242424;
+    --des24-blue: #1f3066;
 
-	overflow: clip;
+    overflow: clip;
 
-	& > .hero {
-		height: 100vh;
-		width: 100%;
-		background-color: var(--des24-cream);
-		display: grid;
-		overflow: hidden;
-		place-content: center;
+    & > .hero {
+        height: 100vh;
+        width: 100%;
+        background-color: var(--des24-cream);
+        display: grid;
+        overflow: hidden;
+        place-content: center;
 
-		& > img {
-			width: 100%;
-			max-width: 100%;
-			max-height: 100%;
-			transform: rotate(0deg) scale(0);
-			object-fit: contain;
-			animation: rotate linear 10s infinite forwards;
-			will-change: transform;
-		}
+        & > img {
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+            transform: rotate(0deg) scale(0);
+            object-fit: contain;
+            animation: rotate linear 10s infinite forwards;
+            will-change: transform;
+        }
 
-		& > .title {
-			position: absolute;
-			height: 100%;
-			width: 100%;
-			top: 0;
-			left: 0;
-			display: grid;
-			place-content: center;
-			color: var(--yellow);
-			z-index: 100;
-			text-align: center;
-			padding-top: 140px;
+        & > .title {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            display: grid;
+            place-content: center;
+            color: var(--yellow);
+            z-index: 100;
+            text-align: center;
+            padding-top: 140px;
 
-			& .icon {
-				margin: 0 auto;
-			}
-		}
-	}
+            & .icon {
+                margin: 0 auto;
+            }
+        }
+    }
 
-	& > .prizes {
-		background-color: white;
-	}
+    & > .prizes {
+        background-color: white;
+    }
 
-	& > .people {
-		color: white;
-		background-color: black;
-		padding: 0px;
+    & > .people {
+        color: white;
+        background-color: black;
+        padding: 0px;
 
-		& h1 {
-			font-size: 2em;
-			font-weight: bold;
-		}
+        & h1 {
+            font-size: 2em;
+            font-weight: bold;
+        }
 
-		@media screen and (min-width: 700px) {
-			padding: 20px;
+        @media screen and (min-width: 700px) {
+            padding: 20px;
 
-			& h1 {
-				font-size: 3em;
-			}
-		}
+            & h1 {
+                font-size: 3em;
+            }
+        }
 
-		@media screen and (min-width: 900px) {
-			padding: 40px;
+        @media screen and (min-width: 900px) {
+            padding: 40px;
 
-			& h1 {
-				font-size: 3em;
-			}
-		}
+            & h1 {
+                font-size: 3em;
+            }
+        }
 
-		& .section {
-			display: grid;
-			column-gap: 20px;
-			row-gap: 20px;
-			grid-template-columns: repeat(2, 1fr);
-			padding: 20px 0;
+        & .section {
+            display: grid;
+            column-gap: 20px;
+            row-gap: 20px;
+            grid-template-columns: repeat(2, 1fr);
+            padding: 20px 0;
 
-			& > h2 {
-				color: var(--yellow);
-				grid-column: 1 / -1;
-				font-size: 2em;
-				font-weight: bold;
+            & > h2 {
+                color: var(--yellow);
+                grid-column: 1 / -1;
+                font-size: 2em;
+                font-weight: bold;
 
-				@media screen and (min-width: 1000px) {
-					font-size: 3em;
-				}
-			}
+                @media screen and (min-width: 1000px) {
+                    font-size: 3em;
+                }
+            }
 
-			@media screen and (min-width: 1000px) {
-				grid-template-columns: repeat(3, 1fr);
-				gap: 20px;
-			}
+            @media screen and (min-width: 1000px) {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
 
-			@media screen and (min-width: 1200px) {
-				grid-template-columns: repeat(4, 1fr);
-				gap: 40px;
-			}
-		}
-	}
+            @media screen and (min-width: 1200px) {
+                grid-template-columns: repeat(4, 1fr);
+                gap: 40px;
+            }
+        }
+    }
 }

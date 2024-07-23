@@ -1,117 +1,117 @@
 .sponsors {
-	position: relative;
-	background-color: var(--des24-black);
-	background-image: url("../../assets/graphics/background/dark_splash.svg");
-	background-repeat: repeat-y;
-	background-size: 100% auto;
+    position: relative;
+    background-color: var(--des24-black);
+    background-image: url("../../assets/graphics/background/dark_splash.svg");
+    background-repeat: repeat-y;
+    background-size: 100% auto;
 
-	.heading {
-		color: var(--des24-hot-pink);
-		font-size: 3rem;
-		font-weight: 700;
-		margin-bottom: 2rem;
+    .heading {
+        color: var(--des24-hot-pink);
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
 
-		@media screen and (min-width: 640px) {
-			font-size: 5rem;
-		}
+        @media screen and (min-width: 640px) {
+            font-size: 5rem;
+        }
 
-		@media screen and (min-width: 1280px) {
-			font-size: 6rem;
-		}
-	}
+        @media screen and (min-width: 1280px) {
+            font-size: 6rem;
+        }
+    }
 
-	.content {
-		max-width: 1280px;
-		margin-bottom: 4rem;
-	}
+    .content {
+        max-width: 1280px;
+        margin-bottom: 4rem;
+    }
 
-	& .logos {
-		padding-top: 60px;
-		display: grid;
-		column-gap: 40px;
-		row-gap: 40px;
-		width: 100%;
-		place-content: center;
+    & .logos {
+        padding-top: 60px;
+        display: grid;
+        column-gap: 40px;
+        row-gap: 40px;
+        width: 100%;
+        place-content: center;
 
-		@media screen and (min-width: 768px) {
-			grid-template-columns: repeat(2, 1fr);
-		}
+        @media screen and (min-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-		@media screen and (min-width: 1280px) {
-			grid-template-columns: repeat(3, 1fr);
-		}
+        @media screen and (min-width: 1280px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
 
-		& > div {
-			position: relative;
-			display: grid;
-			place-content: center;
-			aspect-ratio: 1;
-			background-position: center;
-			background-size: contain;
-			background-repeat: no-repeat;
-			max-width: max(50vw, 350px);
-		}
+        & > div {
+            position: relative;
+            display: grid;
+            place-content: center;
+            aspect-ratio: 1;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            max-width: max(50vw, 350px);
+        }
 
-		.tape {
-			position: absolute;
-			pointer-events: none;
-			top: -5%;
-			left: 50%;
-			transform: translateX(-50%);
-		}
+        .tape {
+            position: absolute;
+            pointer-events: none;
+            top: -5%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
 
-		.mirrorTape {
-			transform: scaleX(-1) translateX(50%);
-		}
+        .mirrorTape {
+            transform: scaleX(-1) translateX(50%);
+        }
 
-		& img {
-			max-height: 200px;
-			width: 80%;
-			object-fit: contain;
-			margin: auto;
-		}
-	}
+        & img {
+            max-height: 200px;
+            width: 80%;
+            object-fit: contain;
+            margin: auto;
+        }
+    }
 }
 
 .decoration {
-	position: absolute;
+    position: absolute;
 
-	max-width: 50%;
-	pointer-events: none;
+    max-width: 50%;
+    pointer-events: none;
 }
 
 .tr {
-	top: 0;
-	right: 0;
+    top: 0;
+    right: 0;
 }
 
 .ml {
-	top: 50%;
-	left: 0;
+    top: 50%;
+    left: 0;
 }
 
 .mr {
-	top: 50%;
-	right: 0;
+    top: 50%;
+    right: 0;
 }
 
 .headingContainer {
-	position: relative;
-	width: fit-content;
+    position: relative;
+    width: fit-content;
 }
 
 .heart {
-	max-width: 30%;
-	top: -150%;
+    max-width: 30%;
+    top: -150%;
 
-	@media screen and (min-width: 768px) {
-		top: unset;
-		right: -30%;
-	}
+    @media screen and (min-width: 768px) {
+        top: unset;
+        right: -30%;
+    }
 }
 
 .double_heart {
-	max-width: 40%;
+    max-width: 40%;
 
-	right: -45%;
+    right: -45%;
 }

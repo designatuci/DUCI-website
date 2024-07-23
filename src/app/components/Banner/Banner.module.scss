@@ -1,23 +1,23 @@
 .banner {
-	// temporary since home hero is absolute and covers page top
-	position: relative;
-	z-index: 5;
+    // temporary since home hero is absolute and covers page top
+    position: relative;
+    z-index: 5;
 
-	padding: 1rem;
-	text-align: center;
+    padding: 1rem;
+    text-align: center;
 
-	.underline {
-		text-decoration: underline;
-	}
-	.close {
-		position: absolute;
-		right: 20px;
-		background-color: transparent;
-		border: none;
-		color: white;
-		top: 0;
-		height: 100%;
-		font-size: 1.3em;
-		cursor: pointer;
-	}
+    .underline {
+        text-decoration: underline;
+    }
+    .close {
+        position: absolute;
+        right: 20px;
+        background-color: transparent;
+        border: none;
+        color: white;
+        top: 0;
+        height: 100%;
+        font-size: 1.3em;
+        cursor: pointer;
+    }
 }

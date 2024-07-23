@@ -1,125 +1,125 @@
 .container {
-	position: relative;
-	overflow: hidden;
+    position: relative;
+    overflow: hidden;
 
-	background-color: var(--des24-cream);
-	color: var(--des24-black);
+    background-color: var(--des24-cream);
+    color: var(--des24-black);
 
-	padding: 3rem 1rem 5rem;
-	font-size: 0.75em;
+    padding: 3rem 1rem 5rem;
+    font-size: 0.75em;
 
-	.content {
-		margin: 0 auto;
-		max-width: 1280px;
+    .content {
+        margin: 0 auto;
+        max-width: 1280px;
 
-		position: relative;
-	}
+        position: relative;
+    }
 
-	.heading {
-		position: relative;
-		color: var(--des24-hot-pink);
-		font-size: 3rem;
-		font-weight: 700;
-		margin-bottom: 4rem;
+    .heading {
+        position: relative;
+        color: var(--des24-hot-pink);
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
 
-		@media screen and (min-width: 640px) {
-			font-size: 5rem;
-		}
+        @media screen and (min-width: 640px) {
+            font-size: 5rem;
+        }
 
-		@media screen and (min-width: 1280px) {
-			font-size: 6rem;
-		}
-	}
+        @media screen and (min-width: 1280px) {
+            font-size: 6rem;
+        }
+    }
 
-	.airplane {
-		position: absolute;
-		max-width: 125px;
-		pointer-events: none;
+    .airplane {
+        position: absolute;
+        max-width: 125px;
+        pointer-events: none;
 
-		bottom: 0px;
-		right: 10px;
+        bottom: 0px;
+        right: 10px;
 
-		@media screen and (min-width: 640px) {
-			max-width: 200px;
+        @media screen and (min-width: 640px) {
+            max-width: 200px;
 
-			right: 40px;
-		}
+            right: 40px;
+        }
 
-		@media screen and (min-width: 1024px) {
-			max-width: 250px;
+        @media screen and (min-width: 1024px) {
+            max-width: 250px;
 
-			right: 0px;
-		}
+            right: 0px;
+        }
 
-		@media screen and (min-width: 1280px) {
-			max-width: 300px;
-		}
-	}
+        @media screen and (min-width: 1280px) {
+            max-width: 300px;
+        }
+    }
 
-	.paperclip {
-		position: absolute;
-		max-width: 75px;
-		pointer-events: none;
+    .paperclip {
+        position: absolute;
+        max-width: 75px;
+        pointer-events: none;
 
-		top: 438px;
-		left: -55px;
+        top: 438px;
+        left: -55px;
 
-		@media screen and (min-width: 640px) {
-			max-width: 100px;
+        @media screen and (min-width: 640px) {
+            max-width: 100px;
 
-			top: 358px;
-			left: -74px;
-		}
+            top: 358px;
+            left: -74px;
+        }
 
-		@media screen and (min-width: 1280px) {
-			max-width: 250px;
+        @media screen and (min-width: 1280px) {
+            max-width: 250px;
 
-			top: 340px;
-			left: -102px;
-		}
-	}
+            top: 340px;
+            left: -102px;
+        }
+    }
 
-	.bl {
-		position: absolute;
-		max-width: 200px;
-		bottom: 16px;
-		left: 0px;
-		pointer-events: none;
+    .bl {
+        position: absolute;
+        max-width: 200px;
+        bottom: 16px;
+        left: 0px;
+        pointer-events: none;
 
-		@media screen and (min-width: 640px) {
-			max-width: 500px;
-		}
-	}
+        @media screen and (min-width: 640px) {
+            max-width: 500px;
+        }
+    }
 
-	.tr {
-		position: absolute;
-		max-width: 50%;
-		top: 0px;
-		right: 0px;
-		pointer-events: none;
-	}
+    .tr {
+        position: absolute;
+        max-width: 50%;
+        top: 0px;
+        right: 0px;
+        pointer-events: none;
+    }
 
-	.gradient {
-		max-width: 300px;
-		top: -100px;
-		pointer-events: none;
-	}
+    .gradient {
+        max-width: 300px;
+        top: -100px;
+        pointer-events: none;
+    }
 }
 
 @media screen and (min-width: 640px) {
-	.container {
-		padding: 6rem 2rem 6rem;
+    .container {
+        padding: 6rem 2rem 6rem;
 
-		& .aboutHeading {
-			font-size: 70px;
-			font-weight: 700;
-		}
-	}
+        & .aboutHeading {
+            font-size: 70px;
+            font-weight: 700;
+        }
+    }
 }
 
 @media screen and (min-width: 1280px) {
-	.container {
-		font-size: 1em;
-		padding: 6rem 5rem 6rem;
-	}
+    .container {
+        font-size: 1em;
+        padding: 6rem 5rem 6rem;
+    }
 }

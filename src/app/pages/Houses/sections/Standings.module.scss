@@ -1,47 +1,47 @@
 .standings {
-	text-align: center;
-	margin: 0 auto;
-	max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1200px;
 
-	.title {
-		font-weight: bold;
-	}
+    .title {
+        font-weight: bold;
+    }
 
-	.list {
-		display: grid;
-		grid-template-columns: 1fr;
+    .list {
+        display: grid;
+        grid-template-columns: 1fr;
 
-		gap: 20px;
+        gap: 20px;
 
-		.house {
-			text-align: left;
-			border: 2px solid var(--silver);
-			border-radius: 20px;
+        .house {
+            text-align: left;
+            border: 2px solid var(--silver);
+            border-radius: 20px;
 
-			display: grid;
-			grid-template-columns: auto 1fr;
-			grid-template-rows: auto auto;
-			column-gap: 20px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-rows: auto auto;
+            column-gap: 20px;
 
-			padding: 20px;
+            padding: 20px;
 
-			.houseIcon {
-				height: 90px;
-				grid-row-end: span 2;
-			}
+            .houseIcon {
+                height: 90px;
+                grid-row-end: span 2;
+            }
 
-			.houseTitle {
-				text-transform: uppercase;
-				font-weight: 700;
-			}
+            .houseTitle {
+                text-transform: uppercase;
+                font-weight: 700;
+            }
 
-			.housePoints {
-				font-weight: 600;
-			}
-		}
+            .housePoints {
+                font-weight: 600;
+            }
+        }
 
-		@media screen and (min-width: 900px) {
-			grid-template-columns: 1fr 1fr;
-		}
-	}
+        @media screen and (min-width: 900px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
 }

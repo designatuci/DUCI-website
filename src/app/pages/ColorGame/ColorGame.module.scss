@@ -1,4 +1,3 @@
-
 .centered {
     text-align: center;
 }
@@ -14,7 +13,6 @@
 
     padding: 20px 20px 80px;
     box-sizing: border-box;
-    
 
     .container {
         padding: 20px;
@@ -29,7 +27,7 @@
             .color {
                 height: 200px;
                 width: 200px;
-                border-radius: 8px;        
+                border-radius: 8px;
                 margin-bottom: 0px;
                 transition: width 250ms;
             }
@@ -38,11 +36,10 @@
                 grid-template-columns: auto;
                 gap: 20px;
 
-                .color { 
+                .color {
                     width: 100%;
                     margin: 0 auto;
                 }
-
             }
         }
     }

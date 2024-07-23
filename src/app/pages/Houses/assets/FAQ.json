@@ -1,22 +1,22 @@
 [
-	{
-		"q": "What is the House System?",
-		"a": "The House System is a way for members to get closer to a smaller group of people in our club! Houses will have a friendly competition against each other to earn the most points at the end of the quarter, which can be earned by attending our general meetings, industry events, workshop events, and socials! The house with the most points at the end of the quarter gets a prize that will be announced closer to the end of the quarter!"
-	},
-	{
-		"q": "What do you get out of joining a House?",
-		"a": "By joining a house, you’ll get the wonderful opportunity to create closer connections and become more involved in the club!"
-	},
-	{
-		"q": "Are there any requirements to be a part of a house?",
-		"a": "There are no requirements to be a part of a house."
-	},
-	{
-		"q": "Do you need to be in a house to attend DAUCI events?",
-		"a": "No! You do not need to be assigned a house to attend our events."
-	},
-	{
-		"q": "How do I gain points once I join a house?",
-		"a": "Come out to our general meetings (workshop/industry events) and our social events! At the end of each event, there will be a QR code you can scan to mark your attendance. Board members will update the points accordingly and you can access the points sheet to see your updated points."
-	}
+    {
+        "q": "What is the House System?",
+        "a": "The House System is a way for members to get closer to a smaller group of people in our club! Houses will have a friendly competition against each other to earn the most points at the end of the quarter, which can be earned by attending our general meetings, industry events, workshop events, and socials! The house with the most points at the end of the quarter gets a prize that will be announced closer to the end of the quarter!"
+    },
+    {
+        "q": "What do you get out of joining a House?",
+        "a": "By joining a house, you’ll get the wonderful opportunity to create closer connections and become more involved in the club!"
+    },
+    {
+        "q": "Are there any requirements to be a part of a house?",
+        "a": "There are no requirements to be a part of a house."
+    },
+    {
+        "q": "Do you need to be in a house to attend DAUCI events?",
+        "a": "No! You do not need to be assigned a house to attend our events."
+    },
+    {
+        "q": "How do I gain points once I join a house?",
+        "a": "Come out to our general meetings (workshop/industry events) and our social events! At the end of each event, there will be a QR code you can scan to mark your attendance. Board members will update the points accordingly and you can access the points sheet to see your updated points."
+    }
 ]
