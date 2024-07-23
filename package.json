@@ -3,6 +3,7 @@
 	"version": "1.0.1",
 	"private": true,
 	"dependencies": {
+		"@ianvs/prettier-plugin-sort-imports": "^4.3.1",
 		"@sanity/client": "^6.21.1",
 		"@testing-library/user-event": "^12.8.3",
 		"animejs": "^3.2.2",
