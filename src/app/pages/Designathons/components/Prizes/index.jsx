@@ -7,7 +7,10 @@ const Prizes = ({ list }) => {
 			<Text size="XL">Prizes</Text>
 			<div className="split4">
 				{list.map((item) => (
-					<div className="flex left top spaceChildrenSmall" key={item.symbol}>
+					<div
+						className="flex left top spaceChildrenSmall"
+						key={item.symbol}
+					>
 						<Text size="XL" style={{ color: "var(--d-green)" }}>
 							{item.symbol}
 						</Text>

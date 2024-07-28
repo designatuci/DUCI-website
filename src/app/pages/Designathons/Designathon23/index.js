@@ -1,27 +1,28 @@
 import { Icon, Section } from "app/Symbols";
-import { Text } from "../../../components";
-import { WinnerShowcase } from "../components";
-import WINNERS_2023 from "assets/data/designathon/2023/winners.json";
-import TIMER_2023 from "assets/data/designathon/2023/timer.json";
 import JUDGES_2023 from "assets/data/designathon/2023/judges.json";
 import KEYNOTE_2023 from "assets/data/designathon/2023/keynote.json";
 import PRIZES_2023 from "assets/data/designathon/2023/prizes.json";
-import WORKSHOP_HOSTS_2023 from "assets/data/designathon/2023/workshop-hosts.json";
 import RULES_2023 from "assets/data/designathon/2023/rules.json";
-import cn from "./Designathon23.module.scss";
+import TIMER_2023 from "assets/data/designathon/2023/timer.json";
+import WINNERS_2023 from "assets/data/designathon/2023/winners.json";
+import WORKSHOP_HOSTS_2023 from "assets/data/designathon/2023/workshop-hosts.json";
+
+import { Text } from "../../../components";
+import { WinnerShowcase } from "../components";
+import balsamiq from "./assets/balsamiq.png";
 import FOF from "./assets/FOF.png";
 import notion from "./assets/notion.png";
-import balsamiq from "./assets/balsamiq.png";
 import {
-	Profile,
-	Prizes,
-	SectionNavigation,
 	FAQ,
+	Prizes,
+	Profile,
 	Rules,
+	SectionNavigation,
 	Timer,
 } from "./components";
 import Schedule from "./components/Schedule";
 import { Splash } from "./components/Splash";
+import cn from "./Designathon23.module.scss";
 
 const Designathon23 = () => (
 	<main className={cn.container}>

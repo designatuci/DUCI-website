@@ -1,17 +1,16 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet";
-
 import { Text } from "app/components";
 import {
-	Section,
+	CheckIcon,
 	Icon,
-	Space,
-	Photo,
 	LoadingD,
 	PageIcon,
-	CheckIcon,
+	Photo,
+	Section,
+	Space,
 } from "app/Symbols.js";
 import RESOURCE_LIST from "assets/data/resourceList.json";
+import { Helmet } from "react-helmet";
 
 import cn from "./ResourcesFeatured.module.scss";
 
@@ -57,8 +56,8 @@ const ResourcesFeatured = (props) => {
 						Featured Resources
 					</Text>
 					<Text className="wait dx subtle color gray">
-						A curated list of helpful tools, guides, and more—to help you
-						practice your skills.
+						A curated list of helpful tools, guides, and more—to
+						help you practice your skills.
 					</Text>
 				</div>
 			</Section>
@@ -87,14 +86,19 @@ const ResourcesFeatured = (props) => {
 							className={cn.toggle}
 							onClick={() => toggleFilter(item.color)}
 						>
-							<div className="flex row pointer" style={{ padding: "0 24px" }}>
+							<div
+								className="flex row pointer"
+								style={{ padding: "0 24px" }}
+							>
 								<CheckIcon
 									check={filterMode[item.color]}
 									r="18px"
 									color={item.fill}
 								/>
 								<Space block w="8" />
-								<Text className={`color ${item.color}`}>{item.title}</Text>
+								<Text className={`color ${item.color}`}>
+									{item.title}
+								</Text>
 							</div>
 						</button>
 					))}
@@ -140,7 +144,8 @@ const ResourcesFeatured = (props) => {
 										className="shadow"
 										style={{
 											backgroundImage: `url(${
-												card?.ogImg ?? `/static/photo/featured-resource.svg`
+												card?.ogImg ??
+												`/static/photo/featured-resource.svg`
 											})`,
 											height: "128px",
 											width: "100%",
@@ -149,7 +154,9 @@ const ResourcesFeatured = (props) => {
 									<Text size="L" className="color black">
 										{card.title}
 									</Text>
-									<Text className="color gray">{card.desc}</Text>
+									<Text className="color gray">
+										{card.desc}
+									</Text>
 								</a>
 							))}
 					</div>

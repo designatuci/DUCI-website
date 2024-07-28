@@ -1,4 +1,5 @@
 import { Section } from "app/Symbols";
+
 import cn from "./Prizes.module.scss";
 
 const Prizes = ({ list }) => {

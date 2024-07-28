@@ -1,9 +1,9 @@
-import clsx from "clsx";
-import cn from "./Modal.module.scss";
-
 import { useEffect } from "react";
+import clsx from "clsx";
+
 import Notecard from "../../Notecard/Notecard";
 import { Profile } from "../../Polaroid/Polaroid";
+import cn from "./Modal.module.scss";
 
 export const Modal = ({ toggleProfile, person }) => {
 	const { about } = person;

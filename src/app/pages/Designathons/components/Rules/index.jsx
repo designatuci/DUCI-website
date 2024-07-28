@@ -6,7 +6,10 @@ const Rules = ({ rules }) => {
 		<Section id="s-rules" className="textAlignLeft">
 			<Text size="XL">Rules</Text>
 			{rules.map((rule, i) => (
-				<div key={rule} className="flex row left top spaceChildrenSmall">
+				<div
+					key={rule}
+					className="flex row left top spaceChildrenSmall"
+				>
 					<Text
 						size="L"
 						style={{

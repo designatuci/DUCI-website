@@ -1,13 +1,12 @@
+import { Text } from "app/components";
+import { Icon, Section, Space } from "app/Symbols";
+import PAST_EVENTS from "assets/data/designathon/overall.json";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-import { Text } from "app/components";
-import { Section, Space, Icon } from "app/Symbols";
-
-import PAST_EVENTS from "assets/data/designathon/overall.json";
-import { EventListing } from "./components";
 import SplashGraphics from "../Designathon24/components/Splash/SplashGraphics";
 import SplashLogo from "../Designathon24/components/Splash/SplashLogo";
+import { EventListing } from "./components";
 
 const Designathons = () => (
 	<>

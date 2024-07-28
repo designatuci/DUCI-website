@@ -1,9 +1,8 @@
+import { Text } from "app/components";
+import { Icon, Photo, Section, Space } from "app/Symbols.js";
 import clsx from "clsx";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-
-import { Text } from "app/components";
-import { Section, Icon, Space, Photo } from "app/Symbols.js";
 
 import cn from "./Home.module.scss";
 
@@ -41,8 +40,8 @@ const Home = () => (
 					))}
 			</Text>
 			<Text color="gray" className="wait show d10 subtle">
-				The club for UI, UX, and graphic design at the University of California
-				Irvine.
+				The club for UI, UX, and graphic design at the University of
+				California Irvine.
 			</Text>
 			<div className="wait show drop d10 l2">
 				<Link to="/join/" className="button L fill blue">
@@ -81,9 +80,9 @@ const Home = () => (
 					</Text>
 					<Space block h="32" />
 					<Text color="gray">
-						Hosted nearly every week during the academic quarter, you'll get the
-						chance to level up your design game and make new friends with fellow
-						designers.
+						Hosted nearly every week during the academic quarter,
+						you'll get the chance to level up your design game and
+						make new friends with fellow designers.
 					</Text>
 					<Space block h="32" />
 					<Link to="/events/">
@@ -110,7 +109,8 @@ const Home = () => (
 							professional designers
 						</Text>{" "}
 						<Text size="XL" className="bold">
-							working at the top companies, and get exclusive insight to
+							working at the top companies, and get exclusive
+							insight to
 						</Text>{" "}
 						<Text size="XL" className="bold color pink">
 							industry practices.
@@ -118,8 +118,8 @@ const Home = () => (
 					</Text>
 					<Space block h="32" />
 					<Text className="color gray ">
-						We feature speakers across all fields. Get a chance to ask your
-						questions and receive a professional's advice.
+						We feature speakers across all fields. Get a chance to
+						ask your questions and receive a professional's advice.
 					</Text>
 					<Space block h="32" />
 					<Link to="/events">
@@ -157,8 +157,8 @@ const Home = () => (
 					</Text>
 					<Space block h="32" />
 					<Text className="color gray ">
-						Meet other designers, get exclusive perks, and expand your portfolio
-						with fresh new work.
+						Meet other designers, get exclusive perks, and expand
+						your portfolio with fresh new work.
 					</Text>
 					<Space block h="32" />
 					<Link to="/resources/">
@@ -170,7 +170,12 @@ const Home = () => (
 			</div>
 		</Section>
 		<Section className="center">
-			<Icon className="wait dx rainbow" src="loveDesign.svg" w="192" h="192" />
+			<Icon
+				className="wait dx rainbow"
+				src="loveDesign.svg"
+				w="192"
+				h="192"
+			/>
 			<div className="flex spaceChildrenSmall">
 				<Text
 					size="XXXL"
@@ -216,9 +221,12 @@ const Home = () => (
 			>
 				<Section className="center bare relative">
 					<div className="flex spaceChildren">
-						<Text className="wait scale bold narrow color white" size="XL">
-							We're focused on building a friendly community that helps striving
-							designers.
+						<Text
+							className="wait scale bold narrow color white"
+							size="XL"
+						>
+							We're focused on building a friendly community that
+							helps striving designers.
 						</Text>
 						<Link to="/about/">
 							<Text icon="right" color="white">

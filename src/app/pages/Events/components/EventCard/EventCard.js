@@ -1,10 +1,8 @@
-import clsx from "clsx";
-
 import { Text } from "app/components";
 import { PageIcon } from "app/Symbols";
+import clsx from "clsx";
 
 import formatRelativeDate from "../../controllers/formateDate";
-
 import cn from "./EventCard.module.scss";
 
 const EventCard = ({ ...event }) => (
@@ -19,13 +17,17 @@ const EventCard = ({ ...event }) => (
 		<Text color="gray">{event?.desc}</Text>
 
 		{event?.links
-			?.filter(({ label }) => label !== "Zoom Link" && label !== "Discord Link")
+			?.filter(
+				({ label }) =>
+					label !== "Zoom Link" && label !== "Discord Link",
+			)
 			.map(({ label, link }) => (
 				<a
 					key={link}
 					target="noreferer"
 					className={
-						"button S fill " + (label === "Recording" ? "blue" : "gray")
+						"button S fill " +
+						(label === "Recording" ? "blue" : "gray")
 					}
 					style={{
 						color: label === "Recording" ? "white" : "black",
@@ -36,7 +38,11 @@ const EventCard = ({ ...event }) => (
 					<Text>
 						{label}
 						<PageIcon
-							color={label === "Recording" ? "var(--sky)" : "var(--black)"}
+							color={
+								label === "Recording"
+									? "var(--sky)"
+									: "var(--black)"
+							}
 							style={{
 								width: "24px",
 								marginLeft: "4px",

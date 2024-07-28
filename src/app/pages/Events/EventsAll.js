@@ -1,8 +1,7 @@
-import { Helmet } from "react-helmet";
-
 import { Text } from "app/components";
-import { Section, LoadingD } from "app/Symbols.js";
+import { LoadingD, Section } from "app/Symbols.js";
 import EVENT_DATA from "assets/data/events/all.json";
+import { Helmet } from "react-helmet";
 
 import { EventCard } from "./components";
 

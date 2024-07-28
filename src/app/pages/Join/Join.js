@@ -1,9 +1,8 @@
+import { EmailForm, Text } from "app/components";
+import { Icon, PageIcon, Section } from "app/Symbols.js";
+import SHORT_SOCIALS from "assets/data/shortSocials.json";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-
-import { EmailForm, Text } from "app/components";
-import { Section, Icon, PageIcon } from "app/Symbols.js";
-import SHORT_SOCIALS from "assets/data/shortSocials.json";
 
 import cn from "./Join.module.scss";
 
@@ -22,8 +21,8 @@ const Join = () => (
 				Design at UCI is free for everyone
 			</Text>
 			<Text color="gray" className="slim wait dx show subtle">
-				Join our newsletter and follow our social media to get notifications
-				about what's happening.
+				Join our newsletter and follow our social media to get
+				notifications about what's happening.
 				<br />
 				Then get involved with what interests you!
 			</Text>

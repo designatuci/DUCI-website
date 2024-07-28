@@ -34,7 +34,10 @@ const WinnerShowcase = ({ winners }) => {
 									return (
 										<Text key={item.name + item.school}>
 											{item.name}
-											<Text className="color gray"> - {item.school}</Text>
+											<Text className="color gray">
+												{" "}
+												- {item.school}
+											</Text>
 										</Text>
 									);
 								})}

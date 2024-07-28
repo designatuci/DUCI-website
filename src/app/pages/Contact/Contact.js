@@ -1,8 +1,7 @@
-import { Helmet } from "react-helmet";
-
 import { Text } from "app/components";
-import { Section, Space, Icon } from "app/Symbols.js";
+import { Icon, Section, Space } from "app/Symbols.js";
 import socials from "assets/data/socials.json";
+import { Helmet } from "react-helmet";
 
 const Contact = () => (
 	<>
@@ -20,8 +19,8 @@ const Contact = () => (
 					</a>
 					<Space h="32" block />
 					<Text className="color gray">
-						Do you have a question, comment, or feedback for us? Don't hesitate
-						to send us an email.
+						Do you have a question, comment, or feedback for us?
+						Don't hesitate to send us an email.
 					</Text>
 				</div>
 				<div className="flex">
@@ -33,14 +32,16 @@ const Contact = () => (
 					</a>
 					<Space h="32" block />
 					<Text className="color gray">
-						Want to collaborate with Design at UCI? You can reach the campus'
-						design community easily through us.
+						Want to collaborate with Design at UCI? You can reach
+						the campus' design community easily through us.
 					</Text>
 				</div>
 			</div>
 			<Space h="32" />
 			<div>
-				<Text className="color gray">Reach out to us on social media</Text>
+				<Text className="color gray">
+					Reach out to us on social media
+				</Text>
 				<Space h="16" block />
 				<div className="flex row">
 					{socials.map(({ name, link, icons }) => (

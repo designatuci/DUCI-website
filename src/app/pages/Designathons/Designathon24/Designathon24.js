@@ -1,16 +1,15 @@
-import cn from "./Designathon24.module.scss";
-
 import {
 	About,
-	Prizes,
-	SectionNavigation,
 	FAQ,
+	Prizes,
 	Rules,
+	SectionNavigation,
 	Speakers,
 	Sponsors,
 } from "./components";
 import Schedule from "./components/Schedule";
 import { Splash } from "./components/Splash/Splash";
+import cn from "./Designathon24.module.scss";
 
 const Designathon24 = () => (
 	<main className={cn.container}>

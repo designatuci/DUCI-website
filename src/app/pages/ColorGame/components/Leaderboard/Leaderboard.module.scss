@@ -1,24 +1,24 @@
 .container {
-    padding: 20px;
-    border: 2px solid var(--silver);
-    border-radius: 18px;
+	padding: 20px;
+	border: 2px solid var(--silver);
+	border-radius: 18px;
 
-    .title {
-        margin-bottom: 20px;
-    }
+	.title {
+		margin-bottom: 20px;
+	}
 
-    .list {
-        background-color: var(--silver);
-        border-radius: 8px;
-        width: 100%;
-        display: grid;
-        padding: 8px;
+	.list {
+		background-color: var(--silver);
+		border-radius: 8px;
+		width: 100%;
+		display: grid;
+		padding: 8px;
 
-        .empty {
-            display: grid;
-            place-content: center;
-            color: var(--gray);
-            min-height: 300px;
-        }
-    }
+		.empty {
+			display: grid;
+			place-content: center;
+			color: var(--gray);
+			min-height: 300px;
+		}
+	}
 }

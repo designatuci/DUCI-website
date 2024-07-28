@@ -1,10 +1,16 @@
 /* eslint-disable */
 // TODO: pending refactor
 
-import { Helmet } from "react-helmet";
-import { useState, useEffect, Component } from "react";
-import { Section, Space, Icon, Photo } from "app/Symbols.js";
+import { Component, useEffect, useState } from "react";
 import { Text } from "app/components";
+import { Icon, Photo, Section, Space } from "app/Symbols.js";
+import JUDGES_2022 from "assets/data/designathon/2022/judges.json";
+import PRIZES_2022 from "assets/data/designathon/2022/prizes.json";
+import RULES_2023 from "assets/data/designathon/2022/rules.json";
+import WINNERS_2022 from "assets/data/designathon/2022/winners.json";
+import WORKSHOP_HOSTS_2022 from "assets/data/designathon/2022/workshop-hosts.json";
+import { Helmet } from "react-helmet";
+
 import {
 	Judges,
 	Prizes,
@@ -13,11 +19,6 @@ import {
 	WinnerShowcase,
 	WorkshopHosts,
 } from "./components";
-import WINNERS_2022 from "assets/data/designathon/2022/winners.json";
-import JUDGES_2022 from "assets/data/designathon/2022/judges.json";
-import PRIZES_2022 from "assets/data/designathon/2022/prizes.json";
-import WORKSHOP_HOSTS_2022 from "assets/data/designathon/2022/workshop-hosts.json";
-import RULES_2023 from "assets/data/designathon/2022/rules.json";
 
 const Designathon22 = () => {
 	useEffect(() => {
@@ -2504,17 +2505,17 @@ function frame() {
 }
 function resize() {
 	Main.target.view.w = Math.ceil(
-		view.getBoundingClientRect().width * RESOLUTION
+		view.getBoundingClientRect().width * RESOLUTION,
 	);
 	Main.target.view.h = Math.ceil(
-		view.getBoundingClientRect().height * RESOLUTION
+		view.getBoundingClientRect().height * RESOLUTION,
 	);
 
 	view.width = Main.target.view.w;
 	view.height = Main.target.view.h;
 
 	Main.prog.render.setUniform["aspect"](
-		Main.target.view.w / Main.target.view.h
+		Main.target.view.w / Main.target.view.h,
 	);
 }
 function scroll() {
@@ -2556,7 +2557,7 @@ class Program {
 		gl.bufferData(gl.ARRAY_BUFFER, Verticies, gl.STATIC_DRAW);
 		const positionAttribLocation = gl.getAttribLocation(
 			this.program,
-			"vertex"
+			"vertex",
 		);
 		gl.vertexAttribPointer(
 			positionAttribLocation,
@@ -2564,7 +2565,7 @@ class Program {
 			gl.FLOAT,
 			gl.FALSE,
 			2 * Float32Array.BYTES_PER_ELEMENT,
-			0
+			0,
 		);
 		gl.enableVertexAttribArray(positionAttribLocation);
 
@@ -2572,7 +2573,7 @@ class Program {
 		this.setUniform = {};
 		this.uLocation = {};
 		let uniformArgs = (vertCode + fragCode).matchAll(
-			"uniform +(.+) +(.+);"
+			"uniform +(.+) +(.+);",
 		);
 		for (let i of uniformArgs) {
 			let location = gl.getUniformLocation(this.program, i[2]);

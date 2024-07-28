@@ -1,9 +1,8 @@
 import { memo } from "react";
-import { Link } from "react-router-dom";
-
 import { Text } from "app/components";
-import { Section, Icon, Space } from "app/Symbols";
+import { Icon, Section, Space } from "app/Symbols";
 import socials from "assets/data/socials.json";
+import { Link } from "react-router-dom";
 
 import cn from "./Footer.module.scss";
 
@@ -27,7 +26,9 @@ const Footer = () => (
 									src={icons.default}
 									style={{ marginRight: "16px" }}
 								/>
-								<Text style={{ textTransform: "capitalize" }}>{name}</Text>
+								<Text style={{ textTransform: "capitalize" }}>
+									{name}
+								</Text>
 							</a>
 						</div>
 					))}
@@ -67,7 +68,10 @@ const Footer = () => (
 					</Link>
 				</div>
 				<div>
-					<a target="noreferer" href="https://medium.com/@designatuci">
+					<a
+						target="noreferer"
+						href="https://medium.com/@designatuci"
+					>
 						<Text>Board Blogs</Text>
 					</a>
 				</div>

@@ -1,9 +1,7 @@
 import { forwardRef } from "react";
-
+import { Text } from "app/components";
 import clsx from "clsx";
 import { Link } from "react-router-dom";
-
-import { Text } from "app/components";
 
 import cn from "./Join.module.scss";
 
@@ -37,8 +35,8 @@ function Join(props, ref) {
 				Didn’t get to Join a House? Send Us an Email
 			</Text>
 			<Text color="gray" className={cn.description}>
-				To get sorted into a house, please email us or talk to a board member at
-				any meeting!
+				To get sorted into a house, please email us or talk to a board
+				member at any meeting!
 			</Text>
 			<div className={clsx("wait show drop d10 l2", cn.button)}>
 				<a

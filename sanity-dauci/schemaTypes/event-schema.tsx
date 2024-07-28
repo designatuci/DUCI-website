@@ -1,6 +1,7 @@
-import { defineField, defineType } from "sanity";
-import { SelectWithCustomInput } from "../components/SelectWithCustomInput";
 import React from "react";
+import { defineField, defineType } from "sanity";
+
+import { SelectWithCustomInput } from "../components/SelectWithCustomInput";
 
 type Link = {
 	label?: string;

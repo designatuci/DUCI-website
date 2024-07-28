@@ -1,10 +1,9 @@
-import cn from "./Prizes.module.scss";
 import clsx from "clsx";
 
-import trophy from "../../assets/graphics/prizes/trophy.svg";
 import lines from "../../assets/graphics/prizes/lines.svg";
-
+import trophy from "../../assets/graphics/prizes/trophy.svg";
 import GridBackground from "../Backgrounds/GridBackground";
+import cn from "./Prizes.module.scss";
 
 const Prizes = () => {
 	return (

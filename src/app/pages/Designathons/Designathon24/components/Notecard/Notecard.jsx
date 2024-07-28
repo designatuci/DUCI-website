@@ -1,8 +1,8 @@
-import cn from "./Notecard.module.scss";
-
 import { useRef } from "react";
-import useNotecardLines from "./useNotecardLines";
 import clsx from "clsx";
+
+import cn from "./Notecard.module.scss";
+import useNotecardLines from "./useNotecardLines";
 
 // import close_icon from "../../assets/close_icon.svg";
 

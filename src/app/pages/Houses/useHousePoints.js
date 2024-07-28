@@ -30,7 +30,10 @@ function useHousePoints() {
 
 				setHousePoints(data);
 			} catch (err) {
-				console.error("Error occurred while fetching sheets data:", err);
+				console.error(
+					"Error occurred while fetching sheets data:",
+					err,
+				);
 			}
 		};
 

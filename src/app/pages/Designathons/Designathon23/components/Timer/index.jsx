@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import cn from "./Timer.module.scss";
 
 const Timer = ({ breakpoints }) => {

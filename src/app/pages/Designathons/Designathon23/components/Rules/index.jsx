@@ -1,5 +1,6 @@
 import { Text } from "app/components";
 import { Section } from "app/Symbols";
+
 import cn from "./Rules.module.scss";
 
 const Rules = ({ rules }) => {
@@ -7,7 +8,10 @@ const Rules = ({ rules }) => {
 		<Section id="s-rules" className={cn.container}>
 			<h2>Rules</h2>
 			{rules.map((rule, i) => (
-				<div key={rule} className="flex row left top spaceChildrenSmall">
+				<div
+					key={rule}
+					className="flex row left top spaceChildrenSmall"
+				>
 					<Text
 						size="L"
 						style={{

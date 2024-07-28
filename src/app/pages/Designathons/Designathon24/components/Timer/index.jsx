@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import cn from "./Timer.module.scss";
 
 const Timer = ({ breakpoints }) => {
@@ -47,7 +48,10 @@ const Timer = ({ breakpoints }) => {
 			<div className={cn.text}>{text}</div>
 			<div className={cn.row}>
 				{timeLeft.map(({ time, text }) => (
-					<div className={cn.block} style={{ color: "var(--des24-pink)" }}>
+					<div
+						className={cn.block}
+						style={{ color: "var(--des24-pink)" }}
+					>
 						<h3>{time}</h3> <p>{text}</p>
 					</div>
 				))}

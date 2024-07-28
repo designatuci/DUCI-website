@@ -1,19 +1,17 @@
-import cn from "./Speakers.module.scss";
 import clsx from "clsx";
-
-import Polaroid from "../Polaroid/Polaroid";
-
-import splat from "../../assets/graphics/speakers/splat.svg";
-import tr_pencil_star_stripe from "../../assets/graphics/speakers/tr_pencil_star_stripe.svg";
-import tl_gradient from "../../assets/graphics/speakers/tl_gradient.svg";
-import tl_star_stripe from "../../assets/graphics/speakers/tl_star_stripe.svg";
-import ml_stripe from "../../assets/graphics/speakers/ml_stripe.svg";
-import mr_star_stripe from "../../assets/graphics/speakers/mr_star_stripe.svg";
-import br_star_stripe_gradient from "../../assets/graphics/speakers/br_star_stripe_gradient.svg";
 
 import JUDGES from "../../assets/data/judges.json";
 import WORKSHOP_HOSTS from "../../assets/data/workshop-hosts.json";
+import br_star_stripe_gradient from "../../assets/graphics/speakers/br_star_stripe_gradient.svg";
+import ml_stripe from "../../assets/graphics/speakers/ml_stripe.svg";
+import mr_star_stripe from "../../assets/graphics/speakers/mr_star_stripe.svg";
+import splat from "../../assets/graphics/speakers/splat.svg";
+import tl_gradient from "../../assets/graphics/speakers/tl_gradient.svg";
+import tl_star_stripe from "../../assets/graphics/speakers/tl_star_stripe.svg";
+import tr_pencil_star_stripe from "../../assets/graphics/speakers/tr_pencil_star_stripe.svg";
 import GridBackground from "../Backgrounds/GridBackground";
+import Polaroid from "../Polaroid/Polaroid";
+import cn from "./Speakers.module.scss";
 
 const Speakers = () => {
 	return (

@@ -1,7 +1,8 @@
-import { useState, useEffect, useCallback } from "react";
-import { parseEvents, joinEvents } from "./utils.js";
+import { useCallback, useEffect, useState } from "react";
 import EVENT_DATA from "assets/data/events/all.json";
 import { client } from "sanity-client.js";
+
+import { joinEvents, parseEvents } from "./utils.js";
 
 const legacyEvents = parseEvents(EVENT_DATA); // events from manual JSON file
 

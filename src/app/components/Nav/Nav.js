@@ -1,9 +1,8 @@
-import { useState, memo, useCallback } from "react";
-import { Link, useLocation } from "react-router-dom";
-
+import { memo, useCallback, useState } from "react";
 import { Text } from "app/components";
-import { Space, Icon } from "app/Symbols";
+import { Icon, Space } from "app/Symbols";
 import socials from "assets/data/socials.json";
+import { Link, useLocation } from "react-router-dom";
 
 import "./Nav.scss";
 

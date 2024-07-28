@@ -1,7 +1,7 @@
 import { memo } from "react";
-import cn from "./Splash.module.scss";
 import clsx from "clsx";
 
+import cn from "./Splash.module.scss";
 import SplashGraphics from "./SplashGraphics";
 import SplashLogo from "./SplashLogo";
 

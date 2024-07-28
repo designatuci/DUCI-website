@@ -1,6 +1,5 @@
-import { Link } from "react-router-dom";
-
 import { Text } from "app/components";
+import { Link } from "react-router-dom";
 
 import cn from "./MerchItem.module.scss";
 

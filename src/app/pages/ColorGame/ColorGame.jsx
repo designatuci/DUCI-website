@@ -1,15 +1,17 @@
 import { memo, useCallback, useEffect, useRef, useState } from "react";
-import cn from "./ColorGame.module.scss";
 import { Text } from "app/components";
 import clsx from "clsx";
-import { Leaderboard } from "./components/Leaderboard/Leaderboard";
+import Auto from "react-animate-height";
+
+import cn from "./ColorGame.module.scss";
 import {
 	DIGITS,
 	HexColorInput,
 } from "./components/HexColorInput/HexColorInput";
-import { Results } from "./components/Results/Results";
-import Auto from "react-animate-height";
 import { Instructions } from "./components/Instructions/Instructions";
+import { Leaderboard } from "./components/Leaderboard/Leaderboard";
+import { Results } from "./components/Results/Results";
+
 const generateRandomHexString = () => {
 	const randomHex = [];
 
@@ -29,7 +31,7 @@ export const ColorGame = memo(function ColorGame() {
 
 	const resetColor = useCallback(
 		() => setColor(generateRandomHexString()),
-		[]
+		[],
 	);
 
 	useEffect(() => {

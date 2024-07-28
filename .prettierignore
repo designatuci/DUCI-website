@@ -2,3 +2,7 @@ build
 public/static
 node_modules
 *.yml
+
+sanity-dauci/dist/*
+sanity-dauci/node_modules/*
+sanity-dauci/.sanity/*

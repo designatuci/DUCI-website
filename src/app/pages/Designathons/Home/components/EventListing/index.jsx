@@ -1,6 +1,7 @@
 import { Text } from "app/components";
 import { Photo, Section, Space } from "app/Symbols";
 import { Link } from "react-router-dom";
+
 import { ProjectShowcase } from "./components/ProjectShowcase";
 
 const EventListing = ({

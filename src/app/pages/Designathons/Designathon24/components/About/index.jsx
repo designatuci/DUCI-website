@@ -1,15 +1,13 @@
-import cn from "./About.module.scss";
 import clsx from "clsx";
 
-import Notecard from "../Notecard/Notecard";
-
 import airplane from "../../assets/graphics/about/airplane.svg";
+import bl_blob_stars from "../../assets/graphics/about/bl_blob_stars.svg";
 import paperclip from "../../assets/graphics/about/paperclip.svg";
 import tr_gradient from "../../assets/graphics/about/tr_gradient.svg";
-import bl_blob_stars from "../../assets/graphics/about/bl_blob_stars.svg";
 import tr_stars from "../../assets/graphics/about/tr_stars.svg";
-
 import GridBackground from "../Backgrounds/GridBackground";
+import Notecard from "../Notecard/Notecard";
+import cn from "./About.module.scss";
 
 const About = () => {
 	return (

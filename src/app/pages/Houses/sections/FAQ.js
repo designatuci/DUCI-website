@@ -1,11 +1,8 @@
 import { useCallback, useState } from "react";
-
-import clsx from "clsx";
-
 import { Text } from "app/components";
-import { Icon, Section } from "app/Symbols";
-
 import FAQ_QUESTIONS from "app/pages/Houses/assets/FAQ.json";
+import { Icon, Section } from "app/Symbols";
+import clsx from "clsx";
 
 import cn from "./FAQ.module.scss";
 
@@ -46,7 +43,9 @@ function FAQ() {
 								<div className="faqitem open card S flex left spaceChildrenSmall">
 									<div className={cn.answer}>
 										<Text className="bold">{item.q}</Text>
-										<Text className="color gray">{item.a}</Text>
+										<Text className="color gray">
+											{item.a}
+										</Text>
 									</div>
 								</div>
 							}

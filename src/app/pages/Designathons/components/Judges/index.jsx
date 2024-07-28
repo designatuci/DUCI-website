@@ -1,6 +1,7 @@
 import { Text } from "app/components";
 import { Section } from "app/Symbols";
 import clsx from "clsx";
+
 import cn from "./Judges.module.scss";
 
 const Judges = ({ profiles }) => {
@@ -9,7 +10,10 @@ const Judges = ({ profiles }) => {
 			<Text size="XL">Judges</Text>
 			<div className="split3 s-judges">
 				{profiles.map((item) => (
-					<div key={item.name} className="flex left top spaceChildrenSmall">
+					<div
+						key={item.name}
+						className="flex left top spaceChildrenSmall"
+					>
 						<img
 							src={require(`assets/${item.photo}`)}
 							alt={"headshot"}

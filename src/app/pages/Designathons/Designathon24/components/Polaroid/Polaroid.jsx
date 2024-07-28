@@ -1,11 +1,9 @@
-import cn from "./Polaroid.module.scss";
-
 import { useCallback, useState } from "react";
-
-import { Modal } from "../Speakers/Modal/Modal";
 
 import tape_black from "../../assets/graphics/speakers/tape_black.svg";
 import tape_white from "../../assets/graphics/speakers/tape_white.svg";
+import { Modal } from "../Speakers/Modal/Modal";
+import cn from "./Polaroid.module.scss";
 
 export const Profile = ({ person, odd, showTape }) => {
 	const { photo, name, role } = person;

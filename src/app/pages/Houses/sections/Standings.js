@@ -1,14 +1,11 @@
-import clsx from "clsx";
-
 import { Text } from "app/components";
-import { Section } from "app/Symbols";
-
-import useHousePoints from "app/pages/Houses/useHousePoints";
-
 import Bow from "app/pages/Houses/assets/Bow";
 import Dove from "app/pages/Houses/assets/Dove";
 import Flame from "app/pages/Houses/assets/Flame";
 import Lightning from "app/pages/Houses/assets/Lightning";
+import useHousePoints from "app/pages/Houses/useHousePoints";
+import { Section } from "app/Symbols";
+import clsx from "clsx";
 
 import cn from "./Standings.module.scss";
 

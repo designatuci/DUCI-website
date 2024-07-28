@@ -1,7 +1,8 @@
 import { createRef, memo, useEffect, useMemo, useState } from "react";
-import cn from "./HexColorInput.module.scss";
 import clsx from "clsx";
+
 import { generateReport } from "./generateReport";
+import cn from "./HexColorInput.module.scss";
 import REFRESH_ICON from "./refresh.png";
 
 export const DIGITS = [

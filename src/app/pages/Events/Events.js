@@ -1,10 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Text } from "app/components";
+import { Icon, LoadingD, PageIcon, Section, Space } from "app/Symbols.js";
+import EVENT_DATA from "assets/data/events/all.json";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-
-import { Text } from "app/components";
-import { Section, Space, Icon, LoadingD, PageIcon } from "app/Symbols.js";
-import EVENT_DATA from "assets/data/events/all.json";
 
 import EventCard from "./components/EventCard/EventCard.js";
 
