@@ -1,8 +1,9 @@
-import clsx from "clsx";
 import { memo } from "react";
-import cn from "./Instructions.module.scss";
 import { Text } from "app/components";
+import clsx from "clsx";
+
 import COLOR_BREAKDOWN from "./breakdown.png";
+import cn from "./Instructions.module.scss";
 
 export const Instructions = memo(function Instructions() {
 	return (

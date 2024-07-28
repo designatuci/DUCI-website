@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react";
-import cn from "./Profile.module.scss";
+
 import { Modal } from "./Modal";
+import cn from "./Profile.module.scss";
 
 const Profile = ({ name, photo, role, ...rest }) => {
 	const [open, setOpen] = useState(false);

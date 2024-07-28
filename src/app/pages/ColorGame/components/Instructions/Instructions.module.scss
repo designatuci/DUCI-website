@@ -1,31 +1,30 @@
 .container {
-    padding: 20px;
-    border: 2px solid var(--silver);
-    border-radius: 18px;
+	padding: 20px;
+	border: 2px solid var(--silver);
+	border-radius: 18px;
 
-    .header {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        width: 100%;
-    }
+	.header {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		width: 100%;
+	}
 
-    p {
-        margin: 20px 0;
-        line-height: 1.3em;
-        width: fit-content;
-        font-size: 1.1em;
+	p {
+		margin: 20px 0;
+		line-height: 1.3em;
+		width: fit-content;
+		font-size: 1.1em;
 
-        @media screen and (max-width: 1000px) {
-            font-size: 1em;
-        }
+		@media screen and (max-width: 1000px) {
+			font-size: 1em;
+		}
+	}
+	img {
+		margin: 0 auto;
+		max-height: 200px;
 
-    }
-     img {
-        margin: 0 auto;
-        max-height: 200px;
-
-        @media screen and (max-width: 1000px) {
-            max-height: 100px;
-        }
-     }
+		@media screen and (max-width: 1000px) {
+			max-height: 100px;
+		}
+	}
 }

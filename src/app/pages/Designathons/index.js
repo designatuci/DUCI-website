@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router-dom";
+
 import Designathon22 from "./Designathon22";
 import Designathon23 from "./Designathon23";
-import Home from "./Home";
 import Designathon24 from "./Designathon24/Designathon24";
+import Home from "./Home";
 
 const Designathon = () => {
 	return (

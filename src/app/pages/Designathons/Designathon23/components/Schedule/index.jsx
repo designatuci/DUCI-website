@@ -1,5 +1,6 @@
 import { Section } from "app/Symbols";
 import clsx from "clsx";
+
 import cn from "./Schedule.module.scss";
 
 function Schedule() {

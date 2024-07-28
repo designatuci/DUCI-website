@@ -1,9 +1,8 @@
+import { Section } from "app/Symbols.js";
 import clsx from "clsx";
 import { Helmet } from "react-helmet";
 import PhotoAlbum from "react-photo-album";
 import { Link } from "react-router-dom";
-
-import { Section } from "app/Symbols.js";
 
 import IMG1 from "./assets/1.jpg";
 import IMG2 from "./assets/2.jpg";
@@ -92,9 +91,10 @@ const Shirt22 = () => {
 							</span>
 						</span>
 						<p className={cn.description}>
-							Support Design at UCI with style by purchasing our limited-edition
-							embroidered t-shirts! Rock your UC Irvine pride and our club's
-							colors — comes in unisex Small, Medium, and Large.
+							Support Design at UCI with style by purchasing our
+							limited-edition embroidered t-shirts! Rock your UC
+							Irvine pride and our club's colors — comes in unisex
+							Small, Medium, and Large.
 						</p>
 
 						{/* <a

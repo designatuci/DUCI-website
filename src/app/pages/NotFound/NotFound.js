@@ -1,8 +1,7 @@
-import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
-
 import { Text } from "app/components";
 import { Section, Space } from "app/Symbols.js";
+import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
 	return (
@@ -27,7 +26,8 @@ const NotFound = () => {
 					<Text className="color gray">
 						The URL
 						<Text className="bold" style={{ margin: "0 6px" }}>
-							{window.location.hostname + window.location.pathname}
+							{window.location.hostname +
+								window.location.pathname}
 						</Text>
 						does not exist.
 					</Text>

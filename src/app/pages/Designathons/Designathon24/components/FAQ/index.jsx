@@ -1,11 +1,10 @@
-import cn from "./FAQ.module.scss";
-import clsx from "clsx";
-
 import { useCallback, useState } from "react";
+import clsx from "clsx";
 
 import down_carat from "../../assets/graphics/faq/down_carat.svg";
 import star_lines from "../../assets/graphics/faq/star_lines.svg";
 import GridBackground from "../Backgrounds/GridBackground";
+import cn from "./FAQ.module.scss";
 
 const FAQ = () => {
 	return (

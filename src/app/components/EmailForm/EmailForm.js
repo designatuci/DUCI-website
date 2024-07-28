@@ -1,6 +1,5 @@
-import MailchimpSubscribe from "react-mailchimp-subscribe";
-
 import { Text } from "app/components";
+import MailchimpSubscribe from "react-mailchimp-subscribe";
 
 const url =
 	"https://weebly.us16.list-manage.com/subscribe/post?u=96e1277e37e6f4c2940cd1dc9&id=3cdf6c3ea8";
@@ -33,7 +32,8 @@ const EmailForm = () => {
 						{(status == null ||
 							status === "sending" ||
 							(status === "error" &&
-								message.indexOf("already subscribed") === -1)) && (
+								message.indexOf("already subscribed") ===
+									-1)) && (
 							<div className="inputs">
 								<input
 									type="email"
@@ -69,7 +69,9 @@ const EmailForm = () => {
 							</Text>
 						)}
 						{status === "success" && (
-							<Text className="wait show dx bold color gray">Thank you.</Text>
+							<Text className="wait show dx bold color gray">
+								Thank you.
+							</Text>
 						)}
 						{status === "error" &&
 							message.indexOf("already subscribed") >= 0 && (
@@ -86,35 +88,51 @@ const EmailForm = () => {
 							)}
 						{status === "error" &&
 							message.indexOf("already subscribed") >= 0 && (
-								<Text className="wait show dx color gray">Thank you.</Text>
+								<Text className="wait show dx color gray">
+									Thank you.
+								</Text>
 							)}
 
 						<div className="flex spaceChildrenSmall">
 							{(status == null ||
 								status === "sending" ||
 								(status === "error" &&
-									message.indexOf("already subscribed") === -1)) && (
+									message.indexOf("already subscribed") ===
+										-1)) && (
 								<button
 									className="button fill blue"
 									onClick={validate}
-									style={{ border: "none", cursor: "pointer" }}
+									style={{
+										border: "none",
+										cursor: "pointer",
+									}}
 								>
-									<Text>{status === "sending" ? "• • •" : "Sign-up"}</Text>
+									<Text>
+										{status === "sending"
+											? "• • •"
+											: "Sign-up"}
+									</Text>
 								</button>
 							)}
 							{status === "error" &&
-								message.indexOf("already subscribed") === -1 && (
+								message.indexOf("already subscribed") ===
+									-1 && (
 									<Text style={{ color: "red" }}>
-										Error, please check your inputs and try again
+										Error, please check your inputs and try
+										again
 									</Text>
 								)}
 							{(status == null ||
 								status === "sending" ||
 								(status === "error" &&
-									message.indexOf("already subscribed") === -1)) && (
+									message.indexOf("already subscribed") ===
+										-1)) && (
 								<Text className="S color gray nano">
 									Mail services provided by{" "}
-									<a target="noreferer" href="https://mailchimp.com">
+									<a
+										target="noreferer"
+										href="https://mailchimp.com"
+									>
 										MailChimp
 									</a>
 									. By signing up, you agree to their{" "}

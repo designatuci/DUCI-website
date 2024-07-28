@@ -1,99 +1,97 @@
 .container {
-    text-align: center;
-    display: grid;
-    margin-top: 20px;
+	text-align: center;
+	display: grid;
+	margin-top: 20px;
 
-    background-color: var(--silver);
-    border-radius: 8px;
-    width: 100%;
-    padding: 40px;
+	background-color: var(--silver);
+	border-radius: 8px;
+	width: 100%;
+	padding: 40px;
 
-    @media screen and (max-width: 900px) {
-        padding: 20px;
-    }
+	@media screen and (max-width: 900px) {
+		padding: 20px;
+	}
 
-    .split {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        padding-top: 20px;
+	.split {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+		padding-top: 20px;
 
-        .left {
-            text-align: left;
-            display: grid;
-            grid-template-columns: 1fr auto;
+		.left {
+			text-align: left;
+			display: grid;
+			grid-template-columns: 1fr auto;
 
-            .description {
-                display: grid;
-                place-content: center start;
-            }
-        }
+			.description {
+				display: grid;
+				place-content: center start;
+			}
+		}
 
-        .right {
-            text-align: right;
-            display: grid;
-            grid-template-columns: auto 1fr;
+		.right {
+			text-align: right;
+			display: grid;
+			grid-template-columns: auto 1fr;
 
-            .description {
-                display: grid;
-                place-content: center end;
-            }
-        }
+			.description {
+				display: grid;
+				place-content: center end;
+			}
+		}
 
-        .color {
-            font-size: 3em;
-        }
+		.color {
+			font-size: 3em;
+		}
 
-        .box {
-            height: 120px;
-            width: 120px;
-            border-radius: 8px;
+		.box {
+			height: 120px;
+			width: 120px;
+			border-radius: 8px;
+		}
 
-        }
+		@media screen and (max-width: 900px) {
+			grid-template-columns: 1fr;
 
-        @media screen and (max-width: 900px) {
-            grid-template-columns: 1fr;
+			.box {
+				height: 60px;
+				width: 60px;
+			}
 
-            .box {
-                height: 60px;
-                width: 60px;
-            }
+			.color {
+				font-size: 2em;
+			}
+		}
+	}
 
-            .color {
-                font-size: 2em;
-            }
-        }
-    }
+	.analysis {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		gap: 30px;
 
-    .analysis {
-        display: grid;
-        grid-template-columns: auto 1fr;
-        gap: 30px;
+		margin-top: 20px;
+		text-align: left;
+		font-size: 1.2em;
+		line-height: 1.2em;
 
-        margin-top: 20px;
-        text-align: left;
-        font-size: 1.2em;
-        line-height: 1.2em;
+		@media screen and (max-width: 900px) {
+			grid-template-columns: 1fr;
+		}
 
-        @media screen and (max-width: 900px) {
-            grid-template-columns: 1fr;
-        }
+		span {
+			color: var(--gray);
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 0.8em;
+		}
 
-        span {
-            color: var(--gray);
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 0.8em;
-        }
+		.tips {
+			color: #555;
+			text-align: right;
 
-        .tips {
-            color: #555;
-            text-align: right;
-
-            @media screen and (max-width: 900px) {
-                text-align: left;
-                
-            }
-        }
-    }
+			@media screen and (max-width: 900px) {
+				text-align: left;
+			}
+		}
+	}
 }

@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useMemo, useCallback } from "react";
-
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Section } from "app/Symbols";
 import clsx from "clsx";
-import cn from "./Schedule.module.scss";
+
 import GridBackground from "../Backgrounds/GridBackground";
+import cn from "./Schedule.module.scss";
 
 const FridaySchedule = () => {
 	return (

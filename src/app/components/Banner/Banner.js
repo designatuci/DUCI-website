@@ -1,7 +1,7 @@
+import { useCallback, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import cn from "./Banner.module.scss";
-import { useCallback, useState } from "react";
 
 function Banner() {
 	const location = useLocation();

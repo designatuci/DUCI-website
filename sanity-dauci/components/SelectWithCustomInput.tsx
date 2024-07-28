@@ -1,6 +1,6 @@
-import React, { useState, useEffect, FormEvent } from "react";
-import { TextInput, Stack, Select, Card } from "@sanity/ui";
-import { set, unset, StringInputProps, StringSchemaType } from "sanity";
+import React, { FormEvent, useEffect, useState } from "react";
+import { Card, Select, Stack, TextInput } from "@sanity/ui";
+import { set, StringInputProps, StringSchemaType, unset } from "sanity";
 
 export const SelectWithCustomInput = React.forwardRef(
 	function SelectWithCustomInput(

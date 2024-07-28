@@ -1,8 +1,7 @@
+import { Text } from "app/components";
+import { Icon, Section, Space } from "app/Symbols.js";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-
-import { Text } from "app/components";
-import { Section, Space, Icon } from "app/Symbols.js";
 
 export const PROJECT_TEAMS_GOOGLE_FORM = "https://forms.gle/QTFb9v7HMrEyyspS9";
 const REGISTRATION_OPEN = true;
@@ -26,7 +25,11 @@ function ProjectTeams() {
 		<Text className="color gray">
 			To participate, complete the{" "}
 			<Text className="color blue">
-				<Link to="registration" target="_blank" rel="noopener noreferrer">
+				<Link
+					to="registration"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					project teams registration form
 				</Link>
 			</Text>{" "}
@@ -65,19 +68,21 @@ function ProjectTeams() {
 					<br />
 					<Text size="L">What are Project Teams?</Text>
 					<Text className="color gray">
-						Project Teams is a quarterly program that provides students with
-						design experience in a collaborative setting. Each quarter, students
-						form teams and work on a design project of their choice (e.g. UI/UX
-						design, marketing design, graphic design) from start to finish.
-						Participants learn essential design skills along the way, become
-						familiar with industry-standard tools, and have a completed project
-						for their portfolio at the end of it! No prior experience is
-						necessary, but Project Teams will be on a first-come, first-served
-						basis due to limited capacity.
+						Project Teams is a quarterly program that provides
+						students with design experience in a collaborative
+						setting. Each quarter, students form teams and work on a
+						design project of their choice (e.g. UI/UX design,
+						marketing design, graphic design) from start to finish.
+						Participants learn essential design skills along the
+						way, become familiar with industry-standard tools, and
+						have a completed project for their portfolio at the end
+						of it! No prior experience is necessary, but Project
+						Teams will be on a first-come, first-served basis due to
+						limited capacity.
 					</Text>
 					<Text className="color gray">
-						For {CURRENT_QUARTER}, Project Teams will meet Wednesdays at
-						5&ndash;7 PM from weeks 2 through 9.
+						For {CURRENT_QUARTER}, Project Teams will meet
+						Wednesdays at 5&ndash;7 PM from weeks 2 through 9.
 					</Text>
 
 					{/* <Space h='32' />

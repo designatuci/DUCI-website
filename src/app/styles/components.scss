@@ -95,7 +95,8 @@
 
 @keyframes largeEvent-show {
 	0% {
-		transform: perspective(512px) scale(0.88) translateY(32px) rotateX(20deg);
+		transform: perspective(512px) scale(0.88) translateY(32px)
+			rotateX(20deg);
 	}
 
 	100% {
