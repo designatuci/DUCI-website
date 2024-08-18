@@ -8,7 +8,7 @@
 	{
 		"name": "Janie Seong",
 		"position": "Co-President",
-		"photo": "Janie_Seong.jpeg"
+		"photo": "Janie_Seong.jpg"
 	},
 	{
 		"name": "Jamie Kuang",
@@ -34,7 +34,7 @@
 	{
 		"name": "Emma Choi",
 		"position": "Marketing Coordinator",
-		"photo": "Emma_Choi.jpeg",
+		"photo": "Emma_Choi.jpg",
 		"links": [
 			{
 				"type": "instagram",
@@ -60,7 +60,7 @@
 	{
 		"name": "John Daniel Norombaba",
 		"position": "Industry Outreach Coordinator",
-		"photo": "John_Daniel.jpeg",
+		"photo": "John_Daniel.jpg",
 		"links": [
 			{
 				"type": "instagram",
@@ -142,12 +142,12 @@
 	{
 		"name": "Winston Lee",
 		"position": "Project Teams Coordinator",
-		"photo": "Winston_Lee.jpeg"
+		"photo": "Winston_Lee.jpg"
 	},
 	{
 		"name": "Megan Rhee",
 		"position": "Project Teams Coordinator",
-		"photo": "Megan_Rhee.png",
+		"photo": "Megan_Rhee.jpg",
 		"links": [
 			{
 				"type": "instagram",
@@ -164,7 +164,7 @@
 	{
 		"name": "Daniela Herrera",
 		"position": "Creative Director",
-		"photo": "Daniela_Herrera.jpeg",
+		"photo": "Daniela_Herrera.jpg",
 		"links": [
 			{
 				"type": "linkedin",
@@ -234,7 +234,7 @@
 	{
 		"name": "Kevin Wu",
 		"position": "Webmaster",
-		"photo": "Kevin_Wu.png",
+		"photo": "Kevin_Wu.jpg",
 		"links": [
 			{
 				"type": "linkedin",
