@@ -1,24 +1,22 @@
-import cn from "./Sponsors.module.scss";
+import { Section } from "app/Symbols";
 import clsx from "clsx";
 
-import { Section } from "app/Symbols";
-
-import notion from "../../assets/graphics/sponsors/notion.png";
-import FOF from "../../assets/graphics/sponsors/FOF.png";
-import odit from "../../assets/graphics/sponsors/odit.svg";
-import codazen from "../../assets/graphics/sponsors/codazen.jpg";
 import balsamiq from "../../assets/graphics/sponsors/balsamiq.png";
-import vgdc from "../../assets/graphics/sponsors/vgdc.png";
+import codazen from "../../assets/graphics/sponsors/codazen.jpg";
 import ctc from "../../assets/graphics/sponsors/ctc.png";
-
-import tilt_up from "../../assets/graphics/sponsors/tilt_up.svg";
-import tilt_down from "../../assets/graphics/sponsors/tilt_down.svg";
-import tape from "../../assets/graphics/sponsors/tape.svg";
-import tr_squiggle from "../../assets/graphics/sponsors/tr_squiggle.svg";
+import double_heart from "../../assets/graphics/sponsors/double_heart.svg";
+import FOF from "../../assets/graphics/sponsors/FOF.png";
+import heart from "../../assets/graphics/sponsors/heart.svg";
 import ml_squiggle from "../../assets/graphics/sponsors/ml_squiggle.svg";
 import mr_squiggle from "../../assets/graphics/sponsors/mr_squiggle.svg";
-import heart from "../../assets/graphics/sponsors/heart.svg";
-import double_heart from "../../assets/graphics/sponsors/double_heart.svg";
+import notion from "../../assets/graphics/sponsors/notion.png";
+import odit from "../../assets/graphics/sponsors/odit.svg";
+import tape from "../../assets/graphics/sponsors/tape.svg";
+import tilt_down from "../../assets/graphics/sponsors/tilt_down.svg";
+import tilt_up from "../../assets/graphics/sponsors/tilt_up.svg";
+import tr_squiggle from "../../assets/graphics/sponsors/tr_squiggle.svg";
+import vgdc from "../../assets/graphics/sponsors/vgdc.png";
+import cn from "./Sponsors.module.scss";
 
 const SPONSOR_DETAILS = [
 	{

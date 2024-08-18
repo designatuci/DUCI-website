@@ -1,17 +1,17 @@
-import clsx from "clsx";
 import { memo, useEffect, useRef, useState } from "react";
-import cn from "./Leaderboard.module.scss";
+import { Text } from "app/components";
+import clsx from "clsx";
 import Auto from "react-animate-height";
 
-import { Text } from "app/components";
 import { ScoreItem } from "./components/ScoreItem";
+import cn from "./Leaderboard.module.scss";
 
 const PADDING = 16;
 const HIGHSCORE_LOCALSTORAGE_KEY = "@duci/color-game-highscore";
 
 export const Leaderboard = memo(function Leaderboard({ report }) {
 	const [highscores, setHighScore] = useState(() =>
-		JSON.parse(localStorage.getItem(HIGHSCORE_LOCALSTORAGE_KEY) ?? "[]")
+		JSON.parse(localStorage.getItem(HIGHSCORE_LOCALSTORAGE_KEY) ?? "[]"),
 	);
 	const contentRef = useRef(null);
 	const [height, setHeight] = useState("auto");
@@ -26,7 +26,7 @@ export const Leaderboard = memo(function Leaderboard({ report }) {
 
 			localStorage.setItem(
 				HIGHSCORE_LOCALSTORAGE_KEY,
-				JSON.stringify(next)
+				JSON.stringify(next),
 			);
 
 			return next;

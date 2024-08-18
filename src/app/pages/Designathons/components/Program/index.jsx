@@ -107,7 +107,10 @@ class Program {
 		const vertexBuffer = gl.createBuffer();
 		gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
 		gl.bufferData(gl.ARRAY_BUFFER, Verticies, gl.STATIC_DRAW);
-		const positionAttribLocation = gl.getAttribLocation(this.program, "vertex");
+		const positionAttribLocation = gl.getAttribLocation(
+			this.program,
+			"vertex",
+		);
 		gl.vertexAttribPointer(
 			positionAttribLocation,
 			2,
@@ -121,7 +124,9 @@ class Program {
 		// Generate uniform setters
 		this.setUniform = {};
 		this.uLocation = {};
-		let uniformArgs = (vertCode + fragCode).matchAll("uniform +(.+) +(.+);");
+		let uniformArgs = (vertCode + fragCode).matchAll(
+			"uniform +(.+) +(.+);",
+		);
 		for (let i of uniformArgs) {
 			let location = gl.getUniformLocation(this.program, i[2]);
 			this.uLocation[i[2]] = location;

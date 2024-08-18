@@ -1,7 +1,8 @@
-import { Text } from "app/components";
-import { Section, Icon } from "app/Symbols";
-import clsx from "clsx";
 import { useCallback, useState } from "react";
+import { Text } from "app/components";
+import { Icon, Section } from "app/Symbols";
+import clsx from "clsx";
+
 import cn from "./FAQ.module.scss";
 
 const FAQ = () => {
@@ -23,7 +24,10 @@ const FAQ = () => {
 						for more help!
 					</Text>
 				</div>
-				<div style={{ marginTop: "-16px" }} className="spaceChildrenSmall">
+				<div
+					style={{ marginTop: "-16px" }}
+					className="spaceChildrenSmall"
+				>
 					{[
 						{
 							q: "Why should I join?",
@@ -33,8 +37,9 @@ const FAQ = () => {
 							q: "Who can attend?",
 							a: (
 								<Text className="color gray">
-									Any undergraduate student within the United States (with an
-									associated institutional email) is able to{" "}
+									Any undergraduate student within the United
+									States (with an associated institutional
+									email) is able to{" "}
 									<a
 										target="_blank"
 										rel="noopener noreferrer"
@@ -45,8 +50,8 @@ const FAQ = () => {
 									>
 										sign up
 									</a>{" "}
-									and attend. If you do not qualify, you will not be allowed to
-									participate in the event.
+									and attend. If you do not qualify, you will
+									not be allowed to participate in the event.
 								</Text>
 							),
 						},
@@ -91,7 +96,8 @@ const FAQ = () => {
 									>
 										participant sign-up form
 									</a>{" "}
-									has been extended until February 19th at 11:59pm (PST)
+									has been extended until February 19th at
+									11:59pm (PST)
 								</Text>
 							),
 						},
@@ -99,11 +105,13 @@ const FAQ = () => {
 							q: "How do I prepare?",
 							a: (
 								<Text className="color gray">
-									During the event, we will be hosting workshops for anyone new
-									to design thinking or the design process. We highly encourage
-									getting the hang of Figma, Sketch, Adobe XD, or the
-									prototyping tool of your choice. You are also free to look
-									through our Design at UCI{" "}
+									During the event, we will be hosting
+									workshops for anyone new to design thinking
+									or the design process. We highly encourage
+									getting the hang of Figma, Sketch, Adobe XD,
+									or the prototyping tool of your choice. You
+									are also free to look through our Design at
+									UCI{" "}
 									<a
 										href="https://designatuci.com/resources"
 										target="_blank"
@@ -114,8 +122,9 @@ const FAQ = () => {
 									>
 										Resources
 									</a>{" "}
-									page for extra information. Want to go the extra mile? Show
-									your excitement by turning on your camera and adding our{" "}
+									page for extra information. Want to go the
+									extra mile? Show your excitement by turning
+									on your camera and adding our{" "}
 									<a
 										href="https://drive.google.com/drive/folders/1fe5vj6NJAvQFFcxWp9OFQCkc6qI7Avcn?usp=sharing"
 										target="_blank"
@@ -133,10 +142,11 @@ const FAQ = () => {
 							q: "How do teams work?",
 							a: (
 								<Text className="color gray">
-									You have the option to (1) go solo, or (2) form a team of up
-									to 4 people total. You may list your team members in the
-									sign-up form, but it’s okay if plans change! Take advantage of
-									our #find-a-team{" "}
+									You have the option to (1) go solo, or (2)
+									form a team of up to 4 people total. You may
+									list your team members in the sign-up form,
+									but it’s okay if plans change! Take
+									advantage of our #find-a-team{" "}
 									<a
 										style={{ textDecoration: "underline" }}
 										href="https://discord.gg/jumJqhBy4Y"
@@ -145,9 +155,9 @@ const FAQ = () => {
 									>
 										Discord channel
 									</a>{" "}
-									to meet potential team members. We will consider your final
-									team members to be the ones indicated when submitting your
-									project.
+									to meet potential team members. We will
+									consider your final team members to be the
+									ones indicated when submitting your project.
 								</Text>
 							),
 						},
@@ -155,9 +165,10 @@ const FAQ = () => {
 							q: "What if I don’t have a team?",
 							a: (
 								<Text className="color gray">
-									Our #find-a-team Discord channel is the perfect place for
-									anyone looking for a team at our Designathon. If you haven’t
-									already, join our You Belong Here{" "}
+									Our #find-a-team Discord channel is the
+									perfect place for anyone looking for a team
+									at our Designathon. If you haven’t already,
+									join our You Belong Here{" "}
 									<a
 										style={{ textDecoration: "underline" }}
 										href="https://discord.gg/jumJqhBy4Y"
@@ -174,7 +185,8 @@ const FAQ = () => {
 							q: "Where do I submit my project?",
 							a: (
 								<Text className="color gray">
-									You will submit your final, working prototype to the{" "}
+									You will submit your final, working
+									prototype to the{" "}
 									<a
 										target="_blank"
 										rel="noopener noreferrer"
@@ -185,8 +197,9 @@ const FAQ = () => {
 									>
 										Submission Form
 									</a>{" "}
-									(opens during event). Only one person on your team should
-									submit a form, which will be on behalf of all contributors.
+									(opens during event). Only one person on
+									your team should submit a form, which will
+									be on behalf of all contributors.
 								</Text>
 							),
 						},

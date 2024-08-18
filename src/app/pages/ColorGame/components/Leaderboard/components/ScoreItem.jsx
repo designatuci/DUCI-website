@@ -1,6 +1,7 @@
 import { memo, useEffect, useState } from "react";
-import cn from "./ScoreItem.module.scss";
+
 import { ColorDisplay } from "./ColorDisplay";
+import cn from "./ScoreItem.module.scss";
 
 export const ScoreItem = memo(function ScoreItem({ report }) {
 	const [isShort, setIsShort] = useState(window.innerWidth < 900);

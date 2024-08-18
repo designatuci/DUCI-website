@@ -1,14 +1,13 @@
-import cn from "./Rules.module.scss";
 import clsx from "clsx";
 
 import RULES from "../../assets/data/rules.json";
-
 import cream_hot_pink from "../../assets/graphics/rules/cream_hot_pink.svg";
 import cream from "../../assets/graphics/rules/cream.svg";
+import hearts from "../../assets/graphics/rules/hearts.svg";
 import peach_cream from "../../assets/graphics/rules/peach_cream.svg";
 import pink from "../../assets/graphics/rules/pink.svg";
-import hearts from "../../assets/graphics/rules/hearts.svg";
 import GridBackground from "../Backgrounds/GridBackground";
+import cn from "./Rules.module.scss";
 
 const BACKGROUND_MAP = {
 	0: cream_hot_pink,

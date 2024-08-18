@@ -1,9 +1,8 @@
+import { EmailForm, Text } from "app/components";
+import { Icon, PageIcon, Section, Space } from "app/Symbols.js";
+import SHORT_SOCIALS from "assets/data/shortSocials.json";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
-
-import { EmailForm, Text } from "app/components";
-import { Section, Space, Icon, PageIcon } from "app/Symbols.js";
-import SHORT_SOCIALS from "assets/data/shortSocials.json";
 
 const Hey = () => (
 	<>

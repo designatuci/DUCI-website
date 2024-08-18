@@ -1,11 +1,9 @@
+import { Text } from "app/components";
+import { Icon, LoadingD, PageIcon, Section, Space } from "app/Symbols.js";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-import { Text } from "app/components";
-import { Section, Space, Icon, LoadingD, PageIcon } from "app/Symbols.js";
-
 import EventCard from "./components/EventCard/EventCard.js";
-
 import { useEvents } from "./useEvents.js";
 
 const EventsDev = () => {

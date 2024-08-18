@@ -1,5 +1,6 @@
-import { Text } from "app/components";
 import { memo } from "react";
+import { Text } from "app/components";
+
 import cn from "./Results.module.scss";
 
 const PIXEL_RANGE = 255;
@@ -75,12 +76,12 @@ export const Results = memo(function Results({ report }) {
 					<br />
 					{getColorOffsetLabel(
 						report.percentageDifference[1],
-						"green"
+						"green",
 					)}
 					<br />
 					{getColorOffsetLabel(
 						report.percentageDifference[2],
-						"blue"
+						"blue",
 					)}
 
 					{report.similarityPercentage === 100 &&

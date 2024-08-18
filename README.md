@@ -121,10 +121,10 @@ Currently, the final build size is about 50kb which isn't nearly big enough to w
 
 ### Immediate improvements to be made
 
-- i18n?
-- a11y - mouse hover interaction (fields - text, buttons - pointer), semantic html (text component for example should be switched to various h tags)
-- pagination for events list
-- A lot of styling still needs to be refactored
+-   i18n?
+-   a11y - mouse hover interaction (fields - text, buttons - pointer), semantic html (text component for example should be switched to various h tags)
+-   pagination for events list
+-   A lot of styling still needs to be refactored
 
 ### Later planned updates:
 

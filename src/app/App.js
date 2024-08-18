@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 
 import { Banner, Footer, Nav } from "./components";
 import { useScroll } from "./controllers";
@@ -8,6 +8,8 @@ import {
 	Contact,
 	Events,
 	EventsAll,
+	EventsAllDev,
+	EventsDev,
 	Home,
 	Houses,
 	Join,
@@ -18,20 +20,20 @@ import {
 	Resources,
 	ResourcesFeatured,
 	Shirt22,
-	EventsAllDev,
-	EventsDev,
 } from "./pages";
+
 import "./styles/global.scss";
 import "./styles/colors.scss";
 import "./styles/layout.scss";
 import "./styles/components.scss";
 import "./styles/animations.scss";
 import "./styles/forms.scss";
+
+import { ColorGame } from "./pages/ColorGame/ColorGame";
 import Designathon from "./pages/Designathons";
 import Hey from "./pages/Hey";
 import { HOUSES_SORTING_FORM } from "./pages/Houses/sections/Join";
 import { PROJECT_TEAMS_GOOGLE_FORM } from "./pages/ProjectTeams/ProjectTeams";
-import { ColorGame } from "./pages/ColorGame/ColorGame";
 
 function App() {
 	useScroll();

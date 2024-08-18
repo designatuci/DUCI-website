@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import cn from "./SectionNavigation.module.scss";
 
 const SectionNavigation = () => {
@@ -43,7 +44,7 @@ const SectionNavigation = () => {
 			))}
 			{currentTime >
 				new Date(
-					"Feb 24 2023 19:00:00 GMT-0800 (Pacific Standard Time)"
+					"Feb 24 2023 19:00:00 GMT-0800 (Pacific Standard Time)",
 				).getTime() && (
 				<a
 					className={cn.item}

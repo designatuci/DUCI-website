@@ -1,7 +1,6 @@
-import { Helmet } from "react-helmet";
-
 import { Text } from "app/components";
-import { Section, Space, PageIcon } from "app/Symbols.js";
+import { PageIcon, Section, Space } from "app/Symbols.js";
+import { Helmet } from "react-helmet";
 
 function setClipboard(text) {
 	var type = "text/plain";
@@ -20,9 +19,14 @@ const Brand = () => (
 			<Space block h="32" />
 			<div className="flex top left spaceChildrenSmall" id="palette">
 				<Text size="L">Colors</Text>
-				<Text className="color gray">Click to copy the HEX color code</Text>
+				<Text className="color gray">
+					Click to copy the HEX color code
+				</Text>
 				<Space h="16" />
-				<div className="flex row wrap top left" style={{ margin: "-8px" }}>
+				<div
+					className="flex row wrap top left"
+					style={{ margin: "-8px" }}
+				>
 					{[
 						{ color: "#000024", light: true, name: "Black" },
 						{ color: "#089AFF", light: true, name: "Blue" },
@@ -149,7 +153,10 @@ const Brand = () => (
 					>
 						<Text className="color blue">
 							Google Fonts{" "}
-							<PageIcon color="var(--blue)" style={{ height: "24px" }} />
+							<PageIcon
+								color="var(--blue)"
+								style={{ height: "24px" }}
+							/>
 						</Text>
 					</a>
 					<Text className="color orange">Use stylistic Set 2</Text>
@@ -165,7 +172,10 @@ const Brand = () => (
 					>
 						<Text className="color blue">
 							Google Fonts{" "}
-							<PageIcon color="var(--blue)" style={{ height: "24px" }} />
+							<PageIcon
+								color="var(--blue)"
+								style={{ height: "24px" }}
+							/>
 						</Text>
 					</a>
 					<Text className="color orange">Use stylistic Set 2</Text>

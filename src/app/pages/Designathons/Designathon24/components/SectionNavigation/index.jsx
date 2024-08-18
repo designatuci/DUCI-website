@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import cn from "./SectionNavigation.module.scss";
 
 const SectionNavigation = () => {

@@ -1,4 +1,5 @@
 import clsx from "clsx";
+
 import cn from "./Modal.module.scss";
 
 export const Modal = ({

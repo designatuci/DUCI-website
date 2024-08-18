@@ -1,7 +1,8 @@
 import { memo, useEffect, useRef } from "react";
+import anime from "animejs";
+
 import { ReactComponent } from "./logo.svg";
 import cn from "./Splash.module.scss";
-import anime from "animejs";
 
 const SplashLogo = memo(({ style }) => {
 	const logoRef = useRef(null);
