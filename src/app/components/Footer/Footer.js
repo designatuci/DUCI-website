@@ -27,7 +27,9 @@ const Footer = () => (
 									src={icons.default}
 									style={{ marginRight: "16px" }}
 								/>
-								<Text style={{ textTransform: "capitalize" }}>{name}</Text>
+								<Text style={{ textTransform: "capitalize" }}>
+									{name}
+								</Text>
 							</a>
 						</div>
 					))}
@@ -52,24 +54,9 @@ const Footer = () => (
 					</Link>
 				</div>
 				<div>
-					<Link to="/mentorship">
-						<Text>Mentorship</Text>
-					</Link>
-				</div>
-				<div>
-					<Link to="/merch/">
-						<Text>Merch</Text>
-					</Link>
-				</div>
-				<div>
 					<Link to="/designathons/">
 						<Text>Design-a-thon</Text>
 					</Link>
-				</div>
-				<div>
-					<a target="noreferer" href="https://medium.com/@designatuci">
-						<Text>Board Blogs</Text>
-					</a>
 				</div>
 				<div>
 					<a
