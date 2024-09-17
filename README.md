@@ -48,7 +48,7 @@ DUCI-website
 │           ├── alumniBoard.json
 │           ├── currentBoard.json
 │           ├── merchList.json
-│           ├── resources.json
+│           ├── resources.ts
 │           └── socials.json
 ├── .gitignore
 ├── package.json
@@ -62,7 +62,7 @@ DUCI-website
 | alumniBoard.json   | information of all alumni board members                         | `src/app/pages/About`                                                          |
 | currentBoard.json  | information of all current board members                        | `src/app/pages/About`                                                          |
 | merchList.json     | list of all historical merch data (currently only has stickers) | `src/app/pages/Merch`                                                          |
-| resources.json     | all design resources for club members                           | `src/app/pages/Resources`, `src/app/pages/ResourcesFeatured`                   |
+| resources.ts       | all design resources for club members                           | `src/app/pages/Resources`, `src/app/pages/ResourcesFeatured`                   |
 | socials.json       | social media links for DUCI                                     | `src/app/pages/Contact`, `src/app/components/Nav`, `src/app/components/Footer` |
 | short_socials.json | full social media icon-links for DUCI                           | `src/app/pages/Join`, `src/app/pages/Hey`                                      |
 
@@ -117,14 +117,14 @@ An example is the list of board members that gets displayed in the `About` page.
 
 ### Suspense
 
-Currently, the final build size is about 50kb which isn't nearly big enough to warrant implementing Suspense for every page but probably will have plans to do so since the infrastucture is there.
+Currently, the final build size is about 50kb which isn't nearly big enough to warrant implementing Suspense for every page but probably will have plans to do so since the infrastructure is there.
 
 ### Immediate improvements to be made
 
-- i18n?
-- a11y - mouse hover interaction (fields - text, buttons - pointer), semantic html (text component for example should be switched to various h tags)
-- pagination for events list
-- A lot of styling still needs to be refactored
+-   i18n?
+-   a11y - mouse hover interaction (fields - text, buttons - pointer), semantic html (text component for example should be switched to various h tags)
+-   pagination for events list
+-   A lot of styling still needs to be refactored
 
 ### Later planned updates:
 
