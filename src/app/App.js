@@ -38,7 +38,6 @@ function App() {
 
 	return (
 		<>
-			<Banner />
 			<Nav />
 			<Routes>
 				<Route path="/" element={<Home />} />
