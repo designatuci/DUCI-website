@@ -1,6 +1,6 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 
-import { Banner, Footer, Nav } from "./components";
+import { Footer, Nav } from "./components";
 import { useScroll } from "./controllers";
 import {
 	About,
@@ -38,7 +38,6 @@ function App() {
 
 	return (
 		<>
-			<Banner />
 			<Nav />
 			<Routes>
 				<Route path="/" element={<Home />} />

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Text } from "app/components";
 import { Section, Icon, Space } from "app/Symbols.js";
-import RESOURCES from "assets/data/resources.json";
+import { RESOURCES } from "assets/data/resources.ts";
 
 import cn from "./Resources.module.scss";
 
