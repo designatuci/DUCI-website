@@ -119,7 +119,6 @@ const Nav = () => {
 							{ label: "Resources", url: "/resources" },
 							{ label: "About", url: "/about" },
 							{ label: "Contact", url: "/contact" },
-							{ label: "Houses", url: "/houses" },
 						].map(({ label, url }) => (
 							<Link
 								key={url}
