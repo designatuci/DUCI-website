@@ -61,9 +61,6 @@ const Nav = () => {
 						<Link to="/resources" className="item center">
 							<Text>Resources</Text>
 						</Link>
-						<Link to="/houses" className="item center">
-							<Text>Houses</Text>
-						</Link>
 					</div>
 					<div className="center row group right">
 						<Link to="/about" className="item center">
