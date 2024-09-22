@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 import { Text } from "app/components";
 import { Section, Space, Icon } from "app/Symbols.js";
 
-export const PROJECT_TEAMS_GOOGLE_FORM = "https://forms.gle/QTFb9v7HMrEyyspS9";
+export const PROJECT_TEAMS_GOOGLE_FORM = "https://forms.gle/1XBF3JKgpDikkDnT6";
 const REGISTRATION_OPEN = true;
-const CURRENT_QUARTER = "Winter 2024";
-const REGISTRATION_DEADLINE = "Sunday, January 14th, 2024 at 11:59 PM PST";
+const CURRENT_QUARTER = "Fall 2024";
+const REGISTRATION_DEADLINE = "Friday, September 27th, 2024 at 11:59 PM PDT";
 
 function ProjectTeams() {
 	const openMessage = (
