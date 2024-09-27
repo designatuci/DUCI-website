@@ -5,20 +5,21 @@ import { Text } from "app/components";
 import { Section, Space, Icon } from "app/Symbols.js";
 
 export const PROJECT_TEAMS_GOOGLE_FORM = "https://forms.gle/1XBF3JKgpDikkDnT6";
-const REGISTRATION_OPEN = true;
+const REGISTRATION_OPEN = false;
 const CURRENT_QUARTER = "Fall 2024";
 const REGISTRATION_DEADLINE = "Friday, September 27th, 2024 at 11:59 PM PDT";
 
 function ProjectTeams() {
 	const openMessage = (
 		<Text className="color green">
-			Project Team applications for {CURRENT_QUARTER} are open!
+			Project Teams applications for {CURRENT_QUARTER} are open!
 		</Text>
 	);
 
 	const closedMessage = (
 		<Text className="color red">
-			Project Team applications for {CURRENT_QUARTER} have closed.
+			We have reached capacity for {CURRENT_QUARTER} Project Teams, so
+			applications are closed until next quarter.
 		</Text>
 	);
 
@@ -38,7 +39,7 @@ function ProjectTeams() {
 		<Text className="color gray">
 			To get involved,{" "}
 			<Text color="blue">
-				<Link to="/join/">join our newsletter</Link>
+				<Link to="/join">join our newsletter</Link>
 			</Text>{" "}
 			for notifications about when the next applications come out!
 		</Text>
