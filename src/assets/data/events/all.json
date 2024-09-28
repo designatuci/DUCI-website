@@ -1,5 +1,26 @@
 [
 	{
+		"title": "Smores by the Shore",
+		"time": "2024-09-23T18:00",
+		"duration": "180",
+		"type": "Social",
+		"place": "Corona Del Mar"
+	},
+	{
+		"title": "Scavenger Hunt",
+		"time": "2024-09-23T17:30",
+		"duration": "60",
+		"type": "Social",
+		"place": "UCI Flag Poles"
+	},
+	{
+		"title": "Yapping at Yogurtland",
+		"time": "2024-09-23T17:30",
+		"duration": "90",
+		"type": "Social",
+		"place": "Yogurtland (meet at the UCI Flag Poles)"
+	},
+	{
 		"title": "Design Career Exploration Panel",
 		"time": "2024-05-22T16:00",
 		"duration": "60",
@@ -94,7 +115,7 @@
 		"time": "2/27/2024 5:00 PM",
 		"duration": "60",
 		"type": "Workshop",
-		"desc": "This workshop will discuss the interssection of human-centered data collection with design. We will be exploring the ethics of current data collection methodologies with a research professor working in the intersection of data science, ai, and research. The goal of this workshop is to introduce the intersection of design with data systems to create holistic, human-centered AI technologies and data softwares.",
+		"desc": "This workshop will discuss the interssection of human-centered data collection with design. We will be exploring the ethics of current data collection methodologies with a research professor working in the intersection of data science, ai, and research. The goal of this workshop is to introduce the intersection of design with data systems to create holistic, human-centered AI technologies and data software.",
 		"place": "TBD"
 	},
 	{
