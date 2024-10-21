@@ -10,37 +10,27 @@ const Contact = () => (
 			<title>Contact – Design at UCI</title>
 		</Helmet>
 		<Section className="center page">
-			<div className="split2 slim">
+			<div className="center narrow">
 				<div className="flex">
 					<a
 						className="wait scale show dx button fill blue"
-						href="mailto:hello@designatuci.com"
+						href="mailto:designatuci@gmail.com"
 					>
-						<Text size="L">hello@designatuci.com</Text>
+						<Text size="L">designatuci@gmail.com</Text>
 					</a>
 					<Space h="32" block />
 					<Text className="color gray">
-						Do you have a question, comment, or feedback for us? Don't hesitate
+						Do you have a question, comment, or feedback for us?
+						Want to collaborate with Design at UCI? Don't hesitate
 						to send us an email.
-					</Text>
-				</div>
-				<div className="flex">
-					<a
-						className="wait scale show dx button fill gray"
-						href="mailto:contact@designatuci.com"
-					>
-						<Text size="L">contact@designatuci.com</Text>
-					</a>
-					<Space h="32" block />
-					<Text className="color gray">
-						Want to collaborate with Design at UCI? You can reach the campus'
-						design community easily through us.
 					</Text>
 				</div>
 			</div>
 			<Space h="32" />
 			<div>
-				<Text className="color gray">Reach out to us on social media</Text>
+				<Text className="color gray">
+					Reach out to us on social media
+				</Text>
 				<Space h="16" block />
 				<div className="flex row">
 					{socials.map(({ name, link, icons }) => (

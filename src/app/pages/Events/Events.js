@@ -172,8 +172,8 @@ const Events = () => {
 						Have a suggestion of something you would like to see?
 						<br />
 						Submit your feedback to{" "}
-						<a href="mailto:hello@designatuci.com">
-							hello@designatuci.com
+						<a href="mailto:designatuci@gmail.com">
+							designatuci@gmail.com
 						</a>
 						.
 					</Text>
