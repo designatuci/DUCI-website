@@ -1,5 +1,13 @@
 [
 	{
+		"title": "Stakeholder Showdown",
+		"time": "2024-11-04T18:30",
+		"duration": "90",
+		"type": "Workshop",
+		"desc": "Interested in design? Curious about how developers and designers work together? Join us for an interactive and beginner-friendly event with Design @ UCI where you’ll collaborate with fellow students and tackle real-world challenges! This workshop will focus on the process of creating wireframes while managing the tricky demands of stakeholders. You’ll learn how to apply key UI/UX principles, collaborate across disciplines, and get hands-on experience. Whether you’re a developer or a designer, this event will give you practical insights into the collaborative process of building great products!",
+		"place": "DBH 1600"
+	},
+	{
 		"title": "House Design-Off",
 		"time": "2024-10-23T17:00",
 		"duration": "60",
