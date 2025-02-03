@@ -42,7 +42,9 @@ export function ResourcesSplash({ title, color, iconSrc }) {
 				}}
 			/>
 
-			<Text size={"L"}>Resources</Text>
+			<Text size={"L"} className="wait show scale">
+				Resources
+			</Text>
 
 			<div
 				style={{
