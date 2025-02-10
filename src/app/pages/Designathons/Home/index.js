@@ -2,38 +2,38 @@ import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 import { Text } from "app/components";
-import { Section, Space, Icon } from "app/Symbols";
+import { Section, Space } from "app/Symbols";
 
 import PAST_EVENTS from "assets/data/designathon/overall.json";
 import { EventListing } from "./components";
 import SplashGraphics from "../Designathon24/components/Splash/SplashGraphics";
 import SplashLogo from "../Designathon24/components/Splash/SplashLogo";
+import { ResourcesSplash } from "app/pages/Resources/ResourcesSplash";
 
 const Designathons = () => (
 	<>
 		<Helmet>
 			<title>Design-a-thons – Design at UCI</title>
 		</Helmet>
-		<Section className="center short">
-			<div className="wait dx scale flex row">
-				<Icon w="64" h="64" src="designathon-logo.svg" />
-				<Space w="32" block />
-				<Text size="XL" className="bold color black">
-					Design-a-thon at UCI
+
+		<ResourcesSplash
+			title={"Design-a-thon"}
+			color={"blue"}
+			iconSrc={"designathon-logo.svg"}
+		/>
+
+		<Section>
+			<div className="textAlignLeft slim">
+				<Text className="color gray" style={{ marginBottom: 32 }}>
+					A large-scale event where teams work to design a prototype
+					product within a few days. To get involved,{" "}
+					<Link to="/join/">join us</Link> to get notifications about
+					when the next applications come out!
 				</Text>
-			</div>
-			<Space h="16" />
-			<div className="split2 textAlignLeft slim">
-				<div className="flex left slim spaceChildrenSmall">
-					<Text className="color gray">
-						A large-scale event where teams work to design a
-						prototype product within a few days.
-					</Text>
-					<Text className="color gray">
-						To get involved, <Link to="/join/">join us</Link> to get
-						notifications about when the next applications come out!
-					</Text>
-				</div>
+
+				<Text size={"L"} style={{ marginBottom: 8 }}>
+					What is Design-a-thon at UCI?
+				</Text>
 				<div className="flex left slim spaceChildrenSmall">
 					<Text className="color gray">
 						Our Design-a-thon is held once per year, and is open to

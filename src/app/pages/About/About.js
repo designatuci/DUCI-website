@@ -1,8 +1,6 @@
 import { Fragment } from "react";
 import { Helmet } from "react-helmet";
-import { Carousel } from "react-responsive-carousel";
 import { Link } from "react-router-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 import { Text } from "app/components";
 import { Section, Space, Icon } from "app/Symbols.js";
@@ -12,9 +10,26 @@ import CURRENT_BOARD from "assets/data/currentBoard.json";
 import CURRENT_INTERNS from "assets/data/currentBoardInterns.json";
 
 import { Profile } from "./components";
-import { ReactComponent as LinkArrow } from "./link-arrow.svg";
+import { ReactComponent as EllipseBlue } from "./ellipse-blue.svg";
+import { ReactComponent as EllipseYellow } from "./ellipse-yellow.svg";
+import { ReactComponent as EllipseRed } from "./ellipse-red.svg";
 
 import "./About.scss";
+
+const COLOR_MAP = {
+	blue: {
+		color: "#079AFF",
+		component: EllipseBlue,
+	},
+	yellow: {
+		color: "#FFCC45",
+		component: EllipseYellow,
+	},
+	red: {
+		color: "#FB5A3D",
+		component: EllipseRed,
+	},
+};
 
 const About = () => (
 	<>
@@ -97,36 +112,138 @@ const About = () => (
 			</div>
 		</Section>
 
-		<Section className="short fill color gray">
-			<h2
+		<Section className="short fill color sky">
+			<Text
+				className="h2 center"
+				size={"XL"}
 				style={{
 					textAlign: "center",
 					marginTop: "50px",
-					fontSize: "18px",
+					color: "black",
 				}}
 			>
 				From our board
-			</h2>
-			<Carousel
-				showStatus={false}
-				showThumbs={false}
-				showIndicators={false}
-				// showStatus={false}
-				renderArrowNext={(click, show) => <LinkArrow onClick={click} />}
-				renderArrowPrev={(click, show) => (
-					<LinkArrow
-						style={{ transform: "rotateY(180deg)" }}
-						onClick={click}
-					/>
-				)}
+			</Text>
+
+			<div
+				style={{
+					display: "flex",
+					flexDirection: "row",
+					gap: 40,
+					overflow: "auto",
+					color: "black",
+					scrollbarWidth: "thin",
+				}}
 			>
-				{TESTIMONIALS.map(({ quote, name }) => (
-					<div key={quote} className="quote">
-						<p>"{quote}"</p>
-						<span>{name}</span>
-					</div>
-				))}
-			</Carousel>
+				{TESTIMONIALS.map(
+					({ quote, name, position, year, image }, index) => {
+						const color =
+							index % 3 === 0
+								? "blue"
+								: index % 3 === 1
+								? "yellow"
+								: "red";
+
+						const { color: textColor, component: Component } =
+							COLOR_MAP[color];
+
+						const yearText = `'${year}-'${year + 1}`;
+
+						return (
+							<div
+								key={name + position}
+								style={{
+									position: "relative",
+									display: "flex",
+									gap: 32,
+									flexDirection: "column",
+									justifyContent: "space-between",
+									padding: 32,
+									backgroundColor: "white",
+									borderRadius: 16,
+									width: 300,
+									minWidth: 300,
+									marginLeft: "auto",
+									marginRight: "auto",
+								}}
+							>
+								<Component
+									style={{
+										position: "absolute",
+										left: 0,
+										bottom: 0,
+									}}
+								/>
+
+								<div
+									style={{
+										display: "flex",
+										gap: 64,
+										flexDirection: "column",
+										justifyContent: "space-between",
+										zIndex: 1,
+										height: "100%",
+									}}
+								>
+									<div>
+										<p
+											style={{
+												fontSize: 64,
+												color: textColor,
+											}}
+										>
+											&lsquo;&lsquo;
+										</p>
+										<Text
+											style={{
+												textAlign: "center",
+												textWrap: "pretty",
+											}}
+										>
+											{quote}
+										</Text>
+									</div>
+
+									<div
+										style={{
+											display: "flex",
+											flexDirection: "column",
+											alignItems: "center",
+											gap: 8,
+										}}
+									>
+										<img
+											src={require(`assets/images/board/current/${image}`)}
+											alt={name}
+											style={{
+												borderRadius: 1000,
+												backgroundColor: "black",
+												width: 80,
+												height: 80,
+												border: "4px solid white",
+												objectFit: "cover",
+											}}
+										/>
+
+										<p
+											style={{
+												color: "white",
+												fontWeight: 600,
+											}}
+										>
+											{name}
+										</p>
+
+										<p className="color white center">
+											{yearText} {position}
+										</p>
+									</div>
+								</div>
+							</div>
+						);
+					}
+				)}
+			</div>
 		</Section>
 
 		<Section className="board center">

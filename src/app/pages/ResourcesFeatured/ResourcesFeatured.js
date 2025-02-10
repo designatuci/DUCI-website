@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import { Text } from "app/components";
 import {
 	Section,
-	Icon,
 	Space,
 	Photo,
 	LoadingD,
@@ -14,6 +13,7 @@ import {
 import RESOURCE_LIST from "assets/data/resourceList.json";
 
 import cn from "./ResourcesFeatured.module.scss";
+import { ResourcesSplash } from "app/pages/Resources/ResourcesSplash";
 
 function mapTypeColor(type) {
 	switch (type) {
@@ -45,24 +45,17 @@ const ResourcesFeatured = (props) => {
 			<Helmet>
 				<title>Featured Resources – Design at UCI</title>
 			</Helmet>
-			<Section className="short">
-				<div className="flex center spaceChildrenSmall">
-					<Icon
-						className="wait dx scale"
-						src="featured-resources.svg"
-						w="96"
-						h="96"
-					/>
-					<Text className="wait dx scale" size="XL">
-						Featured Resources
-					</Text>
-					<Text className="wait dx subtle color gray">
-						A curated list of helpful tools, guides, and more—to help you
-						practice your skills.
-					</Text>
-				</div>
-			</Section>
-			<Section className="bare center" style={{ padding: "16px" }}>
+
+			<ResourcesSplash
+				title={"Featured Resources"}
+				color={"orange"}
+				iconSrc={"featured-resources.svg"}
+			/>
+
+			<Section
+				className="bare center"
+				style={{ margin: 16, padding: "16px" }}
+			>
 				<div className="wait subtle flex row wrap">
 					{[
 						{
@@ -87,19 +80,25 @@ const ResourcesFeatured = (props) => {
 							className={cn.toggle}
 							onClick={() => toggleFilter(item.color)}
 						>
-							<div className="flex row pointer" style={{ padding: "0 24px" }}>
+							<div
+								className="flex row pointer"
+								style={{ padding: "0 24px" }}
+							>
 								<CheckIcon
 									check={filterMode[item.color]}
 									r="18px"
 									color={item.fill}
 								/>
 								<Space block w="8" />
-								<Text className={`color ${item.color}`}>{item.title}</Text>
+								<Text className={`color ${item.color}`}>
+									{item.title}
+								</Text>
 							</div>
 						</button>
 					))}
 				</div>
 			</Section>
+
 			<Section className="short fill gray">
 				{RESOURCE_LIST == null ? (
 					<div className="flex" style={{ padding: "64px 0" }}>
@@ -123,7 +122,9 @@ const ResourcesFeatured = (props) => {
 									>
 										<Text
 											size="S"
-											className={`color ${mapTypeColor(card.type)}`}
+											className={`color ${mapTypeColor(
+												card.type
+											)}`}
 										>
 											{card.type}
 										</Text>
@@ -140,7 +141,8 @@ const ResourcesFeatured = (props) => {
 										className="shadow"
 										style={{
 											backgroundImage: `url(${
-												card?.ogImg ?? `/static/photo/featured-resource.svg`
+												card?.ogImg ??
+												`/static/photo/featured-resource.svg`
 											})`,
 											height: "128px",
 											width: "100%",
@@ -149,7 +151,9 @@ const ResourcesFeatured = (props) => {
 									<Text size="L" className="color black">
 										{card.title}
 									</Text>
-									<Text className="color gray">{card.desc}</Text>
+									<Text className="color gray">
+										{card.desc}
+									</Text>
 								</a>
 							))}
 					</div>
