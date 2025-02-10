@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet";
 import { Text } from "app/components";
 import {
 	Section,
-	Icon,
 	Space,
 	Photo,
 	LoadingD,
