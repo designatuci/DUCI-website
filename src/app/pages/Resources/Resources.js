@@ -57,7 +57,7 @@ const Resources = () => (
 			/>
 
 			<ResourcesBr
-				className={`wait show flopR ${cn.resourcesBr}`}
+				className={`wait show flopR`}
 				style={{
 					position: "absolute",
 					bottom: 0,
