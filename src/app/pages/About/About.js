@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Text } from "app/components";
 import { Section, Space, Icon } from "app/Symbols.js";
 import ALUMNI_BOARD from "assets/data/alumniBoard.json";
-import NEW_TESTIMONIALS from "assets/data/boardTestimonialsNew.json";
+import TESTIMONIALS from "assets/data/boardTestimonials.json";
 import CURRENT_BOARD from "assets/data/currentBoard.json";
 import CURRENT_INTERNS from "assets/data/currentBoardInterns.json";
 
@@ -130,108 +130,119 @@ const About = () => (
 					display: "flex",
 					flexDirection: "row",
 					gap: 40,
-					overflowX: "auto",
+					overflow: "auto",
 					color: "black",
 					scrollbarWidth: "thin",
 				}}
 			>
-				{NEW_TESTIMONIALS.map(({ quote, name, position }, index) => {
-					const color =
-						index % 3 === 0
-							? "blue"
-							: index % 3 === 1
-							? "yellow"
-							: "red";
+				{TESTIMONIALS.map(
+					({ quote, name, position, year, image }, index) => {
+						const color =
+							index % 3 === 0
+								? "blue"
+								: index % 3 === 1
+								? "yellow"
+								: "red";
 
-					const { color: textColor, component: Component } =
-						COLOR_MAP[color];
+						const { color: textColor, component: Component } =
+							COLOR_MAP[color];
 
-					return (
-						<div
-							key={name + position}
-							style={{
-								position: "relative",
-								display: "flex",
-								gap: 32,
-								flexDirection: "column",
-								justifyContent: "space-between",
-								padding: 32,
-								backgroundColor: "white",
-								borderRadius: 16,
-								width: 300,
-								minWidth: 300,
-							}}
-						>
-							<Component
-								style={{
-									position: "absolute",
-									left: 0,
-									bottom: 0,
-								}}
-							/>
+						const yearText = `'${year}-'${year + 1}`;
 
+						return (
 							<div
+								key={name + position}
 								style={{
+									position: "relative",
 									display: "flex",
-									gap: 64,
+									gap: 32,
 									flexDirection: "column",
 									justifyContent: "space-between",
-									zIndex: 1,
-									height: "100%",
+									padding: 32,
+									backgroundColor: "white",
+									borderRadius: 16,
+									width: 300,
+									minWidth: 300,
+									marginLeft: "auto",
+									marginRight: "auto",
 								}}
 							>
-								<div>
-									<p
-										style={{
-											fontSize: 64,
-											color: textColor,
-										}}
-									>
-										&lsquo;&lsquo;
-									</p>
-									<Text
-										style={{
-											textAlign: "center",
-											textWrap: "pretty",
-										}}
-									>
-										{quote}
-									</Text>
-								</div>
+								<Component
+									style={{
+										position: "absolute",
+										left: 0,
+										bottom: 0,
+									}}
+								/>
 
 								<div
 									style={{
 										display: "flex",
+										gap: 64,
 										flexDirection: "column",
-										alignItems: "center",
-										gap: 8,
+										justifyContent: "space-between",
+										zIndex: 1,
+										height: "100%",
 									}}
 								>
+									<div>
+										<p
+											style={{
+												fontSize: 64,
+												color: textColor,
+											}}
+										>
+											&lsquo;&lsquo;
+										</p>
+										<Text
+											style={{
+												textAlign: "center",
+												textWrap: "pretty",
+											}}
+										>
+											{quote}
+										</Text>
+									</div>
+
 									<div
 										style={{
-											borderRadius: 1000,
-											backgroundColor: "black",
-											width: 80,
-											height: 80,
-											border: "4px solid white",
-										}}
-									/>
-
-									<p
-										style={{
-											color: "white",
-											fontWeight: 600,
+											display: "flex",
+											flexDirection: "column",
+											alignItems: "center",
+											gap: 8,
 										}}
 									>
-										{name}
-									</p>
+										<img
+											src={require(`assets/images/board/current/${image}`)}
+											alt={name}
+											style={{
+												borderRadius: 1000,
+												backgroundColor: "black",
+												width: 80,
+												height: 80,
+												border: "4px solid white",
+												objectFit: "cover",
+											}}
+										/>
 
-									<p className="color white">{position}</p>
+										<p
+											style={{
+												color: "white",
+												fontWeight: 600,
+											}}
+										>
+											{name}
+										</p>
+
+										<p className="color white center">
+											{yearText} {position}
+										</p>
+									</div>
 								</div>
 							</div>
-						</div>
-					);
-				})}
+						);
+					}
+				)}
 			</div>
 		</Section>
 
