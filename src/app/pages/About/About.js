@@ -130,8 +130,9 @@ const About = () => (
 					display: "flex",
 					flexDirection: "row",
 					gap: 40,
-					overflow: "scroll",
+					overflowX: "auto",
 					color: "black",
+					scrollbarWidth: "thin",
 				}}
 			>
 				{NEW_TESTIMONIALS.map(({ quote, name, position }, index) => {
@@ -147,6 +148,7 @@ const About = () => (
 
 					return (
 						<div
+							key={name + position}
 							style={{
 								position: "relative",
 								display: "flex",
