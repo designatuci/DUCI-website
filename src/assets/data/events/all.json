@@ -1,5 +1,13 @@
 [
 	{
+		"title": "Articulating Design Choices",
+		"time": "2025-02-11T17:00",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Hi Designers! Tomorrow, we will be holding a workshop on articulating design choices 🖼️ Whether you are hoping to polish your design portfolio or learn about the basics of design, this workshop is for everyone!",
+		"place": "ELH 110"
+	},
+	{
 		"title": "Boba Booth",
 		"time": "2025-01-29T17:00",
 		"duration": "120",
@@ -19,7 +27,7 @@
 		"title": "Principles of Design in UI/UX",
 		"time": "2025-01-15T17:00",
 		"duration": "60",
-		"type": "Social",
+		"type": "Workshop",
 		"desc": "Join us to learn about general design do’s and don’ts in application to UI/UX. Whether you are new to design or an experienced designer looking to improve your portfolio, this workshop is perfect to help you refine your work 🛠️🎨",
 		"place": "MSTB 124"
 	},
