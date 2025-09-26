@@ -1,5 +1,21 @@
 [
 	{
+		"title": "Smores by the Shore",
+		"time": "2025-09-26T17:00",
+		"duration": "180",
+		"type": "Social",
+		"desc": "Hi Designers, are you interested in learning more about Design at UCI and meeting new people in the ICS community? 🌟 If so, join us for free food and a good time on the beach on Friday⛱️🪵!",
+		"place": "Corona Del Mar Beach"
+	},
+	{
+		"title": "Yapping at Yogurtland",
+		"time": "2025-09-22T17:30",
+		"duration": "60",
+		"type": "Social",
+		"desc": "Join us for our first social of the school year at Yogurtland after AIF! 🍦Come with us to get a sweet treat, meet new people, and to have a good time! 🎉 We are looking forward to meeting all of you and hope to see you there! 👀🙌",
+		"place": "UTC"
+	},
+	{
 		"title": "Anteater Involvement Fair",
 		"time": "2025-09-22T11:00",
 		"duration": "300",
