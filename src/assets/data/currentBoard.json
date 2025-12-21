@@ -1,214 +1,43 @@
 [
 	{
-		"name": "Elise Alinsug",
-		"position": "Co-President",
-		"photo": "Elise_Alinsug.jpg",
+		"name": "Krey Pillei",
+		"position": "President",
+		"photo": "Krey_Pillei.jpg",
 		"links": []
-	},
-	{
-		"name": "Janie Seong",
-		"position": "Co-President",
-		"photo": "Janie_Seong.jpg"
-	},
-	{
-		"name": "Jamie Kuang",
-		"position": "Marketing Director",
-		"photo": "Jamie_Kuang.jpg",
-		"links": []
-	},
-	{
-		"name": "Aven Chew",
-		"position": "Marketing Coordinator",
-		"photo": "Aven_Chew.jpg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/avennchew"
-			},
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/avenchew/"
-			}
-		]
-	},
-	{
-		"name": "Emma Choi",
-		"position": "Marketing Coordinator",
-		"photo": "Emma_Choi.jpg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/emma.__.choi"
-			},
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/emma-choi-a48b35218/"
-			}
-		]
-	},
-	{
-		"name": "Brandon Kahn",
-		"position": "Industry Outreach Coordinator",
-		"photo": "Brandon_Kahn.jpg",
-		"links": [
-			{
-				"type": "linkedin",
-				"href": "https://linkedin.com/in/bdkahn"
-			}
-		]
-	},
-	{
-		"name": "John Daniel Norombaba",
-		"position": "Industry Outreach Coordinator",
-		"photo": "John_Daniel.jpg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/norombabajd"
-			},
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/norombabajd/"
-			}
-		]
-	},
-	{
-		"name": "Vimala Machiraju",
-		"position": "Industry Outreach Coordinator",
-		"photo": "Vimala_Machiraju.jpeg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/vimalamvv/"
-			}
-		]
-	},
-	{
-		"name": "Thanusree Ammisetti",
-		"position": "Workshop Coordinator",
-		"photo": "Thanusree_Ammisetti.jpg"
-	},
-	{
-		"name": "Krey Daniel",
-		"position": "Workshop Coordinator",
-		"photo": "Krey_Daniel.jpg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/in.krey.dible/"
-			},
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/krey-daniel/"
-			},
-			{
-				"type": "website",
-				"href": "https://kreydaniel.wixsite.com/inkreydible"
-			}
-		]
-	},
-	{
-		"name": "Christina Thanh Thao Tran",
-		"position": "Social Relations Chair",
-		"photo": "Christina_Tran.jpg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://www.instagram.com/crisptinaa"
-			}
-		]
-	},
-	{
-		"name": "Elisa Fuji",
-		"position": "Social Relations Chair",
-		"photo": "Elisa_Fuji.jpg"
 	},
 	{
 		"name": "Jessica Jahja",
-		"position": "Project Teams Director",
-		"photo": "Jessica_Jahja.jpg"
-	},
-	{
-		"name": "Caroline David",
-		"position": "Project Teams Coordinator",
-		"photo": "Caroline_David.jpg",
-		"links": [
-			{
-				"type": "linkedin",
-				"href": "https://linkedin.com/in/carolinehudavid"
-			}
-		]
-	},
-	{
-		"name": "Winston Lee",
-		"position": "Project Teams Coordinator",
-		"photo": "Winston_Lee.jpg"
-	},
-	{
-		"name": "Megan Rhee",
-		"position": "Project Teams Coordinator",
-		"photo": "Megan_Rhee.jpg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://instagram.com/meganrheee"
-			}
-		]
-	},
-	{
-		"name": "Jasmine Wu",
-		"position": "Designathon Director",
-		"photo": "Jasmine_Wu.jpg",
+		"position": "Internal Vice President",
+		"photo": "Jessica_Jahja.jpg",
 		"links": []
 	},
 	{
-		"name": "Daniela Herrera",
-		"position": "Creative Director",
-		"photo": "Daniela_Herrera.jpg",
-		"links": [
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/danie1aherrera/"
-			},
-			{
-				"type": "website",
-				"href": "https://danielaherreraportfolio.framer.website/"
-			}
-		]
+		"name": "Reyna Phan",
+		"position": "External Vice President",
+		"photo": "Reyna_Phan.jpg",
+		"links": []
 	},
 	{
-		"name": "Kaitlyn Tran",
-		"position": "Graphic Designer",
-		"photo": "Kaitlyn_Tran.jpg",
-		"links": [
-			{
-				"type": "instagram",
-				"href": "https://instagram.com/kaitlyn_tranzzz?igshid=YmMyMTA2M2Y="
-			},
-			{
-				"type": "instagram",
-				"href": "https://instagram.com/noomzster?igshid=YmMyMTA2M2Y="
-			}
-		]
+		"name": "Karissa Ting",
+		"position": "Marketing Director",
+		"photo": "Karissa_Ting.jpg",
+		"links": []
 	},
 	{
-		"name": "Malina Miura",
-		"position": "Graphic Designer",
-		"photo": "Malina_Miura.jpg",
-		"links": [
-			{
-				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/malina-miura-a66933245/"
-			},
-			{
-				"type": "instagram",
-				"href": "https://instagram.com/kiyoberries"
-			}
-		]
+		"name": "Timothy Cho",
+		"position": "Marketing Coordinator",
+		"photo": "Timothy_Cho.jpg",
+		"links": []
+	},
+	{
+		"name": "Kayla Oh",
+		"position": "Marketing Coordinator",
+		"photo": "Kayla_Oh.jpg",
+		"links": []
 	},
 	{
 		"name": "Grace Jong",
-		"position": "Graphic Designer",
+		"position": "Creative Director",
 		"photo": "Grace_Jong.jpg",
 		"links": [
 			{
@@ -226,9 +55,123 @@
 		]
 	},
 	{
+		"name": "Natalie Lui",
+		"position": "Graphic Designer",
+		"photo": "Natalie_Lui.jpg",
+		"links": []
+	},
+	{
+		"name": "Valerie Huynh",
+		"position": "Graphic Designer",
+		"photo": "Valerie_Huynh.jpg",
+		"links": []
+	},
+	{
 		"name": "Sammi Li",
-		"position": "Financial Chair",
-		"photo": "",
+		"position": "Finance Director",
+		"photo": "Sammi_Li.jpg",
+		"links": []
+	},
+	{
+		"name": "Tanvee Patil",
+		"position": "Finance Director",
+		"photo": "Tanvee_Patil.jpg",
+		"links": []
+	},
+	{
+		"name": "Catherine Peng",
+		"position": "Finance Coordinator",
+		"photo": "Catherine_Peng.jpg",
+		"links": []
+	},
+	{
+		"name": "Darshan Golchha",
+		"position": "Finance Coordinator",
+		"photo": "Darshan_Golchha.jpg",
+		"links": []
+	},
+	{
+		"name": "Kayzelyn Barrett",
+		"position": "Project Teams Director",
+		"photo": "Kayzelyn_Barrett.jpg",
+		"links": []
+	},
+	{
+		"name": "Branson Wong",
+		"position": "Project Teams Coordinator",
+		"photo": "Branson_Wong.jpg",
+		"links": []
+	},
+	{
+		"name": "Evie Ngo",
+		"position": "Project Teams Coordinator",
+		"photo": "Evie_Ngo.jpg",
+		"links": []
+	},
+	{
+		"name": "Leilani Bascos",
+		"position": "Project Teams Coordinator",
+		"photo": "Leilani_Bascos.jpg",
+		"links": []
+	},
+	{
+		"name": "Heidi Tran",
+		"position": "Workshops Director",
+		"photo": "Heidi_Tran.jpg",
+		"links": []
+	},
+	{
+		"name": "Jerry Nguyen",
+		"position": "Workshops Coordinator",
+		"photo": "Jerry_Nguyen.jpg",
+		"links": []
+	},
+	{
+		"name": "Tiffany Ong",
+		"position": "Workshops Coordinator",
+		"photo": "Tiffany_Ong.jpg",
+		"links": []
+	},
+	{
+		"name": "Kylie Nguyen",
+		"position": "Mentorships Director",
+		"photo": "Kylie_Nguyen.jpg",
+		"links": []
+	},
+	{
+		"name": "Maya Icekson",
+		"position": "Mentorships Coordinator",
+		"photo": "Maya_Icekson.jpg",
+		"links": []
+	},
+	{
+		"name": "Sebastian Cusianovic",
+		"position": "Mentorships Coordinator",
+		"photo": "Sebastian_Cusianovic.jpg",
+		"links": []
+	},
+	{
+		"name": "Angie Xetey",
+		"position": "Corporate Director",
+		"photo": "Angie_Xetey.jpg",
+		"links": []
+	},
+	{
+		"name": "Vivianne Zhou",
+		"position": "Corporate Coordinator",
+		"photo": "Vivianne_Zhou.jpg",
+		"links": []
+	},
+	{
+		"name": "Emily Liang",
+		"position": "Corporate Coordinator",
+		"photo": "Emily_Liang.jpg",
+		"links": []
+	},
+	{
+		"name": "Ethan Chin",
+		"position": "Corporate Coordinator",
+		"photo": "Ethan_Chin.jpg",
 		"links": []
 	},
 	{
