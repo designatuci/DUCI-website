@@ -25,8 +25,7 @@ const Merch = () => {
 						Design at UCI Mentorship Applications are now closed.
 					</Text>
 					<Text className="color gray">
-						Those who applied should expect an email during Week 8 regarding
-						mentorship fams!
+						Look out in the future for mentorship applications!
 					</Text>
 
 					<br />
