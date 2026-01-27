@@ -20,6 +20,15 @@ export const RESOURCES: Resource[] = [
 		icon: "res-pt.svg",
 	},
 	{
+		title: "Mentorship",
+		link: "/mentorship",
+		desc: "Connect with experienced designers and get personalized guidance.",
+		main: "violet",
+		accent: "gray",
+		background: "#f3e8ff",
+		icon: "mentor.svg",
+	},
+	{
 		title: "Workshop Slides",
 		link: "https://drive.google.com/drive/folders/14yhiCBnk0E6GECv8LPwSxduM1Nb6GOAQ?usp=sharing",
 		desc: "View past workshop slides.",
