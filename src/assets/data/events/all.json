@@ -1,5 +1,21 @@
 [
 	{
+		"title": "Project Management Workshop",
+		"time": "2026-02-11T18:30",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "UBA x Design at UCI presents a hands-on Project Management Workshop where you’ll learn how to plan, organize, and execute projects from start to finish. We’ll walk through the product management cycle, explore how project management connects to the UI/UX designer role, and break down tools and strategies used in real-world teams!",
+		"place": "SB2 117"
+	},
+	{
+		"title": "How Designers & Developers Collaborate w/ ICSSC",
+		"time": "2026-02-11T17:00",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "DESIGNERS are you interested in landing a role in UI/UX or any type of design in the future? 🎨 If so, come check out our workshop with ICSSC THIS WEDNESDAY where we will be going over how designers and developers collaborate! 🤝 Bring your laptop as we will be doing an interactive activity in Figma! 🧑‍💻🖋️ We are so excited to see you all there!! 🌟📣",
+		"place": "Soc Eco II 1304"
+	},
+	{
 		"title": "Pacific Life Career Panel",
 		"time": "2026-01-28T17:00",
 		"duration": "60",
