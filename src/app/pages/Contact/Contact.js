@@ -14,9 +14,9 @@ const Contact = () => (
 				<div className="flex">
 					<a
 						className="wait scale show dx button fill blue"
-						href="mailto:designatuci@gmail.com"
+						href="mailto:design@uci.edu"
 					>
-						<Text size="L">designatuci@gmail.com</Text>
+						<Text size="L">design@uci.edu</Text>
 					</a>
 					<Space h="32" block />
 					<Text className="color gray">
@@ -29,7 +29,7 @@ const Contact = () => (
 			<Space h="32" />
 			<div>
 				<Text className="color gray">
-					Reach out to us on social media
+					Reach out to us on social media:
 				</Text>
 				<Space h="16" block />
 				<div className="flex row">
