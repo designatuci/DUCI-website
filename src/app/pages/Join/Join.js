@@ -19,25 +19,15 @@ const Join = () => (
 				</Text>
 			</Text>
 			<Text color="orange" className="wait dx show subtle">
-				Design at UCI is free for everyone
+				Design at UCI is free for all majors and anyone interested in design!
 			</Text>
 			<Text color="gray" className="slim wait dx show subtle">
-				Join our newsletter and follow our social media to get notifications
-				about what's happening.
-				<br />
-				Then get involved with what interests you!
+				Follow our socials and join our newsletter to get notifications about what's happening.
+			<br />
+			Then get involved with what interests you!
 			</Text>
 		</Section>
 		<Section className="center short bareBot">
-			<div
-				className="wait show card L fill sky slim flex spaceChildren"
-				style={{ boxShadow: "0 12px 24px -12px var(--sky)" }}
-			>
-				<Text color="blue" className="bold" size="L">
-					Newsletter Sign-up
-				</Text>
-				<EmailForm />
-			</div>
 			<div className="split4 slim maxWidth" style={{ gap: "32px" }}>
 				{SHORT_SOCIALS.map((social) => (
 					<a
@@ -55,6 +45,15 @@ const Join = () => (
 						</Text>
 					</a>
 				))}
+			</div>
+			<div
+				className="wait show card L fill sky slim flex spaceChildren"
+				style={{ boxShadow: "0 12px 24px -12px var(--sky)" }}
+			>
+				<Text color="blue" className="bold" size="L">
+					Newsletter Sign-up
+				</Text>
+				<EmailForm />
 			</div>
 		</Section>
 		<Section className="center">
