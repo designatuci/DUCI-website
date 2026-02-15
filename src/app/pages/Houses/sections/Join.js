@@ -42,7 +42,7 @@ function Join(props, ref) {
 			</Text>
 			<div className={clsx("wait show drop d10 l2", cn.button)}>
 				<a
-					href="mailto:designatuci@gmail.com"
+					href="mailto:design@uci.edu"
 					target="_blank"
 					rel="noreferrer noopener"
 					className="button L fill blue"
