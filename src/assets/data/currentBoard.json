@@ -42,7 +42,7 @@
 		"links": [
 			{
 				"type": "instagram",
-				"href": "https://instagram.com/chenen010"
+				"href": "https://instagram.com/enen010"
 			},
 			{
 				"type": "linkedin",
@@ -157,20 +157,20 @@
 		"links": []
 	},
 	{
+		"name": "Emily Liang",
+		"position": "Corporate Director",
+		"photo": "Emily_Liang.jpg",
+		"links": []
+	},
+	{
 		"name": "Vivianne Zhou",
 		"position": "Corporate Coordinator",
 		"photo": "Vivianne_Zhou.jpg",
 		"links": []
 	},
 	{
-		"name": "Emily Liang",
-		"position": "Corporate Coordinator",
-		"photo": "Emily_Liang.jpg",
-		"links": []
-	},
-	{
 		"name": "Ethan Chin",
-		"position": "Corporate Coordinator",
+		"position": "Webmaster & Corporate Coordinator",
 		"photo": "Ethan_Chin.jpg",
 		"links": []
 	},
