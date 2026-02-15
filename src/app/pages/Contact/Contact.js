@@ -32,18 +32,37 @@ const Contact = () => (
 					Reach out to us on social media:
 				</Text>
 				<Space h="16" block />
-				<div className="flex row">
-					{socials.map(({ name, link, icons }) => (
-						<a
-							key={name}
-							style={{ padding: "12px" }}
-							target="noreferer"
-							href={link}
-							className="wait show dx drop item social center"
-						>
-							<Icon w="24" h="24" hoverable src={icons.nav} />
-						</a>
-					))}
+				<div className="flex" style={{ flexDirection: "column", gap: "0px", alignItems: "center" }}>
+					<div className="flex row">
+						{socials
+							.filter(({ name }) => name === "instagram" || name === "discord")
+							.map(({ name, link, icons }) => (
+								<a
+									key={name}
+									style={{ padding: "12px" }}
+									target="noreferer"
+									href={link}
+									className="wait show dx drop item social center"
+								>
+									<Icon w="40" h="40" hoverable src={icons.nav} />
+								</a>
+							))}
+					</div>
+					<div className="flex row">
+						{socials
+							.filter(({ name }) => name !== "instagram" && name !== "discord")
+							.map(({ name, link, icons }) => (
+								<a
+									key={name}
+									style={{ padding: "12px" }}
+									target="noreferer"
+									href={link}
+									className="wait show dx drop item social center"
+								>
+									<Icon w="24" h="24" hoverable src={icons.nav} />
+								</a>
+							))}
+					</div>
 				</div>
 			</div>
 		</Section>
