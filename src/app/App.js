@@ -1,4 +1,5 @@
-import { Route, Routes, Navigate } from "react-router-dom";
+import { useEffect } from "react";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 
 import { Footer, Nav } from "./components";
 import { useScroll } from "./controllers";
@@ -33,8 +34,43 @@ import { HOUSES_SORTING_FORM } from "./pages/Houses/sections/Join";
 import { PROJECT_TEAMS_GOOGLE_FORM } from "./pages/ProjectTeams/ProjectTeams";
 import { ColorGame } from "./pages/ColorGame/ColorGame";
 
+const GA_MEASUREMENT_ID = "G-0YE3JXFTSN";
+
 function App() {
+	const location = useLocation();
 	useScroll();
+
+	// Google Analytics page view tracking
+	useEffect(() => {
+		if (typeof window.gtag === "function") {
+			window.gtag("config", GA_MEASUREMENT_ID, {
+				page_path: location.pathname + location.search,
+				page_title: document.title,
+			});
+		}
+	}, [location.pathname, location.search]);
+
+	// Google Analytics outbound link tracking
+	useEffect(() => {
+		const handleClick = (e) => {
+			const link = e.target.closest("a");
+			if (!link || !link.href) return;
+			const href = link.href;
+			if (href.startsWith("#")) return;
+			try {
+				const url = new URL(href);
+				if (url.protocol !== "http:" && url.protocol !== "https:") return;
+				if (url.origin === window.location.origin) return;
+				if (typeof window.gtag === "function") {
+					window.gtag("event", "outbound_click", {
+						link_url: href,
+					});
+				}
+			} catch (_) {}
+		};
+		document.addEventListener("click", handleClick, true);
+		return () => document.removeEventListener("click", handleClick, true);
+	}, []);
 
 	return (
 		<>
