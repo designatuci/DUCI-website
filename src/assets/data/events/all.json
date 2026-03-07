@@ -1,5 +1,21 @@
 [
 	{
+		"title": "Usability Testing",
+		"time": "2026-03-04T17:00",
+		"duration": "60",
+		"type": "Workshop",
+		"desc": "Have you ever dreamed about prototyping or making an app come to life? 🧑‍💻 An important step in that process will always be usability testing, to ensure that your app is optimized for users! 🙌 This is what makes your favorite apps so easy and fun to navigate. ☺️🎉 SO join us for our workshop this Wednesday on usability testing where we will walk you through what it is and the process as a whole. We can’t wait to see you there!! 📣🌟",
+		"place": "SOC ECO II 1304"
+	},
+	{
+		"title": "Diversifying Design & Tech",
+		"time": "2026-02-23T19:00",
+		"duration": "60",
+		"type": "Industry Speaker",
+		"desc": "Join us on MONDAY for our Diversifying Design & Tech workshop! 🌟 Through this event, DAUCI and BiT will come together to host a professional speaker panel. 👩‍💼💼 IF you want to learn more about amplifying underrepresented voices, especially within the design and tech industries, this panel is for you!! 🔊🫵",
+		"place": "DBH 1300"
+	},
+	{
 		"title": "Year of UI/UX Professional Development and Figma Event",
 		"time": "2026-02-18T18:30",
 		"duration": "60",
