@@ -11,6 +11,47 @@
 	padding-bottom: 50px;
 }
 
+/* Full-width Partners section (breaks out of board wrapper) */
+.board .section.fill.gray {
+	width: 100vw;
+	max-width: 100vw;
+	margin-left: calc(-50vw + 50%);
+	margin-right: calc(-50vw + 50%);
+	box-sizing: border-box;
+}
+
+/* Partners row: flex wrap + responsive gap so layout stays balanced at all viewports */
+.partners-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 48px;
+	row-gap: 32px;
+}
+.partners-cta {
+	min-width: 140px;
+}
+@media (min-width: 1024px) {
+	.partners-row {
+		gap: 80px;
+	}
+}
+@media (min-width: 1280px) {
+	.partners-row {
+		gap: 128px;
+	}
+}
+@media (max-width: 600px) {
+	.partners-row {
+		gap: 32px;
+		flex-direction: column;
+	}
+	.partners-row .center {
+		width: 100%;
+	}
+}
+
 .board .wrapper > .center {
 	width: 100%;
 	justify-content: center;

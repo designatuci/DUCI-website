@@ -265,6 +265,23 @@ const About = () => (
 				</>
 			)}
 
+			<Section className="short center fill gray">
+				<Text size="XL">Partners</Text>
+				<div className="partners-row">
+					<a target="noreferer" href="https://www.ics.uci.edu/">
+						<Icon w="256" h="128" src="logo-uci.svg" />
+					</a>
+					<a target="noreferer" href="https://www.sketch.com/">
+						<Icon w="256" h="128" src="logo-sketch.svg" />
+					</a>
+					<div className="center partners-cta">
+						<Link to="/contact/">
+							<Text>Want to work with us?</Text>
+						</Link>
+					</div>
+				</div>
+			</Section>
+
 			<Text size="XL" className="alumni-header">
 				Board Alumni
 			</Text>
@@ -279,23 +296,6 @@ const About = () => (
 						))}
 					</Fragment>
 				))}
-			</div>
-		</Section>
-
-		<Section className="short center fill color gray">
-			<Text>Partners</Text>
-			<div className="split3" style={{ columnGap: "128px" }}>
-				<a target="noreferer" href="https://www.ics.uci.edu/">
-					<Icon w="256" h="128" src="logo-uci.svg" />
-				</a>
-				<a target="noreferer" href="https://www.sketch.com/">
-					<Icon w="256" h="128" src="logo-sketch.svg" />
-				</a>
-				<div className="center">
-					<Link to="/contact/">
-						<Text>Want to work with us?</Text>
-					</Link>
-				</div>
 			</div>
 		</Section>
 	</>
