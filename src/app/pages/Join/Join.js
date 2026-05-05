@@ -28,6 +28,15 @@ const Join = () => (
 			</Text>
 		</Section>
 		<Section className="center short bareBot">
+			<div
+				className="wait show card L fill sky slim flex spaceChildren"
+				style={{ boxShadow: "0 12px 24px -12px var(--sky)" }}
+			>
+				<Text color="blue" className="bold" size="L">
+					Newsletter Sign-up
+				</Text>
+				<EmailForm />
+			</div>
 			<div className="split4 slim maxWidth" style={{ gap: "32px" }}>
 				{SHORT_SOCIALS.map((social) => (
 					<a
@@ -45,15 +54,6 @@ const Join = () => (
 						</Text>
 					</a>
 				))}
-			</div>
-			<div
-				className="wait show card L fill sky slim flex spaceChildren"
-				style={{ boxShadow: "0 12px 24px -12px var(--sky)" }}
-			>
-				<Text color="blue" className="bold" size="L">
-					Newsletter Sign-up
-				</Text>
-				<EmailForm />
 			</div>
 		</Section>
 		<Section className="center">
