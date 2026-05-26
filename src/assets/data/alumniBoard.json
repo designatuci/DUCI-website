@@ -1,5 +1,138 @@
 [
 	{
+		"year": 2026,
+		"members": [
+			{
+				"name": "Krey Pillei",
+				"position": "President",
+				"links": []
+			},
+			{
+				"name": "Jessica Jahja",
+				"position": "Internal Vice President",
+				"links": []
+			},
+			{
+				"name": "Reyna Phan",
+				"position": "External Vice President",
+				"links": []
+			},
+			{
+				"name": "Karissa Ting",
+				"position": "Marketing Director",
+				"links": []
+			},
+			{
+				"name": "Timothy Cho",
+				"position": "Marketing Coordinator",
+				"links": []
+			},
+			{
+				"name": "Kayla Oh",
+				"position": "Marketing Coordinator",
+				"links": []
+			},
+			{
+				"name": "Grace Jong",
+				"position": "Creative Director",
+				"links": [
+					{
+						"type": "instagram",
+						"href": "https://instagram.com/enen010"
+					},
+					{
+						"type": "linkedin",
+						"href": "www.linkedin.com/in/grace-jong030"
+					},
+					{
+						"type": "website",
+						"href": "https://open.spotify.com/user/qrwc744s19oeihuxs13kc58s0?si=93304a8d5c2b4043"
+					}
+				]
+			},
+			{
+				"name": "Natalie Lui",
+				"position": "Graphic Designer",
+				"links": []
+			},
+			{
+				"name": "Valerie Huynh",
+				"position": "Graphic Designer",
+				"links": []
+			},
+			{
+				"name": "Sammi Li",
+				"position": "Finance Director",
+				"links": []
+			},
+			{
+				"name": "Tanvee Patil",
+				"position": "Finance Director",
+				"links": []
+			},
+			{
+				"name": "Darshan Golchha",
+				"position": "Finance Coordinator",
+				"links": []
+			},
+			{
+				"name": "Kayzelyn Barrett",
+				"position": "Project Teams Director",
+				"links": []
+			},
+			{
+				"name": "Evie Ngo",
+				"position": "Project Teams Coordinator",
+				"links": []
+			},
+			{
+				"name": "Leilani Bascos",
+				"position": "Project Teams Coordinator",
+				"links": []
+			},
+			{
+				"name": "Heidi Tran",
+				"position": "Workshops Director",
+				"links": []
+			},
+			{
+				"name": "Jerry Nguyen",
+				"position": "Workshops Coordinator",
+				"links": []
+			},
+			{
+				"name": "Tiffany Ong",
+				"position": "Workshops Coordinator",
+				"links": []
+			},
+			{
+				"name": "Sebastian Cusianovic",
+				"position": "Mentorships Coordinator",
+				"links": []
+			},
+			{
+				"name": "Angie Xetey",
+				"position": "Corporate Director",
+				"links": []
+			},
+			{
+				"name": "Vivianne Zhou",
+				"position": "Corporate Coordinator",
+				"links": []
+			},
+			{
+				"name": "Kevin Wu",
+				"position": "Webmaster",
+				"links": [
+					{
+						"type": "linkedin",
+						"href": "https://www.linkedin.com/in/kevinwu098"
+					}
+				]
+			}
+		]
+	},
+	{
 		"year": 2025,
 		"members": [
 			{
@@ -359,7 +492,6 @@
 				"name": "Vyctoria Vu",
 				"position": "Marketing Coordinator"
 			},
-
 			{
 				"name": "Emily Huynh",
 				"position": "Marketing Coordinator"

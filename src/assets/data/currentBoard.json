@@ -1,187 +1,379 @@
 [
 	{
-		"name": "Krey Pillei",
-		"position": "President",
-		"photo": "Krey_Pillei.jpg",
-		"links": []
-	},
-	{
-		"name": "Jessica Jahja",
-		"position": "Internal Vice President",
-		"photo": "Jessica_Jahja.jpg",
-		"links": []
-	},
-	{
-		"name": "Reyna Phan",
-		"position": "External Vice President",
-		"photo": "Reyna_Phan.jpg",
-		"links": []
-	},
-	{
-		"name": "Karissa Ting",
-		"position": "Marketing Director",
-		"photo": "Karissa_Ting.jpg",
-		"links": []
-	},
-	{
-		"name": "Timothy Cho",
-		"position": "Marketing Coordinator",
-		"photo": "Timothy_Cho.jpg",
-		"links": []
-	},
-	{
-		"name": "Kayla Oh",
-		"position": "Marketing Coordinator",
-		"photo": "Kayla_Oh.jpg",
-		"links": []
-	},
-	{
-		"name": "Grace Jong",
-		"position": "Creative Director",
-		"photo": "Grace_Jong.jpg",
+		"name": "Kylie Nguyen",
+		"position": "Co-President",
+		"photo": "Kylie_Nguyen.jpg",
 		"links": [
 			{
 				"type": "instagram",
-				"href": "https://instagram.com/enen010"
+				"href": "https://www.instagram.com/ky.wee/"
 			},
 			{
 				"type": "linkedin",
-				"href": "www.linkedin.com/in/grace-jong030"
-			},
-			{
-				"type": "website",
-				"href": "https://open.spotify.com/user/qrwc744s19oeihuxs13kc58s0?si=93304a8d5c2b4043"
+				"href": "https://www.linkedin.com/in/kylie-minh-tam-nguyen/"
 			}
 		]
 	},
 	{
-		"name": "Natalie Lui",
+		"name": "William Vo",
+		"position": "Co-President",
+		"photo": "William_Vo.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/williamvokhangminh/"
+			}
+		]
+	},
+	{
+		"name": "Audrey Zheng",
+		"position": "Marketing Director",
+		"photo": "Audrey_Zheng.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/aupeap/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/audreyszheng/"
+			}
+		]
+	},
+	{
+		"name": "Tammie Chen",
+		"position": "Marketing Committee",
+		"photo": "Tammie_Chen.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/tammiechen/"
+			}
+		]
+	},
+	{
+		"name": "Charlene Au",
+		"position": "Marketing Committee",
+		"photo": "Charlene_Au.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/charlene-au-9721632a0"
+			}
+		]
+	},
+	{
+		"name": "Catie Xun",
+		"position": "Creative Director",
+		"photo": "Catie_Xun.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/catiexun/"
+			}
+		]
+	},
+	{
+		"name": "Sherry Tram",
 		"position": "Graphic Designer",
-		"photo": "Natalie_Lui.jpg",
+		"photo": "Sherry_Tram.jpg",
 		"links": []
 	},
 	{
-		"name": "Valerie Huynh",
+		"name": "Christie Weru",
 		"position": "Graphic Designer",
-		"photo": "Valerie_Huynh.jpg",
+		"photo": "Christie_Weru.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/christieweru_/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/christie-weru/"
+			},
+			{
+				"type": "website",
+				"href": "https://christieweru.github.io/"
+			}
+		]
+	},
+	{
+		"name": "Joline Dorton",
+		"position": "Graphic Designer",
+		"photo": "Joline_Dorton.jpg",
 		"links": []
 	},
 	{
-		"name": "Sammi Li",
-		"position": "Finance Director",
-		"photo": "Sammi_Li.jpg",
-		"links": []
+		"name": "Charleen Pan",
+		"position": "Finance Co-Director",
+		"photo": "Charleen_Pan.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/chrxleen/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/charleenpan/"
+			}
+		]
 	},
 	{
-		"name": "Tanvee Patil",
-		"position": "Finance Director",
-		"photo": "Tanvee_Patil.jpg",
-		"links": []
-	},
-	{
-		"name": "Catherine Peng",
-		"position": "Finance Coordinator",
+		"name": "Catie Peng",
+		"position": "Finance Co-Director",
 		"photo": "Catherine_Peng.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/catk.p/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/catherinek-peng/"
+			}
+		]
+	},
+	{
+		"name": "Angelina Ly",
+		"position": "Finance Committee",
+		"photo": "Angelina_Ly.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/angelinawlyy/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/angelinawly/"
+			}
+		]
+	},
+	{
+		"name": "Simar Virk",
+		"position": "Finance Committee",
+		"photo": "Simar_Virk.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/simarvirkk/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/simar-virk/"
+			}
+		]
+	},
+	{
+		"name": "Tanya Banerjee",
+		"position": "Finance Committee",
+		"photo": "Tanya_Banerjee.jpg",
 		"links": []
 	},
 	{
-		"name": "Darshan Golchha",
-		"position": "Finance Coordinator",
-		"photo": "Darshan_Golchha.jpg",
+		"name": "Alice Ger",
+		"position": "Mentorship Committee",
+		"photo": "Alice_Ger.jpg",
 		"links": []
 	},
 	{
-		"name": "Kayzelyn Barrett",
-		"position": "Project Teams Director",
-		"photo": "Kayzelyn_Barrett.jpg",
+		"name": "Evelyn Wang",
+		"position": "Mentorship Committee",
+		"photo": "Evelyn_Wang.jpg",
 		"links": []
+	},
+	{
+		"name": "Chloe Keirn",
+		"position": "Mentorship Committee",
+		"photo": "Chloe_Keirn.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/chloekeirnn/"
+			}
+		]
 	},
 	{
 		"name": "Branson Wong",
-		"position": "Project Teams Coordinator",
+		"position": "Project Teams Director",
 		"photo": "Branson_Wong.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/branson_wong/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/branson-wong-10b857263"
+			}
+		]
+	},
+	{
+		"name": "Gabrielle Neve Landavora",
+		"position": "Project Teams Committee",
+		"photo": "Gabrielle_Neve_Landavora.jpg",
 		"links": []
 	},
 	{
-		"name": "Evie Ngo",
-		"position": "Project Teams Coordinator",
-		"photo": "Evie_Ngo.jpg",
-		"links": []
+		"name": "Candice Lu",
+		"position": "Project Teams Committee",
+		"photo": "Candice_Lu.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/candiceelu/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/candicemlu/"
+			}
+		]
 	},
 	{
-		"name": "Leilani Bascos",
-		"position": "Project Teams Coordinator",
-		"photo": "Leilani_Bascos.jpg",
-		"links": []
+		"name": "Anushka Dubey",
+		"position": "Project Teams Committee",
+		"photo": "Anushka_Dubey.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/an.ush.ka.d/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/anushka-dubey-6784a8267/"
+			},
+			{
+				"type": "website",
+				"href": "https://anushkadubey.framer.website"
+			}
+		]
 	},
 	{
-		"name": "Heidi Tran",
+		"name": "Kayleen Tran",
 		"position": "Workshops Director",
-		"photo": "Heidi_Tran.jpg",
-		"links": []
+		"photo": "Kayleen_Tran.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/kayllleen/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/kayleen-tran-9029782a9/"
+			}
+		]
 	},
 	{
-		"name": "Jerry Nguyen",
-		"position": "Workshops Coordinator",
-		"photo": "Jerry_Nguyen.jpg",
-		"links": []
+		"name": "Vanessa Li",
+		"position": "Workshops Committee",
+		"photo": "Vanessa_Li.jpg",
+		"links": [
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/vanessaxli/"
+			}
+		]
 	},
 	{
-		"name": "Tiffany Ong",
-		"position": "Workshops Coordinator",
-		"photo": "Tiffany_Ong.jpg",
-		"links": []
+		"name": "Annabella Luy",
+		"position": "Workshops Committee",
+		"photo": "Annabella_Luy.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/anna_bella.li/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/annabella-luy/"
+			}
+		]
 	},
 	{
-		"name": "Kylie Nguyen",
-		"position": "Mentorships Director",
-		"photo": "Kylie_Nguyen.jpg",
-		"links": []
+		"name": "Eren Kim",
+		"position": "Workshops Committee",
+		"photo": "Eren_Kim.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/n.va_kim/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/erenkim/"
+			}
+		]
+	},
+	{
+		"name": "Aron Serrano",
+		"position": "Workshops Committee",
+		"photo": "Aron_Serrano.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/aronjvs/"
+			}
+		]
+	},
+	{
+		"name": "Ali Zaidi",
+		"position": "Corporate Co-Director",
+		"photo": "Ali_Zaidi.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/ali.zaidi17/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/ali-zaidi-profile/"
+			}
+		]
+	},
+	{
+		"name": "Emily Liang",
+		"position": "Corporate Co-Director",
+		"photo": "Emily_Liang.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/_emilyliang/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/emily-liang-1ba130305/"
+			}
+		]
+	},
+	{
+		"name": "Shrika Punuganti",
+		"position": "Corporate Committee",
+		"photo": "Shrika_Punuganti.jpg",
+		"links": [
+			{
+				"type": "instagram",
+				"href": "https://www.instagram.com/shrika.p/"
+			},
+			{
+				"type": "linkedin",
+				"href": "https://www.linkedin.com/in/shrika/"
+			}
+		]
 	},
 	{
 		"name": "Maya Icekson",
-		"position": "Mentorships Coordinator",
+		"position": "Corporate Committee",
 		"photo": "Maya_Icekson.jpg",
 		"links": []
 	},
 	{
-		"name": "Sebastian Cusianovic",
-		"position": "Mentorships Coordinator",
-		"photo": "Sebastian_Cusianovic.jpg",
-		"links": []
-	},
-	{
-		"name": "Angie Xetey",
-		"position": "Corporate Director",
-		"photo": "Angie_Xetey.jpg",
-		"links": []
-	},
-	{
-		"name": "Emily Liang",
-		"position": "Corporate Director",
-		"photo": "Emily_Liang.jpg",
-		"links": []
-	},
-	{
-		"name": "Vivianne Zhou",
-		"position": "Corporate Coordinator",
-		"photo": "Vivianne_Zhou.jpg",
-		"links": []
-	},
-	{
 		"name": "Ethan Chin",
-		"position": "Webmaster & Corporate Coordinator",
-		"photo": "Ethan_Chin.jpg",
-		"links": []
-	},
-	{
-		"name": "Kevin Wu",
 		"position": "Webmaster",
-		"photo": "Kevin_Wu.jpg",
+		"photo": "Ethan_Chin.jpg",
 		"links": [
 			{
 				"type": "linkedin",
-				"href": "https://www.linkedin.com/in/kevinwu098"
+				"href": "https://www.linkedin.com/in/ethan-chin"
 			}
 		]
 	}
