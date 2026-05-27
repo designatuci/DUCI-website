@@ -1,5 +1,21 @@
 [
 	{
+		"title": "Beach Picnic",
+		"time": "2026-05-27T18:00",
+		"duration": "210",
+		"type": "Social",
+		"desc": "Come hang out with us at Corona Del Mar for a fun beach night with sunset views and good company 🫶 Bring snacks, blankets, and other beach essentials! Hope to see you there 🌴😎",
+		"place": "Flagpoles"
+	},
+	{
+		"title": "Fireside Chat with a Product Designer",
+		"time": "2026-05-20T17:30",
+		"duration": "75",
+		"type": "Corporate",
+		"desc": "From ideation and design strategy to AI integration and innovation, Cesar will be sharing insights into the process of building thoughtful, user-centered products. This conversation offers a closer look into the evolving world of product design through authentic stories and industry experience 👀",
+		"place": "SB1 2200"
+	},
+	{
 		"title": "Intro to Whiteboarding Challenges",
 		"time": "2026-05-13T17:30",
 		"duration": "60",
