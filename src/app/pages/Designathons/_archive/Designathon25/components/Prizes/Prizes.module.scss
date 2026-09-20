@@ -1,0 +1,195 @@
+.section {
+  display: flex;
+  justify-content: center;
+  background: var(--d25-blue);
+  padding-bottom: 3rem;
+  color: white;
+  @media (min-width: 1024px) {
+    padding-bottom: 5rem;
+  }
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2;
+  margin: 0 0 1rem;
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1280px) {
+    font-size: 3.75rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.5rem;
+  max-width: 80rem;
+  margin: 0 auto;
+  @media (min-width: 1024px) {
+    gap: 1rem;
+  }
+}
+
+.dotLogo {
+  display: block;
+}
+
+.dotLogoWrap {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  @media (min-width: 1024px) {
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+}
+
+.cardFirst {
+  position: relative;
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  border-radius: 0;
+  background: #f39bc4;
+  color: #743c4d;
+  padding: 2rem 1rem;
+  @media (min-width: 640px) {
+    padding: 2.5rem 1rem;
+  }
+  @media (min-width: 1024px) {
+    order: 1;
+    grid-column: span 8;
+    padding: 3rem 1rem;
+    border-radius: 1.5rem;
+  }
+}
+
+.cardSecond {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  background: var(--d25-sky);
+  color: #1e2e5c;
+  padding: 2rem 1rem;
+  border-radius: 0;
+  @media (min-width: 640px) {
+    grid-column: span 7;
+  }
+  @media (min-width: 1024px) {
+    order: 3;
+    grid-column: span 4;
+    border-radius: 1.5rem;
+  }
+}
+
+.cardThird {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  background: #fac9b4;
+  color: #624433;
+  padding: 2rem 1rem;
+  border-radius: 0;
+  @media (min-width: 640px) {
+    grid-column: span 5;
+  }
+  @media (min-width: 1024px) {
+    order: 3;
+    grid-column: span 4;
+    border-radius: 1.5rem;
+  }
+}
+
+.cardHonorable {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  background: #eee4c4;
+  color: #615633;
+  padding: 2rem 1rem;
+  border-radius: 0;
+  @media (min-width: 1024px) {
+    order: 4;
+    grid-column: span 8;
+    border-radius: 1.5rem;
+  }
+}
+
+.cardNovel {
+  grid-column: span 12;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: 0;
+  background: #f8f9ff;
+  color: var(--d25-blue);
+  padding: 2rem 1rem;
+  border-radius: 0;
+  @media (min-width: 1024px) {
+    order: 5;
+    grid-column: span 12;
+    border-radius: 1.5rem;
+  }
+}
+
+.cardTitle {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  @media (min-width: 640px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 3.75rem;
+  }
+}
+
+.cardList {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 800;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  @media (min-width: 1024px) {
+    font-size: 1rem;
+    gap: 1rem;
+  }
+  .cardFirst & {
+    @media (min-width: 1024px) {
+      font-size: 1.125rem;
+    }
+  }
+}

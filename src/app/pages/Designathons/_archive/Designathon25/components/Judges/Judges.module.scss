@@ -1,0 +1,145 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: var(--d25-blue);
+  padding-bottom: 3rem;
+  color: white;
+  @media (min-width: 640px) {
+    gap: 5rem;
+  }
+  @media (min-width: 1024px) {
+    padding-bottom: 5rem;
+  }
+}
+
+.sectionBlock {
+  width: 100%;
+  max-width: var(--d25-container);
+  margin: 0 auto;
+  padding: 0 2rem;
+  @media (min-width: 1024px) {
+    max-width: var(--d25-container-lg);
+    padding: 0 3rem;
+  }
+  @media (min-width: 1920px) {
+    max-width: var(--d25-container-3xl);
+  }
+}
+
+.sectionTitle {
+  padding-bottom: 2rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+  margin: 0;
+  @media (min-width: 640px) {
+    text-align: left;
+    font-size: 2.25rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1280px) {
+    font-size: 3.75rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 2rem;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+  @media (min-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 1.5rem;
+  border: 0;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2rem;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatarWrap {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #fefceb;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  color: var(--d25-blue);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0;
+  @media (min-width: 1024px) {
+    font-size: 1.875rem;
+  }
+  @media (min-width: 1280px) {
+    font-size: 2.25rem;
+  }
+}
+
+.position {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin: 0;
+  @media (min-width: 1024px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 1280px) {
+    font-size: 1.125rem;
+  }
+}
+
+.linkedin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--d25-blue);
+  color: white;
+  &:hover {
+    color: white;
+    opacity: 0.9;
+  }
+}

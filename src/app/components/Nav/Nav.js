@@ -58,8 +58,8 @@ const Nav = () => {
 						<Link to="/events" className="item center">
 							<Text>Events</Text>
 						</Link>
-						<Link to="/resources" className="item center">
-							<Text>Resources</Text>
+						<Link to="/programs" className="item center">
+							<Text>Programs</Text>
 						</Link>
 					</div>
 					<div className="center row group right">
@@ -116,7 +116,7 @@ const Nav = () => {
 					<div className="links spaceChildren">
 						{[
 							{ label: "Events", url: "/events" },
-							{ label: "Resources", url: "/resources" },
+							{ label: "Programs", url: "/programs" },
 							{ label: "About", url: "/about" },
 							{ label: "Contact", url: "/contact" },
 						].map(({ label, url }) => (

@@ -1,0 +1,115 @@
+.section {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--d25-blue);
+  margin-top: 0;
+  @media (min-width: 768px) {
+    margin-top: -2.5rem;
+  }
+  @media (min-width: 1024px) {
+    margin-top: -4rem;
+  }
+  @media (min-width: 1280px) {
+    margin-top: 0;
+  }
+}
+
+.wrap {
+  position: relative;
+  flex: 1;
+  min-height: 600px;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.gradient {
+  flex-grow: 1;
+  background: linear-gradient(to bottom, #fcfbf9, #fcf9f7);
+}
+
+.bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  position: absolute;
+  top: 65%;
+  left: 30%;
+  width: 65%;
+  max-width: 300px;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  text-align: center;
+  color: var(--d25-blue);
+  @media (min-width: 640px) {
+    top: 60%;
+    max-width: 350px;
+  }
+  @media (min-width: 768px) {
+    top: 50%;
+    max-width: 400px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 450px;
+  }
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 1.875rem;
+  font-weight: 700;
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1280px) {
+    font-size: 3.75rem;
+  }
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+  @media (min-width: 640px) {
+    font-size: 1.25rem;
+  }
+  @media (min-width: 768px) {
+    line-height: 1.625;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1280px) {
+    font-size: 1.875rem;
+  }
+}
+
+.revealText {
+  display: inline;
+  background: linear-gradient(
+    to right,
+    var(--d25-blue) 0%,
+    var(--d25-blue) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  @media (prefers-reduced-motion: reduce) {
+    background-size: 100% 100% !important;
+    color: var(--d25-blue);
+  }
+}

@@ -1,0 +1,835 @@
+.page {
+	background: #fff;
+	min-height: 100vh;
+	color: #000;
+}
+
+.hero {
+	position: relative;
+	height: 502px;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+	background: linear-gradient(135deg, #ffe8f7 0%, #ffd6f0 45%, #fff0f8 100%);
+}
+
+.heroBg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+.heroContent {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: flex-end;
+	gap: 17px;
+	padding: 0 80px 52px;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.heroIcon {
+	width: 155px;
+	height: 155px;
+	flex-shrink: 0;
+	object-fit: contain;
+}
+
+.heroTitle {
+	margin: 0;
+	font-size: 96px;
+	font-weight: 800;
+	letter-spacing: -0.04em;
+	line-height: 1;
+	color: #88005b;
+}
+
+.main {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 60px 80px 0;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.statusBanner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1120px;
+	height: 78px;
+	padding: 12px 20px;
+	background: #ffe1fb;
+	border: 1px solid #ff9ff4;
+	border-radius: 20px;
+}
+
+.statusCopy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4px;
+	min-width: 0;
+}
+
+.statusLabel {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.02em;
+	color: #ff5372;
+
+	img {
+		width: 16px;
+		height: 16px;
+		flex-shrink: 0;
+	}
+}
+
+.statusText {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.02em;
+}
+
+.applyBtn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 44px;
+	padding: 0 32px;
+	background: #ff9ff4;
+	border: 1px solid rgba(136, 0, 91, 0.4);
+	border-radius: 15px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.02em;
+	text-decoration: none;
+	white-space: nowrap;
+	flex-shrink: 0;
+
+	&:hover {
+		filter: brightness(0.96);
+	}
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 1120px;
+}
+
+.sectionHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 0;
+}
+
+.eyebrow {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.3;
+	color: #999;
+	letter-spacing: -0.02em;
+}
+
+.headlineRow {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.headline {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.3;
+	max-width: 900px;
+}
+
+.handIcon {
+	margin-top: 4px;
+	flex-shrink: 0;
+	transform: rotate(-20deg);
+}
+
+.commentIcon {
+	display: inline-block;
+	width: 23px;
+	height: 23px;
+	margin-top: -8px;
+	margin-left: 8px;
+	border: 2.5px solid #000;
+	border-radius: 120px 133px 120px 0;
+	flex-shrink: 0;
+}
+
+.body {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.35;
+	max-width: 1107px;
+}
+
+.meta {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.metaItem {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 20px;
+}
+
+.metaDivider {
+	width: 1px;
+	height: 23px;
+	background: #000;
+	opacity: 0.35;
+}
+
+.gallery {
+	margin-top: 80px;
+	overflow: hidden;
+}
+
+.galleryTrack {
+	display: flex;
+	align-items: flex-start;
+	gap: 20px;
+	padding-left: max(0px, calc((100vw - 1280px) / 2 - 140px));
+	width: max-content;
+}
+
+.galleryImg {
+	display: block;
+	border-radius: 13px;
+	object-fit: cover;
+	flex-shrink: 0;
+}
+
+.galleryWide {
+	width: 360px;
+	height: 289px;
+}
+
+.galleryTall {
+	width: 240px;
+	height: 373px;
+}
+
+.galleryMid {
+	width: 260px;
+	height: 353px;
+}
+
+.testimonials {
+	max-width: 1280px;
+	margin: 80px auto 0;
+	padding: 0 80px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.testimonialGrid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 20px;
+}
+
+.testimonialCard {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 40px;
+	padding: 24px;
+	background: #f5f5f5;
+	border: 1px solid #dadada;
+	border-radius: 20px;
+	min-height: 360px;
+}
+
+.quote {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.35;
+	color: #323232;
+}
+
+.person {
+	display: flex;
+	align-items: flex-end;
+	gap: 10px;
+}
+
+.avatar {
+	width: 53px;
+	height: 67px;
+	object-fit: cover;
+	object-position: center top;
+	border-radius: 8px;
+	border: 0.5px solid #c2c2c2;
+	flex-shrink: 0;
+	background: #aaa;
+	overflow: hidden;
+}
+
+.personName {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.personRole {
+	margin: 0;
+	font-size: 16px;
+	color: #616161;
+}
+
+.recap {
+	max-width: 1280px;
+	margin: 80px auto 0;
+	padding: 40px 80px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	align-items: center;
+	background: #f5f5f5;
+}
+
+.recapLeft {
+	display: flex;
+	flex-direction: column;
+	gap: 62px;
+	align-items: center;
+	padding: 0 32px 40px;
+}
+
+.recapHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	align-self: flex-start;
+	width: 100%;
+	max-width: 564px;
+}
+
+.recapLabel {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	font-size: 20px;
+	line-height: 1.3;
+	color: #999;
+	letter-spacing: -0.04em;
+}
+
+.recapSelect {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 12px 20px;
+	background: #fff;
+	border: 1px solid #bdbdbd;
+	border-radius: 12px;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.3;
+	letter-spacing: -0.04em;
+}
+
+.recapChevron {
+	transform: rotate(180deg);
+}
+
+.recapPhotoWrap {
+	width: 100%;
+	max-width: 532px;
+	transform: rotate(-2.5deg);
+}
+
+.recapPhoto {
+	display: block;
+	width: 100%;
+	height: 327px;
+	object-fit: cover;
+	border-radius: 20px;
+	border: 2px solid #cacaca;
+	background: #fff;
+}
+
+.recapWinners {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 36px;
+	min-height: 443px;
+	padding: 40px 0;
+}
+
+.winnerRow {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: transparent;
+	text-align: left;
+	cursor: pointer;
+	font: inherit;
+	color: inherit;
+	border-radius: 12px;
+	transition: background-color 0.15s ease;
+
+	&:hover,
+	&:focus-visible {
+		background: rgba(0, 0, 0, 0.03);
+		outline: none;
+	}
+}
+
+/* Applied when WINNER_POPUPS_ENABLED is false — no hover/click affordance */
+.winnerRowStatic {
+	cursor: default;
+	pointer-events: none;
+
+	&:hover,
+	&:focus-visible {
+		background: transparent;
+	}
+}
+
+.winnerLogo {
+	width: 124px;
+	height: 124px;
+	flex-shrink: 0;
+	border-radius: 10px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
+	}
+}
+
+.winnerTiltA {
+	transform: rotate(2deg);
+}
+
+.winnerTiltB {
+	transform: rotate(-3deg);
+}
+
+.winnerTiltC {
+	transform: rotate(1deg);
+}
+
+.winnerText {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 0;
+}
+
+.winnerPlace {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.3;
+	color: #696868;
+	letter-spacing: -0.04em;
+}
+
+.winnerName {
+	margin: 0;
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: -0.04em;
+	line-height: 1.3;
+}
+
+.winnerModal {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 24px;
+	background: rgba(0, 0, 0, 0.45);
+}
+
+.winnerPopup {
+	position: relative;
+	width: min(993px, 100%);
+	max-height: min(90vh, 560px);
+	overflow: auto;
+	background: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.42);
+	border-radius: 25px;
+	padding: 80px 60px;
+	box-sizing: border-box;
+}
+
+.winnerPopupClose {
+	position: absolute;
+	top: 16px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	border-radius: 999px;
+	background: transparent;
+	color: #323232;
+	font-size: 28px;
+	line-height: 1;
+	cursor: pointer;
+
+	&:hover,
+	&:focus-visible {
+		background: rgba(0, 0, 0, 0.06);
+		outline: none;
+	}
+}
+
+.winnerPopupBody {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	gap: 47px;
+}
+
+.winnerPopupMedia {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	width: 430px;
+	flex-shrink: 0;
+}
+
+.winnerPopupHero {
+	width: 100%;
+	aspect-ratio: 430 / 290;
+	border: 2px solid #cacaca;
+	border-radius: 15px;
+	overflow: hidden;
+	background: #fff;
+
+	img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.winnerPopupThumbs {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.winnerPopupThumb {
+	width: 100px;
+	height: 67px;
+	border-radius: 2px;
+	background: #dadada;
+	flex-shrink: 0;
+}
+
+.winnerPopupInfo {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	padding: 10px;
+	max-width: 394px;
+}
+
+.winnerPopupHeader {
+	display: flex;
+	align-items: flex-end;
+	gap: 22px;
+}
+
+.winnerPopupLogo {
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	object-fit: cover;
+	flex-shrink: 0;
+}
+
+.winnerPopupTitles {
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+}
+
+.winnerPopupName {
+	margin: 0;
+	font-size: 36px;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	line-height: 1.15;
+}
+
+.winnerPopupTagline {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.winnerPopupDesc {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.35;
+	color: #000;
+}
+
+.askBanner {
+	max-width: 1120px;
+	margin: 60px auto 96px;
+	padding: 12px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	background: #ff9ff4;
+	border-radius: 50px;
+}
+
+.askBannerCopy {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	min-width: 0;
+}
+
+.askBannerEyebrow {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.3;
+	color: #f0f0f0;
+	letter-spacing: -0.02em;
+}
+
+.askBannerTitleRow {
+	display: flex;
+	align-items: flex-start;
+	gap: 4px;
+}
+
+.askBannerTitle {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.3;
+	color: #fff;
+}
+
+.exclaimIconLight {
+	margin-top: -8px;
+	transform: rotate(19deg);
+}
+
+.askBannerLinks {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+	flex-shrink: 0;
+}
+
+.askBannerLink {
+	display: inline-flex;
+	align-items: center;
+	gap: 4px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	text-decoration: none;
+
+	&:hover {
+		opacity: 0.88;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.hero {
+		height: 360px;
+	}
+
+	.heroContent {
+		padding: 0 32px 36px;
+		gap: 16px;
+	}
+
+	.heroIcon {
+		width: 96px;
+		height: 96px;
+	}
+
+	.heroTitle {
+		font-size: 56px;
+	}
+
+	.main,
+	.testimonials {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.recap {
+		grid-template-columns: 1fr;
+		padding: 40px 32px;
+	}
+
+	.recapLeft {
+		gap: 32px;
+		padding: 0 0 24px;
+	}
+
+	.recapWinners {
+		min-height: 0;
+		gap: 28px;
+		padding: 24px 0;
+	}
+
+	.testimonialGrid {
+		grid-template-columns: 1fr;
+	}
+
+	.galleryTrack {
+		padding-left: 32px;
+	}
+
+	.winnerRow {
+		gap: 16px;
+	}
+
+	.winnerLogo {
+		width: 96px;
+		height: 96px;
+	}
+
+	.winnerName {
+		font-size: 32px;
+	}
+
+	.winnerPopup {
+		padding: 48px 28px 36px;
+		max-height: 90vh;
+	}
+
+	.winnerPopupBody {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 28px;
+	}
+
+	.winnerPopupMedia {
+		width: 100%;
+	}
+
+	.winnerPopupInfo {
+		max-width: none;
+	}
+
+	.winnerPopupHeader {
+		gap: 16px;
+	}
+
+	.winnerPopupLogo {
+		width: 80px;
+		height: 80px;
+	}
+
+	.winnerPopupName {
+		font-size: 28px;
+	}
+
+	.winnerPopupTagline,
+	.winnerPopupDesc {
+		font-size: 16px;
+	}
+
+	.askBanner {
+		margin-left: 32px;
+		margin-right: 32px;
+		flex-direction: column;
+		align-items: flex-start;
+		border-radius: 28px;
+	}
+
+	.askBannerLinks {
+		flex-wrap: wrap;
+		gap: 16px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.heroTitle {
+		font-size: 40px;
+	}
+
+	.statusBanner {
+		height: auto;
+		min-height: 78px;
+		flex-direction: column;
+		align-items: stretch;
+		padding: 16px 20px;
+	}
+
+	.applyBtn {
+		width: 100%;
+		text-align: center;
+	}
+
+	.body,
+	.metaItem,
+	.eyebrow,
+	.headline {
+		font-size: 16px;
+	}
+
+	.headline {
+		font-size: 20px;
+	}
+
+	.winnerName {
+		font-size: 28px;
+	}
+}

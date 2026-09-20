@@ -1,0 +1,74 @@
+[
+	{
+		"name": "Robyn Young",
+		"photo": "judges/robyn-young.png",
+		"role": "Founder, Brand Strategist, and Author of Build Your Brand Universe",
+		"about": "Keynote speaker for Designathon 2025: Beyond Our Horizons."
+	},
+	{
+		"name": "Nicole Liang",
+		"photo": "judges/nicoleliangmai.jpg",
+		"role": "Senior UX Designer at Google",
+		"about": "Nicole Liang is a Senior UX Designer at Google."
+	},
+	{
+		"name": "Michael Auld",
+		"photo": "judges/michaellauld.jpg",
+		"role": "Product Illustrator at Anduril",
+		"about": "Michael Auld is a Product Illustrator at Anduril."
+	},
+	{
+		"name": "Sergio Harashyn",
+		"photo": "judges/sergio-harashyn.jpg",
+		"role": "Co-founder, Head of Product Design at AI2UX",
+		"about": "Sergio Harashyn is Co-founder and Head of Product Design at AI2UX."
+	},
+	{
+		"name": "Sarina Chen",
+		"photo": "judges/sarina-chen.png",
+		"role": "Growth Product Designer & Manager at MoBagel",
+		"about": "Sarina Chen is a Growth Product Designer & Manager at MoBagel."
+	},
+	{
+		"name": "Agnes Tran",
+		"photo": "judges/agnes-tran.png",
+		"role": "Senior Designer at IBM iX",
+		"about": "Agnes Tran is a Senior Designer at IBM iX."
+	},
+	{
+		"name": "Kyuha Jung",
+		"photo": "judges/jkyuha.jpg",
+		"role": "PhD Student & HCI Researcher at UCI Informatics",
+		"about": "Kyuha Jung is a PhD Student and HCI Researcher at UCI Informatics."
+	},
+	{
+		"name": "Yuko Shimura",
+		"photo": "judges/yuko-shimura.png",
+		"role": "Product Designer at Centerfield",
+		"about": "Yuko Shimura is a Product Designer at Centerfield."
+	},
+	{
+		"name": "Iris Spear",
+		"photo": "judges/iris-spear.png",
+		"role": "Lead UX Designer at Alteryx",
+		"about": "Iris Spear is Lead UX Designer at Alteryx."
+	},
+	{
+		"name": "Miles Seiden",
+		"photo": "judges/milesseiden.png",
+		"role": "Fractional Creative Director & Consultant at Miles Seiden Creative",
+		"about": "Miles Seiden is a Fractional Creative Director and Consultant."
+	},
+	{
+		"name": "Damjan Krajacic",
+		"photo": "judges/damjankrajacic.jpeg",
+		"role": "UX Strategist at ActiveColor",
+		"about": "Damjan Krajacic is a UX Strategist at ActiveColor."
+	},
+	{
+		"name": "Lawrence Ntim",
+		"photo": "judges/lawrence.png",
+		"role": "Ex-Senior Product Designer at Dropbox",
+		"about": "Lawrence Ntim is an ex-Senior Product Designer at Dropbox."
+	}
+]

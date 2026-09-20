@@ -1,0 +1,88 @@
+/* Designathon 2025 theme – matches designathon-website [data-theme="2025"] */
+/* Primary: Satoshi (body), Title: Radey (local font, same as original repo) */
+
+@font-face {
+  font-family: "D25 Satoshi";
+  src: url("./assets/fonts/Satoshi-Variable.woff2") format("woff2-variations"),
+    url("./assets/fonts/Satoshi-Variable.woff2") format("woff2");
+  font-weight: 300 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "D25 Radey";
+  src: url("./assets/fonts/Radey-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.designathon25 {
+  --d25-font-primary: "D25 Satoshi", system-ui, -apple-system, sans-serif;
+  --d25-font-title: "D25 Radey", system-ui, -apple-system, sans-serif;
+  --d25-blue: #354f99;
+  --d25-tan: #fffced;
+  --d25-pink: #f984a9;
+  --d25-peach: #fac9b4;
+  --d25-sky: #a6cdf6;
+  --d25-container: 800px;
+  --d25-container-lg: 1200px;
+  --d25-container-3xl: 1600px;
+  font-family: var(--d25-font-primary);
+}
+
+/* Section titles: same font and weight as ref (font-title + font-bold) */
+.designathon25 h2 {
+  font-family: var(--d25-font-title);
+  font-weight: 700;
+}
+
+.designathon25 .d25-container {
+  max-width: var(--d25-container);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .designathon25 .d25-container {
+    max-width: var(--d25-container-lg);
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .designathon25 .d25-container {
+    max-width: var(--d25-container-3xl);
+  }
+}
+
+.designathon25 .d25-noise::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.8;
+  background-image: url("./assets/graphics/common/noise.png");
+}
+
+.designathon25 .d25-noise {
+  position: relative;
+}
+
+/* Marquee: content moves left to right (strip animates from -50% to 0 for seamless loop) */
+@keyframes d25-marquee {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.designathon25 .d25-marquee {
+  animation: d25-marquee 25s linear infinite;
+}

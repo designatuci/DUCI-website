@@ -1,0 +1,98 @@
+.section {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(to bottom, #fefbee, var(--d25-blue));
+}
+
+.inner {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background: linear-gradient(to bottom, #fefbee, #fcfbf9);
+  padding: 2rem 1rem;
+  @media (min-width: 640px) {
+    padding-top: 4rem;
+  }
+  @media (min-width: 1024px) {
+    padding-top: 7rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+}
+
+.valueRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.05em;
+  color: var(--d25-pink);
+  font-weight: 800;
+}
+
+.valueAffix {
+  font-size: 1.875rem;
+  line-height: 1;
+  flex-shrink: 0;
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+}
+
+.valueNumber {
+  font-size: 1.875rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+}
+
+.label {
+  max-width: 10rem;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 800;
+  color: var(--d25-blue);
+  margin: 0;
+  @media (min-width: 640px) {
+    font-size: 1.125rem;
+    max-width: 12rem;
+  }
+  @media (min-width: 1024px) {
+    max-width: 14rem;
+    font-size: 1.25rem;
+  }
+}

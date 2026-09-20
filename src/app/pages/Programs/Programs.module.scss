@@ -1,0 +1,168 @@
+.page {
+	background: #fff;
+	min-height: 100vh;
+}
+
+.hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 420px;
+	padding: 48px 32px 24px;
+	overflow: hidden;
+	isolation: isolate;
+}
+
+.heroTl {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	pointer-events: none;
+	max-height: 100%;
+	width: auto;
+}
+
+.heroBr {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 0;
+	pointer-events: none;
+	max-height: 100%;
+	width: auto;
+
+	@media (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.heroCopy {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+	text-align: center;
+	max-width: 720px;
+}
+
+.gridSection {
+	padding-bottom: 96px;
+	padding-top: 24px;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 53px 41px;
+	max-width: 1003.5px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	min-height: 201px;
+	padding: 34px 40px;
+	border-radius: 30px;
+	overflow: hidden;
+	text-decoration: none;
+	color: inherit;
+	transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+	}
+}
+
+.cardBg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+	border-radius: 30px;
+}
+
+.cardContent {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 13px;
+	width: 100%;
+}
+
+.cardTitleRow {
+	display: flex;
+	align-items: flex-end;
+	gap: 13px;
+	width: 100%;
+}
+
+.cardIcon {
+	width: 50px;
+	height: 50px;
+	flex-shrink: 0;
+	object-fit: contain;
+}
+
+.cardTitle {
+	font-size: 32px;
+	font-weight: 700;
+	line-height: 1.1;
+	white-space: nowrap;
+}
+
+.cardDesc {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+
+@media screen and (max-width: 900px) {
+	.hero {
+		min-height: 320px;
+		padding: 32px 20px 16px;
+	}
+
+	.grid {
+		grid-template-columns: 1fr;
+		gap: 24px;
+		max-width: 481px;
+	}
+
+	.cardTitle {
+		font-size: 28px;
+		white-space: normal;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.card {
+		padding: 28px 24px;
+		min-height: 180px;
+	}
+
+	.cardTitle {
+		font-size: 24px;
+	}
+
+	.cardIcon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.cardDesc {
+		font-size: 14px;
+	}
+}

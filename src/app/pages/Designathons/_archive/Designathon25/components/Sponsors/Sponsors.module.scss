@@ -1,0 +1,205 @@
+.section {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--d25-blue);
+  padding: 1rem 0 10rem;
+  color: white;
+  @media (min-width: 1280px) {
+    padding-bottom: 24rem;
+  }
+}
+
+.wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 1920px;
+  @media (min-width: 640px) {
+    gap: 4rem;
+  }
+  @media (min-width: 1024px) {
+    gap: 6rem;
+  }
+}
+
+.title {
+  position: relative;
+  z-index: 10;
+  align-self: center;
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+  letter-spacing: -0.02em;
+  text-align: center;
+  width: 100%;
+  @media (min-width: 640px) {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+  @media (min-width: 1280px) {
+    font-size: 3.75rem;
+  }
+}
+
+.marqueeWrap {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.tracks {
+  display: block;
+  width: 100%;
+  min-height: 180px;
+  object-fit: cover;
+  object-position: center bottom;
+  pointer-events: none;
+  @media (min-width: 640px) {
+    min-height: 220px;
+  }
+  @media (min-width: 1024px) {
+    min-height: 260px;
+  }
+}
+
+.starsRow {
+  position: relative;
+  width: 100%;
+  height: 24px;
+  margin-top: -0.5rem;
+  background: url("../../assets/graphics/star.svg") repeat-x center;
+  background-size: 20px 20px;
+  opacity: 0.9;
+  z-index: 2;
+  @media (min-width: 640px) {
+    height: 28px;
+    background-size: 24px 24px;
+  }
+}
+
+.marqueeTrack {
+  position: relative;
+  margin-top: -11rem;
+  margin-bottom: 2rem;
+  @media (min-width: 640px) {
+    margin-top: -14rem;
+  }
+  @media (min-width: 1024px) {
+    margin-top: -17rem;
+  }
+}
+
+.marquee {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  will-change: transform;
+  z-index: 2;
+}
+
+.cart {
+  position: relative;
+  flex: 0 0 30vw;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-width: 200px;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+  @media (min-width: 1536px) {
+    max-width: 450px;
+  }
+}
+
+.cartBack {
+  position: relative;
+  width: 100%;
+}
+
+.logoWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 70%;
+  height: 55%;
+  transform: translate(-50%, -50%) rotate(var(--item-rotation, 0deg));
+  transition: transform 0.3s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  padding: 8%;
+  box-sizing: border-box;
+  .cart:hover & {
+    transform: translate(-50%, -50%) scale(1.05) rotate(var(--item-rotation, 0deg));
+  }
+}
+
+.cartLabel {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  .cart:hover & {
+    opacity: 1;
+  }
+}
+
+.logo {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 72px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0.5rem;
+  @media (min-width: 640px) {
+    max-height: 88px;
+  }
+  @media (min-width: 1024px) {
+    max-height: 100px;
+  }
+  @media (min-width: 1280px) {
+    max-height: 115px;
+  }
+}
+
+.cartFront {
+  position: relative;
+  width: 100%;
+}
+
+.clouds {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  max-width: 420px;
+  transform: translate(10%, 35%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.cloudImg {
+  width: 100%;
+  height: auto;
+  display: block;
+}

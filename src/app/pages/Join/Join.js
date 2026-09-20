@@ -65,9 +65,9 @@ const Join = () => (
 					Check out our events tab
 				</Text>
 			</Link>
-			<Link className="wait dx" to="/resources">
+			<Link className="wait dx" to="/programs">
 				<Text icon="right" color="blue">
-					Explore our other resources
+					Explore our programs
 				</Text>
 			</Link>
 		</Section>

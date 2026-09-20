@@ -1,0 +1,276 @@
+.page {
+	background: #fff;
+	min-height: 100vh;
+	color: #000;
+}
+
+.hero {
+	position: relative;
+	height: 502px;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-end;
+	background: linear-gradient(135deg, #d6eeff 0%, #b8e0ff 45%, #e8f6ff 100%);
+}
+
+.heroBg {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+.heroContent {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: flex-end;
+	gap: 28px;
+	padding: 0 80px 52px;
+	width: 100%;
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.heroIcon {
+	width: 148px;
+	height: 150px;
+	flex-shrink: 0;
+	object-fit: contain;
+}
+
+.heroTitle {
+	margin: 0;
+	font-size: 96px;
+	font-weight: 800;
+	letter-spacing: -0.04em;
+	line-height: 1;
+	color: #000788;
+}
+
+.main {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 60px 80px 96px;
+	display: flex;
+	flex-direction: column;
+	gap: 60px;
+}
+
+.statusBanner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1120px;
+	height: 78px;
+	padding: 12px 20px;
+	background: #cef2ff;
+	border: 1px solid #089aff;
+	border-radius: 20px;
+}
+
+.statusCopy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 4px;
+	min-width: 0;
+}
+
+.statusLabel {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: -0.02em;
+
+	img {
+		width: 16px;
+		height: 16px;
+		flex-shrink: 0;
+	}
+}
+
+.statusText {
+	margin: 0;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.02em;
+}
+
+.applyBtn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 44px;
+	padding: 0 32px;
+	background: #089aff;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: -0.02em;
+	text-decoration: none;
+	white-space: nowrap;
+	flex-shrink: 0;
+
+	&:hover {
+		filter: brightness(0.95);
+	}
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	max-width: 1120px;
+}
+
+.sectionHeader {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+	min-width: 0;
+}
+
+.eyebrow {
+	margin: 0;
+	font-size: 20px;
+	line-height: normal;
+	color: #999;
+	letter-spacing: -0.02em;
+}
+
+.headlineRow {
+	position: relative;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}
+
+.headline {
+	margin: 0;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: normal;
+	max-width: 900px;
+}
+
+.handIcon {
+	margin-top: 4px;
+	flex-shrink: 0;
+	transform: rotate(-20deg);
+}
+
+.learnMoreBtn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	align-self: flex-start;
+	min-height: 52px;
+	padding: 10px 40px;
+	background: #078fec;
+	border-radius: 50px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+	text-decoration: none;
+	line-height: 1.25;
+
+	&:hover {
+		filter: brightness(0.95);
+	}
+}
+
+.meta {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.metaItem {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	font-size: 20px;
+}
+
+.metaDivider {
+	width: 1px;
+	height: 23px;
+	background: #000;
+	opacity: 0.35;
+}
+
+@media screen and (max-width: 1100px) {
+	.hero {
+		height: 360px;
+	}
+
+	.heroContent {
+		padding: 0 32px 36px;
+		gap: 16px;
+	}
+
+	.heroIcon {
+		width: 96px;
+		height: 96px;
+	}
+
+	.heroTitle {
+		font-size: 48px;
+	}
+
+	.main {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.heroTitle {
+		font-size: 36px;
+	}
+
+	.statusBanner {
+		height: auto;
+		min-height: 78px;
+		flex-direction: column;
+		align-items: stretch;
+		padding: 16px 20px;
+	}
+
+	.applyBtn {
+		width: 100%;
+		text-align: center;
+	}
+
+	.learnMoreBtn {
+		align-self: stretch;
+		font-size: 16px;
+		padding: 12px 24px;
+	}
+
+	.body,
+	.metaItem,
+	.eyebrow,
+	.headline {
+		font-size: 16px;
+	}
+
+	.headline {
+		font-size: 20px;
+	}
+}

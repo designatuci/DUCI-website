@@ -1,0 +1,26 @@
+[
+	{
+		"name": "Alex Park",
+		"photo": "judges/alexpark5.jpg",
+		"role": "UX Design Manager at Riot Games",
+		"about": "Alex Park is UX Design Manager at Riot Games."
+	},
+	{
+		"name": "Miles Seiden",
+		"photo": "judges/milesseiden.png",
+		"role": "Fractional Creative Director & Consultant at Miles Seiden Creative",
+		"about": "Miles Seiden is a Fractional Creative Director and Consultant."
+	},
+	{
+		"name": "Tyler Vickers",
+		"photo": "judges/tyler-vickers.jpeg",
+		"role": "Senior Product Manager at Amazon",
+		"about": "Tyler Vickers is a Senior Product Manager at Amazon."
+	},
+	{
+		"name": "Lawrence Ntim",
+		"photo": "judges/lawrence.png",
+		"role": "Ex-Senior Product Designer at Dropbox",
+		"about": "Lawrence Ntim is an ex-Senior Product Designer at Dropbox."
+	}
+]

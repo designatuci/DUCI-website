@@ -1,0 +1,11 @@
+.section {
+  display: flex;
+  justify-content: center;
+  background: var(--d25-blue);
+  padding: 3rem 0;
+  color: white;
+}
+
+.title { font-size: 1.875rem; font-weight: 700; margin: 0 0 0.5rem; @media (min-width: 1024px) { font-size: 3rem; } }
+.text { margin: 0 0 1rem; font-size: 1.125rem; @media (min-width: 1024px) { font-size: 1.5rem; } }
+.linkInline { color: white; text-decoration: underline; font-weight: 500; &:hover { color: var(--d25-tan); } }

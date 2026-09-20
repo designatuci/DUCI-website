@@ -38,8 +38,8 @@ const Footer = () => (
 			</div>
 			<div className="spaceChildrenSmall">
 				<div>
-					<Link to="/resources" className={cn.mark}>
-						<Text>Resources</Text>
+					<Link to="/programs" className={cn.mark}>
+						<Text>Programs</Text>
 					</Link>
 				</div>
 				<Space h="16" />

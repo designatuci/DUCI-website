@@ -80,8 +80,8 @@ const About = () => (
 						community.
 					</Text>
 					<Space block h="32" />
-					<Link to="/resources/" className="color blue">
-						<Text icon="right">View resources</Text>
+					<Link to="/programs/" className="color blue">
+						<Text icon="right">View programs</Text>
 					</Link>
 				</div>
 				<div className="narrow wait dx">

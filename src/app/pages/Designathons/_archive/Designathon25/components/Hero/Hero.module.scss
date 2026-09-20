@@ -1,0 +1,240 @@
+.section {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  background: var(--d25-sky);
+  min-height: 100vh;
+  @media (min-width: 1280px) {
+    background: linear-gradient(to bottom, var(--d25-sky), var(--d25-tan));
+    min-height: 1500px;
+  }
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-height: 640px;
+  padding-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  @media (min-width: 640px) {
+    min-height: 900px;
+  }
+  @media (min-width: 768px) {
+    min-height: 1000px;
+  }
+  @media (min-width: 1024px) {
+    min-height: 1200px;
+  }
+  @media (min-width: 1280px) {
+    min-height: 1200px;
+    max-height: none;
+  }
+  @media (min-width: 1920px) {
+    min-height: 1600px;
+  }
+}
+
+.heroContent {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1),
+    opacity 1s cubic-bezier(0.25, 1, 0.5, 1);
+  @media (min-width: 1920px) {
+    left: 50%;
+    max-width: 1920px;
+    transform: translateX(-50%);
+  }
+}
+
+.logoWrap {
+  position: relative;
+  display: block;
+  height: 300px;
+  width: 400px;
+  @media (min-width: 640px) {
+    margin-top: -2rem;
+    height: 400px;
+    width: 500px;
+  }
+  @media (min-width: 768px) {
+    margin-top: -4rem;
+    height: 500px;
+    width: 800px;
+  }
+  @media (min-width: 1024px) {
+    margin-left: 3rem;
+    height: 600px;
+    width: 900px;
+  }
+  @media (min-width: 1280px) {
+    margin-top: -6rem;
+    height: 700px;
+    width: 1000px;
+  }
+  @media (min-width: 1920px) {
+    margin-top: -3rem;
+    margin-left: 6rem;
+  }
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.dateBlock {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 3rem;
+  @media (min-width: 640px) {
+    transform: translate(-50%, -60%);
+  }
+  @media (min-width: 1024px) {
+    transform: translate(-50%, -120%);
+  }
+}
+
+.countdown {
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: rgba(255, 252, 237, 0.8);
+  padding: 0.5rem 3rem 0.5rem;
+}
+
+.countdownLabel {
+  color: var(--d25-pink);
+  font-size: 0.875rem;
+}
+
+.countdownParts {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #617ccb;
+}
+
+.countdownPart {
+  width: fit-content;
+}
+
+.countdownValue {
+  font-size: 1.875rem;
+  font-weight: 600;
+  @media (min-width: 1024px) {
+    font-size: 2.25rem;
+  }
+  @media (min-width: 1280px) {
+    font-size: 3rem;
+  }
+}
+
+.countdownUnit {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--d25-pink);
+}
+
+.countdownColon {
+  position: relative;
+  top: 0.25rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.375rem;
+  background: rgba(255, 252, 237, 0.5);
+  padding: 0.25rem 1rem;
+  text-align: center;
+  p {
+    font-weight: 700;
+    white-space: nowrap;
+    color: var(--d25-pink);
+    margin: 0;
+  }
+}
+
+.canvasWrap {
+  position: relative;
+  margin-top: 8rem;
+  flex: 1;
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 0, 0, 1) 12%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  @media (min-width: 640px) {
+    min-height: 480px;
+  }
+  @media (min-width: 1024px) {
+    min-height: 560px;
+  }
+  @media (min-width: 1280px) {
+    margin-top: 4rem;
+    min-height: 640px;
+  }
+  @media (min-width: 1536px) {
+    margin-top: -5vw;
+    min-height: 720px;
+  }
+  &.canvasWrapVisible {
+    opacity: 1;
+  }
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  object-position: center bottom;
+  @media (min-width: 640px) {
+    min-height: 480px;
+  }
+  @media (min-width: 1024px) {
+    min-height: 560px;
+  }
+  @media (min-width: 1280px) {
+    min-height: 640px;
+  }
+  @media (min-width: 1536px) {
+    min-height: 720px;
+  }
+}

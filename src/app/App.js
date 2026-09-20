@@ -14,9 +14,10 @@ import {
 	Join,
 	Mentorship,
 	Merch,
+	Mockup,
 	NotFound,
+	Programs,
 	ProjectTeams,
-	Resources,
 	ResourcesFeatured,
 	Shirt22,
 	EventsAllDev,
@@ -84,9 +85,13 @@ function App() {
 					<Route path="all" element={<EventsAll />} />
 				</Route>
 				<Route path="resources">
-					<Route index element={<Resources />} />
+					<Route
+						index
+						element={<Navigate to="/programs" replace />}
+					/>
 					<Route path="featured" element={<ResourcesFeatured />} />
 				</Route>
+				<Route path="programs" element={<Programs />} />
 				<Route path="mentorship">
 					<Route index element={<Mentorship />} />
 				</Route>
@@ -103,6 +108,7 @@ function App() {
 
 				<Route path="about" element={<About />} />
 				<Route path="project-teams" element={<ProjectTeams />} />
+				<Route path="mockup" element={<Mockup />} />
 
 				<Route path="designathon/*" element={<Designathon />} />
 				<Route path="designathons/*" element={<Designathon />} />

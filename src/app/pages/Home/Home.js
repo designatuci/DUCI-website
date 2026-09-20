@@ -161,9 +161,9 @@ const Home = () => (
 						with fresh new work.
 					</Text>
 					<Space block h="32" />
-					<Link to="/resources/">
+					<Link to="/programs">
 						<Text icon="right" color="blue">
-							See our resources
+							See our programs
 						</Text>
 					</Link>
 				</div>
