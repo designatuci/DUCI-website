@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
 
 import heroBg from "./assets/hero-bg.png";
 import iconLogo from "./assets/icon-logo.svg";
@@ -12,15 +11,15 @@ import gallery2 from "./assets/gallery-2.png";
 import gallery3 from "./assets/gallery-3.png";
 import gallery4 from "./assets/gallery-4.png";
 import gallery5 from "./assets/gallery-5.png";
-import avatarQueena from "./assets/avatar-queena.jpg";
-import avatarAllison from "./assets/avatar-allison.jpg";
-import avatarEvie from "./assets/avatar-evie.jpg";
+import avatarWilliam from "assets/images/board/current/William_Vo.jpg";
+import avatarEvie from "assets/images/board/current/Evie_Ngo.jpg";
 
 import cn from "./DesignathonLanding.module.scss";
 
-const APPLY_URL = "/join";
+const APPLY_URL =
+	"https://docs.google.com/forms/d/e/1FAIpQLScS8LcdPkqkMVXeaXpsMG-S6NbdB6--aJ08IdMJQV2QK5OecQ/viewform";
 /** @type {"open" | "soon" | "closed"} */
-const APPLICATIONS_STATUS = "soon";
+const APPLICATIONS_STATUS = "open";
 
 const GALLERY = [
 	{ src: gallery1, className: cn.galleryWide },
@@ -30,27 +29,19 @@ const GALLERY = [
 	{ src: gallery5, className: cn.galleryTall },
 ];
 
-// TODO: replace with real Designathon testimonials
 const TESTIMONIALS = [
 	{
 		quote:
-			"“Design-a-Thon pushed me harder than any class project. Working against the clock with a team, getting workshop feedback, and shipping a prototype in a weekend made me so much more confident as a designer.”",
-		name: "Queena Liu",
-		role: "Designathon Committee",
-		photo: avatarQueena,
+			"“My experience was super rewarding! Getting to meet and get to know industry professionals from the likes of Google, Meta, Apple, and more was so insightful. And in the end, the design-a-thon was a huge success and all of our hard work paid off!”",
+		name: "William Vo",
+		role: "Corporate Coordinator · Fourth Year, Business Economics",
+		photo: avatarWilliam,
 	},
 	{
 		quote:
-			"“Helping organize Design-a-Thon showed me how much goes into creating a great design experience. From logistics to supporting participants, it was chaotic in the best way and I’m proud of what we built together.”",
-		name: "Allison Huang",
-		role: "Designathon Organizer",
-		photo: avatarAllison,
-	},
-	{
-		quote:
-			"“As a past participant, Design-a-Thon was the first time I felt like I belonged in UCI’s design community. The energy, the workshops, and the people made the whole weekend unforgettable.”",
+			"“Being a Designathon Director was a great experience and taught me a lot about interdisciplinary team collaboration and project management in general. There were a lot of moving parts, and I picked up many skills in the role, including project management, teamwork, and communication, which later translated directly to my internship. It was actually one of the crucial experiences they asked me about during my internship interview. Because of it, I was also able to make valuable connections with our sponsors and judges. Overall, it was not only a fun and rewarding experience, but also an extremely memorable one!”",
 		name: "Evie Ngo",
-		role: "Past Designathon Participant",
+		role: "Logistics Director · Fourth Year, Business Information Management",
 		photo: avatarEvie,
 	},
 ];
@@ -58,7 +49,7 @@ const TESTIMONIALS = [
 const DesignathonLanding = () => (
 	<div className={cn.page}>
 		<Helmet>
-			<title>Design-a-Thon – Design at UCI</title>
+			<title>Design-a-thon – Design at UCI</title>
 		</Helmet>
 
 		<header className={cn.hero}>
@@ -71,7 +62,7 @@ const DesignathonLanding = () => (
 					width={152}
 					height={152}
 				/>
-				<h1 className={cn.heroTitle}>Design-a-Thon</h1>
+				<h1 className={cn.heroTitle}>Design-a-thon</h1>
 			</div>
 		</header>
 
@@ -89,21 +80,26 @@ const DesignathonLanding = () => (
 						</div>
 						<p className={cn.statusText}>
 							{APPLICATIONS_STATUS === "open"
-								? "Design-a-Thon committee applications are currently open."
-								: "Design-a-Thon committee applications are opening soon this fall."}
+								? "Design-a-thon committee applications are currently open."
+								: "Design-a-thon committee applications are opening soon this fall."}
 						</p>
 					</div>
 					{APPLICATIONS_STATUS === "open" ? (
-						<Link to={APPLY_URL} className={cn.applyBtn}>
+						<a
+							href={APPLY_URL}
+							className={cn.applyBtn}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Apply Now
-						</Link>
+						</a>
 					) : null}
 				</div>
 			) : null}
 
 			<section className={cn.intro}>
 				<div className={cn.introTitle}>
-					<p className={cn.eyebrow}>What is Design-a-Thon?</p>
+					<p className={cn.eyebrow}>What is Design-a-thon?</p>
 					<div className={cn.headlineRow}>
 						<h2 className={cn.headline}>
 							A time-intensive event to push your limits as a designer
@@ -129,14 +125,14 @@ const DesignathonLanding = () => (
 				</p>
 				<p className={cn.body}>
 					We are recruiting individuals to help support the creation
-					of this year’s Design-a-Thon. From our logistics &amp;
+					of this year’s Design-a-thon. From our logistics &amp;
 					operations committee, to creating the promotional graphics
 					or the website, apply today and become one of our committee
 					members!
 				</p>
 				<p className={cn.body}>
 					To apply as a participant, keep an eye out on our UCI
-					Design-a-Thon Instagram to get updates about when the
+					Design-a-thon Instagram to get updates about when the
 					applications come out!
 				</p>
 				<div className={cn.meta}>
@@ -153,7 +149,7 @@ const DesignathonLanding = () => (
 			</section>
 		</main>
 
-		<section className={cn.gallery} aria-label="Design-a-Thon photos">
+		<section className={cn.gallery} aria-label="Design-a-thon photos">
 			<div className={cn.galleryTrack}>
 				{GALLERY.map((item) => (
 					<img

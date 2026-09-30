@@ -46,7 +46,7 @@ const PROGRAMS = [
 		descColor: "#4365bb",
 	},
 	{
-		title: "Design-a-Thon",
+		title: "Design-a-thon",
 		desc: "Our annual nation-wide design competition.",
 		link: "/designathons/",
 		background: cardDot,

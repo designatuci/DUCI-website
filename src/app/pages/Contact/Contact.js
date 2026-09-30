@@ -35,7 +35,9 @@ const Contact = () => (
 				<div className="flex" style={{ flexDirection: "column", gap: "0px", alignItems: "center" }}>
 					<div className="flex row">
 						{socials
-							.filter(({ name }) => name === "instagram" || name === "discord")
+							.filter(({ name }) =>
+								["instagram", "discord", "linktree"].includes(name),
+							)
 							.map(({ name, link, icons }) => (
 								<a
 									key={name}
@@ -50,7 +52,10 @@ const Contact = () => (
 					</div>
 					<div className="flex row">
 						{socials
-							.filter(({ name }) => name !== "instagram" && name !== "discord")
+							.filter(
+								({ name }) =>
+									!["instagram", "discord", "linktree"].includes(name),
+							)
 							.map(({ name, link, icons }) => (
 								<a
 									key={name}

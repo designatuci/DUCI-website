@@ -15,13 +15,12 @@
 			"nav": "nav-discord.svg"
 		}
 	},
-
 	{
-		"name": "facebook",
-		"link": "https://www.facebook.com/designatuci/",
+		"name": "linktree",
+		"link": "https://linktr.ee/designatuci",
 		"icons": {
-			"default": "facebook.svg",
-			"nav": "nav-facebook.svg"
+			"default": "linktree.svg",
+			"nav": "nav-linktree.svg"
 		}
 	},
 	{
@@ -46,6 +45,14 @@
 		"icons": {
 			"default": "tiktok.svg",
 			"nav": "nav-tiktok.svg"
+		}
+	},
+	{
+		"name": "facebook",
+		"link": "https://www.facebook.com/designatuci/",
+		"icons": {
+			"default": "facebook.svg",
+			"nav": "nav-facebook.svg"
 		}
 	}
 ]

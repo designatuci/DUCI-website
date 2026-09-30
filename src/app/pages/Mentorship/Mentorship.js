@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet";
-import { Link } from "react-router-dom";
 
 import heroBg from "./assets/hero-bg.png";
 import iconMentorship from "./assets/icon-mentorship.svg";
@@ -18,9 +17,10 @@ import avatarEvelyn from "./assets/avatar-evelyn.jpg";
 
 import cn from "./Mentorship.module.scss";
 
-const APPLY_URL = "/join";
+const APPLY_URL =
+	"https://docs.google.com/forms/d/e/1FAIpQLSey7dl4PawDcgfQYq3cJY7cU0A4ugWY_DZpE_L-FaMhYGlfVg/viewform";
 /** @type {"open" | "soon" | "closed"} */
-const APPLICATIONS_STATUS = "soon";
+const APPLICATIONS_STATUS = "open";
 
 const GALLERY = [
 	{ src: gallery1, className: cn.galleryWide },
@@ -94,9 +94,14 @@ const Mentorship = () => (
 						</p>
 					</div>
 					{APPLICATIONS_STATUS === "open" ? (
-						<Link to={APPLY_URL} className={cn.applyBtn}>
+						<a
+							href={APPLY_URL}
+							className={cn.applyBtn}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							Apply Now
-						</Link>
+						</a>
 					) : null}
 				</div>
 			) : null}
