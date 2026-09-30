@@ -13,7 +13,10 @@ const EventsAll = () => {
 				<title>Event Archive – Design at UCI</title>
 			</Helmet>
 			<Section className="center short">
-				<Text size="XL">All Events</Text>
+				<Text size="XL">Archived Events</Text>
+				<Text className="color gray" style={{ marginTop: "12px" }}>
+					Older text-only event listings (pre-photo format).
+				</Text>
 			</Section>
 			<Section className="center short fill gray">
 				{EVENT_DATA == null ? (

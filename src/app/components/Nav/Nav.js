@@ -1,4 +1,4 @@
-import { useState, memo, useCallback } from "react";
+import { useState, memo, useCallback, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { Text } from "app/components";
@@ -7,6 +7,116 @@ import socials from "assets/data/socials.json";
 
 import "./Nav.scss";
 
+const APPS_TIP_KEY = "duci-apps-open-tip-dismissed";
+
+const ProgramsLink = ({ onNavigate, size }) => {
+	const [open, setOpen] = useState(false);
+	const [showBadge, setShowBadge] = useState(false);
+	const wrapRef = useRef(null);
+
+	useEffect(() => {
+		try {
+			setShowBadge(localStorage.getItem(APPS_TIP_KEY) !== "1");
+		} catch {
+			setShowBadge(true);
+		}
+	}, []);
+
+	useEffect(() => {
+		if (!open) return undefined;
+		const onDoc = (e) => {
+			if (wrapRef.current && !wrapRef.current.contains(e.target)) {
+				setOpen(false);
+			}
+		};
+		const onKey = (e) => {
+			if (e.key === "Escape") setOpen(false);
+		};
+		document.addEventListener("mousedown", onDoc);
+		document.addEventListener("keydown", onKey);
+		return () => {
+			document.removeEventListener("mousedown", onDoc);
+			document.removeEventListener("keydown", onKey);
+		};
+	}, [open]);
+
+	const dismiss = useCallback(() => {
+		setOpen(false);
+		setShowBadge(false);
+		try {
+			localStorage.setItem(APPS_TIP_KEY, "1");
+		} catch {
+			/* ignore */
+		}
+	}, []);
+
+	const toggleTip = useCallback((e) => {
+		e.preventDefault();
+		e.stopPropagation();
+		setOpen((v) => !v);
+	}, []);
+
+	return (
+		<div className="programsNav" ref={wrapRef}>
+			<Link
+				to="/programs"
+				className="item center"
+				onClick={onNavigate}
+			>
+				{size ? <Text size={size}>Programs</Text> : <Text>Programs</Text>}
+			</Link>
+			{showBadge ? (
+				<>
+					<button
+						type="button"
+						className="appsBadge"
+						aria-label="Applications are open"
+						aria-expanded={open}
+						aria-controls="apps-open-tip"
+						onClick={toggleTip}
+					>
+						<span className="appsBadgeDot" aria-hidden="true" />
+					</button>
+					{open ? (
+						<div
+							id="apps-open-tip"
+							className="appsPopover"
+							role="dialog"
+							aria-label="Program applications"
+						>
+							<p className="appsPopoverTitle">Applications open</p>
+							<p className="appsPopoverBody">
+								Mentorship, Design-a-thon, Project Teams, and more
+								are accepting applications — click to find out
+								more.
+							</p>
+							<div className="appsPopoverActions">
+								<Link
+									to="/programs"
+									className="appsPopoverCta"
+									onClick={() => {
+										dismiss();
+										onNavigate?.();
+									}}
+								>
+									View Programs
+								</Link>
+								<button
+									type="button"
+									className="appsPopoverDismiss"
+									onClick={dismiss}
+								>
+									Dismiss
+								</button>
+							</div>
+						</div>
+					) : null}
+				</>
+			) : null}
+		</div>
+	);
+};
+
 const Nav = () => {
 	const { pathname } = useLocation();
 	const [mobileExpand, setMobileExpand] = useState(false);
@@ -14,6 +124,10 @@ const Nav = () => {
 	const toggleMobileExpand = useCallback(() => {
 		setMobileExpand(!mobileExpand);
 	}, [mobileExpand]);
+
+	const closeMobile = useCallback(() => {
+		setMobileExpand(false);
+	}, []);
 
 	if (pathname === "/designathon22/" || pathname === "/designathon22")
 		return <></>;
@@ -58,9 +172,7 @@ const Nav = () => {
 						<Link to="/events" className="item center">
 							<Text>Events</Text>
 						</Link>
-						<Link to="/programs" className="item center">
-							<Text>Programs</Text>
-						</Link>
+						<ProgramsLink />
 					</div>
 					<div className="center row group right">
 						<Link to="/about" className="item center">
@@ -114,9 +226,17 @@ const Nav = () => {
 						</button>
 					</div>
 					<div className="links spaceChildren">
+						<Link
+							to="/events"
+							className="item center"
+							onClick={closeMobile}
+						>
+							<Text size="L">Events</Text>
+						</Link>
+						<div className="item center programsMobileItem">
+							<ProgramsLink onNavigate={closeMobile} size="L" />
+						</div>
 						{[
-							{ label: "Events", url: "/events" },
-							{ label: "Programs", url: "/programs" },
 							{ label: "About", url: "/about" },
 							{ label: "Contact", url: "/contact" },
 						].map(({ label, url }) => (
@@ -124,7 +244,7 @@ const Nav = () => {
 								key={url}
 								to={url}
 								className="item center"
-								onClick={toggleMobileExpand}
+								onClick={closeMobile}
 							>
 								<Text size="L">{label}</Text>
 							</Link>
@@ -132,7 +252,7 @@ const Nav = () => {
 						<Link
 							to="/join"
 							className="item center button fill sky"
-							onClick={toggleMobileExpand}
+							onClick={closeMobile}
 						>
 							<Text size="L">Join</Text>
 						</Link>

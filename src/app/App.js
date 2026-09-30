@@ -7,7 +7,6 @@ import {
 	About,
 	Brand,
 	Contact,
-	Events,
 	EventsAll,
 	Home,
 	Houses,
@@ -22,6 +21,8 @@ import {
 	Shirt22,
 	EventsAllDev,
 	EventsDev,
+	EventsSchedule,
+	TestEvents,
 } from "./pages";
 import "./styles/global.scss";
 import "./styles/colors.scss";
@@ -81,9 +82,14 @@ function App() {
 				<Route path="join" element={<Join />} />
 				<Route path="hey" element={<Hey />} />
 				<Route path="events">
-					<Route index element={<Events />} />
+					<Route index element={<TestEvents />} />
 					<Route path="all" element={<EventsAll />} />
+					<Route path="schedule" element={<EventsSchedule />} />
 				</Route>
+				<Route
+					path="test-events"
+					element={<Navigate to="/events" replace />}
+				/>
 				<Route path="resources">
 					<Route
 						index

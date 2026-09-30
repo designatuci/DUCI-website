@@ -50,6 +50,56 @@
 	max-width: 720px;
 }
 
+.statusWrap {
+	display: flex;
+	justify-content: center;
+	padding: 0 32px 8px;
+}
+
+.statusBanner {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 1003.5px;
+	padding: 14px 20px;
+	background: #ffe4e8;
+	border: 1px solid #fecdd3;
+	border-radius: 16px;
+}
+
+.statusDot {
+	width: 10px;
+	height: 10px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	background: #e11d48;
+	box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.45);
+	animation: appsPulse 1.6s ease-out infinite;
+}
+
+@keyframes appsPulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(225, 29, 72, 0.5);
+	}
+	70% {
+		box-shadow: 0 0 0 8px rgba(225, 29, 72, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(225, 29, 72, 0);
+	}
+}
+
+.statusText {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.35;
+	color: #9f1239;
+	letter-spacing: -0.01em;
+}
+
 .gridSection {
 	padding-bottom: 96px;
 	padding-top: 24px;
@@ -80,6 +130,22 @@
 		transform: translateY(-4px);
 		box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 	}
+}
+
+.appsPill {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	z-index: 2;
+	padding: 6px 10px;
+	border-radius: 999px;
+	background: #e11d48;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	line-height: 1;
+	box-shadow: 0 4px 12px rgba(190, 18, 60, 0.25);
 }
 
 .cardBg {
@@ -135,6 +201,14 @@
 		padding: 32px 20px 16px;
 	}
 
+	.statusWrap {
+		padding: 0 20px 8px;
+	}
+
+	.statusText {
+		font-size: 14px;
+	}
+
 	.grid {
 		grid-template-columns: 1fr;
 		gap: 24px;
@@ -151,6 +225,13 @@
 	.card {
 		padding: 28px 24px;
 		min-height: 180px;
+	}
+
+	.appsPill {
+		top: 12px;
+		right: 12px;
+		font-size: 11px;
+		padding: 5px 8px;
 	}
 
 	.cardTitle {

@@ -1,7 +1,14 @@
 export { default as About } from "./About";
 export { default as Brand } from "./Brand";
 export { default as Contact } from "./Contact";
-export { Events, EventsAll, EventsDev, EventsAllDev } from "./Events";
+export {
+	Events,
+	EventsAll,
+	EventsDev,
+	EventsAllDev,
+	EventsSchedule,
+	TestEvents,
+} from "./Events";
 export { default as Home } from "./Home";
 export { default as Join } from "./Join";
 export { default as Mentorship } from "./Mentorship";

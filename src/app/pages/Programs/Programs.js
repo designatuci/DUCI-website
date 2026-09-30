@@ -26,6 +26,7 @@ const PROGRAMS = [
 		icon: iconPt,
 		titleColor: "#88005b",
 		descColor: "#bb4393",
+		appsOpen: true,
 	},
 	{
 		title: "Mentorship",
@@ -35,6 +36,7 @@ const PROGRAMS = [
 		icon: iconMentorship,
 		titleColor: "#884d00",
 		descColor: "#a77549",
+		appsOpen: true,
 	},
 	{
 		title: "Design: Mockup",
@@ -44,6 +46,7 @@ const PROGRAMS = [
 		icon: iconMockup,
 		titleColor: "#000788",
 		descColor: "#4365bb",
+		appsOpen: true,
 	},
 	{
 		title: "Design-a-thon",
@@ -53,6 +56,7 @@ const PROGRAMS = [
 		icon: iconDot,
 		titleColor: "#008807",
 		descColor: "#629b54",
+		appsOpen: true,
 	},
 ];
 
@@ -65,6 +69,9 @@ const ProgramCard = ({ program }) => {
 				className={cn.cardBg}
 				aria-hidden="true"
 			/>
+			{program.appsOpen ? (
+				<span className={cn.appsPill}>Applications open</span>
+			) : null}
 			<div className={cn.cardContent}>
 				<div className={cn.cardTitleRow}>
 					<img
@@ -120,6 +127,16 @@ const Programs = () => (
 				</Text>
 			</div>
 		</section>
+
+		<div className={cn.statusWrap}>
+			<div className={`wait show ${cn.statusBanner}`}>
+				<span className={cn.statusDot} aria-hidden="true" />
+				<p className={cn.statusText}>
+					Applications are currently open for several programs —
+					pick a card below to learn more and apply.
+				</p>
+			</div>
+		</div>
 
 		<Section className={`page short bareTop ${cn.gridSection}`}>
 			<Space h="0" />
