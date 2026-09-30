@@ -32,7 +32,7 @@ import cn from "./ProjectTeams.module.scss";
 
 export const PROJECT_TEAMS_GOOGLE_FORM = "https://docs.google.com/forms/d/e/1FAIpQLScbBwpAD8fN6MYpi84wK8-AObgFvjHZkehP34VdAMr_dRi6Gg/viewform";
 const APPLY_URL = "/project-teams/registration";
-const APPLICATIONS_OPEN = true;
+const APPLICATIONS_OPEN = false;
 // Flip to true to restore winner click/hover popups
 const WINNER_POPUPS_ENABLED = false;
 const INSTAGRAM_URL = "https://www.instagram.com/designatuci/";

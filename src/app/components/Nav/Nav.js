@@ -86,9 +86,8 @@ const ProgramsLink = ({ onNavigate, size }) => {
 						>
 							<p className="appsPopoverTitle">Applications open</p>
 							<p className="appsPopoverBody">
-								Mentorship, Design-a-thon, Project Teams, and more
-								are accepting applications — click to find out
-								more.
+								Mentorship, Design-a-thon, Mockup, and more are
+								accepting applications — click to find out more.
 							</p>
 							<div className="appsPopoverActions">
 								<Link

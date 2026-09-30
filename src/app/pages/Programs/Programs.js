@@ -26,7 +26,7 @@ const PROGRAMS = [
 		icon: iconPt,
 		titleColor: "#88005b",
 		descColor: "#bb4393",
-		appsOpen: true,
+		appsOpen: false,
 	},
 	{
 		title: "Mentorship",
