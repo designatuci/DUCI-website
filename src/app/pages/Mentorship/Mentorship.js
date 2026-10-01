@@ -11,9 +11,9 @@ import gallery2 from "./assets/gallery-2.png";
 import gallery3 from "./assets/gallery-3.png";
 import gallery4 from "./assets/gallery-4.png";
 import gallery5 from "./assets/gallery-5.png";
-import avatarAlice from "./assets/avatar-alice.jpg";
-import avatarKylie from "./assets/avatar-kylie.jpg";
+import avatarKrey from "./assets/avatar-krey.jpg";
 import avatarEvelyn from "./assets/avatar-evelyn.jpg";
+import avatarHeidi from "./assets/avatar-heidi.jpg";
 
 import cn from "./Mentorship.module.scss";
 
@@ -30,28 +30,27 @@ const GALLERY = [
 	{ src: gallery5, className: cn.galleryMid },
 ];
 
-// TODO: replace with real mentorship testimonials
 const TESTIMONIALS = [
 	{
 		quote:
-			"“As a mentee, I finally felt like I had a place in UCI’s design community. My mentor helped me build confidence in my process, and our family check-ins made every week feel supportive and motivating.”",
-		name: "Alice Ger",
-		role: "Mentorship Committee",
-		photo: avatarAlice,
+			"“The DAUCI Mentorships program last quarter gave me a unique chance to build meaningful and constructive relationships with people I wouldn’t have had a chance to before. As a mentor, being matched with a mentee who shared a lot of the same interests and vibes as me, and having a positive space to socialize and work together, really allowed for a great experience. I’m so happy to have made a new friend who I will likely continue to yap with and spam reels to for the foreseeable future”",
+		name: "Krey",
+		role: "Mentor & Past President ‘25–‘26",
+		photo: avatarKrey,
 	},
 	{
 		quote:
-			"“Mentoring through Design at UCI was one of the most rewarding parts of my year. Watching mentees grow and bonding with my mentorship family reminded me why sharing design knowledge matters.”",
-		name: "Kylie Nguyen",
-		role: "Mentorships Director",
-		photo: avatarKylie,
-	},
-	{
-		quote:
-			"“The curriculum gave us structure without making things feel rigid. Between family activities and design conversations, I grew so much as a designer and made friends I still keep in touch with.”",
-		name: "Evelyn Wang",
-		role: "Mentorship Committee",
+			"“Mentorship allowed me to take a step into UI/UX and Design at UCI, something that I had no experience at all with before. It opened me up to a community larger than I expected, full of creative, intelligent, and helpful individuals. Through this experience I got to be more involved with the larger scope of DAUCI and am thankful for this opportunity to have met so many great people.”",
+		name: "Evelyn",
+		role: "Mentee & Director ‘26–‘27",
 		photo: avatarEvelyn,
+	},
+	{
+		quote:
+			"“Mentorship was such a meaningful experience full of growth, new perspectives, and building a really special connection with my mentee, Tiffany. It was fulfilling to share what I've learned from my own career and life experiences, but equally rewarding to learn from her in return. I'm grateful the program brought us together, and I hope it continues to help others find their path and build lasting connections!”",
+		name: "Heidi",
+		role: "Mentor & Past Workshop Director ‘25–‘26",
+		photo: avatarHeidi,
 	},
 ];
 

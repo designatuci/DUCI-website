@@ -1,410 +1,318 @@
-import { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
-import { Text } from "app/components";
-import { Section, Space, Icon, LoadingD, PageIcon } from "app/Symbols.js";
-import EVENT_DATA from "assets/data/events/all.json";
+import { ReactComponent as ResourcesTl } from "app/pages/Resources/resources-tl.svg";
+import { ReactComponent as ResourcesBr } from "app/pages/Resources/resources-br.svg";
+import { useSheetEvents } from "./useSheetEvents";
+import {
+	RECENT_EVENTS_LIMIT,
+	UPCOMING_EVENTS_LIMIT,
+} from "./sheetConfig";
 
-import EventCard from "./components/EventCard/EventCard.js";
+import cn from "./Events.module.scss";
+
+const learnMoreHref = (event) => {
+	const ig = event.links?.find(
+		(l) => l.label === "Instagram" || /instagram\.com/i.test(l.link || ""),
+	);
+	return ig?.link || event.links?.[0]?.link || null;
+};
+
+const normalizeTypeKey = (type) => {
+	const t = String(type || "")
+		.trim()
+		.toLowerCase();
+	if (t.includes("social")) return "social";
+	if (t.includes("workshop")) return "workshop";
+	if (t.includes("industry") || t.includes("speaker")) return "speaker";
+	if (t.includes("mentor")) return "mentorship";
+	return "default";
+};
+
+const typeMeta = {
+	social: {
+		label: "Social Event",
+		className: "typeSocial",
+		iconSrc: "/static/file/social-icon.svg",
+	},
+	workshop: {
+		label: "Workshop",
+		className: "typeWorkshop",
+		iconSrc: "/static/file/workshop-icon.svg",
+	},
+	speaker: {
+		label: "Industry Speaker",
+		className: "typeSpeaker",
+		iconSrc: "/static/file/industry-logo.svg",
+	},
+	mentorship: {
+		label: "Mentorship",
+		className: "typeMentorship",
+		iconSrc: null,
+	},
+	default: {
+		label: null,
+		className: "typeDefault",
+		iconSrc: null,
+	},
+};
+
+const TypeBadge = ({ type, grow = false }) => {
+	const key = normalizeTypeKey(type);
+	const meta = typeMeta[key] || typeMeta.default;
+	const label = meta.label || type || "Event";
+
+	return (
+		<span
+			className={`${cn.typeBadge} ${cn[meta.className] || ""} ${
+				grow ? cn.badgeGrow : ""
+			}`}
+		>
+			{meta.iconSrc ? (
+				<img
+					src={meta.iconSrc}
+					alt=""
+					className={cn.typeIconImg}
+					aria-hidden="true"
+				/>
+			) : null}
+			{label}
+		</span>
+	);
+};
+
+const LearnMore = ({ href, className }) =>
+	href ? (
+		<a
+			className={className}
+			href={href}
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Learn More
+		</a>
+	) : (
+		<span className={`${className} ${cn.pillDisabled}`}>Learn More</span>
+	);
+
+const UpcomingCard = ({ event }) => {
+	const href = learnMoreHref(event);
+	const week = event.week || "Week ?";
+
+	const graphic = (
+		<div className={cn.upcomingGraphic}>
+			<span className={cn.graphicPlaceholder}>graphic here</span>
+			{event.image ? (
+				<img
+					src={event.image}
+					alt=""
+					className={cn.upcomingImage}
+					loading="lazy"
+					referrerPolicy="no-referrer"
+					onError={(e) => {
+						e.currentTarget.style.display = "none";
+					}}
+				/>
+			) : null}
+		</div>
+	);
+
+	return (
+		<article className={`wait show dx ${cn.upcomingCard}`}>
+			<div className={cn.upcomingInner}>
+				<div className={cn.badges}>
+					<span className={cn.badge}>{week}</span>
+					<TypeBadge type={event.type} grow />
+				</div>
+
+				{href ? (
+					<a
+						href={href}
+						target="_blank"
+						rel="noopener noreferrer"
+						className={cn.imageLink}
+						aria-label={event.title}
+					>
+						{graphic}
+					</a>
+				) : (
+					graphic
+				)}
+
+				<LearnMore href={href} className={cn.pillBtnBlue} />
+			</div>
+		</article>
+	);
+};
+
+const RecentCard = ({ event }) => {
+	const href = learnMoreHref(event);
+	const week = event.week || "Week ?";
+
+	const media = (
+		<div className={cn.recentImageWrap}>
+			{event.image ? (
+				<img
+					src={event.image}
+					alt=""
+					className={cn.recentImage}
+					loading="lazy"
+					referrerPolicy="no-referrer"
+					onError={(e) => {
+						e.currentTarget.style.display = "none";
+					}}
+				/>
+			) : (
+				<div className={cn.recentImagePlaceholder}>
+					<span>event photo here</span>
+					<span className={cn.recentImageHint}>click me :D</span>
+				</div>
+			)}
+		</div>
+	);
+
+	return (
+		<article className={`wait show dx ${cn.recentCard}`}>
+			<div className={cn.recentInner}>
+				<div className={cn.badges}>
+					<span className={cn.badge}>{week}</span>
+					<TypeBadge type={event.type} grow />
+				</div>
+
+				<div className={cn.recentBody}>
+					<h3 className={cn.recentTitle}>{event.title}</h3>
+					{href ? (
+						<a
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							className={cn.imageLink}
+							aria-label={`Photo for ${event.title}`}
+						>
+							{media}
+						</a>
+					) : (
+						media
+					)}
+				</div>
+
+				<LearnMore href={href} className={cn.pillBtnBlue} />
+			</div>
+		</article>
+	);
+};
 
 const Events = () => {
-	const [eventData, setEventData] = useState(null);
-	useEffect(() => {
-		let eventData = {
-			upcoming: [],
-			past: [],
-			next: null,
-		};
-		let now = new Date();
-		for (let event of EVENT_DATA) {
-			let time = new Date(
-				new Date(event.time).getTime() + event.duration * 60000,
-			);
-			if (now < time) {
-				eventData.next = event;
-				eventData.upcoming.unshift(event);
-			} else {
-				eventData.past.push(event);
-			}
-		}
-		eventData.upcoming.shift();
-		setEventData(eventData);
-	}, []);
+	const { upcoming, recent, loading, error } = useSheetEvents({
+		recentLimit: RECENT_EVENTS_LIMIT,
+		upcomingLimit: UPCOMING_EVENTS_LIMIT,
+	});
+
 	return (
 		<>
 			<Helmet>
 				<title>Events – Design at UCI</title>
 			</Helmet>
-			<Section
-				className={`center short ${
-					eventData == null || eventData.next != null
-						? "widePage hint"
-						: ""
-				}`}
-				style={{ paddingTop: "32px" }}
-			>
-				{eventData == null ? (
-					// Loading animation
-					<LoadingD width="128" />
-				) : // Large next event card
-				eventData.next == null ? (
-					<div className="flex spaceChildrenSmall">
-						<Space h="64" />
-						<Text
-							size="XXL"
-							className="wait show scale bold color blue"
-						>
-							Stay Tuned
-						</Text>
-						<Text className="wait show subtle color blue">
-							There are currently no upcoming events.
-						</Text>
-						<Space h="32" />
-						<Text className="wait show subtle color gray">
-							Be sure to <Link to="/join/">join us</Link> for
-							notifications.
-						</Text>
+			<main className={cn.page}>
+				<section className={cn.upcomingSection}>
+					<div className={cn.blobLayer} aria-hidden="true">
+						<ResourcesTl
+							className={`wait show flopL ${cn.blobTl}`}
+						/>
+						<ResourcesBr
+							className={`wait show flopR ${cn.blobBr}`}
+						/>
 					</div>
-				) : new Date(eventData.next.time) > new Date() ? (
-					<>
-						<div className="wait show flex row">
-							<Icon w="32" h="32" src="next-event.svg" />
-							<Space w="16" />
-							<Text size="L" className="color blue">
-								Upcoming Event
-							</Text>
-						</div>
-						<Text className="color blue wait show subtle d05">
-							{formatRelativeDate(eventData.next.time)}
-						</Text>
-						<LargeEvent event={eventData.next} />
-					</>
-				) : (
-					<>
-						<div className="wait show flex row">
-							<Icon w="32" h="32" src="live-event.svg" />
-							<Space w="16" />
-							<Text size="L" className="bold color red">
-								Live Now
-							</Text>
-						</div>
-						<LargeEvent event={eventData.next} live="true" />
-					</>
-				)}
-			</Section>
-			{eventData != null && eventData.upcoming.length > 0 && (
-				<>
-					<div
-						className="center maxWidth"
-						style={{
-							height: "88px",
-							marginBottom: "-88px",
-							background:
-								"linear-gradient(0,var(--white),var(--sky))",
-						}}
-					>
-						<Text size="L" className="color blue">
-							Next Upcoming Event
-							{eventData.upcoming.length > 1 ? "s" : ""}
-						</Text>
-					</div>
-					<Section className="center">
-						<div className="spaceChildrenLarge">
-							{eventData.upcoming.map((event, i) => {
-								return (
-									<LargeEvent
-										key={event.title}
+
+					<div className={cn.upcomingContent}>
+						<header className={cn.sectionHeader}>
+							<h1
+								className={`wait show scale bold ${cn.sectionTitle}`}
+							>
+								Upcoming Events
+							</h1>
+							<p
+								className={`wait show subtle ${cn.sectionSubtitle}`}
+							>
+								See the next time our design community is
+								getting together, come say hello!
+							</p>
+						</header>
+
+						{loading ? (
+							<p className={`wait show ${cn.status}`}>
+								Loading events…
+							</p>
+						) : error ? (
+							<p className={`wait show ${cn.status}`}>
+								Couldn&apos;t load events from the Sheet. Check
+								that the spreadsheet is shared as Anyone with
+								the link → Viewer.
+							</p>
+						) : upcoming.length === 0 ? (
+							<p className={`wait show ${cn.status}`}>
+								No upcoming events yet — check back soon, or
+								submit one via the Form.
+							</p>
+						) : (
+							<div className={cn.upcomingGrid}>
+								{upcoming.map((event) => (
+									<UpcomingCard
+										key={`up-${event.time}-${event.title}`}
 										event={event}
 									/>
-								);
-							})}
+								))}
+							</div>
+						)}
+
+						<div className={`wait show ${cn.ctaWrap}`}>
+							<Link to="/events/schedule" className={cn.ctaBlue}>
+								View All Upcoming Quarter Events
+							</Link>
 						</div>
-					</Section>
-				</>
-			)}
-			<div
-				className="center maxWidth fill gray"
-				style={{ height: "88px", marginBottom: "0" }}
-			>
-				<Text size="L">Past Events</Text>
-			</div>
-			<Section className="center bare fill gray">
-				<div
-					className="splitEventCard maxWidth"
-					style={{ textAlign: "left" }}
-				>
-					{eventData != null &&
-						eventData.past
-							.slice(0, 12)
-							.map((event) => (
-								<EventCard
-									key={event.time + event.title}
-									{...event}
+					</div>
+				</section>
+
+				<section className={cn.recentSection}>
+					<header className={cn.sectionHeader}>
+						<h2
+							className={`wait show scale bold ${cn.sectionTitle}`}
+						>
+							Recent Events
+						</h2>
+						<p
+							className={`wait show subtle ${cn.sectionSubtitle}`}
+						>
+							See what we&apos;ve been up to as of late!
+						</p>
+					</header>
+
+					{!loading && !error && recent.length === 0 ? (
+						<p
+							className={`wait show ${cn.status} ${cn.statusOnGradient}`}
+						>
+							No past events with photos yet.
+						</p>
+					) : (
+						<div className={cn.recentGrid}>
+							{recent.map((event) => (
+								<RecentCard
+									key={`re-${event.time}-${event.title}`}
+									event={event}
 								/>
 							))}
-				</div>
-			</Section>
-			<Section
-				className="center bare fill gray"
-				style={{ height: "128px", display: "flex" }}
-			>
-				<Link to="/events/all/" className="button color blue">
-					<Text icon="right">View all events</Text>
-				</Link>
-			</Section>
-			<Section className="center">
-				<div
-					className="flex left narrow spaceChildren"
-					style={{ textAlign: "left" }}
-				>
-					<Icon src="workshop-icon-black.svg" w="64" h="64" />
-					<Text size="XL">
-						We host events with a wide range of topics about each
-						week during the academic quarter.
-					</Text>
-					<Text color="gray">
-						Including UX design concepts, graphic design techniques,
-						interactive advice from industry speakers, social
-						events, and more.
-					</Text>
-					<Text color="gray">
-						Have a suggestion of something you would like to see?
-						<br />
-						Submit your feedback to{" "}
-						<a href="mailto:design@uci.edu">
-							design@uci.edu
-						</a>
-						.
-					</Text>
-				</div>
-			</Section>
+						</div>
+					)}
+
+					<div className={`wait show ${cn.ctaWrap}`}>
+						<Link to="/events/all" className={cn.ctaBlue}>
+							View All Previous Events
+						</Link>
+					</div>
+				</section>
+			</main>
 		</>
 	);
 };
 
-function LargeEvent(props) {
-	return (
-		<div
-			className="slim flex left textAlignLeft spaceChildren largeEvent"
-			style={{ textAlign: "left" }}
-		>
-			<Text size="XL" className="bold">
-				{props.event.title}
-			</Text>
-			<div className="split2 info">
-				<div className="flex top row">
-					<Icon w="24" h="24" src="time-blue.svg" />
-					<Space w="8" />
-					<Text className="color blue">
-						{formatDate(props.event.time)}
-					</Text>
-				</div>
-				<div className="split2">
-					<div className="flex top row">
-						<Icon w="24" h="24" src="type-blue.svg" />
-						<Space w="8" />
-						<Text className="color blue">{props.event.type}</Text>
-					</div>
-					<div className="flex top row">
-						<Icon w="24" h="24" src="place-blue.svg" />
-						<Space w="8" />
-						<Text className="color blue">{props.event.place}</Text>
-					</div>
-				</div>
-			</div>
-			{props.event.links != null && (
-				<div>
-					{props.event.links.map((item, i) => {
-						if (item.label === "Zoom Link")
-							if (props.live)
-								return (
-									<a
-										key={item.link}
-										className="button S fill red"
-										target="noreferer"
-										href={item.link}
-									>
-										<Text>
-											{item.label}
-											<PageIcon
-												color="var(--white)"
-												style={{
-													width: "24px",
-													marginLeft: "4px",
-												}}
-											/>
-										</Text>
-									</a>
-								);
-							else
-								return (
-									<a
-										key={item.link}
-										className="button S fill blue"
-										target="noreferer"
-										href={item.link}
-									>
-										<Text>
-											{item.label}
-											<PageIcon
-												color="var(--sky)"
-												style={{
-													width: "24px",
-													marginLeft: "4px",
-												}}
-											/>
-										</Text>
-									</a>
-								);
-						else
-							return (
-								<a
-									key={item.link}
-									className="button S fill gray"
-									target="noreferer"
-									href={item.link}
-								>
-									<Text>
-										{item.label}
-										<PageIcon
-											color="var(--white)"
-											style={{
-												width: "24px",
-												marginLeft: "4px",
-											}}
-										/>
-									</Text>
-								</a>
-							);
-					})}
-				</div>
-			)}
-			<Text className="color gray">{props.event.desc}</Text>
-		</div>
-	);
-}
-
 export default Events;
-
-function formatDate(date) {
-	let time = new Date(date);
-	let str = "";
-	str += mapDay(time.getDay()) + ", ";
-	str += mapMonth(time.getMonth()) + " ";
-	str += time.getDate() + " at ";
-	str += getHour(time.getHours()) + ":";
-	str += getMinutes(time.getMinutes()) + " ";
-	str += getPeriod(time.getHours());
-	str += " your time";
-	return str;
-}
-function formatRelativeDate(date) {
-	let now = new Date();
-	let time = new Date(date);
-	let diff = now - time;
-	if (diff < 0) {
-		diff = Math.abs(diff);
-		const days = Math.round(diff / (1000 * 60 * 60 * 24));
-		if (days === 0) {
-			const minutes = Math.round(diff / (1000 * 60));
-			if (minutes <= 60) {
-				return `in ${minutes} minutes`;
-			} else {
-				return `Today`;
-			}
-		} else if (days <= 1) {
-			return `In ${days} day`;
-		} else if (days <= 7) {
-			return `In ${days} days`;
-		} else {
-			let weeks = Math.round(days / 7);
-			if (weeks === 1) {
-				return `In ${weeks} week`;
-			} else {
-				return `In ${weeks} weeks`;
-			}
-		}
-	} else {
-		const days = Math.round(diff / (1000 * 60 * 60 * 24));
-		if (days === 0) {
-			const minutes = Math.round(diff / (1000 * 60));
-			if (minutes <= 100) {
-				return `Ended moments ago`;
-			} else {
-				const hours = Math.ceil(diff / (1000 * 60 * 60));
-				return `${hours} hours ago`;
-			}
-		} else if (days <= 1) {
-			return `${days} day ago`;
-		} else if (days < 7) {
-			return `${days} days ago`;
-		} else if (days < 30) {
-			let weeks = Math.round(days / 7);
-			if (weeks === 1) {
-				return `${weeks} week ago`;
-			} else {
-				return `${weeks} weeks ago`;
-			}
-		} else if (days < 120) {
-			let months = Math.round(days / 30);
-			if (months === 1) {
-				return `${months} month ago`;
-			} else {
-				return `${months} months ago`;
-			}
-		} else if (days < 365) {
-			return "Several months ago";
-		} else {
-			return "Over a year ago";
-		}
-	}
-}
-function getHour(h) {
-	if (h > 12) {
-		return h - 12;
-	} else {
-		return h;
-	}
-}
-function getMinutes(m) {
-	if (m < 10) {
-		return "0" + m;
-	} else {
-		return m;
-	}
-}
-function getPeriod(h) {
-	if (h >= 12) {
-		return "PM";
-	} else {
-		return "AM";
-	}
-}
-
-const days = [
-	"Sunday",
-	"Monday",
-	"Tuesday",
-	"Wednesday",
-	"Thursday",
-	"Friday",
-	"Saturday",
-];
-const months = [
-	"Jan",
-	"Feb",
-	"Mar",
-	"Apr",
-	"May",
-	"Jun",
-	"Jul",
-	"Aug",
-	"Sep",
-	"Oct",
-	"Nov",
-	"Dec",
-];
-
-const mapDay = (n) => days[n];
-const mapMonth = (n) => months[n];
