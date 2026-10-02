@@ -251,8 +251,9 @@ const Events = () => {
 							</p>
 						) : upcoming.length === 0 ? (
 							<p className={`wait show ${cn.status}`}>
-								No upcoming events yet — check back soon, or
-								submit one via the Form.
+								Stay posted for updates here or on Instagram —
+								in the meantime, check out the quarter schedule
+								below.
 							</p>
 						) : (
 							<div className={cn.upcomingGrid}>
