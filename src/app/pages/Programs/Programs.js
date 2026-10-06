@@ -36,7 +36,7 @@ const PROGRAMS = [
 		icon: iconMentorship,
 		titleColor: "#884d00",
 		descColor: "#a77549",
-		appsOpen: true,
+		appsOpen: false,
 	},
 	{
 		title: "Design: Mockup",
@@ -46,7 +46,7 @@ const PROGRAMS = [
 		icon: iconMockup,
 		titleColor: "#000788",
 		descColor: "#4365bb",
-		appsOpen: true,
+		appsOpen: false,
 	},
 	{
 		title: "Design-a-thon",
@@ -109,6 +109,8 @@ const ProgramCard = ({ program }) => {
 	return <div className={cn.card}>{content}</div>;
 };
 
+const anyAppsOpen = PROGRAMS.some((p) => p.appsOpen);
+
 const Programs = () => (
 	<div className={cn.page}>
 		<Helmet>
@@ -128,15 +130,17 @@ const Programs = () => (
 			</div>
 		</section>
 
-		<div className={cn.statusWrap}>
-			<div className={`wait show ${cn.statusBanner}`}>
-				<span className={cn.statusDot} aria-hidden="true" />
-				<p className={cn.statusText}>
-					Applications are currently open for several programs —
-					pick a card below to learn more and apply.
-				</p>
+		{anyAppsOpen ? (
+			<div className={cn.statusWrap}>
+				<div className={`wait show ${cn.statusBanner}`}>
+					<span className={cn.statusDot} aria-hidden="true" />
+					<p className={cn.statusText}>
+						Applications are currently open for Design-a-thon —
+						pick a card below to learn more and apply.
+					</p>
+				</div>
 			</div>
-		</div>
+		) : null}
 
 		<Section className={`page short bareTop ${cn.gridSection}`}>
 			<Space h="0" />

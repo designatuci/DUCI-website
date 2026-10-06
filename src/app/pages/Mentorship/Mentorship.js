@@ -20,7 +20,7 @@ import cn from "./Mentorship.module.scss";
 const APPLY_URL =
 	"https://docs.google.com/forms/d/e/1FAIpQLSey7dl4PawDcgfQYq3cJY7cU0A4ugWY_DZpE_L-FaMhYGlfVg/viewform";
 /** @type {"open" | "soon" | "closed"} */
-const APPLICATIONS_STATUS = "open";
+const APPLICATIONS_STATUS = "closed";
 
 const GALLERY = [
 	{ src: gallery1, className: cn.galleryWide },

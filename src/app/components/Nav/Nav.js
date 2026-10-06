@@ -7,7 +7,7 @@ import socials from "assets/data/socials.json";
 
 import "./Nav.scss";
 
-const APPS_TIP_KEY = "duci-apps-open-tip-dismissed";
+const APPS_TIP_KEY = "duci-apps-open-tip-designathon";
 
 const ProgramsLink = ({ onNavigate, size }) => {
 	const [open, setOpen] = useState(false);
@@ -58,11 +58,7 @@ const ProgramsLink = ({ onNavigate, size }) => {
 
 	return (
 		<div className="programsNav" ref={wrapRef}>
-			<Link
-				to="/programs"
-				className="item center"
-				onClick={onNavigate}
-			>
+			<Link to="/programs" className="item center" onClick={onNavigate}>
 				{size ? <Text size={size}>Programs</Text> : <Text>Programs</Text>}
 			</Link>
 			{showBadge ? (
@@ -86,19 +82,19 @@ const ProgramsLink = ({ onNavigate, size }) => {
 						>
 							<p className="appsPopoverTitle">Applications open</p>
 							<p className="appsPopoverBody">
-								Mentorship, Design-a-thon, Mockup, and more are
-								accepting applications — click to find out more.
+								Design-a-thon committee applications are open —
+								click to find out more.
 							</p>
 							<div className="appsPopoverActions">
 								<Link
-									to="/programs"
+									to="/designathons/"
 									className="appsPopoverCta"
 									onClick={() => {
 										dismiss();
 										onNavigate?.();
 									}}
 								>
-									View Programs
+									View Design-a-thon
 								</Link>
 								<button
 									type="button"

@@ -10,7 +10,7 @@ import iconCalendar from "./assets/icon-calendar.svg";
 import cn from "./Mockup.module.scss";
 
 const MOCKUP_SITE_URL = "https://mockup.designatuci.com";
-const APPLICATIONS_OPEN = true;
+const APPLICATIONS_OPEN = false;
 
 const Mockup = () => (
 	<div className={cn.page}>
